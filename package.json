@@ -18,7 +18,8 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "audit:mobile": "node scripts/audit-mobile.mjs"
+    "audit:mobile": "node scripts/audit-mobile.mjs",
+    "test:db": "vitest run --config vitest.db.config.ts"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
@@ -36,6 +37,7 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",
+    "@supabase/supabase-js": "^2.117.3",
     "docx": "^9.7.1",
     "next": "^16.4.0",
     "react": "^19.3.0",
