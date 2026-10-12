@@ -20,6 +20,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validateItem } from '../src/items/bank.ts';
+import { AGRAWAL_CH03_CODING_DECODING } from '../src/items/oir/agrawal-ch03-coding-decoding.ts';
 import { AGRAWAL_CH04_WORD_FORMATION } from '../src/items/oir/agrawal-ch04-word-formation.ts';
 import { AGRAWAL_CH06_SEQUENCE_TEST } from '../src/items/oir/agrawal-ch06-sequence-test.ts';
 import { AGRAWAL_CH08_DIRECTIONS } from '../src/items/oir/agrawal-ch08-directions.ts';
@@ -42,6 +43,7 @@ interface SourceFile {
 
 /** One row per chapter ingested. `idPrefix` is permanent: an id, once seeded, never changes. */
 const CHAPTERS: { file: string; key: Readonly<Record<number, KeyEntry>>; reasoningType: string; idPrefix: string }[] = [
+  { file: 'content/oir/agrawal-examcart/ch03-coding-decoding.source.json', key: AGRAWAL_CH03_CODING_DECODING, reasoningType: 'coding', idPrefix: 'oir-agx-ch03' },
   { file: 'content/oir/agrawal-examcart/ch04-word-formation.source.json', key: AGRAWAL_CH04_WORD_FORMATION, reasoningType: 'word_formation', idPrefix: 'oir-agx-ch04' },
   { file: 'content/oir/agrawal-examcart/ch06-sequence-test.source.json', key: AGRAWAL_CH06_SEQUENCE_TEST, reasoningType: 'alphabet', idPrefix: 'oir-agx-ch06' },
   { file: 'content/oir/agrawal-examcart/ch08-directions.source.json', key: AGRAWAL_CH08_DIRECTIONS, reasoningType: 'directions', idPrefix: 'oir-agx-ch08' },

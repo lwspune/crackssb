@@ -1,0 +1,1822 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSB OIR PAGE NO. 1-44 (phone photos of printed pages 1-44)",
+  "chapter": 3,
+  "title": "Coding Decoding",
+  "pages": [
+    9,
+    14
+  ],
+  "transcribed": "2026-10-12",
+  "note": "Verbatim, typos included (\"thaw word\", \"langauge\", \"colurs\", \"PROBELM\" for the PROBLEM it codes, \"Dic\"). Never edited: corrections live in src/items/oir/. Where the photo cannot tell the letter O from the digit 0 (Q99 \"S92O\", Q125 options), the reading the code's own rule calls for is used. The chapter prints no direction (text null). A book name that matches a real candidate's name is replaced with a neutral one (D21, D27); such questions carry \"renamed\": true and the original is not recorded.",
+  "directions": [
+    {
+      "section": "Main",
+      "printed": null,
+      "text": null
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a certain code language 'RESULT' is written as 'LUTERS' and 'BARLEY' is written as 'ELYABR'. How will 'HEAVEN' be written in the same code language ?",
+      "options": {
+        "A": "AEVNHA",
+        "B": "EANVHE",
+        "C": "EVNEHA",
+        "D": "VEENAH"
+      }
+    },
+    {
+      "n": 2,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a certain language, DANGER is coded as REGNAD, DETAIL is coded as LIATED, how will DOCTOR be coded in the same language ?",
+      "options": {
+        "A": "CODTOR",
+        "B": "ROTCOD",
+        "C": "CODROT",
+        "D": "EPDUPS"
+      }
+    },
+    {
+      "n": 3,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a certain code language, 'HUSBAND' is written as 'DNABSUH' and 'CLEARLY' is written as 'YLRAELC'. How will 'HARBOUR' be written in that language?",
+      "options": {
+        "A": "ORUBHRA",
+        "B": "RUOBRAH",
+        "C": "ORUBRAH",
+        "D": "RUOBRHA"
+      }
+    },
+    {
+      "n": 4,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a certain code language, if EXTRNSIC is written as CIXESNRT, then how will LEFTWING be written in that code language?",
+      "options": {
+        "A": "GNELIWTF",
+        "B": "ELGNTFIW",
+        "C": "GNIWTFEL",
+        "D": "TFELGNIW"
+      }
+    },
+    {
+      "n": 5,
+      "page": 9,
+      "section": "Main",
+      "stem": "If 'EDITION' is written as 'IDETNOI' then how will 'MEDICAL' be written in that code language?",
+      "options": {
+        "A": "DEMILAC",
+        "B": "LACIMED",
+        "C": "DIEMCAL",
+        "D": "CADILEM"
+      }
+    },
+    {
+      "n": 6,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a code language SHOULDER is written as DEHLORSU. How will STOMACH be written in that language?",
+      "options": {
+        "A": "EDHTRE",
+        "B": "DEHJZOE",
+        "C": "ACHMOST",
+        "D": "DEHHETS"
+      }
+    },
+    {
+      "n": 7,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a code language, FLAVOR' is written as 'VUROLFA', how will 'SODIUM' be written in that code language?",
+      "options": {
+        "A": "USMODI",
+        "B": "USOMID",
+        "C": "SUMOID",
+        "D": "TPEJVN"
+      }
+    },
+    {
+      "n": 8,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a code language 'DIAGNOSE' is written as 'ADEGINOS'. How will 'REMOVAL' be written in that language?",
+      "options": {
+        "A": "AELNORU",
+        "B": "AELMORV",
+        "C": "ALEMROV",
+        "D": "AELOMVR"
+      }
+    },
+    {
+      "n": 9,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a certain code language 'OCTAGRAM' is written as 'ACOTAGMR'. How will 'GRACEFUL' be written in that code language?",
+      "options": {
+        "A": "ACGREFUL",
+        "B": "URLGACEF",
+        "C": "ACGREFLU",
+        "D": "ACEFGLRU"
+      }
+    },
+    {
+      "n": 10,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a certain code language, 'RATIONALE is written as NOIELATAR. How will STATEMENT be written in that language?",
+      "options": {
+        "A": "ETATNEMTS",
+        "B": "EMTTNETAS",
+        "C": "METTAENST",
+        "D": "METTNEATS"
+      }
+    },
+    {
+      "n": 11,
+      "page": 9,
+      "section": "Main",
+      "stem": "If TEMPLE is coded as ELPMET then how CHURCH will be coded as?",
+      "options": {
+        "A": "HCURHC",
+        "B": "HCRUHC",
+        "C": "HCURCH",
+        "D": "HCRUCH"
+      }
+    },
+    {
+      "n": 12,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a code language, 'HEAD' is coded as JHCG, and 'NOSE' is coded as PRUH. How will 'HAND' be coded in the same language ?",
+      "options": {
+        "A": "JDQG",
+        "B": "KCQF",
+        "C": "JDPG",
+        "D": "KDQG"
+      }
+    },
+    {
+      "n": 13,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a code language 'PARUL' is coded as RDTXN and 'MADHU' is coded as ODFKW. How will 'VIJAY' be coded in the same language ?",
+      "options": {
+        "A": "XLMDA",
+        "B": "XMLCA",
+        "C": "XLLDA",
+        "D": "XKLCB"
+      }
+    },
+    {
+      "n": 14,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a certain code language,'MERCHANT' is written as 'NFSCHCPV' and 'INTERIOR' is written as 'JOUERKQT'. How will 'JUNCTION' be written in that code language?",
+      "options": {
+        "A": "KVOCTJQP",
+        "B": "KVOCTJPO",
+        "C": "KVOCTKPQ",
+        "D": "KVOCTKQP"
+      }
+    },
+    {
+      "n": 15,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a certain code language, if 'EAR' is written as '2037' and 'PBU' is written as '23418', how will 'DIG' be written in the same code language ?",
+      "options": {
+        "A": "4108",
+        "B": "9116",
+        "C": "8114",
+        "D": "7106"
+      }
+    },
+    {
+      "n": 16,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a certain code language, 'BUTTER' is written as 'CWWSCO' and 'THEORY' is written as 'UJHNPV'. How will 'LATENT' be written in that language?",
+      "options": {
+        "A": "MEVCKR",
+        "B": "MDXCLQ",
+        "C": "MCWDMP",
+        "D": "MCWDLQ"
+      }
+    },
+    {
+      "n": 17,
+      "page": 9,
+      "section": "Main",
+      "stem": "HOME is written as ELJB in a certain code language. Which word in the same code will be taken as ARHB?",
+      "options": {
+        "A": "EUDK",
+        "B": "KUDE",
+        "C": "DUKE",
+        "D": "DEKU"
+      }
+    },
+    {
+      "n": 18,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a certain code language, If 'BURMUD' is written as 'RKHCKT', then how will 'ANGLE' be written as in that language?",
+      "options": {
+        "A": "REXCV",
+        "B": "QDWBU",
+        "C": "HOPLY",
+        "D": "PCVAT"
+      }
+    },
+    {
+      "n": 19,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a code language, 'ROCK' is written as 'PKAG', and 'CLUB' is written as 'AHSX'. How will 'SHOP' be written in that language ?",
+      "options": {
+        "A": "MQDL",
+        "B": "QMDL",
+        "C": "QDML",
+        "D": "QMLD"
+      }
+    },
+    {
+      "n": 20,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a code language, 'LAND' is written as 'IWKZ' and 'GOLD' is written as 'DKIZ'. How will 'TEAM' be written in that language ?",
+      "options": {
+        "A": "JXGB",
+        "B": "XJQB",
+        "C": "QAXI",
+        "D": "QXJB"
+      }
+    },
+    {
+      "n": 21,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a certain code language. 'STOPER' is written as 'XNTJJL' and 'GANOPY' is written as 'LUSIUS'. How will 'FITAND' be written in that language ?",
+      "options": {
+        "A": "KCYVSX",
+        "B": "KCYUXS",
+        "C": "KCYUSX",
+        "D": "KDYUSX"
+      }
+    },
+    {
+      "n": 22,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a certain code language 'WHEAT' is written as 'AMIFX' and 'BLACK' is written as 'FQEHO'. How will 'GREASE' be written in the same code language ?",
+      "options": {
+        "A": "KWIFWJ",
+        "B": "KWIGWI",
+        "C": "KWIFWI",
+        "D": "KWIFVJ"
+      }
+    },
+    {
+      "n": 23,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a code language BUFFALO is written as RIDCIRE and CHEETAH is written as KXBHBEF. How will LEOPARD be written in that language?",
+      "options": {
+        "A": "OBRMDOG",
+        "B": "AUXSLRBO",
+        "C": "GODMRBO",
+        "D": "OGBORDM"
+      }
+    },
+    {
+      "n": 24,
+      "page": 9,
+      "section": "Main",
+      "stem": "In a code language 'PROJECT' is written as 'VAIFULX' and 'INDULGE' is written as 'GEPQJHQ'. How to write 'GARNISH' in the same language?",
+      "options": {
+        "A": "JQMJXUO",
+        "B": "JPMIXUO",
+        "C": "JPXIMUO",
+        "D": "JQXMJUO"
+      }
+    },
+    {
+      "n": 25,
+      "page": 10,
+      "section": "Main",
+      "stem": "Based on the alphabetical order, three of the following four letter-clusters are alike in a certain way and thus form a group. Which of the following does NOT belong to that group ?",
+      "options": {
+        "A": "YBA",
+        "B": "TUX",
+        "C": "PSR",
+        "D": "MPO"
+      }
+    },
+    {
+      "n": 26,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language \"RESTED\" is written as \"SDTSFC\" and \"POINTS\" is written as \"QNJMUR\". How will \"BANNED\" be written in that code language?",
+      "options": {
+        "A": "CZOMFC",
+        "B": "ABMODE",
+        "C": "CZOODE",
+        "D": "ABMMFC"
+      }
+    },
+    {
+      "n": 27,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, 'NORMAL' is written as 'DIPKRO' and 'SOUND' is written as 'GKRPX'. How will 'CLUSTER' be written in that language?",
+      "options": {
+        "A": "BFOOVQX",
+        "B": "FBOOVQX",
+        "C": "FOBOQVX",
+        "D": "BFOVOXQ"
+      }
+    },
+    {
+      "n": 28,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language,'FIT' is written as 'FGIST' and 'KIN' is written as 'KLIMN'. How will 'JOY' be written in the that language ?",
+      "options": {
+        "A": "KKOXX",
+        "B": "JJOYY",
+        "C": "KJOYX",
+        "D": "JKOXY"
+      }
+    },
+    {
+      "n": 29,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, 'FLOAT' and 'CLAIM' is written as 'ROU' and 'OAV' respectively. In that code language, how will 'ARMED' be written?",
+      "options": {
+        "A": "SMI",
+        "B": "DMK",
+        "C": "RFC",
+        "D": "TFE"
+      }
+    },
+    {
+      "n": 30,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a code language, 'PLUM' is written as 'KQOM-FVNN'. 'BIG' in that language How will it be written?",
+      "options": {
+        "A": "YCRKTM",
+        "B": "CYRJGT",
+        "C": "XCSJTH",
+        "D": "YCRJTH"
+      }
+    },
+    {
+      "n": 31,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, 'MAKE' is written as '32' and 'QUAD' is written as '45'. How will 'SELF' be written as in that language ?",
+      "options": {
+        "A": "46",
+        "B": "44",
+        "C": "42",
+        "D": "40"
+      }
+    },
+    {
+      "n": 32,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, 'PROVED' is written as '65' and 'REMOVER' is written as '81'. How will 'DEVOUR' be written in that language ?",
+      "options": {
+        "A": "85",
+        "B": "70",
+        "C": "75",
+        "D": "80"
+      }
+    },
+    {
+      "n": 33,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, 'FIRST' is coded as 79191921 and 'TIME' is coded as 219145. How will 'BETTER' be coded in that language ?",
+      "options": {
+        "A": "352120618",
+        "B": "252020518",
+        "C": "262021519",
+        "D": "362121619"
+      }
+    },
+    {
+      "n": 34,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a code language, 'MORBID' is written as '61' and 'PARIAH' is written as '53'. How will 'RAVISHED' be written in that language ?",
+      "options": {
+        "A": "85",
+        "B": "88",
+        "C": "86",
+        "D": "96"
+      }
+    },
+    {
+      "n": 35,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, 'PARENT' is written as 148 and WRANGLE is written as 160. How will thaw word 'GRANTED' be written in the same language?",
+      "options": {
+        "A": "134",
+        "B": "69",
+        "C": "67",
+        "D": "138"
+      }
+    },
+    {
+      "n": 36,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a code language, WHALE is coded as 25103147. In that language, how will SHARK be coded?",
+      "options": {
+        "A": "211031037",
+        "B": "211032013",
+        "C": "19812811",
+        "D": "19811811"
+      }
+    },
+    {
+      "n": 37,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language 'TWO' is coded as '3' and 'FIVE' is coded as '4'. How will 'EIGHT' be coded in that code language?",
+      "options": {
+        "A": "7",
+        "B": "9",
+        "C": "5",
+        "D": "8"
+      }
+    },
+    {
+      "n": 38,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, 'TARGET' and 'PRIZE' is written as'219752' and '79985\" respectively. In that code language, How will 'QUEEN' be written?",
+      "options": {
+        "A": "83225",
+        "B": "73554",
+        "C": "82554",
+        "D": "83555"
+      }
+    },
+    {
+      "n": 39,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language REFUSE is coded as 74. In that code language, how will KIDNAP be written as ?",
+      "options": {
+        "A": "59",
+        "B": "55",
+        "C": "54",
+        "D": "57"
+      }
+    },
+    {
+      "n": 40,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, 'TORQ' is coded as '210', and 'HARN' is coded as '123'. How will 'PADM' be coded in that code language ?",
+      "options": {
+        "A": "102",
+        "B": "94",
+        "C": "86",
+        "D": "112"
+      }
+    },
+    {
+      "n": 41,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, 'ELITE' is coded as '3', and 'BLUE' is coded as '2'. How will 'ABSENCE' be coded in that langauge?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "1"
+      }
+    },
+    {
+      "n": 42,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, 'BASEBALL' is written as '45' and 'FEEDBACK' is written as '73'. How will 'PRACTICE' be written in that language ?",
+      "options": {
+        "A": "27",
+        "B": "57",
+        "C": "37",
+        "D": "47"
+      }
+    },
+    {
+      "n": 43,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, 'FORCE' is written as '641832' and 'MIST' is written as '1331920'. How will 'URANUS' be written in that language ?",
+      "options": {
+        "A": "618114618",
+        "B": "518113519",
+        "C": "518114519",
+        "D": "218132119"
+      }
+    },
+    {
+      "n": 44,
+      "page": 10,
+      "section": "Main",
+      "stem": "If 'DONKEY' is coded as '88' and 'SPARROW' is coded as '79', then how will 'PEGION' be coded?",
+      "options": {
+        "A": "73",
+        "B": "96",
+        "C": "85",
+        "D": "91"
+      }
+    },
+    {
+      "n": 45,
+      "page": 10,
+      "section": "Main",
+      "stem": "If BANK is coded as 32 and BRAKE is coded as 42, then how would CLEVER be coded ?",
+      "options": {
+        "A": "66",
+        "B": "68",
+        "C": "75",
+        "D": "71"
+      }
+    },
+    {
+      "n": 46,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, 'HUT' is coded as '55' and 'MAT' is coded as '40'. How will 'BIB' be coded in that languages ?",
+      "options": {
+        "A": "18",
+        "B": "20",
+        "C": "21",
+        "D": "19"
+      }
+    },
+    {
+      "n": 47,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, RUBBER is written as 101 and JELLY is written as 76. How will LABEL be written in that code language?",
+      "options": {
+        "A": "108",
+        "B": "132",
+        "C": "76",
+        "D": "98"
+      }
+    },
+    {
+      "n": 48,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, \"RAIN\" is written as \"45\" and \"GOOD\" is written as \"44\". How will \"DROP\" be written in that code language?",
+      "options": {
+        "A": "53",
+        "B": "56",
+        "C": "55",
+        "D": "63"
+      }
+    },
+    {
+      "n": 49,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, 'HELP' is written as '1652432' and 'SAVE' is written as '381445'. How will 'MAIL' be written in that language?",
+      "options": {
+        "A": "261926",
+        "B": "261924",
+        "C": "261934",
+        "D": "261928"
+      }
+    },
+    {
+      "n": 50,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, 'FAMOUS' is coded as '19 21 15 13 1 6', and 'GARDEN' is coded as '14 5 4 18 1 7'. How will 'LEADER' be coded in that language?",
+      "options": {
+        "A": "18 4 5 1 6 12",
+        "B": "16 4 5 1 2 15",
+        "C": "18 5 4 1 5 12",
+        "D": "17 5 4 1 8 14"
+      }
+    },
+    {
+      "n": 51,
+      "page": 10,
+      "section": "Main",
+      "stem": "In a certain code language, if France is called Italy, Italy is called Spain, Spain is called Greece, Greece is called Germany, then where is the Eiffel Tower located?",
+      "options": {
+        "A": "Greece",
+        "B": "Germany",
+        "C": "Italy",
+        "D": "France"
+      }
+    },
+    {
+      "n": 52,
+      "page": 10,
+      "section": "Main",
+      "stem": "If 'book' is called 'pen', 'pen' is called 'notebook', 'notebook' is called 'bag', and 'bag' is called 'school So what do we usually write on?",
+      "options": {
+        "A": "School",
+        "B": "Book",
+        "C": "Bag",
+        "D": "Pan"
+      }
+    },
+    {
+      "n": 53,
+      "page": 10,
+      "section": "Main",
+      "stem": "If'red' is called 'tomato' 'tomato' is called 'sweet' 'sweet' is called 'good' and 'good' is called 'clean', what will be the color of the blood?",
+      "options": {
+        "A": "Red",
+        "B": "Tomato",
+        "C": "Clear",
+        "D": "Good"
+      }
+    },
+    {
+      "n": 54,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a certain code language 'sky' means 'red', 'red' means 'tomato', 'tomato' means 'milk', 'milk' means 'soil', and 'soil' means ' is white. What plant grows in the given code language?",
+      "options": {
+        "A": "Soil",
+        "B": "White",
+        "C": "Red",
+        "D": "Tomato"
+      }
+    },
+    {
+      "n": 55,
+      "page": 11,
+      "section": "Main",
+      "stem": "If moon is called ocean, ocean is called water, water is called air, air is called sun and sun is called river, then who gives us light and heat?",
+      "options": {
+        "A": "Sea",
+        "B": "Water",
+        "C": "Sun",
+        "D": "River"
+      }
+    },
+    {
+      "n": 56,
+      "page": 11,
+      "section": "Main",
+      "stem": "If blue means pink, pink means green, green means yellow, yellow means red and red means white, then what is the color of turmeric?",
+      "options": {
+        "A": "Red",
+        "B": "Green",
+        "C": "Pink",
+        "D": "Yellow"
+      }
+    },
+    {
+      "n": 57,
+      "page": 11,
+      "section": "Main",
+      "stem": "If 'eraser' is called 'pencil', 'pencil' is called 'paper', 'paper' is called 'rice', 'rice' is called 'bank' and 'bank' is called 'car', then which one is edible? ?",
+      "options": {
+        "A": "Car",
+        "B": "Rice",
+        "C": "Paper",
+        "D": "Bank"
+      }
+    },
+    {
+      "n": 58,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a certain code language, 'apple' is called 'pear', 'pear' is called 'orange', 'orange' is called 'guava' and 'guava' is called 'watermelon'. In that language, which of the following will it be a sour fruit?",
+      "options": {
+        "A": "Guava",
+        "B": "Orange",
+        "C": "Watermelon",
+        "D": "Pear"
+      }
+    },
+    {
+      "n": 59,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a certain coded language, 'war door' is coded as 'plane potato', 'cauliflower war' is coded as 'racecar plane', and 'door tower' is coded as 'potato' mountain. What is the code word for 'tower' ?",
+      "options": {
+        "A": "plane",
+        "B": "mountain",
+        "C": "potato",
+        "D": "racecar"
+      }
+    },
+    {
+      "n": 60,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a code language, 'he is late' is coded as 'ah hu lu', 'she is expected' is coded as 'bo hu ma', and 'she arrived late' is coded as 'bo ka lu'. What is the code for the word 'arrived' ?",
+      "options": {
+        "A": "bo",
+        "B": "ka",
+        "C": "hu",
+        "D": "lu"
+      }
+    },
+    {
+      "n": 61,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a code language, 'he came forward' is coded as 'ar ka mu', 'move forward' is coded as 'ba mu', and 'he must move' is coded as 'ar du ba'. What is the code for the word 'must'?",
+      "options": {
+        "A": "du",
+        "B": "ba",
+        "C": "mu",
+        "D": "ar"
+      }
+    },
+    {
+      "n": 62,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a code language, 'sweet fruits' is coded as 're de', 'mango is sweet' is coded as 'de me ke', 'orange is citrus' is coded as 'ke le pe','eat orange' is coded as 'pe ne'. What is the code for the word 'mango' ?",
+      "options": {
+        "A": "me",
+        "B": "pe",
+        "C": "ke",
+        "D": "de"
+      }
+    },
+    {
+      "n": 63,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a code language, 'red ribbon' is coded as 'cu du', 'apple is red' is coded as 'nu mu cu', 'radish is white' is coded as 'mu ku ru', 'eat radish' is coded as 'ru pu'. What is the code for the word 'white' ?",
+      "options": {
+        "A": "mu",
+        "B": "pu",
+        "C": "ru",
+        "D": "ku"
+      }
+    },
+    {
+      "n": 64,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a code language, 'dark colurs' is coded as 'yu nu', 'days are bright' is coded as 'wu tu ku', 'nights are dark' is coded as 'ku nu pu', 'paint bright' is coded as 'wu ru'. What is the code for the word 'days'?",
+      "options": {
+        "A": "ku",
+        "B": "ru",
+        "C": "tu",
+        "D": "wu"
+      }
+    },
+    {
+      "n": 65,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a code language 'sweet fruits' is written as 're de', 'mango is sweet' as 'de me ke', 'orange is citrus' as 'ke le pe', 'eat orange ' as 'pe ne' is encoded. What would be the code for the word 'citrus' ?",
+      "options": {
+        "A": "pe",
+        "B": "ke",
+        "C": "de",
+        "D": "le"
+      }
+    },
+    {
+      "n": 66,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a code language , 'our son's car' is coded as 'fu da be', 'son's birthday today' is coded as 'la fu ja', 'today our match' is coded as 'he da la'. What is the code for the words 'car match' ?",
+      "options": {
+        "A": "he be",
+        "B": "la he",
+        "C": "da he",
+        "D": "fu be"
+      }
+    },
+    {
+      "n": 67,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a code language, 'he called them' is written as 'ka ba ma', 'I was called' is written as 'ga va ba' and 'he was hungry' is written as 'ka va da'. What is the code for the word 'hungry' in that language ?",
+      "options": {
+        "A": "da",
+        "B": "ma",
+        "C": "ba",
+        "D": "ga"
+      }
+    },
+    {
+      "n": 68,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a code language, 'people are confident' is written as 'lur bur duk', 'we are helpful' is written as 'kur duk sur', 'we have cars' is written as 'sur mur jur' and 'people have honesty' is written as 'lur jur nur'. What is the code for 'confident'?",
+      "options": {
+        "A": "bur",
+        "B": "duk",
+        "C": "jur",
+        "D": "lur"
+      }
+    },
+    {
+      "n": 69,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a certain code language 'ONE DAY AT A TIME' is written as 'J21 SN5N3N 3LGI'. How will 'DYNAMITE' be written in that code language?",
+      "options": {
+        "A": "5SA2G3L1",
+        "B": "S52NLG31",
+        "C": "S52NGL31",
+        "D": "S5N2GL31"
+      }
+    },
+    {
+      "n": 70,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a code language, 'my mistake' is written as '62', 'nice shoes' is written as '45', 'people are nice' is written as '135' and 'big mistake' is written as '29'' is written. How will 'my shoes' be written in that code language?",
+      "options": {
+        "A": "24",
+        "B": "56",
+        "C": "46",
+        "D": "41"
+      }
+    },
+    {
+      "n": 71,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a certain code language 'chips are good' is written as 'lo pur tan', 'soul are mate' is written as 'tan fu gil' and 'chips contain metal' is written as 'pur st mo'. What is the code for 'contain' in this code language?",
+      "options": {
+        "A": "tan",
+        "B": "st",
+        "C": "mo",
+        "D": "st or mo"
+      }
+    },
+    {
+      "n": 72,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a certain code language, 'he is my friend' is written as 5692', 'my aunt is ill' is written as '7635', 'friend is ill' is written as '627'. How will the word 'aunt' be written in that code language?",
+      "options": {
+        "A": "3",
+        "B": "7",
+        "C": "6",
+        "D": "5"
+      }
+    },
+    {
+      "n": 73,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a certain code language, 'honest persons' as 'yu du', 'he is honest' as 'du mu cu', 'she is emotional as mu hu ru' and 'she left' is written as 'hu nu', then how will 'emotional' be written in that code language?",
+      "options": {
+        "A": "du",
+        "B": "hu",
+        "C": "ru",
+        "D": "mu"
+      }
+    },
+    {
+      "n": 74,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a certain code language, 'Doors Are Locked' is coded by 'lo re ga', 'People Are Angry' is coded by 'sa ga pa', 'People Live Now' is coded by 'so du pa' and 'Go Now' is coded by 'bu so'. In the same code language 'sa so' stands for which of the following?",
+      "options": {
+        "A": "Angry Now",
+        "B": "Are Live",
+        "C": "Are Now",
+        "D": "People Live"
+      }
+    },
+    {
+      "n": 75,
+      "page": 11,
+      "section": "Main",
+      "stem": "If in a certain coding language 'lo re ga' means 'Bears Are Scary', 'sa ga pa' means 'Kings Are Angry', 'so du pa' means 'Kings Will Dic' and 'bu so' means 'They Die'. In the same code language, what would 'bu du' mean?",
+      "options": {
+        "A": "They Die",
+        "B": "Hungry Are",
+        "C": "Hungry Die",
+        "D": "They Will"
+      }
+    },
+    {
+      "n": 76,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a certain code language, 'strength to innovate ' is coded as '42 64 32' and 'strength to create' is coded as '32 42 24'. What is the code for 'create' in that language ?",
+      "options": {
+        "A": "24",
+        "B": "32",
+        "C": "64",
+        "D": "42"
+      }
+    },
+    {
+      "n": 77,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a certain code language, 'mix jaggery well' is written as 'rb co ot' and 'well done boss' is written as 'cx rb op'. How will 'well' be written in the same code language?",
+      "options": {
+        "A": "ot",
+        "B": "te",
+        "C": "co",
+        "D": "rb"
+      }
+    },
+    {
+      "n": 78,
+      "page": 11,
+      "section": "Main",
+      "stem": "In a certain code language, '629' is coded as 'namo te fek', '943' is coded as 'dump to te' and '748' is coded as 'to fir tako'. What is the code for the letter '3' in that language?",
+      "options": {
+        "A": "to",
+        "B": "te",
+        "C": "fir",
+        "D": "dump"
+      }
+    },
+    {
+      "n": 79,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a certain code language, '567' is coded as 'high and low', '629' is coded as 'Building are high', and '531' is coded as 'hot and sour'. What is the code for the word 'low in that language ?",
+      "options": {
+        "A": "6",
+        "B": "5",
+        "C": "7",
+        "D": "2"
+      }
+    },
+    {
+      "n": 80,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a certain code language, 'Earth and Sun' is coded as '2% J4 9&' and 'Sun and Stars' is coded as '9& 6# 2%'. What is the code for 'Stars' in the given code language ?",
+      "options": {
+        "A": "J4",
+        "B": "9&",
+        "C": "6#",
+        "D": "2%"
+      }
+    },
+    {
+      "n": 81,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a certain code language, 'Read the code' is coded as '18 20 3', 'Decode the code' is coded as '4 20 3' and 'code is easy' is coded as '3 9 5'. How will 'make one code' be coded in that language?",
+      "options": {
+        "A": "19185",
+        "B": "121315",
+        "C": "13153",
+        "D": "125"
+      }
+    },
+    {
+      "n": 82,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a certain code language 'I know you' is written as 'Ha Hi He', 'I Like French' is written as 'Ho Hu Ha' and 'You like me' is written as 'He Ho Haa'. How will 'me' be written in that language?",
+      "options": {
+        "A": "Haa",
+        "B": "Hu",
+        "C": "Ha",
+        "D": "Hi"
+      }
+    },
+    {
+      "n": 83,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a code language, ' sign up for sports' is written as 'kri rit vin gab', ' the sign post fell' is written as 'pri dan rit nei', 'the post is closed' is written as 'dan sha fal pri' . What is the code for the word 'fell' in this language?",
+      "options": {
+        "A": "nei",
+        "B": "fal",
+        "C": "rit",
+        "D": "pri"
+      }
+    },
+    {
+      "n": 84,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a code language, 'trek to the mountain' is written as 'tes mel fern lor', 'the mountain is high' is written as 'lor max fern ani', 'high to the sky' is written as 'tes ani sav fern.' What is the code for the word 'trek' in this language ?",
+      "options": {
+        "A": "fern",
+        "B": "mel",
+        "C": "max",
+        "D": "tes"
+      }
+    },
+    {
+      "n": 85,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a code language, sky is blue' is written as 'mud pot sum', 'I like blue' is written as 'mud man log' and 'I am sky' is written as 'man red pot'. What is the code for the word 'is' in this language ?",
+      "options": {
+        "A": "mud",
+        "B": "sum",
+        "C": "red",
+        "D": "man"
+      }
+    },
+    {
+      "n": 86,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a code language, 'you can start' is written as 'sent room dark', 'can you read' is written as 'room sent less', and 'you are good' is written as 'tyre room spin'. What is the code for the word 'can' in this language ?",
+      "options": {
+        "A": "dark",
+        "B": "room",
+        "C": "sent",
+        "D": "spin"
+      }
+    },
+    {
+      "n": 87,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a certain coding system 'Read this book' is coded as '689', 'This book is useful' is coded as '9675', and 'Useful book is good' is coded as '5479'. What is the code for 'This book is good' in this system?",
+      "options": {
+        "A": "4965",
+        "B": "6457",
+        "C": "8495",
+        "D": "7859"
+      }
+    },
+    {
+      "n": 88,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a certain coding system 'watches are beautiful' is coded as 856, 'Beautiful things are expensive' is coded as '3845', and 'Expensive things are preferred' is coded as '3874'. How will 'Watches are preferred' be coded in this coding system?",
+      "options": {
+        "A": "765",
+        "B": "476",
+        "C": "785",
+        "D": "876"
+      }
+    },
+    {
+      "n": 89,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a code language, if 'I like chocolates' is written as '958', 'we bought chocolates' is written as '153', and 'we like them' is written as '816', then how will 'I bought them' be written in that language?",
+      "options": {
+        "A": "936",
+        "B": "859",
+        "C": "951",
+        "D": "251"
+      }
+    },
+    {
+      "n": 90,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a code language, if 'fast and furious' is written as 'co mo jo', 'do it fast' is written as 'cha mo ga', and 'she did it' is written as 'ga la nop', What will be the code for the word 'do' in that language?",
+      "options": {
+        "A": "ga",
+        "B": "mo",
+        "C": "cha",
+        "D": "nop"
+      }
+    },
+    {
+      "n": 91,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a code language, if 'my personal use' is coded as '521', 'use these thing' is coded as '169', 'personal things' is coded as '29', then which phrase is coded as '569' will be rendered by in this language?",
+      "options": {
+        "A": "my personal things",
+        "B": "my these things",
+        "C": "these personal things",
+        "D": "my personal use"
+      }
+    },
+    {
+      "n": 92,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a code language, if 'get up now' is written as 'pax max rax', 'he will get' is written as 'max dax zax' and 'will it stop' is written as 'zax kax lax', Then what is the code word 'dax' used for in a language?",
+      "options": {
+        "A": "get",
+        "B": "it",
+        "C": "he",
+        "D": "will"
+      }
+    },
+    {
+      "n": 93,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a sign language, if 'you are there' is written as 'ter der jer', we stay here' is written as 'yer mer ner' 'we are late' is written as 'ser ner der' and 'I stay there' ' is written as 'yer fer jer', then how will 'you stay late' be written in that language?",
+      "options": {
+        "A": "ter mer ser",
+        "B": "ter yer mer",
+        "C": "ter yer ser",
+        "D": "der yer ser"
+      }
+    },
+    {
+      "n": 94,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a code language, if 'she was working' is written as '592'. 'I was curious' is written as '267' and 'she is curious' is written as '987', then what will be the language for the word 'she'?",
+      "options": {
+        "A": "9",
+        "B": "5",
+        "C": "8",
+        "D": "2"
+      }
+    },
+    {
+      "n": 95,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a certain code language, 'cool drinks available here' is written as 'bhu man juk lop', 'available lost objects here' is written as 'gan bhu nut juk', 'be cool search objects' is written as 'vax der man nut', and 'available drinks desert search' is written as 'but juk der lop'. How will 'lost drinks' be written in that language?",
+      "options": {
+        "A": "juk gan",
+        "B": "nut gan",
+        "C": "lop bhu",
+        "D": "gan lop"
+      }
+    },
+    {
+      "n": 96,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a certain code language, 'she needs some medicines' is written as '1542', 'take some water' is written as '849', 'he needs rest' is written as '713', and 'she is water' is written as '269'. How will 'take medicines' be written in that language?",
+      "options": {
+        "A": "45",
+        "B": "81",
+        "C": "92",
+        "D": "85"
+      }
+    },
+    {
+      "n": 97,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a certain code language, 'DWELL' is written as 'UBTMM' and 'OVER' is written as 'JCTG'. How will 'DYAD' be written in that code language ?",
+      "options": {
+        "A": "ZUXU",
+        "B": "UZXU",
+        "C": "XUZU",
+        "D": "UXZU"
+      }
+    },
+    {
+      "n": 98,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a certain code language, 'HABITAT' is coded as 0101010 and 'UNDERNEATH' is coded as 1001001100. How will 'POSSIBLE' be coded in the same code language ?",
+      "options": {
+        "A": "10110001",
+        "B": "01111001",
+        "C": "01010011",
+        "D": "10110110"
+      }
+    },
+    {
+      "n": 99,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a code language, 'LOGIC' is coded as D61K and 'POWER' is coded as S92O. How will 'MEDIA' be coded in the same language ?",
+      "options": {
+        "A": "N47Z",
+        "B": "B46L",
+        "C": "B47L",
+        "D": "N42L"
+      }
+    },
+    {
+      "n": 100,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a code language, 'WRITE' is coded as D60X and 'APPLE' is coded as D35B. How will 'BASIS' be coded in the same language ?",
+      "options": {
+        "A": "R37C",
+        "B": "T35A",
+        "C": "R35C",
+        "D": "T37A"
+      }
+    },
+    {
+      "n": 101,
+      "page": 12,
+      "section": "Main",
+      "stem": "In a certain code language,'VITAL' is coded as K49W and 'WOMAN' is coded as M51X. How will 'POWER' to be coded in that language ?",
+      "options": {
+        "A": "M60S",
+        "B": "Q62Q",
+        "C": "M78S",
+        "D": "Q72M"
+      }
+    },
+    {
+      "n": 102,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a code language, 'BLOOD' is coded as C38C and 'DEBUT' is coded as S42E. How will 'GRAIN' be coded in the same language?",
+      "options": {
+        "A": "M41H",
+        "B": "L41F",
+        "C": "F39L",
+        "D": "M39H"
+      }
+    },
+    {
+      "n": 103,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language, 'BEAM' is coded as '2349' and 'MEAN' is coded as '4327'. What is the code for 'N' in that language ?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "2",
+        "D": "7"
+      }
+    },
+    {
+      "n": 104,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language, 'CERTAIN' is coded as '9643821' and 'UNCERTAIN' is coded as '964382117'. What is the code for 'U' in that language ?",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "1",
+        "D": "4"
+      }
+    },
+    {
+      "n": 105,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language, 'INDULGE' is coded as '48' and 'PURGE' is coded as '24'. How will \"PUNY\" be coded in that language ?",
+      "options": {
+        "A": "15",
+        "B": "20",
+        "C": "25",
+        "D": "18"
+      }
+    },
+    {
+      "n": 106,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language, 'BROW' is coded as '7542' and 'WORM' is coded as '7295'. What is the code for 'B' in the given code language ?",
+      "options": {
+        "A": "4",
+        "B": "7",
+        "C": "9",
+        "D": "2"
+      }
+    },
+    {
+      "n": 107,
+      "page": 13,
+      "section": "Main",
+      "stem": "'MANGO' is related to '35' in a certain way based on the English alphabetical order. In the same way, 'CHERRIES' is related to '56'. To which of the following is 'ADMINISTRATION' related, following the same logic ?",
+      "options": {
+        "A": "98",
+        "B": "102",
+        "C": "112",
+        "D": "96"
+      }
+    },
+    {
+      "n": 108,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language, 'RISK' is coded as '3921' and 'KIRT' is coded as '1693'. How is 'S' coded in the given code language ?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "1",
+        "D": "6"
+      }
+    },
+    {
+      "n": 109,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language. 'BABE' is coded as '20' and 'EACH' is coded as '34'. What is the code for 'FACT' in the given code language ?",
+      "options": {
+        "A": "63",
+        "B": "64",
+        "C": "62",
+        "D": "60"
+      }
+    },
+    {
+      "n": 110,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language, '78623' is coded as 'TAKEN' and '32685' is coded as 'TOKEN'. What is the code for '5' in that language ?",
+      "options": {
+        "A": "O",
+        "B": "E",
+        "C": "A",
+        "D": "T"
+      }
+    },
+    {
+      "n": 111,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language, 'FLOWER' is coded as '85'. 'STARS' is coded as '82' and 'MOON' is coded as '61'. How will 'PACK' be coded in that language ?",
+      "options": {
+        "A": "30",
+        "B": "32",
+        "C": "36",
+        "D": "35"
+      }
+    },
+    {
+      "n": 112,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language, 'CONCEPT' is written as '3o14c5p20' and 'PROBELM' is written as '16r15b12e13'. How will 'SOLVE' be written in that language?",
+      "options": {
+        "A": "Po12v5",
+        "B": "19o12v5",
+        "C": "18o12v5",
+        "D": "19o1345"
+      }
+    },
+    {
+      "n": 113,
+      "page": 13,
+      "section": "Main",
+      "stem": "If PILOT = 63, RICE = 73 then RULE=?",
+      "options": {
+        "A": "65",
+        "B": "63",
+        "C": "52",
+        "D": "56"
+      }
+    },
+    {
+      "n": 114,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language, if TELEPHONE is written as FOPIQFMFU, then how will INTERCOM be coded ?",
+      "options": {
+        "A": "NPFDSUOJ",
+        "B": "NPDFSUJO",
+        "C": "NPDSFUOJ",
+        "D": "NDFPSUOJ"
+      }
+    },
+    {
+      "n": 115,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language, 'PAIN' is written as '42', 'GOMT' is written as '57'. What is the code for 'TORN' in that code language ?",
+      "options": {
+        "A": "71",
+        "B": "65",
+        "C": "69",
+        "D": "67"
+      }
+    },
+    {
+      "n": 116,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language 'GON' is written as '33', 'PAD' is written as '18'. What is the code for 'TIR' in that code language?",
+      "options": {
+        "A": "44",
+        "B": "45",
+        "C": "51",
+        "D": "46"
+      }
+    },
+    {
+      "n": 117,
+      "page": 13,
+      "section": "Main",
+      "stem": "If the code of FRUIT is 58281, then what is the code of GRAPES?",
+      "options": {
+        "A": "718116519",
+        "B": "791751",
+        "C": "680649",
+        "D": "680640"
+      }
+    },
+    {
+      "n": 118,
+      "page": 13,
+      "section": "Main",
+      "stem": "'COUNSEL' is related to 'BITIRAK' in the same way as 'GUIDANCE' is related to ......... .",
+      "options": {
+        "A": "FPHZZKAB",
+        "B": "HOKYBJBA",
+        "C": "FOHYZKBB",
+        "D": "FOHYZJBB"
+      }
+    },
+    {
+      "n": 119,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language, INCEPTION is written as MLRGKVXMR, than what is the code of GRAVITY?",
+      "options": {
+        "A": "BRGEZIT",
+        "B": "GBREZIT",
+        "C": "BGRZEIT",
+        "D": "BGREZIT"
+      }
+    },
+    {
+      "n": 120,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language if BUCKINGHAM is coded as 79, TRANSFORMER is coded as 136, this how will MASSACHUSETTS be coded?",
+      "options": {
+        "A": "163",
+        "B": "165",
+        "C": "153",
+        "D": "155"
+      }
+    },
+    {
+      "n": 121,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language, 'MAPED' is coded as '64' and 'RECK' is coded as '41'. How will 'NOSE' be coded as in that language?",
+      "options": {
+        "A": "57",
+        "B": "63",
+        "C": "82",
+        "D": "51"
+      }
+    },
+    {
+      "n": 122,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language, if SECTOR = 82, TANKER = 93, PLASTER will be coded as?",
+      "options": {
+        "A": "98",
+        "B": "91",
+        "C": "93",
+        "D": "95"
+      }
+    },
+    {
+      "n": 123,
+      "page": 13,
+      "section": "Main",
+      "stem": "In certain code PASTRY is written as Q1TUSZ, How will be RINGS written in that code ?",
+      "options": {
+        "A": "S9OIT",
+        "B": "S9OHT",
+        "C": "SJOHT",
+        "D": "S9PHT"
+      }
+    },
+    {
+      "n": 124,
+      "page": 13,
+      "section": "Main",
+      "stem": "If 'TRACTOR' is coded as 117 in a code language, how will 'MEDICAL' be coded in the same code language ?",
+      "options": {
+        "A": "98",
+        "B": "102",
+        "C": "100",
+        "D": "95"
+      }
+    },
+    {
+      "n": 125,
+      "page": 13,
+      "section": "Main",
+      "stem": "In certain code TRAINER is written as US19O5S, How will be FASHION written in that code?",
+      "options": {
+        "A": "G1TI915O",
+        "B": "G1TI715O",
+        "C": "GBTI915O",
+        "D": "G1TI9PO"
+      }
+    },
+    {
+      "n": 126,
+      "page": 13,
+      "section": "Main",
+      "stem": "If in a certain language 'PARROT' is written as '123345' and 'SOAT' is written as '6425', then how would 'ROAST' be written in that code ?",
+      "options": {
+        "A": "34625",
+        "B": "32564",
+        "C": "32456",
+        "D": "34265"
+      }
+    },
+    {
+      "n": 127,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain language 'FIGHT' is written as 'TGHFI', then how will 'PAPER' be written in that code ?",
+      "options": {
+        "A": "RPEPA",
+        "B": "REPPA",
+        "C": "PEARP",
+        "D": "PAEPR"
+      }
+    },
+    {
+      "n": 128,
+      "page": 13,
+      "section": "Main",
+      "stem": "If 'WAY' is coded as 679, 'MAY' is coded as 579, then 'YAW' will be coded as :",
+      "options": {
+        "A": "976",
+        "B": "769",
+        "C": "679",
+        "D": "579"
+      }
+    },
+    {
+      "n": 129,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a code, 'BOMBAY' is coded as 'CNNABX', then what will be the code of 'DELHI' ?",
+      "options": {
+        "A": "EDMJG",
+        "B": "GMDEJ",
+        "C": "DEGMJ",
+        "D": "EDMGJ"
+      }
+    },
+    {
+      "n": 130,
+      "page": 13,
+      "section": "Main",
+      "stem": "In a certain code language, COMPUTER is written as RFUVQNPC. How will MEDICINE be written in that code langauge ?",
+      "options": {
+        "A": "MFEDJJOE",
+        "B": "EOJDEJFM",
+        "C": "MFEJDJOE",
+        "D": "EOJDJEFM"
+      }
+    },
+    {
+      "n": 131,
+      "page": 14,
+      "section": "Main",
+      "stem": "If in a certain code DEAF is written as 3587 and FILE is written as 7465 then IDEAL will be written as :",
+      "options": {
+        "A": "43568",
+        "B": "43586",
+        "C": "63548",
+        "D": "48536"
+      }
+    },
+    {
+      "n": 132,
+      "page": 14,
+      "section": "Main",
+      "stem": "If in a certain code MBS is coded as ODU then BRL will be coded as ?",
+      "options": {
+        "A": "DTN",
+        "B": "DUN",
+        "C": "CSN",
+        "D": "CTN"
+      }
+    },
+    {
+      "n": 133,
+      "page": 14,
+      "section": "Main",
+      "stem": "If STATEMENT is coded as TNEM ETATS then POLITICAL will be coded as :",
+      "options": {
+        "A": "LACITILOP",
+        "B": "LCATILIOP",
+        "C": "OPILITACL",
+        "D": "LACITIPOL"
+      }
+    },
+    {
+      "n": 134,
+      "page": 14,
+      "section": "Main",
+      "stem": "If TRAIN is written as WUDLQ, then BUS would be written as ..... .",
+      "options": {
+        "A": "EXU",
+        "B": "DWU",
+        "C": "EXV",
+        "D": "VXE"
+      }
+    },
+    {
+      "n": 135,
+      "page": 14,
+      "section": "Main",
+      "stem": "In a certain code language, 389 means run very fast, 964 means come back fast & 487 means run and come, then which code will work for come ?",
+      "options": {
+        "A": "7",
+        "B": "9",
+        "C": "4",
+        "D": "8"
+      }
+    },
+    {
+      "n": 136,
+      "page": 14,
+      "section": "Main",
+      "stem": "'GIVE' is written as 5137 in a code language & 'BAT' is written as 924 in a code language, then how 'GATE' will be written ?",
+      "options": {
+        "A": "5427",
+        "B": "5724",
+        "C": "5247",
+        "D": "2547"
+      }
+    },
+    {
+      "n": 137,
+      "page": 14,
+      "section": "Main",
+      "stem": "if 'MEAT' is written as 'TEAM', then 'BALE' is written as",
+      "options": {
+        "A": "ELAB",
+        "B": "EABL",
+        "C": "EBLA",
+        "D": "EALB"
+      }
+    },
+    {
+      "n": 138,
+      "page": 14,
+      "section": "Main",
+      "stem": "In a certain languages, TOUR is coded as 1234. How is CLEAR coded as 56784 and SPARE is as 90847, then how is SCULPTURE CODED in that language?",
+      "options": {
+        "A": "1453602347",
+        "B": "953401347",
+        "C": "85360245",
+        "D": "953601347"
+      }
+    },
+    {
+      "n": 139,
+      "page": 14,
+      "section": "Main",
+      "stem": "If CBE means BAD then GMBH means",
+      "options": {
+        "A": "GOOD",
+        "B": "FOOD",
+        "C": "FLAG",
+        "D": "FLOG"
+      }
+    },
+    {
+      "n": 140,
+      "page": 14,
+      "section": "Main",
+      "stem": "If CAT = 12, then MAN = ?",
+      "options": {
+        "A": "14",
+        "B": "24",
+        "C": "16",
+        "D": "15"
+      }
+    },
+    {
+      "n": 141,
+      "page": 14,
+      "section": "Main",
+      "stem": "If PAINT is written as 63257, SHIRT is written as 15297, then how HAIR would be written ?",
+      "options": {
+        "A": "5279",
+        "B": "1982",
+        "C": "5329",
+        "D": "None"
+      }
+    },
+    {
+      "n": 142,
+      "page": 14,
+      "section": "Main",
+      "stem": "In a certain languages, MNOPQ is coded as ABCDE How is QPONM coded in that language ?",
+      "options": {
+        "A": "EDCBA",
+        "B": "BDCBA",
+        "C": "CBABD",
+        "D": "EDBCA"
+      }
+    },
+    {
+      "n": 143,
+      "page": 14,
+      "section": "Main",
+      "stem": "In a certain code, 'commit also make policy' is written as '%e4 !y6 #t6 @04', 'policy craze anger mobile' is written as '!y6 @r5 %e6 #e5', 'allow mild course prize' is written as '!e5 %d4 #e6 @w5', and 'craze manner pump artist' is written as '%r6 #e5 !p4 @t6'. Then, what does '#e6 #e5 @04' stand for?",
+      "options": {
+        "A": "commite also mind",
+        "B": "policy anger mobile",
+        "C": "craze also course",
+        "D": "allow mind pump"
+      }
+    },
+    {
+      "n": 144,
+      "page": 14,
+      "section": "Main",
+      "stem": "In a certain code language, 'pen pencil' is written as '$%' and 'eraser sharpener' is written as '@#' and 'pencil eraser' is written as '$@'. Then what is the code for 'pen'?",
+      "options": {
+        "A": "#",
+        "B": "$",
+        "C": "@",
+        "D": "%"
+      }
+    },
+    {
+      "n": 145,
+      "page": 14,
+      "section": "Main",
+      "stem": "In a certain code, TELEPHONE is written as ENOHPELET. How is ALIGATOR written in that code?",
+      "options": {
+        "A": "ROTAGILA",
+        "B": "ROTAGAIL",
+        "C": "ROTAGILE",
+        "D": "ROTEGILA"
+      }
+    },
+    {
+      "n": 146,
+      "page": 14,
+      "section": "Main",
+      "stem": "If husband is called wife, wife is called grandfather, grandfather is called grand-mother, grandmother is called maternal grandfather, maternal grandfather is called maternal uncle and maternal uncle is called maternal aunt, then what will the father of the mother be called?",
+      "options": {
+        "A": "Maternal grandmother",
+        "B": "Maternal uncle",
+        "C": "Maternal grandfather",
+        "D": "Maternal aunt"
+      }
+    },
+    {
+      "n": 147,
+      "page": 14,
+      "section": "Main",
+      "stem": "In a certain code language, '3' is coded as 'Z', '4' is coded as 'Y', '5' is coded as 'X', '6' is coded as 'W' and '7' is coded as 'V'. Find the code for '5734'.",
+      "options": {
+        "A": "XVZY",
+        "B": "YZVX",
+        "C": "ZVXY",
+        "D": "VZXY"
+      }
+    },
+    {
+      "n": 148,
+      "page": 14,
+      "section": "Main",
+      "stem": "In a certain code language if 'Cow' is called 'Goat'; Goat is called 'Lion'; 'Lion' is called 'Dog', then which of the following animals is the king of forest?",
+      "options": {
+        "A": "Lion",
+        "B": "Dog",
+        "C": "Cow",
+        "D": "Goat"
+      }
+    },
+    {
+      "n": 149,
+      "page": 14,
+      "section": "Main",
+      "stem": "If a certain code language, MICROWAVE is written as LJBSNXZWD, how is POPULAR written in that code?",
+      "options": {
+        "A": "QBIKVPAV",
+        "B": "OPKVPAV",
+        "C": "OPOVKBQ",
+        "D": "KBQVOPA"
+      }
+    },
+    {
+      "n": 150,
+      "page": 14,
+      "section": "Main",
+      "stem": "If the TAP is coded as SZO, then how is FREEZE coded?",
+      "options": {
+        "A": "ATSSTS",
+        "B": "EQDDYD",
+        "C": "ESDDYD",
+        "D": "EQDDZD"
+      }
+    }
+  ]
+}

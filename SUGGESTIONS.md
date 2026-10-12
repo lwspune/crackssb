@@ -213,7 +213,13 @@ ch5 p17-21 · ch6 p22-23 · ch7 p24-28 · ch8 p29-34 · ch9 p35-37 · ch10 p38-4
   option is misprinted "North-Eeast"). Held: Q6, Q10, Q41, Q61, Q62, Q66, Q87
   (reasons in the key file). Medium: Q5, Q9, Q44, Q45, Q65, Q91, Q95. Three
   names swapped (Q17, Q89, Q97; D27).
-- **Next:** Chapter 3 (Coding-Decoding, p9-14), then 5, 7, 10, 1, 2.
+- ~~Chapter 3, Coding-Decoding~~ — done 2026-10-12: 144 of 150 seeded. Every
+  code rule runs on the book's own examples first (the key file will not load
+  otherwise); phrase codes are solved by intersection (`solveCodes`, checked
+  as `codeSet`). Held: Q7 (example lengths differ), Q27, Q69 (no rule found),
+  Q98 (the right code is not an option), Q121 (examples disagree), Q124 (one
+  example fixes no rule). Medium: Q23 (one example misprinted), Q58, Q140.
+- **Next:** Chapter 5 (Logical Sequence, p17-21), then 7, 10, 1, 2.
 
 ### Backfill ledger: Chapter 11's test onto the shared chapter suite
 `oir-agrawal-series.test.ts` predates `oir-chapter-suite.ts` and carries its own

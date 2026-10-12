@@ -24,6 +24,9 @@ import type { OptionLabel } from '../bank.ts';
  *   option reads as it, and that one is keyed. When no option does (or the
  *   answer is null: no such letter), the key is the one "None of these" / "No
  *   letter" option.
+ * - `codeSet`: the keyed option holds exactly these codes in any order, split
+ *   by `sep` ('' for single characters, ' ' for words), and no other option
+ *   does. For phrase codes, where the book orders the answer as it likes.
  * - `reasoned`: no mechanical check; the rule is the argument.
  */
 export type KeyCheck =
@@ -34,6 +37,7 @@ export type KeyCheck =
   | { readonly kind: 'next'; readonly sequence: readonly string[] }
   | { readonly kind: 'letters' }
   | { readonly kind: 'computed'; readonly answer: string | number | null }
+  | { readonly kind: 'codeSet'; readonly codes: readonly string[]; readonly sep: '' | ' ' }
   | { readonly kind: 'reasoned' };
 
 /**

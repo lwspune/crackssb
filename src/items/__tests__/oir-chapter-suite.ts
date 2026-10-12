@@ -72,6 +72,14 @@ function runCheck(check: KeyCheck, q: SourceQuestion, k: KeyedEntry): void {
       expect(nones, `no option reads as ${check.answer}, so the key is the one "none" option`).toEqual([k.key]);
       return;
     }
+    case 'codeSet': {
+      const bag = (xs: readonly string[]) => xs.map((x) => x.toUpperCase()).sort().join('|');
+      const tokens = (s: string) => (check.sep === '' ? [...s.replace(/\s+/g, '')] : s.trim().split(/\s+/));
+      const want = bag(check.codes);
+      const fits = OPTION_LABELS.filter((l) => bag(tokens(q.options[l])) === want);
+      expect(fits, `options holding exactly ${check.codes.join(check.sep || ',')}`).toEqual([k.key]);
+      return;
+    }
     case 'reasoned':
       return;
     default:

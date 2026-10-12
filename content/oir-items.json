@@ -3,6 +3,16 @@
   "sources": [
     {
       "source": "agrawal-examcart-oir",
+      "chapter": 3,
+      "title": "Coding Decoding",
+      "pages": [
+        9,
+        14
+      ],
+      "file": "content/oir/agrawal-examcart/ch03-coding-decoding.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
       "chapter": 4,
       "title": "Word Formation",
       "pages": [
@@ -52,13 +62,45 @@
       "file": "content/oir/agrawal-examcart/ch11-series.source.json"
     }
   ],
-  "itemCount": 356,
-  "heldCount": 17,
+  "itemCount": 500,
+  "heldCount": 23,
   "confidence": {
-    "high": 340,
-    "medium": 16
+    "high": 481,
+    "medium": 19
   },
   "held": [
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q7",
+      "reason": "FLAVOR has six letters but its code VUROLFA has seven, so no letter-for-letter rule can be read off the example."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q27",
+      "reason": "No rule found that turns NORMAL into DIPKRO and SOUND into GKRPX: the shifts differ position to position and between the two words, and no rearrangement fits."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q69",
+      "reason": "No rule found linking ONE DAY AT A TIME (five words) to J21 SN5N3N 3LGI (three groups); no reading of the groups fits the words."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q98",
+      "reason": "UNDERNEATH fixes the rule as vowel 1, consonant 0 (HABITAT agrees). POSSIBLE then codes as 01001001, which is not an option; the opposite reading gives 10110110 (D).",
+      "lean": "D"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q121",
+      "reason": "RECK fits the sum of letter positions plus the number of letters (37 + 4 = 41), but MAPED then gives 44, not the printed 64, and no other rule tried fits both. That rule would give NOSE 57 (A).",
+      "lean": "A"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q124",
+      "reason": "One example, 117 for TRACTOR, does not fix a rule: its letters sum to 95 and their reverse positions to 94, and no rule built on either leads to an option for MEDICAL."
+    },
     {
       "source": "agrawal-examcart-oir",
       "source_ref": "ch6 p22 q7",
@@ -157,6 +199,3178 @@
     }
   ],
   "items": [
+    {
+      "id": "oir-agx-ch03-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language 'RESULT' is written as 'LUTERS' and 'BARLEY' is written as 'ELYABR'. How will 'HEAVEN' be written in the same code language ?",
+        "options": {
+          "A": "AEVNHA",
+          "B": "EANVHE",
+          "C": "EVNEHA",
+          "D": "VEENAH"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q1",
+      "key_basis": "derived",
+      "rule": "Letters 5, 4, 6, 2, 1, 3 in that order: RESULT → LUTERS, BARLEY → ELYABR, HEAVEN → EVNEHA.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q002",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain language, DANGER is coded as REGNAD, DETAIL is coded as LIATED, how will DOCTOR be coded in the same language ?",
+        "options": {
+          "A": "CODTOR",
+          "B": "ROTCOD",
+          "C": "CODROT",
+          "D": "EPDUPS"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q2",
+      "key_basis": "derived",
+      "rule": "The word reversed: DOCTOR → ROTCOD.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'HUSBAND' is written as 'DNABSUH' and 'CLEARLY' is written as 'YLRAELC'. How will 'HARBOUR' be written in that language?",
+        "options": {
+          "A": "ORUBHRA",
+          "B": "RUOBRAH",
+          "C": "ORUBRAH",
+          "D": "RUOBRHA"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q3",
+      "key_basis": "derived",
+      "rule": "The word reversed: HARBOUR → RUOBRAH.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, if EXTRNSIC is written as CIXESNRT, then how will LEFTWING be written in that code language?",
+        "options": {
+          "A": "GNELIWTF",
+          "B": "ELGNTFIW",
+          "C": "GNIWTFEL",
+          "D": "TFELGNIW"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q4",
+      "key_basis": "derived",
+      "rule": "Letters 8, 7, 2, 1, 6, 5, 4, 3: LEFTWING → GNELIWTF.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 'EDITION' is written as 'IDETNOI' then how will 'MEDICAL' be written in that code language?",
+        "options": {
+          "A": "DEMILAC",
+          "B": "LACIMED",
+          "C": "DIEMCAL",
+          "D": "CADILEM"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q5",
+      "key_basis": "derived",
+      "rule": "First three reversed, the middle letter kept, last three reversed: MEDICAL → DEM I LAC.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language SHOULDER is written as DEHLORSU. How will STOMACH be written in that language?",
+        "options": {
+          "A": "EDHTRE",
+          "B": "DEHJZOE",
+          "C": "ACHMOST",
+          "D": "DEHHETS"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q6",
+      "key_basis": "derived",
+      "rule": "The letters in alphabetical order: STOMACH → ACHMOST.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language 'DIAGNOSE' is written as 'ADEGINOS'. How will 'REMOVAL' be written in that language?",
+        "options": {
+          "A": "AELNORU",
+          "B": "AELMORV",
+          "C": "ALEMROV",
+          "D": "AELOMVR"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q8",
+      "key_basis": "derived",
+      "rule": "The letters in alphabetical order: REMOVAL → AELMORV.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language 'OCTAGRAM' is written as 'ACOTAGMR'. How will 'GRACEFUL' be written in that code language?",
+        "options": {
+          "A": "ACGREFUL",
+          "B": "URLGACEF",
+          "C": "ACGREFLU",
+          "D": "ACEFGLRU"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q9",
+      "key_basis": "derived",
+      "rule": "Each half sorted: GRAC → ACGR, EFUL → EFLU.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'RATIONALE is written as NOIELATAR. How will STATEMENT be written in that language?",
+        "options": {
+          "A": "ETATNEMTS",
+          "B": "EMTTNETAS",
+          "C": "METTAENST",
+          "D": "METTNEATS"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q10",
+      "key_basis": "derived",
+      "rule": "Split into threes and reverse each (STA TEM ENT → ATS MET TNE), then write the second, third and first: METTNEATS.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If TEMPLE is coded as ELPMET then how CHURCH will be coded as?",
+        "options": {
+          "A": "HCURHC",
+          "B": "HCRUHC",
+          "C": "HCURCH",
+          "D": "HCRUCH"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q11",
+      "key_basis": "derived",
+      "rule": "The word reversed: CHURCH → HCRUHC.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'HEAD' is coded as JHCG, and 'NOSE' is coded as PRUH. How will 'HAND' be coded in the same language ?",
+        "options": {
+          "A": "JDQG",
+          "B": "KCQF",
+          "C": "JDPG",
+          "D": "KDQG"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q12",
+      "key_basis": "derived",
+      "rule": "+2, +3, +2, +3: HAND → JDPG.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language 'PARUL' is coded as RDTXN and 'MADHU' is coded as ODFKW. How will 'VIJAY' be coded in the same language ?",
+        "options": {
+          "A": "XLMDA",
+          "B": "XMLCA",
+          "C": "XLLDA",
+          "D": "XKLCB"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q13",
+      "key_basis": "derived",
+      "rule": "+2, +3 alternately, round the alphabet: VIJAY → XLLDA.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language,'MERCHANT' is written as 'NFSCHCPV' and 'INTERIOR' is written as 'JOUERKQT'. How will 'JUNCTION' be written in that code language?",
+        "options": {
+          "A": "KVOCTJQP",
+          "B": "KVOCTJPO",
+          "C": "KVOCTKPQ",
+          "D": "KVOCTKQP"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q14",
+      "key_basis": "derived",
+      "rule": "First three +1, middle two kept, last three +2: JUNCTION → KVOCTKQP.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, if 'EAR' is written as '2037' and 'PBU' is written as '23418', how will 'DIG' be written in the same code language ?",
+        "options": {
+          "A": "4108",
+          "B": "9116",
+          "C": "8114",
+          "D": "7106"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q15",
+      "key_basis": "derived",
+      "rule": "Reverse the word and write each letter's position + 2: DIG → G I D → 9 11 6.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'BUTTER' is written as 'CWWSCO' and 'THEORY' is written as 'UJHNPV'. How will 'LATENT' be written in that language?",
+        "options": {
+          "A": "MEVCKR",
+          "B": "MDXCLQ",
+          "C": "MCWDMP",
+          "D": "MCWDLQ"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q16",
+      "key_basis": "derived",
+      "rule": "+1, +2, +3, −1, −2, −3: LATENT → MCWDLQ.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "HOME is written as ELJB in a certain code language. Which word in the same code will be taken as ARHB?",
+        "options": {
+          "A": "EUDK",
+          "B": "KUDE",
+          "C": "DUKE",
+          "D": "DEKU"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q17",
+      "key_basis": "derived",
+      "rule": "Each letter −3 (HOME → ELJB), so ARHB comes from adding 3 back: DUKE.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, If 'BURMUD' is written as 'RKHCKT', then how will 'ANGLE' be written as in that language?",
+        "options": {
+          "A": "REXCV",
+          "B": "QDWBU",
+          "C": "HOPLY",
+          "D": "PCVAT"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q18",
+      "key_basis": "derived",
+      "rule": "Each letter +16 (10 back), round the alphabet: ANGLE → QDWBU.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'ROCK' is written as 'PKAG', and 'CLUB' is written as 'AHSX'. How will 'SHOP' be written in that language ?",
+        "options": {
+          "A": "MQDL",
+          "B": "QMDL",
+          "C": "QDML",
+          "D": "QMLD"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q19",
+      "key_basis": "derived",
+      "rule": "−2, −4 alternately: SHOP → QDML.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'LAND' is written as 'IWKZ' and 'GOLD' is written as 'DKIZ'. How will 'TEAM' be written in that language ?",
+        "options": {
+          "A": "JXGB",
+          "B": "XJQB",
+          "C": "QAXI",
+          "D": "QXJB"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q20",
+      "key_basis": "derived",
+      "rule": "−3, −4 alternately: TEAM → QAXI.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language. 'STOPER' is written as 'XNTJJL' and 'GANOPY' is written as 'LUSIUS'. How will 'FITAND' be written in that language ?",
+        "options": {
+          "A": "KCYVSX",
+          "B": "KCYUXS",
+          "C": "KCYUSX",
+          "D": "KDYUSX"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q21",
+      "key_basis": "derived",
+      "rule": "+5, −6 alternately: FITAND → KCYUSX.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language 'WHEAT' is written as 'AMIFX' and 'BLACK' is written as 'FQEHO'. How will 'GREASE' be written in the same code language ?",
+        "options": {
+          "A": "KWIFWJ",
+          "B": "KWIGWI",
+          "C": "KWIFWI",
+          "D": "KWIFVJ"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q22",
+      "key_basis": "derived",
+      "rule": "+4, +5 alternately: GREASE → KWIFWJ.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language BUFFALO is written as RIDCIRE and CHEETAH is written as KXBHBEF. How will LEOPARD be written in that language?",
+        "options": {
+          "A": "OBRMDOG",
+          "B": "AUXSLRBO",
+          "C": "GODMRBO",
+          "D": "OGBORDM"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q23",
+      "key_basis": "derived",
+      "rule": "Reverse the word, then +3, −3 alternately: BUFFALO → OLAFFUB → RIDCIRE; LEOPARD → DRAPOEL → GODMRBO.",
+      "confidence": "medium",
+      "note": "The CHEETAH example does not fit: the rule gives KXWBHEF, the print KXBHBEF (three letters differ). BUFFALO fits exactly. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch03-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language 'PROJECT' is written as 'VAIFULX' and 'INDULGE' is written as 'GEPQJHQ'. How to write 'GARNISH' in the same language?",
+        "options": {
+          "A": "JQMJXUO",
+          "B": "JPMIXUO",
+          "C": "JPXIMUO",
+          "D": "JQXMJUO"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p9 q24",
+      "key_basis": "derived",
+      "rule": "Reverse the word, then +2, −2, +4, −4, +6, −6, +8: GARNISH → HSINRAG → JQMJXUO.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Based on the alphabetical order, three of the following four letter-clusters are alike in a certain way and thus form a group. Which of the following does NOT belong to that group ?",
+        "options": {
+          "A": "YBA",
+          "B": "TUX",
+          "C": "PSR",
+          "D": "MPO"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q25",
+      "key_basis": "derived",
+      "rule": "In YBA, PSR and MPO the second letter is 3 after the first and the third is 1 before the second (Y → B round the alphabet). TUX does not follow it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language \"RESTED\" is written as \"SDTSFC\" and \"POINTS\" is written as \"QNJMUR\". How will \"BANNED\" be written in that code language?",
+        "options": {
+          "A": "CZOMFC",
+          "B": "ABMODE",
+          "C": "CZOODE",
+          "D": "ABMMFC"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q26",
+      "key_basis": "derived",
+      "rule": "+1, −1 alternately: BANNED → CZOMFC.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language,'FIT' is written as 'FGIST' and 'KIN' is written as 'KLIMN'. How will 'JOY' be written in the that language ?",
+        "options": {
+          "A": "KKOXX",
+          "B": "JJOYY",
+          "C": "KJOYX",
+          "D": "JKOXY"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q28",
+      "key_basis": "derived",
+      "rule": "After the first letter add the next one; before the last letter add the one before it: FIT → F G I S T, JOY → J K O X Y.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q029",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'FLOAT' and 'CLAIM' is written as 'ROU' and 'OAV' respectively. In that code language, how will 'ARMED' be written?",
+        "options": {
+          "A": "SMI",
+          "B": "DMK",
+          "C": "RFC",
+          "D": "TFE"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q29",
+      "key_basis": "derived",
+      "rule": "Letters 1 + 2, letter 3, letters 4 + 5 by position: ARMED → A+R = S, M, E+D = I.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'PLUM' is written as 'KQOM-FVNN'. 'BIG' in that language How will it be written?",
+        "options": {
+          "A": "YCRKTM",
+          "B": "CYRJGT",
+          "C": "XCSJTH",
+          "D": "YCRJTH"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q30",
+      "key_basis": "derived",
+      "rule": "Each letter becomes its opposite (A↔Z) followed by the next letter: B → Y C, I → R J, G → T H.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q031",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'MAKE' is written as '32' and 'QUAD' is written as '45'. How will 'SELF' be written as in that language ?",
+        "options": {
+          "A": "46",
+          "B": "44",
+          "C": "42",
+          "D": "40"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q31",
+      "key_basis": "derived",
+      "rule": "Sum of letter positions + 2: SELF = 19 + 5 + 12 + 6 + 2 = 44.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'PROVED' is written as '65' and 'REMOVER' is written as '81'. How will 'DEVOUR' be written in that language ?",
+        "options": {
+          "A": "85",
+          "B": "70",
+          "C": "75",
+          "D": "80"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q32",
+      "key_basis": "derived",
+      "rule": "Sum of letter positions − 15: DEVOUR = 85 − 15 = 70.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'FIRST' is coded as 79191921 and 'TIME' is coded as 219145. How will 'BETTER' be coded in that language ?",
+        "options": {
+          "A": "352120618",
+          "B": "252020518",
+          "C": "262021519",
+          "D": "362121619"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q33",
+      "key_basis": "derived",
+      "rule": "Letter positions, +1 on the 1st, 3rd, 5th…: BETTER → 3 5 21 20 6 18.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'MORBID' is written as '61' and 'PARIAH' is written as '53'. How will 'RAVISHED' be written in that language ?",
+        "options": {
+          "A": "85",
+          "B": "88",
+          "C": "86",
+          "D": "96"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q34",
+      "key_basis": "derived",
+      "rule": "Sum of letter positions: RAVISHED = 86.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'PARENT' is written as 148 and WRANGLE is written as 160. How will thaw word 'GRANTED' be written in the same language?",
+        "options": {
+          "A": "134",
+          "B": "69",
+          "C": "67",
+          "D": "138"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q35",
+      "key_basis": "derived",
+      "rule": "Twice the sum of letter positions: GRANTED = 2 × 69 = 138.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, WHALE is coded as 25103147. In that language, how will SHARK be coded?",
+        "options": {
+          "A": "211031037",
+          "B": "211032013",
+          "C": "19812811",
+          "D": "19811811"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q36",
+      "key_basis": "derived",
+      "rule": "Each letter's position + 2: SHARK → 21 10 3 20 13.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language 'TWO' is coded as '3' and 'FIVE' is coded as '4'. How will 'EIGHT' be coded in that code language?",
+        "options": {
+          "A": "7",
+          "B": "9",
+          "C": "5",
+          "D": "8"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q37",
+      "key_basis": "derived",
+      "rule": "The number of letters: EIGHT → 5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'TARGET' and 'PRIZE' is written as'219752' and '79985\" respectively. In that code language, How will 'QUEEN' be written?",
+        "options": {
+          "A": "83225",
+          "B": "73554",
+          "C": "82554",
+          "D": "83555"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q38",
+      "key_basis": "derived",
+      "rule": "Each letter's position reduced to one digit (R = 18 → 9): QUEEN → 8 3 5 5 5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q039",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language REFUSE is coded as 74. In that code language, how will KIDNAP be written as ?",
+        "options": {
+          "A": "59",
+          "B": "55",
+          "C": "54",
+          "D": "57"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q39",
+      "key_basis": "derived",
+      "rule": "Sum of letter positions: KIDNAP = 55.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'TORQ' is coded as '210', and 'HARN' is coded as '123'. How will 'PADM' be coded in that code language ?",
+        "options": {
+          "A": "102",
+          "B": "94",
+          "C": "86",
+          "D": "112"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q40",
+      "key_basis": "derived",
+      "rule": "Three times the sum of letter positions: PADM = 3 × 34 = 102.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q041",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'ELITE' is coded as '3', and 'BLUE' is coded as '2'. How will 'ABSENCE' be coded in that langauge?",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "1"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q41",
+      "key_basis": "derived",
+      "rule": "The number of vowels: ABSENCE has A, E, E: 3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'BASEBALL' is written as '45' and 'FEEDBACK' is written as '73'. How will 'PRACTICE' be written in that language ?",
+        "options": {
+          "A": "27",
+          "B": "57",
+          "C": "37",
+          "D": "47"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q42",
+      "key_basis": "derived",
+      "rule": "Sum of letter positions with its digits reversed: PRACTICE = 75 → 57.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'FORCE' is written as '641832' and 'MIST' is written as '1331920'. How will 'URANUS' be written in that language ?",
+        "options": {
+          "A": "618114618",
+          "B": "518113519",
+          "C": "518114519",
+          "D": "218132119"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q43",
+      "key_basis": "derived",
+      "rule": "Consonants by alphabet position, vowels by vowel order (A 1, E 2, I 3, O 4, U 5): URANUS → 5 18 1 14 5 19.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q044",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 'DONKEY' is coded as '88' and 'SPARROW' is coded as '79', then how will 'PEGION' be coded?",
+        "options": {
+          "A": "73",
+          "B": "96",
+          "C": "85",
+          "D": "91"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q44",
+      "key_basis": "derived",
+      "rule": "Sum of reverse positions (Z = 1): PEGION = 11 + 22 + 20 + 18 + 12 + 13 = 96.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If BANK is coded as 32 and BRAKE is coded as 42, then how would CLEVER be coded ?",
+        "options": {
+          "A": "66",
+          "B": "68",
+          "C": "75",
+          "D": "71"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q45",
+      "key_basis": "derived",
+      "rule": "Sum of letter positions + the number of letters: CLEVER = 65 + 6 = 71.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'HUT' is coded as '55' and 'MAT' is coded as '40'. How will 'BIB' be coded in that languages ?",
+        "options": {
+          "A": "18",
+          "B": "20",
+          "C": "21",
+          "D": "19"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q46",
+      "key_basis": "derived",
+      "rule": "Sum of letter positions + 6: BIB = 13 + 6 = 19.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, RUBBER is written as 101 and JELLY is written as 76. How will LABEL be written in that code language?",
+        "options": {
+          "A": "108",
+          "B": "132",
+          "C": "76",
+          "D": "98"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q47",
+      "key_basis": "derived",
+      "rule": "Sum of reverse positions (Z = 1) + 5: LABEL = 103 + 5 = 108.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, \"RAIN\" is written as \"45\" and \"GOOD\" is written as \"44\". How will \"DROP\" be written in that code language?",
+        "options": {
+          "A": "53",
+          "B": "56",
+          "C": "55",
+          "D": "63"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q48",
+      "key_basis": "derived",
+      "rule": "Sum of letter positions + 3: DROP = 53 + 3 = 56.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'HELP' is written as '1652432' and 'SAVE' is written as '381445'. How will 'MAIL' be written in that language?",
+        "options": {
+          "A": "261926",
+          "B": "261924",
+          "C": "261934",
+          "D": "261928"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q49",
+      "key_basis": "derived",
+      "rule": "Consonants at twice their position, vowels at their position: MAIL → 26 1 9 24.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q050",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'FAMOUS' is coded as '19 21 15 13 1 6', and 'GARDEN' is coded as '14 5 4 18 1 7'. How will 'LEADER' be coded in that language?",
+        "options": {
+          "A": "18 4 5 1 6 12",
+          "B": "16 4 5 1 2 15",
+          "C": "18 5 4 1 5 12",
+          "D": "17 5 4 1 8 14"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q50",
+      "key_basis": "derived",
+      "rule": "The word reversed, each letter as its position: LEADER → R E D A E L → 18 5 4 1 5 12.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q051",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, if France is called Italy, Italy is called Spain, Spain is called Greece, Greece is called Germany, then where is the Eiffel Tower located?",
+        "options": {
+          "A": "Greece",
+          "B": "Germany",
+          "C": "Italy",
+          "D": "France"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q51",
+      "key_basis": "derived",
+      "rule": "The Eiffel Tower is in France, and France is called Italy.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q052",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 'book' is called 'pen', 'pen' is called 'notebook', 'notebook' is called 'bag', and 'bag' is called 'school So what do we usually write on?",
+        "options": {
+          "A": "School",
+          "B": "Book",
+          "C": "Bag",
+          "D": "Pan"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q52",
+      "key_basis": "derived",
+      "rule": "We write on a notebook, and a notebook is called a bag.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q053",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If'red' is called 'tomato' 'tomato' is called 'sweet' 'sweet' is called 'good' and 'good' is called 'clean', what will be the color of the blood?",
+        "options": {
+          "A": "Red",
+          "B": "Tomato",
+          "C": "Clear",
+          "D": "Good"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p10 q53",
+      "key_basis": "derived",
+      "rule": "Blood is red, and red is called tomato.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q054",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language 'sky' means 'red', 'red' means 'tomato', 'tomato' means 'milk', 'milk' means 'soil', and 'soil' means ' is white. What plant grows in the given code language?",
+        "options": {
+          "A": "Soil",
+          "B": "White",
+          "C": "Red",
+          "D": "Tomato"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q54",
+      "key_basis": "derived",
+      "rule": "Plants grow in soil, and soil is called white.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q055",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If moon is called ocean, ocean is called water, water is called air, air is called sun and sun is called river, then who gives us light and heat?",
+        "options": {
+          "A": "Sea",
+          "B": "Water",
+          "C": "Sun",
+          "D": "River"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q55",
+      "key_basis": "derived",
+      "rule": "The sun gives light and heat, and the sun is called river.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q056",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If blue means pink, pink means green, green means yellow, yellow means red and red means white, then what is the color of turmeric?",
+        "options": {
+          "A": "Red",
+          "B": "Green",
+          "C": "Pink",
+          "D": "Yellow"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q56",
+      "key_basis": "derived",
+      "rule": "Turmeric is yellow, and yellow is called red.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q057",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 'eraser' is called 'pencil', 'pencil' is called 'paper', 'paper' is called 'rice', 'rice' is called 'bank' and 'bank' is called 'car', then which one is edible? ?",
+        "options": {
+          "A": "Car",
+          "B": "Rice",
+          "C": "Paper",
+          "D": "Bank"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q57",
+      "key_basis": "derived",
+      "rule": "Rice is edible, and rice is called bank.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q058",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'apple' is called 'pear', 'pear' is called 'orange', 'orange' is called 'guava' and 'guava' is called 'watermelon'. In that language, which of the following will it be a sour fruit?",
+        "options": {
+          "A": "Guava",
+          "B": "Orange",
+          "C": "Watermelon",
+          "D": "Pear"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q58",
+      "key_basis": "derived",
+      "rule": "Of the fruits named, orange is the sour one, and orange is called guava.",
+      "confidence": "medium",
+      "note": "Read as asking for the sour fruit's code name. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch03-q059",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain coded language, 'war door' is coded as 'plane potato', 'cauliflower war' is coded as 'racecar plane', and 'door tower' is coded as 'potato' mountain. What is the code word for 'tower' ?",
+        "options": {
+          "A": "plane",
+          "B": "mountain",
+          "C": "potato",
+          "D": "racecar"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q59",
+      "key_basis": "derived",
+      "rule": "'door' is potato (in both door phrases), so 'tower' is mountain.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q060",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'he is late' is coded as 'ah hu lu', 'she is expected' is coded as 'bo hu ma', and 'she arrived late' is coded as 'bo ka lu'. What is the code for the word 'arrived' ?",
+        "options": {
+          "A": "bo",
+          "B": "ka",
+          "C": "hu",
+          "D": "lu"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q60",
+      "key_basis": "derived",
+      "rule": "'she' is bo and 'late' is lu, so 'arrived' is ka.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q061",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'he came forward' is coded as 'ar ka mu', 'move forward' is coded as 'ba mu', and 'he must move' is coded as 'ar du ba'. What is the code for the word 'must'?",
+        "options": {
+          "A": "du",
+          "B": "ba",
+          "C": "mu",
+          "D": "ar"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q61",
+      "key_basis": "derived",
+      "rule": "'he' is ar and 'move' is ba, so 'must' is du.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q062",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'sweet fruits' is coded as 're de', 'mango is sweet' is coded as 'de me ke', 'orange is citrus' is coded as 'ke le pe','eat orange' is coded as 'pe ne'. What is the code for the word 'mango' ?",
+        "options": {
+          "A": "me",
+          "B": "pe",
+          "C": "ke",
+          "D": "de"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q62",
+      "key_basis": "derived",
+      "rule": "'sweet' is de and 'is' is ke, so 'mango' is me.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q063",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'red ribbon' is coded as 'cu du', 'apple is red' is coded as 'nu mu cu', 'radish is white' is coded as 'mu ku ru', 'eat radish' is coded as 'ru pu'. What is the code for the word 'white' ?",
+        "options": {
+          "A": "mu",
+          "B": "pu",
+          "C": "ru",
+          "D": "ku"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q63",
+      "key_basis": "derived",
+      "rule": "'is' is mu and 'radish' is ru, so 'white' is ku.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q064",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'dark colurs' is coded as 'yu nu', 'days are bright' is coded as 'wu tu ku', 'nights are dark' is coded as 'ku nu pu', 'paint bright' is coded as 'wu ru'. What is the code for the word 'days'?",
+        "options": {
+          "A": "ku",
+          "B": "ru",
+          "C": "tu",
+          "D": "wu"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q64",
+      "key_basis": "derived",
+      "rule": "'are' is ku and 'bright' is wu, so 'days' is tu.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q065",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language 'sweet fruits' is written as 're de', 'mango is sweet' as 'de me ke', 'orange is citrus' as 'ke le pe', 'eat orange ' as 'pe ne' is encoded. What would be the code for the word 'citrus' ?",
+        "options": {
+          "A": "pe",
+          "B": "ke",
+          "C": "de",
+          "D": "le"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q65",
+      "key_basis": "derived",
+      "rule": "'is' is ke and 'orange' is pe, so 'citrus' is le.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q066",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language , 'our son's car' is coded as 'fu da be', 'son's birthday today' is coded as 'la fu ja', 'today our match' is coded as 'he da la'. What is the code for the words 'car match' ?",
+        "options": {
+          "A": "he be",
+          "B": "la he",
+          "C": "da he",
+          "D": "fu be"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q66",
+      "key_basis": "derived",
+      "rule": "'son's' is fu and 'our' is da, so 'car' is be; 'today' is la, so 'match' is he.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q067",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'he called them' is written as 'ka ba ma', 'I was called' is written as 'ga va ba' and 'he was hungry' is written as 'ka va da'. What is the code for the word 'hungry' in that language ?",
+        "options": {
+          "A": "da",
+          "B": "ma",
+          "C": "ba",
+          "D": "ga"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q67",
+      "key_basis": "derived",
+      "rule": "'he' is ka and 'was' is va, so 'hungry' is da.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q068",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'people are confident' is written as 'lur bur duk', 'we are helpful' is written as 'kur duk sur', 'we have cars' is written as 'sur mur jur' and 'people have honesty' is written as 'lur jur nur'. What is the code for 'confident'?",
+        "options": {
+          "A": "bur",
+          "B": "duk",
+          "C": "jur",
+          "D": "lur"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q68",
+      "key_basis": "derived",
+      "rule": "'are' is duk and 'people' is lur, so 'confident' is bur.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q070",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'my mistake' is written as '62', 'nice shoes' is written as '45', 'people are nice' is written as '135' and 'big mistake' is written as '29'' is written. How will 'my shoes' be written in that code language?",
+        "options": {
+          "A": "24",
+          "B": "56",
+          "C": "46",
+          "D": "41"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q70",
+      "key_basis": "derived",
+      "rule": "'mistake' is 2 (in both mistake phrases), so 'my' is 6; 'nice' is 5, so 'shoes' is 4. 'my shoes' is 46.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q071",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language 'chips are good' is written as 'lo pur tan', 'soul are mate' is written as 'tan fu gil' and 'chips contain metal' is written as 'pur st mo'. What is the code for 'contain' in this code language?",
+        "options": {
+          "A": "tan",
+          "B": "st",
+          "C": "mo",
+          "D": "st or mo"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q71",
+      "key_basis": "derived",
+      "rule": "'chips' is pur, so 'contain metal' is st and mo between them, and nothing says which is which.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q072",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'he is my friend' is written as 5692', 'my aunt is ill' is written as '7635', 'friend is ill' is written as '627'. How will the word 'aunt' be written in that code language?",
+        "options": {
+          "A": "3",
+          "B": "7",
+          "C": "6",
+          "D": "5"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q72",
+      "key_basis": "derived",
+      "rule": "'is' is 6 (in all three), 'friend' 2, 'ill' 7, 'my' 5, so 'aunt' is 3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q073",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'honest persons' as 'yu du', 'he is honest' as 'du mu cu', 'she is emotional as mu hu ru' and 'she left' is written as 'hu nu', then how will 'emotional' be written in that code language?",
+        "options": {
+          "A": "du",
+          "B": "hu",
+          "C": "ru",
+          "D": "mu"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q73",
+      "key_basis": "derived",
+      "rule": "'is' is mu and 'she' is hu, so 'emotional' is ru.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q074",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'Doors Are Locked' is coded by 'lo re ga', 'People Are Angry' is coded by 'sa ga pa', 'People Live Now' is coded by 'so du pa' and 'Go Now' is coded by 'bu so'. In the same code language 'sa so' stands for which of the following?",
+        "options": {
+          "A": "Angry Now",
+          "B": "Are Live",
+          "C": "Are Now",
+          "D": "People Live"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q74",
+      "key_basis": "derived",
+      "rule": "'Are' is ga and 'People' is pa, so 'sa' is Angry; 'so' is Now (in both Now phrases).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q075",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If in a certain coding language 'lo re ga' means 'Bears Are Scary', 'sa ga pa' means 'Kings Are Angry', 'so du pa' means 'Kings Will Dic' and 'bu so' means 'They Die'. In the same code language, what would 'bu du' mean?",
+        "options": {
+          "A": "They Die",
+          "B": "Hungry Are",
+          "C": "Hungry Die",
+          "D": "They Will"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q75",
+      "key_basis": "derived",
+      "rule": "'Kings' is pa (in both Kings phrases). 'so' is in 'Kings Will Dic' and 'They Die', so it is Die (\"Dic\" in the print); 'du' is Will and 'bu' is They.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q076",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'strength to innovate ' is coded as '42 64 32' and 'strength to create' is coded as '32 42 24'. What is the code for 'create' in that language ?",
+        "options": {
+          "A": "24",
+          "B": "32",
+          "C": "64",
+          "D": "42"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q76",
+      "key_basis": "derived",
+      "rule": "'strength to' is 42 and 32 in both, so 'create' is 24.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q077",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'mix jaggery well' is written as 'rb co ot' and 'well done boss' is written as 'cx rb op'. How will 'well' be written in the same code language?",
+        "options": {
+          "A": "ot",
+          "B": "te",
+          "C": "co",
+          "D": "rb"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q77",
+      "key_basis": "derived",
+      "rule": "'well' is the only word in both phrases, and rb the only code.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q078",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, '629' is coded as 'namo te fek', '943' is coded as 'dump to te' and '748' is coded as 'to fir tako'. What is the code for the letter '3' in that language?",
+        "options": {
+          "A": "to",
+          "B": "te",
+          "C": "fir",
+          "D": "dump"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p11 q78",
+      "key_basis": "derived",
+      "rule": "'9' is te and '4' is to, so '3' is dump.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q079",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, '567' is coded as 'high and low', '629' is coded as 'Building are high', and '531' is coded as 'hot and sour'. What is the code for the word 'low in that language ?",
+        "options": {
+          "A": "6",
+          "B": "5",
+          "C": "7",
+          "D": "2"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q79",
+      "key_basis": "derived",
+      "rule": "'high' is 6 and 'and' is 5, so 'low' is 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q080",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'Earth and Sun' is coded as '2% J4 9&' and 'Sun and Stars' is coded as '9& 6# 2%'. What is the code for 'Stars' in the given code language ?",
+        "options": {
+          "A": "J4",
+          "B": "9&",
+          "C": "6#",
+          "D": "2%"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q80",
+      "key_basis": "derived",
+      "rule": "'and Sun' are 2% and 9& in both, so 'Stars' is 6#.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q081",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'Read the code' is coded as '18 20 3', 'Decode the code' is coded as '4 20 3' and 'code is easy' is coded as '3 9 5'. How will 'make one code' be coded in that language?",
+        "options": {
+          "A": "19185",
+          "B": "121315",
+          "C": "13153",
+          "D": "125"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q81",
+      "key_basis": "derived",
+      "rule": "Each word is coded by its first letter's position: make, one, code → 13, 15, 3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q082",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language 'I know you' is written as 'Ha Hi He', 'I Like French' is written as 'Ho Hu Ha' and 'You like me' is written as 'He Ho Haa'. How will 'me' be written in that language?",
+        "options": {
+          "A": "Haa",
+          "B": "Hu",
+          "C": "Ha",
+          "D": "Hi"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q82",
+      "key_basis": "derived",
+      "rule": "'I' is Ha, 'you' is He and 'like' is Ho, so 'me' is Haa.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q083",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, ' sign up for sports' is written as 'kri rit vin gab', ' the sign post fell' is written as 'pri dan rit nei', 'the post is closed' is written as 'dan sha fal pri' . What is the code for the word 'fell' in this language?",
+        "options": {
+          "A": "nei",
+          "B": "fal",
+          "C": "rit",
+          "D": "pri"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q83",
+      "key_basis": "derived",
+      "rule": "'sign' is rit and 'the post' are pri and dan, so 'fell' is nei.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q084",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'trek to the mountain' is written as 'tes mel fern lor', 'the mountain is high' is written as 'lor max fern ani', 'high to the sky' is written as 'tes ani sav fern.' What is the code for the word 'trek' in this language ?",
+        "options": {
+          "A": "fern",
+          "B": "mel",
+          "C": "max",
+          "D": "tes"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q84",
+      "key_basis": "derived",
+      "rule": "'the' is fern, 'mountain' lor and 'to' tes, so 'trek' is mel.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q085",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, sky is blue' is written as 'mud pot sum', 'I like blue' is written as 'mud man log' and 'I am sky' is written as 'man red pot'. What is the code for the word 'is' in this language ?",
+        "options": {
+          "A": "mud",
+          "B": "sum",
+          "C": "red",
+          "D": "man"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q85",
+      "key_basis": "derived",
+      "rule": "'blue' is mud and 'sky' is pot, so 'is' is sum.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q086",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'you can start' is written as 'sent room dark', 'can you read' is written as 'room sent less', and 'you are good' is written as 'tyre room spin'. What is the code for the word 'can' in this language ?",
+        "options": {
+          "A": "dark",
+          "B": "room",
+          "C": "sent",
+          "D": "spin"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q86",
+      "key_basis": "derived",
+      "rule": "'you' is room (in all three), and 'can you' is sent and room, so 'can' is sent.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q087",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain coding system 'Read this book' is coded as '689', 'This book is useful' is coded as '9675', and 'Useful book is good' is coded as '5479'. What is the code for 'This book is good' in this system?",
+        "options": {
+          "A": "4965",
+          "B": "6457",
+          "C": "8495",
+          "D": "7859"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q87",
+      "key_basis": "derived",
+      "rule": "'book' is 9 (in all three), 'this' 6, 'good' 4, and 'is' 5 or 7. Only 4965 holds 6, 9, 4 and one of 5 or 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q088",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain coding system 'watches are beautiful' is coded as 856, 'Beautiful things are expensive' is coded as '3845', and 'Expensive things are preferred' is coded as '3874'. How will 'Watches are preferred' be coded in this coding system?",
+        "options": {
+          "A": "765",
+          "B": "476",
+          "C": "785",
+          "D": "876"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q88",
+      "key_basis": "derived",
+      "rule": "'are' is 8, 'beautiful' 5, 'watches' 6 and 'preferred' 7: 876.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q089",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, if 'I like chocolates' is written as '958', 'we bought chocolates' is written as '153', and 'we like them' is written as '816', then how will 'I bought them' be written in that language?",
+        "options": {
+          "A": "936",
+          "B": "859",
+          "C": "951",
+          "D": "251"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q89",
+      "key_basis": "derived",
+      "rule": "'chocolates' 5, 'like' 8, 'we' 1, so 'I' 9, 'bought' 3, 'them' 6: 936.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q090",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, if 'fast and furious' is written as 'co mo jo', 'do it fast' is written as 'cha mo ga', and 'she did it' is written as 'ga la nop', What will be the code for the word 'do' in that language?",
+        "options": {
+          "A": "ga",
+          "B": "mo",
+          "C": "cha",
+          "D": "nop"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q90",
+      "key_basis": "derived",
+      "rule": "'fast' is mo and 'it' is ga, so 'do' is cha.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q091",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, if 'my personal use' is coded as '521', 'use these thing' is coded as '169', 'personal things' is coded as '29', then which phrase is coded as '569' will be rendered by in this language?",
+        "options": {
+          "A": "my personal things",
+          "B": "my these things",
+          "C": "these personal things",
+          "D": "my personal use"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q91",
+      "key_basis": "derived",
+      "rule": "Reading 'thing' and 'things' as one word: 'use' 1, 'personal' 2, 'my' 5, 'things' 9, 'these' 6. So 569 is 'my these things'.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q092",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, if 'get up now' is written as 'pax max rax', 'he will get' is written as 'max dax zax' and 'will it stop' is written as 'zax kax lax', Then what is the code word 'dax' used for in a language?",
+        "options": {
+          "A": "get",
+          "B": "it",
+          "C": "he",
+          "D": "will"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q92",
+      "key_basis": "derived",
+      "rule": "'get' is max and 'will' is zax, so 'dax' is 'he'.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q093",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a sign language, if 'you are there' is written as 'ter der jer', we stay here' is written as 'yer mer ner' 'we are late' is written as 'ser ner der' and 'I stay there' ' is written as 'yer fer jer', then how will 'you stay late' be written in that language?",
+        "options": {
+          "A": "ter mer ser",
+          "B": "ter yer mer",
+          "C": "ter yer ser",
+          "D": "der yer ser"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q93",
+      "key_basis": "derived",
+      "rule": "'are' der, 'we' ner, 'stay' yer, 'there' jer, so 'you' ter and 'late' ser: ter yer ser.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q094",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, if 'she was working' is written as '592'. 'I was curious' is written as '267' and 'she is curious' is written as '987', then what will be the language for the word 'she'?",
+        "options": {
+          "A": "9",
+          "B": "5",
+          "C": "8",
+          "D": "2"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q94",
+      "key_basis": "derived",
+      "rule": "'was' is 2 and 'curious' is 7, so 'she' is 9.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q095",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'cool drinks available here' is written as 'bhu man juk lop', 'available lost objects here' is written as 'gan bhu nut juk', 'be cool search objects' is written as 'vax der man nut', and 'available drinks desert search' is written as 'but juk der lop'. How will 'lost drinks' be written in that language?",
+        "options": {
+          "A": "juk gan",
+          "B": "nut gan",
+          "C": "lop bhu",
+          "D": "gan lop"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q95",
+      "key_basis": "derived",
+      "rule": "'available' juk, 'here' bhu, 'objects' nut, so 'lost' gan; 'drinks' lop: gan lop.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q096",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'she needs some medicines' is written as '1542', 'take some water' is written as '849', 'he needs rest' is written as '713', and 'she is water' is written as '269'. How will 'take medicines' be written in that language?",
+        "options": {
+          "A": "45",
+          "B": "81",
+          "C": "92",
+          "D": "85"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q96",
+      "key_basis": "derived",
+      "rule": "'some' 4, 'needs' 1, 'water' 9, 'she' 2, so 'take' 8 and 'medicines' 5: 85.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q097",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'DWELL' is written as 'UBTMM' and 'OVER' is written as 'JCTG'. How will 'DYAD' be written in that code language ?",
+        "options": {
+          "A": "ZUXU",
+          "B": "UZXU",
+          "C": "XUZU",
+          "D": "UXZU"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q97",
+      "key_basis": "derived",
+      "rule": "Each letter and its code add to 25 by position (D 4 + U 21): DYAD → U, Z, X, U.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q099",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'LOGIC' is coded as D61K and 'POWER' is coded as S92O. How will 'MEDIA' be coded in the same language ?",
+        "options": {
+          "A": "N47Z",
+          "B": "B46L",
+          "C": "B47L",
+          "D": "N42L"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q99",
+      "key_basis": "derived",
+      "rule": "Last letter + 1, then the sum of letter positions + 15, then first letter − 1: MEDIA → B, 32 + 15 = 47, L.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q100",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'WRITE' is coded as D60X and 'APPLE' is coded as D35B. How will 'BASIS' be coded in the same language ?",
+        "options": {
+          "A": "R37C",
+          "B": "T35A",
+          "C": "R35C",
+          "D": "T37A"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q100",
+      "key_basis": "derived",
+      "rule": "Last letter − 1, then the sum of letter positions − 15, then first letter + 1: BASIS → R, 50 − 15 = 35, C.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q101",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language,'VITAL' is coded as K49W and 'WOMAN' is coded as M51X. How will 'POWER' to be coded in that language ?",
+        "options": {
+          "A": "M60S",
+          "B": "Q62Q",
+          "C": "M78S",
+          "D": "Q72M"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p12 q101",
+      "key_basis": "derived",
+      "rule": "Last letter − 1, then the sum of letter positions − 15, then first letter + 1: POWER → Q, 77 − 15 = 62, Q.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q102",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code language, 'BLOOD' is coded as C38C and 'DEBUT' is coded as S42E. How will 'GRAIN' be coded in the same language?",
+        "options": {
+          "A": "M41H",
+          "B": "L41F",
+          "C": "F39L",
+          "D": "M39H"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q102",
+      "key_basis": "derived",
+      "rule": "Last letter − 1, then the sum of letter positions − 10, then first letter + 1: GRAIN → M, 49 − 10 = 39, H.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q103",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'BEAM' is coded as '2349' and 'MEAN' is coded as '4327'. What is the code for 'N' in that language ?",
+        "options": {
+          "A": "3",
+          "B": "4",
+          "C": "2",
+          "D": "7"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q103",
+      "key_basis": "derived",
+      "rule": "E, A and M share 2, 3 and 4; B is 9, so N is 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q104",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'CERTAIN' is coded as '9643821' and 'UNCERTAIN' is coded as '964382117'. What is the code for 'U' in that language ?",
+        "options": {
+          "A": "6",
+          "B": "7",
+          "C": "1",
+          "D": "4"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q104",
+      "key_basis": "derived",
+      "rule": "UNCERTAIN adds U and N to CERTAIN, and the code adds 1 and 7; N is 1, so U is 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q105",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'INDULGE' is coded as '48' and 'PURGE' is coded as '24'. How will \"PUNY\" be coded in that language ?",
+        "options": {
+          "A": "15",
+          "B": "20",
+          "C": "25",
+          "D": "18"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q105",
+      "key_basis": "derived",
+      "rule": "The number of letters squared, less 1: PUNY = 4² − 1 = 15.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q106",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'BROW' is coded as '7542' and 'WORM' is coded as '7295'. What is the code for 'B' in the given code language ?",
+        "options": {
+          "A": "4",
+          "B": "7",
+          "C": "9",
+          "D": "2"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q106",
+      "key_basis": "derived",
+      "rule": "R, O and W share 7, 5 and 2, so B is 4.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q107",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'MANGO' is related to '35' in a certain way based on the English alphabetical order. In the same way, 'CHERRIES' is related to '56'. To which of the following is 'ADMINISTRATION' related, following the same logic ?",
+        "options": {
+          "A": "98",
+          "B": "102",
+          "C": "112",
+          "D": "96"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q107",
+      "key_basis": "derived",
+      "rule": "Seven times the number of letters: ADMINISTRATION = 7 × 14 = 98.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q108",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'RISK' is coded as '3921' and 'KIRT' is coded as '1693'. How is 'S' coded in the given code language ?",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "1",
+          "D": "6"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q108",
+      "key_basis": "derived",
+      "rule": "R, I and K share 3, 9 and 1, so S is 2.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q109",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language. 'BABE' is coded as '20' and 'EACH' is coded as '34'. What is the code for 'FACT' in the given code language ?",
+        "options": {
+          "A": "63",
+          "B": "64",
+          "C": "62",
+          "D": "60"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q109",
+      "key_basis": "derived",
+      "rule": "Twice the sum of letter positions: FACT = 2 × 30 = 60.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q110",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, '78623' is coded as 'TAKEN' and '32685' is coded as 'TOKEN'. What is the code for '5' in that language ?",
+        "options": {
+          "A": "O",
+          "B": "E",
+          "C": "A",
+          "D": "T"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q110",
+      "key_basis": "derived",
+      "rule": "T, K, E and N share 8, 6, 2 and 3; A is 7, so 5 is O.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q111",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'FLOWER' is coded as '85'. 'STARS' is coded as '82' and 'MOON' is coded as '61'. How will 'PACK' be coded in that language ?",
+        "options": {
+          "A": "30",
+          "B": "32",
+          "C": "36",
+          "D": "35"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q111",
+      "key_basis": "derived",
+      "rule": "Sum of letter positions + the number of letters: PACK = 31 + 4 = 35.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q112",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'CONCEPT' is written as '3o14c5p20' and 'PROBELM' is written as '16r15b12e13'. How will 'SOLVE' be written in that language?",
+        "options": {
+          "A": "Po12v5",
+          "B": "19o12v5",
+          "C": "18o12v5",
+          "D": "19o1345"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q112",
+      "key_basis": "derived",
+      "rule": "Letters 1, 3, 5… as their positions, letters 2, 4… in small type: SOLVE → 19 o 12 v 5.",
+      "confidence": "high",
+      "note": "The print spells the second example \"PROBELM\"; its code 16r15b12e13 is of PROBLEM, which is what is checked."
+    },
+    {
+      "id": "oir-agx-ch03-q113",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If PILOT = 63, RICE = 73 then RULE=?",
+        "options": {
+          "A": "65",
+          "B": "63",
+          "C": "52",
+          "D": "56"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q113",
+      "key_basis": "derived",
+      "rule": "Sum of reverse positions (Z = 1): RULE = 9 + 6 + 15 + 22 = 52.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q114",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, if TELEPHONE is written as FOPIQFMFU, then how will INTERCOM be coded ?",
+        "options": {
+          "A": "NPFDSUOJ",
+          "B": "NPDFSUJO",
+          "C": "NPDSFUOJ",
+          "D": "NDFPSUOJ"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q114",
+      "key_basis": "derived",
+      "rule": "Reverse the word, then +1: INTERCOM → MOCRETNI → NPDSFUOJ.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q115",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'PAIN' is written as '42', 'GOMT' is written as '57'. What is the code for 'TORN' in that code language ?",
+        "options": {
+          "A": "71",
+          "B": "65",
+          "C": "69",
+          "D": "67"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q115",
+      "key_basis": "derived",
+      "rule": "Sum of letter positions + 2: TORN = 67 + 2 = 69.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q116",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language 'GON' is written as '33', 'PAD' is written as '18'. What is the code for 'TIR' in that code language?",
+        "options": {
+          "A": "44",
+          "B": "45",
+          "C": "51",
+          "D": "46"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q116",
+      "key_basis": "derived",
+      "rule": "Sum of letter positions − 3: TIR = 47 − 3 = 44.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q117",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If the code of FRUIT is 58281, then what is the code of GRAPES?",
+        "options": {
+          "A": "718116519",
+          "B": "791751",
+          "C": "680649",
+          "D": "680640"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q117",
+      "key_basis": "derived",
+      "rule": "Each letter's position less 1, reduced to one digit: GRAPES → 6 8 0 6 4 9.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q118",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'COUNSEL' is related to 'BITIRAK' in the same way as 'GUIDANCE' is related to ......... .",
+        "options": {
+          "A": "FPHZZKAB",
+          "B": "HOKYBJBA",
+          "C": "FOHYZKBB",
+          "D": "FOHYZJBB"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q118",
+      "key_basis": "derived",
+      "rule": "−1 at every odd place; −6, −5, −4, −3 at the even places in turn: GUIDANCE → FOHYZJBB.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q119",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, INCEPTION is written as MLRGKVXMR, than what is the code of GRAVITY?",
+        "options": {
+          "A": "BRGEZIT",
+          "B": "GBREZIT",
+          "C": "BGRZEIT",
+          "D": "BGREZIT"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q119",
+      "key_basis": "derived",
+      "rule": "Each letter becomes its opposite (A↔Z), then the word is reversed: GRAVITY → TIZERGB → BGREZIT.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q120",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language if BUCKINGHAM is coded as 79, TRANSFORMER is coded as 136, this how will MASSACHUSETTS be coded?",
+        "options": {
+          "A": "163",
+          "B": "165",
+          "C": "153",
+          "D": "155"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q120",
+      "key_basis": "derived",
+      "rule": "Sum of letter positions − the number of letters: MASSACHUSETTS = 168 − 13 = 155.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q122",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, if SECTOR = 82, TANKER = 93, PLASTER will be coded as?",
+        "options": {
+          "A": "98",
+          "B": "91",
+          "C": "93",
+          "D": "95"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q122",
+      "key_basis": "derived",
+      "rule": "Sum of reverse positions (Z = 1): PLASTER = 11 + 15 + 26 + 8 + 7 + 22 + 9 = 98.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q123",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In certain code PASTRY is written as Q1TUSZ, How will be RINGS written in that code ?",
+        "options": {
+          "A": "S9OIT",
+          "B": "S9OHT",
+          "C": "SJOHT",
+          "D": "S9PHT"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q123",
+      "key_basis": "derived",
+      "rule": "Vowels as their position, consonants +1: RINGS → S 9 O H T.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q125",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In certain code TRAINER is written as US19O5S, How will be FASHION written in that code?",
+        "options": {
+          "A": "G1TI915O",
+          "B": "G1TI715O",
+          "C": "GBTI915O",
+          "D": "G1TI9PO"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q125",
+      "key_basis": "derived",
+      "rule": "Vowels as their position, consonants +1: FASHION → G 1 T I 9 15 O.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q126",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If in a certain language 'PARROT' is written as '123345' and 'SOAT' is written as '6425', then how would 'ROAST' be written in that code ?",
+        "options": {
+          "A": "34625",
+          "B": "32564",
+          "C": "32456",
+          "D": "34265"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q126",
+      "key_basis": "derived",
+      "rule": "Letter by letter from the examples (P 1, A 2, R 3, O 4, T 5, S 6): ROAST → 3 4 2 6 5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q127",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain language 'FIGHT' is written as 'TGHFI', then how will 'PAPER' be written in that code ?",
+        "options": {
+          "A": "RPEPA",
+          "B": "REPPA",
+          "C": "PEARP",
+          "D": "PAEPR"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q127",
+      "key_basis": "derived",
+      "rule": "Letters 5, 3, 4, 1, 2: PAPER → R P E P A.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q128",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 'WAY' is coded as 679, 'MAY' is coded as 579, then 'YAW' will be coded as :",
+        "options": {
+          "A": "976",
+          "B": "769",
+          "C": "679",
+          "D": "579"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q128",
+      "key_basis": "derived",
+      "rule": "W 6, A 7, Y 9: YAW → 9 7 6.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q129",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a code, 'BOMBAY' is coded as 'CNNABX', then what will be the code of 'DELHI' ?",
+        "options": {
+          "A": "EDMJG",
+          "B": "GMDEJ",
+          "C": "DEGMJ",
+          "D": "EDMGJ"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q129",
+      "key_basis": "derived",
+      "rule": "+1, −1 alternately: DELHI → EDMGJ.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q130",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, COMPUTER is written as RFUVQNPC. How will MEDICINE be written in that code langauge ?",
+        "options": {
+          "A": "MFEDJJOE",
+          "B": "EOJDEJFM",
+          "C": "MFEJDJOE",
+          "D": "EOJDJEFM"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p13 q130",
+      "key_basis": "derived",
+      "rule": "Reverse the word, then +1 on every letter but the first and last: MEDICINE → ENICIDEM → EOJDJEFM.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q131",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If in a certain code DEAF is written as 3587 and FILE is written as 7465 then IDEAL will be written as :",
+        "options": {
+          "A": "43568",
+          "B": "43586",
+          "C": "63548",
+          "D": "48536"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q131",
+      "key_basis": "derived",
+      "rule": "Letter by letter from the examples (D 3, E 5, A 8, F 7, I 4, L 6): IDEAL → 4 3 5 8 6.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q132",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If in a certain code MBS is coded as ODU then BRL will be coded as ?",
+        "options": {
+          "A": "DTN",
+          "B": "DUN",
+          "C": "CSN",
+          "D": "CTN"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q132",
+      "key_basis": "derived",
+      "rule": "Each letter +2: BRL → DTN.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q133",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If STATEMENT is coded as TNEM ETATS then POLITICAL will be coded as :",
+        "options": {
+          "A": "LACITILOP",
+          "B": "LCATILIOP",
+          "C": "OPILITACL",
+          "D": "LACITIPOL"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q133",
+      "key_basis": "derived",
+      "rule": "The word reversed: POLITICAL → LACITILOP.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q134",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If TRAIN is written as WUDLQ, then BUS would be written as ..... .",
+        "options": {
+          "A": "EXU",
+          "B": "DWU",
+          "C": "EXV",
+          "D": "VXE"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q134",
+      "key_basis": "derived",
+      "rule": "Each letter +3: BUS → EXV.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q135",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 389 means run very fast, 964 means come back fast & 487 means run and come, then which code will work for come ?",
+        "options": {
+          "A": "7",
+          "B": "9",
+          "C": "4",
+          "D": "8"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q135",
+      "key_basis": "derived",
+      "rule": "'fast' is 9 and 'run' is 8, so 'come' is 4.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q136",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'GIVE' is written as 5137 in a code language & 'BAT' is written as 924 in a code language, then how 'GATE' will be written ?",
+        "options": {
+          "A": "5427",
+          "B": "5724",
+          "C": "5247",
+          "D": "2547"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q136",
+      "key_basis": "derived",
+      "rule": "Letter by letter from the examples (G 5, A 2, T 4, E 7): GATE → 5 2 4 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q137",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "if 'MEAT' is written as 'TEAM', then 'BALE' is written as",
+        "options": {
+          "A": "ELAB",
+          "B": "EABL",
+          "C": "EBLA",
+          "D": "EALB"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q137",
+      "key_basis": "derived",
+      "rule": "First and last letters swap: BALE → EALB.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q138",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain languages, TOUR is coded as 1234. How is CLEAR coded as 56784 and SPARE is as 90847, then how is SCULPTURE CODED in that language?",
+        "options": {
+          "A": "1453602347",
+          "B": "953401347",
+          "C": "85360245",
+          "D": "953601347"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q138",
+      "key_basis": "derived",
+      "rule": "Letter by letter from the examples: SCULPTURE → 9 5 3 6 0 1 3 4 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q139",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If CBE means BAD then GMBH means",
+        "options": {
+          "A": "GOOD",
+          "B": "FOOD",
+          "C": "FLAG",
+          "D": "FLOG"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q139",
+      "key_basis": "derived",
+      "rule": "Each letter −1 (CBE → BAD): GMBH → FLAG.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q140",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If CAT = 12, then MAN = ?",
+        "options": {
+          "A": "14",
+          "B": "24",
+          "C": "16",
+          "D": "15"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q140",
+      "key_basis": "derived",
+      "rule": "Half the sum of letter positions: CAT = 24 / 2 = 12, MAN = 28 / 2 = 14.",
+      "confidence": "medium",
+      "note": "One example cannot fix a rule; half the letter sum is the plain reading. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch03-q141",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If PAINT is written as 63257, SHIRT is written as 15297, then how HAIR would be written ?",
+        "options": {
+          "A": "5279",
+          "B": "1982",
+          "C": "5329",
+          "D": "None"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q141",
+      "key_basis": "derived",
+      "rule": "Letter by letter from the examples (H 5, A 3, I 2, R 9): HAIR → 5 3 2 9.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q142",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain languages, MNOPQ is coded as ABCDE How is QPONM coded in that language ?",
+        "options": {
+          "A": "EDCBA",
+          "B": "BDCBA",
+          "C": "CBABD",
+          "D": "EDBCA"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q142",
+      "key_basis": "derived",
+      "rule": "M → A, N → B, … Q → E: QPONM → EDCBA.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q143",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code, 'commit also make policy' is written as '%e4 !y6 #t6 @04', 'policy craze anger mobile' is written as '!y6 @r5 %e6 #e5', 'allow mild course prize' is written as '!e5 %d4 #e6 @w5', and 'craze manner pump artist' is written as '%r6 #e5 !p4 @t6'. Then, what does '#e6 #e5 @04' stand for?",
+        "options": {
+          "A": "commite also mind",
+          "B": "policy anger mobile",
+          "C": "craze also course",
+          "D": "allow mind pump"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q143",
+      "key_basis": "derived",
+      "rule": "Each code is a symbol, the word's last letter and its length. #e5 is in both craze phrases, so craze; #e6 is the six-letter word ending e, course; @o4 (printed @04) is also.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q144",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, 'pen pencil' is written as '$%' and 'eraser sharpener' is written as '@#' and 'pencil eraser' is written as '$@'. Then what is the code for 'pen'?",
+        "options": {
+          "A": "#",
+          "B": "$",
+          "C": "@",
+          "D": "%"
+        },
+        "key": "D",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q144",
+      "key_basis": "derived",
+      "rule": "'pencil' is $ (in both pencil phrases), so 'pen' is %.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q145",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code, TELEPHONE is written as ENOHPELET. How is ALIGATOR written in that code?",
+        "options": {
+          "A": "ROTAGILA",
+          "B": "ROTAGAIL",
+          "C": "ROTAGILE",
+          "D": "ROTEGILA"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q145",
+      "key_basis": "derived",
+      "rule": "The word reversed: ALIGATOR → ROTAGILA.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q146",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If husband is called wife, wife is called grandfather, grandfather is called grand-mother, grandmother is called maternal grandfather, maternal grandfather is called maternal uncle and maternal uncle is called maternal aunt, then what will the father of the mother be called?",
+        "options": {
+          "A": "Maternal grandmother",
+          "B": "Maternal uncle",
+          "C": "Maternal grandfather",
+          "D": "Maternal aunt"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q146",
+      "key_basis": "derived",
+      "rule": "The mother's father is the maternal grandfather, who is called maternal uncle.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q147",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language, '3' is coded as 'Z', '4' is coded as 'Y', '5' is coded as 'X', '6' is coded as 'W' and '7' is coded as 'V'. Find the code for '5734'.",
+        "options": {
+          "A": "XVZY",
+          "B": "YZVX",
+          "C": "ZVXY",
+          "D": "VZXY"
+        },
+        "key": "A",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q147",
+      "key_basis": "derived",
+      "rule": "3 Z, 4 Y, 5 X, 7 V: 5734 → X V Z Y.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q148",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language if 'Cow' is called 'Goat'; Goat is called 'Lion'; 'Lion' is called 'Dog', then which of the following animals is the king of forest?",
+        "options": {
+          "A": "Lion",
+          "B": "Dog",
+          "C": "Cow",
+          "D": "Goat"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q148",
+      "key_basis": "derived",
+      "rule": "The lion is king of the forest, and the lion is called dog.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q149",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If a certain code language, MICROWAVE is written as LJBSNXZWD, how is POPULAR written in that code?",
+        "options": {
+          "A": "QBIKVPAV",
+          "B": "OPKVPAV",
+          "C": "OPOVKBQ",
+          "D": "KBQVOPA"
+        },
+        "key": "C",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q149",
+      "key_basis": "derived",
+      "rule": "−1, +1 alternately: POPULAR → OPOVKBQ.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch03-q150",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If the TAP is coded as SZO, then how is FREEZE coded?",
+        "options": {
+          "A": "ATSSTS",
+          "B": "EQDDYD",
+          "C": "ESDDYD",
+          "D": "EQDDZD"
+        },
+        "key": "B",
+        "reasoningType": "coding"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch3 p14 q150",
+      "key_basis": "derived",
+      "rule": "Each letter −1: FREEZE → EQDDYD.",
+      "confidence": "high"
+    },
     {
       "id": "oir-agx-ch04-q001",
       "assessment_type": "oir_verbal",

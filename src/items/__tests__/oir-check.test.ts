@@ -3,6 +3,7 @@ import {
   ALPHABETS,
   bearingName,
   between,
+  charMap,
   facingName,
   fillBlanks,
   fromLeft,
@@ -21,6 +22,7 @@ import {
   normalizeLetters,
   optionLetters,
   parseNumbers,
+  solveCodes,
   splitKey,
   walk,
 } from '../oir/check.ts';
@@ -209,6 +211,48 @@ describe('facingName and bearingName', () => {
     expect(bearingName(500, -250)).toBe('South-East');
     expect(bearingName(-26, -5)).toBe('South-West');
     expect(bearingName(1e-12, 0)).toBeNull();
+  });
+});
+
+describe('solveCodes', () => {
+  it('pins each word by intersecting the phrases it appears in', () => {
+    const codes = solveCodes([
+      ['he is late', 'ah hu lu'],
+      ['she is expected', 'bo hu ma'],
+      ['she arrived late', 'bo ka lu'],
+    ]);
+    expect(codes.get('arrived')).toEqual(new Set(['ka']));
+    expect(codes.get('is')).toEqual(new Set(['hu']));
+  });
+
+  it('leaves a word open when the phrases cannot separate it', () => {
+    const codes = solveCodes([
+      ['chips are good', 'lo pur tan'],
+      ['soul are mate', 'tan fu gil'],
+      ['chips contain metal', 'pur st mo'],
+    ]);
+    expect(codes.get('contain')).toEqual(new Set(['st', 'mo']));
+  });
+
+  it('works on letters and digits written without spaces, on either side', () => {
+    const codes = solveCodes([
+      ['BEAM', '2349'],
+      ['MEAN', '4327'],
+    ], { words: '', codes: '' });
+    expect(codes.get('N')).toEqual(new Set(['7']));
+    const mixed = solveCodes([
+      ['my mistake', '62'],
+      ['big mistake', '29'],
+    ], { words: ' ', codes: '' });
+    expect(mixed.get('my')).toEqual(new Set(['6']));
+  });
+});
+
+describe('charMap', () => {
+  it('reads a letter-for-symbol code from examples, refusing a letter coded two ways', () => {
+    const m = charMap([['TOUR', '1234'], ['CLEAR', '56784']]);
+    expect(m.get('R')).toBe('4');
+    expect(() => charMap([['AB', '12'], ['AC', '34']])).toThrow(/A/);
   });
 });
 

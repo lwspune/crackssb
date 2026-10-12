@@ -16,6 +16,7 @@ export interface OirChapter {
 }
 
 export const OIR_CHAPTERS: readonly OirChapter[] = [
+  { slug: 'coding', title: 'Coding-Decoding', reasoningType: 'coding', summary: 'Crack the code from its examples' },
   { slug: 'word-formation', title: 'Word Formation', reasoningType: 'word_formation', summary: 'Words hidden in a longer word' },
   { slug: 'alphabet', title: 'Alphabet Positions', reasoningType: 'alphabet', summary: 'Letters by place, forwards and reversed' },
   { slug: 'directions', title: 'Directions', reasoningType: 'directions', summary: 'Walks, turns and where things lie' },

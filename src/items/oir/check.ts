@@ -181,6 +181,53 @@ export function bearingName(dx: number, dy: number): string | null {
   return ns && ew ? `${ns}-${ew}` : ns || ew || null;
 }
 
+/**
+ * Phrase codes ("'he is late' is 'ah hu lu'"): each word's possible codes.
+ * A word's code is in every phrase holding the word and in no phrase without
+ * it; a word pinned to one code takes that code from the rest, until nothing
+ * changes. `split` says how each side divides: ' ' into words, '' into single
+ * letters or digits ("'my mistake' is '62'" is { words: ' ', codes: '' }).
+ */
+export function solveCodes(
+  pairs: readonly (readonly [string, string])[],
+  split: { readonly words: ' ' | ''; readonly codes: ' ' | '' } = { words: ' ', codes: ' ' },
+): Map<string, Set<string>> {
+  const cut = (s: string, sep: ' ' | '') => (sep === '' ? [...s.replace(/\s+/g, '')] : s.trim().split(/\s+/));
+  const rows = pairs.map(([words, codes]) => ({ words: new Set(cut(words, split.words)), codes: new Set(cut(codes, split.codes)) }));
+  const cand = new Map<string, Set<string>>();
+  for (const word of new Set(rows.flatMap((r) => [...r.words]))) {
+    let set: Set<string> | null = null;
+    for (const r of rows) {
+      if (r.words.has(word)) set = new Set([...(set ?? r.codes)].filter((c) => r.codes.has(c)));
+    }
+    for (const r of rows) if (!r.words.has(word)) for (const c of r.codes) set!.delete(c);
+    cand.set(word, set!);
+  }
+  for (let changed = true; changed; ) {
+    changed = false;
+    for (const [word, set] of cand) {
+      if (set.size !== 1) continue;
+      const [code] = set;
+      for (const [other, s] of cand) if (other !== word && s.delete(code)) changed = true;
+    }
+  }
+  return cand;
+}
+
+/** A letter-for-symbol code read position by position from examples. Throws if a letter is coded two ways. */
+export function charMap(examples: readonly (readonly [string, string])[]): Map<string, string> {
+  const map = new Map<string, string>();
+  for (const [word, code] of examples) {
+    if (word.length !== code.length) throw new RangeError(`${word} and ${code} differ in length`);
+    for (let i = 0; i < word.length; i++) {
+      const seen = map.get(word[i]);
+      if (seen !== undefined && seen !== code[i]) throw new RangeError(`${word[i]} is coded both ${seen} and ${code[i]}`);
+      map.set(word[i], code[i]);
+    }
+  }
+  return map;
+}
+
 /** 1 → "1st", 12 → "12th", 23 → "23rd": a rank as the book prints it. */
 export function ordinal(n: number): string {
   const teen = n % 100 >= 11 && n % 100 <= 13;
