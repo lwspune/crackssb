@@ -1,94 +1,67 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { createLocalStore, createMemoryStore } from '../session-store.ts';
+import { createMemoryStore } from '../session-store.ts';
 import type { SessionStore } from '../session-store.ts';
 
-/** A Storage stand-in, so the local store is tested against the interface it uses. */
-function fakeStorage(): Storage {
-  const map = new Map<string, string>();
-  return {
-    get length() { return map.size; },
-    clear: () => map.clear(),
-    getItem: (k) => map.get(k) ?? null,
-    key: (i) => [...map.keys()][i] ?? null,
-    removeItem: (k) => void map.delete(k),
-    setItem: (k, v) => void map.set(k, String(v)),
-  };
-}
-
+/**
+ * The store contract every runner store keeps. The memory store is the
+ * reference implementation (tests, and storage-blocked fallbacks); the
+ * Supabase store keeps the same contract with the server as its clock.
+ */
 const T0 = 1_800_000_000_000;
 
-for (const [name, make] of [
-  ['memory', () => createMemoryStore()],
-  ['local', () => createLocalStore(fakeStorage())],
-] as const) {
-  describe(`${name} session store`, () => {
-    let store: SessionStore;
-    beforeEach(() => { store = make(); });
-
-    it('has nothing for an instrument never started', () => {
-      expect(store.load('wat')).toBeNull();
-    });
-
-    it('fixes the start time when the session is created', () => {
-      store.create('wat', T0);
-      expect(store.load('wat')).toMatchObject({ instrument: 'wat', startedAtMs: T0, saved: {}, endedBy: null });
-    });
-
-    it('keeps each response under its key, the latest text winning', () => {
-      store.create('wat', T0);
-      store.persist('wat', '0', 'first');
-      store.persist('wat', '0', 'first thought');
-      store.persist('wat', '1', '');
-      expect(store.load('wat')?.saved).toEqual({ '0': 'first thought', '1': '' });
-    });
-
-    it('records how the session ended', () => {
-      store.create('wat', T0);
-      store.finish('wat', 'abandon');
-      expect(store.load('wat')?.endedBy).toBe('abandon');
-    });
-
-    it('forgets a session on clear, so the next one starts fresh', () => {
-      store.create('wat', T0);
-      store.clear('wat');
-      expect(store.load('wat')).toBeNull();
-    });
-
-    it('is typed unless told otherwise', () => {
-      store.create('wat', T0);
-      expect(store.load('wat')).toMatchObject({ input: 'typed', code: null });
-    });
-
-    it('remembers a paper session and the code written on its sheet (D22)', () => {
-      store.create('wat', T0, { input: 'paper', code: 'ACD-EFG' });
-      expect(store.load('wat')).toMatchObject({ input: 'paper', code: 'ACD-EFG' });
-    });
-
-    it('ignores writes for a session that does not exist rather than inventing one', () => {
-      store.persist('wat', '0', 'orphan');
-      expect(store.load('wat')).toBeNull();
-    });
-  });
-}
-
-describe('local session store', () => {
-  it('survives a reload — a new store over the same storage sees the session', () => {
-    const storage = fakeStorage();
-    const first = createLocalStore(storage);
-    first.create('wat', T0);
-    first.persist('wat', '0', 'kept');
-    expect(createLocalStore(storage).load('wat')).toMatchObject({ startedAtMs: T0, saved: { '0': 'kept' } });
+describe('memory session store', () => {
+  let store: SessionStore;
+  beforeEach(() => {
+    store = createMemoryStore({ now: () => T0 });
   });
 
-  it('reads a session saved before paper mode existed as typed', () => {
-    const storage = fakeStorage();
-    storage.setItem('crackssb:session:wat', JSON.stringify({ instrument: 'wat', startedAtMs: T0, saved: {}, endedBy: null }));
-    expect(createLocalStore(storage).load('wat')).toMatchObject({ input: 'typed', code: null });
+  it('has nothing for an instrument never started', () => {
+    expect(store.load('wat')).toBeNull();
   });
 
-  it('treats unreadable storage as no session instead of crashing the runner', () => {
-    const storage = fakeStorage();
-    storage.setItem('crackssb:session:wat', '{not json');
-    expect(createLocalStore(storage).load('wat')).toBeNull();
+  it('decides the start time itself — the caller never supplies one', async () => {
+    const record = await store.create('wat', { input: 'typed', code: null });
+    expect(record).toMatchObject({ instrument: 'wat', startedAtMs: T0, saved: {}, endedBy: null });
+    expect(store.load('wat')).toEqual(record);
+  });
+
+  it('keeps each response under its key, the latest text winning', async () => {
+    await store.create('wat', { input: 'typed', code: null });
+    store.persist('wat', '0', 'first', false);
+    store.persist('wat', '0', 'first thought', false);
+    store.persist('wat', '1', '', true);
+    expect(store.load('wat')?.saved).toEqual({ '0': 'first thought', '1': '' });
+  });
+
+  it('records how the session ended', async () => {
+    await store.create('wat', { input: 'typed', code: null });
+    store.finish('wat', 'abandon');
+    expect(store.load('wat')?.endedBy).toBe('abandon');
+  });
+
+  it('forgets a session on clear, so the next one starts fresh', async () => {
+    await store.create('wat', { input: 'typed', code: null });
+    store.clear('wat');
+    expect(store.load('wat')).toBeNull();
+  });
+
+  it('remembers a paper session and the code written on its sheet (D22)', async () => {
+    await store.create('wat', { input: 'paper', code: 'ACD-EFG' });
+    expect(store.load('wat')).toMatchObject({ input: 'paper', code: 'ACD-EFG' });
+  });
+
+  it('ignores writes for a session that does not exist rather than inventing one', () => {
+    store.persist('wat', '0', 'orphan', false);
+    expect(store.load('wat')).toBeNull();
+  });
+
+  it('has no clock offset and is always saved — there is nowhere else to save to', () => {
+    expect(store.clockOffsetMs()).toBe(0);
+    expect(store.syncState()).toBe('saved');
+  });
+
+  it('can start from a session that already exists, as a reload does', () => {
+    const resumed = createMemoryStore({ initial: { instrument: 'wat', input: 'typed', code: null, startedAtMs: T0, saved: { '0': 'kept' }, endedBy: null } });
+    expect(resumed.load('wat')?.saved).toEqual({ '0': 'kept' });
   });
 });

@@ -1,8 +1,8 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import Link from 'next/link';
-import { keyFor, reduce, resume, start } from '../../runner/engine.ts';
+import { keyFor, reduce, resume } from '../../runner/engine.ts';
 import type { EndedBy, RunnerEvent, RunnerState, Step } from '../../runner/engine.ts';
 import type { RunnerInstrument } from '../../runner/modes.ts';
 import { ArrowIcon } from '../icons.tsx';
@@ -46,11 +46,6 @@ function viewOf(state: RunnerState): View {
     : { kind: 'live', state };
 }
 
-/**
- * Arrival, computed once on first render. A session already under way resumes
- * where the clock is, not where it was left; one that expired while the
- * candidate was away arrives ended. Reads storage, so the runner is client-only.
- */
 /** How this session is answered (D22). Fixed at Begin; a reload resumes it as it was. */
 interface Answering {
   readonly input: InputMode;
@@ -58,6 +53,22 @@ interface Answering {
 }
 const TYPED: Answering = { input: 'typed', code: null };
 
+/** The store's clock: the server's, in the app. Every engine call reads time through this. */
+const clockOf = (store: SessionStore) => () => Date.now() + store.clockOffsetMs();
+
+/** Words for the codes start_session refuses with (migration 0001). */
+function startRefusal(code: string): string {
+  if (code === 'consent_required') return 'A guardian has to consent before you can start a test. Ask your academy.';
+  if (code === 'dob_required') return 'Your date of birth is missing. Ask your academy to add it.';
+  if (code === 'not_a_candidate') return 'Only candidates take tests.';
+  return 'Could not start. Check your connection and try again.';
+}
+
+/**
+ * Arrival, computed once on first render. A session already under way resumes
+ * where the clock is, not where it was left; one that expired while the
+ * candidate was away arrives ended.
+ */
 function arrive(
   store: SessionStore,
   instrument: RunnerInstrument,
@@ -67,7 +78,7 @@ function arrive(
   if (!record) return { view: { kind: 'brief' }, step: null, answering: TYPED };
   const answering = { input: record.input, code: record.code };
   if (record.endedBy) return { view: { kind: 'ended', endedBy: record.endedBy, saved: record.saved }, step: null, answering };
-  const step = resume(config, record.startedAtMs, record.saved, Date.now());
+  const step = resume(config, record.startedAtMs, record.saved, clockOf(store)());
   return { view: viewOf(step.state), step, answering };
 }
 
@@ -81,12 +92,16 @@ export function Runner({ instrument, title, store, content }: Props) {
   const [confirming, setConfirming] = useState(false);
   const [answering, setAnswering] = useState<Answering>(arrival.answering);
   const live = useRef<RunnerState | null>(arrival.view.kind === 'live' ? arrival.view.state : null);
+  const [starting, setStarting] = useState(false);
+  const [startError, setStartError] = useState<string | null>(null);
+  const sync = useSyncExternalStore(store.subscribe, store.syncState, () => 'saved' as const);
+  const now = clockOf(store);
 
   /** Write what the engine asked to be written. Storage only — no rendering. */
   const commit = useCallback(
     ({ state, effects }: Step) => {
       for (const effect of effects) {
-        if (effect.type === 'persist') store.persist(instrument, effect.key, effect.text);
+        if (effect.type === 'persist') store.persist(instrument, effect.key, effect.text, effect.final);
       }
       if (state.status === 'ended') store.finish(instrument, state.endedBy ?? 'expiry');
     },
@@ -106,9 +121,9 @@ export function Runner({ instrument, title, store, content }: Props) {
 
   const dispatch = useCallback(
     (event: RunnerEvent) => {
-      if (live.current) apply(reduce(live.current, event, Date.now()));
+      if (live.current) apply(reduce(live.current, event, Date.now() + store.clockOffsetMs()));
     },
-    [apply],
+    [apply, store],
   );
 
   // Catching up on arrival may have sealed items the candidate missed; save those seals.
@@ -123,10 +138,19 @@ export function Runner({ instrument, title, store, content }: Props) {
     return () => clearInterval(id);
   }, [isLive, dispatch]);
 
-  const begin = (choice: Answering) => {
-    const record = store.create(instrument, Date.now(), choice);
-    setAnswering(choice);
-    apply(start(config, record.startedAtMs, record.startedAtMs));
+  const begin = async (choice: Answering) => {
+    setStarting(true);
+    setStartError(null);
+    try {
+      // The store issues the start time (the server, in the app) — and may hand back a session already running.
+      const record = await store.create(instrument, choice);
+      setAnswering({ input: record.input, code: record.code });
+      apply(resume(config, record.startedAtMs, record.saved, now()));
+    } catch (e) {
+      setStartError(startRefusal((e as Error).message));
+    } finally {
+      setStarting(false);
+    }
   };
 
   const restart = () => {
@@ -135,7 +159,17 @@ export function Runner({ instrument, title, store, content }: Props) {
   };
 
   if (view.kind === 'brief') {
-    return <Brief title={title} instrument={instrument} facts={runnable.facts} instruction={runnable.instruction} onBegin={begin} />;
+    return (
+      <Brief
+        title={title}
+        instrument={instrument}
+        facts={runnable.facts}
+        instruction={runnable.instruction}
+        starting={starting}
+        error={startError}
+        onBegin={begin}
+      />
+    );
   }
   if (view.kind === 'ended') {
     return (
@@ -167,6 +201,7 @@ export function Runner({ instrument, title, store, content }: Props) {
       secondsLeft={secondsLeft}
       secondsPerItem={perItem}
       paper={answering.input === 'paper'}
+      offline={sync === 'offline'}
       confirming={confirming}
       onType={(text) => dispatch({ type: 'input', text })}
       onAskAbandon={() => setConfirming(true)}
@@ -193,6 +228,8 @@ interface BriefProps {
   instrument: RunnerInstrument;
   facts: RunnableInstrument['facts'];
   instruction: string;
+  starting: boolean;
+  error: string | null;
   onBegin: (choice: Answering) => void;
 }
 
@@ -201,7 +238,7 @@ const CHOICES: readonly { input: InputMode; label: string; hint: string }[] = [
   { input: 'paper', label: 'Write on paper', hint: 'As at the SSB · upload photos after' },
 ];
 
-function Brief({ title, instrument, facts, instruction, onBegin }: BriefProps) {
+function Brief({ title, instrument, facts, instruction, starting, error, onBegin }: BriefProps) {
   const [input, setInput] = useState<InputMode>('typed');
   // One code per brief, shown before the clock starts so writing it costs no test time.
   const [code] = useState(() => sessionCode(Math.random));
@@ -266,21 +303,27 @@ function Brief({ title, instrument, facts, instruction, onBegin }: BriefProps) {
         )}
 
         <p className="mt-6 text-sm text-runner-muted">
-          {paper ? 'The clock never pauses. The screen moves on whether you have finished the line or not.' : 'The clock never pauses. Typed, not handwritten. Saved on this device.'}
+          {paper ? 'The clock never pauses. The screen moves on whether you have finished the line or not.' : 'The clock never pauses. Typed, not handwritten. Saved as you go.'}
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-5">
           <button
             type="button"
             onClick={() => onBegin(paper ? { input: 'paper', code } : TYPED)}
-            className="inline-flex min-h-12 items-center gap-2 rounded-lg bg-runner-foreground px-7 text-base font-semibold text-runner shadow-[0_8px_30px_-6px_rgb(122_176_255/0.55)] transition hover:bg-white focus-visible:outline-runner-ring"
+            disabled={starting}
+            className="inline-flex min-h-12 items-center gap-2 rounded-lg bg-runner-foreground px-7 text-base font-semibold text-runner shadow-[0_8px_30px_-6px_rgb(122_176_255/0.55)] transition hover:bg-white focus-visible:outline-runner-ring disabled:opacity-60"
           >
-            Begin <ArrowIcon />
+            {starting ? 'Starting…' : <>Begin <ArrowIcon /></>}
           </button>
           <Link href="/practise" className="inline-flex min-h-11 items-center px-2 text-sm font-medium text-runner-muted underline-offset-4 hover:text-runner-foreground hover:underline focus-visible:outline-runner-ring">
             Not now
           </Link>
         </div>
+        {error && (
+          <p role="alert" className="mt-5 rounded-lg bg-runner-warn/15 px-4 py-3 text-sm text-runner-foreground ring-1 ring-runner-warn/40">
+            {error}
+          </p>
+        )}
       </div>
     </main>
   );
@@ -299,6 +342,8 @@ interface LiveProps {
   secondsPerItem: number;
   /** D22: answers go on a sheet. No field; the line number is shown so the sheet stays aligned. */
   paper: boolean;
+  /** Answers are not reaching the server; the store is retrying. */
+  offline: boolean;
   confirming: boolean;
   onType: (text: string) => void;
   onAskAbandon: () => void;
@@ -331,7 +376,12 @@ function LiveSequence(p: LiveProps) {
     <main className="min-h-dvh bg-runner text-runner-foreground flex flex-col" data-runner>
       <h1 className="sr-only">{p.title}</h1>
       <div className="flex items-center justify-between px-4 pt-5 sm:px-8">
-        <p className="eyebrow text-runner-muted">{p.title}</p>
+        <div>
+          <p className="eyebrow text-runner-muted">{p.title}</p>
+          {p.offline && (
+            <p role="status" className="mt-1 text-xs font-semibold text-runner-warn">Not saved — reconnecting…</p>
+          )}
+        </div>
         <p
           role="timer"
           aria-label="Time left for this word"
@@ -467,7 +517,7 @@ function Ended({ title, endedBy, saved, itemCount, content, answering, onRestart
                 <dt className="text-xs text-navy-muted">Session code</dt>
                 <dd className="font-mono text-3xl font-semibold tracking-[0.12em]">{answering.code}</dd>
               </dl>
-              <p className="mt-6 text-sm text-navy-muted">Keep your sheet with this code on it. Photo upload arrives with accounts.</p>
+              <p className="mt-6 text-sm text-navy-muted">Keep your sheet with this code on it. Photo upload is coming.</p>
             </>
           ) : (
             <>

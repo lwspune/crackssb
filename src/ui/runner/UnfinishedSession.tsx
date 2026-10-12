@@ -1,49 +1,33 @@
-'use client';
-
 import Link from 'next/link';
-import { useSyncExternalStore } from 'react';
-import { buildSchedule } from '../../runner/schedule.ts';
 import type { RunnerInstrument } from '../../runner/modes.ts';
+import { createSupabaseServer } from '../../lib/supabase/server.ts';
 import { entryById } from '../catalog.ts';
 import { ArrowIcon } from '../icons.tsx';
-import { RUNNABLE } from './registry.ts';
-import { createLocalStore } from './session-store.ts';
+
+/** The candidate's live session, and whether its clock is still running. */
+async function unfinished(): Promise<{ instrument: RunnerInstrument; running: boolean } | null> {
+  const supabase = await createSupabaseServer();
+  const { data } = await supabase
+    .from('sessions')
+    .select('assessment_type, expires_at')
+    .eq('status', 'live')
+    .order('started_at', { ascending: false })
+    .limit(1)
+    .maybeSingle();
+  if (!data) return null;
+  return { instrument: data.assessment_type as RunnerInstrument, running: Date.parse(data.expires_at) > Date.now() };
+}
 
 /**
  * Home's "what is unfinished" (UI.md §5.1). A session the candidate walked
- * away from is still running — the clock never pauses — so Home says so
- * rather than letting them find out on return.
+ * away from is still running on the server — the clock never pauses — so
+ * Home says so, on whichever device they come back to. Server-rendered; row
+ * level security returns only the candidate's own sessions.
  */
-
-type Found = `${RunnerInstrument}:${'running' | 'expired'}` | '';
-
-/** A primitive snapshot, so React can compare it between reads. */
-function snapshot(): Found {
-  try {
-    const store = createLocalStore(window.localStorage);
-    for (const [instrument, runnable] of Object.entries(RUNNABLE)) {
-      const record = store.load(instrument as RunnerInstrument);
-      if (!runnable || !record || record.endedBy) continue;
-      const { endMs } = buildSchedule(runnable.config, record.startedAtMs);
-      return `${instrument as RunnerInstrument}:${endMs === null || Date.now() < endMs ? 'running' : 'expired'}`;
-    }
-  } catch {
-    // Storage blocked: nothing can be unfinished.
-  }
-  return '';
-}
-
-function subscribe(onChange: () => void) {
-  window.addEventListener('storage', onChange);
-  return () => window.removeEventListener('storage', onChange);
-}
-
-export function UnfinishedSession() {
-  const found = useSyncExternalStore(subscribe, snapshot, () => '' as Found);
+export async function UnfinishedSession() {
+  const found = await unfinished();
   if (!found) return null;
-
-  const [instrument, state] = found.split(':') as [RunnerInstrument, 'running' | 'expired'];
-  const running = state === 'running';
+  const { instrument, running } = found;
   const name = entryById(instrument)?.short ?? instrument;
 
   return (

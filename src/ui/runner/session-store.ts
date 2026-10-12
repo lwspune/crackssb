@@ -4,12 +4,11 @@ import type { RunnerInstrument } from '../../runner/modes.ts';
 /**
  * Where a runner session lives between keystrokes.
  *
- * This is the seam Sprint 1 replaces. The Supabase store issues `startedAtMs`
- * from the server and persists to `responses`; the local store below keeps
- * both on this device, which means a candidate who edits their own storage
- * can buy time. That is acceptable for practice and NOT for anything scored —
- * UI.md §3.2 rule 1. The runner says "practice on this device" while it is
- * on this store.
+ * The runner talks only to this contract. In the app it is the Supabase
+ * store (supabase-store.ts): the server issues the start time, and every
+ * answer goes through save_response, which refuses anything outside its
+ * window (UI.md §3.2, migration 0001). The memory store below is the
+ * reference implementation, used by the tests.
  */
 
 /** D22: answers typed into the runner, or written on a paper sheet and uploaded as photos. */
@@ -25,66 +24,45 @@ export interface SessionRecord {
   readonly endedBy: EndedBy | null;
 }
 
+/** Saved: everything has reached the store. Saving: on its way. Offline: retrying. */
+export type SyncState = 'saved' | 'saving' | 'offline';
+
 export interface SessionStore {
   load(instrument: RunnerInstrument): SessionRecord | null;
-  create(instrument: RunnerInstrument, startedAtMs: number, options?: { input: InputMode; code: string | null }): SessionRecord;
-  persist(instrument: RunnerInstrument, key: string, text: string): void;
+  /** Start a session. The STORE decides the start time — in the app, the server's clock. */
+  create(instrument: RunnerInstrument, options: { input: InputMode; code: string | null }): Promise<SessionRecord>;
+  /** `final` marks the seal an item gets when its window closes; a store saves those at once. */
+  persist(instrument: RunnerInstrument, key: string, text: string, final: boolean): void;
   finish(instrument: RunnerInstrument, endedBy: EndedBy): void;
   clear(instrument: RunnerInstrument): void;
+  /** Add to Date.now() to read the store's clock. The countdown runs on this, never on the device alone. */
+  clockOffsetMs(): number;
+  syncState(): SyncState;
+  subscribe(onChange: () => void): () => void;
 }
 
-/** Shared by both stores: a session is a value, rewritten whole on each change. */
-function storeOver(read: (k: string) => SessionRecord | null, write: (k: string, r: SessionRecord | null) => void): SessionStore {
+/** In memory only. `now` and `initial` are injected so tests control the clock and the reload. */
+export function createMemoryStore(options: { now?: () => number; initial?: SessionRecord | null } = {}): SessionStore {
+  const now = options.now ?? Date.now;
+  const records = new Map<string, SessionRecord>();
+  if (options.initial) records.set(options.initial.instrument, options.initial);
   const update = (instrument: RunnerInstrument, fn: (r: SessionRecord) => SessionRecord) => {
-    const current = read(instrument);
-    if (current) write(instrument, fn(current));
+    const current = records.get(instrument);
+    if (current) records.set(instrument, fn(current));
   };
+
   return {
-    load: (instrument) => read(instrument),
-    create(instrument, startedAtMs, options = { input: 'typed', code: null }) {
-      const record: SessionRecord = { instrument, startedAtMs, saved: {}, endedBy: null, ...options };
-      write(instrument, record);
+    load: (instrument) => records.get(instrument) ?? null,
+    async create(instrument, { input, code }) {
+      const record: SessionRecord = { instrument, input, code, startedAtMs: now(), saved: {}, endedBy: null };
+      records.set(instrument, record);
       return record;
     },
     persist: (instrument, key, text) => update(instrument, (r) => ({ ...r, saved: { ...r.saved, [key]: text } })),
     finish: (instrument, endedBy) => update(instrument, (r) => ({ ...r, endedBy })),
-    clear: (instrument) => write(instrument, null),
+    clear: (instrument) => void records.delete(instrument),
+    clockOffsetMs: () => 0,
+    syncState: () => 'saved',
+    subscribe: () => () => {},
   };
-}
-
-export function createMemoryStore(): SessionStore {
-  const records = new Map<string, SessionRecord>();
-  return storeOver(
-    (k) => records.get(k) ?? null,
-    (k, r) => (r ? records.set(k, r) : records.delete(k)),
-  );
-}
-
-const PREFIX = 'crackssb:session:';
-
-export function createLocalStore(storage: Storage): SessionStore {
-  return storeOver(
-    (k) => {
-      const raw = storage.getItem(PREFIX + k);
-      if (raw === null) return null;
-      try {
-        const parsed: unknown = JSON.parse(raw);
-        return isRecord(parsed) ? withDefaults(parsed) : null;
-      } catch {
-        return null;
-      }
-    },
-    (k, r) => (r ? storage.setItem(PREFIX + k, JSON.stringify(r)) : storage.removeItem(PREFIX + k)),
-  );
-}
-
-/** A session saved before paper mode existed has neither field; it was typed. */
-function withDefaults(r: SessionRecord): SessionRecord {
-  return { ...r, input: r.input === 'paper' ? 'paper' : 'typed', code: typeof r.code === 'string' ? r.code : null };
-}
-
-function isRecord(v: unknown): v is SessionRecord {
-  if (typeof v !== 'object' || v === null) return false;
-  const r = v as Record<string, unknown>;
-  return typeof r.instrument === 'string' && typeof r.startedAtMs === 'number' && typeof r.saved === 'object' && r.saved !== null;
 }

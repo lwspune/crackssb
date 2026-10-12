@@ -41,12 +41,14 @@ the build back at `tsconfig.json`.
 
 ### The runner ships the whole WAT deck to the browser
 
-UI.md §3.2 rule 4 says nothing unreleased reaches the client. Until Sprint 1's
-server store exists, `src/ui/runner/content.ts` imports all sixty words, and the
-session clock lives in `localStorage` — a candidate who edits it buys time. The
-runner says "practice on this device", and the engine already emits `release`
-per item, so the server source is a swap behind `SessionStore` and
-`RunnerContent`, not a rewrite.
+UI.md §3.2 rule 4 says nothing unreleased reaches the client.
+`src/ui/runner/content.ts` imports all sixty words, so a candidate could read
+ahead in the page source. ~~The session clock lives in `localStorage`~~ — fixed
+2026-10-12: the clock and every answer are the server's now (server-store.ts).
+What remains is serving each word only when it is due: the engine already emits
+`release` per item, so it is a swap behind `RunnerContent` (a release endpoint
+that checks the item's window), not a rewrite. Matters before anything scored
+is built on WAT.
 
 ## 2026-09-24
 

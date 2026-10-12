@@ -23,16 +23,18 @@ looks arbitrary there is a recorded decision with evidence behind it.
 **Pre-product, with a UI.** A Next.js 16 app (`src/app/`, `src/ui/`) now runs
 the student surface on local data: app shell, Practise by SSB day, honest empty
 states, and the **WAT runner** wrapping the engine. **Sprint 1 is under way:** the
-database (tenancy, server clock, access rules) is live and gated by tests;
-sign-in works (email + password, manual logins); staff create logins in the app
-(`/staff/people`, D23) and the superadmin creates academies (`/admin`). The
-runner still saves to `localStorage` until the Supabase session store lands. Also present:
+**Sprint 1 is complete.** The database (tenancy, access rules) is live and gated by
+tests; sign-in works (email + password, manual logins); staff create logins in the
+app (`/staff/people`, D23) and the superadmin creates academies (`/admin`). The
+runner saves to the server and runs on the server's clock: start time from
+`start_session`, answers through `save_response` (refused outside their window),
+countdown on the measured offset to the server, resume on any device. Also present:
 the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-495 tests passing · npm test        lint clean · npm run lint        npm run build green
-50 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
+500 tests passing · npm test        lint clean · npm run lint        npm run build green
+57 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
 **Type-checking is new.** `npm run typecheck` checks everything and currently
@@ -95,7 +97,9 @@ src/ui/
   runner/
     registry.ts          RUNNABLE — the only way a test becomes "ready"
     Runner.tsx           the React wrapper: renders engine state, carries out its effects
-    session-store.ts     SessionStore — local (now) / Supabase (Sprint 1) behind one interface
+    session-store.ts     SessionStore — the contract (+ the in-memory reference store the tests use)
+    server-store.ts      the app's store: server start time, clock offset, batched saves, retry, "not saved" state
+    supabase-api.ts      start_session / save_response / end_session · loadLiveSession (reload, Home banner)
     content.ts           WAT words from content/wat-items.json — ships the whole deck (known gap)
     paper.ts             D22 paper mode — session code (no handwriting-confusable chars), sheet pages
   sheet/                 AnswerSheet — the printable sheet at /sheets/[instrument]; code on every page, no name
@@ -103,7 +107,7 @@ src/ui/
 src/lib/
   auth/routing.ts        where each role lands; safeNext (no open redirects); which paths are public
   auth/viewer.ts         the data access layer — getViewer / requireViewerAt; every page asks here
-  supabase/              server (the user's RLS client) · admin (service role — only after the DB says yes)
+  supabase/              server · browser (the user's RLS client) · admin (service role — only after the DB says yes)
 src/proxy.ts             refreshes the session; sends visitors with none to /login (optimistic only)
 src/db/admin/            users.ts (insertAccount, user:create) · people.ts (createPeople — D23)
 supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people creation · 0004 create_academy
@@ -115,8 +119,8 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 495 tests (never touches the database)
-npm run test:db       # 50 tests against the live project: access rules, server clock, logins, who-creates-whom — fixtures cleaned up
+npm test              # 500 tests (never touches the database)
+npm run test:db       # 57 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
 npm run build         # production build (type-checks app code)
@@ -159,8 +163,8 @@ lists every conclusion a second assessor settles.
 
 - **The D5 bake-off** needs an `ANTHROPIC_API_KEY` or an `ant auth login` profile.
   Everything else for it is built.
-- **Sprint 1** — database, access gate, sign-in and account creation done; the
-  Supabase session store (runner saves to the server) remains.
+- **Sprint 2** (ROADMAP) — OIR needs an item source decision (blocker 2) and
+  figure assets for non-verbal.
 - **A second assessor.** Everything it unblocks is listed in the ledger (D17 above).
 
 Deferred work carries over in [`SUGGESTIONS.md`](./SUGGESTIONS.md) with the

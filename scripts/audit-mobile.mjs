@@ -134,8 +134,6 @@ try {
 
   if (CANDIDATE.email && CANDIDATE.password) {
     await signIn(CANDIDATE);
-    await go('/');
-    await evaluate('localStorage.clear(), true');
     await auditPages(STUDENT_PAGES);
     await keyboardUp();
   } else skipped.push('student app and runner (no AUDIT_CANDIDATE_* credentials)');
@@ -143,14 +141,14 @@ try {
   ws.close();
 }
 
+/** Sessions live on the server: the first pass starts one, later passes resume it, the last abandons it. */
 async function keyboardUp() {
   for (const [w, h] of KEYBOARD_UP) {
     await view(w, 740);
     await go('/run/wat');
-    await evaluate('localStorage.clear(), true');
-    await go('/run/wat');
-    await evaluate(`[...document.querySelectorAll('button')].find((b) => /Begin/.test(b.textContent)).click(), true`);
-    await sleep(600);
+    await evaluate(`[...document.querySelectorAll('button')].find((b) => /Begin/.test(b.textContent))?.click(), true`);
+    for (let i = 0; i < 40 && !(await evaluate(`!!document.querySelector('main p.text-5xl')`)); i++) await sleep(250);
+    await sleep(300);
     await view(w, h);
     await sleep(400);
     const f = await evaluate(FIT);
@@ -158,7 +156,12 @@ async function keyboardUp() {
     console.log(`runner, keyboard up @ ${w}x${h}: ${issues.length ? issues.join(' ; ') : 'ok'} ${JSON.stringify(f.parts)}`);
     for (const i of issues) findings.push(`runner @ ${w}x${h}: ${i}`);
   }
-  await evaluate('localStorage.clear(), true');
+  // Leave nothing running: abandon the session the audit started.
+  await view(390, 844);
+  await evaluate(`[...document.querySelectorAll('button')].find((b) => /Abandon/.test(b.textContent))?.click(), true`);
+  await sleep(300);
+  await evaluate(`[...document.querySelectorAll('button')].find((b) => /End the test/.test(b.textContent))?.click(), true`);
+  await sleep(1500);
 }
 
 for (const s of skipped) console.log(`SKIPPED ${s}`);
