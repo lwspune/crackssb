@@ -22,15 +22,16 @@ looks arbitrary there is a recorded decision with evidence behind it.
 
 **Pre-product, with a UI.** A Next.js 16 app (`src/app/`, `src/ui/`) now runs
 the student surface on local data: app shell, Practise by SSB day, honest empty
-states, and the **WAT runner** wrapping the engine. No Supabase, no auth — the
-rest of `ROADMAP.md` Sprint 1 has not started, so sessions live in
-`localStorage` and the runner says "practice on this device". Also present:
+states, and the **WAT runner** wrapping the engine. **Sprint 1 is under way:** the
+database (tenancy, server clock, access rules) is live and gated by tests; the
+runner still saves to `localStorage` until the Supabase session store and the
+sign-in page land, and says "practice on this device" until then. Also present:
 the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-438 tests passing · npm test        lint clean · npm run lint        npm run build green
-mobile audit clean · npm run audit:mobile
+456 tests passing · npm test        lint clean · npm run lint        npm run build green
+27 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
 **Type-checking is new.** `npm run typecheck` checks everything and currently
@@ -105,7 +106,9 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 438 tests
+npm test              # 456 tests (never touches the database)
+npm run test:db       # 27 tests against the live project: access rules, server clock, logins — fixtures cleaned up
+npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
 npm run build         # production build (type-checks app code)
 npm run lint
@@ -147,8 +150,8 @@ lists every conclusion a second assessor settles.
 
 - **The D5 bake-off** needs an `ANTHROPIC_API_KEY` or an `ant auth login` profile.
   Everything else for it is built.
-- **Sprint 1** — scaffold, auth, tenancy, RLS. Until it exists the Definition of
-  Done ("golden path verified in the browser") cannot be met.
+- **Sprint 1** — database and access gate done; the session store and sign-in
+  page remain.
 - **A second assessor.** Everything it unblocks is listed in the ledger (D17 above).
 
 Deferred work carries over in [`SUGGESTIONS.md`](./SUGGESTIONS.md) with the
@@ -156,6 +159,21 @@ reasoning; strike items there when done rather than deleting them.
 
 ## Git
 
-Initialised 2026-10-12; nothing committed yet. Before any commit, `git status` and re-scan for names
+Initialised 2026-10-12; no remote yet. Before any commit, `git status` and re-scan for names
 (D21; `no-candidate-names.test.ts` does the scan locally) — the `.gitignore` covers `corpus/records/`, `corpus/reports/`, `corpus/report-findings.json`
-and the single-candidate script.
+and the single-candidate script — and `.mcp.json`, which holds the Supabase access token.
+
+## Supabase
+
+Project `qwxbvcsqhcjthdorkzlc`, **ap-south-1 Mumbai** (created 2026-10-12; a first project landed in Seoul and was replaced while empty). Claude reaches it through the Supabase MCP server in
+`.mcp.json` (gitignored, scoped to this project). Keys are in `.env.local` (gitignored); the service-role key is server-only. Sign-in is manual: accounts are created by script, public sign-up off.
+Tests run against this same project by the user's choice — every fixture tagged and removed, and a
+leftover-fixture check fails the run (Question_Bank learned this the hard way; see its testdb.ts).
+
+Migrations live in `supabase/migrations/` (the source of truth) and are applied through the MCP.
+Never edit an applied one; add the next number. Rules belong in the database: `access.db.test.ts`
+is the gate, and it was checked by loosening a policy and watching exactly its tests fail.
+
+**Accepted advisor warnings:** `start_session`, `save_response`, `end_session` are SECURITY
+DEFINER and callable by signed-in users — by design, they are the only write paths and check
+ownership, timing and consent themselves. Anything else the advisors raise is a finding.

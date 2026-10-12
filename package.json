@@ -19,7 +19,8 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "audit:mobile": "node scripts/audit-mobile.mjs",
-    "test:db": "vitest run --config vitest.db.config.ts"
+    "test:db": "vitest run --config vitest.db.config.ts",
+    "user:create": "node --experimental-strip-types scripts/user-create.ts"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
