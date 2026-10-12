@@ -195,7 +195,7 @@ function Brief({ title, facts, instruction, onBegin }: BriefProps) {
           >
             Begin <ArrowIcon />
           </button>
-          <Link href="/practise" className="text-sm font-medium text-runner-muted underline-offset-4 hover:text-runner-foreground hover:underline focus-visible:outline-runner-ring">
+          <Link href="/practise" className="inline-flex min-h-11 items-center px-2 text-sm font-medium text-runner-muted underline-offset-4 hover:text-runner-foreground hover:underline focus-visible:outline-runner-ring">
             Not now
           </Link>
         </div>
@@ -254,13 +254,13 @@ function LiveSequence(p: LiveProps) {
         </p>
       </div>
 
-      <div className="mx-auto flex w-full max-w-xl flex-1 flex-col justify-center px-4 pb-10 sm:px-6">
-        <p className="text-center text-5xl font-semibold uppercase tracking-[0.08em] sm:text-6xl" lang="en">
+      <div className="mx-auto flex w-full max-w-xl flex-1 flex-col justify-center px-4 pb-10 sm:px-6 short:justify-start short:pb-4 short:pt-6">
+        <p className="text-center text-5xl font-semibold uppercase tracking-[0.08em] sm:text-6xl short:text-4xl" lang="en">
           {p.word}
         </p>
-        <div aria-hidden="true" className="mx-auto mt-6 h-0.5 w-10 rounded-full bg-brand" />
+        <div aria-hidden="true" className="mx-auto mt-6 h-0.5 w-10 rounded-full bg-brand short:mt-3" />
 
-        <label htmlFor="runner-input" className="eyebrow mt-16 block text-runner-muted">
+        <label htmlFor="runner-input" className="eyebrow mt-16 block text-runner-muted short:mt-6">
           Your sentence
         </label>
         <input

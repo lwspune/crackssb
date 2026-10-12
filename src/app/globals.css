@@ -2,6 +2,9 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* A phone with its keyboard open: the runner tightens so word, field and clock all stay in view. */
+@custom-variant short (@media (max-height: 520px));
+
 /*
   The palette is PYQVault's (Question_Bank/src/app/globals.css, 2026-10-04):
   navy text, royal-blue brand, a tinted page so white cards stand off it, a

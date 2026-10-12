@@ -36,7 +36,7 @@ const DOT: Readonly<Record<Availability, string>> = {
 
 export function StatusBadge({ availability }: { availability: Availability }) {
   return (
-    <span className={`inline-flex shrink-0 items-center gap-1.5 rounded-full px-2.5 py-1 text-[0.6875rem] font-semibold uppercase tracking-[0.08em] ${BADGE[availability]}`}>
+    <span className={`inline-flex shrink-0 items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.08em] ${BADGE[availability]}`}>
       <span aria-hidden="true" className={`size-1.5 rounded-full ${DOT[availability]}`} />
       {AVAILABILITY_LABEL[availability]}
     </span>
@@ -46,11 +46,11 @@ export function StatusBadge({ availability }: { availability: Availability }) {
 /** "Says what is true" (UI.md §7 rule 3) — in one line. */
 export function EmptyState({ icon, title, href, action }: { icon: ReactNode; title: string; href?: string; action?: string }) {
   return (
-    <div className="flex items-center gap-4 rounded-xl border border-dashed bg-card/60 p-5">
-      <span aria-hidden="true" className="grid size-11 shrink-0 place-items-center rounded-lg bg-secondary text-muted-foreground">{icon}</span>
+    <div className="flex items-center gap-3 rounded-xl border border-dashed bg-card/60 p-4 sm:gap-4 sm:p-5">
+      <span aria-hidden="true" className="hidden size-11 shrink-0 place-items-center rounded-lg bg-secondary text-muted-foreground min-[360px]:grid">{icon}</span>
       <p className="flex-1 font-medium">{title}</p>
       {href && action && (
-        <Link href={href} className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-brand-accent hover:underline">
+        <Link href={href} className="-mr-2 inline-flex min-h-11 shrink-0 items-center gap-1 px-2 text-sm font-semibold text-brand-accent hover:underline">
           {action} <ArrowIcon width={16} height={16} />
         </Link>
       )}

@@ -26,7 +26,7 @@ function isActive(pathname: string, href: string): boolean {
 
 function Wordmark() {
   return (
-    <Link href="/" className="inline-flex items-center gap-2.5 rounded-md text-navy-foreground">
+    <Link href="/" className="inline-flex min-h-11 items-center gap-2.5 rounded-md text-navy-foreground">
       <span className="grid size-9 place-items-center rounded-lg bg-white/5 ring-1 ring-white/10">
         <Mark width={22} height={22} className="text-navy-accent" />
       </span>
@@ -94,7 +94,7 @@ export function AppShell({ children }: { children: ReactNode }) {
                 <Link
                   href={href}
                   aria-current={active ? 'page' : undefined}
-                  className={`relative flex min-h-14 flex-col items-center justify-center gap-1 text-[0.6875rem] font-medium ${
+                  className={`relative flex min-h-14 flex-col items-center justify-center gap-1 text-xs font-medium ${
                     active ? 'text-brand-accent' : 'text-muted-foreground'
                   }`}
                 >

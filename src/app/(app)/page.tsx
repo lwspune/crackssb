@@ -54,7 +54,7 @@ export default function HomePage() {
       <section aria-labelledby="days-h" className="rise mt-12 [animation-delay:80ms]">
         <div className="flex items-baseline justify-between gap-4">
           <h2 id="days-h" className="text-xl font-bold tracking-tight">The five days</h2>
-          <Link href="/practise" className="inline-flex items-center gap-1 text-sm font-semibold text-brand-accent hover:underline">
+          <Link href="/practise" className="-mr-2 inline-flex min-h-11 items-center gap-1 px-2 text-sm font-semibold text-brand-accent hover:underline">
             Practise <ArrowIcon width={16} height={16} />
           </Link>
         </div>

@@ -30,6 +30,7 @@ early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
 414 tests passing · npm test        lint clean · npm run lint        npm run build green
+mobile audit clean · npm run audit:mobile
 ```
 
 **Type-checking is new.** `npm run typecheck` checks everything and currently
@@ -107,6 +108,7 @@ npm run dev           # the app at localhost:3000
 npm run build         # production build (type-checks app code)
 npm run lint
 npm run typecheck     # everything, tests included — 4 known errors, see SUGGESTIONS.md
+npm run audit:mobile  # live build at 320/360/390px + keyboard-up runner; exits 1 on a finding (needs a CDP browser, see script header)
 npm run measure       # what share of assessor marks each layer reproduces
 npm run consistency   # Layer 4 over the corpus
 npm run evalset       # records/ -> 124 paired TAT stories (gitignored)

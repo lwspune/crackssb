@@ -17,7 +17,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "audit:mobile": "node scripts/audit-mobile.mjs"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
