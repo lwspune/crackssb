@@ -188,6 +188,21 @@ Same path as Chapter 11. Two format gaps to close first: Chapter 5 Q1-2 have a
 fifth option (E), and Chapter 10 Q40-49 share passages. `OirPayload` holds
 exactly A-D and one stem. Either widen the format (a `context` field, like the
 `direction` field added today) or declare a substitution per item.
+**Owner's call (2026-10-12):** hold Chapter 5 Q1-2; add an optional `passage`
+field for Chapter 10 Q40-49 when that chapter is done.
+
+Progress, in the agreed order (code-checkable chapters first: 4, 6, 9, 8, 3, 5,
+then 7, 10, 1, 2). Page map: ch1 p1-3 · ch2 p4-8 · ch3 p9-14 · ch4 p15-16 ·
+ch5 p17-21 · ch6 p22-23 · ch7 p24-28 · ch8 p29-34 · ch9 p35-37 · ch10 p38-40.
+- ~~Chapter 4, Word Formation~~ — done 2026-10-12: 47 of 47 seeded, none held,
+  every key a letter count (`kind: 'letters'`). Tests run through the shared
+  `src/items/__tests__/oir-chapter-suite.ts`.
+
+### Backfill ledger: Chapter 11's test onto the shared chapter suite
+`oir-agrawal-series.test.ts` predates `oir-chapter-suite.ts` and carries its own
+copy of the transcription / key / bank checks. Moving it onto the suite (adding
+the `missing`, `wrong`, `fill`, `next` kinds to the suite's `runCheck`) removes
+the duplicate. Shipped and passing, so it waits for a 360 and a yes.
 
 ### Printed typos shown to candidates
 Directions and stems are verbatim, so candidates see "which dase not fit". Decide
