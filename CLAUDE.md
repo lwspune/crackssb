@@ -176,7 +176,7 @@ reasoning; strike items there when done rather than deleting them.
 
 ## Git
 
-Initialised 2026-10-12; no remote yet. Before any commit, `git status` and re-scan for names
+Remote: **private** `github.com/lwspune/crackssb` (branch `main`) — keep it private: it holds the OIR book with answer keys and pseudonymised candidate quotes. Before any commit or push, `git status` and re-scan for names
 (D21; `no-candidate-names.test.ts` does the scan locally) — the `.gitignore` covers `corpus/records/`, `corpus/reports/`, `corpus/report-findings.json`
 and the single-candidate script — and `.mcp.json`, which holds the Supabase access token.
 
