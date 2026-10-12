@@ -1,6 +1,15 @@
 import { describe, it, expect } from 'vitest';
 import {
+  ALPHABETS,
+  between,
   fillBlanks,
+  fromLeft,
+  fromRight,
+  leftOf,
+  middleOf,
+  posFromLeft,
+  posFromRight,
+  rightOf,
   fromDiffs,
   hamming,
   iterate,
@@ -123,6 +132,42 @@ describe('lettersShort', () => {
 
   it('reads letters only, in either case', () => {
     expect(lettersShort('Conduct', 'COUNTED')).toEqual([{ letter: 'E', need: 1, have: 0 }]);
+  });
+});
+
+describe('alphabet positions', () => {
+  const abc = ALPHABETS.normal;
+
+  it('builds the four orders the book uses', () => {
+    expect(ALPHABETS.normal).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    expect(ALPHABETS.firstHalfReversed).toBe('MLKJIHGFEDCBANOPQRSTUVWXYZ');
+    expect(ALPHABETS.secondHalfReversed).toBe('ABCDEFGHIJKLMZYXWVUTSRQPON');
+    expect(ALPHABETS.reversed).toBe('ZYXWVUTSRQPONMLKJIHGFEDCBA');
+  });
+
+  it('reads a letter by position from either end, and a position from a letter', () => {
+    expect(fromLeft(abc, 13)).toBe('M');
+    expect(fromRight(abc, 15)).toBe('L');
+    expect(posFromLeft(abc, 'S')).toBe(19);
+    expect(posFromRight(abc, 'K')).toBe(16);
+  });
+
+  it('counts to the left and right, and says null off either end', () => {
+    expect(rightOf(abc, 'M', 7)).toBe('T');
+    expect(leftOf(abc, 'W', 12)).toBe('K');
+    expect(leftOf(abc, 'F', 16)).toBeNull();
+    expect(fromLeft(abc, 27)).toBeNull();
+  });
+
+  it('finds the middle letter, or null when an even number lie between', () => {
+    expect(middleOf(abc, 'E', 'O')).toBe('J');
+    expect(middleOf(abc, 'O', 'E')).toBe('J');
+    expect(middleOf(abc, 'H', 'S')).toBeNull();
+  });
+
+  it('counts the letters strictly between two', () => {
+    expect(between(abc, 'R', 'C')).toBe(14);
+    expect(between(abc, 'A', 'B')).toBe(0);
   });
 });
 

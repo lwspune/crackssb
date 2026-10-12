@@ -87,6 +87,55 @@ export function lettersShort(word: string, candidate: string): { letter: string;
     .map(([letter, need]) => ({ letter, need, have: have.get(letter) ?? 0 }));
 }
 
+const ABC = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const reverse = (s: string) => [...s].reverse().join('');
+
+/** The letter orders the book's alphabet questions are set in. */
+export const ALPHABETS = {
+  normal: ABC,
+  firstHalfReversed: reverse(ABC.slice(0, 13)) + ABC.slice(13),
+  secondHalfReversed: ABC.slice(0, 13) + reverse(ABC.slice(13)),
+  reversed: reverse(ABC),
+} as const;
+
+/** The n-th letter from the left (1-based), or null off the end. */
+export function fromLeft(seq: string, n: number): string | null {
+  return n >= 1 && n <= seq.length ? seq[n - 1] : null;
+}
+
+export function fromRight(seq: string, n: number): string | null {
+  return fromLeft(seq, seq.length + 1 - n);
+}
+
+export function posFromLeft(seq: string, letter: string): number {
+  const i = seq.indexOf(letter);
+  if (i < 0) throw new RangeError(`${letter} is not in ${seq}`);
+  return i + 1;
+}
+
+export function posFromRight(seq: string, letter: string): number {
+  return seq.length + 1 - posFromLeft(seq, letter);
+}
+
+export function rightOf(seq: string, letter: string, k: number): string | null {
+  return fromLeft(seq, posFromLeft(seq, letter) + k);
+}
+
+export function leftOf(seq: string, letter: string, k: number): string | null {
+  return fromLeft(seq, posFromLeft(seq, letter) - k);
+}
+
+/** The letter exactly midway between two, or null when an even number of letters lie between them. */
+export function middleOf(seq: string, a: string, b: string): string | null {
+  const sum = posFromLeft(seq, a) + posFromLeft(seq, b);
+  return sum % 2 === 0 ? fromLeft(seq, sum / 2) : null;
+}
+
+/** How many letters lie strictly between two. */
+export function between(seq: string, a: string, b: string): number {
+  return Math.abs(posFromLeft(seq, a) - posFromLeft(seq, b)) - 1;
+}
+
 export type KeyBasis = 'derived' | 'book' | 'derived_and_book';
 
 export interface ItemRow {

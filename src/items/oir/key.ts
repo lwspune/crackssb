@@ -20,6 +20,10 @@ import type { OptionLabel } from '../bank.ts';
  *   the item after them.
  * - `letters`: word formation. The keyed option is the only one that cannot be
  *   made from the stem's letters, each used as often as it appears.
+ * - `computed`: `answer` is worked out by code in the key file. Exactly one
+ *   option reads as it, and that one is keyed. When no option does (or the
+ *   answer is null: no such letter), the key is the one "None of these" / "No
+ *   letter" option.
  * - `reasoned`: no mechanical check; the rule is the argument.
  */
 export type KeyCheck =
@@ -29,6 +33,7 @@ export type KeyCheck =
   | { readonly kind: 'fill'; readonly template: string; readonly expected: string; readonly misread?: number }
   | { readonly kind: 'next'; readonly sequence: readonly string[] }
   | { readonly kind: 'letters' }
+  | { readonly kind: 'computed'; readonly answer: string | number | null }
   | { readonly kind: 'reasoned' };
 
 /**

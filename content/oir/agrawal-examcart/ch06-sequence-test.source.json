@@ -1,0 +1,649 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSB OIR PAGE NO. 1-44 (phone photos of printed pages 1-44)",
+  "chapter": 6,
+  "title": "Sequence Test",
+  "pages": [
+    22,
+    23
+  ],
+  "transcribed": "2026-10-12",
+  "note": "Verbatim, typos included. Never edited: corrections live in src/items/oir/. Ordinals print with superscript suffixes (15th); transcribed inline. The Q1-20 direction prints the alphabet as a line beneath it.",
+  "directions": [
+    {
+      "section": "Normal",
+      "printed": "Direction (Q. No. 1 to 20)",
+      "text": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+    },
+    {
+      "section": "FirstHalfReversed",
+      "printed": "Direction (Q. No. 21 to 31)",
+      "text": "If 1st half of the alphabet is written in reverse order, then answer the following questions given below :"
+    },
+    {
+      "section": "SecondHalfReversed",
+      "printed": "Direction (Q. No. 32 to 40)",
+      "text": "If 2nd half of the English alphabets are written in reverse order, then answer the following questions given below :"
+    },
+    {
+      "section": "Reversed",
+      "printed": "Direction (Q. No. 41 to 51)",
+      "text": "If English alphabet is written in reverse order, then answer the following questions given below :"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 22,
+      "section": "Normal",
+      "stem": "Which letter is seventh to the right of the thirteenth letter from the left end?",
+      "options": {
+        "A": "S",
+        "B": "T",
+        "C": "U",
+        "D": "V"
+      }
+    },
+    {
+      "n": 2,
+      "page": 22,
+      "section": "Normal",
+      "stem": "Which letter will be sixth to the left of the nineteenth letter from the right end of the English alphabet series ?",
+      "options": {
+        "A": "M",
+        "B": "N",
+        "C": "X",
+        "D": "None of these"
+      }
+    },
+    {
+      "n": 3,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, which letter will be 15th from right ?",
+      "options": {
+        "A": "O",
+        "B": "L",
+        "C": "K",
+        "D": "Q"
+      }
+    },
+    {
+      "n": 4,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, which letter will be 23rd from left end ?",
+      "options": {
+        "A": "U",
+        "B": "D",
+        "C": "W",
+        "D": "X"
+      }
+    },
+    {
+      "n": 5,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, what is the place of S from left end ?",
+      "options": {
+        "A": "10",
+        "B": "19",
+        "C": "18",
+        "D": "25"
+      }
+    },
+    {
+      "n": 6,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, what is the position of K from right ?",
+      "options": {
+        "A": "11",
+        "B": "16",
+        "C": "17",
+        "D": "15"
+      }
+    },
+    {
+      "n": 7,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, which letter will be 16th to the left of the 6th from left ?",
+      "options": {
+        "A": "O",
+        "B": "P",
+        "C": "V",
+        "D": "R"
+      }
+    },
+    {
+      "n": 8,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, which letter is 17th to the right of the 8th from right end ?",
+      "options": {
+        "A": "J",
+        "B": "Q",
+        "C": "X",
+        "D": "I"
+      }
+    },
+    {
+      "n": 9,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, which letter is 6th to the right of M ?",
+      "options": {
+        "A": "G",
+        "B": "S",
+        "C": "D",
+        "D": "R"
+      }
+    },
+    {
+      "n": 10,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, which letter is 12th to the left of W ?",
+      "options": {
+        "A": "I",
+        "B": "K",
+        "C": "J",
+        "D": "M"
+      }
+    },
+    {
+      "n": 11,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, which letter will be exactly in the middle of E and O ?",
+      "options": {
+        "A": "L",
+        "B": "J",
+        "C": "T",
+        "D": "R"
+      }
+    },
+    {
+      "n": 12,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, which letter will be exactly in the middle of 15th letter from right and 24th letter from left ?",
+      "options": {
+        "A": "P",
+        "B": "O",
+        "C": "R",
+        "D": "M"
+      }
+    },
+    {
+      "n": 13,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, which letter will be in the middle of 8th and 22nd letter from left ?",
+      "options": {
+        "A": "T",
+        "B": "O",
+        "C": "R",
+        "D": "S"
+      }
+    },
+    {
+      "n": 14,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, which letter is 10th to the left of the 19th letter to the right of the 7th from left end ?",
+      "options": {
+        "A": "K",
+        "B": "L",
+        "C": "P",
+        "D": "R"
+      }
+    },
+    {
+      "n": 15,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, which letter is 7th to the left of the 11th to the right of the 21st from right end ?",
+      "options": {
+        "A": "Q",
+        "B": "J",
+        "C": "L",
+        "D": "P"
+      }
+    },
+    {
+      "n": 16,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, how many letters are there between 18th letter from left and 3rd letter from left ?",
+      "options": {
+        "A": "9",
+        "B": "10",
+        "C": "14",
+        "D": "15"
+      }
+    },
+    {
+      "n": 17,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, how many letters are there between 21st letter from left and 10th letter from left ?",
+      "options": {
+        "A": "9",
+        "B": "10",
+        "C": "11",
+        "D": "15"
+      }
+    },
+    {
+      "n": 18,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, how many letters are there between 8th letter from left and 20th letter from left ?",
+      "options": {
+        "A": "10",
+        "B": "11",
+        "C": "12",
+        "D": "16"
+      }
+    },
+    {
+      "n": 19,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, how many letters are there between 19th and 11th letter from right?",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "9",
+        "D": "11"
+      }
+    },
+    {
+      "n": 20,
+      "page": 22,
+      "section": "Normal",
+      "stem": "In the English alphabet, how many letters are there between 5th letter from the left and 16th letter from left end ?",
+      "options": {
+        "A": "9",
+        "B": "10",
+        "C": "11",
+        "D": "None"
+      }
+    },
+    {
+      "n": 21,
+      "page": 22,
+      "section": "FirstHalfReversed",
+      "stem": "Which letter will be 3rd to the left of the 15th letter from left ?",
+      "options": {
+        "A": "R",
+        "B": "L",
+        "C": "B",
+        "D": "D"
+      }
+    },
+    {
+      "n": 22,
+      "page": 22,
+      "section": "FirstHalfReversed",
+      "stem": "Which letter will be 11th to the right of the 7th letter from left end ?",
+      "options": {
+        "A": "C",
+        "B": "J",
+        "C": "R",
+        "D": "S"
+      }
+    },
+    {
+      "n": 23,
+      "page": 22,
+      "section": "FirstHalfReversed",
+      "stem": "Which letter will be 6th to the right of the 5th letter from left end ?",
+      "options": {
+        "A": "K",
+        "B": "C",
+        "C": "D",
+        "D": "J"
+      }
+    },
+    {
+      "n": 24,
+      "page": 22,
+      "section": "FirstHalfReversed",
+      "stem": "Which letter will be 6th to the right of the 17th letter from right end ?",
+      "options": {
+        "A": "K",
+        "B": "L",
+        "C": "P",
+        "D": "R"
+      }
+    },
+    {
+      "n": 25,
+      "page": 22,
+      "section": "FirstHalfReversed",
+      "stem": "Which letter will be 7th to the right of the 20th letter from right ?",
+      "options": {
+        "A": "M",
+        "B": "N",
+        "C": "O",
+        "D": "K"
+      }
+    },
+    {
+      "n": 26,
+      "page": 22,
+      "section": "FirstHalfReversed",
+      "stem": "Which letter will be 17th to the left of the 6th letter from right end ?",
+      "options": {
+        "A": "U",
+        "B": "W",
+        "C": "J",
+        "D": "L"
+      }
+    },
+    {
+      "n": 27,
+      "page": 22,
+      "section": "FirstHalfReversed",
+      "stem": "Which letter will be 21st from right end ?",
+      "options": {
+        "A": "F",
+        "B": "G",
+        "C": "H",
+        "D": "L"
+      }
+    },
+    {
+      "n": 28,
+      "page": 22,
+      "section": "FirstHalfReversed",
+      "stem": "Which letter will be exactly in between 9th and 19th letter from left ?",
+      "options": {
+        "A": "M",
+        "B": "N",
+        "C": "O",
+        "D": "P"
+      }
+    },
+    {
+      "n": 29,
+      "page": 22,
+      "section": "FirstHalfReversed",
+      "stem": "Which letter will be in the middle of 8th and 19th letter from right ?",
+      "options": {
+        "A": "M",
+        "B": "N",
+        "C": "J",
+        "D": "No letter"
+      }
+    },
+    {
+      "n": 30,
+      "page": 22,
+      "section": "FirstHalfReversed",
+      "stem": "Which letter will be in the middle of 10th and 18th letter from right end ?",
+      "options": {
+        "A": "M",
+        "B": "A",
+        "C": "B",
+        "D": "N"
+      }
+    },
+    {
+      "n": 31,
+      "page": 22,
+      "section": "FirstHalfReversed",
+      "stem": "Which letter will be 18th from right end?",
+      "options": {
+        "A": "I",
+        "B": "J",
+        "C": "E",
+        "D": "G"
+      }
+    },
+    {
+      "n": 32,
+      "page": 22,
+      "section": "SecondHalfReversed",
+      "stem": "Which letter will be 5th to the right of the 17th from left ?",
+      "options": {
+        "A": "L",
+        "B": "M",
+        "C": "T",
+        "D": "R"
+      }
+    },
+    {
+      "n": 33,
+      "page": 23,
+      "section": "SecondHalfReversed",
+      "stem": "Which letter will be 10th to the left of the 11th from right ?",
+      "options": {
+        "A": "G",
+        "B": "H",
+        "C": "F",
+        "D": "E"
+      }
+    },
+    {
+      "n": 34,
+      "page": 23,
+      "section": "SecondHalfReversed",
+      "stem": "Which letter is 11th to the right of the 18th from right end ?",
+      "options": {
+        "A": "G",
+        "B": "H",
+        "C": "T",
+        "D": "V"
+      }
+    },
+    {
+      "n": 35,
+      "page": 23,
+      "section": "SecondHalfReversed",
+      "stem": "Which letter is 10th to the left of the 25th from left ?",
+      "options": {
+        "A": "O",
+        "B": "P",
+        "C": "Q",
+        "D": "Y"
+      }
+    },
+    {
+      "n": 36,
+      "page": 23,
+      "section": "SecondHalfReversed",
+      "stem": "Which letter will be 7th from right end ?",
+      "options": {
+        "A": "F",
+        "B": "G",
+        "C": "T",
+        "D": "R"
+      }
+    },
+    {
+      "n": 37,
+      "page": 23,
+      "section": "SecondHalfReversed",
+      "stem": "Which letter will be 18th from left end ?",
+      "options": {
+        "A": "U",
+        "B": "V",
+        "C": "W",
+        "D": "Z"
+      }
+    },
+    {
+      "n": 38,
+      "page": 23,
+      "section": "SecondHalfReversed",
+      "stem": "Which letter will be 6th to the right of the 11th to the right of the 5th from left end ?",
+      "options": {
+        "A": "U",
+        "B": "V",
+        "C": "R",
+        "D": "T"
+      }
+    },
+    {
+      "n": 39,
+      "page": 23,
+      "section": "SecondHalfReversed",
+      "stem": "Which letter is in the middle of 10th and 18th from left ?",
+      "options": {
+        "A": "Z",
+        "B": "N",
+        "C": "O",
+        "D": "P"
+      }
+    },
+    {
+      "n": 40,
+      "page": 23,
+      "section": "SecondHalfReversed",
+      "stem": "Which letter is in the middle of 15th from right and 20th from left ?",
+      "options": {
+        "A": "O",
+        "B": "P",
+        "C": "E",
+        "D": "X"
+      }
+    },
+    {
+      "n": 41,
+      "page": 23,
+      "section": "Reversed",
+      "stem": "Which letter will be 12th to the left of the 25th from left ?",
+      "options": {
+        "A": "J",
+        "B": "M",
+        "C": "N",
+        "D": "Q"
+      }
+    },
+    {
+      "n": 42,
+      "page": 23,
+      "section": "Reversed",
+      "stem": "Which letter will be 7th to the right of the 11th from left ?",
+      "options": {
+        "A": "D",
+        "B": "I",
+        "C": "R",
+        "D": "J"
+      }
+    },
+    {
+      "n": 43,
+      "page": 23,
+      "section": "Reversed",
+      "stem": "Which letter is 17th to the left of the 7th from right ?",
+      "options": {
+        "A": "I",
+        "B": "J",
+        "C": "X",
+        "D": "C"
+      }
+    },
+    {
+      "n": 44,
+      "page": 23,
+      "section": "Reversed",
+      "stem": "Which letter is 18th to the right of the 22nd from right ?",
+      "options": {
+        "A": "D",
+        "B": "C",
+        "C": "W",
+        "D": "X"
+      }
+    },
+    {
+      "n": 45,
+      "page": 23,
+      "section": "Reversed",
+      "stem": "Which letter is 16th from left ?",
+      "options": {
+        "A": "M",
+        "B": "O",
+        "C": "P",
+        "D": "K"
+      }
+    },
+    {
+      "n": 46,
+      "page": 23,
+      "section": "Reversed",
+      "stem": "Which letter is 17th from right ?",
+      "options": {
+        "A": "U",
+        "B": "X",
+        "C": "Q",
+        "D": "W"
+      }
+    },
+    {
+      "n": 47,
+      "page": 23,
+      "section": "Reversed",
+      "stem": "Which letter is 24th from left end ?",
+      "options": {
+        "A": "U",
+        "B": "X",
+        "C": "C",
+        "D": "W"
+      }
+    },
+    {
+      "n": 48,
+      "page": 23,
+      "section": "Reversed",
+      "stem": "What will be the position of S from left end ?",
+      "options": {
+        "A": "10",
+        "B": "19",
+        "C": "8",
+        "D": "18"
+      }
+    },
+    {
+      "n": 49,
+      "page": 23,
+      "section": "Reversed",
+      "stem": "Which letter is in the middle of 8th and 24th letter from left end ?",
+      "options": {
+        "A": "O",
+        "B": "P",
+        "C": "Q",
+        "D": "K"
+      }
+    },
+    {
+      "n": 50,
+      "page": 23,
+      "section": "Reversed",
+      "stem": "Which letter will be in the middle of 10th and 18th letter from right end ?",
+      "options": {
+        "A": "O",
+        "B": "L",
+        "C": "M",
+        "D": "P"
+      }
+    },
+    {
+      "n": 51,
+      "page": 23,
+      "section": "Reversed",
+      "stem": "Which letter in the alphabet is as far from G as T is from M ?",
+      "options": {
+        "A": "M",
+        "B": "N",
+        "C": "O",
+        "D": "P"
+      }
+    }
+  ]
+}

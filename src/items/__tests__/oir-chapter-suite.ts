@@ -56,6 +56,17 @@ function runCheck(check: KeyCheck, q: SourceQuestion, k: KeyedEntry): void {
       for (const l of others(k.key)) expect(lettersShort(stem, q.options[l]), `option ${l} cannot be made either`).toEqual([]);
       return;
     }
+    case 'computed': {
+      const norm = (s: string) => s.trim().toUpperCase();
+      const reads = check.answer === null ? [] : OPTION_LABELS.filter((l) => norm(q.options[l]) === norm(String(check.answer)));
+      if (reads.length > 0) {
+        expect(reads, `options reading as ${check.answer}`).toEqual([k.key]);
+        return;
+      }
+      const nones = OPTION_LABELS.filter((l) => /^(none|no letter)\b/i.test(q.options[l].trim()));
+      expect(nones, `no option reads as ${check.answer}, so the key is the one "none" option`).toEqual([k.key]);
+      return;
+    }
     case 'reasoned':
       return;
     default:

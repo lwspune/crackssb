@@ -13,6 +13,16 @@
     },
     {
       "source": "agrawal-examcart-oir",
+      "chapter": 6,
+      "title": "Sequence Test",
+      "pages": [
+        22,
+        23
+      ],
+      "file": "content/oir/agrawal-examcart/ch06-sequence-test.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
       "chapter": 11,
       "title": "Series Test",
       "pages": [
@@ -22,13 +32,31 @@
       "file": "content/oir/agrawal-examcart/ch11-series.source.json"
     }
   ],
-  "itemCount": 165,
-  "heldCount": 7,
+  "itemCount": 213,
+  "heldCount": 10,
   "confidence": {
-    "high": 159,
-    "medium": 6
+    "high": 206,
+    "medium": 7
   },
   "held": [
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q7",
+      "reason": "The 6th letter from the left is F, and nothing lies 16 places to its left. No option fits as printed; \"16th to the right\" would give V (C).",
+      "lean": "C"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q8",
+      "reason": "The 8th letter from the right is S, and nothing lies 17 places to its right. No option fits as printed; counting on round the alphabet past Z would give J (A).",
+      "lean": "A"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q50",
+      "reason": "Reversed, the 10th from the right is J (17th) and the 18th from the right is R (9th); the middle is the 13th, N, which is not an option. In the normal order the answer is M (C), so the print may have dropped the reversal.",
+      "lean": "C"
+    },
     {
       "source": "agrawal-examcart-oir",
       "source_ref": "ch11 p42 q68",
@@ -1148,6 +1176,1111 @@
       "source_ref": "ch4 p16 q47",
       "key_basis": "derived",
       "rule": "NEGATIVE needs a V, which CATEGORIZATION does not have. It also needs two Es, and CATEGORIZATION has one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter is seventh to the right of the thirteenth letter from the left end?",
+        "options": {
+          "A": "S",
+          "B": "T",
+          "C": "U",
+          "D": "V"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q1",
+      "key_basis": "derived",
+      "rule": "The 13th letter from the left is M; the 7th to its right is T.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q002",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be sixth to the left of the nineteenth letter from the right end of the English alphabet series ?",
+        "options": {
+          "A": "M",
+          "B": "N",
+          "C": "X",
+          "D": "None of these"
+        },
+        "key": "D",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q2",
+      "key_basis": "derived",
+      "rule": "The 19th letter from the right end is H; the 6th to its left is B, which is not among the options.",
+      "confidence": "medium",
+      "note": "If the print meant the 19th from the left (S), the answer would be M (A). Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch06-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, which letter will be 15th from right ?",
+        "options": {
+          "A": "O",
+          "B": "L",
+          "C": "K",
+          "D": "Q"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q3",
+      "key_basis": "derived",
+      "rule": "15th from the right is 26 − 15 + 1 = 12th from the left: L.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, which letter will be 23rd from left end ?",
+        "options": {
+          "A": "U",
+          "B": "D",
+          "C": "W",
+          "D": "X"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q4",
+      "key_basis": "derived",
+      "rule": "The 23rd letter is W.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, what is the place of S from left end ?",
+        "options": {
+          "A": "10",
+          "B": "19",
+          "C": "18",
+          "D": "25"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q5",
+      "key_basis": "derived",
+      "rule": "S is the 19th letter.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, what is the position of K from right ?",
+        "options": {
+          "A": "11",
+          "B": "16",
+          "C": "17",
+          "D": "15"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q6",
+      "key_basis": "derived",
+      "rule": "K is 11th from the left, so 26 − 11 + 1 = 16th from the right.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, which letter is 6th to the right of M ?",
+        "options": {
+          "A": "G",
+          "B": "S",
+          "C": "D",
+          "D": "R"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q9",
+      "key_basis": "derived",
+      "rule": "M is the 13th letter; 13 + 6 = 19th: S.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, which letter is 12th to the left of W ?",
+        "options": {
+          "A": "I",
+          "B": "K",
+          "C": "J",
+          "D": "M"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q10",
+      "key_basis": "derived",
+      "rule": "W is the 23rd letter; 23 − 12 = 11th: K.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, which letter will be exactly in the middle of E and O ?",
+        "options": {
+          "A": "L",
+          "B": "J",
+          "C": "T",
+          "D": "R"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q11",
+      "key_basis": "derived",
+      "rule": "E is 5th and O is 15th; the middle is the 10th, J.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, which letter will be exactly in the middle of 15th letter from right and 24th letter from left ?",
+        "options": {
+          "A": "P",
+          "B": "O",
+          "C": "R",
+          "D": "M"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q12",
+      "key_basis": "derived",
+      "rule": "The 15th from the right is L (12th from the left) and the 24th from the left is X; the middle of 12 and 24 is the 18th, R.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, which letter will be in the middle of 8th and 22nd letter from left ?",
+        "options": {
+          "A": "T",
+          "B": "O",
+          "C": "R",
+          "D": "S"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q13",
+      "key_basis": "derived",
+      "rule": "The 8th letter is H and the 22nd is V; the middle is the 15th, O.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, which letter is 10th to the left of the 19th letter to the right of the 7th from left end ?",
+        "options": {
+          "A": "K",
+          "B": "L",
+          "C": "P",
+          "D": "R"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q14",
+      "key_basis": "derived",
+      "rule": "The 7th from the left is G; 19 to its right is Z (26th); 10 to the left of Z is P.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, which letter is 7th to the left of the 11th to the right of the 21st from right end ?",
+        "options": {
+          "A": "Q",
+          "B": "J",
+          "C": "L",
+          "D": "P"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q15",
+      "key_basis": "derived",
+      "rule": "The 21st from the right is F (6th); 11 to its right is Q (17th); 7 to the left of Q is J.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, how many letters are there between 18th letter from left and 3rd letter from left ?",
+        "options": {
+          "A": "9",
+          "B": "10",
+          "C": "14",
+          "D": "15"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q16",
+      "key_basis": "derived",
+      "rule": "Between the 3rd and the 18th lie 18 − 3 − 1 = 14 letters.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, how many letters are there between 21st letter from left and 10th letter from left ?",
+        "options": {
+          "A": "9",
+          "B": "10",
+          "C": "11",
+          "D": "15"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q17",
+      "key_basis": "derived",
+      "rule": "Between the 10th and the 21st lie 21 − 10 − 1 = 10 letters.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, how many letters are there between 8th letter from left and 20th letter from left ?",
+        "options": {
+          "A": "10",
+          "B": "11",
+          "C": "12",
+          "D": "16"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q18",
+      "key_basis": "derived",
+      "rule": "Between the 8th and the 20th lie 20 − 8 − 1 = 11 letters.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, how many letters are there between 19th and 11th letter from right?",
+        "options": {
+          "A": "6",
+          "B": "7",
+          "C": "9",
+          "D": "11"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q19",
+      "key_basis": "derived",
+      "rule": "Between the 11th and the 19th from the right lie 19 − 11 − 1 = 7 letters.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the English alphabet, how many letters are there between 5th letter from the left and 16th letter from left end ?",
+        "options": {
+          "A": "9",
+          "B": "10",
+          "C": "11",
+          "D": "None"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "Each of the following question is based on given letter series. : A B C D E F G H I J K L M N O P Q R S T U V W X Y Z"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q20",
+      "key_basis": "derived",
+      "rule": "Between the 5th and the 16th lie 16 − 5 − 1 = 10 letters.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 3rd to the left of the 15th letter from left ?",
+        "options": {
+          "A": "R",
+          "B": "L",
+          "C": "B",
+          "D": "D"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If 1st half of the alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q21",
+      "key_basis": "derived",
+      "rule": "With the first half reversed (M L K … A N O … Z), the 15th from the left is O; 3 to its left is B.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 11th to the right of the 7th letter from left end ?",
+        "options": {
+          "A": "C",
+          "B": "J",
+          "C": "R",
+          "D": "S"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If 1st half of the alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q22",
+      "key_basis": "derived",
+      "rule": "With the first half reversed, the 7th from the left is G; 11 to its right is the 18th, R.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 6th to the right of the 5th letter from left end ?",
+        "options": {
+          "A": "K",
+          "B": "C",
+          "C": "D",
+          "D": "J"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "If 1st half of the alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q23",
+      "key_basis": "derived",
+      "rule": "With the first half reversed, the 5th from the left is I; 6 to its right is the 11th, C.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 6th to the right of the 17th letter from right end ?",
+        "options": {
+          "A": "K",
+          "B": "L",
+          "C": "P",
+          "D": "R"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If 1st half of the alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q24",
+      "key_basis": "derived",
+      "rule": "With the first half reversed, the 17th from the right is the 10th from the left, D; 6 to its right is the 16th, P.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 7th to the right of the 20th letter from right ?",
+        "options": {
+          "A": "M",
+          "B": "N",
+          "C": "O",
+          "D": "K"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "If 1st half of the alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q25",
+      "key_basis": "derived",
+      "rule": "With the first half reversed, the 20th from the right is the 7th from the left, G; 7 to its right is the 14th, N.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 17th to the left of the 6th letter from right end ?",
+        "options": {
+          "A": "U",
+          "B": "W",
+          "C": "J",
+          "D": "L"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If 1st half of the alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q26",
+      "key_basis": "derived",
+      "rule": "With the first half reversed, the 6th from the right is U (21st); 17 to its left is the 4th, J.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q027",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 21st from right end ?",
+        "options": {
+          "A": "F",
+          "B": "G",
+          "C": "H",
+          "D": "L"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If 1st half of the alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q27",
+      "key_basis": "derived",
+      "rule": "With the first half reversed, the 21st from the right is the 6th from the left, H.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be exactly in between 9th and 19th letter from left ?",
+        "options": {
+          "A": "M",
+          "B": "N",
+          "C": "O",
+          "D": "P"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "If 1st half of the alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q28",
+      "key_basis": "derived",
+      "rule": "With the first half reversed, the 9th from the left is E and the 19th is S; the middle is the 14th, N.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q029",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be in the middle of 8th and 19th letter from right ?",
+        "options": {
+          "A": "M",
+          "B": "N",
+          "C": "J",
+          "D": "No letter"
+        },
+        "key": "D",
+        "reasoningType": "alphabet",
+        "direction": "If 1st half of the alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q29",
+      "key_basis": "derived",
+      "rule": "With the first half reversed, the 8th from the right is S (19th) and the 19th from the right is F (8th). Ten letters lie between them, an even number, so no single letter is in the middle.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be in the middle of 10th and 18th letter from right end ?",
+        "options": {
+          "A": "M",
+          "B": "A",
+          "C": "B",
+          "D": "N"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "If 1st half of the alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q30",
+      "key_basis": "derived",
+      "rule": "With the first half reversed, the 10th from the right is Q (17th) and the 18th from the right is E (9th); the middle is the 13th, A.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q031",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 18th from right end?",
+        "options": {
+          "A": "I",
+          "B": "J",
+          "C": "E",
+          "D": "G"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If 1st half of the alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q31",
+      "key_basis": "derived",
+      "rule": "With the first half reversed, the 18th from the right is the 9th from the left, E.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 5th to the right of the 17th from left ?",
+        "options": {
+          "A": "L",
+          "B": "M",
+          "C": "T",
+          "D": "R"
+        },
+        "key": "D",
+        "reasoningType": "alphabet",
+        "direction": "If 2nd half of the English alphabets are written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p22 q32",
+      "key_basis": "derived",
+      "rule": "With the second half reversed (A … M Z Y … N), the 17th from the left is W; 5 to its right is the 22nd, R.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 10th to the left of the 11th from right ?",
+        "options": {
+          "A": "G",
+          "B": "H",
+          "C": "F",
+          "D": "E"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If 2nd half of the English alphabets are written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q33",
+      "key_basis": "derived",
+      "rule": "With the second half reversed, the 11th from the right is the 16th from the left, X; 10 to its left is the 6th, F.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter is 11th to the right of the 18th from right end ?",
+        "options": {
+          "A": "G",
+          "B": "H",
+          "C": "T",
+          "D": "V"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If 2nd half of the English alphabets are written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q34",
+      "key_basis": "derived",
+      "rule": "With the second half reversed, the 18th from the right is the 9th from the left, I; 11 to its right is the 20th, T.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter is 10th to the left of the 25th from left ?",
+        "options": {
+          "A": "O",
+          "B": "P",
+          "C": "Q",
+          "D": "Y"
+        },
+        "key": "D",
+        "reasoningType": "alphabet",
+        "direction": "If 2nd half of the English alphabets are written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q35",
+      "key_basis": "derived",
+      "rule": "With the second half reversed, the 25th from the left is O; 10 to its left is the 15th, Y.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 7th from right end ?",
+        "options": {
+          "A": "F",
+          "B": "G",
+          "C": "T",
+          "D": "R"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If 2nd half of the English alphabets are written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q36",
+      "key_basis": "derived",
+      "rule": "With the second half reversed, the 7th from the right is the 20th from the left, T.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 18th from left end ?",
+        "options": {
+          "A": "U",
+          "B": "V",
+          "C": "W",
+          "D": "Z"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "If 2nd half of the English alphabets are written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q37",
+      "key_basis": "derived",
+      "rule": "With the second half reversed, the 18th from the left is V.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 6th to the right of the 11th to the right of the 5th from left end ?",
+        "options": {
+          "A": "U",
+          "B": "V",
+          "C": "R",
+          "D": "T"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If 2nd half of the English alphabets are written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q38",
+      "key_basis": "derived",
+      "rule": "With the second half reversed, the 5th from the left is E; 11 to its right is X (16th); 6 to the right of X is the 22nd, R.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q039",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter is in the middle of 10th and 18th from left ?",
+        "options": {
+          "A": "Z",
+          "B": "N",
+          "C": "O",
+          "D": "P"
+        },
+        "key": "A",
+        "reasoningType": "alphabet",
+        "direction": "If 2nd half of the English alphabets are written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q39",
+      "key_basis": "derived",
+      "rule": "With the second half reversed, the 10th from the left is J and the 18th is V; the middle is the 14th, Z.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter is in the middle of 15th from right and 20th from left ?",
+        "options": {
+          "A": "O",
+          "B": "P",
+          "C": "E",
+          "D": "X"
+        },
+        "key": "D",
+        "reasoningType": "alphabet",
+        "direction": "If 2nd half of the English alphabets are written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q40",
+      "key_basis": "derived",
+      "rule": "With the second half reversed, the 15th from the right is L (12th from the left) and the 20th from the left is T; the middle of 12 and 20 is the 16th, X.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q041",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 12th to the left of the 25th from left ?",
+        "options": {
+          "A": "J",
+          "B": "M",
+          "C": "N",
+          "D": "Q"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If English alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q41",
+      "key_basis": "derived",
+      "rule": "Reversed (Z Y X … A), the 25th from the left is B; 12 to its left is the 13th, N.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter will be 7th to the right of the 11th from left ?",
+        "options": {
+          "A": "D",
+          "B": "I",
+          "C": "R",
+          "D": "J"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "If English alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q42",
+      "key_basis": "derived",
+      "rule": "Reversed, the 11th from the left is P; 7 to its right is the 18th, I.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter is 17th to the left of the 7th from right ?",
+        "options": {
+          "A": "I",
+          "B": "J",
+          "C": "X",
+          "D": "C"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If English alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q43",
+      "key_basis": "derived",
+      "rule": "Reversed, the 7th from the right is the 20th from the left, G; 17 to its left is the 3rd, X.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q044",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter is 18th to the right of the 22nd from right ?",
+        "options": {
+          "A": "D",
+          "B": "C",
+          "C": "W",
+          "D": "X"
+        },
+        "key": "A",
+        "reasoningType": "alphabet",
+        "direction": "If English alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q44",
+      "key_basis": "derived",
+      "rule": "Reversed, the 22nd from the right is the 5th from the left, V; 18 to its right is the 23rd, D.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter is 16th from left ?",
+        "options": {
+          "A": "M",
+          "B": "O",
+          "C": "P",
+          "D": "K"
+        },
+        "key": "D",
+        "reasoningType": "alphabet",
+        "direction": "If English alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q45",
+      "key_basis": "derived",
+      "rule": "Reversed, the 16th from the left is K.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter is 17th from right ?",
+        "options": {
+          "A": "U",
+          "B": "X",
+          "C": "Q",
+          "D": "W"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If English alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q46",
+      "key_basis": "derived",
+      "rule": "Reversed, the 17th from the right is the 10th from the left, Q.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter is 24th from left end ?",
+        "options": {
+          "A": "U",
+          "B": "X",
+          "C": "C",
+          "D": "W"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If English alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q47",
+      "key_basis": "derived",
+      "rule": "Reversed, the 24th from the left is C.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What will be the position of S from left end ?",
+        "options": {
+          "A": "10",
+          "B": "19",
+          "C": "8",
+          "D": "18"
+        },
+        "key": "C",
+        "reasoningType": "alphabet",
+        "direction": "If English alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q48",
+      "key_basis": "derived",
+      "rule": "Reversed (Z Y X W V U T S …), S is 8th from the left.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter is in the middle of 8th and 24th letter from left end ?",
+        "options": {
+          "A": "O",
+          "B": "P",
+          "C": "Q",
+          "D": "K"
+        },
+        "key": "D",
+        "reasoningType": "alphabet",
+        "direction": "If English alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q49",
+      "key_basis": "derived",
+      "rule": "Reversed, the 8th from the left is S and the 24th is C; the middle is the 16th, K.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch06-q051",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which letter in the alphabet is as far from G as T is from M ?",
+        "options": {
+          "A": "M",
+          "B": "N",
+          "C": "O",
+          "D": "P"
+        },
+        "key": "B",
+        "reasoningType": "alphabet",
+        "direction": "If English alphabet is written in reverse order, then answer the following questions given below :"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch6 p23 q51",
+      "key_basis": "derived",
+      "rule": "T is 7 letters from M. The letter 7 from G is N; 7 the other way runs off the start. Reversing the alphabet keeps the distance, so the answer is N either way.",
       "confidence": "high"
     },
     {
