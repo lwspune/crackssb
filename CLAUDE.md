@@ -191,6 +191,9 @@ deploys on every push to `main`. **Functions run in `bom1` (Mumbai)**, beside th
 `x-vercel-id` reads `bom1::bom1`. Env vars: the three Supabase keys, the service-role one marked Sensitive.
 The Vercel token is in `.mcp.json` (gitignored); it is project-scoped (it cannot list the user or teams), so pass
 `teamId` on every API call. Supabase's Site URL and redirect allow-list follow the live address.
+**Hobby plan:** Vercel deploys only commits whose author is the account owner. A deploy in state `BLOCKED` ("commit
+author doesn't have permission") means the commit's GitHub account is not linked to the Vercel login — on 2026-10-12
+`lwspune` was linked under Account Settings → Authentication and the blocked deploy was redeployed. Never "Upgrade to Pro" for this.
 
 ## Supabase
 
