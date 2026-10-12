@@ -603,3 +603,26 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 **Consequences.** `access.db.test.ts` proves a mentor and the superadmin can start, save and end a WAT flagged `by_staff`, that a candidate's session is not flagged, and that a candidate cannot set the flag. The browser walk covers the switcher at three roles, the picker, people created into the picked academy, and a mentor's flagged WAT. The `not_a_candidate` refusal now means only "a login with no profile".
 
 **Revisit if.** Staff need to see a *specific* candidate's student view (a read-only "view as", which would need its own audit trail), or academies want their staff's practice runs counted somewhere.
+
+---
+
+## D26 — OIR chapter practice: untimed, the key shown after each answer, kept apart from tests
+
+**Date:** 2026-10-12 · **Status:** Accepted
+
+**Context.** The owner asked for chapterwise practice and timed mocks, after Question_Bank's chapter tests and drill. Only Chapter 11 (Series, 118 items) is seeded, so a "full" OIR mock today would be 40 series questions. The Booklet contract (UI.md §3.1) forbids revealing correctness before submission, and practice exists to do exactly that.
+
+**Decision.**
+
+1. **Timed mocks are held** (the owner's choice) until more chapters are seeded; then they are fixed, committed booklets as in Question_Bank (SUGGESTIONS.md has the plan). The catalogue keeps OIR "Coming" and says so on the practice page.
+2. **Practice is not a runner mode and never a session.** It has no clock and reveals at once, so it lives outside the seven modes and the Booklet contract stays intact for tests.
+3. **The key arrives only after an answer.** `answer_practice` (0007) records the answer, then returns the key and its rule for that one item. Nothing else lets a signed-in user read `item_keys`. Once practised, a question's key is known to that candidate; a mock drawn from the same bank will repeat questions, as Question_Bank's chapter tests repeat past papers, on purpose.
+4. **A chapter is a reasoning type** (`src/oir/chapters.ts`), not a book's page range, so a second source joins the same chapter. Every reasoning type in the seeded bank must be listed (tested).
+5. **Every answer is kept** in `practice_answers`, retries included; a question counts by its latest answer. Sets: New (unanswered), Retry wrong (latest wrong), All. Readable as sessions are (self, own academy's staff, superadmin). `by_staff` is set by the database from the caller's role (D25).
+6. **The consent rule is `start_session`'s**: an under-18 candidate needs recorded guardian consent before an answer is stored.
+7. **Practice answers are not sittings** (D19): they were given with feedback one item at a time, so item statistics never read them.
+
+**Consequences.** `/practise/oir` lists chapters with progress; `/practise/oir/[chapter]` serves one question at a time (letters A–D answer, Enter moves on). `practice.db.test.ts` (8) gates the table and the function. Two new tokens, `--correct` and `--incorrect`, are gated in both modes by `theme-contrast.test.ts`.
+
+**Revisit if.** Candidates want a timed chapter drill (Question_Bank's sectional tests) before full mocks exist, or academies want practice progress in the staff app (the read policy already allows it).
+

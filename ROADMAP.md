@@ -63,7 +63,7 @@ Blocked only on sample data. Everything else in Phase 0 runs without it.
 | # | Item | Blocks | Status |
 |---|---|---|---|
 | 1 | Supabase project + Vercel account | Sprint 1 | **Open** |
-| 2 | OIR item source decision — author in-house, license, or seed ~150/type and grow | Sprint 2 | **Closed 2026-10-12** — a published book, verbatim, keys derived until the book's key is checked ([D24](./DECISIONS.md)). Chapter 11 (Series) seeded: 118 verbal items; non-verbal still open |
+| 2 | OIR item source decision — author in-house, license, or seed ~150/type and grow | Sprint 2 | **Closed 2026-10-12** — a published book, verbatim, keys derived until the book's key is checked ([D24](./DECISIONS.md)). Chapter 11 (Series) seeded: 118 verbal items, open for untimed chapter practice ([D26](./DECISIONS.md)); timed mocks held for more chapters; non-verbal still open |
 | 3 | Domain validator (ex-GTO / IO / SSB psychologist) to rate a sample set | Sprint 3 eval, and launch credibility | **Open** |
 | 4 | LLM API key, provider per [D5](./DECISIONS.md) | Sprint 3 | Not yet needed |
 | 5 | Handwriting sample corpus | Sprint X only | Self-harvesting from paper-mode uploads once storage exists ([D22](./DECISIONS.md)) |

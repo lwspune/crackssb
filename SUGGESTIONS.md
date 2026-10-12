@@ -7,6 +7,32 @@ Each item is outside the scope of the work that surfaced it. Strike through when
 
 ## 2026-10-12
 
+### OIR timed mocks — held until more chapters are seeded (D26)
+
+The owner held them: with only Series seeded, a 40-question OIR mock would be
+all series. When two or three more chapters are in, build them the Question_Bank
+way: fixed booklets committed as data (`content/oir-tests.json`, append-only so
+a sat test never changes), a `tests` table with the ordered item ids and time
+limit, `sessions.test_id` (one live session per test, not per instrument),
+`save_response` accepting only A–D for an item in the test, a
+`session_answer_key(session)` that answers only the owner and only after the
+session ends, a Booklet screen in the runner (question grid, back and forward),
+and a result page through `scoreOir` with the rules. Pace: the SSB's 40 in 17
+min (`INSTRUMENT_CONFIGS.oir_verbal`).
+
+### Practice: the chapter header counts are as of page load
+
+`/practise/oir/[chapter]` renders "n of 118 answered · r right" and the set
+counts on the server, so they do not move while the candidate answers; the
+set's own tally shows at the end. Move the counts into the client component if
+candidates read the stale header as a bug.
+
+### The practice read policy was not checked by loosening it
+
+`practice.db.test.ts` passes, but the "loosen the policy and watch exactly its
+tests fail" check (as done for `access.db.test.ts`) was blocked mid-run on
+2026-10-12 and the policy restored unchecked. Run it once by hand.
+
 ### ~~BLOCKER for `git init`: real candidate names are outside `corpus/records/`~~ — done 2026-10-12 (D21; scan of all 109 committable files: 0 hits)
 
 Found while preparing the first commit (nothing was committed; the empty repo

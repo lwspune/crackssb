@@ -11,7 +11,7 @@ coaching academies. Launch entry type: NDA.
 | [`ARCHITECTURE.md`](./ARCHITECTURE.md) | Schema, the 15-OLQ vector, edge-function contracts, the four seam rules, honest-claims policy |
 | [`ROADMAP.md`](./ROADMAP.md) | Phases, sprint order, gates, blockers, content lift |
 | [`UI.md`](./UI.md) | Roles (4 in schema, 3 experiences), the **seven runner modes** and their contracts, timing rules, per-role IA, build order |
-| [`DECISIONS.md`](./DECISIONS.md) | **D1–D19.** The long-form *why* trail. Append only; supersede rather than edit |
+| [`DECISIONS.md`](./DECISIONS.md) | **D1–D26.** The long-form *why* trail. Append only; supersede rather than edit |
 
 Read `DECISIONS.md` before changing anything in `src/scoring/` — most of what
 looks arbitrary there is a recorded decision with evidence behind it.
@@ -32,13 +32,17 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-675 tests passing · npm test        lint clean · npm run lint        npm run build green
-66 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
+716 tests passing · npm test        lint clean · npm run lint        npm run build green
+74 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
 **Type-checking is new.** `npm run typecheck` checks everything and currently
 reports four known errors in pre-existing test files (SUGGESTIONS.md). `next
 build` checks app code only, via `tsconfig.build.json`.
+
+**OIR chapter practice (D26).** `/practise/oir`: untimed, one question at a time; the key and its
+rule come back only after an answer (`answer_practice`), every answer kept for progress. Timed OIR
+mocks are held until more chapters are seeded (SUGGESTIONS.md has the plan).
 
 **Layered access (D25).** Staff also reach the student app and the superadmin reaches all three, through a switcher.
 Staff tests are flagged `by_staff` by the database and must stay out of results and item statistics.
@@ -88,6 +92,8 @@ src/items/               item bank — D19, D24
                          <book>-<chapter>.ts the derived key per chapter: rule in words AND as code, held questions with reasons
   stats.ts               sitting-grain rows, pooled at read · p = correct/attempted · null not zero · leads
 src/oir/score.ts         score-oir — raw, per-reasoning-type, percentile+band only WITH a norm, else null
+src/oir/chapters.ts      OIR chapters = reasoning types (D26); every type in the bank must be listed (tested)
+src/oir/practice.ts      chapter progress (latest answer counts) · New / Retry wrong / All queues · boundary parse
 src/runner/              the test-taking engine — D18, UI.md §3. Pure, `now` injected, no timers
   modes.ts               seven modes, MODE_RULES, INSTRUMENT_CONFIGS (counts from thresholds.ts)
   schedule.ts            buildSchedule — timeline fixed at start · positionAt — pure resume
@@ -106,16 +112,18 @@ src/ui/
     supabase-api.ts      start_session / save_response / end_session · loadLiveSession (reload, Home banner)
     content.ts           WAT words from content/wat-items.json — ships the whole deck (known gap)
     paper.ts             D22 paper mode — session code (no handwriting-confusable chars), sheet pages
+  practice/              PracticeRunner — answer, then key + rule; A–D and Enter from the keyboard (D26)
   sheet/                 AnswerSheet — the printable sheet at /sheets/[instrument]; code on every page, no name
   auth/ · staff/ · admin/  LoginForm · AddPeopleForm, people-lines (paste parser), PeopleTable · CreateAcademyForm
 src/lib/
+  practice/data.ts       chapter items (keyless) and the viewer's OWN practice answers, paged past 1000 rows
   auth/routing.ts        layered areas per role (D25); where each role lands; safeNext (no open redirects); which paths are public
   auth/acting.ts         the staff area's academy: staff their own, superadmin the one picked (acting_org cookie, checked)
   auth/viewer.ts         the data access layer — getViewer / requireViewerAt; every page asks here
   supabase/              server · browser (the user's RLS client) · admin (service role — only after the DB says yes)
 src/proxy.ts             refreshes the session; sends visitors with none to /login (optimistic only)
 src/db/admin/            users.ts (insertAccount, user:create) · people.ts (createPeople — D23)
-supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people creation · 0004 create_academy · 0005 items + item_keys (keys server-only) · 0006 staff practice (by_staff)
+supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people creation · 0004 create_academy · 0005 items + item_keys (keys server-only) · 0006 staff practice (by_staff) · 0007 practice_answers + answer_practice (D26)
 corpus/                  candidate data — records/ is GITIGNORED
 content/                 stimulus material — WAT deck, item bank, TAT images, OIR transcriptions (oir/) + oir-items.json
 scripts/                 build + measurement entry points
@@ -124,8 +132,8 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 675 tests (never touches the database)
-npm run test:db       # 66 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
+npm test              # 716 tests (never touches the database)
+npm run test:db       # 74 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
 npm run build         # production build (type-checks app code)
@@ -170,7 +178,7 @@ lists every conclusion a second assessor settles.
 
 - **The D5 bake-off** needs an `ANTHROPIC_API_KEY` or an `ant auth login` profile.
   Everything else for it is built.
-- **Sprint 2** (ROADMAP) — OIR verbal has a source (D24; Chapter 11 seeded, ten chapters to go,
+- **Sprint 2** (ROADMAP) — OIR verbal has a source (D24; Chapter 11 seeded and practisable (D26), ten chapters to go, timed mocks held until more land,
   the book's answer key still to come); non-verbal still needs figure assets.
 - **A second assessor.** Everything it unblocks is listed in the ledger (D17 above).
 
@@ -210,6 +218,6 @@ Never edit an applied one; add the next number. Rules belong in the database: `a
 is the gate, and it was checked by loosening a policy and watching exactly its tests fail.
 
 **Accepted advisor warnings:** `start_session`, `save_response`, `end_session`,
-`can_create_person`, `create_academy` are SECURITY DEFINER and callable by signed-in users —
+`can_create_person`, `create_academy`, `answer_practice` are SECURITY DEFINER and callable by signed-in users —
 by design: they are the only write paths and check ownership, timing, consent and role
 themselves. Anything else the advisors raise is a finding.
