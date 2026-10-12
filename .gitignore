@@ -36,3 +36,6 @@ next-env.d.ts
 
 # MCP server config carries a Supabase access token. Never committed.
 .mcp.json
+
+# Before/after screenshot sheets (Definition of Done) — local review only
+screenshots/
