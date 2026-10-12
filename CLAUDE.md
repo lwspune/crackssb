@@ -32,7 +32,7 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-778 tests passing · npm test        lint clean · npm run lint        npm run build green
+843 tests passing · npm test        lint clean · npm run lint        npm run build green
 74 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
@@ -133,7 +133,7 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 778 tests (never touches the database)
+npm test              # 843 tests (never touches the database)
 npm run test:db       # 74 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
@@ -179,7 +179,7 @@ lists every conclusion a second assessor settles.
 
 - **The D5 bake-off** needs an `ANTHROPIC_API_KEY` or an `ant auth login` profile.
   Everything else for it is built.
-- **Sprint 2** (ROADMAP) — OIR verbal has a source (D24; Chapters 4 and 11 seeded and practisable (D26), nine chapters to go — order and page map in SUGGESTIONS.md, timed mocks held until more land,
+- **Sprint 2** (ROADMAP) — OIR verbal has a source (D24; Chapters 4, 6 and 11 seeded and practisable (D26), eight chapters to go — order and page map in SUGGESTIONS.md, timed mocks held until more land,
   the book's answer key still to come); non-verbal still needs figure assets.
 - **A second assessor.** Everything it unblocks is listed in the ledger (D17 above).
 
