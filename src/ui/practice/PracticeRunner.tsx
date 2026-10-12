@@ -15,7 +15,7 @@ export interface PracticeItem {
   readonly id: string;
   readonly stem: string;
   readonly direction?: string;
-  /** Information shared by a group of questions, shown above the direction. */
+  /** Information shared by a group of questions, shown after the direction and before the question. */
   readonly passage?: string;
   readonly options: Readonly<Record<OptionLabel, string>>;
 }
@@ -151,8 +151,8 @@ export function PracticeRunner({ items, answer, doneHref }: Props) {
         <p className="eyebrow tabular-nums text-muted-foreground">
           {index + 1} of {items.length}
         </p>
-        {item.passage && <p className="mt-3 whitespace-pre-line rounded-lg bg-secondary p-4 text-sm leading-relaxed text-secondary-foreground">{item.passage}</p>}
         {item.direction && <p className="mt-3 text-sm text-muted-foreground">{item.direction}</p>}
+        {item.passage && <p className="mt-3 whitespace-pre-line rounded-lg bg-secondary p-4 text-sm leading-relaxed text-secondary-foreground">{item.passage}</p>}
         <p ref={stemRef} tabIndex={-1} className={`mt-2 break-words tabular-nums outline-none ${stemSize}`}>
           {item.stem}
         </p>
