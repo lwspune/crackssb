@@ -33,8 +33,8 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-500 tests passing · npm test        lint clean · npm run lint        npm run build green
-57 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
+645 tests passing · npm test        lint clean · npm run lint        npm run build green
+64 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
 **Type-checking is new.** `npm run typecheck` checks everything and currently
@@ -80,8 +80,10 @@ src/scoring/
   eval/agreement.ts      scores a judge; always reports the majority baseline
   report/template.ts     FRAMES, SLOTS, the withholding filter
   report/findings.ts     the reader's input contract (zod) — D16 enforced on parse, one FORBIDDEN regex
-src/items/               item bank — D19
+src/items/               item bank — D19, D24
   bank.ts                `items` row validated per type · assembleBooklet strips the key from what is released
+  oir/                   OIR from books (D24): key.ts the key-entry shape · check.ts runnable-rule helpers + splitKey · seed.ts file -> rows
+                         <book>-<chapter>.ts the derived key per chapter: rule in words AND as code, held questions with reasons
   stats.ts               sitting-grain rows, pooled at read · p = correct/attempted · null not zero · leads
 src/oir/score.ts         score-oir — raw, per-reasoning-type, percentile+band only WITH a norm, else null
 src/runner/              the test-taking engine — D18, UI.md §3. Pure, `now` injected, no timers
@@ -110,16 +112,16 @@ src/lib/
   supabase/              server · browser (the user's RLS client) · admin (service role — only after the DB says yes)
 src/proxy.ts             refreshes the session; sends visitors with none to /login (optimistic only)
 src/db/admin/            users.ts (insertAccount, user:create) · people.ts (createPeople — D23)
-supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people creation · 0004 create_academy
+supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people creation · 0004 create_academy · 0005 items + item_keys (keys server-only)
 corpus/                  candidate data — records/ is GITIGNORED
-content/                 stimulus material — WAT deck, item bank, TAT images
+content/                 stimulus material — WAT deck, item bank, TAT images, OIR transcriptions (oir/) + oir-items.json
 scripts/                 build + measurement entry points
 ```
 
 ## Commands
 
 ```bash
-npm test              # 500 tests (never touches the database)
+npm test              # 645 tests (never touches the database)
 npm run test:db       # 57 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
@@ -133,6 +135,8 @@ npm run evalset       # records/ -> 124 paired TAT stories (gitignored)
 npm run blindset      # eval set with ground truth stripped
 npm run fixture       # pseudonymous count fixture (committed; tests read this)
 npm run watitems      # WAT deck -> seeded item bank
+npm run oiritems      # OIR transcriptions + derived keys -> content/oir-items.json (held questions listed, never written)
+npm run items:seed    # content/oir-items.json -> items + item_keys. DRY RUN by default; -- --apply writes. Upsert by id, never deletes
 npm run eval                              # baselines only, no credential needed
 npm run eval -- --model claude-opus-5     # the D5 bake-off
 node scripts/build-reports.mjs [candidate]   # candidate reports as .docx
@@ -163,8 +167,8 @@ lists every conclusion a second assessor settles.
 
 - **The D5 bake-off** needs an `ANTHROPIC_API_KEY` or an `ant auth login` profile.
   Everything else for it is built.
-- **Sprint 2** (ROADMAP) — OIR needs an item source decision (blocker 2) and
-  figure assets for non-verbal.
+- **Sprint 2** (ROADMAP) — OIR verbal has a source (D24; Chapter 11 seeded, ten chapters to go,
+  the book's answer key still to come); non-verbal still needs figure assets.
 - **A second assessor.** Everything it unblocks is listed in the ledger (D17 above).
 
 Deferred work carries over in [`SUGGESTIONS.md`](./SUGGESTIONS.md) with the
@@ -184,6 +188,9 @@ Tests run against this same project by the user's choice — every fixture tagge
 leftover-fixture check fails the run (Question_Bank learned this the hard way; see its testdb.ts).
 
 Migrations live in `supabase/migrations/` (the source of truth) and are applied through the MCP.
+**From a session started in another repo the MCP is THAT repo's project** (Question_Bank's is PYQ Vault production):
+call `get_project_url` and see `qwxbvcsqhcjthdorkzlc` before any `apply_migration`. 0005 was applied through the
+Management API (`POST /v1/projects/qwxbvcsqhcjthdorkzlc/database/migrations`) with the token in this repo's `.mcp.json` for that reason.
 Never edit an applied one; add the next number. Rules belong in the database: `access.db.test.ts`
 is the gate, and it was checked by loosening a policy and watching exactly its tests fail.
 

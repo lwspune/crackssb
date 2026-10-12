@@ -8,6 +8,8 @@ candidate responses and assessor marks.
 | `wat-deck-2026-04-28.json` | The source deck as-is, extracted verbatim from `WAT-28-04-26.pptx`. Never edited |
 | `wat-items.json` | **The seeded item bank.** Derived from the deck with three declared substitutions |
 | `tat-images/` | TAT stimulus slides 1-4, as images |
+| `oir/agrawal-examcart/*.source.json` | OIR questions transcribed verbatim from the Agrawal ExamCart OIR book, one file per chapter. Never edited ([D24](../DECISIONS.md)) |
+| `oir-items.json` | **The OIR item bank.** Built by `npm run oiritems` from the transcriptions and the derived keys in `src/items/oir/`; held questions are listed with their reason |
 
 Source: a working deck obtained from a teacher who uses it. Cleared for use.
 

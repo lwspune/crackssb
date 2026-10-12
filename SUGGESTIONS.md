@@ -147,3 +147,27 @@ sheets, which yields direct inter-rater agreement. A different batch from a
 different assessor is still useful but much weaker — it confounds rater with
 cohort. When marks arrive, add an `assessor` key to each record and **compute
 per rater before pooling** (D17); pooling on arrival destroys the comparison.
+
+## 2026-10-12 (OIR, D24)
+
+### Compare the book's answer key with the derived Chapter 11 key
+The owner will share the key later. Check the 6 `confidence: medium` items first
+(Q3, 29, 65, 74, 104, 108), then all 118; settle each disagreement against the
+print, then set `key_basis` to `book` or `derived_and_book` in the key file and
+re-run `npm run oiritems` and `npm run items:seed -- --apply`. The 7 held
+questions (68, 69, 71, 78, 93, 102, 123) may become answerable from it.
+
+### Ingest the other ten chapters (~1,030 questions)
+Same path as Chapter 11. Two format gaps to close first: Chapter 5 Q1-2 have a
+fifth option (E), and Chapter 10 Q40-49 share passages. `OirPayload` holds
+exactly A-D and one stem. Either widen the format (a `context` field, like the
+`direction` field added today) or declare a substitution per item.
+
+### Printed typos shown to candidates
+Directions and stems are verbatim, so candidates see "which dase not fit". Decide
+whether shown text gets spelling fixes (declared, as WAT's DIFFCULT was) while
+the transcription stays verbatim.
+
+### Difficulty is 3 for every book item
+A placeholder, not a measurement (D24 point 7). Replace from item statistics
+(D19) once sittings exist; until then booklet assembly cannot balance on it.

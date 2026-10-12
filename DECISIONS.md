@@ -561,3 +561,25 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 **Consequences.** `people.db.test.ts` holds the whole matrix and the "existing account untouched" check; the browser walk proves the original password still works after a "create" of the same email. `npm run user:create` stays for bootstrapping the first superadmin.
 
 **Revisit if.** Google sign-in arrives (accounts may then be created by the person, and staff would invite rather than create), or academies need password resets — which must be built with the same never-touch-another-academy rule.
+
+---
+
+## D24 — OIR items come from a published book, word for word, with keys we derive until the book's key is checked
+
+**Date:** 2026-10-12 · **Status:** Accepted · **Closes** ROADMAP blocker 2
+
+**Context.** OIR needs roughly 400 verbal and 400 non-verbal items (ROADMAP, the content lift). The owner supplied 44 photographed pages of the Agrawal ExamCart OIR book (Reasoning: 11 chapters, ~1,150 verbal MCQs, no figures, and no answer key in the pages supplied). The book's questions are the kind candidates practise everywhere; the owner chose to use them as printed. Writing original items in the same style (Question_Bank's IMAT "twins") stays open if it is ever needed.
+
+**Decision.**
+
+1. **Transcribe verbatim, never edit the transcription.** `content/oir/<book>/<chapter>.source.json` is the page as printed, typos included. Every deviation lives in the key file, declared: a stem fix (`stemFix`), a direction that does not fit its section (`direction`), a character read differently from the photo (`misread`). The WAT deck's rule (content/README.md), applied to OIR.
+2. **Derive the key, and make the derivation runnable.** `src/items/oir/<book>-<chapter>.ts` gives each answer its rule in words and, wherever possible, as code: a number series is regenerated from its rule, a wrong-number series must differ from the print in exactly one place, a letter series is filled and tested for its pattern. A key is accepted only when its rule fits the print **and no other option fits the same rule**. Planting three wrong keys and one mis-copied template made exactly those four checks fail.
+3. **Hold what cannot be answered as printed.** Misprints, a blank count that does not match the options, or no rule found: the question is listed with its reason (and a lean, if a misprint points one way) and never seeded. Chapter 11: 7 of 125 held.
+4. **`key_basis = 'derived'`** on every key until the book's key arrives; then each disagreement is resolved and the row says `book` or `derived_and_book`. `confidence: medium` (6 in Chapter 11) marks the ones to compare first.
+5. **Two tables (0005).** `items` (stem, options, direction) is readable by any signed-in user, active items only. `item_keys` has no grant at all: only the server reads answers, so a candidate cannot look a key up mid-test. A CHECK refuses a payload that carries its key.
+6. **A printed direction travels with each item** (`OirPayload.direction`): "18, 36, 109, 432, 2160" cannot be answered without "find the wrong number".
+7. **Difficulty is 3 for every book item**, the declared "unrated" midpoint, until item statistics (D19) measure it.
+
+**Consequences.** Chapter 11 (Series) is seeded: 118 items. The other ten chapters follow the same path; Chapter 5 (two five-option questions) and Chapter 10 (questions sharing a passage) need a format change first (SUGGESTIONS.md). Ids are permanent (`oir-agx-ch11-q013`): a corrected key or stem replaces the row in place.
+
+**Revisit if.** The book's key disagrees with more than a few derived keys in a chapter (then the derivation method, not just the rows, needs review), or the owner wants original items instead.
