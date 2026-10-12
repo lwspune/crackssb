@@ -1,0 +1,2787 @@
+{
+  "generated": "2026-10-12",
+  "sources": [
+    {
+      "source": "agrawal-examcart-oir",
+      "chapter": 11,
+      "title": "Series Test",
+      "pages": [
+        41,
+        44
+      ],
+      "file": "content/oir/agrawal-examcart/ch11-series.source.json"
+    }
+  ],
+  "itemCount": 118,
+  "heldCount": 7,
+  "confidence": {
+    "high": 112,
+    "medium": 6
+  },
+  "held": [
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q68",
+      "reason": "Printed 306 breaks the series. Read as 36 it is 6⁴, 6³, 6², 6¹ and the answer is 6 (C); as printed no option fits.",
+      "lean": "C"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q69",
+      "reason": "×5+1, ×4+1, ×3+1 gives 3676 (A), but the printed 7553 is not 3676 × 2 + 1 = 7353, and 69 → 61 fits no step. Too many printed numbers disagree to key it.",
+      "lean": "A"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q71",
+      "reason": "28, 51, 100, 151: no rule found that fits the four printed terms and any option. Waiting for the book key."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q78",
+      "reason": "The print has a \"×\" in the series, and no option completes a repeating pattern whether it is read as X or dropped. D gives \"C2XX2C\" twice and then \"X2C\".",
+      "lean": "D"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q93",
+      "reason": "No option completes a pattern found in DEFD_F_DEFD_DE_DEFD. Waiting for the book key."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q102",
+      "reason": "No option completes a pattern found in P_RPRQR_QPRP__Q. Waiting for the book key."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p44 q123",
+      "reason": "The print shows four blanks but every option has five letters, and no option completes a pattern either way."
+    }
+  ],
+  "items": [
+    {
+      "id": "oir-agx-ch11-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "9, ?, 33, 50, 69, 92, 121",
+        "options": {
+          "A": "14",
+          "B": "22",
+          "C": "16",
+          "D": "20"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q1",
+      "key_basis": "derived",
+      "rule": "Differences are consecutive primes: +11, +13, +17, +19, +23, +29.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q002",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "44, 47, 52, 59, 68, ?, ?, 107",
+        "options": {
+          "A": "80, 94",
+          "B": "79, 92",
+          "C": "82, 98",
+          "D": "88, 100"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q2",
+      "key_basis": "derived",
+      "rule": "Differences are odd numbers: +3, +5, +7, +9, +11, +13, +15.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "14, 16, 21, 32, 49, 72, ?",
+        "options": {
+          "A": "103",
+          "B": "98",
+          "C": "105",
+          "D": "101"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q3",
+      "key_basis": "derived",
+      "rule": "Differences are every other prime: 2, 5, 11, 17, 23, then 31.",
+      "confidence": "medium",
+      "note": "The differences 2, 5, 11, 17, 23 could also be read as +3 then +6, +6, +6, giving 101 (option D). Every-other-prime fits all five differences; the +6 reading does not fit the first. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch11-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "3, 9, 21, 45, ?",
+        "options": {
+          "A": "134",
+          "B": "178",
+          "C": "156",
+          "D": "93"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q4",
+      "key_basis": "derived",
+      "rule": "Each term is twice the previous plus 3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "5, 11, 21, ?, 85, 171",
+        "options": {
+          "A": "55",
+          "B": "59",
+          "C": "43",
+          "D": "36"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q5",
+      "key_basis": "derived",
+      "rule": "Double, then add 1 and subtract 1 alternately: ×2+1, ×2−1, ×2+1, ...",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "42, 56, 72, ?, 110, 132",
+        "options": {
+          "A": "90",
+          "B": "80",
+          "C": "92",
+          "D": "84"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q6",
+      "key_basis": "derived",
+      "rule": "n × (n+1) for n = 6 to 11.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q007",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "81, 88, 102, ?, 151, 186",
+        "options": {
+          "A": "109",
+          "B": "123",
+          "C": "137",
+          "D": "116"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q7",
+      "key_basis": "derived",
+      "rule": "Differences are multiples of 7: +7, +14, +21, +28, +35.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "133, 156, ?, 202, 225, 248",
+        "options": {
+          "A": "173",
+          "B": "166",
+          "C": "179",
+          "D": "186"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q8",
+      "key_basis": "derived",
+      "rule": "Add 23 each time.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "1, 5, ?, 25, 41, 61",
+        "options": {
+          "A": "8",
+          "B": "10",
+          "C": "13",
+          "D": "12"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q9",
+      "key_basis": "derived",
+      "rule": "Differences are multiples of 4: +4, +8, +12, +16, +20.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "1, 5, 16, 41, 87, 161, ?",
+        "options": {
+          "A": "270",
+          "B": "226",
+          "C": "266",
+          "D": "206"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q10",
+      "key_basis": "derived",
+      "rule": "Differences 4, 11, 25, 46, 74 grow by 7, 14, 21, 28, so the next difference is 74 + 35 = 109.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "13, 30, 47, ?, 81, 98, 115, 132",
+        "options": {
+          "A": "74",
+          "B": "64",
+          "C": "62",
+          "D": "52"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q11",
+      "key_basis": "derived",
+      "rule": "Add 17 each time.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "5, 7, 12, 21, 35, 55, ?",
+        "options": {
+          "A": "65",
+          "B": "82",
+          "C": "69",
+          "D": "72"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q12",
+      "key_basis": "derived",
+      "rule": "Differences 2, 5, 9, 14, 20 grow by 3, 4, 5, 6, so the next difference is 27.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "5, 8, ?, 23, 35, 50, 68",
+        "options": {
+          "A": "10",
+          "B": "14",
+          "C": "16",
+          "D": "12"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q13",
+      "key_basis": "derived",
+      "rule": "Differences are multiples of 3: +3, +6, +9, +12, +15, +18.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "240, 258, 278, 300, ?",
+        "options": {
+          "A": "324",
+          "B": "355",
+          "C": "400",
+          "D": "312"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q14",
+      "key_basis": "derived",
+      "rule": "Differences are even numbers from 18: +18, +20, +22, +24.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "9, 21, 38, 65, ?",
+        "options": {
+          "A": "105",
+          "B": "125",
+          "C": "115",
+          "D": "107"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q15",
+      "key_basis": "derived",
+      "rule": "Differences 12, 17, 27 grow by 5, 10, so the next grows by 15: difference 42.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "35, 50, 80, 125, 185, ?",
+        "options": {
+          "A": "220",
+          "B": "257",
+          "C": "238",
+          "D": "260"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q16",
+      "key_basis": "derived",
+      "rule": "Differences are multiples of 15: +15, +30, +45, +60, +75.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "5, 20, 65, 200, ?",
+        "options": {
+          "A": "575",
+          "B": "605",
+          "C": "1005",
+          "D": "1055"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q17",
+      "key_basis": "derived",
+      "rule": "Each term is three times the previous plus 5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "30, 42, 56, 72, ?, 110",
+        "options": {
+          "A": "102",
+          "B": "88",
+          "C": "90",
+          "D": "92"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q18",
+      "key_basis": "derived",
+      "rule": "n × (n+1) for n = 5 to 10.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "6, 7, 13, 20, 33, 53, ?",
+        "options": {
+          "A": "73",
+          "B": "86",
+          "C": "89",
+          "D": "79"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q19",
+      "key_basis": "derived",
+      "rule": "Each term is the sum of the two before it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "26, 37, 50, 65, ?, 101",
+        "options": {
+          "A": "78",
+          "B": "82",
+          "C": "80",
+          "D": "92"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q20",
+      "key_basis": "derived",
+      "rule": "n² + 1 for n = 5 to 10.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "13, 16, 23, 36, 57, 88, ?, 188",
+        "options": {
+          "A": "145",
+          "B": "119",
+          "C": "131",
+          "D": "127"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q21",
+      "key_basis": "derived",
+      "rule": "Differences 3, 7, 13, 21, 31 grow by 4, 6, 8, 10; next differences 43 and 57.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "12, 24, 36, 46, 56, ?, 72",
+        "options": {
+          "A": "65",
+          "B": "62",
+          "C": "66",
+          "D": "64"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q22",
+      "key_basis": "derived",
+      "rule": "Differences come in pairs: +12, +12, +10, +10, +8, +8.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "25, 34, 52, ?, 160, 304",
+        "options": {
+          "A": "88",
+          "B": "80",
+          "C": "99",
+          "D": "95"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q23",
+      "key_basis": "derived",
+      "rule": "Differences double: +9, +18, +36, +72, +144.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "—1, 5, 23, 59, 119, 209,?",
+        "options": {
+          "A": "409",
+          "B": "309",
+          "C": "335",
+          "D": "289"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q24",
+      "key_basis": "derived",
+      "rule": "n³ − (n+1) for n = 1 to 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "1, 6, 15, ?, 45, 66, 91",
+        "options": {
+          "A": "25",
+          "B": "26",
+          "C": "27",
+          "D": "28"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q25",
+      "key_basis": "derived",
+      "rule": "n × (2n − 1) for n = 1 to 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "1, 8, 15, 29, 69, 172, 399, ?",
+        "options": {
+          "A": "713",
+          "B": "841",
+          "C": "731",
+          "D": "814"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q26",
+      "key_basis": "derived",
+      "rule": "Differences 7, 7, 14, 40, 103, 227 grow by n³ − 1: 0, 7, 26, 63, 124, so the next grows by 215 to 442.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q027",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "44, 76, ? 164, 220, 284, 356, 436, 524, 620",
+        "options": {
+          "A": "139",
+          "B": "108",
+          "C": "116",
+          "D": "98"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q27",
+      "key_basis": "derived",
+      "rule": "Differences grow by 8: +32, +40, +48, ..., +96.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "157, 193, 238, 292, ?, 427, 508, 598",
+        "options": {
+          "A": "363",
+          "B": "355",
+          "C": "375",
+          "D": "361"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q28",
+      "key_basis": "derived",
+      "rule": "Differences are multiples of 9: +36, +45, +54, +63, +72, +81, +90.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q029",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "3, 15, 38, 78, 141, 235, 370, 552, ?",
+        "options": {
+          "A": "892",
+          "B": "792",
+          "C": "793",
+          "D": "893"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q29",
+      "key_basis": "derived",
+      "rule": "Differences 12, 23, 40, 63, 94, 135, 182 grow by every other prime from 11: 11, 17, 23, 31, 41, 47, then 59.",
+      "confidence": "medium",
+      "note": "An unusual rule, but it fits all seven second differences exactly and separates 793 from 792."
+    },
+    {
+      "id": "oir-agx-ch11-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "57, 50, 55, 52, ?",
+        "options": {
+          "A": "51",
+          "B": "53",
+          "C": "50",
+          "D": "54"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q30",
+      "key_basis": "derived",
+      "rule": "Alternately subtract and add odd numbers: −7, +5, −3, +1.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q031",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "2, 12, 30, ?, 90, 132",
+        "options": {
+          "A": "42",
+          "B": "56",
+          "C": "35",
+          "D": "63"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q31",
+      "key_basis": "derived",
+      "rule": "n × (n+1) for odd n: 1×2, 3×4, 5×6, 7×8, 9×10, 11×12.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "3, 10, 24, ?, 73, 108",
+        "options": {
+          "A": "37",
+          "B": "45",
+          "C": "52",
+          "D": "32"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q32",
+      "key_basis": "derived",
+      "rule": "Differences are multiples of 7: +7, +14, +21, +28, +35.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "20, 22, 26, 32, 40, ?",
+        "options": {
+          "A": "52",
+          "B": "50",
+          "C": "54",
+          "D": "48"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q33",
+      "key_basis": "derived",
+      "rule": "Differences are even numbers: +2, +4, +6, +8, +10.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "2, 3, 5, 7, 11, ?",
+        "options": {
+          "A": "19",
+          "B": "20",
+          "C": "16",
+          "D": "13"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q34",
+      "key_basis": "derived",
+      "rule": "Prime numbers.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "–4, –1, 4, ?, 20, 31, 44",
+        "options": {
+          "A": "11",
+          "B": "18",
+          "C": "15",
+          "D": "17"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q35",
+      "key_basis": "derived",
+      "rule": "Differences are odd numbers: +3, +5, +7, +9, +11, +13.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "13, 25, 38, 62, 88, 124, 163, 211, ?",
+        "options": {
+          "A": "253",
+          "B": "263",
+          "C": "235",
+          "D": "236"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q36",
+      "key_basis": "derived",
+      "rule": "Differences alternate between multiples of 12 and of 13: +12, +13, +24, +26, +36, +39, +48, +52.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "1, 24, 58, 125, 247, 446, ?",
+        "options": {
+          "A": "774",
+          "B": "747",
+          "C": "744",
+          "D": "777"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q37",
+      "key_basis": "derived",
+      "rule": "Differences 23, 34, 67, 122, 199 grow by 11, 33, 55, 77, so the next grows by 99 to 298.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "39, 53, ?, 108, 149, 199",
+        "options": {
+          "A": "76",
+          "B": "79",
+          "C": "72",
+          "D": "81"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q38",
+      "key_basis": "derived",
+      "rule": "Differences grow by 9: +14, +23, +32, +41, +50.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q039",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "8, 10, 16, 28 ?",
+        "options": {
+          "A": "48",
+          "B": "46",
+          "C": "56",
+          "D": "58"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p41 q39",
+      "key_basis": "derived",
+      "rule": "Differences are n × (n+1): +2, +6, +12, +20.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "23, 50, 73, 100, ?",
+        "options": {
+          "A": "123",
+          "B": "127",
+          "C": "125",
+          "D": "120"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q40",
+      "key_basis": "derived",
+      "rule": "Add 27 and 23 alternately.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q041",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "16, 2, 15, 4, 13, 7, 10, 11, 6, ............",
+        "options": {
+          "A": "17",
+          "B": "16",
+          "C": "14",
+          "D": "15"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q41",
+      "key_basis": "derived",
+      "rule": "Two series interleaved: 16, 15, 13, 10, 6 (−1, −2, −3, −4) and 2, 4, 7, 11, 16 (+2, +3, +4, +5). The next term belongs to the second.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "5, 11, 19, 29, ?, 55",
+        "options": {
+          "A": "39",
+          "B": "41",
+          "C": "37",
+          "D": "43"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q42",
+      "key_basis": "derived",
+      "rule": "Differences are even numbers from 6: +6, +8, +10, +12, +14.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "3, 7, 13, 21, 31, '?'",
+        "options": {
+          "A": "33",
+          "B": "36",
+          "C": "41",
+          "D": "43"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q43",
+      "key_basis": "derived",
+      "rule": "Differences are even numbers from 4: +4, +6, +8, +10, +12.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q044",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "975, 864, 753, 642, '?'",
+        "options": {
+          "A": "413",
+          "B": "314",
+          "C": "531",
+          "D": "532"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q44",
+      "key_basis": "derived",
+      "rule": "Subtract 111 each time.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "5, 8, 13, 21, ....?.........",
+        "options": {
+          "A": "55",
+          "B": "34",
+          "C": "52",
+          "D": "37"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q45",
+      "key_basis": "derived",
+      "rule": "Each term is the sum of the two before it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "48, 24, 72, 36, 108, ....?.......",
+        "options": {
+          "A": "110",
+          "B": "115",
+          "C": "121",
+          "D": "54"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q46",
+      "key_basis": "derived",
+      "rule": "Halve, then treble, alternately.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "4, 7, 12, 19, .?...., 39?",
+        "options": {
+          "A": "28",
+          "B": "26",
+          "C": "24",
+          "D": "22"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q47",
+      "key_basis": "derived",
+      "rule": "Differences are odd numbers from 3: +3, +5, +7, +9, +11.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "4, 6, 8, 10, 12 .. ?....",
+        "options": {
+          "A": "14",
+          "B": "13",
+          "C": "15",
+          "D": "16"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q48",
+      "key_basis": "derived",
+      "rule": "Add 2 each time.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "17, 22, 27, 32 .....?.......",
+        "options": {
+          "A": "33",
+          "B": "35",
+          "C": "38",
+          "D": "37"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q49",
+      "key_basis": "derived",
+      "rule": "Add 5 each time.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q050",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "87, 74, 61, 48 .......?......",
+        "options": {
+          "A": "35",
+          "B": "30",
+          "C": "32",
+          "D": "25"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q50",
+      "key_basis": "derived",
+      "rule": "Subtract 13 each time.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q051",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the following number series, two number are placed within bracket. Study the series carefully and choose the correct option regarding the series-\n1, 1, 2, 6, 24, (121), 720, (5040), 40320",
+        "options": {
+          "A": "The first bracket number (from left) is correct and the second in incorrect.",
+          "B": "both the bracket numbers are correct.",
+          "C": "The first bracket number (from left) is incorrect and the second is correct.",
+          "D": "Both the bracket numbers are wrong."
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Study the series and choose the correct option."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q51",
+      "key_basis": "derived",
+      "rule": "The series is the factorials 0! to 8!: 1, 1, 2, 6, 24, 120, 720, 5040, 40320. The first bracket (121) should be 120; the second (5040) is right.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q052",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "7, 7, 21, 105, 730, 6615",
+        "options": {
+          "A": "105",
+          "B": "730",
+          "C": "6615",
+          "D": "21"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q52",
+      "key_basis": "derived",
+      "rule": "Multiply by 1, 3, 5, 7, 9: the fifth term should be 735.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q053",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "2, 3, 5, 7, 11, 13, 15",
+        "options": {
+          "A": "7",
+          "B": "11",
+          "C": "13",
+          "D": "15"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q53",
+      "key_basis": "derived",
+      "rule": "Prime numbers: the last should be 17.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q054",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "1, 2, 6, 21, 88, 446, 2676",
+        "options": {
+          "A": "88",
+          "B": "6",
+          "C": "446",
+          "D": "21"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q54",
+      "key_basis": "derived",
+      "rule": "×1+1, ×2+2, ×3+3, ×4+4, ×5+5, ×6+6: the sixth term should be 445.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q055",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "1, 1, 1.5, 3, 7.5, 22.5, 78.75, 310",
+        "options": {
+          "A": "78.75",
+          "B": "1.5",
+          "C": "22.5",
+          "D": "310"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q55",
+      "key_basis": "derived",
+      "rule": "Multiply by 1, 1.5, 2, 2.5, 3, 3.5, 4: the last should be 315.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q056",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "46, 93, 188, 379, 764, 1529",
+        "options": {
+          "A": "93",
+          "B": "188",
+          "C": "764",
+          "D": "379"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q56",
+      "key_basis": "derived",
+      "rule": "×2+1, ×2+2, ×2+3, ×2+4, ×2+5: the fifth term should be 762.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q057",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "49, 98, 196, 394, 784, 1568",
+        "options": {
+          "A": "394",
+          "B": "784",
+          "C": "1568",
+          "D": "196"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q57",
+      "key_basis": "derived",
+      "rule": "Double each time: the fourth term should be 392.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q058",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "30, 15, 15, 22.5, 46, 112.5",
+        "options": {
+          "A": "46",
+          "B": "22.5",
+          "C": "30",
+          "D": "112.5"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q58",
+      "key_basis": "derived",
+      "rule": "Multiply by 0.5, 1, 1.5, 2, 2.5: the fifth term should be 45.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q059",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "414, 430, 462, 526, 664, 910",
+        "options": {
+          "A": "462",
+          "B": "664",
+          "C": "526",
+          "D": "910"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q59",
+      "key_basis": "derived",
+      "rule": "Differences double: +16, +32, +64, +128, +256. The fifth term should be 654.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q060",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "1.5, 2, 3, 6, 18, 108, 1964",
+        "options": {
+          "A": "18",
+          "B": "1964",
+          "C": "108",
+          "D": "6"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q60",
+      "key_basis": "derived",
+      "rule": "Each term is the product of the two before it: the last should be 18 × 108 = 1944.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q061",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "3, 5, 7, 6, 10, 14, 12, 24, 28, 24, 40, 56",
+        "options": {
+          "A": "10",
+          "B": "24",
+          "C": "12",
+          "D": "28"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q61",
+      "key_basis": "derived",
+      "rule": "Groups of three, each double the last: (3, 5, 7), (6, 10, 14), (12, 20, 28), (24, 40, 56). The 24 in the third group should be 20.",
+      "confidence": "high",
+      "note": "24 is printed twice; the wrong one is the eighth term, not the tenth."
+    },
+    {
+      "id": "oir-agx-ch11-q062",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "104, 108, 54, 58, 29, 31",
+        "options": {
+          "A": "54",
+          "B": "31",
+          "C": "29",
+          "D": "58"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q62",
+      "key_basis": "derived",
+      "rule": "Add 4 and halve alternately: the last should be 33.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q063",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "1, 8, 27, 64, 125, 216, 344, 512, 729",
+        "options": {
+          "A": "729",
+          "B": "512",
+          "C": "344",
+          "D": "64"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q63",
+      "key_basis": "derived",
+      "rule": "Cubes of 1 to 9: the seventh should be 343.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q064",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "2, 3, 6, 18, 108, 1844",
+        "options": {
+          "A": "1844",
+          "B": "108",
+          "C": "20",
+          "D": "6"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q64",
+      "key_basis": "derived",
+      "rule": "Each term is the product of the two before it: the last should be 18 × 108 = 1944.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q065",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "132, 67, 68, 103, 207, 518",
+        "options": {
+          "A": "132",
+          "B": "67",
+          "C": "207",
+          "D": "518"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q65",
+      "key_basis": "derived",
+      "rule": "×0.5+1, ×1+1, ×1.5+1, ×2+1, ×2.5+1: the last should be 518.5.",
+      "confidence": "medium",
+      "note": "The rule fits the first five terms exactly and puts the last at 518.5, so 518 is wrong by half. A book might intend a different rule; check against its key."
+    },
+    {
+      "id": "oir-agx-ch11-q066",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "44, 22, 33, 72.5, 288.75",
+        "options": {
+          "A": "22",
+          "B": "72.5",
+          "C": "288.75",
+          "D": "33"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q66",
+      "key_basis": "derived",
+      "rule": "Multiply by 0.5, 1.5, 2.5, 3.5: the fourth term should be 82.5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q067",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "68, 32, 102, 136, 238, 374",
+        "options": {
+          "A": "102",
+          "B": "32",
+          "C": "238",
+          "D": "68"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q67",
+      "key_basis": "derived",
+      "rule": "Each term is the sum of the two before it: the second should be 34.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q070",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "100, 221, 77, 246, 50, ?",
+        "options": {
+          "A": "288",
+          "B": "275",
+          "C": "2304",
+          "D": "1008"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q70",
+      "key_basis": "derived",
+      "rule": "Add and subtract squares in turn: +11², −12², +13², −14², +15².",
+      "confidence": "high",
+      "note": "Printed under \"find the wrong number\" but asks for the next term."
+    },
+    {
+      "id": "oir-agx-ch11-q072",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "18, 36, 109, 432, 2160",
+        "options": {
+          "A": "432",
+          "B": "109",
+          "C": "18",
+          "D": "2160"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q72",
+      "key_basis": "derived",
+      "rule": "Multiply by 2, 3, 4, 5: the third term should be 108.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q073",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "15, 19, 38, 42, 84, ?",
+        "options": {
+          "A": "500",
+          "B": "30",
+          "C": "1250",
+          "D": "88"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Find the missing number in the given series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q73",
+      "key_basis": "derived",
+      "rule": "Add 4 and double alternately: 15, 19, 38, 42, 84, 88.",
+      "confidence": "high",
+      "note": "Printed under \"find the wrong number\" with no \"?\", but no printed term is wrong and the options are candidates for the next term. Presented with \", ?\" added.",
+      "printedStem": "15, 19, 38, 42, 84"
+    },
+    {
+      "id": "oir-agx-ch11-q074",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "10, 26, 24, 21, 18",
+        "options": {
+          "A": "10",
+          "B": "24",
+          "C": "26",
+          "D": "21"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "In These questions, A number series is given, only one number is wrong which dase not fit in the series, find out the wrong number."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q74",
+      "key_basis": "derived",
+      "rule": "Differences come in pairs: −2, −2, −3, −3, so the series is 28, 26, 24, 21, 18 and 10 is wrong.",
+      "confidence": "medium",
+      "note": "The only option whose correction gives a clean pattern."
+    },
+    {
+      "id": "oir-agx-ch11-q075",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "abb_abbcabbcabbca_bcabbca_bc_bbc",
+        "options": {
+          "A": "abcd",
+          "B": "aabb",
+          "C": "cdba",
+          "D": "cbba"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q75",
+      "key_basis": "derived",
+      "rule": "\"abbc\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q076",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "p_qqrrssppq_rrssppqqrrssppqqr_s_",
+        "options": {
+          "A": "srqp",
+          "B": "pqrs",
+          "C": "prpr",
+          "D": "qprs"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q76",
+      "key_basis": "derived",
+      "rule": "\"ppqqrrss\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q077",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "d_eeffggddeeffggdde_ffggddeeffggddeef_g_",
+        "options": {
+          "A": "deff",
+          "B": "defg",
+          "C": "ddee",
+          "D": "degf"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q77",
+      "key_basis": "derived",
+      "rule": "\"ddeeffgg\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q079",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "P_RQPS_ _P_ _Q_SR_P_RQ",
+        "options": {
+          "A": "QRQSRPQS",
+          "B": "SRQSRPQS",
+          "C": "SQQSRPQS",
+          "D": "SRSQRPQS"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p42 q79",
+      "key_basis": "derived",
+      "rule": "\"PSRQ\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q080",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "PE_ _LEP_ _PLE_ _OP_ _",
+        "options": {
+          "A": "OPEOPLEE",
+          "B": "OPEOPELE",
+          "C": "OPOEPELE",
+          "D": "OPOEEPLE"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q80",
+      "key_basis": "derived",
+      "rule": "\"PEOPLE\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q081",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "S O _ _ T A S _ _ A T A _ _ N A T _ _ O N A _ _",
+        "options": {
+          "A": "NAONSOTASA",
+          "B": "NAONSOASON",
+          "C": "NAONSOASTA",
+          "D": "NAONSOSATA"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q81",
+      "key_basis": "derived",
+      "rule": "\"SONATA\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q082",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "s_r_ks_ _ck_urc_su_c_",
+        "options": {
+          "A": "c, u, c, s, r, k, s, k",
+          "B": "c, u, c, r, s, k, r, k",
+          "C": "u, c, u, r, s, k, r, k",
+          "D": "u, c, u, k, r, s, r, k"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q82",
+      "key_basis": "derived",
+      "rule": "\"surck\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q083",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "x z x _ y z x _ _ x y z x z _ _ y z",
+        "options": {
+          "A": "xzxxx",
+          "B": "xzxyx",
+          "C": "xzyzx",
+          "D": "xzxxy"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q83",
+      "key_basis": "derived",
+      "rule": "\"xzxxyz\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q084",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "W _ AT _ WX _ _ Q _ _ ATQ",
+        "options": {
+          "A": "XQATWX",
+          "B": "XQATWA",
+          "C": "XQAQWX",
+          "D": "AQATWX"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q84",
+      "key_basis": "derived",
+      "rule": "\"WXATQ\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q085",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "PR_ _UC_ _RODU_ _PROD_ _T",
+        "options": {
+          "A": "ODTCTPUC",
+          "B": "ODCPTCUT",
+          "C": "ODTPCTUC",
+          "D": "ODPTUTCC"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q85",
+      "key_basis": "derived",
+      "rule": "\"PRODUCT\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q086",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "b _ y _ _ by _ b _ yt",
+        "options": {
+          "A": "bgtbt",
+          "B": "btbtb",
+          "C": "atbbt",
+          "D": "cbbtc"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q86",
+      "key_basis": "derived",
+      "rule": "\"bbyt\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q087",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "a, cd, fgh, jklm, opqrs, .......",
+        "options": {
+          "A": "uvwxyz",
+          "B": "vwxyza",
+          "C": "uvwxy",
+          "D": "tuvwxy"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q87",
+      "key_basis": "derived",
+      "rule": "Groups of 1, 2, 3, 4, 5, 6 consecutive letters, skipping one letter between groups.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q088",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A _BY CZ_ Y_ ZFY GZH_ IZ_Y",
+        "options": {
+          "A": "HCJNR",
+          "B": "ZIDBV",
+          "C": "BHDKU",
+          "D": "ZDEYJ"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q88",
+      "key_basis": "derived",
+      "rule": "Groups of four: odd letter, Z, even letter, Y. AZBY, CZDY, EZFY, GZHY, IZJY.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q089",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "EFS _ JK _ M OPSR _ US _ YZ _ B",
+        "options": {
+          "A": "JSTBW",
+          "B": "JTBWS",
+          "C": "HSTWS",
+          "D": "HTBSW"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q89",
+      "key_basis": "derived",
+      "rule": "Groups of four: a letter pair, S, a letter; each group moves 5 letters on. EFSH, JKSM, OPSR, TUSW, YZSB.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q090",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "_KL _ K _ KK _ _ KL",
+        "options": {
+          "A": "LLKLL",
+          "B": "KKLLK",
+          "C": "KLKLL",
+          "D": "LKLKL"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q90",
+      "key_basis": "derived",
+      "rule": "\"KKL\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q091",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "BK _ Y _ KUT R _ PO MKK _ HK _ E",
+        "options": {
+          "A": "ZWKJF",
+          "B": "WBHZP",
+          "C": "WKBFP",
+          "D": "ZKWLF"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q91",
+      "key_basis": "derived",
+      "rule": "Groups of four with K second; the other three letters each move 5 back per group. BKZY, WKUT, RKPO, MKKJ, HKFE.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q092",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "FGHIG_IF_IF_I_GHF",
+        "options": {
+          "A": "HGHG",
+          "B": "HHGF",
+          "C": "GHHG",
+          "D": "IHHG"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q92",
+      "key_basis": "derived",
+      "rule": "FGHI rotated left one place each time: FGHI, GHIF, HIFG, IFGH, then F.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q094",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "WXYZ_WXY_Z_XX_ZWW",
+        "options": {
+          "A": "WYWZ",
+          "B": "ZYWY",
+          "C": "ZYYZ",
+          "D": "WZZW"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q94",
+      "key_basis": "derived",
+      "rule": "WXYZ rotated right one place each time: WXYZ, ZWXY, YZWX, XYZW, then W.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q095",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "YR_TYRG_YRGR_RG_",
+        "options": {
+          "A": "GSYQ",
+          "B": "SYPG",
+          "C": "STRP",
+          "D": "SYTR"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q95",
+      "key_basis": "derived",
+      "rule": "Groups YRG + a letter stepping back: YRGT, YRGS, YRGR, YRGQ.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q096",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "C_I_KE_ _RI_ _ET_ _IC_ETCR_CK_ _",
+        "options": {
+          "A": "TICKETRCIRKE",
+          "B": "RCTCCKCRKIET",
+          "C": "IKTECKERRCIT",
+          "D": "TRICKCKIEEIE"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q96",
+      "key_basis": "derived",
+      "rule": "\"CRICKET\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q097",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "TS_ _M T S_P_T_OP_ _SO_M",
+        "options": {
+          "A": "MSTOPTSO",
+          "B": "OPMMSTOP",
+          "C": "OPOMSMTP",
+          "D": "PMSTMOST"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q97",
+      "key_basis": "derived",
+      "rule": "\"TSOPM\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q098",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "AB_CCC_DDDEF_GGGH_HH",
+        "options": {
+          "A": "BDFG",
+          "B": "BCFH",
+          "C": "BDFH",
+          "D": "CDFH"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q98",
+      "key_basis": "derived",
+      "rule": "Letters repeated 1, 2, 3, 4 times, twice over: A BB CCC DDDD, E FF GGG HHHH.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q099",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "_M_BAJMQ_A_MQB_J_ _B_",
+        "options": {
+          "A": "JQBJAMQA",
+          "B": "BQAJMQAB",
+          "C": "JAMMQABJ",
+          "D": "AMBQJMJQ"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q99",
+      "key_basis": "derived",
+      "rule": "\"BAJMQ\" repeated (the series starts mid-block).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q100",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "B_EES_ED_LE_ _SEDB_EESSE_",
+        "options": {
+          "A": "SEBESLD",
+          "B": "EEBSSLD",
+          "C": "EBSESLD",
+          "D": "LSBESLD"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q100",
+      "key_basis": "derived",
+      "rule": "\"BLEESSED\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q101",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "12_1_221_2_1",
+        "options": {
+          "A": "2122",
+          "B": "1221",
+          "C": "2112",
+          "D": "1211"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q101",
+      "key_basis": "derived",
+      "rule": "\"1221\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q103",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "c – bba – cab – ac – ab – ac",
+        "options": {
+          "A": "babcc",
+          "B": "bcacb",
+          "C": "acbcb",
+          "D": "abcbc"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q103",
+      "key_basis": "derived",
+      "rule": "\"cabbac\" repeated (the dashes are the blanks).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q104",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "_cdb_ddb_db_c_d",
+        "options": {
+          "A": "bbbcc",
+          "B": "cccbc",
+          "C": "bbcbb",
+          "D": "ccbcc"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q104",
+      "key_basis": "derived",
+      "rule": "Blocks of four in which the doubled letter moves right: ccdb, cddb, cdbb, then ccd(b) again.",
+      "confidence": "medium",
+      "note": "Not a plain repeat; B is the only option that gives this structure."
+    },
+    {
+      "id": "oir-agx-ch11-q105",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "AB_Z C_WX _FUV GH_T I_QR",
+        "options": {
+          "A": "YDEIP",
+          "B": "CDESJ",
+          "C": "YDESJ",
+          "D": "CDEIP"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q105",
+      "key_basis": "derived",
+      "rule": "Groups of four: a pair from the start of the alphabet (AB, CD, EF, GH, IJ) and a pair from the end (YZ, WX, UV, ST, QR).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q106",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "t_ns_rth_so_th_s_r",
+        "options": {
+          "A": "honrno",
+          "B": "hoonor",
+          "C": "nonrho",
+          "D": "hornnr"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q106",
+      "key_basis": "derived",
+      "rule": "\"thnsor\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q107",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "_msk_prm_kt_r_s_tpr_skt_",
+        "options": {
+          "A": "r, s, t, p, m, k, m, p",
+          "B": "r, t, s, p, m, k, m, p",
+          "C": "r, t, s, p, m, m, m, p",
+          "D": "r, t, s, p, m, k, k, p"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q107",
+      "key_basis": "derived",
+      "rule": "\"rmsktp\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q108",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "p_nj_c_r_jicp_njl_pr_ _lc",
+        "options": {
+          "A": "rppnrcnj",
+          "B": "rlprncnj",
+          "C": "rllnrcnj",
+          "D": "rlpnrcnj"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q108",
+      "key_basis": "derived",
+      "rule": "\"prnjlc\" repeated.",
+      "confidence": "medium",
+      "note": "The photo shows \"jicp\" where the pattern needs \"jlcp\"; read as l. Only D fits either way."
+    },
+    {
+      "id": "oir-agx-ch11-q109",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ccd_cc_d_ppccccddd_ _p",
+        "options": {
+          "A": "ppdcp",
+          "B": "pccdp",
+          "C": "pcdpp",
+          "D": "pcdpc"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q109",
+      "key_basis": "derived",
+      "rule": "Blocks growing by one of each letter: cc d p, ccc dd pp, cccc ddd ppp.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q110",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "jtm_r_jt_prs_tmpr_j_mprs",
+        "options": {
+          "A": "pmsjst",
+          "B": "pssjst",
+          "C": "psmjts",
+          "D": "psmjst"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q110",
+      "key_basis": "derived",
+      "rule": "\"jtmprs\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q111",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "xy_zx_xzxy_ _",
+        "options": {
+          "A": "xyxx",
+          "B": "xxyz",
+          "C": "xyxz",
+          "D": "yxyz"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q111",
+      "key_basis": "derived",
+      "rule": "\"xyxz\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q112",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "AA_AB_ABC_A_C_E",
+        "options": {
+          "A": "BCCBD",
+          "B": "BABCD",
+          "C": "BCDBD",
+          "D": "AABCD"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q112",
+      "key_basis": "derived",
+      "rule": "A, AB, ABC, ABCD, ABCDE.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q113",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "a _ _ bcde _ _ abbcd _ _ aabb _ _ ee",
+        "options": {
+          "A": "aeaebecd",
+          "B": "aeecdbea",
+          "C": "abeaeecd",
+          "D": "abecdeae"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q113",
+      "key_basis": "derived",
+      "rule": "\"aabbcdee\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q114",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "g _ ctd _ wpmz _ pctdawp _ zgpct _ a _ pmz",
+        "options": {
+          "A": "pagmdw",
+          "B": "pgadmw",
+          "C": "pamgwd",
+          "D": "pgdamw"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q114",
+      "key_basis": "derived",
+      "rule": "\"gpctdawpmz\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q115",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "kl _ pn _ klmp _ b _ lm _ nbk _ mpnb",
+        "options": {
+          "A": "m, n, b, p, k l",
+          "B": "m, b, n, k, p, l",
+          "C": "n, m, b, l, p, k",
+          "D": "k, l, m, n, b, p"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q115",
+      "key_basis": "derived",
+      "rule": "\"klmpnb\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q116",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "_ _ bc_ _ _eaa_ _cde_ _abc_ _ _ea_ _ _cdee",
+        "options": {
+          "A": "aacdebceacdeabc",
+          "B": "aacdebceaabccde",
+          "C": "aacdebceabceacd",
+          "D": "abceacdeabcacde"
+        },
+        "key": "A",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q116",
+      "key_basis": "derived",
+      "rule": "\"aabccdee\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q117",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "a_ _ccde_ _ _bc_ _ _eaabc_ _ _ _aabc_ _ee",
+        "options": {
+          "A": "acbdecdeaacecd",
+          "B": "abcdecdeecdeaa",
+          "C": "abeaacdecdeecd",
+          "D": "abbaacdeecdecd"
+        },
+        "key": "C",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q117",
+      "key_basis": "derived",
+      "rule": "\"aabccdee\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q118",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "abcc_ _ _ab_ _ _de_ _ccd_eab_ _ _de",
+        "options": {
+          "A": "ddeccdabddcc",
+          "B": "ccdabdccddde",
+          "C": "ddecbdccdcda",
+          "D": "ddeccdabdccd"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q118",
+      "key_basis": "derived",
+      "rule": "\"abccdde\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q119",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "CBABABAB, BACBABAB, BABACBAB, BABABACB, BCABABAB, .............",
+        "options": {
+          "A": "BABABCAB",
+          "B": "CBABABAB",
+          "C": "BACBABAB",
+          "D": "BABCABAB"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q119",
+      "key_basis": "derived",
+      "rule": "C moves through BABABAB two places at a time, wrapping: positions 0, 2, 4, 6, 1, then 3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q120",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "YXXXXXXY, YXXXXXYX, YXXXXYXX, YXXXYXXX, YXXYXXXX, .............",
+        "options": {
+          "A": "YYXXXXXX",
+          "B": "YXXXXXXY",
+          "C": "YXXXXXYX",
+          "D": "YXYXXXXX"
+        },
+        "key": "D",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p43 q120",
+      "key_basis": "derived",
+      "rule": "The second Y moves one place left each time.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q121",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ABCABcaBC, ABCAbcABC, ABCabCABC, ABcaBCABC, AbcABCABC, ....................",
+        "options": {
+          "A": "ABCABCabC",
+          "B": "abCABCABC",
+          "C": "ABCABcaBC",
+          "D": "ABCAbcABC"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p44 q121",
+      "key_basis": "derived",
+      "rule": "A lower-case pair moves one place left through ABCABCABC each time.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q122",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ABCABcABC, ABCAbCABC, ABCaBCABC, ABcABCABC, AbCABCABC, ..................",
+        "options": {
+          "A": "ABCABCaBC",
+          "B": "aBCABCABC",
+          "C": "ABCABcABC",
+          "D": "ABCAbCABC"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p44 q122",
+      "key_basis": "derived",
+      "rule": "A lower-case letter moves one place left through ABCABCABC each time.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q124",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "_ S J _ P S _ _ P _ J A _ S _ A",
+        "options": {
+          "A": "PASASPJ",
+          "B": "PAJASPJ",
+          "C": "PAJSAPJ",
+          "D": "PAAJSPA"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p44 q124",
+      "key_basis": "derived",
+      "rule": "\"PSJA\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch11-q125",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "L _ _ LM _ L _ L _ML",
+        "options": {
+          "A": "MMMLL",
+          "B": "MLLML",
+          "C": "LMLLM",
+          "D": "LMMML"
+        },
+        "key": "B",
+        "reasoningType": "series",
+        "direction": "Select the option that represents the letters that, when sequentially placed in the blanks below, will complete the letter-series."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch11 p44 q125",
+      "key_basis": "derived",
+      "rule": "\"LML\" repeated.",
+      "confidence": "high"
+    }
+  ]
+}

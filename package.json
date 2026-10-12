@@ -20,7 +20,9 @@
     "typecheck": "tsc --noEmit",
     "audit:mobile": "node scripts/audit-mobile.mjs",
     "test:db": "vitest run --config vitest.db.config.ts",
-    "user:create": "node --experimental-strip-types scripts/user-create.ts"
+    "user:create": "node --experimental-strip-types scripts/user-create.ts",
+    "oiritems": "node --experimental-strip-types scripts/build-oir-items.ts",
+    "items:seed": "node --experimental-strip-types scripts/seed-items.ts"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
