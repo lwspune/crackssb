@@ -1,0 +1,1225 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSB OIR PAGE NO. 1-44 (phone photos of printed pages 1-44)",
+  "chapter": 8,
+  "title": "Directions",
+  "pages": [
+    29,
+    34
+  ],
+  "transcribed": "2026-10-12",
+  "note": "Verbatim, typos included (\"right me\", \"clcokwise\", \"North-Eeast\", \"coverd\"). Never edited: corrections live in src/items/oir/. Letters cut off at the photo's right edge on page 30 (Q29-34) and page 32 (Q65-66) are completed from context; the keys flag where a cut digit matters. Statement lists (Q57-59) are split onto their own lines. The chapter prints no direction (text null). A book name that matches a real candidate's name is replaced with a neutral one (D21, D27); such questions carry \"renamed\": true and the original is not recorded.",
+  "directions": [
+    {
+      "section": "Main",
+      "printed": null,
+      "text": null
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 29,
+      "section": "Main",
+      "stem": "A cyclist rides 2 km towards East. Walked and then turned left and covered 1 km. walked. From there, he took a left turn and walked 800 meters to reach a tea shop. After stopping there for some time, he turned towards south and walked 500 metres. From there, he took a right turn and walked 1.2 km. walked. Finally he took a right turn and walked 1 km. walked. In which direction is he now from his starting position ?",
+      "options": {
+        "A": "North",
+        "B": "East",
+        "C": "West",
+        "D": "South"
+      }
+    },
+    {
+      "n": 2,
+      "page": 29,
+      "section": "Main",
+      "stem": "Ashish walks 20 kms towards North. He takes a right turn and walks 20 kms. and he takes a right turn and walks 20 kms. In which direction is he from his starting point ?",
+      "options": {
+        "A": "North",
+        "B": "South",
+        "C": "East",
+        "D": "West"
+      }
+    },
+    {
+      "n": 3,
+      "page": 29,
+      "section": "Main",
+      "stem": "Suman walks 15 kms towards North. She takes a right turn and walks 15 kms. She takes a right turn and walks 15 kms. In which direction is he from his starting point?",
+      "options": {
+        "A": "North",
+        "B": "South",
+        "C": "East",
+        "D": "West"
+      }
+    },
+    {
+      "n": 4,
+      "page": 29,
+      "section": "Main",
+      "stem": "In the morning after sunrise a boy rode his bicycle 4 km towards west. Then he took a right turn and cycled for 6 km and again took a right turn and cycled for 6 km to reach his school. In which direction is the school from the starting point?",
+      "options": {
+        "A": "North-East",
+        "B": "South-East",
+        "C": "South-West",
+        "D": "North-West"
+      }
+    },
+    {
+      "n": 5,
+      "page": 29,
+      "section": "Main",
+      "stem": "Rajan started walking from his house and covered 2 km. towards East, then turned to the right and walked 3 kms. Then turned right again and walked 3 kms. He then right me and 1 km. Walked and finally after taking a right turn and then walked 1 km. After walking he reached point 'K'. In which direction was he walking when he reached there?",
+      "options": {
+        "A": "West",
+        "B": "East",
+        "C": "South",
+        "D": "North"
+      }
+    },
+    {
+      "n": 6,
+      "page": 29,
+      "section": "Main",
+      "stem": "John walked straight from a hotel and after covering a distance of 3 km took a left turn and traveled 5 km in that direction to reach point X. From here, he takes a right turn and travels 4 km, and again takes a right turn and travels 4 km. From here, he took a straight turn to reach point X. If John is now moving in the North-West direction, in which direction did he start from the hotel?",
+      "options": {
+        "A": "West",
+        "B": "North",
+        "C": "South-East",
+        "D": "East"
+      }
+    },
+    {
+      "n": 7,
+      "page": 29,
+      "section": "Main",
+      "stem": "Hrithik from his office goes straight towards East and after traveling 4 km takes a right turn. From here he covered a distance of 3 km and again took a right turn. After covering a distance of 4 km he finally takes a left turn and travels straight. In which direction was Hrithik heading in the end?",
+      "options": {
+        "A": "South-West",
+        "B": "South-East",
+        "C": "North",
+        "D": "South"
+      }
+    },
+    {
+      "n": 8,
+      "page": 29,
+      "section": "Main",
+      "stem": "Ram walks 4 km towards north from his university campus and then he takes a left turn to reach his department. After walking 2.5 km to his department, he takes a left turn and walks 4 km to reach the conference room. In which direction is he now from his starting point?",
+      "options": {
+        "A": "South West",
+        "B": "North-East",
+        "C": "South",
+        "D": "West"
+      }
+    },
+    {
+      "n": 9,
+      "page": 29,
+      "section": "Main",
+      "stem": "Starting from Anand's house, the bus moves 3 km towards the right. After that it takes a left turn and travels a distance of 2 km. Finally it takes a right turn and covers a distance of 4 km. When the bus reached the school, it was facing south-east, then which direction was the bus facing when it dropped Anand home?",
+      "options": {
+        "A": "south-east",
+        "B": "north",
+        "C": "south-west",
+        "D": "north-east"
+      }
+    },
+    {
+      "n": 10,
+      "page": 29,
+      "section": "Main",
+      "stem": "If North is called North-West, West is called South-West, South is called South-East and so on. A person walks straight from South-West to North-East and than turns left walks straight and again turns Left. Now at what direction he is facing?",
+      "options": {
+        "A": "South",
+        "B": "North-East",
+        "C": "North",
+        "D": "South-West"
+      }
+    },
+    {
+      "n": 11,
+      "page": 29,
+      "section": "Main",
+      "stem": "Town C is to the south of Town A. Town D is to the west of town A. Town B is to the east of town D. Town E is to the south of town B and South-east of Town C. What is the position of town A with respect to town B ?",
+      "options": {
+        "A": "West",
+        "B": "East",
+        "C": "North",
+        "D": "South"
+      }
+    },
+    {
+      "n": 12,
+      "page": 29,
+      "section": "Main",
+      "stem": "A lies to the north-west of C and north of D. If B is to the east of A, what is the position of D with repect to B ?",
+      "options": {
+        "A": "North-East",
+        "B": "East",
+        "C": "North",
+        "D": "South-west"
+      }
+    },
+    {
+      "n": 13,
+      "page": 29,
+      "section": "Main",
+      "stem": "Town B is to the east of Town A. Town C is to the north of Town B. Town D is to the east of Town C. Town E is to the south of Town D. What is the position of Town E with respect to Town A ? (All positions are arranged in GRID pattern)",
+      "options": {
+        "A": "East",
+        "B": "North-West",
+        "C": "South-West",
+        "D": "North"
+      }
+    },
+    {
+      "n": 14,
+      "page": 29,
+      "section": "Main",
+      "stem": "After leaving the school, Hemant and Anurag walk 1 km towards North to reach the bus stop. From the bus stop, Hemant takes a left turn and walks 500 m. Then he turns to his left and walks 2 km to reach his home. From the bus stop, Anurag takes a right turn and walks 250 m. Then he takes a right turn and walks 1 km to reach his home. In which direction is Anurag's house from Hemant's house?",
+      "options": {
+        "A": "East",
+        "B": "West",
+        "C": "South-East",
+        "D": "North-East"
+      }
+    },
+    {
+      "n": 15,
+      "page": 29,
+      "section": "Main",
+      "stem": "Tamanna is walking towards north from her house. After walking 500 metres, she took a left turn and walked 500 metres. Then she took a left turn and walked 250 meters and reached her friend's house. In which direction is his house from her friend's house ?",
+      "options": {
+        "A": "South",
+        "B": "South-West",
+        "C": "South-East",
+        "D": "North"
+      }
+    },
+    {
+      "n": 16,
+      "page": 29,
+      "section": "Main",
+      "stem": "B is west of E. A is north-west of B. F is north-east of B. D is south-east of F, such that F is north-west of E and D is south-east of E as well. If C is south-west of E, what is the position of A with respect to E? (All positions are arranged in GRID pattern)",
+      "options": {
+        "A": "North-west",
+        "B": "South-west",
+        "C": "North-east",
+        "D": "South-east"
+      }
+    },
+    {
+      "n": 17,
+      "page": 29,
+      "section": "Main",
+      "stem": "On his way to school, Mohan travels 2 km straight from his home, then takes a left turn and travels 4 km. From here he turns right. And after covering a distance of 2 km he again takes a right turn and travels 2 km to finally reach the school. If he was finally traveling towards west, in which direction is his home from the school?",
+      "options": {
+        "A": "North",
+        "B": "South-West",
+        "C": "West",
+        "D": "North-West"
+      },
+      "renamed": true
+    },
+    {
+      "n": 18,
+      "page": 30,
+      "section": "Main",
+      "stem": "Tina is 75m to the south-east of Veena. Reena is 75m south-west of Veena. Tina is in Rina's .......",
+      "options": {
+        "A": "East",
+        "B": "West",
+        "C": "South",
+        "D": "North"
+      }
+    },
+    {
+      "n": 19,
+      "page": 30,
+      "section": "Main",
+      "stem": "Prince drives 8 km towards east from point A. He takes a right turn and drives 3 km. Again, he takes a right turn and drives 5 km. He takes a right turn and drives 8 km. Finally, he takes a left turn and drives 3 km to reach point B. How far and towards which direction should he drive now in order to reach point A again?",
+      "options": {
+        "A": "2 km towards east",
+        "B": "3 km towards west",
+        "C": "4 km towards north",
+        "D": "5 km towards south"
+      }
+    },
+    {
+      "n": 20,
+      "page": 30,
+      "section": "Main",
+      "stem": "A person starts from point X and moves 7 km towards the south. He then turns left and moves 5 km. He then takes a right turn and moves 5 km. He then turns right and moves 5 km to reach point Y. How much and in which direction does he need to move now to reach point X ?",
+      "options": {
+        "A": "5 km, North",
+        "B": "5 km, West",
+        "C": "7 km, West",
+        "D": "12 km, North"
+      }
+    },
+    {
+      "n": 21,
+      "page": 30,
+      "section": "Main",
+      "stem": "Starting from point A, an animal walks 15 m towards East. Now he turned left and walked 25 m. Now he took a right turn and walked 10 m. Then took a left turn and walked 15 m. Finally, he took a left turn and walked 25 m. How far and in which direction is the animal now from its starting point A?",
+      "options": {
+        "A": "40 m North",
+        "B": "25 m. East",
+        "C": "40 m South",
+        "D": "25 m. West"
+      }
+    },
+    {
+      "n": 22,
+      "page": 30,
+      "section": "Main",
+      "stem": "Zoya came out of the bank and walked 14 m to north. After that she turned to her left and walked 20 m. After that she again took a left turn and walked 36 m. Now she again turns to her left and walks 65 m. In which direction will she have to turn and what distance will she have to cover to reach the hospital which is 45m in the east direction from the bank?",
+      "options": {
+        "A": "To the left, 22 m.",
+        "B": "To the right, 22 m.",
+        "C": "To the left, 29 m.",
+        "D": "To the right, 29 m."
+      }
+    },
+    {
+      "n": 23,
+      "page": 30,
+      "section": "Main",
+      "stem": "Starting from point Z, Khanna walks 80 m towards South. He turned left and walked 40 m. After that, he took a right turn and walked 40 m. After that he takes a left turn and walks 20 m. Again he turned to his left and walked 120 m. walked. How far and in which direction is Khanna now from the starting point Z?",
+      "options": {
+        "A": "60 m West",
+        "B": "40 m. South",
+        "C": "40 m north",
+        "D": "60 m. East"
+      }
+    },
+    {
+      "n": 24,
+      "page": 30,
+      "section": "Main",
+      "stem": "Two football players A and B of the opposing team start playing from the same corner. A 35 m towards east and then runs 15 towards south, he takes right turn and runs 60 m. Meanwhile B runs 20 m towards north and then 25 m towards west, turns to his left and runs 20 m. What is the position of B with respect of A ?",
+      "options": {
+        "A": "15 m North",
+        "B": "5 m North",
+        "C": "15 m South",
+        "D": "5 m South"
+      }
+    },
+    {
+      "n": 25,
+      "page": 30,
+      "section": "Main",
+      "stem": "Two workers X and Y start walking from the same place. X walks 65 m west, then turns left and walks 25 m. In the meanwhile Y walks 20 m North, then turns to his right and walks 35 m, then turns south and walks 45 m. Where is Y with respect to X ?",
+      "options": {
+        "A": "30 m East",
+        "B": "100 m West",
+        "C": "100 m East",
+        "D": "30 m West"
+      }
+    },
+    {
+      "n": 26,
+      "page": 30,
+      "section": "Main",
+      "stem": "After their day's work two village women are returning home. The first woman walks 1.5 km west, then turns to her right and 3 km to reach her house. In the mean while the second woman walks 1 km North, then she turns east and walks 3.5 km, then she turns to her left and walks 2 km to reach her house. Where is the first woman's house with respect to second woman's house ?",
+      "options": {
+        "A": "2 km West",
+        "B": "5 km East",
+        "C": "5 km West",
+        "D": "2 km East"
+      }
+    },
+    {
+      "n": 27,
+      "page": 30,
+      "section": "Main",
+      "stem": "Two navy ships start from the same port. Ship A travels 23 km west, then turns to its left and travels 19 km. Ship B travels 19 km west, then turns north and travels 5 km, then turns to its left and travels 4 km. Where is ship A with respect to ship B ?",
+      "options": {
+        "A": "14 km South",
+        "B": "24 km North",
+        "C": "24 km South",
+        "D": "14 km North"
+      }
+    },
+    {
+      "n": 28,
+      "page": 30,
+      "section": "Main",
+      "stem": "Suman drives 3 km towards north from point A. She takes a right turn and drives 4 km more. Then she takes another right turn and drives 3 km. Finally, she takes one more right turn and drives 6 km to reach point B. How far and towards which direction should she drive in order to reach point A again?",
+      "options": {
+        "A": "2 km towards east",
+        "B": "3 km towards west",
+        "C": "2 km towards south",
+        "D": "3 km towards north"
+      }
+    },
+    {
+      "n": 29,
+      "page": 30,
+      "section": "Main",
+      "stem": "Vimla starts from her house and walks 30m towards North and then takes a right turn and walks 40m. Then she takes a left turn and walks 35 meters. After that, she takes a right turn and walks 40 meters. From there she takes a right turn and walks 85 meters. Then she again takes a right turn and walks 50 meters. From there it finally turns right. and walks 20 meters. How far is he from his home now and in which direction is he with respect to his home?",
+      "options": {
+        "A": "30 m South",
+        "B": "20 m West",
+        "C": "100 m East",
+        "D": "30 m East"
+      }
+    },
+    {
+      "n": 30,
+      "page": 30,
+      "section": "Main",
+      "stem": "On a certain day John decided to go to school using his newly purchased skates. So, he left his house and skated 15 km northwards, then turned left and skated 7 km, then he took another left turn and skated 15 km, and then finally turned right and skated 13 km. How far exactly is his school from his house ?",
+      "options": {
+        "A": "20 km",
+        "B": "28 km",
+        "C": "6 km",
+        "D": "2 km"
+      }
+    },
+    {
+      "n": 31,
+      "page": 30,
+      "section": "Main",
+      "stem": "In the evening, Amit and Ashwini are sitting in a park in such a way that their backs are facing each other. If Amit's shadow falls to the right of Ashwini, then which direction is Amit facing?",
+      "options": {
+        "A": "South",
+        "B": "West",
+        "C": "East",
+        "D": "North"
+      }
+    },
+    {
+      "n": 32,
+      "page": 30,
+      "section": "Main",
+      "stem": "While coming home from school at 5 pm, Ketki's shadow was falling on his left side. In which direction is the school from his house?",
+      "options": {
+        "A": "North-West",
+        "B": "North-East",
+        "C": "North",
+        "D": "South"
+      }
+    },
+    {
+      "n": 33,
+      "page": 30,
+      "section": "Main",
+      "stem": "Mridul, 145 m towards East. Cycles and then takes a left turn and walks 155 m. rides a bicycle. Again, he takes a left turn and walks 225 m. rides a bicycle. He finally takes a left turn and walks 95 m to reach his house. rides a bicycle. Find the shortest distance between his house and starting point.",
+      "options": {
+        "A": "140 m",
+        "B": "100 m",
+        "C": "60 m.",
+        "D": "120 m"
+      }
+    },
+    {
+      "n": 34,
+      "page": 30,
+      "section": "Main",
+      "stem": "Meenal is 45 m towards north. walks and then she takes a left turn and walks 35 m. It moves From there, she takes a right turn and walks 26 m. walks and then again takes a right turn and walks 35 m. It moves Finally she takes a left turn and walks 17m to reach her home. It moves How far is he from the starting point?",
+      "options": {
+        "A": "80 m",
+        "B": "88 m",
+        "C": "83 m",
+        "D": "85 m"
+      }
+    },
+    {
+      "n": 35,
+      "page": 31,
+      "section": "Main",
+      "stem": "Rohini walks 10 Km. towards North and turns to the right and walks 10 kms. and then turns to the left and walks 10 kms. and walks and then turns to the right and walks 10 km. How far (in km) is he from his starting point?",
+      "options": {
+        "A": "20",
+        "B": "10√2",
+        "C": "20√2",
+        "D": "40"
+      }
+    },
+    {
+      "n": 36,
+      "page": 31,
+      "section": "Main",
+      "stem": "P is 15 km towards East. He takes a right turn and walks 10 km. He takes a right turn and walks 15 km. At what distance (in km) is he from his starting point?",
+      "options": {
+        "A": "5",
+        "B": "10",
+        "C": "15",
+        "D": "25"
+      }
+    },
+    {
+      "n": 37,
+      "page": 31,
+      "section": "Main",
+      "stem": "Kedar left his house and cycled 25 km towards South and reached the bus stand. Then he took a left turn and went 15 km, again he took a left turn and went 25 km. How far is he from his original place?",
+      "options": {
+        "A": "10 km",
+        "B": "20 km",
+        "C": "15 km",
+        "D": "25 km"
+      }
+    },
+    {
+      "n": 38,
+      "page": 31,
+      "section": "Main",
+      "stem": "Rahman went from his office to the district headquarters. He started his journey towards the west. First he went straight for 20 km, then he turned to his left and walked 9 km, finally, he took a right turn and walked 20 km to reach the district headquarter. What is the shortest distance between Rahman's office and the district headquarter?",
+      "options": {
+        "A": "41 km",
+        "B": "49 km",
+        "C": "34.5 km",
+        "D": "24.5 km"
+      }
+    },
+    {
+      "n": 39,
+      "page": 31,
+      "section": "Main",
+      "stem": "Maheep started from his office and walked 120m towards South. Then he took a left turn and walked a certain distance of A m. Then he took a right turn and walked 80 m. Then he took a left turn and covered a distance of B m. After covering this distance, he reached his home. If the shortest distance between Maheep's office and home is 290m, then what is the sum of the distances A and B covered by him?",
+      "options": {
+        "A": "230 m",
+        "B": "240 m",
+        "C": "210 m",
+        "D": "200 m"
+      }
+    },
+    {
+      "n": 40,
+      "page": 31,
+      "section": "Main",
+      "stem": "Pritam started from point B and walked 40m towards west. Then he left me and walked 35m. Then he took a right turn and walked 25m. Harmeet started from point A and walked 45m towards East. Then he took a right turn and walked 35m to meet Pritam. What is the distance between point A and point B?",
+      "options": {
+        "A": "100 m",
+        "B": "70 m",
+        "C": "110 m",
+        "D": "85 m"
+      }
+    },
+    {
+      "n": 41,
+      "page": 31,
+      "section": "Main",
+      "stem": "Pratima leaves her house and walks 69 m towards west. It moves Then she turns to her right and walks 24 m. After that she again takes a right turn and walks 76 m. He is exactly 24 m from his house. How far is it from a pole located in the north?",
+      "options": {
+        "A": "12 m",
+        "B": "7 m",
+        "C": "10 m",
+        "D": "6 m"
+      }
+    },
+    {
+      "n": 42,
+      "page": 31,
+      "section": "Main",
+      "stem": "Navya starts from her house and walks 27 m. to the west. From there, she takes a right turn and covers a certain distance Pm. Then she turns to her right and walks 16 m. Then she again takes a right turn and walks 72 m. After that, she takes a left turn and walks 11 m. If the present position of Navya is 11 m from her house. then what is the value of P?",
+      "options": {
+        "A": "72 m",
+        "B": "45 m",
+        "C": "56 m",
+        "D": "83 m"
+      }
+    },
+    {
+      "n": 43,
+      "page": 31,
+      "section": "Main",
+      "stem": "Manjeet cycles X km towards North and then takes a left turn and cycles Y km to reach her shop. The minimum distance between the starting point and his shop is 5 km. What can be the X and Y values in km respectively?",
+      "options": {
+        "A": "3 and 4",
+        "B": "8 and 4",
+        "C": "4 and 6",
+        "D": "3 and 5"
+      }
+    },
+    {
+      "n": 44,
+      "page": 31,
+      "section": "Main",
+      "stem": "Suyash starts walking from point A and walks 130 m towards South-East. Pradeep starts walking from point B and walks 130 m towards South-West. After covering these distances, they both meet at point C. Point D is located such that if points A and B are joined to each other by a straight line, then point D will be the midpoint of that line. If the distance between points C and D is 120 m, then find the distance between points A and B.",
+      "options": {
+        "A": "120 m",
+        "B": "80 m",
+        "C": "50 m",
+        "D": "100 m"
+      }
+    },
+    {
+      "n": 45,
+      "page": 31,
+      "section": "Main",
+      "stem": "Samitra walks 4 km towards north, turn right and walks 5 km. Turning South and 2 kms. Then he turns towards west and walks 3 km. Goes and stays for a while. then walks 2 km. How far is Samitra from the starting point ?",
+      "options": {
+        "A": "16 km",
+        "B": "2 km",
+        "C": "4 km",
+        "D": "3 km"
+      }
+    },
+    {
+      "n": 46,
+      "page": 31,
+      "section": "Main",
+      "stem": "Starting from point O, Mahesh walks 5 km. towards south, then turns to his right and walks 3 km. From there he again turns right and walks 5 km. Then he turns to his left and walks 5 km. How far is he from his starting point?",
+      "options": {
+        "A": "13 km",
+        "B": "8 km",
+        "C": "5 km",
+        "D": "15 km"
+      }
+    },
+    {
+      "n": 47,
+      "page": 31,
+      "section": "Main",
+      "stem": "Ankit walks 17 km towards east. He turns left and walks 17 km. He turns left again and walks 24 km to reach point A. What is the straight line distance (in km) between the starting point and point A ?",
+      "options": {
+        "A": "13√2",
+        "B": "14√4",
+        "C": "4√2",
+        "D": "11√2"
+      }
+    },
+    {
+      "n": 48,
+      "page": 31,
+      "section": "Main",
+      "stem": "On a certain day John decided to go to school using his newly purchased skates. So, he left his house and skated 15 km northwards, then turned left and skated 7 km, then he took another left turn and skated 15 km, and then finally turned right and skated 13 km. How far exactly is his school from his house ?",
+      "options": {
+        "A": "20 km",
+        "B": "28 km",
+        "C": "6 km",
+        "D": "2 km"
+      }
+    },
+    {
+      "n": 49,
+      "page": 31,
+      "section": "Main",
+      "stem": "Anita starts from her house and cycles 6 km towards the south and then turns left and cycles 8 km. She again turns left and cycles for X km to reach her school. Point A is to the west of her school and also 3 km to the north of her house. What is the value of X?",
+      "options": {
+        "A": "7 km",
+        "B": "3 km",
+        "C": "9 km",
+        "D": "11 km"
+      }
+    },
+    {
+      "n": 50,
+      "page": 31,
+      "section": "Main",
+      "stem": "Bismita walks 200 meters towards East and then takes a right turn and walks 210 meters to reach the hospital. What is the shortest distance between the starting point and the hospital?",
+      "options": {
+        "A": "310 meters",
+        "B": "290 meters",
+        "C": "220 meters",
+        "D": "260 meters"
+      }
+    },
+    {
+      "n": 51,
+      "page": 31,
+      "section": "Main",
+      "stem": "Arjun starts walking in the east direction. After walking 50 meters, he turns to his left and walks 15 meters straight. Then from there he turns to his left and walks 30 meters straight. He again turns to his left and walks 15 meters. How far is he from the starting point?",
+      "options": {
+        "A": "10 m",
+        "B": "40 m",
+        "C": "20 m",
+        "D": "30 m"
+      }
+    },
+    {
+      "n": 52,
+      "page": 31,
+      "section": "Main",
+      "stem": "Abhijeet leaves his house and walks 30m in the North-West direction. After that he walks 30m in South-West direction. After that he walks 30 m in the South-East direction. After that he walks 30 m in the North-East direction. How far is he from his home?",
+      "options": {
+        "A": "20 m",
+        "B": "0 m",
+        "C": "10 m",
+        "D": "30 m"
+      }
+    },
+    {
+      "n": 53,
+      "page": 31,
+      "section": "Main",
+      "stem": "Rinky leaves her house and walks 70 meters towards East and then takes a right turn and walks 50 meters to reach the post office. From there again she takes a right turn and walks 150 meters to reach the market. From here she takes a left turn and walks a few meters to reach the school. If the total distance from Rinky's house to the school is 170 m, then what is the total distance between the market and the school?",
+      "options": {
+        "A": "120 meters",
+        "B": "90 meters",
+        "C": "100 meters",
+        "D": "70 meters"
+      }
+    },
+    {
+      "n": 54,
+      "page": 31,
+      "section": "Main",
+      "stem": "Indu starts travelling towards East and after walking 35 km takes a right turn and walks 15 km and then takes a right turn and walks 15 km and stops. What is the minimum distance she has to travel to reach the point from where he started his journey?",
+      "options": {
+        "A": "35 km",
+        "B": "20 km",
+        "C": "30 km",
+        "D": "25 km"
+      }
+    },
+    {
+      "n": 55,
+      "page": 32,
+      "section": "Main",
+      "stem": "Two friends Ram and Shyam are standing at a point facing north. Shyam walks 5 km to his left and then turns to his left again and walks 10 km, while Ram walks 2 km to the north and then turns to his right and walks 5 km. What is the shortest distance between Ram and Shyam?",
+      "options": {
+        "A": "√244",
+        "B": "√122",
+        "C": "√212",
+        "D": "√144"
+      }
+    },
+    {
+      "n": 56,
+      "page": 32,
+      "section": "Main",
+      "stem": "Point P is 80 metres to the north of point Q. Point R is 100 metres to the east of point Q. Point S is 120 metres to the north of point R. Point S is 120 metres to the east of point T. Point V is 60 metres to the South of point T. How far and in which direction is point P from point V ?",
+      "options": {
+        "A": "20 metres, North-East",
+        "B": "20 metres, South-West",
+        "C": "20√2 metres, South-West",
+        "D": "20√2 metres, North-Eeast"
+      }
+    },
+    {
+      "n": 57,
+      "page": 32,
+      "section": "Main",
+      "stem": "Prakash walks 50 metre towards the East. He turns to the left and walks 30 metre. He turns to the right and walks 40 metre. He turns to the left at an angle of 135 degree and walks 20 metre. He turns to the left and walks 10 metre. Finally, he turns to the right at an angle of 45 degree and walks 50 metre. Which of the following statement is correct ?\nI. After third turn, Prakash will face towards the North-East.\nII. After Fifth turn, Prakash will face towards the South.",
+      "options": {
+        "A": "Only II",
+        "B": "Neither I nor II",
+        "C": "Only I",
+        "D": "Both I and II"
+      }
+    },
+    {
+      "n": 58,
+      "page": 32,
+      "section": "Main",
+      "stem": "From point P, a boy walks 10 metre towards the North and reaches point Q. He turns to the right and walks 14 metre and reaches point R. He turns to the left and walks 20 metre and reaches point S. He turns to the right and walks 12 metre and reaches point T. Finally, he turns to the right and walks 25 metre and reaches point U. Which of the following statement is correct ?\nI. The straight line distance between point R and point U is 13 metre.\nII. Point P is to the North-East of the point U.",
+      "options": {
+        "A": "Only I",
+        "B": "Only II",
+        "C": "Neither I nor II",
+        "D": "Both I and II"
+      }
+    },
+    {
+      "n": 59,
+      "page": 32,
+      "section": "Main",
+      "stem": "Raman walks 25 metre towards the South. He turns to the left and walks 40 metre. He turns to the left and walks 60 metre. He turns to the right and walks 20 metre. He turns to the right and walks 35 metre. Finally, he turns to the left and walks 19 metre. Which of the following statement is correct ?\nI. The starting point is 79 metre to the West of the finishing point.\nII. After fourth turn, Raman will face towards the South.",
+      "options": {
+        "A": "Only II",
+        "B": "Only I",
+        "C": "Neither I nor II",
+        "D": "Both I and II"
+      }
+    },
+    {
+      "n": 60,
+      "page": 32,
+      "section": "Main",
+      "stem": "Amandeep is facing South and then he turns through 90° clockwise, again 180° clockwise and then turns180° anti-clockwise. Finally he turns 45° in the anti-clockwise direction. In which direction is he facing now ?",
+      "options": {
+        "A": "North-East",
+        "B": "South-East",
+        "C": "North-West",
+        "D": "South-West"
+      }
+    },
+    {
+      "n": 61,
+      "page": 32,
+      "section": "Main",
+      "stem": "A pen is rotated by 372° in clcokwise direction. Then, it is rotated by 476° in anticlockwise direction. Again, it is rotated by 234° in anticlockwise direction. It is finally rotated by 458° in clockwise direction. Now, it is pointing towards east direction. In which direction it was pointing initially ?",
+      "options": {
+        "A": "South-East",
+        "B": "North-West",
+        "C": "North-East",
+        "D": "South-West"
+      }
+    },
+    {
+      "n": 62,
+      "page": 32,
+      "section": "Main",
+      "stem": "Ram is facing in north direction. He rotates by 120° in anticlockwise direction. He again rotates by 340° in anticlockwise direction. He finally rotates by 220° in clockwise direction. In which direction is he facing now ?",
+      "options": {
+        "A": "South-east",
+        "B": "South",
+        "C": "East",
+        "D": "North-east"
+      }
+    },
+    {
+      "n": 63,
+      "page": 32,
+      "section": "Main",
+      "stem": "R is 16 km towards the south of T. P is 4 km towards the north of R. K is 9 km towards the west of P. G is 7 km towards the north of K. L is 21 km towards the east of G. How far T from L and in which direction of P from L ?",
+      "options": {
+        "A": "√165 km., South-west",
+        "B": "13 km., South-west",
+        "C": "√165 km., North-east",
+        "D": "13 km., North-east"
+      }
+    },
+    {
+      "n": 64,
+      "page": 32,
+      "section": "Main",
+      "stem": "Point L is 10 km south of point R. Point G is 12 km west of point L. Point M is 13 km south of point G. Point T is 4 km to the east of point M. How far is point T from point G?",
+      "options": {
+        "A": "√235 km",
+        "B": "√195 km",
+        "C": "√185 km",
+        "D": "√205 km"
+      }
+    },
+    {
+      "n": 65,
+      "page": 32,
+      "section": "Main",
+      "stem": "Rajesh is going in the north direction. After walking 10 m, he takes a right turn and walks 40 m to reach shop L, now he takes a left turn and walks 24 m. He again takes a left turn and walks 12 m to reach hospital P. Now finally he turns back 22 m. How far and in which direction is shop L from the end point ?",
+      "options": {
+        "A": "28m. South-West",
+        "B": "28m. North-East",
+        "C": "26m. North-West",
+        "D": "26m. South-West"
+      }
+    },
+    {
+      "n": 66,
+      "page": 32,
+      "section": "Main",
+      "stem": "A bus travels 100 meters to the south, takes a right turn and travels 300 meters. She again takes a right turn and travels 100 meters to reach shop G. Now she travels 500 m in the north direction. She finally takes a left turn and travels 1200 m to reach hospital M. In which direction and how far is hospital M from shop G?",
+      "options": {
+        "A": "1250 m, East",
+        "B": "1300 m, North-East",
+        "C": "1350 m, West",
+        "D": "130 m, North-West"
+      }
+    },
+    {
+      "n": 67,
+      "page": 32,
+      "section": "Main",
+      "stem": "A person is facing in East direction. He turns 135° in clockwise direction. He turns 90° in anticlock wise direction. He turns 270° in clockwise direction. He turns 45° in clockwise direction. He turns 135° in clockwise direction. Finally he turns 180° in anti-clockwise direction. In which direction he is facing now ?",
+      "options": {
+        "A": "South-East",
+        "B": "South-West",
+        "C": "North-West",
+        "D": "North-East"
+      }
+    },
+    {
+      "n": 68,
+      "page": 32,
+      "section": "Main",
+      "stem": "A is 15 km west from B. C is 10 km east from K. B is 20 km north from K. H is 5 km south from C. N is 27 km south from A. How far is K from A and in which direction is H from B?",
+      "options": {
+        "A": "30 km, north-west",
+        "B": "25 km, south-east",
+        "C": "30 km, south-west",
+        "D": "25 km, north-west"
+      }
+    },
+    {
+      "n": 69,
+      "page": 32,
+      "section": "Main",
+      "stem": "Sohan is facing towards north. He rotates by 145 degrees in clockwise direction. He again rotates by 290 degrees in anticlockwise direction. He again rotates by 345 degrees in anticlockwise direction. He finally rotates by 400 degrees in clockwise direction. In which direction is he facing now?",
+      "options": {
+        "A": "East",
+        "B": "North-west",
+        "C": "West",
+        "D": "North-east"
+      }
+    },
+    {
+      "n": 70,
+      "page": 32,
+      "section": "Main",
+      "stem": "A river flows north to south and on the way turns left and goes in a quarter-circle round a hillock and then turn right at a right angle. In which direction is the river finally following?",
+      "options": {
+        "A": "South",
+        "B": "East",
+        "C": "North",
+        "D": "West"
+      }
+    },
+    {
+      "n": 71,
+      "page": 33,
+      "section": "Main",
+      "stem": "Ashwin wants to book a ticket to go to Tirupati. The booking office is located in the east direction from his house, and to reach there from home he covers a distance of 8 km. From there he walks 5 km towards North and reaches Sabzi Mandi. From there he turns left and goes to his friend Swapna's house, which is located at a distance of 8 km from here. Now he has to go back to his home. How much distance will he have to cover to reach his home ?",
+      "options": {
+        "A": "8 km",
+        "B": "26 km",
+        "C": "5 km",
+        "D": "3 km"
+      }
+    },
+    {
+      "n": 72,
+      "page": 33,
+      "section": "Main",
+      "stem": "Aparna starts walking towards the north, after walking 30 m she turns towards the south and walks 50 m. Now she again turns east and walks 20 metres. Then she walks 20 meters towards the North. Calculate how far is she now and in which direction from the starting point?",
+      "options": {
+        "A": "10 m north",
+        "B": "20 m west",
+        "C": "10 m east",
+        "D": "20 m east"
+      }
+    },
+    {
+      "n": 73,
+      "page": 33,
+      "section": "Main",
+      "stem": "My school is in the Eastern my house. Temple in North of my home and Market is South and my house. If all re not equal distance from my house in which direction the school is while respect to the Market ?",
+      "options": {
+        "A": "North-West.",
+        "B": "East.",
+        "C": "North.",
+        "D": "North-East."
+      }
+    },
+    {
+      "n": 74,
+      "page": 33,
+      "section": "Main",
+      "stem": "My school is in the East of my house. Temple is North of my house and Market is South of my house and Post office is West of my house. If all are at equal distance from my house, in which direction the School is with respect to the Post office?",
+      "options": {
+        "A": "West",
+        "B": "North",
+        "C": "South",
+        "D": "East"
+      }
+    },
+    {
+      "n": 75,
+      "page": 33,
+      "section": "Main",
+      "stem": "Arbuda starts walking from her home and walks 78 m towards West. From there, she turns right and walks 22 m. Then she turns right and walks 32 m. Then she turns right and walks 41m. She again turns right and walks 34 m. She finally turns left and walks 41 m. What is the shortest distance between Arbuda's current position and her home.",
+      "options": {
+        "A": "100 m",
+        "B": "140 m",
+        "C": "120 m",
+        "D": "80 m"
+      }
+    },
+    {
+      "n": 76,
+      "page": 33,
+      "section": "Main",
+      "stem": "My school is in the East of my house. Temple is North of my house and Market is South of my house. If all are at equal distance from my house, in which direction the Temple is with respect to the Market?",
+      "options": {
+        "A": "West",
+        "B": "South",
+        "C": "North",
+        "D": "East"
+      }
+    },
+    {
+      "n": 77,
+      "page": 33,
+      "section": "Main",
+      "stem": "My school is in the East of my house. Temple is North of my house and Market is South of my house. If all are at equal distance from my house, in which direction the Market is with respect to the School ?",
+      "options": {
+        "A": "South-West",
+        "B": "South",
+        "C": "West",
+        "D": "East"
+      }
+    },
+    {
+      "n": 78,
+      "page": 33,
+      "section": "Main",
+      "stem": "Pratiksha leaves from her home for her college. She walks 48 m. towards West. After that, she turns towards North and walks 32 m. Then she turns right and walks 54 m. Then she goes 40 m. towards the South and reaches her college. What is the shortest distance between her home and the college?",
+      "options": {
+        "A": "15 m",
+        "B": "20 m",
+        "C": "9 m",
+        "D": "10 m"
+      }
+    },
+    {
+      "n": 79,
+      "page": 33,
+      "section": "Main",
+      "stem": "Himangini started walking from her home and went 38 m towards East. Then she took a left turn and walked 57 m to reach a bank. From the bank she goes 17 m towards East. After that she took a right turn and went 17 m. She finally took a right turn and went 25 m to reach her shop. What is the shortest distance between her home and her shop?",
+      "options": {
+        "A": "45 m",
+        "B": "40 m",
+        "C": "55 m",
+        "D": "50 m"
+      }
+    },
+    {
+      "n": 80,
+      "page": 33,
+      "section": "Main",
+      "stem": "Kavya travels 30 m towards west from her home and reaches her friend Ariba's house. From there, she turns right and walks 45 m. Then she takes right turn and walks 20 m. Then she takes right turn and walks 60 m. What is the approximate shortest distance between Kavya's current position and her home?",
+      "options": {
+        "A": "17 m",
+        "B": "20 m",
+        "C": "16 m",
+        "D": "18 m"
+      }
+    },
+    {
+      "n": 81,
+      "page": 33,
+      "section": "Main",
+      "stem": "Facing west, Suresh turns 45 degrees in the clockwise direction and then another 180 degrees in the same direction and then 270 degrees in the anti-clockwise direction. Which direction is the facing now?",
+      "options": {
+        "A": "South-East",
+        "B": "North-West",
+        "C": "North-East",
+        "D": "South -West"
+      }
+    },
+    {
+      "n": 82,
+      "page": 33,
+      "section": "Main",
+      "stem": "It is 3 O'clock in a watch. If the minute hand points towards the North-East, then the hour hand will point towards the",
+      "options": {
+        "A": "South",
+        "B": "South-West",
+        "C": "North-East",
+        "D": "South-East"
+      }
+    },
+    {
+      "n": 83,
+      "page": 33,
+      "section": "Main",
+      "stem": "A child is looking for his father. He went 90 meters in the east before turning to his right. He went 20 meters before turning to his right again to look for his father at his uncle's place 30 meters from this point. His father was not there. From there, he went 100 meters to his north before meeting his father in a street. How far did the son meet his father from the starting point ?",
+      "options": {
+        "A": "80 meters",
+        "B": "100 meters",
+        "C": "140 meters",
+        "D": "260 meters"
+      }
+    },
+    {
+      "n": 84,
+      "page": 33,
+      "section": "Main",
+      "stem": "A clock is put on the table in such a way that at 6 PM, the hour hand points to the North. In which direction will the minute hand point at 9.15 A.M. ?",
+      "options": {
+        "A": "South-East",
+        "B": "North-East",
+        "C": "West",
+        "D": "South"
+      }
+    },
+    {
+      "n": 85,
+      "page": 33,
+      "section": "Main",
+      "stem": "A man is facing North. He turns 45 degree in the clockwise direction and then another 180 degree in the same direction and then 45 degree in the anticlockwise direction. Find which direction he is facing now ?",
+      "options": {
+        "A": "North",
+        "B": "East",
+        "C": "West",
+        "D": "South"
+      }
+    },
+    {
+      "n": 86,
+      "page": 33,
+      "section": "Main",
+      "stem": "Rashi moves 0.3 km in the west then, turn right and moves 0.5 km then she turn right. She walks straight 0.3 km to reach her friend's place. What is the shortest distance between the place of pallavi's friend and her house?",
+      "options": {
+        "A": "0.4 km",
+        "B": "0.5 km",
+        "C": "0.8 km",
+        "D": "0.3 km"
+      }
+    },
+    {
+      "n": 87,
+      "page": 33,
+      "section": "Main",
+      "stem": "Surbhi is facing East. She turns 90° in the clockwise direction and moved 2 kilometers, then she turns 145° in clockwise direction and moved 1 kilometer. Which direction is she facing now ?",
+      "options": {
+        "A": "North",
+        "B": "East",
+        "C": "North-West",
+        "D": "South-East"
+      }
+    },
+    {
+      "n": 88,
+      "page": 33,
+      "section": "Main",
+      "stem": "A man walks 6 km south, turns left and walks 4 km, again turns left and walks 5 km. Which direction is he facing now ?",
+      "options": {
+        "A": "South",
+        "B": "North",
+        "C": "East",
+        "D": "West"
+      }
+    },
+    {
+      "n": 89,
+      "page": 33,
+      "section": "Main",
+      "stem": "Rakesh started walking straight towards East. He walks a certain distance and then turns towards his right and walks again. In which direction is he heading now ?",
+      "options": {
+        "A": "North",
+        "B": "East",
+        "C": "South",
+        "D": "West"
+      },
+      "renamed": true
+    },
+    {
+      "n": 90,
+      "page": 33,
+      "section": "Main",
+      "stem": "If South-East becomes North, North-East becomes West and so on, what will West become?",
+      "options": {
+        "A": "North-East",
+        "B": "North-West",
+        "C": "South-East",
+        "D": "South-West"
+      }
+    },
+    {
+      "n": 91,
+      "page": 33,
+      "section": "Main",
+      "stem": "If all directions are rotated clockwise by 90° angle i.e. 'North is changed to West, East to North and so on, then what will come in place of North-West?",
+      "options": {
+        "A": "South-West",
+        "B": "North-East",
+        "C": "South-East",
+        "D": "East-West"
+      }
+    },
+    {
+      "n": 92,
+      "page": 33,
+      "section": "Main",
+      "stem": "It is 3 O'clock in a watch and it is rotated by 10° in a manner such that if the minute hand points towards the North-East, then hour hand will point towards which direction?",
+      "options": {
+        "A": "South",
+        "B": "South-West",
+        "C": "North-West",
+        "D": "South-East"
+      }
+    },
+    {
+      "n": 93,
+      "page": 34,
+      "section": "Main",
+      "stem": "If North-East becomes West and South-East becomes North then what will West becomes ?",
+      "options": {
+        "A": "South-East",
+        "B": "North-East",
+        "C": "South",
+        "D": "North-West"
+      }
+    },
+    {
+      "n": 94,
+      "page": 34,
+      "section": "Main",
+      "stem": "While facing East you turn your left and walk 10 yards; then turn to your left and walk 10 yards. and now you turn 45 degrees towards your right and go straight to cover 25 yards. Now, in which direction are you from yours starting point ?",
+      "options": {
+        "A": "North-East",
+        "B": "South-West",
+        "C": "East",
+        "D": "North-West"
+      }
+    },
+    {
+      "n": 95,
+      "page": 34,
+      "section": "Main",
+      "stem": "A man goes to the market which is 5 km away from his house & then he goes to a fair at 2 km distance. Then he comes back to his house. How long distance did he cover in the entire journey ?",
+      "options": {
+        "A": "7 km",
+        "B": "3 km",
+        "C": "14 km",
+        "D": "15 km"
+      }
+    },
+    {
+      "n": 96,
+      "page": 34,
+      "section": "Main",
+      "stem": "A person goes 5 km. towards the East – then he goes 4 km, after turning to the right. Then he turns to the left & goes 5 km. In which direction is he going ?",
+      "options": {
+        "A": "North",
+        "B": "South",
+        "C": "East",
+        "D": "West"
+      }
+    },
+    {
+      "n": 97,
+      "page": 34,
+      "section": "Main",
+      "stem": "Rakesh and Govind start a race, and together they run for 50m. Rakesh turns right and runs 60m. Govind turns left and runs 40m. Then Rakesh turns left and runs 50m. While Govind turns right and runs 50m. How far are both now from the each other?",
+      "options": {
+        "A": "60m",
+        "B": "100m",
+        "C": "20m",
+        "D": "150m"
+      },
+      "renamed": true
+    },
+    {
+      "n": 98,
+      "page": 34,
+      "section": "Main",
+      "stem": "Pia walks a distance of 4 metres towards South. Then she turns to the left and walks 3 metres. After this she turns to the right and walks 4 metres. In which direction is she facing now?",
+      "options": {
+        "A": "North-East",
+        "B": "South",
+        "C": "North",
+        "D": "South-West"
+      }
+    },
+    {
+      "n": 99,
+      "page": 34,
+      "section": "Main",
+      "stem": "A rat runs 20 m towards East and turns to right, runs 10 m and tuns to right run 9 m and again turns to left runs 5 m and then turns to left and runs 12 m and finally turns to left and runs 6 m. Now, which direction is the rat facing?",
+      "options": {
+        "A": "East",
+        "B": "North",
+        "C": "West",
+        "D": "South"
+      }
+    },
+    {
+      "n": 100,
+      "page": 34,
+      "section": "Main",
+      "stem": "From his house, Rajan went 25 km to the North. Then he turned West and covered 20 km. Then he turned South and covered 15 km. Finally, turning to East, he coverd 20 km. In which Direction was he from his house?",
+      "options": {
+        "A": "East",
+        "B": "West",
+        "C": "North",
+        "D": "South"
+      }
+    }
+  ]
+}

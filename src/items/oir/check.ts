@@ -136,6 +136,51 @@ export function between(seq: string, a: string, b: string): number {
   return Math.abs(posFromLeft(seq, a) - posFromLeft(seq, b)) - 1;
 }
 
+export type Compass = 'N' | 'NE' | 'E' | 'SE' | 'S' | 'SW' | 'W' | 'NW';
+const COMPASS_DEG: Readonly<Record<Compass, number>> = { N: 0, NE: 45, E: 90, SE: 135, S: 180, SW: 225, W: 270, NW: 315 };
+const COMPASS_NAME = ['North', 'North-East', 'East', 'South-East', 'South', 'South-West', 'West', 'North-West'] as const;
+/** Below this, a coordinate is zero: 45° moves leave float dust. */
+const EPS = 1e-9;
+
+/** A walk step: move forward, turn left or right 90°, turn by degrees (clockwise positive), or face a direction outright. */
+export type Step = number | 'L' | 'R' | { readonly turn: number } | { readonly face: Compass };
+
+/**
+ * Direction-sense questions as a walk. x runs east, y north, heading in
+ * degrees clockwise from north. Pure: the same steps always land in the same place.
+ */
+export function walk(start: Compass, steps: readonly Step[]): { x: number; y: number; heading: number } {
+  let x = 0;
+  let y = 0;
+  let heading = COMPASS_DEG[start];
+  for (const s of steps) {
+    if (s === 'L') heading -= 90;
+    else if (s === 'R') heading += 90;
+    else if (typeof s === 'number') {
+      const rad = (heading * Math.PI) / 180;
+      x += s * Math.sin(rad);
+      y += s * Math.cos(rad);
+    } else if ('turn' in s) heading += s.turn;
+    else heading = COMPASS_DEG[s.face];
+    heading = ((heading % 360) + 360) % 360;
+  }
+  const clean = (v: number) => (Math.abs(v - Math.round(v)) < EPS ? Math.round(v) : v);
+  return { x: clean(x), y: clean(y), heading };
+}
+
+/** "North" … "North-West" for a multiple of 45°; null for anything between. */
+export function facingName(deg: number): string | null {
+  const d = ((deg % 360) + 360) % 360;
+  return d % 45 === 0 ? COMPASS_NAME[d / 45] : null;
+}
+
+/** Where a point at (dx, dy) lies, by quadrant: due north, or "North-East" for anything up and to the right. Null at the origin. */
+export function bearingName(dx: number, dy: number): string | null {
+  const ns = dy > EPS ? 'North' : dy < -EPS ? 'South' : '';
+  const ew = dx > EPS ? 'East' : dx < -EPS ? 'West' : '';
+  return ns && ew ? `${ns}-${ew}` : ns || ew || null;
+}
+
 /** 1 → "1st", 12 → "12th", 23 → "23rd": a rank as the book prints it. */
 export function ordinal(n: number): string {
   const teen = n % 100 >= 11 && n % 100 <= 13;

@@ -1,7 +1,9 @@
 import { describe, it, expect } from 'vitest';
 import {
   ALPHABETS,
+  bearingName,
   between,
+  facingName,
   fillBlanks,
   fromLeft,
   fromRight,
@@ -20,6 +22,7 @@ import {
   optionLetters,
   parseNumbers,
   splitKey,
+  walk,
 } from '../oir/check.ts';
 
 describe('normalizeLetters', () => {
@@ -175,6 +178,37 @@ describe('alphabet positions', () => {
 describe('ordinal', () => {
   it('writes a rank as the book prints it', () => {
     expect([1, 2, 3, 4, 11, 12, 13, 21, 22, 23, 28, 31].map(ordinal)).toEqual(['1st', '2nd', '3rd', '4th', '11th', '12th', '13th', '21st', '22nd', '23rd', '28th', '31st']);
+  });
+});
+
+describe('walk', () => {
+  it('moves along the heading and turns left and right by 90°', () => {
+    const w = walk('N', [20, 'R', 20, 'R', 20]);
+    expect([w.x, w.y, w.heading]).toEqual([20, 0, 180]);
+  });
+
+  it('turns by any angle, clockwise positive, and can face a new direction outright', () => {
+    expect(walk('S', [{ turn: 90 }, { turn: 180 }, { turn: -180 }, { turn: -45 }]).heading).toBe(225);
+    expect(walk('E', [10, { face: 'S' }, 5]).y).toBe(-5);
+  });
+
+  it('moves diagonally on a 45° heading', () => {
+    const w = walk('NW', [30, { face: 'SW' }, 30, { face: 'SE' }, 30, { face: 'NE' }, 30]);
+    expect(Math.hypot(w.x, w.y)).toBeCloseTo(0, 9);
+  });
+});
+
+describe('facingName and bearingName', () => {
+  it('names the eight compass points, and nothing between them', () => {
+    expect([0, 45, 90, 135, 180, 225, 270, 315, 360, -90].map(facingName)).toEqual(['North', 'North-East', 'East', 'South-East', 'South', 'South-West', 'West', 'North-West', 'North', 'West']);
+    expect(facingName(330)).toBeNull();
+  });
+
+  it('names where a point lies by quadrant, as the book does', () => {
+    expect(bearingName(0, 1.5)).toBe('North');
+    expect(bearingName(500, -250)).toBe('South-East');
+    expect(bearingName(-26, -5)).toBe('South-West');
+    expect(bearingName(1e-12, 0)).toBeNull();
   });
 });
 

@@ -18,6 +18,7 @@ export interface OirChapter {
 export const OIR_CHAPTERS: readonly OirChapter[] = [
   { slug: 'word-formation', title: 'Word Formation', reasoningType: 'word_formation', summary: 'Words hidden in a longer word' },
   { slug: 'alphabet', title: 'Alphabet Positions', reasoningType: 'alphabet', summary: 'Letters by place, forwards and reversed' },
+  { slug: 'directions', title: 'Directions', reasoningType: 'directions', summary: 'Walks, turns and where things lie' },
   { slug: 'ranking', title: 'Ranking', reasoningType: 'ranking', summary: 'Places in a row, ranks in a class' },
   { slug: 'series', title: 'Series', reasoningType: 'series', summary: 'Number and letter series' },
 ];

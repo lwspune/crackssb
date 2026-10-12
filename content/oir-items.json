@@ -23,6 +23,16 @@
     },
     {
       "source": "agrawal-examcart-oir",
+      "chapter": 8,
+      "title": "Directions",
+      "pages": [
+        29,
+        34
+      ],
+      "file": "content/oir/agrawal-examcart/ch08-directions.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
       "chapter": 9,
       "title": "Ranking Test",
       "pages": [
@@ -42,11 +52,11 @@
       "file": "content/oir/agrawal-examcart/ch11-series.source.json"
     }
   ],
-  "itemCount": 263,
-  "heldCount": 10,
+  "itemCount": 356,
+  "heldCount": 17,
   "confidence": {
-    "high": 254,
-    "medium": 9
+    "high": 340,
+    "medium": 16
   },
   "held": [
     {
@@ -65,6 +75,46 @@
       "source": "agrawal-examcart-oir",
       "source_ref": "ch6 p23 q50",
       "reason": "Reversed, the 10th from the right is J (17th) and the 18th from the right is R (9th); the middle is the 13th, N, which is not an option. In the normal order the answer is M (C), so the print may have dropped the reversal.",
+      "lean": "C"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q6",
+      "reason": "Left, right and right turns from any start leave John facing a main direction, never North-West, and \"took a straight turn to reach point X\" cannot be followed. No reading reaches an option."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q10",
+      "reason": "Two readings give two options. Walking the renamed North-East (true East), then two left turns, faces true West, renamed South-West (D). Walking true North-East faces true South-West, renamed South (A).",
+      "lean": "D"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q41",
+      "reason": "The walk ends 7 m east and 24 m north of the house, 25 m away, not the 24 m the print states, and \"how far is it from a pole located in the north\" cannot be followed."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q61",
+      "reason": "The turns net 120° clockwise (372 − 476 − 234 + 458), so it started 120° anticlockwise of east, at 330°: between North and North-West, none of the options.",
+      "lean": "B"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q62",
+      "reason": "The turns net 240° anticlockwise, leaving him at 120°: between East and South-East, none of the options.",
+      "lean": "A"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q66",
+      "reason": "Shop G is 300 m west of the start; hospital M is 1200 m further west and 500 m north of it, so √(1200² + 500²) = 1300 m North-West. No option says that: D prints \"130 m, North-West\", likely a misprint.",
+      "lean": "D"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q87",
+      "reason": "East (90°) + 90 + 145 = 325°: between North-West and North, none of the options.",
       "lean": "C"
     },
     {
@@ -2291,6 +2341,2060 @@
       "source_ref": "ch6 p23 q51",
       "key_basis": "derived",
       "rule": "T is 7 letters from M. The letter 7 from G is N; 7 the other way runs off the start. Reversing the alphabet keeps the distance, so the answer is N either way.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A cyclist rides 2 km towards East. Walked and then turned left and covered 1 km. walked. From there, he took a left turn and walked 800 meters to reach a tea shop. After stopping there for some time, he turned towards south and walked 500 metres. From there, he took a right turn and walked 1.2 km. walked. Finally he took a right turn and walked 1 km. walked. In which direction is he now from his starting position ?",
+        "options": {
+          "A": "North",
+          "B": "East",
+          "C": "West",
+          "D": "South"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q1",
+      "key_basis": "derived",
+      "rule": "East 2, north 1, west 0.8, south 0.5, west 1.2, north 1: he ends 1.5 km due north of the start.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q002",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Ashish walks 20 kms towards North. He takes a right turn and walks 20 kms. and he takes a right turn and walks 20 kms. In which direction is he from his starting point ?",
+        "options": {
+          "A": "North",
+          "B": "South",
+          "C": "East",
+          "D": "West"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q2",
+      "key_basis": "derived",
+      "rule": "North 20, east 20, south 20: he ends 20 km east of the start.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Suman walks 15 kms towards North. She takes a right turn and walks 15 kms. She takes a right turn and walks 15 kms. In which direction is he from his starting point?",
+        "options": {
+          "A": "North",
+          "B": "South",
+          "C": "East",
+          "D": "West"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q3",
+      "key_basis": "derived",
+      "rule": "North 15, east 15, south 15: she ends 15 km east of the start.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the morning after sunrise a boy rode his bicycle 4 km towards west. Then he took a right turn and cycled for 6 km and again took a right turn and cycled for 6 km to reach his school. In which direction is the school from the starting point?",
+        "options": {
+          "A": "North-East",
+          "B": "South-East",
+          "C": "South-West",
+          "D": "North-West"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q4",
+      "key_basis": "derived",
+      "rule": "West 4, north 6, east 6: the school is 2 km east and 6 km north of the start.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Rajan started walking from his house and covered 2 km. towards East, then turned to the right and walked 3 kms. Then turned right again and walked 3 kms. He then right me and 1 km. Walked and finally after taking a right turn and then walked 1 km. After walking he reached point 'K'. In which direction was he walking when he reached there?",
+        "options": {
+          "A": "West",
+          "B": "East",
+          "C": "South",
+          "D": "North"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q5",
+      "key_basis": "derived",
+      "rule": "Four right turns from East (south, west, north, east) leave him walking east.",
+      "confidence": "medium",
+      "note": "\"He then right me\" is read as a right turn. If it is not a turn, the last right turn leaves him facing north (D). Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch08-q007",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Hrithik from his office goes straight towards East and after traveling 4 km takes a right turn. From here he covered a distance of 3 km and again took a right turn. After covering a distance of 4 km he finally takes a left turn and travels straight. In which direction was Hrithik heading in the end?",
+        "options": {
+          "A": "South-West",
+          "B": "South-East",
+          "C": "North",
+          "D": "South"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q7",
+      "key_basis": "derived",
+      "rule": "East, then right (south), right (west), left (south): he heads south.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Ram walks 4 km towards north from his university campus and then he takes a left turn to reach his department. After walking 2.5 km to his department, he takes a left turn and walks 4 km to reach the conference room. In which direction is he now from his starting point?",
+        "options": {
+          "A": "South West",
+          "B": "North-East",
+          "C": "South",
+          "D": "West"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q8",
+      "key_basis": "derived",
+      "rule": "North 4, west 2.5, south 4: he ends 2.5 km due west of the start.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Starting from Anand's house, the bus moves 3 km towards the right. After that it takes a left turn and travels a distance of 2 km. Finally it takes a right turn and covers a distance of 4 km. When the bus reached the school, it was facing south-east, then which direction was the bus facing when it dropped Anand home?",
+        "options": {
+          "A": "south-east",
+          "B": "north",
+          "C": "south-west",
+          "D": "north-east"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q9",
+      "key_basis": "derived",
+      "rule": "A left turn and then a right turn cancel, so the bus faces at the end the way it faced at the start: south-east.",
+      "confidence": "medium",
+      "note": "Read as the direction the bus faced when it set off from Anand's house. \"When it dropped Anand home\" is ambiguous; check against the book key."
+    },
+    {
+      "id": "oir-agx-ch08-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Town C is to the south of Town A. Town D is to the west of town A. Town B is to the east of town D. Town E is to the south of town B and South-east of Town C. What is the position of town A with respect to town B ?",
+        "options": {
+          "A": "West",
+          "B": "East",
+          "C": "North",
+          "D": "South"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q11",
+      "key_basis": "derived",
+      "rule": "E is south of B and south-east of C, and C is due south of A, so B is east of A. A is therefore west of B.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A lies to the north-west of C and north of D. If B is to the east of A, what is the position of D with repect to B ?",
+        "options": {
+          "A": "North-East",
+          "B": "East",
+          "C": "North",
+          "D": "South-west"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q12",
+      "key_basis": "derived",
+      "rule": "D is due south of A and B due east of A, so D lies south and west of B: South-West.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Town B is to the east of Town A. Town C is to the north of Town B. Town D is to the east of Town C. Town E is to the south of Town D. What is the position of Town E with respect to Town A ? (All positions are arranged in GRID pattern)",
+        "options": {
+          "A": "East",
+          "B": "North-West",
+          "C": "South-West",
+          "D": "North"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q13",
+      "key_basis": "derived",
+      "rule": "On a grid: B is 1 east of A, C 1 north of B, D 1 east of C, E 1 south of D. E is 2 east of A, due east.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "After leaving the school, Hemant and Anurag walk 1 km towards North to reach the bus stop. From the bus stop, Hemant takes a left turn and walks 500 m. Then he turns to his left and walks 2 km to reach his home. From the bus stop, Anurag takes a right turn and walks 250 m. Then he takes a right turn and walks 1 km to reach his home. In which direction is Anurag's house from Hemant's house?",
+        "options": {
+          "A": "East",
+          "B": "West",
+          "C": "South-East",
+          "D": "North-East"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q14",
+      "key_basis": "derived",
+      "rule": "From the bus stop, Hemant goes west 0.5 and south 2; Anurag goes east 0.25 and south 1. Anurag's house is 0.75 km east and 1 km north of Hemant's.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Tamanna is walking towards north from her house. After walking 500 metres, she took a left turn and walked 500 metres. Then she took a left turn and walked 250 meters and reached her friend's house. In which direction is his house from her friend's house ?",
+        "options": {
+          "A": "South",
+          "B": "South-West",
+          "C": "South-East",
+          "D": "North"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q15",
+      "key_basis": "derived",
+      "rule": "North 500, west 500, south 250: her house is 500 m east and 250 m south of the friend's house.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "B is west of E. A is north-west of B. F is north-east of B. D is south-east of F, such that F is north-west of E and D is south-east of E as well. If C is south-west of E, what is the position of A with respect to E? (All positions are arranged in GRID pattern)",
+        "options": {
+          "A": "North-west",
+          "B": "South-west",
+          "C": "North-east",
+          "D": "South-east"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q16",
+      "key_basis": "derived",
+      "rule": "On a grid with E at the centre: B is 2 west, F 1 west and 1 north, A 1 west and 1 north of B. A is 3 west and 1 north of E.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "On his way to school, Mohan travels 2 km straight from his home, then takes a left turn and travels 4 km. From here he turns right. And after covering a distance of 2 km he again takes a right turn and travels 2 km to finally reach the school. If he was finally traveling towards west, in which direction is his home from the school?",
+        "options": {
+          "A": "North",
+          "B": "South-West",
+          "C": "West",
+          "D": "North-West"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p29 q17",
+      "key_basis": "derived",
+      "rule": "Left, right, right is a net right turn, and he ends heading west, so he set off south. South 2, east 4, south 2, west 2: home is 2 km west and 4 km north of the school.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Tina is 75m to the south-east of Veena. Reena is 75m south-west of Veena. Tina is in Rina's .......",
+        "options": {
+          "A": "East",
+          "B": "West",
+          "C": "South",
+          "D": "North"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q18",
+      "key_basis": "derived",
+      "rule": "Tina and Reena are the same distance south of Veena, Tina to the east and Reena to the west. Tina is east of Reena (\"Rina\" in the print).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Prince drives 8 km towards east from point A. He takes a right turn and drives 3 km. Again, he takes a right turn and drives 5 km. He takes a right turn and drives 8 km. Finally, he takes a left turn and drives 3 km to reach point B. How far and towards which direction should he drive now in order to reach point A again?",
+        "options": {
+          "A": "2 km towards east",
+          "B": "3 km towards west",
+          "C": "4 km towards north",
+          "D": "5 km towards south"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q19",
+      "key_basis": "derived",
+      "rule": "East 8, south 3, west 5, north 8, west 3: B is 5 km due north of A, so he drives 5 km south.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A person starts from point X and moves 7 km towards the south. He then turns left and moves 5 km. He then takes a right turn and moves 5 km. He then turns right and moves 5 km to reach point Y. How much and in which direction does he need to move now to reach point X ?",
+        "options": {
+          "A": "5 km, North",
+          "B": "5 km, West",
+          "C": "7 km, West",
+          "D": "12 km, North"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q20",
+      "key_basis": "derived",
+      "rule": "South 7, east 5, south 5, west 5: Y is 12 km due south of X, so 12 km north.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Starting from point A, an animal walks 15 m towards East. Now he turned left and walked 25 m. Now he took a right turn and walked 10 m. Then took a left turn and walked 15 m. Finally, he took a left turn and walked 25 m. How far and in which direction is the animal now from its starting point A?",
+        "options": {
+          "A": "40 m North",
+          "B": "25 m. East",
+          "C": "40 m South",
+          "D": "25 m. West"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q21",
+      "key_basis": "derived",
+      "rule": "East 15, north 25, east 10, north 15, west 25: 40 m due north of A.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Zoya came out of the bank and walked 14 m to north. After that she turned to her left and walked 20 m. After that she again took a left turn and walked 36 m. Now she again turns to her left and walks 65 m. In which direction will she have to turn and what distance will she have to cover to reach the hospital which is 45m in the east direction from the bank?",
+        "options": {
+          "A": "To the left, 22 m.",
+          "B": "To the right, 22 m.",
+          "C": "To the left, 29 m.",
+          "D": "To the right, 29 m."
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q22",
+      "key_basis": "derived",
+      "rule": "North 14, west 20, south 36, east 65: she stands 45 m east of the bank, 22 m south of the hospital, facing east. North is to her left: 22 m.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Starting from point Z, Khanna walks 80 m towards South. He turned left and walked 40 m. After that, he took a right turn and walked 40 m. After that he takes a left turn and walks 20 m. Again he turned to his left and walked 120 m. walked. How far and in which direction is Khanna now from the starting point Z?",
+        "options": {
+          "A": "60 m West",
+          "B": "40 m. South",
+          "C": "40 m north",
+          "D": "60 m. East"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q23",
+      "key_basis": "derived",
+      "rule": "South 80, east 40, south 40, east 20, north 120: 60 m due east of Z.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Two football players A and B of the opposing team start playing from the same corner. A 35 m towards east and then runs 15 towards south, he takes right turn and runs 60 m. Meanwhile B runs 20 m towards north and then 25 m towards west, turns to his left and runs 20 m. What is the position of B with respect of A ?",
+        "options": {
+          "A": "15 m North",
+          "B": "5 m North",
+          "C": "15 m South",
+          "D": "5 m South"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q24",
+      "key_basis": "derived",
+      "rule": "A: east 35, south 15, west 60, ending 25 m west and 15 m south of the corner. B: north 20, west 25, south 20, ending 25 m west on the corner line. B is 15 m due north of A.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Two workers X and Y start walking from the same place. X walks 65 m west, then turns left and walks 25 m. In the meanwhile Y walks 20 m North, then turns to his right and walks 35 m, then turns south and walks 45 m. Where is Y with respect to X ?",
+        "options": {
+          "A": "30 m East",
+          "B": "100 m West",
+          "C": "100 m East",
+          "D": "30 m West"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q25",
+      "key_basis": "derived",
+      "rule": "X ends 65 m west and 25 m south; Y ends 35 m east and 25 m south. Y is 100 m due east of X.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "After their day's work two village women are returning home. The first woman walks 1.5 km west, then turns to her right and 3 km to reach her house. In the mean while the second woman walks 1 km North, then she turns east and walks 3.5 km, then she turns to her left and walks 2 km to reach her house. Where is the first woman's house with respect to second woman's house ?",
+        "options": {
+          "A": "2 km West",
+          "B": "5 km East",
+          "C": "5 km West",
+          "D": "2 km East"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q26",
+      "key_basis": "derived",
+      "rule": "The first house is 1.5 km west and 3 km north; the second is 3.5 km east and 3 km north. The first is 5 km due west of the second.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q027",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Two navy ships start from the same port. Ship A travels 23 km west, then turns to its left and travels 19 km. Ship B travels 19 km west, then turns north and travels 5 km, then turns to its left and travels 4 km. Where is ship A with respect to ship B ?",
+        "options": {
+          "A": "14 km South",
+          "B": "24 km North",
+          "C": "24 km South",
+          "D": "14 km North"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q27",
+      "key_basis": "derived",
+      "rule": "A ends 23 km west and 19 km south; B ends 23 km west and 5 km north. A is 24 km due south of B.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Suman drives 3 km towards north from point A. She takes a right turn and drives 4 km more. Then she takes another right turn and drives 3 km. Finally, she takes one more right turn and drives 6 km to reach point B. How far and towards which direction should she drive in order to reach point A again?",
+        "options": {
+          "A": "2 km towards east",
+          "B": "3 km towards west",
+          "C": "2 km towards south",
+          "D": "3 km towards north"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q28",
+      "key_basis": "derived",
+      "rule": "North 3, east 4, south 3, west 6: B is 2 km due west of A, so she drives 2 km east.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q029",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Vimla starts from her house and walks 30m towards North and then takes a right turn and walks 40m. Then she takes a left turn and walks 35 meters. After that, she takes a right turn and walks 40 meters. From there she takes a right turn and walks 85 meters. Then she again takes a right turn and walks 50 meters. From there it finally turns right. and walks 20 meters. How far is he from his home now and in which direction is he with respect to his home?",
+        "options": {
+          "A": "30 m South",
+          "B": "20 m West",
+          "C": "100 m East",
+          "D": "30 m East"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q29",
+      "key_basis": "derived",
+      "rule": "North 30, east 40, north 35, east 40, south 85, west 50, north 20: 30 m due east of home.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "On a certain day John decided to go to school using his newly purchased skates. So, he left his house and skated 15 km northwards, then turned left and skated 7 km, then he took another left turn and skated 15 km, and then finally turned right and skated 13 km. How far exactly is his school from his house ?",
+        "options": {
+          "A": "20 km",
+          "B": "28 km",
+          "C": "6 km",
+          "D": "2 km"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q30",
+      "key_basis": "derived",
+      "rule": "North 15, west 7, south 15, west 13: the school is 20 km due west of the house.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q031",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the evening, Amit and Ashwini are sitting in a park in such a way that their backs are facing each other. If Amit's shadow falls to the right of Ashwini, then which direction is Amit facing?",
+        "options": {
+          "A": "South",
+          "B": "West",
+          "C": "East",
+          "D": "North"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q31",
+      "key_basis": "derived",
+      "rule": "In the evening the sun is in the west, so shadows fall east. Amit's shadow falls to Ashwini's right, so her right is east and she faces north. Back to back, Amit faces south.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "While coming home from school at 5 pm, Ketki's shadow was falling on his left side. In which direction is the school from his house?",
+        "options": {
+          "A": "North-West",
+          "B": "North-East",
+          "C": "North",
+          "D": "South"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q32",
+      "key_basis": "derived",
+      "rule": "At 5 pm the sun is in the west, so the shadow falls east. East is on the left only when facing south, so Ketki walks south to reach home: the school is to the north.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Mridul, 145 m towards East. Cycles and then takes a left turn and walks 155 m. rides a bicycle. Again, he takes a left turn and walks 225 m. rides a bicycle. He finally takes a left turn and walks 95 m to reach his house. rides a bicycle. Find the shortest distance between his house and starting point.",
+        "options": {
+          "A": "140 m",
+          "B": "100 m",
+          "C": "60 m.",
+          "D": "120 m"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q33",
+      "key_basis": "derived",
+      "rule": "East 145, north 155, west 225, south 95: the house is 80 m west and 60 m north of the start, √(80² + 60²) = 100 m.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Meenal is 45 m towards north. walks and then she takes a left turn and walks 35 m. It moves From there, she takes a right turn and walks 26 m. walks and then again takes a right turn and walks 35 m. It moves Finally she takes a left turn and walks 17m to reach her home. It moves How far is he from the starting point?",
+        "options": {
+          "A": "80 m",
+          "B": "88 m",
+          "C": "83 m",
+          "D": "85 m"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p30 q34",
+      "key_basis": "derived",
+      "rule": "North 45, west 35, north 26, east 35, north 17: home is 88 m due north of the start.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Rohini walks 10 Km. towards North and turns to the right and walks 10 kms. and then turns to the left and walks 10 kms. and walks and then turns to the right and walks 10 km. How far (in km) is he from his starting point?",
+        "options": {
+          "A": "20",
+          "B": "10√2",
+          "C": "20√2",
+          "D": "40"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q35",
+      "key_basis": "derived",
+      "rule": "North 10, east 10, north 10, east 10: 20 km east and 20 km north, √800 = 20√2 km.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "P is 15 km towards East. He takes a right turn and walks 10 km. He takes a right turn and walks 15 km. At what distance (in km) is he from his starting point?",
+        "options": {
+          "A": "5",
+          "B": "10",
+          "C": "15",
+          "D": "25"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q36",
+      "key_basis": "derived",
+      "rule": "East 15, south 10, west 15: 10 km due south of the start.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Kedar left his house and cycled 25 km towards South and reached the bus stand. Then he took a left turn and went 15 km, again he took a left turn and went 25 km. How far is he from his original place?",
+        "options": {
+          "A": "10 km",
+          "B": "20 km",
+          "C": "15 km",
+          "D": "25 km"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q37",
+      "key_basis": "derived",
+      "rule": "South 25, east 15, north 25: 15 km due east of home.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Rahman went from his office to the district headquarters. He started his journey towards the west. First he went straight for 20 km, then he turned to his left and walked 9 km, finally, he took a right turn and walked 20 km to reach the district headquarter. What is the shortest distance between Rahman's office and the district headquarter?",
+        "options": {
+          "A": "41 km",
+          "B": "49 km",
+          "C": "34.5 km",
+          "D": "24.5 km"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q38",
+      "key_basis": "derived",
+      "rule": "West 20, south 9, west 20: 40 km west and 9 km south, √(40² + 9²) = 41 km.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q039",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Maheep started from his office and walked 120m towards South. Then he took a left turn and walked a certain distance of A m. Then he took a right turn and walked 80 m. Then he took a left turn and covered a distance of B m. After covering this distance, he reached his home. If the shortest distance between Maheep's office and home is 290m, then what is the sum of the distances A and B covered by him?",
+        "options": {
+          "A": "230 m",
+          "B": "240 m",
+          "C": "210 m",
+          "D": "200 m"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q39",
+      "key_basis": "derived",
+      "rule": "He goes 120 + 80 = 200 m south and A + B east. √((A + B)² + 200²) = 290, so A + B = 210 m.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pritam started from point B and walked 40m towards west. Then he left me and walked 35m. Then he took a right turn and walked 25m. Harmeet started from point A and walked 45m towards East. Then he took a right turn and walked 35m to meet Pritam. What is the distance between point A and point B?",
+        "options": {
+          "A": "100 m",
+          "B": "70 m",
+          "C": "110 m",
+          "D": "85 m"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q40",
+      "key_basis": "derived",
+      "rule": "From B, Pritam ends 65 m west and 35 m south (\"he left me\" read as a left turn). From A, Harmeet ends 45 m east and 35 m south at the same spot. So A is 110 m west of B.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Navya starts from her house and walks 27 m. to the west. From there, she takes a right turn and covers a certain distance Pm. Then she turns to her right and walks 16 m. Then she again takes a right turn and walks 72 m. After that, she takes a left turn and walks 11 m. If the present position of Navya is 11 m from her house. then what is the value of P?",
+        "options": {
+          "A": "72 m",
+          "B": "45 m",
+          "C": "56 m",
+          "D": "83 m"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q42",
+      "key_basis": "derived",
+      "rule": "West 27, north P, east 16, south 72, east 11 ends due north or south of the house, |P − 72| away. That is 11 m, so P is 83 or 61; only 83 is offered.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Manjeet cycles X km towards North and then takes a left turn and cycles Y km to reach her shop. The minimum distance between the starting point and his shop is 5 km. What can be the X and Y values in km respectively?",
+        "options": {
+          "A": "3 and 4",
+          "B": "8 and 4",
+          "C": "4 and 6",
+          "D": "3 and 5"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q43",
+      "key_basis": "derived",
+      "rule": "North X then west Y is a right angle, so X² + Y² = 5² = 25. Only 3 and 4 give it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q044",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Suyash starts walking from point A and walks 130 m towards South-East. Pradeep starts walking from point B and walks 130 m towards South-West. After covering these distances, they both meet at point C. Point D is located such that if points A and B are joined to each other by a straight line, then point D will be the midpoint of that line. If the distance between points C and D is 120 m, then find the distance between points A and B.",
+        "options": {
+          "A": "120 m",
+          "B": "80 m",
+          "C": "50 m",
+          "D": "100 m"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q44",
+      "key_basis": "derived",
+      "rule": "AC = BC = 130 m and D is the midpoint of AB, so CD is perpendicular to AB: AD = √(130² − 120²) = 50, and AB = 100 m.",
+      "confidence": "medium",
+      "note": "Exact South-East and South-West headings would put C √2 × 65 ≈ 92 m from D, not 120 m; the question means the triangle, not the compass. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch08-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Samitra walks 4 km towards north, turn right and walks 5 km. Turning South and 2 kms. Then he turns towards west and walks 3 km. Goes and stays for a while. then walks 2 km. How far is Samitra from the starting point ?",
+        "options": {
+          "A": "16 km",
+          "B": "2 km",
+          "C": "4 km",
+          "D": "3 km"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q45",
+      "key_basis": "derived",
+      "rule": "North 4, east 5, south 2, west 3 leaves her 2 km east and 2 km north; 2 km more to the west ends 2 km due north of the start.",
+      "confidence": "medium",
+      "note": "\"Then walks 2 km\" gives no direction; read as continuing west. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch08-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Starting from point O, Mahesh walks 5 km. towards south, then turns to his right and walks 3 km. From there he again turns right and walks 5 km. Then he turns to his left and walks 5 km. How far is he from his starting point?",
+        "options": {
+          "A": "13 km",
+          "B": "8 km",
+          "C": "5 km",
+          "D": "15 km"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q46",
+      "key_basis": "derived",
+      "rule": "South 5, west 3, north 5, west 5: 8 km due west of O.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Ankit walks 17 km towards east. He turns left and walks 17 km. He turns left again and walks 24 km to reach point A. What is the straight line distance (in km) between the starting point and point A ?",
+        "options": {
+          "A": "13√2",
+          "B": "14√4",
+          "C": "4√2",
+          "D": "11√2"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q47",
+      "key_basis": "derived",
+      "rule": "East 17, north 17, west 24: 7 km west and 17 km north, √338 = 13√2 km.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "On a certain day John decided to go to school using his newly purchased skates. So, he left his house and skated 15 km northwards, then turned left and skated 7 km, then he took another left turn and skated 15 km, and then finally turned right and skated 13 km. How far exactly is his school from his house ?",
+        "options": {
+          "A": "20 km",
+          "B": "28 km",
+          "C": "6 km",
+          "D": "2 km"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q48",
+      "key_basis": "derived",
+      "rule": "North 15, west 7, south 15, west 13: the school is 20 km due west of the house. (Q30 again.)",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Anita starts from her house and cycles 6 km towards the south and then turns left and cycles 8 km. She again turns left and cycles for X km to reach her school. Point A is to the west of her school and also 3 km to the north of her house. What is the value of X?",
+        "options": {
+          "A": "7 km",
+          "B": "3 km",
+          "C": "9 km",
+          "D": "11 km"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q49",
+      "key_basis": "derived",
+      "rule": "South 6 and east 8 put her 6 km below the house line; the school is level with A, 3 km north of the house. X = 6 + 3 = 9 km.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q050",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Bismita walks 200 meters towards East and then takes a right turn and walks 210 meters to reach the hospital. What is the shortest distance between the starting point and the hospital?",
+        "options": {
+          "A": "310 meters",
+          "B": "290 meters",
+          "C": "220 meters",
+          "D": "260 meters"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q50",
+      "key_basis": "derived",
+      "rule": "√(200² + 210²) = 290 m.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q051",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arjun starts walking in the east direction. After walking 50 meters, he turns to his left and walks 15 meters straight. Then from there he turns to his left and walks 30 meters straight. He again turns to his left and walks 15 meters. How far is he from the starting point?",
+        "options": {
+          "A": "10 m",
+          "B": "40 m",
+          "C": "20 m",
+          "D": "30 m"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q51",
+      "key_basis": "derived",
+      "rule": "East 50, north 15, west 30, south 15: 20 m due east of the start.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q052",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Abhijeet leaves his house and walks 30m in the North-West direction. After that he walks 30m in South-West direction. After that he walks 30 m in the South-East direction. After that he walks 30 m in the North-East direction. How far is he from his home?",
+        "options": {
+          "A": "20 m",
+          "B": "0 m",
+          "C": "10 m",
+          "D": "30 m"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q52",
+      "key_basis": "derived",
+      "rule": "Four equal sides, each turning 90°, close a square: back home, 0 m.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q053",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Rinky leaves her house and walks 70 meters towards East and then takes a right turn and walks 50 meters to reach the post office. From there again she takes a right turn and walks 150 meters to reach the market. From here she takes a left turn and walks a few meters to reach the school. If the total distance from Rinky's house to the school is 170 m, then what is the total distance between the market and the school?",
+        "options": {
+          "A": "120 meters",
+          "B": "90 meters",
+          "C": "100 meters",
+          "D": "70 meters"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q53",
+      "key_basis": "derived",
+      "rule": "The market is 80 m west and 50 m south of the house; the school is further south of it. 80² + (50 + d)² = 170², so 50 + d = 150 and d = 100 m.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q054",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Indu starts travelling towards East and after walking 35 km takes a right turn and walks 15 km and then takes a right turn and walks 15 km and stops. What is the minimum distance she has to travel to reach the point from where he started his journey?",
+        "options": {
+          "A": "35 km",
+          "B": "20 km",
+          "C": "30 km",
+          "D": "25 km"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p31 q54",
+      "key_basis": "derived",
+      "rule": "East 35, south 15, west 15: 20 km east and 15 km south, √(20² + 15²) = 25 km.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q055",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Two friends Ram and Shyam are standing at a point facing north. Shyam walks 5 km to his left and then turns to his left again and walks 10 km, while Ram walks 2 km to the north and then turns to his right and walks 5 km. What is the shortest distance between Ram and Shyam?",
+        "options": {
+          "A": "√244",
+          "B": "√122",
+          "C": "√212",
+          "D": "√144"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q55",
+      "key_basis": "derived",
+      "rule": "Shyam ends 5 km west and 10 km south; Ram 5 km east and 2 km north. They are 10 km and 12 km apart on the two axes: √(100 + 144) = √244.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q056",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Point P is 80 metres to the north of point Q. Point R is 100 metres to the east of point Q. Point S is 120 metres to the north of point R. Point S is 120 metres to the east of point T. Point V is 60 metres to the South of point T. How far and in which direction is point P from point V ?",
+        "options": {
+          "A": "20 metres, North-East",
+          "B": "20 metres, South-West",
+          "C": "20√2 metres, South-West",
+          "D": "20√2 metres, North-Eeast"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q56",
+      "key_basis": "derived",
+      "rule": "With Q at the origin: P (0, 80), V (−20, 60). P is 20 m east and 20 m north of V: 20√2 metres, North-East.",
+      "confidence": "high",
+      "note": "Option D prints \"North-Eeast\"; it is the North-East option."
+    },
+    {
+      "id": "oir-agx-ch08-q057",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Prakash walks 50 metre towards the East. He turns to the left and walks 30 metre. He turns to the right and walks 40 metre. He turns to the left at an angle of 135 degree and walks 20 metre. He turns to the left and walks 10 metre. Finally, he turns to the right at an angle of 45 degree and walks 50 metre. Which of the following statement is correct ?\nI. After third turn, Prakash will face towards the North-East.\nII. After Fifth turn, Prakash will face towards the South.",
+        "options": {
+          "A": "Only II",
+          "B": "Neither I nor II",
+          "C": "Only I",
+          "D": "Both I and II"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q57",
+      "key_basis": "derived",
+      "rule": "Facing east; after turn 1 north, turn 2 east, turn 3 (135° left) north-west, turn 4 south-west, turn 5 (45° right) west. Turn 3 is not North-East and turn 5 is not South.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q058",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "From point P, a boy walks 10 metre towards the North and reaches point Q. He turns to the right and walks 14 metre and reaches point R. He turns to the left and walks 20 metre and reaches point S. He turns to the right and walks 12 metre and reaches point T. Finally, he turns to the right and walks 25 metre and reaches point U. Which of the following statement is correct ?\nI. The straight line distance between point R and point U is 13 metre.\nII. Point P is to the North-East of the point U.",
+        "options": {
+          "A": "Only I",
+          "B": "Only II",
+          "C": "Neither I nor II",
+          "D": "Both I and II"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q58",
+      "key_basis": "derived",
+      "rule": "R is (14, 10) and U is (26, 5): 12 east and 5 south, so RU = 13 m. P (0, 0) is south-west of U, not north-east.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q059",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Raman walks 25 metre towards the South. He turns to the left and walks 40 metre. He turns to the left and walks 60 metre. He turns to the right and walks 20 metre. He turns to the right and walks 35 metre. Finally, he turns to the left and walks 19 metre. Which of the following statement is correct ?\nI. The starting point is 79 metre to the West of the finishing point.\nII. After fourth turn, Raman will face towards the South.",
+        "options": {
+          "A": "Only II",
+          "B": "Only I",
+          "C": "Neither I nor II",
+          "D": "Both I and II"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q59",
+      "key_basis": "derived",
+      "rule": "The walk ends 79 m due east of the start, so the start is 79 m west of the finish. The turns face east, north, east, then south after the fourth.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q060",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Amandeep is facing South and then he turns through 90° clockwise, again 180° clockwise and then turns180° anti-clockwise. Finally he turns 45° in the anti-clockwise direction. In which direction is he facing now ?",
+        "options": {
+          "A": "North-East",
+          "B": "South-East",
+          "C": "North-West",
+          "D": "South-West"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q60",
+      "key_basis": "derived",
+      "rule": "South, +90° west, +180° east, −180° west, −45° south-west.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q063",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "R is 16 km towards the south of T. P is 4 km towards the north of R. K is 9 km towards the west of P. G is 7 km towards the north of K. L is 21 km towards the east of G. How far T from L and in which direction of P from L ?",
+        "options": {
+          "A": "√165 km., South-west",
+          "B": "13 km., South-west",
+          "C": "√165 km., North-east",
+          "D": "13 km., North-east"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q63",
+      "key_basis": "derived",
+      "rule": "With T at the origin: P (0, −12), L (12, −5). T is 12 west and 5 north of L, √(144 + 25) = 13 km; P is 12 west and 7 south of L: South-west.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q064",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Point L is 10 km south of point R. Point G is 12 km west of point L. Point M is 13 km south of point G. Point T is 4 km to the east of point M. How far is point T from point G?",
+        "options": {
+          "A": "√235 km",
+          "B": "√195 km",
+          "C": "√185 km",
+          "D": "√205 km"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q64",
+      "key_basis": "derived",
+      "rule": "T is 13 km south and 4 km east of G: √(169 + 16) = √185 km.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q065",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Rajesh is going in the north direction. After walking 10 m, he takes a right turn and walks 40 m to reach shop L, now he takes a left turn and walks 24 m. He again takes a left turn and walks 12 m to reach hospital P. Now finally he turns back 22 m. How far and in which direction is shop L from the end point ?",
+        "options": {
+          "A": "28m. South-West",
+          "B": "28m. North-East",
+          "C": "26m. North-West",
+          "D": "26m. South-West"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q65",
+      "key_basis": "derived",
+      "rule": "Shop L is 40 m east and 10 m north of the start. He goes on north 24, west 12, then back east 22, ending (50, 34). L is 10 m west and 24 m south of him: 26 m South-West.",
+      "confidence": "medium",
+      "note": "The photo cuts the digit after \"turns back 2\"; read as 22. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch08-q067",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A person is facing in East direction. He turns 135° in clockwise direction. He turns 90° in anticlock wise direction. He turns 270° in clockwise direction. He turns 45° in clockwise direction. He turns 135° in clockwise direction. Finally he turns 180° in anti-clockwise direction. In which direction he is facing now ?",
+        "options": {
+          "A": "South-East",
+          "B": "South-West",
+          "C": "North-West",
+          "D": "North-East"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q67",
+      "key_basis": "derived",
+      "rule": "East (90°) + 135 − 90 + 270 + 45 + 135 − 180 = 405° = 45°: North-East.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q068",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A is 15 km west from B. C is 10 km east from K. B is 20 km north from K. H is 5 km south from C. N is 27 km south from A. How far is K from A and in which direction is H from B?",
+        "options": {
+          "A": "30 km, north-west",
+          "B": "25 km, south-east",
+          "C": "30 km, south-west",
+          "D": "25 km, north-west"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q68",
+      "key_basis": "derived",
+      "rule": "With K at the origin: B (0, 20), A (−15, 20), C (10, 0), H (10, −5). K is √(15² + 20²) = 25 km from A; H is 10 east and 25 south of B: south-east.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q069",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Sohan is facing towards north. He rotates by 145 degrees in clockwise direction. He again rotates by 290 degrees in anticlockwise direction. He again rotates by 345 degrees in anticlockwise direction. He finally rotates by 400 degrees in clockwise direction. In which direction is he facing now?",
+        "options": {
+          "A": "East",
+          "B": "North-west",
+          "C": "West",
+          "D": "North-east"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q69",
+      "key_basis": "derived",
+      "rule": "145 − 290 − 345 + 400 = −90°: from north, west.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q070",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A river flows north to south and on the way turns left and goes in a quarter-circle round a hillock and then turn right at a right angle. In which direction is the river finally following?",
+        "options": {
+          "A": "South",
+          "B": "East",
+          "C": "North",
+          "D": "West"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p32 q70",
+      "key_basis": "derived",
+      "rule": "Flowing south, a quarter-circle to the left turns it east; a right angle to the right turns it south again.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q071",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Ashwin wants to book a ticket to go to Tirupati. The booking office is located in the east direction from his house, and to reach there from home he covers a distance of 8 km. From there he walks 5 km towards North and reaches Sabzi Mandi. From there he turns left and goes to his friend Swapna's house, which is located at a distance of 8 km from here. Now he has to go back to his home. How much distance will he have to cover to reach his home ?",
+        "options": {
+          "A": "8 km",
+          "B": "26 km",
+          "C": "5 km",
+          "D": "3 km"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q71",
+      "key_basis": "derived",
+      "rule": "East 8, north 5, west 8: Swapna's house is 5 km due north of his home.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q072",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Aparna starts walking towards the north, after walking 30 m she turns towards the south and walks 50 m. Now she again turns east and walks 20 metres. Then she walks 20 meters towards the North. Calculate how far is she now and in which direction from the starting point?",
+        "options": {
+          "A": "10 m north",
+          "B": "20 m west",
+          "C": "10 m east",
+          "D": "20 m east"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q72",
+      "key_basis": "derived",
+      "rule": "North 30, south 50, east 20, north 20: 20 m due east of the start.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q073",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "My school is in the Eastern my house. Temple in North of my home and Market is South and my house. If all re not equal distance from my house in which direction the school is while respect to the Market ?",
+        "options": {
+          "A": "North-West.",
+          "B": "East.",
+          "C": "North.",
+          "D": "North-East."
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q73",
+      "key_basis": "derived",
+      "rule": "The school is east of the house and the market south of it, whatever the distances: the school is north and east of the market.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q074",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "My school is in the East of my house. Temple is North of my house and Market is South of my house and Post office is West of my house. If all are at equal distance from my house, in which direction the School is with respect to the Post office?",
+        "options": {
+          "A": "West",
+          "B": "North",
+          "C": "South",
+          "D": "East"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q74",
+      "key_basis": "derived",
+      "rule": "The school is east of the house and the post office west of it: the school is east of the post office.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q075",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arbuda starts walking from her home and walks 78 m towards West. From there, she turns right and walks 22 m. Then she turns right and walks 32 m. Then she turns right and walks 41m. She again turns right and walks 34 m. She finally turns left and walks 41 m. What is the shortest distance between Arbuda's current position and her home.",
+        "options": {
+          "A": "100 m",
+          "B": "140 m",
+          "C": "120 m",
+          "D": "80 m"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q75",
+      "key_basis": "derived",
+      "rule": "West 78, north 22, east 32, south 41, west 34, south 41: 80 m west and 60 m south, √(6400 + 3600) = 100 m.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q076",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "My school is in the East of my house. Temple is North of my house and Market is South of my house. If all are at equal distance from my house, in which direction the Temple is with respect to the Market?",
+        "options": {
+          "A": "West",
+          "B": "South",
+          "C": "North",
+          "D": "East"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q76",
+      "key_basis": "derived",
+      "rule": "The temple is north of the house and the market south of it: the temple is north of the market.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q077",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "My school is in the East of my house. Temple is North of my house and Market is South of my house. If all are at equal distance from my house, in which direction the Market is with respect to the School ?",
+        "options": {
+          "A": "South-West",
+          "B": "South",
+          "C": "West",
+          "D": "East"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q77",
+      "key_basis": "derived",
+      "rule": "At equal distances the market (0, −1) is west and south of the school (1, 0): South-West.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q078",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pratiksha leaves from her home for her college. She walks 48 m. towards West. After that, she turns towards North and walks 32 m. Then she turns right and walks 54 m. Then she goes 40 m. towards the South and reaches her college. What is the shortest distance between her home and the college?",
+        "options": {
+          "A": "15 m",
+          "B": "20 m",
+          "C": "9 m",
+          "D": "10 m"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q78",
+      "key_basis": "derived",
+      "rule": "West 48, north 32, east 54, south 40: 6 m east and 8 m south, √(36 + 64) = 10 m.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q079",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Himangini started walking from her home and went 38 m towards East. Then she took a left turn and walked 57 m to reach a bank. From the bank she goes 17 m towards East. After that she took a right turn and went 17 m. She finally took a right turn and went 25 m to reach her shop. What is the shortest distance between her home and her shop?",
+        "options": {
+          "A": "45 m",
+          "B": "40 m",
+          "C": "55 m",
+          "D": "50 m"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q79",
+      "key_basis": "derived",
+      "rule": "East 38, north 57, east 17, south 17, west 25: 30 m east and 40 m north, √(900 + 1600) = 50 m.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q080",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Kavya travels 30 m towards west from her home and reaches her friend Ariba's house. From there, she turns right and walks 45 m. Then she takes right turn and walks 20 m. Then she takes right turn and walks 60 m. What is the approximate shortest distance between Kavya's current position and her home?",
+        "options": {
+          "A": "17 m",
+          "B": "20 m",
+          "C": "16 m",
+          "D": "18 m"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q80",
+      "key_basis": "derived",
+      "rule": "West 30, north 45, east 20, south 60: 10 m west and 15 m south, √325 ≈ 18 m.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q081",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Facing west, Suresh turns 45 degrees in the clockwise direction and then another 180 degrees in the same direction and then 270 degrees in the anti-clockwise direction. Which direction is the facing now?",
+        "options": {
+          "A": "South-East",
+          "B": "North-West",
+          "C": "North-East",
+          "D": "South -West"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q81",
+      "key_basis": "derived",
+      "rule": "West (270°) + 45 + 180 − 270 = 225°: South-West.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q082",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "It is 3 O'clock in a watch. If the minute hand points towards the North-East, then the hour hand will point towards the",
+        "options": {
+          "A": "South",
+          "B": "South-West",
+          "C": "North-East",
+          "D": "South-East"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q82",
+      "key_basis": "derived",
+      "rule": "At 3 o'clock the hour hand is 90° clockwise of the minute hand. Minute hand north-east (45°), so the hour hand is at 135°: South-East.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q083",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A child is looking for his father. He went 90 meters in the east before turning to his right. He went 20 meters before turning to his right again to look for his father at his uncle's place 30 meters from this point. His father was not there. From there, he went 100 meters to his north before meeting his father in a street. How far did the son meet his father from the starting point ?",
+        "options": {
+          "A": "80 meters",
+          "B": "100 meters",
+          "C": "140 meters",
+          "D": "260 meters"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q83",
+      "key_basis": "derived",
+      "rule": "East 90, south 20, west 30, north 100: 60 m east and 80 m north, √(3600 + 6400) = 100 m.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q084",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A clock is put on the table in such a way that at 6 PM, the hour hand points to the North. In which direction will the minute hand point at 9.15 A.M. ?",
+        "options": {
+          "A": "South-East",
+          "B": "North-East",
+          "C": "West",
+          "D": "South"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q84",
+      "key_basis": "derived",
+      "rule": "The hour hand at 6 points north, so the 6 is north and each hour mark is 30° clockwise from the last: the 3 is 90° anticlockwise of north. At 9.15 the minute hand is on the 3: West.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q085",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A man is facing North. He turns 45 degree in the clockwise direction and then another 180 degree in the same direction and then 45 degree in the anticlockwise direction. Find which direction he is facing now ?",
+        "options": {
+          "A": "North",
+          "B": "East",
+          "C": "West",
+          "D": "South"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q85",
+      "key_basis": "derived",
+      "rule": "North + 45 + 180 − 45 = 180°: South.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q086",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Rashi moves 0.3 km in the west then, turn right and moves 0.5 km then she turn right. She walks straight 0.3 km to reach her friend's place. What is the shortest distance between the place of pallavi's friend and her house?",
+        "options": {
+          "A": "0.4 km",
+          "B": "0.5 km",
+          "C": "0.8 km",
+          "D": "0.3 km"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q86",
+      "key_basis": "derived",
+      "rule": "West 0.3, north 0.5, east 0.3: the friend's place is 0.5 km due north of the house.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q088",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A man walks 6 km south, turns left and walks 4 km, again turns left and walks 5 km. Which direction is he facing now ?",
+        "options": {
+          "A": "South",
+          "B": "North",
+          "C": "East",
+          "D": "West"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q88",
+      "key_basis": "derived",
+      "rule": "South, left to east, left to north: he faces north.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q089",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Rakesh started walking straight towards East. He walks a certain distance and then turns towards his right and walks again. In which direction is he heading now ?",
+        "options": {
+          "A": "North",
+          "B": "East",
+          "C": "South",
+          "D": "West"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q89",
+      "key_basis": "derived",
+      "rule": "East, then right: south.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q090",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If South-East becomes North, North-East becomes West and so on, what will West become?",
+        "options": {
+          "A": "North-East",
+          "B": "North-West",
+          "C": "South-East",
+          "D": "South-West"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q90",
+      "key_basis": "derived",
+      "rule": "South-East (135°) becomes North (0°): every direction moves 135° anticlockwise. North-East becomes West, as stated; West (270°) becomes 135°: South-East.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q091",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If all directions are rotated clockwise by 90° angle i.e. 'North is changed to West, East to North and so on, then what will come in place of North-West?",
+        "options": {
+          "A": "South-West",
+          "B": "North-East",
+          "C": "South-East",
+          "D": "East-West"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q91",
+      "key_basis": "derived",
+      "rule": "The example turns North into West and East into North: 90° anticlockwise. North-West (315°) becomes 225°: South-West.",
+      "confidence": "medium",
+      "note": "The print says \"clockwise\", which would give North-East (B); the example decides. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch08-q092",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "It is 3 O'clock in a watch and it is rotated by 10° in a manner such that if the minute hand points towards the North-East, then hour hand will point towards which direction?",
+        "options": {
+          "A": "South",
+          "B": "South-West",
+          "C": "North-West",
+          "D": "South-East"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p33 q92",
+      "key_basis": "derived",
+      "rule": "However the watch is turned, at 3 o'clock the hour hand is 90° clockwise of the minute hand. Minute hand north-east, so the hour hand points south-east.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q093",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If North-East becomes West and South-East becomes North then what will West becomes ?",
+        "options": {
+          "A": "South-East",
+          "B": "North-East",
+          "C": "South",
+          "D": "North-West"
+        },
+        "key": "A",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p34 q93",
+      "key_basis": "derived",
+      "rule": "North-East (45°) becomes West (270°) and South-East (135°) becomes North (360°): every direction moves 225° clockwise. West (270°) becomes 495° = 135°: South-East.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q094",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "While facing East you turn your left and walk 10 yards; then turn to your left and walk 10 yards. and now you turn 45 degrees towards your right and go straight to cover 25 yards. Now, in which direction are you from yours starting point ?",
+        "options": {
+          "A": "North-East",
+          "B": "South-West",
+          "C": "East",
+          "D": "North-West"
+        },
+        "key": "D",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p34 q94",
+      "key_basis": "derived",
+      "rule": "Facing east: left and 10 north, left and 10 west, then 45° right puts you on a north-west heading for 25. You end west and north of the start.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q095",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A man goes to the market which is 5 km away from his house & then he goes to a fair at 2 km distance. Then he comes back to his house. How long distance did he cover in the entire journey ?",
+        "options": {
+          "A": "7 km",
+          "B": "3 km",
+          "C": "14 km",
+          "D": "15 km"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p34 q95",
+      "key_basis": "derived",
+      "rule": "House to market 5 km, on to the fair 2 km, and back the same way, 7 km: 14 km in all.",
+      "confidence": "medium",
+      "note": "The fair's distance from the house is not stated; read as 2 km beyond the market on the same road. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch08-q096",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A person goes 5 km. towards the East – then he goes 4 km, after turning to the right. Then he turns to the left & goes 5 km. In which direction is he going ?",
+        "options": {
+          "A": "North",
+          "B": "South",
+          "C": "East",
+          "D": "West"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p34 q96",
+      "key_basis": "derived",
+      "rule": "East, right to south, left to east: he goes east.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q097",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Rakesh and Govind start a race, and together they run for 50m. Rakesh turns right and runs 60m. Govind turns left and runs 40m. Then Rakesh turns left and runs 50m. While Govind turns right and runs 50m. How far are both now from the each other?",
+        "options": {
+          "A": "60m",
+          "B": "100m",
+          "C": "20m",
+          "D": "150m"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p34 q97",
+      "key_basis": "derived",
+      "rule": "Both run 50 m the same way. Rakesh goes 60 right then 50 on; Govind 40 left then 50 on. They end level, 60 + 40 = 100 m apart.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q098",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pia walks a distance of 4 metres towards South. Then she turns to the left and walks 3 metres. After this she turns to the right and walks 4 metres. In which direction is she facing now?",
+        "options": {
+          "A": "North-East",
+          "B": "South",
+          "C": "North",
+          "D": "South-West"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p34 q98",
+      "key_basis": "derived",
+      "rule": "South, left to east, right to south: she faces south.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q099",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A rat runs 20 m towards East and turns to right, runs 10 m and tuns to right run 9 m and again turns to left runs 5 m and then turns to left and runs 12 m and finally turns to left and runs 6 m. Now, which direction is the rat facing?",
+        "options": {
+          "A": "East",
+          "B": "North",
+          "C": "West",
+          "D": "South"
+        },
+        "key": "B",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p34 q99",
+      "key_basis": "derived",
+      "rule": "East, right (south), right (west), left (south), left (east), left (north): it faces north.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch08-q100",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "From his house, Rajan went 25 km to the North. Then he turned West and covered 20 km. Then he turned South and covered 15 km. Finally, turning to East, he coverd 20 km. In which Direction was he from his house?",
+        "options": {
+          "A": "East",
+          "B": "West",
+          "C": "North",
+          "D": "South"
+        },
+        "key": "C",
+        "reasoningType": "directions"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch8 p34 q100",
+      "key_basis": "derived",
+      "rule": "North 25, west 20, south 15, east 20: 10 km due north of the house.",
       "confidence": "high"
     },
     {

@@ -22,6 +22,7 @@ import { fileURLToPath } from 'node:url';
 import { validateItem } from '../src/items/bank.ts';
 import { AGRAWAL_CH04_WORD_FORMATION } from '../src/items/oir/agrawal-ch04-word-formation.ts';
 import { AGRAWAL_CH06_SEQUENCE_TEST } from '../src/items/oir/agrawal-ch06-sequence-test.ts';
+import { AGRAWAL_CH08_DIRECTIONS } from '../src/items/oir/agrawal-ch08-directions.ts';
 import { AGRAWAL_CH09_RANKING } from '../src/items/oir/agrawal-ch09-ranking.ts';
 import { AGRAWAL_CH11_SERIES } from '../src/items/oir/agrawal-ch11-series.ts';
 import { isHeld } from '../src/items/oir/key.ts';
@@ -43,6 +44,7 @@ interface SourceFile {
 const CHAPTERS: { file: string; key: Readonly<Record<number, KeyEntry>>; reasoningType: string; idPrefix: string }[] = [
   { file: 'content/oir/agrawal-examcart/ch04-word-formation.source.json', key: AGRAWAL_CH04_WORD_FORMATION, reasoningType: 'word_formation', idPrefix: 'oir-agx-ch04' },
   { file: 'content/oir/agrawal-examcart/ch06-sequence-test.source.json', key: AGRAWAL_CH06_SEQUENCE_TEST, reasoningType: 'alphabet', idPrefix: 'oir-agx-ch06' },
+  { file: 'content/oir/agrawal-examcart/ch08-directions.source.json', key: AGRAWAL_CH08_DIRECTIONS, reasoningType: 'directions', idPrefix: 'oir-agx-ch08' },
   { file: 'content/oir/agrawal-examcart/ch09-ranking.source.json', key: AGRAWAL_CH09_RANKING, reasoningType: 'ranking', idPrefix: 'oir-agx-ch09' },
   { file: 'content/oir/agrawal-examcart/ch11-series.source.json', key: AGRAWAL_CH11_SERIES, reasoningType: 'series', idPrefix: 'oir-agx-ch11' },
 ];

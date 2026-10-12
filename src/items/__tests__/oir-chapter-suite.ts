@@ -61,8 +61,8 @@ function runCheck(check: KeyCheck, q: SourceQuestion, k: KeyedEntry): void {
       return;
     }
     case 'computed': {
-      // Spacing is layout: "21,27" and "21, 27" read the same.
-      const norm = (s: string) => s.replace(/\s+/g, '').toUpperCase();
+      // Spacing and a closing full stop are layout: "21,27" reads as "21, 27", "North-East." as "North-East".
+      const norm = (s: string) => s.replace(/\s+/g, '').replace(/\.$/, '').toUpperCase();
       const reads = check.answer === null ? [] : OPTION_LABELS.filter((l) => norm(q.options[l]) === norm(String(check.answer)));
       if (reads.length > 0) {
         expect(reads, `options reading as ${check.answer}`).toEqual([k.key]);
