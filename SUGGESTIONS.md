@@ -7,7 +7,7 @@ Each item is outside the scope of the work that surfaced it. Strike through when
 
 ## 2026-10-12
 
-### OIR timed mocks — held until more chapters are seeded (D26)
+### OIR timed mocks — held until more chapters are seeded (D26) — unblocked 2026-10-12: all eleven chapters are in
 
 The owner held them: with only Series seeded, a 40-question OIR mock would be
 all series. When two or three more chapters are in, build them the Question_Bank
@@ -176,7 +176,12 @@ per rater before pooling** (D17); pooling on arrival destroys the comparison.
 
 ## 2026-10-12 (OIR, D24)
 
-### Compare the book's answer key with the derived Chapter 11 key
+### Compare the book's answer key with the derived keys (all chapters)
+Every chapter now ships derived keys; 37 are `confidence: medium` and 82 questions
+are held with a lean where a misprint points one way. When the key arrives, settle
+the medium ones first in each chapter, then all; each key file says why.
+
+#### (Chapter 11, the first)
 The owner will share the key later. Check the 6 `confidence: medium` items first
 (Q3, 29, 65, 74, 104, 108), then all 118; settle each disagreement against the
 print, then set `key_basis` to `book` or `derived_and_book` in the key file and

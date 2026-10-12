@@ -32,7 +32,7 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-1012 tests passing · npm test        lint clean · npm run lint        npm run build green
+1528 tests passing · npm test        lint clean · npm run lint        npm run build green
 74 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
@@ -41,8 +41,9 @@ reports four known errors in pre-existing test files (SUGGESTIONS.md). `next
 build` checks app code only, via `tsconfig.build.json`.
 
 **OIR chapter practice (D26).** `/practise/oir`: untimed, one question at a time; the key and its
-rule come back only after an answer (`answer_practice`), every answer kept for progress. Timed OIR
-mocks are held until more chapters are seeded (SUGGESTIONS.md has the plan).
+rule come back only after an answer (`answer_practice`), every answer kept for progress. All eleven
+chapters of the book are seeded: **1,068 verbal questions**, 82 held, keys derived (D24). Timed OIR
+mocks are the next step now that every chapter is in (SUGGESTIONS.md has the plan).
 
 **Layered access (D25).** Staff also reach the student app and the superadmin reaches all three, through a switcher.
 Staff tests are flagged `by_staff` by the database and must stay out of results and item statistics.
@@ -89,7 +90,8 @@ src/scoring/
   report/findings.ts     the reader's input contract (zod) — D16 enforced on parse, one FORBIDDEN regex
 src/items/               item bank — D19, D24
   bank.ts                `items` row validated per type · assembleBooklet strips the key from what is released
-  oir/                   OIR from books (D24): key.ts the key-entry shape · check.ts runnable-rule helpers + splitKey · seed.ts file -> rows
+  oir/                   OIR from books (D24): key.ts the key-entry shape and check kinds (computed, codeSet, odd, letters…)
+                         · check.ts runnable-rule helpers (walk, solveCodes, charMap, alphabet positions…) + splitKey · seed.ts file -> rows
                          <book>-<chapter>.ts the derived key per chapter: rule in words AND as code, held questions with reasons
                          (src/items/__tests__/oir-chapter-suite.ts runs the checks every chapter must pass)
   stats.ts               sitting-grain rows, pooled at read · p = correct/attempted · null not zero · leads
@@ -134,7 +136,7 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 1012 tests (never touches the database)
+npm test              # 1528 tests (never touches the database)
 npm run test:db       # 74 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
@@ -180,8 +182,9 @@ lists every conclusion a second assessor settles.
 
 - **The D5 bake-off** needs an `ANTHROPIC_API_KEY` or an `ant auth login` profile.
   Everything else for it is built.
-- **Sprint 2** (ROADMAP) — OIR verbal has a source (D24; Chapters 4, 6, 8, 9 and 11 seeded and practisable (D26), six chapters to go — order and page map in SUGGESTIONS.md, timed mocks held until more land,
-  the book's answer key still to come); non-verbal still needs figure assets.
+- **Sprint 2** (ROADMAP) — OIR verbal is complete from the book (D24; all eleven chapters seeded and practisable, D26);
+  the book's answer key still to come (37 medium keys are listed for it to settle first); timed mocks are now unblocked;
+  non-verbal still needs figure assets.
 - **A second assessor.** Everything it unblocks is listed in the ledger (D17 above).
 
 Deferred work carries over in [`SUGGESTIONS.md`](./SUGGESTIONS.md) with the
