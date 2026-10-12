@@ -38,6 +38,7 @@ const TEXT_PAIRS: [text: string, bg: string][] = [
   ['navy-foreground', 'navy'],
   ['navy-muted', 'navy'],
   ['navy-accent', 'navy'],
+  ['navy', 'navy-accent'], // the area switcher's current pill (D25)
   ['brand-foreground', 'brand'],
 ];
 

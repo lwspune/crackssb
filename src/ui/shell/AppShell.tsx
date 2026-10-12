@@ -5,6 +5,8 @@ import { usePathname } from 'next/navigation';
 import type { ReactNode } from 'react';
 import { AcademyIcon, BatchIcon, HomeIcon, Mark, OlqIcon, PeopleIcon, PractiseIcon, ProfileIcon, ResultsIcon, ReviewIcon } from '../icons.tsx';
 import { signOut } from '@/app/login/actions.ts';
+import type { Area } from '@/lib/auth/routing.ts';
+import { AreaSwitcher } from './AreaSwitcher.tsx';
 import { ThemeToggle } from './ThemeToggle.tsx';
 
 /**
@@ -13,8 +15,8 @@ import { ThemeToggle } from './ThemeToggle.tsx';
  * runner renders outside it, on purpose.
  */
 
-/** One shell, three areas (UI.md §2: student, staff, superadmin). The area is a string so a Server Component can choose it. */
-export type Area = 'student' | 'staff' | 'admin';
+/** One shell, three areas (UI.md §2, layered by D25). The area is a string so a Server Component can choose it. */
+export type { Area };
 
 interface NavItem {
   readonly href: string;
@@ -59,7 +61,18 @@ function Wordmark({ href }: { href: string }) {
   );
 }
 
-export function AppShell({ children, viewerName, area = 'student' }: { children: ReactNode; viewerName: string; area?: Area }) {
+export function AppShell({
+  children,
+  viewerName,
+  area = 'student',
+  areas = [area],
+}: {
+  children: ReactNode;
+  viewerName: string;
+  area?: Area;
+  /** Every area this viewer's role reaches (routing.areasFor); one area shows no switcher. */
+  areas?: readonly Area[];
+}) {
   const pathname = usePathname();
   const nav = NAVS[area];
 
@@ -70,7 +83,10 @@ export function AppShell({ children, viewerName, area = 'student' }: { children:
       </a>
 
       <aside data-surface="navy" className="hidden bg-navy text-navy-foreground md:sticky md:top-0 md:flex md:h-dvh md:w-64 md:shrink-0 md:flex-col md:gap-10 md:px-4 md:py-6">
-        <div className="px-2"><Wordmark href={HOME[area]} /></div>
+        <div className="space-y-5 px-2">
+          <Wordmark href={HOME[area]} />
+          <AreaSwitcher areas={areas} current={area} />
+        </div>
         <nav aria-label="Main">
           <ul className="space-y-1">
             {nav.map(({ href, label, Icon, longLabel }) => {
@@ -106,9 +122,12 @@ export function AppShell({ children, viewerName, area = 'student' }: { children:
       </aside>
 
       <div className="flex min-w-0 flex-1 flex-col">
-        <header data-surface="navy" className="flex items-center justify-between bg-navy px-4 py-3 md:hidden">
-          <Wordmark href={HOME[area]} />
-          <ThemeToggle tone="navy" compact />
+        <header data-surface="navy" className="space-y-2 bg-navy px-4 py-3 md:hidden">
+          <div className="flex items-center justify-between">
+            <Wordmark href={HOME[area]} />
+            <ThemeToggle tone="navy" compact />
+          </div>
+          <AreaSwitcher areas={areas} current={area} />
         </header>
         <main id="content" className="flex-1 pb-24 md:pb-0">
           {children}

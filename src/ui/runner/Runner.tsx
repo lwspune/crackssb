@@ -56,11 +56,12 @@ const TYPED: Answering = { input: 'typed', code: null };
 /** The store's clock: the server's, in the app. Every engine call reads time through this. */
 const clockOf = (store: SessionStore) => () => Date.now() + store.clockOffsetMs();
 
-/** Words for the codes start_session refuses with (migration 0001). */
+/** Words for the codes start_session refuses with (migrations 0001, 0006). */
 function startRefusal(code: string): string {
   if (code === 'consent_required') return 'A guardian has to consent before you can start a test. Ask your academy.';
   if (code === 'dob_required') return 'Your date of birth is missing. Ask your academy to add it.';
-  if (code === 'not_a_candidate') return 'Only candidates take tests.';
+  // Since 0006 this means a login with no profile; staff can take tests (D25).
+  if (code === 'not_a_candidate') return 'Your account is not set up yet. Ask your academy.';
   return 'Could not start. Check your connection and try again.';
 }
 

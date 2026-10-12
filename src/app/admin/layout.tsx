@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { areasFor } from '@/lib/auth/routing.ts';
 import { requireViewerAt } from '@/lib/auth/viewer.ts';
 import { AppShell } from '@/ui/shell/AppShell.tsx';
 
@@ -6,7 +7,7 @@ import { AppShell } from '@/ui/shell/AppShell.tsx';
 export default async function AdminLayout({ children }: { children: ReactNode }) {
   const viewer = await requireViewerAt('/admin');
   return (
-    <AppShell area="admin" viewerName={viewer.fullName}>
+    <AppShell area="admin" areas={areasFor(viewer.role)} viewerName={viewer.fullName}>
       {children}
     </AppShell>
   );
