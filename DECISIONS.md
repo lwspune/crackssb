@@ -541,3 +541,23 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 **Consequences.** Paper mode and printable sheets ship now; the upload step says "arrives with accounts" until Supabase exists (ROADMAP blocker 1). Every uploaded sheet is a time-pressured handwriting sample paired with a session — D7's corpus, sooner, from paper mode rather than as a by-product of typed PPDT. D3's revisit trigger ("a corpus arrives earlier") will fire on its own.
 
 **Revisit if.** End-of-day transcription load outgrows a session (then the API pipeline and the Sprint X bake-off), or self-timed uploads start being read as timed.
+
+---
+
+## D23 — Staff create logins in the app; the database decides who may create whom
+
+**Date:** 2026-10-12 · **Status:** Accepted
+
+**Context.** Sign-in is manual (no self sign-up; Google later), so every account is made by someone. A command-line script only serves whoever holds the service key. Question_Bank solved staff-created student logins and, on 2026-10-06, closed the hole that came with it: a staff "create" that wrote to an EXISTING account let any teacher take over any student.
+
+**Decision.**
+
+1. **Who may create whom is a database function**, `can_create_person(role, academy)` (0003), called as the signed-in user before any service-role write. Superadmin: anyone (staff need an academy). Academy owner: candidates and mentors in their own academy. Mentor: candidates in their own academy (the user's choice). Candidate: no one. Academies are created only through `create_academy()` (0004), superadmin only.
+2. **An existing email is never touched** — no password write, no profile write. The auth server refuses it (`email_exists`) and the screen reports "already has an account — not changed".
+3. **Passwords are generated, shown once, and never stored or emailed.** Staff copy or print them.
+4. **`profiles.email` is a copy** written once at creation, so staff can list their people under row level security. `created_by` and `guardian_consent_recorded_by` record who acted.
+5. **Staff add people by pasting a list** (name, email, date of birth; commas or spreadsheet columns; Indian date formats). Guardian consent for the under-18s in a list is one checkbox, recorded with who ticked it.
+
+**Consequences.** `people.db.test.ts` holds the whole matrix and the "existing account untouched" check; the browser walk proves the original password still works after a "create" of the same email. `npm run user:create` stays for bootstrapping the first superadmin.
+
+**Revisit if.** Google sign-in arrives (accounts may then be created by the person, and staff would invite rather than create), or academies need password resets — which must be built with the same never-touch-another-academy rule.

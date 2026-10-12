@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import type { ReactNode } from 'react';
-import { HomeIcon, Mark, OlqIcon, PractiseIcon, ProfileIcon, ResultsIcon } from '../icons.tsx';
+import { AcademyIcon, BatchIcon, HomeIcon, Mark, OlqIcon, PeopleIcon, PractiseIcon, ProfileIcon, ResultsIcon, ReviewIcon } from '../icons.tsx';
 import { signOut } from '@/app/login/actions.ts';
 import { ThemeToggle } from './ThemeToggle.tsx';
 
@@ -13,21 +13,42 @@ import { ThemeToggle } from './ThemeToggle.tsx';
  * runner renders outside it, on purpose.
  */
 
-const NAV = [
-  { href: '/', label: 'Home', Icon: HomeIcon },
-  { href: '/practise', label: 'Practise', Icon: PractiseIcon },
-  { href: '/results', label: 'Results', Icon: ResultsIcon },
-  { href: '/olq', label: 'OLQ', longLabel: 'OLQ evidence', Icon: OlqIcon },
-  { href: '/profile', label: 'Profile', Icon: ProfileIcon },
-] as const;
+/** One shell, three areas (UI.md §2: student, staff, superadmin). The area is a string so a Server Component can choose it. */
+export type Area = 'student' | 'staff' | 'admin';
+
+interface NavItem {
+  readonly href: string;
+  readonly label: string;
+  readonly longLabel?: string;
+  readonly Icon: typeof HomeIcon;
+}
+
+const NAVS: Readonly<Record<Area, readonly NavItem[]>> = {
+  student: [
+    { href: '/', label: 'Home', Icon: HomeIcon },
+    { href: '/practise', label: 'Practise', Icon: PractiseIcon },
+    { href: '/results', label: 'Results', Icon: ResultsIcon },
+    { href: '/olq', label: 'OLQ', longLabel: 'OLQ evidence', Icon: OlqIcon },
+    { href: '/profile', label: 'Profile', Icon: ProfileIcon },
+  ],
+  staff: [
+    { href: '/staff/people', label: 'People', Icon: PeopleIcon },
+    { href: '/staff/batches', label: 'Batches', Icon: BatchIcon },
+    { href: '/staff/review', label: 'Review', longLabel: 'Review queue', Icon: ReviewIcon },
+  ],
+  admin: [{ href: '/admin/academies', label: 'Academies', Icon: AcademyIcon }],
+};
+
+const HOME: Readonly<Record<Area, string>> = { student: '/', staff: '/staff/people', admin: '/admin/academies' };
+const TAB_COLUMNS: Readonly<Record<number, string>> = { 1: 'grid-cols-1', 3: 'grid-cols-3', 5: 'grid-cols-5' };
 
 function isActive(pathname: string, href: string): boolean {
   return href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(`${href}/`);
 }
 
-function Wordmark() {
+function Wordmark({ href }: { href: string }) {
   return (
-    <Link href="/" className="inline-flex min-h-11 items-center gap-2.5 rounded-md text-navy-foreground">
+    <Link href={href} className="inline-flex min-h-11 items-center gap-2.5 rounded-md text-navy-foreground">
       <span className="grid size-9 place-items-center rounded-lg bg-white/5 ring-1 ring-white/10">
         <Mark width={22} height={22} className="text-navy-accent" />
       </span>
@@ -38,8 +59,9 @@ function Wordmark() {
   );
 }
 
-export function AppShell({ children, viewerName }: { children: ReactNode; viewerName: string }) {
+export function AppShell({ children, viewerName, area = 'student' }: { children: ReactNode; viewerName: string; area?: Area }) {
   const pathname = usePathname();
+  const nav = NAVS[area];
 
   return (
     <div className="min-h-dvh md:flex">
@@ -48,10 +70,10 @@ export function AppShell({ children, viewerName }: { children: ReactNode; viewer
       </a>
 
       <aside data-surface="navy" className="hidden bg-navy text-navy-foreground md:sticky md:top-0 md:flex md:h-dvh md:w-64 md:shrink-0 md:flex-col md:gap-10 md:px-4 md:py-6">
-        <div className="px-2"><Wordmark /></div>
+        <div className="px-2"><Wordmark href={HOME[area]} /></div>
         <nav aria-label="Main">
           <ul className="space-y-1">
-            {NAV.map(({ href, label, Icon, ...rest }) => {
+            {nav.map(({ href, label, Icon, longLabel }) => {
               const active = isActive(pathname, href);
               return (
                 <li key={href}>
@@ -63,7 +85,7 @@ export function AppShell({ children, viewerName }: { children: ReactNode; viewer
                     }`}
                   >
                     <Icon className={active ? 'text-navy-accent' : 'opacity-80 group-hover:opacity-100'} />
-                    {'longLabel' in rest ? rest.longLabel : label}
+                    {longLabel ?? label}
                   </Link>
                 </li>
               );
@@ -85,7 +107,7 @@ export function AppShell({ children, viewerName }: { children: ReactNode; viewer
 
       <div className="flex min-w-0 flex-1 flex-col">
         <header data-surface="navy" className="flex items-center justify-between bg-navy px-4 py-3 md:hidden">
-          <Wordmark />
+          <Wordmark href={HOME[area]} />
           <ThemeToggle tone="navy" compact />
         </header>
         <main id="content" className="flex-1 pb-24 md:pb-0">
@@ -94,8 +116,8 @@ export function AppShell({ children, viewerName }: { children: ReactNode; viewer
       </div>
 
       <nav aria-label="Main" className="fixed inset-x-0 bottom-0 z-40 border-t bg-card/90 pb-[env(safe-area-inset-bottom)] backdrop-blur-lg md:hidden">
-        <ul className="grid grid-cols-5">
-          {NAV.map(({ href, label, Icon }) => {
+        <ul className={`grid ${TAB_COLUMNS[nav.length] ?? 'grid-cols-5'}`}>
+          {nav.map(({ href, label, Icon }) => {
             const active = isActive(pathname, href);
             return (
               <li key={href}>

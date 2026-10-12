@@ -7,8 +7,10 @@ import type { SupabaseClient } from '@supabase/supabase-js';
  * Server-side only — this needs the service-role key.
  */
 
-export type Role = 'candidate' | 'mentor' | 'org_admin' | 'superadmin';
-const ROLES: readonly Role[] = ['candidate', 'mentor', 'org_admin', 'superadmin'];
+import { ROLES } from '../../lib/auth/routing.ts';
+import type { Role } from '../../lib/auth/routing.ts';
+
+export type { Role };
 
 export interface NewUser {
   readonly email: string;
@@ -68,23 +70,65 @@ export function generatePassword(length = 16): string {
   return Array.from({ length }, () => PASSWORD_ALPHABET[randomInt(PASSWORD_ALPHABET.length)]).join('');
 }
 
-/** Under 18 today. The database applies the same rule when a test starts. */
-export function isMinor(dob: string, today = new Date()): boolean {
-  const d = new Date(`${dob}T00:00:00Z`);
-  const eighteenth = new Date(Date.UTC(d.getUTCFullYear() + 18, d.getUTCMonth(), d.getUTCDate()));
-  return today < eighteenth;
-}
+export { isMinor } from '../../lib/age.ts';
 
 export interface Created {
   readonly id: string;
   readonly password: string;
 }
 
+/** The email already has a login. Reported, never touched (Question_Bank's takeover lesson, 2026-10-06). */
+export class ExistingAccount extends Error {
+  constructor(readonly email: string) {
+    super(`${email} already has an account.`);
+  }
+}
+
+export interface AccountInput {
+  readonly email: string;
+  readonly fullName: string;
+  readonly role: Role;
+  readonly dob: string | null;
+  readonly orgId: string | null;
+  /** When consent was recorded, or null. */
+  readonly guardianConsentAt: string | null;
+  /** Who is doing this: null when an operator runs the script. */
+  readonly createdBy: string | null;
+  readonly consentRecordedBy: string | null;
+}
+
 /**
- * Create the login and its profile. The two are one unit: if the profile
- * cannot be written, the login is deleted again, so no account exists without
- * a profile (and an account without one can do nothing — 0001).
+ * Create the login and its profile as one unit: if the profile cannot be
+ * written, the login is deleted again, so no account exists without a profile
+ * (and a login without one can do nothing — 0001). An existing email is never
+ * written to: the auth server refuses it and we report it.
  */
+export async function insertAccount(service: SupabaseClient, input: AccountInput): Promise<Created> {
+  const password = generatePassword();
+  const created = await service.auth.admin.createUser({ email: input.email, password, email_confirm: true });
+  if (created.error?.code === 'email_exists') throw new ExistingAccount(input.email);
+  if (created.error || !created.data.user) throw new Error(`Creating the login failed: ${created.error?.message ?? 'no user returned'}`);
+  const id = created.data.user.id;
+
+  const { error } = await service.from('profiles').insert({
+    id,
+    email: input.email,
+    role: input.role,
+    org_id: input.orgId,
+    full_name: input.fullName,
+    dob: input.dob,
+    guardian_consent_at: input.guardianConsentAt,
+    created_by: input.createdBy,
+    guardian_consent_recorded_by: input.consentRecordedBy,
+  });
+  if (error) {
+    await service.auth.admin.deleteUser(id);
+    throw new Error(`Writing the profile failed, so the login was removed again: ${error.message}`);
+  }
+  return { id, password };
+}
+
+/** The operator's path (`npm run user:create`): academy by slug, consent recorded by the operator. */
 export async function createUser(service: SupabaseClient, user: NewUser): Promise<Created> {
   let orgId: string | null = null;
   if (user.org) {
@@ -93,23 +137,14 @@ export async function createUser(service: SupabaseClient, user: NewUser): Promis
     if (!data) throw new Error(`No academy with slug "${user.org}".`);
     orgId = data.id;
   }
-
-  const password = generatePassword();
-  const created = await service.auth.admin.createUser({ email: user.email, password, email_confirm: true });
-  if (created.error || !created.data.user) throw new Error(`Creating the login failed: ${created.error?.message ?? 'no user returned'}`);
-  const id = created.data.user.id;
-
-  const { error } = await service.from('profiles').insert({
-    id,
+  return insertAccount(service, {
+    email: user.email,
+    fullName: user.fullName,
     role: user.role,
-    org_id: orgId,
-    full_name: user.fullName,
     dob: user.dob,
-    guardian_consent_at: user.guardianConsent ? new Date().toISOString() : null,
+    orgId,
+    guardianConsentAt: user.guardianConsent ? new Date().toISOString() : null,
+    createdBy: null,
+    consentRecordedBy: null,
   });
-  if (error) {
-    await service.auth.admin.deleteUser(id);
-    throw new Error(`Writing the profile failed, so the login was removed again: ${error.message}`);
-  }
-  return { id, password };
 }

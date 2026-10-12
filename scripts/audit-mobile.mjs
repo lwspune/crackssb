@@ -10,13 +10,22 @@
  * under 12 px, then starts a WAT and shrinks the viewport the way an
  * on-screen keyboard does, and checks the word, the field and the clock are
  * still on screen. Exits 1 on any finding. Any Chromium works over CDP
+ *
+ * Pages behind sign-in need test logins, passed as env vars (never real
+ * people): AUDIT_CANDIDATE_EMAIL / AUDIT_CANDIDATE_PASSWORD for the student
+ * app and the runner, AUDIT_STAFF_EMAIL / AUDIT_STAFF_PASSWORD for the staff
+ * app. An area without credentials is skipped, and the summary says so.
  * (CDP_URL, default http://127.0.0.1:9333). No dependency: Node's own
  * fetch and WebSocket.
  */
 
 const BASE = process.argv[2] ?? 'http://localhost:3000';
 const CDP = process.env.CDP_URL ?? 'http://127.0.0.1:9333';
-const PAGES = ['/', '/practise', '/olq', '/results', '/profile', '/run/wat'];
+const PUBLIC_PAGES = ['/login'];
+const STUDENT_PAGES = ['/', '/practise', '/olq', '/results', '/profile', '/run/wat'];
+const STAFF_PAGES = ['/staff/people', '/staff/people/new', '/staff/batches', '/staff/review'];
+const CANDIDATE = { email: process.env.AUDIT_CANDIDATE_EMAIL, password: process.env.AUDIT_CANDIDATE_PASSWORD };
+const STAFF = { email: process.env.AUDIT_STAFF_EMAIL, password: process.env.AUDIT_STAFF_PASSWORD };
 const WIDTHS = [320, 360, 390];
 const KEYBOARD_UP = [[360, 380], [320, 330]];
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -77,13 +86,29 @@ const FIT = `(() => {
   return { vh, parts, inView: Object.values(parts).every(([t, b]) => t >= 0 && b <= vh), gap: wordTop - clockBottom };
 })()`;
 
+async function signIn({ email, password }) {
+  await send('Network.clearBrowserCookies');
+  await go('/login');
+  const set = (id, v) =>
+    `(() => { const el = document.getElementById('${id}'); Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set.call(el, ${JSON.stringify(v)}); el.dispatchEvent(new Event('input', { bubbles: true })); return true; })()`;
+  await evaluate(set('email', email));
+  await evaluate(set('password', password));
+  await evaluate(`document.querySelector('form button[type=submit]').click(), true`);
+  for (let i = 0; i < 60; i++) {
+    await sleep(250);
+    if (!(await evaluate('location.pathname')).startsWith('/login')) break;
+  }
+  if ((await evaluate('location.pathname')).startsWith('/login')) throw new Error(`could not sign in as ${email}`);
+  await sleep(400);
+}
+
 const findings = [];
-try {
-  await go('/');
-  await evaluate('localStorage.clear(), true');
+const skipped = [];
+
+async function auditPages(pages) {
   for (const width of WIDTHS) {
     await view(width, 740);
-    for (const path of PAGES) {
+    for (const path of pages) {
       await go(path);
       const r = await evaluate(AUDIT);
       const issues = [
@@ -95,7 +120,30 @@ try {
       for (const i of issues) findings.push(`${width}px ${path}: ${i}`);
     }
   }
+}
 
+try {
+  await send('Network.enable');
+  await send('Network.clearBrowserCookies');
+  await auditPages(PUBLIC_PAGES);
+
+  if (STAFF.email && STAFF.password) {
+    await signIn(STAFF);
+    await auditPages(STAFF_PAGES);
+  } else skipped.push('staff app (no AUDIT_STAFF_* credentials)');
+
+  if (CANDIDATE.email && CANDIDATE.password) {
+    await signIn(CANDIDATE);
+    await go('/');
+    await evaluate('localStorage.clear(), true');
+    await auditPages(STUDENT_PAGES);
+    await keyboardUp();
+  } else skipped.push('student app and runner (no AUDIT_CANDIDATE_* credentials)');
+} finally {
+  ws.close();
+}
+
+async function keyboardUp() {
   for (const [w, h] of KEYBOARD_UP) {
     await view(w, 740);
     await go('/run/wat');
@@ -111,9 +159,8 @@ try {
     for (const i of issues) findings.push(`runner @ ${w}x${h}: ${i}`);
   }
   await evaluate('localStorage.clear(), true');
-} finally {
-  ws.close();
 }
 
-console.log(findings.length ? `\n${findings.length} finding(s).` : '\nMobile audit clean.');
+for (const s of skipped) console.log(`SKIPPED ${s}`);
+console.log(findings.length ? `\n${findings.length} finding(s).` : skipped.length ? '\nMobile audit clean for what ran — see SKIPPED.' : '\nMobile audit clean.');
 process.exit(findings.length ? 1 : 0);

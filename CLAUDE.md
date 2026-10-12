@@ -23,15 +23,16 @@ looks arbitrary there is a recorded decision with evidence behind it.
 **Pre-product, with a UI.** A Next.js 16 app (`src/app/`, `src/ui/`) now runs
 the student surface on local data: app shell, Practise by SSB day, honest empty
 states, and the **WAT runner** wrapping the engine. **Sprint 1 is under way:** the
-database (tenancy, server clock, access rules) is live and gated by tests; the
-runner still saves to `localStorage` until the Supabase session store and the
-sign-in page land, and says "practice on this device" until then. Also present:
+database (tenancy, server clock, access rules) is live and gated by tests;
+sign-in works (email + password, manual logins); staff create logins in the app
+(`/staff/people`, D23) and the superadmin creates academies (`/admin`). The
+runner still saves to `localStorage` until the Supabase session store lands. Also present:
 the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-456 tests passing · npm test        lint clean · npm run lint        npm run build green
-27 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
+495 tests passing · npm test        lint clean · npm run lint        npm run build green
+50 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
 **Type-checking is new.** `npm run typecheck` checks everything and currently
@@ -98,6 +99,14 @@ src/ui/
     content.ts           WAT words from content/wat-items.json — ships the whole deck (known gap)
     paper.ts             D22 paper mode — session code (no handwriting-confusable chars), sheet pages
   sheet/                 AnswerSheet — the printable sheet at /sheets/[instrument]; code on every page, no name
+  auth/ · staff/ · admin/  LoginForm · AddPeopleForm, people-lines (paste parser), PeopleTable · CreateAcademyForm
+src/lib/
+  auth/routing.ts        where each role lands; safeNext (no open redirects); which paths are public
+  auth/viewer.ts         the data access layer — getViewer / requireViewerAt; every page asks here
+  supabase/              server (the user's RLS client) · admin (service role — only after the DB says yes)
+src/proxy.ts             refreshes the session; sends visitors with none to /login (optimistic only)
+src/db/admin/            users.ts (insertAccount, user:create) · people.ts (createPeople — D23)
+supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people creation · 0004 create_academy
 corpus/                  candidate data — records/ is GITIGNORED
 content/                 stimulus material — WAT deck, item bank, TAT images
 scripts/                 build + measurement entry points
@@ -106,14 +115,14 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 456 tests (never touches the database)
-npm run test:db       # 27 tests against the live project: access rules, server clock, logins — fixtures cleaned up
+npm test              # 495 tests (never touches the database)
+npm run test:db       # 50 tests against the live project: access rules, server clock, logins, who-creates-whom — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
 npm run build         # production build (type-checks app code)
 npm run lint
 npm run typecheck     # everything, tests included — 4 known errors, see SUGGESTIONS.md
-npm run audit:mobile  # live build at 320/360/390px + keyboard-up runner; exits 1 on a finding (needs a CDP browser, see script header)
+npm run audit:mobile  # live build at 320/360/390px + keyboard-up runner; exits 1 on a finding. Needs a CDP browser and test logins in AUDIT_CANDIDATE_* / AUDIT_STAFF_* (script header)
 npm run measure       # what share of assessor marks each layer reproduces
 npm run consistency   # Layer 4 over the corpus
 npm run evalset       # records/ -> 124 paired TAT stories (gitignored)
@@ -150,8 +159,8 @@ lists every conclusion a second assessor settles.
 
 - **The D5 bake-off** needs an `ANTHROPIC_API_KEY` or an `ant auth login` profile.
   Everything else for it is built.
-- **Sprint 1** — database and access gate done; the session store and sign-in
-  page remain.
+- **Sprint 1** — database, access gate, sign-in and account creation done; the
+  Supabase session store (runner saves to the server) remains.
 - **A second assessor.** Everything it unblocks is listed in the ledger (D17 above).
 
 Deferred work carries over in [`SUGGESTIONS.md`](./SUGGESTIONS.md) with the
@@ -174,6 +183,7 @@ Migrations live in `supabase/migrations/` (the source of truth) and are applied 
 Never edit an applied one; add the next number. Rules belong in the database: `access.db.test.ts`
 is the gate, and it was checked by loosening a policy and watching exactly its tests fail.
 
-**Accepted advisor warnings:** `start_session`, `save_response`, `end_session` are SECURITY
-DEFINER and callable by signed-in users — by design, they are the only write paths and check
-ownership, timing and consent themselves. Anything else the advisors raise is a finding.
+**Accepted advisor warnings:** `start_session`, `save_response`, `end_session`,
+`can_create_person`, `create_academy` are SECURITY DEFINER and callable by signed-in users —
+by design: they are the only write paths and check ownership, timing, consent and role
+themselves. Anything else the advisors raise is a finding.

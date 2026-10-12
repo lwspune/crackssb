@@ -92,6 +92,7 @@ export async function buildWorld(specs: Readonly<Record<string, PersonSpec>>): P
       const org = spec.org === 'a' ? orgs.a : spec.org === 'b' ? orgs.b : null;
       const { error: profileError } = await service.from('profiles').insert({
         id,
+        email,
         role: spec.role,
         org_id: org,
         full_name: `Fixture ${label}`,

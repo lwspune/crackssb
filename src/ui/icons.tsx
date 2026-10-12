@@ -24,6 +24,18 @@ export const OlqIcon = (p: SVGProps<SVGSVGElement>) => (
 export const ProfileIcon = (p: SVGProps<SVGSVGElement>) => (
   <Icon {...p}><circle cx="12" cy="8" r="4" /><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" /></Icon>
 );
+export const PeopleIcon = (p: SVGProps<SVGSVGElement>) => (
+  <Icon {...p}><circle cx="9" cy="8" r="3.5" /><path d="M2.5 20c1-3.5 3.5-5.5 6.5-5.5s5.5 2 6.5 5.5" /><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.8c1.8.8 3 2.6 3.5 5.2" /></Icon>
+);
+export const BatchIcon = (p: SVGProps<SVGSVGElement>) => (
+  <Icon {...p}><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9h18M8 4v16" /></Icon>
+);
+export const ReviewIcon = (p: SVGProps<SVGSVGElement>) => (
+  <Icon {...p}><path d="M4 5h16v11H8l-4 4z" /><path d="M8 9h8M8 12h5" /></Icon>
+);
+export const AcademyIcon = (p: SVGProps<SVGSVGElement>) => (
+  <Icon {...p}><path d="M3 9l9-5 9 5-9 5z" /><path d="M7 11.5V16c0 1.5 2.2 3 5 3s5-1.5 5-3v-4.5M21 9v6" /></Icon>
+);
 export const ArrowIcon = (p: SVGProps<SVGSVGElement>) => (
   <Icon {...p}><path d="M5 12h14M13 6l6 6-6 6" /></Icon>
 );
