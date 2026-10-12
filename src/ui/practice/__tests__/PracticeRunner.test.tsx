@@ -119,6 +119,14 @@ describe('chapter practice', () => {
     expect(stem).not.toMatch(/text-2xl|text-3xl/);
   });
 
+  it('shows the passage a question shares with others, above its direction', () => {
+    const withPassage: PracticeItem = { ...ITEMS[0], passage: 'A, B and C sit in a row facing north.' };
+    render(<PracticeRunner items={[withPassage]} answer={fakeAnswer()} doneHref="/practise/oir" />);
+    const passage = screen.getByText('A, B and C sit in a row facing north.');
+    const direction = screen.getByText('Find the missing number.');
+    expect(passage.compareDocumentPosition(direction) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  });
+
   it('keeps a long puzzle that is not a sentence at display size', () => {
     const puzzle: PracticeItem = { id: 'p1', stem: 'S O _ _ T A S _ _ A T A _ _ N A T _ _ O N A _ _', options: { A: 'a', B: 'b', C: 'c', D: 'd' } };
     render(<PracticeRunner items={[puzzle]} answer={fakeAnswer()} doneHref="/practise/oir" />);

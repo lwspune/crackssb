@@ -25,6 +25,8 @@ export interface OirPayload {
   readonly assetPath?: string;
   /** The printed instruction a stem sits under ("find the wrong number"). A bare series cannot be answered without it. */
   readonly direction?: string;
+  /** The information a group of questions shares (a seating plan read once, asked about several times). */
+  readonly passage?: string;
 }
 
 export interface WatPayload {
@@ -60,6 +62,7 @@ const oirPayload = z.object({
   reasoningType: z.string().min(1),
   assetPath: z.string().min(1).optional(),
   direction: z.string().min(1).optional(),
+  passage: z.string().min(1).optional(),
 });
 
 const watPayload = z.object({ word: z.string().min(1), valence: z.string().optional() });

@@ -40,7 +40,13 @@ export async function loadChapterItems(client: SupabaseClient, reasoningType: st
   const rows = await allPages<{ id: string; payload: Omit<OirPayload, 'key'> }>('the chapter', (from, to) =>
     client.from('items').select('id, payload').in('assessment_type', OIR_TYPES).eq('payload->>reasoningType', reasoningType).order('id').range(from, to),
   );
-  return rows.map(({ id, payload }) => ({ id, stem: payload.stem, options: payload.options, ...(payload.direction ? { direction: payload.direction } : {}) }));
+  return rows.map(({ id, payload }) => ({
+    id,
+    stem: payload.stem,
+    options: payload.options,
+    ...(payload.direction ? { direction: payload.direction } : {}),
+    ...(payload.passage ? { passage: payload.passage } : {}),
+  }));
 }
 
 /**

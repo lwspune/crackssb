@@ -29,6 +29,13 @@ describe('validateItem', () => {
     expect(() => validateItem({ ...item, payload: { ...item.payload, direction: '' } })).toThrow(/direction/);
   });
 
+  it('keeps the passage a group of OIR questions shares, and refuses an empty one', () => {
+    const item = oir('q1', 'seating');
+    const withPassage = { ...item, payload: { ...item.payload, passage: 'A, B and C sit in a row.' } };
+    expect((validateItem(withPassage).payload as OirPayload).passage).toBe('A, B and C sit in a row.');
+    expect(() => validateItem({ ...item, payload: { ...item.payload, passage: '' } })).toThrow(/passage/);
+  });
+
   it('every row of the seeded WAT bank validates as a payload', () => {
     const { items: rows } = JSON.parse(readFileSync('content/wat-items.json', 'utf8')) as { items: Array<{ payload: unknown }> };
     expect(rows.length).toBe(60);
