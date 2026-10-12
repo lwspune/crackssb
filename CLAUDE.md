@@ -180,6 +180,15 @@ Remote: **private** `github.com/lwspune/crackssb` (branch `main`) — keep it pr
 (D21; `no-candidate-names.test.ts` does the scan locally) — the `.gitignore` covers `corpus/records/`, `corpus/reports/`, `corpus/report-findings.json`
 and the single-candidate script — and `.mcp.json`, which holds the Supabase access token.
 
+## Vercel
+
+Live at **https://crackssbai.vercel.app** (also `crackssb-bay.vercel.app`; `crackssb.vercel.app` belongs to
+someone else). Project `crackssb` (`prj_T81bvhmqcBtWmTdJe2F6hfamFrxG`, team `team_4QOTBc7SjXa7BdolwrS61ABp`),
+deploys on every push to `main`. **Functions run in `bom1` (Mumbai)**, beside the database — check a response's
+`x-vercel-id` reads `bom1::bom1`. Env vars: the three Supabase keys, the service-role one marked Sensitive.
+The Vercel token is in `.mcp.json` (gitignored); it is project-scoped (it cannot list the user or teams), so pass
+`teamId` on every API call. Supabase's Site URL and redirect allow-list follow the live address.
+
 ## Supabase
 
 Project `qwxbvcsqhcjthdorkzlc`, **ap-south-1 Mumbai** (created 2026-10-12; a first project landed in Seoul and was replaced while empty). Claude reaches it through the Supabase MCP server in
