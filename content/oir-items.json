@@ -23,6 +23,16 @@
     },
     {
       "source": "agrawal-examcart-oir",
+      "chapter": 9,
+      "title": "Ranking Test",
+      "pages": [
+        35,
+        37
+      ],
+      "file": "content/oir/agrawal-examcart/ch09-ranking.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
       "chapter": 11,
       "title": "Series Test",
       "pages": [
@@ -32,11 +42,11 @@
       "file": "content/oir/agrawal-examcart/ch11-series.source.json"
     }
   ],
-  "itemCount": 213,
+  "itemCount": 263,
   "heldCount": 10,
   "confidence": {
-    "high": 206,
-    "medium": 7
+    "high": 254,
+    "medium": 9
   },
   "held": [
     {
@@ -2281,6 +2291,1108 @@
       "source_ref": "ch6 p23 q51",
       "key_basis": "derived",
       "rule": "T is 7 letters from M. The letter 7 from G is N; 7 the other way runs off the start. Reversing the alphabet keeps the distance, so the answer is N either way.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row of 74 girls, Shweta is 27th from left end. Palak is 7th to the right of Shweta. What is the position of Palak from the right end of the row ?",
+        "options": {
+          "A": "40",
+          "B": "41",
+          "C": "42",
+          "D": "44"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q1",
+      "key_basis": "derived",
+      "rule": "Palak is 27 + 7 = 34th from the left, so 74 − 34 + 1 = 41st from the right.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q002",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row of students, Reeta is 11th form the right and Madhuri is 14th from the left. Riya is exactly in the middle of Reeta and Madhuri. If there are 16 students in the row, what is Riya's position from the left ?",
+        "options": {
+          "A": "9th",
+          "B": "11th",
+          "C": "10th",
+          "D": "13th"
+        },
+        "key": "C",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q2",
+      "key_basis": "derived",
+      "rule": "Reeta is 16 − 11 + 1 = 6th from the left and Madhuri 14th; the middle of 6 and 14 is the 10th.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Total 42 students are standing in a line facing east. Neha's position is 16th from the right end. Vinita is standing at 26th position from the left. If Mangala is standing at the 7th place to the right of Neha, what is Mangala's positon from the left end of the row?",
+        "options": {
+          "A": "34th",
+          "B": "33rd",
+          "C": "35th",
+          "D": "32nd"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q3",
+      "key_basis": "derived",
+      "rule": "Neha is 42 − 16 + 1 = 27th from the left; 7 places to her right is the 34th. Vinita does not matter.",
+      "confidence": "medium",
+      "note": "\"Facing east\" could make \"to the right of Neha\" mean her own right (south), off the row. Read as along the row, toward the right end, as the rest of the question counts. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch09-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a class of 64 students, Komal's rank is 6 places below (downwards) the rank of her friend Shikha, who is 59th from the last. What will be Komal's rank in the class, if seen from the top?",
+        "options": {
+          "A": "15th",
+          "B": "12th",
+          "C": "16th",
+          "D": "19th"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q4",
+      "key_basis": "derived",
+      "rule": "Shikha is 64 − 59 + 1 = 6th from the top; Komal, 6 below her, is 12th.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a class of 52 children, Bilal's rank is 11th from the bottom. Salman is 9 ranks above Bilal. What is the rank of Salman from above?",
+        "options": {
+          "A": "37th",
+          "B": "33rd",
+          "C": "38th",
+          "D": "35th"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q5",
+      "key_basis": "derived",
+      "rule": "Bilal is 52 − 11 + 1 = 42nd from the top; Salman, 9 above him, is 33rd.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A group of 10 students are made to sit in a row according to their ages. Rohan sits sixth from the beginning and his friend Saumya sits ninth from the end of the row. How many students are sitting between them?",
+        "options": {
+          "A": "3",
+          "B": "4",
+          "C": "2",
+          "D": "5"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q6",
+      "key_basis": "derived",
+      "rule": "Saumya is 10 − 9 + 1 = 2nd from the beginning and Rohan 6th; 3 sit between them.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q007",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row of persons, Aman's position is 10th from the top and 12th from the bottom. How many persons are there in the row?",
+        "options": {
+          "A": "21",
+          "B": "22",
+          "C": "15",
+          "D": "18"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q7",
+      "key_basis": "derived",
+      "rule": "10 + 12 − 1 = 21 persons.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a list of passed students, Rohan is 13th from the top and Raman is 36th from the bottom. There are 5 students between Raman and Rohan. 9 students have failed. At least how many students will be there?",
+        "options": {
+          "A": "51",
+          "B": "63",
+          "C": "58",
+          "D": "68"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q8",
+      "key_basis": "derived",
+      "rule": "For the fewest, Raman is above Rohan: 13 − 6 = 7th from the top and 36th from the bottom, so 7 + 36 − 1 = 42 passed. With 9 failed, at least 51.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Sanjay is 11th from the top and 13th from the bottom in a row. How many persons are there in the row?",
+        "options": {
+          "A": "24",
+          "B": "23",
+          "C": "25",
+          "D": "26"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q9",
+      "key_basis": "derived",
+      "rule": "11 + 13 − 1 = 23 persons.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "There are 40 students in a class. Some of them have passed the examination and others have failed. Raman is 13th from the top and 17th from the bottom among the passed students. How many students have failed?",
+        "options": {
+          "A": "11",
+          "B": "10",
+          "C": "9",
+          "D": "cannot be determined"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q10",
+      "key_basis": "derived",
+      "rule": "13 + 17 − 1 = 29 passed, so 40 − 29 = 11 failed.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a class, 24 students scored more than Vineet while 19 students scored less than Surbhi. Aarti got more marks than Surbhi, but she got less marks than Vineet. Aarti's marks were less than 29 students and more than 26 students. How many students are there in the class?",
+        "options": {
+          "A": "57",
+          "B": "56",
+          "C": "55",
+          "D": "54"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q11",
+      "key_basis": "derived",
+      "rule": "Aarti has 29 students above her and 26 below: 29 + 26 + 1 = 56.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row of boys, Rakesh is 31st from the top and Vinod is 53rd from the bottom. There are 22 boys between Vinod and Rakesh. There are also 15 girls in another row. How many minimum students are there ?",
+        "options": {
+          "A": "65",
+          "B": "72",
+          "C": "75",
+          "D": "80"
+        },
+        "key": "C",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q12",
+      "key_basis": "derived",
+      "rule": "For the fewest, Vinod is above Rakesh: 31 − 23 = 8th from the top and 53rd from the bottom, so 8 + 53 − 1 = 60 boys. With 15 girls, 75.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row of swimmers, Manish is 23rd from left end and Ramesh is 11th to the left of Manish. If Ramesh is 16th from right end, then how many swimmers in this row ?",
+        "options": {
+          "A": "28",
+          "B": "27",
+          "C": "30",
+          "D": "29"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q13",
+      "key_basis": "derived",
+      "rule": "Ramesh is 23 − 11 = 12th from the left and 16th from the right: 12 + 16 − 1 = 27.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row, there are 12 professors between Aakash and Bhumi and Aakash is the first professor in the row. There are 6 professors between Bhumi and Charu. If 15 professors after Charu, then how many minimum professors are in the row ?",
+        "options": {
+          "A": "21",
+          "B": "24",
+          "C": "20",
+          "D": "22"
+        },
+        "key": "D",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q14",
+      "key_basis": "derived",
+      "rule": "Aakash is 1st, so Bhumi is 14th. For the fewest, Charu is before Bhumi: 14 − 7 = 7th. With 15 after Charu, 7 + 15 = 22.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Aman is 12th from the top and Boman is 18th from the bottom in a row of boys. If there are 6 boys between Aman and Boman, what is the maximum number of boys in the row?",
+        "options": {
+          "A": "34",
+          "B": "36",
+          "C": "35",
+          "D": "37"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q15",
+      "key_basis": "derived",
+      "rule": "For the most, Aman is above Boman with no overlap: 12 + 6 + 18 = 36.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row of cars, the blue car is at the bottom end. There are 18 cars between the yellow and the blue car. There are 8 cars between the Red car and the Blue car. If there are 6 cars above the yellow car, then what is the minimum number of cars in the row?",
+        "options": {
+          "A": "34",
+          "B": "26",
+          "C": "32",
+          "D": "35"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q16",
+      "key_basis": "derived",
+      "rule": "Blue is at the bottom and 18 cars lie between it and yellow, so yellow is 20th from the bottom. With 6 above yellow, 26 cars. The red car sits within that span.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row of cars, the red car is 14th from the left and 23rd from the right. How many cars are there in the row?",
+        "options": {
+          "A": "36",
+          "B": "37",
+          "C": "35",
+          "D": "34"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q17",
+      "key_basis": "derived",
+      "rule": "14 + 23 − 1 = 36 cars.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row of people there are 12 people before Q. There are 4 people between P and Q. There are 15 people between Q and S. If there are 8 people between S and R, then what is the minimum number of people in the row?",
+        "options": {
+          "A": "29",
+          "B": "32",
+          "C": "36",
+          "D": "37"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q18",
+      "key_basis": "derived",
+      "rule": "Q is 13th. S cannot be 16 places before Q, so S is 29th. R (9 places from S) and P (5 from Q) both fit before S, so the fewest is 29.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Maruti is 20th from the left in a row of vehicles. Honda is 10 places to the right of Maruti and is exactly in the middle of the row. How many cars are there in the row?",
+        "options": {
+          "A": "54",
+          "B": "59",
+          "C": "57",
+          "D": "56"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q19",
+      "key_basis": "derived",
+      "rule": "Honda is 20 + 10 = 30th and in the middle, so 29 stand on each side: 59.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Amit ranked 7th from the top and 26th from the bottom in his class. How many students are there in the class?",
+        "options": {
+          "A": "27",
+          "B": "31",
+          "C": "33",
+          "D": "32"
+        },
+        "key": "D",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p35 q20",
+      "key_basis": "derived",
+      "rule": "7 + 26 − 1 = 32 students.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row of people all facing north, Prince is 5th from the right end. Amit is 15th from the right end. Amit is exactly between Prince and Aditya. If Aditya is sixth from the left end of the line, how many people are there in the row ?",
+        "options": {
+          "A": "32",
+          "B": "29",
+          "C": "30",
+          "D": "31"
+        },
+        "key": "C",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q21",
+      "key_basis": "derived",
+      "rule": "Amit is 10 places left of Prince (15th vs 5th from the right), so Aditya is 10 further: 25th from the right. Aditya is 6th from the left, so 25 + 6 − 1 = 30.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "All 32 students in a class are standing in a row facing north. Akash is 12th from the right end while Priya is 18th from the left end. How many people are standing between Akash and Priya?",
+        "options": {
+          "A": "Two",
+          "B": "Four",
+          "C": "Three",
+          "D": "Five"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q22",
+      "key_basis": "derived",
+      "rule": "Akash is 32 − 12 + 1 = 21st from the left and Priya 18th; 2 stand between them.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row, there are 6 boys between A and B and A being the first boy in the row, There are 3 boys between B and C. If there are 12 boys after C, then how many maximum boys are there in the row ?",
+        "options": {
+          "A": "20",
+          "B": "16",
+          "C": "24",
+          "D": "18"
+        },
+        "key": "C",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q23",
+      "key_basis": "derived",
+      "rule": "A is 1st and B is 8th. For the most, C is after B: 12th. With 12 after C, 24.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row of men, Manish is 30th from the right and Kavita is 20th from the left. When they interchange their positions, Manish becomes 35th from the right. What is the total number of males in that row?",
+        "options": {
+          "A": "34",
+          "B": "44",
+          "C": "45",
+          "D": "54"
+        },
+        "key": "D",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q24",
+      "key_basis": "derived",
+      "rule": "Manish moves to Kavita's place, which is 20th from the left and 35th from the right: 20 + 35 − 1 = 54 in the row.",
+      "confidence": "medium",
+      "note": "If Kavita is a woman, the row holds 53 men; 53 is not an option, so the book counts everyone in the row. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch09-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The positions of Suman and Rajesh in a row are 12th from left and 8th from right respectively. If they interchange their places, then Rajesh will be 17th from right. Find out the position of Suman from left and the total number of persons in the group?",
+        "options": {
+          "A": "21, 28",
+          "B": "21,27",
+          "C": "20, 28",
+          "D": "25, 26"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q25",
+      "key_basis": "derived",
+      "rule": "Rajesh moves to Suman's place, 12th from the left and 17th from the right: 28 in all. Suman moves to Rajesh's place, 8th from the right, so 28 − 8 + 1 = 21st from the left.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Thirty-six persons are sitting in a row facing north. Jatin is exactly in the middle of Harish and Shovan. After Harish and Shovan interchange their positions, Harish becomes 10th from the left end and Shovan becomes 13th from the right end. What is Jatin's position from the right end?",
+        "options": {
+          "A": "20th",
+          "B": "22nd",
+          "C": "19th",
+          "D": "17th"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q26",
+      "key_basis": "derived",
+      "rule": "After the swap Harish is 10th from the left and Shovan 36 − 13 + 1 = 24th; Jatin, midway, is 17th from the left, so 36 − 17 + 1 = 20th from the right.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q027",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row of 47 persons, X is 14th from the front while Y is 17th from the back. If they interchange their places, Y becomes 34th from the back, then what will be the position of X from the front?",
+        "options": {
+          "A": "31",
+          "B": "32",
+          "C": "30",
+          "D": "29"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q27",
+      "key_basis": "derived",
+      "rule": "X moves to Y's place, 17th from the back: 47 − 17 + 1 = 31st from the front.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Kamal's position is 31st from the left end and Karan's position is 29th from the right end in a row of boys. After interchanging their positions, Kamal's position becomes 43rd from the left end. How many boys are there in the row?",
+        "options": {
+          "A": "68",
+          "B": "71",
+          "C": "72",
+          "D": "70"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q28",
+      "key_basis": "derived",
+      "rule": "Karan's place is 43rd from the left and 29th from the right: 43 + 29 − 1 = 71.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q029",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row of students, Paresh is 14th from the left and Dilip is 16th from the right. When Paresh and Dilip interchange their positions, Dilip becomes 21st from the right. What is the number of students in the row?",
+        "options": {
+          "A": "33",
+          "B": "34",
+          "C": "35",
+          "D": "36"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q29",
+      "key_basis": "derived",
+      "rule": "Paresh's place is 14th from the left and 21st from the right: 14 + 21 − 1 = 34.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "X is 7th from the top while Y is 16th from the bottom in the class ranking. If they interchange their positions, then X becomes 21st from the top. What will be the position of Y from the bottom?",
+        "options": {
+          "A": "16th",
+          "B": "29th",
+          "C": "21th",
+          "D": "30th"
+        },
+        "key": "D",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q30",
+      "key_basis": "derived",
+      "rule": "Y's place is 21st from the top and 16th from the bottom, so 36 in the class. Y moves to X's place, 7th from the top: 36 − 7 + 1 = 30th from the bottom.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q031",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a class, Sanjay is ranked 11th from the top and 27th from the bottom. Can you tell how many students are there in the class?",
+        "options": {
+          "A": "40",
+          "B": "32",
+          "C": "37",
+          "D": "35"
+        },
+        "key": "C",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q31",
+      "key_basis": "derived",
+      "rule": "11 + 27 − 1 = 37 students.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arun's rank is 17th in a class of 31 students. What is his rank from the last?",
+        "options": {
+          "A": "14th",
+          "B": "15th",
+          "C": "16th",
+          "D": "17th"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q32",
+      "key_basis": "derived",
+      "rule": "31 − 17 + 1 = 15th from the last.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "45 students in a class. Kamla and Arun rank 19th and 23rd from bottom respectively. What will be the position of Kamla and Arun from top respectively?",
+        "options": {
+          "A": "28th and 21st",
+          "B": "26th and 25th",
+          "C": "23rd and 26th",
+          "D": "27th and 23rd"
+        },
+        "key": "D",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q33",
+      "key_basis": "derived",
+      "rule": "Kamla: 45 − 19 + 1 = 27th from the top. Arun: 45 − 23 + 1 = 23rd.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Vinod's rank is 25th in a class of 40 students. What will be his rank from the bottom ?",
+        "options": {
+          "A": "65",
+          "B": "64",
+          "C": "15",
+          "D": "16"
+        },
+        "key": "D",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q34",
+      "key_basis": "derived",
+      "rule": "40 − 25 + 1 = 16th from the bottom.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row, Raju's rank is 16th from left and 10th from right. How many persons are there in a row ?",
+        "options": {
+          "A": "25",
+          "B": "22",
+          "C": "21",
+          "D": "24"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q35",
+      "key_basis": "derived",
+      "rule": "16 + 10 − 1 = 25 persons.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row, my position is the 6th from either end of a row. How many persons are there in a row ?",
+        "options": {
+          "A": "10",
+          "B": "11",
+          "C": "12",
+          "D": "13"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q36",
+      "key_basis": "derived",
+      "rule": "6 + 6 − 1 = 11 persons.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Ram's rank is 8th from top and 28th from bottom. How many students are there in the class ?",
+        "options": {
+          "A": "33",
+          "B": "34",
+          "C": "35",
+          "D": "36"
+        },
+        "key": "C",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q37",
+      "key_basis": "derived",
+      "rule": "8 + 28 − 1 = 35 students.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Mohan's qualification in a class: 15th from top and 50th from bottom. How many students are there in a class ?",
+        "options": {
+          "A": "65",
+          "B": "64",
+          "C": "66",
+          "D": "67"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q38",
+      "key_basis": "derived",
+      "rule": "15 + 50 − 1 = 64 students.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q039",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row, Ram is 16th from left and 15th from right. How many boys should be added to the row such that there are 50 persons in a row ?",
+        "options": {
+          "A": "19",
+          "B": "20",
+          "C": "21",
+          "D": "None of these"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q39",
+      "key_basis": "derived",
+      "rule": "The row has 16 + 15 − 1 = 30, so 20 more make 50.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "40 children in a class, Sunetra's rank is 8th from top. Sujeet is 5 ranks below Sunetra. What is the position of Sujeet from bottom ?",
+        "options": {
+          "A": "27th",
+          "B": "29th",
+          "C": "28th",
+          "D": "26th"
+        },
+        "key": "C",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q40",
+      "key_basis": "derived",
+      "rule": "Sujeet is 8 + 5 = 13th from the top, so 40 − 13 + 1 = 28th from the bottom.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q041",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a class of 20 students, Alisha's rank is 15th from the top. Manav is 4 ranks above Alisha. What is Manav's rank from the bottom ?",
+        "options": {
+          "A": "10th",
+          "B": "11th",
+          "C": "9th",
+          "D": "12th"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q41",
+      "key_basis": "derived",
+      "rule": "Manav is 15 − 4 = 11th from the top, so 20 − 11 + 1 = 10th from the bottom.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a class of 41 students, Saurabh's rank is 8th from top. Mamta is 7 rank below Saurabh. What is Mamta's rank from bottom ?",
+        "options": {
+          "A": "27th",
+          "B": "29th",
+          "C": "28th",
+          "D": "26th"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q42",
+      "key_basis": "derived",
+      "rule": "Mamta is 8 + 7 = 15th from the top, so 41 − 15 + 1 = 27th from the bottom.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row, Raman's rank is 15th from beginning and 11th from end. How many persons are there in a row ?",
+        "options": {
+          "A": "25",
+          "B": "26",
+          "C": "27",
+          "D": "24"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q43",
+      "key_basis": "derived",
+      "rule": "15 + 11 − 1 = 25 persons.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q044",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a class of 83 students, Vijay's rank is 54th from top. What is the rank of Vijay from bottom ?",
+        "options": {
+          "A": "30",
+          "B": "28",
+          "C": "31",
+          "D": "29"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q44",
+      "key_basis": "derived",
+      "rule": "83 − 54 + 1 = 30th from the bottom.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row of 21 students facing North direction, Nitin's rank is 3rd from right of Shikha. Shikha is 9th from right end. What is the position of Nitin from left end ?",
+        "options": {
+          "A": "12th",
+          "B": "15th",
+          "C": "16th",
+          "D": "6th"
+        },
+        "key": "C",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q45",
+      "key_basis": "derived",
+      "rule": "Shikha is 21 − 9 + 1 = 13th from the left; Nitin, 3 to her right, is 16th.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a queue, the position of A from top is 7th and the position of B from top is 15th and 21st from bottom. Now find the position of A from bottom.",
+        "options": {
+          "A": "29th",
+          "B": "30th",
+          "C": "28th",
+          "D": "31st"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q46",
+      "key_basis": "derived",
+      "rule": "B gives the queue: 15 + 21 − 1 = 35. A is then 35 − 7 + 1 = 29th from the bottom.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a class of 39 students, Suresh is 7 rank ahead of Ashok's rank. If Ashok's rank is 17th from the end, then what will be the rank of Suresh from beginning ?",
+        "options": {
+          "A": "16th",
+          "B": "23rd",
+          "C": "24th",
+          "D": "15th"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p36 q47",
+      "key_basis": "derived",
+      "rule": "Ashok is 39 − 17 + 1 = 23rd from the beginning; Suresh, 7 ahead, is 16th.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "There are 35 students in a class. Suman ranks third among the girls in the class. Amit ranks 5th among the boys in the class. Suman is one rank below Amit in the class. No two students hold the same rank in the class. What is Amit's rank in the class ?",
+        "options": {
+          "A": "7th",
+          "B": "5th",
+          "C": "8th",
+          "D": "9th"
+        },
+        "key": "A",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p37 q48",
+      "key_basis": "derived",
+      "rule": "Suman is just below Amit, so the 2 girls above Suman are above Amit too, with the 4 boys above him: 2 + 4 + 1 = 7th.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row of 21 girls, if Monika shifted 4 places to the right she became 12th from the left end. What was her original position from the right end of the row ?",
+        "options": {
+          "A": "10th",
+          "B": "14th",
+          "C": "11th",
+          "D": "12th"
+        },
+        "key": "B",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p37 q49",
+      "key_basis": "derived",
+      "rule": "Monika was 12 − 4 = 8th from the left, so 21 − 8 + 1 = 14th from the right.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch09-q050",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a queue of students, Prabhu's rank is 9th from left and Padma's rank is 12th from right. In the same queue, Ram's rank is 12th from left and Radha's rank is 9th from right. How many students are there in between Prabhu and Ram ?",
+        "options": {
+          "A": "18",
+          "B": "21",
+          "C": "24",
+          "D": "None of these"
+        },
+        "key": "D",
+        "reasoningType": "ranking"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch9 p37 q50",
+      "key_basis": "derived",
+      "rule": "Prabhu is 9th and Ram 12th from the left, so 2 stand between them, which is not among the numbers given. Padma and Radha do not matter.",
       "confidence": "high"
     },
     {

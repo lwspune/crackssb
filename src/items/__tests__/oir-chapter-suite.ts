@@ -19,13 +19,17 @@ export interface SourceQuestion {
   readonly section: string;
   readonly stem: string;
   readonly options: Readonly<Record<OptionLabel, string>>;
+  /** A book name here matched a real candidate's and was replaced (D21, D27). */
+  readonly renamed?: boolean;
 }
 
 export interface SourceFile {
   readonly source: string;
   readonly chapter: number;
   readonly pages: readonly number[];
-  readonly directions: readonly { readonly section: string; readonly text: string }[];
+  readonly note?: string;
+  /** `text: null`: the chapter prints no direction, and its items carry none. */
+  readonly directions: readonly { readonly section: string; readonly text: string | null }[];
   readonly questions: readonly SourceQuestion[];
 }
 
@@ -57,7 +61,8 @@ function runCheck(check: KeyCheck, q: SourceQuestion, k: KeyedEntry): void {
       return;
     }
     case 'computed': {
-      const norm = (s: string) => s.trim().toUpperCase();
+      // Spacing is layout: "21,27" and "21, 27" read the same.
+      const norm = (s: string) => s.replace(/\s+/g, '').toUpperCase();
       const reads = check.answer === null ? [] : OPTION_LABELS.filter((l) => norm(q.options[l]) === norm(String(check.answer)));
       if (reads.length > 0) {
         expect(reads, `options reading as ${check.answer}`).toEqual([k.key]);
@@ -83,6 +88,10 @@ export function chapterSuite(spec: ChapterSpec): void {
     it(`holds questions 1-${spec.count} in order, each with four options`, () => {
       expect(questions.map((q) => q.n)).toEqual(Array.from({ length: spec.count }, (_, i) => i + 1));
       for (const q of questions) for (const l of OPTION_LABELS) expect(q.options[l], `Q${q.n} ${l}`).toBeTruthy();
+    });
+
+    it('declares any replaced name in the source note (D27)', () => {
+      if (questions.some((q) => q.renamed)) expect(source.note ?? '').toMatch(/D27/);
     });
 
     it('keeps every question within the chapter pages, under a printed direction', () => {
@@ -143,7 +152,7 @@ export function chapterSuite(spec: ChapterSpec): void {
         expect(item.payload.stem, `Q${q.n}`).toBe(k.stemFix ?? q.stem);
         expect(item.payload.options, `Q${q.n}`).toEqual(q.options);
         expect(item.payload.reasoningType).toBe(spec.reasoningType);
-        expect(item.payload.direction, `Q${q.n}`).toBe(k.direction ?? source.directions.find((d) => d.section === q.section)!.text);
+        expect(item.payload.direction, `Q${q.n}`).toBe(k.direction ?? source.directions.find((d) => d.section === q.section)!.text ?? undefined);
         expect(item.key_basis).toBe('derived');
         expect(item.rule).toBe(k.rule);
         expect(item.source_ref).toBe(`ch${source.chapter} p${q.page} q${q.n}`);

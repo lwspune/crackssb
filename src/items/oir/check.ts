@@ -136,6 +136,13 @@ export function between(seq: string, a: string, b: string): number {
   return Math.abs(posFromLeft(seq, a) - posFromLeft(seq, b)) - 1;
 }
 
+/** 1 → "1st", 12 → "12th", 23 → "23rd": a rank as the book prints it. */
+export function ordinal(n: number): string {
+  const teen = n % 100 >= 11 && n % 100 <= 13;
+  const suffix = teen ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' } as Record<number, string>)[n % 10] ?? 'th';
+  return `${n}${suffix}`;
+}
+
 export type KeyBasis = 'derived' | 'book' | 'derived_and_book';
 
 export interface ItemRow {

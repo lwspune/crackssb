@@ -22,6 +22,7 @@ import { fileURLToPath } from 'node:url';
 import { validateItem } from '../src/items/bank.ts';
 import { AGRAWAL_CH04_WORD_FORMATION } from '../src/items/oir/agrawal-ch04-word-formation.ts';
 import { AGRAWAL_CH06_SEQUENCE_TEST } from '../src/items/oir/agrawal-ch06-sequence-test.ts';
+import { AGRAWAL_CH09_RANKING } from '../src/items/oir/agrawal-ch09-ranking.ts';
 import { AGRAWAL_CH11_SERIES } from '../src/items/oir/agrawal-ch11-series.ts';
 import { isHeld } from '../src/items/oir/key.ts';
 import type { KeyEntry } from '../src/items/oir/key.ts';
@@ -33,7 +34,8 @@ interface SourceFile {
   chapter: number;
   title: string;
   pages: [number, number];
-  directions: { section: string; text: string }[];
+  /** `text: null` when the chapter prints no direction; its questions then carry none. */
+  directions: { section: string; text: string | null }[];
   questions: { n: number; page: number; section: string; stem: string; options: Record<'A' | 'B' | 'C' | 'D', string> }[];
 }
 
@@ -41,6 +43,7 @@ interface SourceFile {
 const CHAPTERS: { file: string; key: Readonly<Record<number, KeyEntry>>; reasoningType: string; idPrefix: string }[] = [
   { file: 'content/oir/agrawal-examcart/ch04-word-formation.source.json', key: AGRAWAL_CH04_WORD_FORMATION, reasoningType: 'word_formation', idPrefix: 'oir-agx-ch04' },
   { file: 'content/oir/agrawal-examcart/ch06-sequence-test.source.json', key: AGRAWAL_CH06_SEQUENCE_TEST, reasoningType: 'alphabet', idPrefix: 'oir-agx-ch06' },
+  { file: 'content/oir/agrawal-examcart/ch09-ranking.source.json', key: AGRAWAL_CH09_RANKING, reasoningType: 'ranking', idPrefix: 'oir-agx-ch09' },
   { file: 'content/oir/agrawal-examcart/ch11-series.source.json', key: AGRAWAL_CH11_SERIES, reasoningType: 'series', idPrefix: 'oir-agx-ch11' },
 ];
 
@@ -71,15 +74,16 @@ for (const chapter of CHAPTERS) {
       held.push({ source: src.source, source_ref: sourceRef, reason: entry.reason, ...(entry.lean ? { lean: entry.lean } : {}) });
       continue;
     }
-    const direction = entry.direction ?? src.directions.find((d) => d.section === q.section)?.text;
-    if (!direction) {
+    const section = src.directions.find((d) => d.section === q.section);
+    if (!section) {
       console.error(`${sourceRef}: no direction for section ${q.section}`);
       process.exit(1);
     }
+    const direction = entry.direction ?? section.text;
     const item = {
       id: `${chapter.idPrefix}-q${String(q.n).padStart(3, '0')}`,
       assessment_type: 'oir_verbal',
-      payload: { stem: entry.stemFix ?? q.stem, options: q.options, key: entry.key, reasoningType: chapter.reasoningType, direction },
+      payload: { stem: entry.stemFix ?? q.stem, options: q.options, key: entry.key, reasoningType: chapter.reasoningType, ...(direction ? { direction } : {}) },
       difficulty: UNRATED_DIFFICULTY,
       active: true,
       source: src.source,

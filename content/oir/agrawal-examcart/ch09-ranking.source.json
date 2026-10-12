@@ -1,0 +1,623 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSB OIR PAGE NO. 1-44 (phone photos of printed pages 1-44)",
+  "chapter": 9,
+  "title": "Ranking Test",
+  "pages": [
+    35,
+    37
+  ],
+  "transcribed": "2026-10-12",
+  "note": "Verbatim, typos included (\"form the right\", \"positon\", \"21th\"). Never edited: corrections live in src/items/oir/. The chapter prints no direction (text null); each question carries its own. A book name that matches a real candidate's name is replaced with a neutral one (D21, D27); such questions carry \"renamed\": true and the original is not recorded.",
+  "directions": [
+    {
+      "section": "Main",
+      "printed": null,
+      "text": null
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 35,
+      "section": "Main",
+      "stem": "In a row of 74 girls, Shweta is 27th from left end. Palak is 7th to the right of Shweta. What is the position of Palak from the right end of the row ?",
+      "options": {
+        "A": "40",
+        "B": "41",
+        "C": "42",
+        "D": "44"
+      }
+    },
+    {
+      "n": 2,
+      "page": 35,
+      "section": "Main",
+      "stem": "In a row of students, Reeta is 11th form the right and Madhuri is 14th from the left. Riya is exactly in the middle of Reeta and Madhuri. If there are 16 students in the row, what is Riya's position from the left ?",
+      "options": {
+        "A": "9th",
+        "B": "11th",
+        "C": "10th",
+        "D": "13th"
+      }
+    },
+    {
+      "n": 3,
+      "page": 35,
+      "section": "Main",
+      "stem": "Total 42 students are standing in a line facing east. Neha's position is 16th from the right end. Vinita is standing at 26th position from the left. If Mangala is standing at the 7th place to the right of Neha, what is Mangala's positon from the left end of the row?",
+      "options": {
+        "A": "34th",
+        "B": "33rd",
+        "C": "35th",
+        "D": "32nd"
+      }
+    },
+    {
+      "n": 4,
+      "page": 35,
+      "section": "Main",
+      "stem": "In a class of 64 students, Komal's rank is 6 places below (downwards) the rank of her friend Shikha, who is 59th from the last. What will be Komal's rank in the class, if seen from the top?",
+      "options": {
+        "A": "15th",
+        "B": "12th",
+        "C": "16th",
+        "D": "19th"
+      }
+    },
+    {
+      "n": 5,
+      "page": 35,
+      "section": "Main",
+      "stem": "In a class of 52 children, Bilal's rank is 11th from the bottom. Salman is 9 ranks above Bilal. What is the rank of Salman from above?",
+      "options": {
+        "A": "37th",
+        "B": "33rd",
+        "C": "38th",
+        "D": "35th"
+      }
+    },
+    {
+      "n": 6,
+      "page": 35,
+      "section": "Main",
+      "stem": "A group of 10 students are made to sit in a row according to their ages. Rohan sits sixth from the beginning and his friend Saumya sits ninth from the end of the row. How many students are sitting between them?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "2",
+        "D": "5"
+      }
+    },
+    {
+      "n": 7,
+      "page": 35,
+      "section": "Main",
+      "stem": "In a row of persons, Aman's position is 10th from the top and 12th from the bottom. How many persons are there in the row?",
+      "options": {
+        "A": "21",
+        "B": "22",
+        "C": "15",
+        "D": "18"
+      }
+    },
+    {
+      "n": 8,
+      "page": 35,
+      "section": "Main",
+      "stem": "In a list of passed students, Rohan is 13th from the top and Raman is 36th from the bottom. There are 5 students between Raman and Rohan. 9 students have failed. At least how many students will be there?",
+      "options": {
+        "A": "51",
+        "B": "63",
+        "C": "58",
+        "D": "68"
+      }
+    },
+    {
+      "n": 9,
+      "page": 35,
+      "section": "Main",
+      "stem": "Sanjay is 11th from the top and 13th from the bottom in a row. How many persons are there in the row?",
+      "options": {
+        "A": "24",
+        "B": "23",
+        "C": "25",
+        "D": "26"
+      }
+    },
+    {
+      "n": 10,
+      "page": 35,
+      "section": "Main",
+      "stem": "There are 40 students in a class. Some of them have passed the examination and others have failed. Raman is 13th from the top and 17th from the bottom among the passed students. How many students have failed?",
+      "options": {
+        "A": "11",
+        "B": "10",
+        "C": "9",
+        "D": "cannot be determined"
+      }
+    },
+    {
+      "n": 11,
+      "page": 35,
+      "section": "Main",
+      "stem": "In a class, 24 students scored more than Vineet while 19 students scored less than Surbhi. Aarti got more marks than Surbhi, but she got less marks than Vineet. Aarti's marks were less than 29 students and more than 26 students. How many students are there in the class?",
+      "options": {
+        "A": "57",
+        "B": "56",
+        "C": "55",
+        "D": "54"
+      }
+    },
+    {
+      "n": 12,
+      "page": 35,
+      "section": "Main",
+      "stem": "In a row of boys, Rakesh is 31st from the top and Vinod is 53rd from the bottom. There are 22 boys between Vinod and Rakesh. There are also 15 girls in another row. How many minimum students are there ?",
+      "options": {
+        "A": "65",
+        "B": "72",
+        "C": "75",
+        "D": "80"
+      },
+      "renamed": true
+    },
+    {
+      "n": 13,
+      "page": 35,
+      "section": "Main",
+      "stem": "In a row of swimmers, Manish is 23rd from left end and Ramesh is 11th to the left of Manish. If Ramesh is 16th from right end, then how many swimmers in this row ?",
+      "options": {
+        "A": "28",
+        "B": "27",
+        "C": "30",
+        "D": "29"
+      }
+    },
+    {
+      "n": 14,
+      "page": 35,
+      "section": "Main",
+      "stem": "In a row, there are 12 professors between Aakash and Bhumi and Aakash is the first professor in the row. There are 6 professors between Bhumi and Charu. If 15 professors after Charu, then how many minimum professors are in the row ?",
+      "options": {
+        "A": "21",
+        "B": "24",
+        "C": "20",
+        "D": "22"
+      }
+    },
+    {
+      "n": 15,
+      "page": 35,
+      "section": "Main",
+      "stem": "Aman is 12th from the top and Boman is 18th from the bottom in a row of boys. If there are 6 boys between Aman and Boman, what is the maximum number of boys in the row?",
+      "options": {
+        "A": "34",
+        "B": "36",
+        "C": "35",
+        "D": "37"
+      }
+    },
+    {
+      "n": 16,
+      "page": 35,
+      "section": "Main",
+      "stem": "In a row of cars, the blue car is at the bottom end. There are 18 cars between the yellow and the blue car. There are 8 cars between the Red car and the Blue car. If there are 6 cars above the yellow car, then what is the minimum number of cars in the row?",
+      "options": {
+        "A": "34",
+        "B": "26",
+        "C": "32",
+        "D": "35"
+      }
+    },
+    {
+      "n": 17,
+      "page": 35,
+      "section": "Main",
+      "stem": "In a row of cars, the red car is 14th from the left and 23rd from the right. How many cars are there in the row?",
+      "options": {
+        "A": "36",
+        "B": "37",
+        "C": "35",
+        "D": "34"
+      }
+    },
+    {
+      "n": 18,
+      "page": 35,
+      "section": "Main",
+      "stem": "In a row of people there are 12 people before Q. There are 4 people between P and Q. There are 15 people between Q and S. If there are 8 people between S and R, then what is the minimum number of people in the row?",
+      "options": {
+        "A": "29",
+        "B": "32",
+        "C": "36",
+        "D": "37"
+      }
+    },
+    {
+      "n": 19,
+      "page": 35,
+      "section": "Main",
+      "stem": "Maruti is 20th from the left in a row of vehicles. Honda is 10 places to the right of Maruti and is exactly in the middle of the row. How many cars are there in the row?",
+      "options": {
+        "A": "54",
+        "B": "59",
+        "C": "57",
+        "D": "56"
+      }
+    },
+    {
+      "n": 20,
+      "page": 35,
+      "section": "Main",
+      "stem": "Amit ranked 7th from the top and 26th from the bottom in his class. How many students are there in the class?",
+      "options": {
+        "A": "27",
+        "B": "31",
+        "C": "33",
+        "D": "32"
+      }
+    },
+    {
+      "n": 21,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a row of people all facing north, Prince is 5th from the right end. Amit is 15th from the right end. Amit is exactly between Prince and Aditya. If Aditya is sixth from the left end of the line, how many people are there in the row ?",
+      "options": {
+        "A": "32",
+        "B": "29",
+        "C": "30",
+        "D": "31"
+      }
+    },
+    {
+      "n": 22,
+      "page": 36,
+      "section": "Main",
+      "stem": "All 32 students in a class are standing in a row facing north. Akash is 12th from the right end while Priya is 18th from the left end. How many people are standing between Akash and Priya?",
+      "options": {
+        "A": "Two",
+        "B": "Four",
+        "C": "Three",
+        "D": "Five"
+      }
+    },
+    {
+      "n": 23,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a row, there are 6 boys between A and B and A being the first boy in the row, There are 3 boys between B and C. If there are 12 boys after C, then how many maximum boys are there in the row ?",
+      "options": {
+        "A": "20",
+        "B": "16",
+        "C": "24",
+        "D": "18"
+      }
+    },
+    {
+      "n": 24,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a row of men, Manish is 30th from the right and Kavita is 20th from the left. When they interchange their positions, Manish becomes 35th from the right. What is the total number of males in that row?",
+      "options": {
+        "A": "34",
+        "B": "44",
+        "C": "45",
+        "D": "54"
+      }
+    },
+    {
+      "n": 25,
+      "page": 36,
+      "section": "Main",
+      "stem": "The positions of Suman and Rajesh in a row are 12th from left and 8th from right respectively. If they interchange their places, then Rajesh will be 17th from right. Find out the position of Suman from left and the total number of persons in the group?",
+      "options": {
+        "A": "21, 28",
+        "B": "21,27",
+        "C": "20, 28",
+        "D": "25, 26"
+      }
+    },
+    {
+      "n": 26,
+      "page": 36,
+      "section": "Main",
+      "stem": "Thirty-six persons are sitting in a row facing north. Jatin is exactly in the middle of Harish and Shovan. After Harish and Shovan interchange their positions, Harish becomes 10th from the left end and Shovan becomes 13th from the right end. What is Jatin's position from the right end?",
+      "options": {
+        "A": "20th",
+        "B": "22nd",
+        "C": "19th",
+        "D": "17th"
+      }
+    },
+    {
+      "n": 27,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a row of 47 persons, X is 14th from the front while Y is 17th from the back. If they interchange their places, Y becomes 34th from the back, then what will be the position of X from the front?",
+      "options": {
+        "A": "31",
+        "B": "32",
+        "C": "30",
+        "D": "29"
+      }
+    },
+    {
+      "n": 28,
+      "page": 36,
+      "section": "Main",
+      "stem": "Kamal's position is 31st from the left end and Karan's position is 29th from the right end in a row of boys. After interchanging their positions, Kamal's position becomes 43rd from the left end. How many boys are there in the row?",
+      "options": {
+        "A": "68",
+        "B": "71",
+        "C": "72",
+        "D": "70"
+      }
+    },
+    {
+      "n": 29,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a row of students, Paresh is 14th from the left and Dilip is 16th from the right. When Paresh and Dilip interchange their positions, Dilip becomes 21st from the right. What is the number of students in the row?",
+      "options": {
+        "A": "33",
+        "B": "34",
+        "C": "35",
+        "D": "36"
+      }
+    },
+    {
+      "n": 30,
+      "page": 36,
+      "section": "Main",
+      "stem": "X is 7th from the top while Y is 16th from the bottom in the class ranking. If they interchange their positions, then X becomes 21st from the top. What will be the position of Y from the bottom?",
+      "options": {
+        "A": "16th",
+        "B": "29th",
+        "C": "21th",
+        "D": "30th"
+      }
+    },
+    {
+      "n": 31,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a class, Sanjay is ranked 11th from the top and 27th from the bottom. Can you tell how many students are there in the class?",
+      "options": {
+        "A": "40",
+        "B": "32",
+        "C": "37",
+        "D": "35"
+      }
+    },
+    {
+      "n": 32,
+      "page": 36,
+      "section": "Main",
+      "stem": "Arun's rank is 17th in a class of 31 students. What is his rank from the last?",
+      "options": {
+        "A": "14th",
+        "B": "15th",
+        "C": "16th",
+        "D": "17th"
+      }
+    },
+    {
+      "n": 33,
+      "page": 36,
+      "section": "Main",
+      "stem": "45 students in a class. Kamla and Arun rank 19th and 23rd from bottom respectively. What will be the position of Kamla and Arun from top respectively?",
+      "options": {
+        "A": "28th and 21st",
+        "B": "26th and 25th",
+        "C": "23rd and 26th",
+        "D": "27th and 23rd"
+      }
+    },
+    {
+      "n": 34,
+      "page": 36,
+      "section": "Main",
+      "stem": "Vinod's rank is 25th in a class of 40 students. What will be his rank from the bottom ?",
+      "options": {
+        "A": "65",
+        "B": "64",
+        "C": "15",
+        "D": "16"
+      }
+    },
+    {
+      "n": 35,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a row, Raju's rank is 16th from left and 10th from right. How many persons are there in a row ?",
+      "options": {
+        "A": "25",
+        "B": "22",
+        "C": "21",
+        "D": "24"
+      }
+    },
+    {
+      "n": 36,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a row, my position is the 6th from either end of a row. How many persons are there in a row ?",
+      "options": {
+        "A": "10",
+        "B": "11",
+        "C": "12",
+        "D": "13"
+      }
+    },
+    {
+      "n": 37,
+      "page": 36,
+      "section": "Main",
+      "stem": "Ram's rank is 8th from top and 28th from bottom. How many students are there in the class ?",
+      "options": {
+        "A": "33",
+        "B": "34",
+        "C": "35",
+        "D": "36"
+      }
+    },
+    {
+      "n": 38,
+      "page": 36,
+      "section": "Main",
+      "stem": "Mohan's qualification in a class: 15th from top and 50th from bottom. How many students are there in a class ?",
+      "options": {
+        "A": "65",
+        "B": "64",
+        "C": "66",
+        "D": "67"
+      }
+    },
+    {
+      "n": 39,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a row, Ram is 16th from left and 15th from right. How many boys should be added to the row such that there are 50 persons in a row ?",
+      "options": {
+        "A": "19",
+        "B": "20",
+        "C": "21",
+        "D": "None of these"
+      }
+    },
+    {
+      "n": 40,
+      "page": 36,
+      "section": "Main",
+      "stem": "40 children in a class, Sunetra's rank is 8th from top. Sujeet is 5 ranks below Sunetra. What is the position of Sujeet from bottom ?",
+      "options": {
+        "A": "27th",
+        "B": "29th",
+        "C": "28th",
+        "D": "26th"
+      }
+    },
+    {
+      "n": 41,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a class of 20 students, Alisha's rank is 15th from the top. Manav is 4 ranks above Alisha. What is Manav's rank from the bottom ?",
+      "options": {
+        "A": "10th",
+        "B": "11th",
+        "C": "9th",
+        "D": "12th"
+      }
+    },
+    {
+      "n": 42,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a class of 41 students, Saurabh's rank is 8th from top. Mamta is 7 rank below Saurabh. What is Mamta's rank from bottom ?",
+      "options": {
+        "A": "27th",
+        "B": "29th",
+        "C": "28th",
+        "D": "26th"
+      }
+    },
+    {
+      "n": 43,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a row, Raman's rank is 15th from beginning and 11th from end. How many persons are there in a row ?",
+      "options": {
+        "A": "25",
+        "B": "26",
+        "C": "27",
+        "D": "24"
+      }
+    },
+    {
+      "n": 44,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a class of 83 students, Vijay's rank is 54th from top. What is the rank of Vijay from bottom ?",
+      "options": {
+        "A": "30",
+        "B": "28",
+        "C": "31",
+        "D": "29"
+      }
+    },
+    {
+      "n": 45,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a row of 21 students facing North direction, Nitin's rank is 3rd from right of Shikha. Shikha is 9th from right end. What is the position of Nitin from left end ?",
+      "options": {
+        "A": "12th",
+        "B": "15th",
+        "C": "16th",
+        "D": "6th"
+      }
+    },
+    {
+      "n": 46,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a queue, the position of A from top is 7th and the position of B from top is 15th and 21st from bottom. Now find the position of A from bottom.",
+      "options": {
+        "A": "29th",
+        "B": "30th",
+        "C": "28th",
+        "D": "31st"
+      }
+    },
+    {
+      "n": 47,
+      "page": 36,
+      "section": "Main",
+      "stem": "In a class of 39 students, Suresh is 7 rank ahead of Ashok's rank. If Ashok's rank is 17th from the end, then what will be the rank of Suresh from beginning ?",
+      "options": {
+        "A": "16th",
+        "B": "23rd",
+        "C": "24th",
+        "D": "15th"
+      }
+    },
+    {
+      "n": 48,
+      "page": 37,
+      "section": "Main",
+      "stem": "There are 35 students in a class. Suman ranks third among the girls in the class. Amit ranks 5th among the boys in the class. Suman is one rank below Amit in the class. No two students hold the same rank in the class. What is Amit's rank in the class ?",
+      "options": {
+        "A": "7th",
+        "B": "5th",
+        "C": "8th",
+        "D": "9th"
+      }
+    },
+    {
+      "n": 49,
+      "page": 37,
+      "section": "Main",
+      "stem": "In a row of 21 girls, if Monika shifted 4 places to the right she became 12th from the left end. What was her original position from the right end of the row ?",
+      "options": {
+        "A": "10th",
+        "B": "14th",
+        "C": "11th",
+        "D": "12th"
+      }
+    },
+    {
+      "n": 50,
+      "page": 37,
+      "section": "Main",
+      "stem": "In a queue of students, Prabhu's rank is 9th from left and Padma's rank is 12th from right. In the same queue, Ram's rank is 12th from left and Radha's rank is 9th from right. How many students are there in between Prabhu and Ram ?",
+      "options": {
+        "A": "18",
+        "B": "21",
+        "C": "24",
+        "D": "None of these"
+      }
+    }
+  ]
+}

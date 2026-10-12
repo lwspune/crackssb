@@ -15,6 +15,7 @@ import {
   iterate,
   lettersShort,
   minimalPeriod,
+  ordinal,
   normalizeLetters,
   optionLetters,
   parseNumbers,
@@ -168,6 +169,12 @@ describe('alphabet positions', () => {
   it('counts the letters strictly between two', () => {
     expect(between(abc, 'R', 'C')).toBe(14);
     expect(between(abc, 'A', 'B')).toBe(0);
+  });
+});
+
+describe('ordinal', () => {
+  it('writes a rank as the book prints it', () => {
+    expect([1, 2, 3, 4, 11, 12, 13, 21, 22, 23, 28, 31].map(ordinal)).toEqual(['1st', '2nd', '3rd', '4th', '11th', '12th', '13th', '21st', '22nd', '23rd', '28th', '31st']);
   });
 });
 
