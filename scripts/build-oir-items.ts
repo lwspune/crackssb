@@ -24,6 +24,7 @@ import { AGRAWAL_CH03_CODING_DECODING } from '../src/items/oir/agrawal-ch03-codi
 import { AGRAWAL_CH04_WORD_FORMATION } from '../src/items/oir/agrawal-ch04-word-formation.ts';
 import { AGRAWAL_CH05_LOGICAL_SEQUENCE } from '../src/items/oir/agrawal-ch05-logical-sequence.ts';
 import { AGRAWAL_CH06_SEQUENCE_TEST } from '../src/items/oir/agrawal-ch06-sequence-test.ts';
+import { AGRAWAL_CH07_BLOOD_RELATION } from '../src/items/oir/agrawal-ch07-blood-relation.ts';
 import { AGRAWAL_CH08_DIRECTIONS } from '../src/items/oir/agrawal-ch08-directions.ts';
 import { AGRAWAL_CH09_RANKING } from '../src/items/oir/agrawal-ch09-ranking.ts';
 import { AGRAWAL_CH11_SERIES } from '../src/items/oir/agrawal-ch11-series.ts';
@@ -48,6 +49,7 @@ const CHAPTERS: { file: string; key: Readonly<Record<number, KeyEntry>>; reasoni
   { file: 'content/oir/agrawal-examcart/ch04-word-formation.source.json', key: AGRAWAL_CH04_WORD_FORMATION, reasoningType: 'word_formation', idPrefix: 'oir-agx-ch04' },
   { file: 'content/oir/agrawal-examcart/ch05-logical-sequence.source.json', key: AGRAWAL_CH05_LOGICAL_SEQUENCE, reasoningType: 'word_order', idPrefix: 'oir-agx-ch05' },
   { file: 'content/oir/agrawal-examcart/ch06-sequence-test.source.json', key: AGRAWAL_CH06_SEQUENCE_TEST, reasoningType: 'alphabet', idPrefix: 'oir-agx-ch06' },
+  { file: 'content/oir/agrawal-examcart/ch07-blood-relation.source.json', key: AGRAWAL_CH07_BLOOD_RELATION, reasoningType: 'blood_relation', idPrefix: 'oir-agx-ch07' },
   { file: 'content/oir/agrawal-examcart/ch08-directions.source.json', key: AGRAWAL_CH08_DIRECTIONS, reasoningType: 'directions', idPrefix: 'oir-agx-ch08' },
   { file: 'content/oir/agrawal-examcart/ch09-ranking.source.json', key: AGRAWAL_CH09_RANKING, reasoningType: 'ranking', idPrefix: 'oir-agx-ch09' },
   { file: 'content/oir/agrawal-examcart/ch11-series.source.json', key: AGRAWAL_CH11_SERIES, reasoningType: 'series', idPrefix: 'oir-agx-ch11' },

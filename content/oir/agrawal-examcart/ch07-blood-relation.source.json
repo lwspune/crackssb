@@ -1,0 +1,1210 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSB OIR PAGE NO. 1-44 (phone photos of printed pages 1-44)",
+  "chapter": 7,
+  "title": "Blood Relation",
+  "pages": [
+    24,
+    28
+  ],
+  "transcribed": "2026-10-12",
+  "note": "Verbatim, typos included (\"Meria\"/\"Maria\", \"Mathernal\", \"Son-in-low\", \"doughter\", \"Patemal\", \"materanal\"). Never edited: corrections live in src/items/oir/. The symbol definitions of Type-3 are set one per line. The chapter prints Type headings but no direction (text null). A book name that matches a real candidate's name is replaced with a neutral one (D21, D27); such questions carry \"renamed\": true and the original is not recorded.",
+  "directions": [
+    {
+      "section": "Type-1",
+      "printed": "Type-1",
+      "text": null
+    },
+    {
+      "section": "Type-2",
+      "printed": "Type-2",
+      "text": null
+    },
+    {
+      "section": "Type-3",
+      "printed": "Type-3",
+      "text": null
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Looking at a photograph, Meria said \"She is the only daughter of my mother's mother\". How is Maria related to the person seen in the photograph ?",
+      "options": {
+        "A": "Sister",
+        "B": "Bua",
+        "C": "Daughter",
+        "D": "Mausi"
+      }
+    },
+    {
+      "n": 2,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Looking at photograph, Anjali said, \"He is the only son of my father.\" How is the man in the photograph related to Anjali",
+      "options": {
+        "A": "Son",
+        "B": "Brother",
+        "C": "Paternal Grandfather",
+        "D": "Mathernal Grandfather"
+      }
+    },
+    {
+      "n": 3,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing to the photograph of a man, Rajni said, \"He is the brother of the daughter of the wife of my husband.\" How is the man related to Rajni?",
+      "options": {
+        "A": "Brother",
+        "B": "Son",
+        "C": "Father's father",
+        "D": "Father"
+      }
+    },
+    {
+      "n": 4,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing to a lady in a photograph, Vijay said, \"Her sister's mother is the sister of my father's daughter.\" How is the lady related to Vijay?",
+      "options": {
+        "A": "Mother",
+        "B": "Sister's daughter",
+        "C": "Daughter",
+        "D": "Sister"
+      }
+    },
+    {
+      "n": 5,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing to a picture of Rajiv, a lady Neena said. \"His sister's father is the only son of my father-in-law.\" How is Neena related to Rajiv?",
+      "options": {
+        "A": "Paternal Grandmother",
+        "B": "Sister",
+        "C": "Granddaughter",
+        "D": "Mother"
+      }
+    },
+    {
+      "n": 6,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing to a photograph of a lady, Kanika said, \"Her daughter-in-law is the wife of the only son of my son's grandfather.\" How is the woman in the picture related to Kanika?",
+      "options": {
+        "A": "mother-in-law",
+        "B": "mother",
+        "C": "paternal aunt",
+        "D": "sister-in-law/sister-in-law"
+      }
+    },
+    {
+      "n": 7,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing to the photograph of a girl, Raghav said, 'she is my father's mother's daughter's only brother's daughter.\" How is Raghav's father related to that girl's mother?",
+      "options": {
+        "A": "Maternal Uncle",
+        "B": "Father",
+        "C": "Husband",
+        "D": "Son"
+      }
+    },
+    {
+      "n": 8,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing to the picture of Sanchi, Nitin Said, \"Her mother's father's son's wife is my mother-in-law's only daughter's. How is Nitin related to Sanchi's mother ?",
+      "options": {
+        "A": "Brother",
+        "B": "Grandson",
+        "C": "Paternal Uncle",
+        "D": "Grandfather"
+      }
+    },
+    {
+      "n": 9,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing to Manish. Ajay said to a woman, \"He is the son of the father of my daughter's mother.\" How is Ajay related to Manish?",
+      "options": {
+        "A": "Brother-in-law",
+        "B": "Uncle",
+        "C": "Father-in-law",
+        "D": "Brother"
+      }
+    },
+    {
+      "n": 10,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing towards Reena, Abhay said, \"I am the only son of her mother's son.\"How is Reena related to Abhay?",
+      "options": {
+        "A": "Mother",
+        "B": "Father's sister's son",
+        "C": "Brother's son",
+        "D": "Father's sister"
+      }
+    },
+    {
+      "n": 11,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing to Rakesh, Benkat said, \"He is the only son of my father's only son.\" How is Benkat related to Rakesh?",
+      "options": {
+        "A": "Father",
+        "B": "Grandfather",
+        "C": "Brother",
+        "D": "Cousin"
+      },
+      "renamed": true
+    },
+    {
+      "n": 12,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing to Aarti, Sukanya said, \"She is the daughter of the husband of my husband's mother-in-law. How is Aarti related to Sukanya?\"",
+      "options": {
+        "A": "Aunt",
+        "B": "Sister-in-law",
+        "C": "Sister",
+        "D": "Mother"
+      }
+    },
+    {
+      "n": 13,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing to a woman, Mohan said, \"She is the sister of the daughter of the son of my father's wife.\" How is that woman related to Mohan?",
+      "options": {
+        "A": "Daughter",
+        "B": "Sister",
+        "C": "Niece",
+        "D": "Daughter or niece"
+      },
+      "renamed": true
+    },
+    {
+      "n": 14,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing towards a photo of a lady, Priya said, \"She is my brother's only son's mother\". How is that lady related to Priya?",
+      "options": {
+        "A": "Brother's wife",
+        "B": "Mother",
+        "C": "Sister",
+        "D": "Daughter in law"
+      }
+    },
+    {
+      "n": 15,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Bharti is the sister of Chavi. Avni is the mother of Bharti. Chavi is the wife of Dhruv. Dhruv is the father of Esha. Who is the maternal grandmother of Esha?",
+      "options": {
+        "A": "Avni",
+        "B": "Bharti",
+        "C": "Dhruv",
+        "D": "Chavi"
+      }
+    },
+    {
+      "n": 16,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing to a woman on the stage, Noor said, \"She is the wife of the son-in-law of the wife of my father.\" How is the woman related to Noor?",
+      "options": {
+        "A": "Sister",
+        "B": "Sister-in-law",
+        "C": "Daughter",
+        "D": "Mother"
+      }
+    },
+    {
+      "n": 17,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing towards Kapil, Aditya said, \"His father is the husband of my father's father's daughter\". How is Aditya's father related to Kapil's mother?",
+      "options": {
+        "A": "Son",
+        "B": "Brother",
+        "C": "Father",
+        "D": "Husband"
+      }
+    },
+    {
+      "n": 18,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing to Rehan, Rukhshana said, \"His paternal grandfather's daughter-in-law is my daughter's paternal grandmother\". How is Rukhshana related to Rehan ?",
+      "options": {
+        "A": "Mother",
+        "B": "Sister",
+        "C": "Daughter",
+        "D": "Wife"
+      }
+    },
+    {
+      "n": 19,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Pointing to a woman, Param(a man) said, \"She is the mother-in-law of the mother-in-law of the daughter in law of my father.\" How is Param related to the woman ?",
+      "options": {
+        "A": "Father",
+        "B": "Grandson",
+        "C": "Brother",
+        "D": "Son"
+      }
+    },
+    {
+      "n": 20,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "While introducing Meera to a group of people, Rajeev said, \"She is the sister of the son of my brother's wife.\" How is Meera related to Rajeev ?",
+      "options": {
+        "A": "Daughter",
+        "B": "Sister",
+        "C": "Niece",
+        "D": "Cousin"
+      }
+    },
+    {
+      "n": 21,
+      "page": 24,
+      "section": "Type-1",
+      "stem": "Sumona introducing a lady, she is the sister of the father of the daughter of the only son of the wife of my father-in-law. How is Sumona's father-in-law related to that woman?",
+      "options": {
+        "A": "Father",
+        "B": "Father-in-law",
+        "C": "Brother-in-law / brother-in-law",
+        "D": "Uncle"
+      }
+    },
+    {
+      "n": 22,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Introducing a man, a woman said, \"His wife is the only daughter of my mother.\" What is the relation of the woman to the man?",
+      "options": {
+        "A": "Sister-in-law",
+        "B": "Wife",
+        "C": "Aunt",
+        "D": "Mother-in-law"
+      }
+    },
+    {
+      "n": 23,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "A man said to a lady, \"Your mother's father-in-law is my father and I am the only son\". How is that man related to that lady?",
+      "options": {
+        "A": "Father",
+        "B": "Son",
+        "C": "Father-in-law",
+        "D": "Brother"
+      }
+    },
+    {
+      "n": 24,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Introducing a boy, Rama said, 'His sister's father is the only grandson of my grandfather. how is Rama related to the boy?",
+      "options": {
+        "A": "Sister",
+        "B": "Aunt",
+        "C": "Daughter",
+        "D": "Mother"
+      }
+    },
+    {
+      "n": 25,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Anil introduces Mohan saying that he is the husband of my father's father's grand daughter. How is Mohan related to Anil?",
+      "options": {
+        "A": "Son-in-low",
+        "B": "Brother",
+        "C": "Brother-in-law",
+        "D": "None of these"
+      }
+    },
+    {
+      "n": 26,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Pointing to a woman, Varuna said. My wife's brother is the son of her only brother. How is the woman related to Varuna.",
+      "options": {
+        "A": "Mother in low",
+        "B": "her aunt",
+        "C": "Varun's father in law's sister",
+        "D": "Mother"
+      }
+    },
+    {
+      "n": 27,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Pointing to Neha's picture, Nikhil said, \"The wife of her mother's father's son is my Mother-in-law's only daughter\". How is Nikhil related to Neha's mother ?",
+      "options": {
+        "A": "Grandfather",
+        "B": "Brother",
+        "C": "Uncle",
+        "D": "Maternal uncle"
+      }
+    },
+    {
+      "n": 28,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Sandhya points towards Ashok and says, \"He is the son of the only child of my grandmother.\" How is Ashok related to Sandhya?",
+      "options": {
+        "A": "Cousin",
+        "B": "Brother-in-law",
+        "C": "Brother",
+        "D": "Uncle"
+      }
+    },
+    {
+      "n": 29,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Pointing towards a man. Vishakha said, \"He is the only son of my husband's father-in-law\". How is the man related to Vishakha ?",
+      "options": {
+        "A": "Husband",
+        "B": "Uncle",
+        "C": "Brother-in-law",
+        "D": "Brother"
+      }
+    },
+    {
+      "n": 30,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Reena said \"The woman walking on the road is my father's wife\". How is the woman related to Reena ?",
+      "options": {
+        "A": "Sister",
+        "B": "Aunt",
+        "C": "Mother",
+        "D": "Daughter"
+      }
+    },
+    {
+      "n": 31,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "A woman introduced a boy-said. \"His uncle's (mama) uncle (mama)-my uncle (mama) are brothers of each other\" What is the relation of the woman with that boy?",
+      "options": {
+        "A": "Aunt",
+        "B": "Mother",
+        "C": "Grandmother",
+        "D": "Sister-in-law"
+      }
+    },
+    {
+      "n": 32,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Abhishek pointed a girl & said. \"She is the daughter of my father's only child\" How Abhishek's wife is related to that girl ?",
+      "options": {
+        "A": "Mother",
+        "B": "Sister",
+        "C": "Aunt",
+        "D": "Daughter"
+      }
+    },
+    {
+      "n": 33,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Mrs. Dixit meets a man at a marriage party who is the brother of the sister of her husband. How is the man related to Mrs. Dixit?",
+      "options": {
+        "A": "Father",
+        "B": "Father-in-law",
+        "C": "Cousin",
+        "D": "Brother-in-law"
+      }
+    },
+    {
+      "n": 34,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Pointing to a photograph, a man said,\"I have no brother and that man's father is my father's son\". Whose photograph was it?",
+      "options": {
+        "A": "His son",
+        "B": "His own",
+        "C": "His Father",
+        "D": "His nephew"
+      }
+    },
+    {
+      "n": 35,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Pointing to a woman, a man said, \"Her father is the only son of my father\". How is the man related to woman?",
+      "options": {
+        "A": "Brother",
+        "B": "Grand father",
+        "C": "Father",
+        "D": "Son"
+      }
+    },
+    {
+      "n": 36,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Pointing towars a boy, Veena said, \"He is the son of only son of my grandfather\". How is that boy related to Veena?",
+      "options": {
+        "A": "Uncle",
+        "B": "Brother",
+        "C": "Cousin",
+        "D": "Data inadequate"
+      }
+    },
+    {
+      "n": 37,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Arun said, \"The girl is the wife of the grandson of my mother\". Who is Arun to the girl?",
+      "options": {
+        "A": "Father",
+        "B": "Grandfather",
+        "C": "Husband",
+        "D": "Father-in-law"
+      }
+    },
+    {
+      "n": 38,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Pointing to man on stage, Rita said, \"He is the brother of the daughter of wife of my husband\". How is the man on the stage related to Rita?",
+      "options": {
+        "A": "Son",
+        "B": "Husband",
+        "C": "Cousin",
+        "D": "Nephew"
+      }
+    },
+    {
+      "n": 39,
+      "page": 25,
+      "section": "Type-1",
+      "stem": "Gaurav said to Tarun, \"That boy playing with the football is the younger of the two brothers of the daughter of my father's wife\". How is the boy playing football related to Gaurav ?",
+      "options": {
+        "A": "Son",
+        "B": "Brother",
+        "C": "Cousin",
+        "D": "Brother-in-law"
+      }
+    },
+    {
+      "n": 40,
+      "page": 25,
+      "section": "Type-2",
+      "stem": "P is the mother of Q. Q is the sister of R. R is the brother of S. S is the husband of T. T is the sister of U. U is the wife of V. How many female members are in family?",
+      "options": {
+        "A": "4",
+        "B": "2",
+        "C": "3",
+        "D": "1"
+      }
+    },
+    {
+      "n": 41,
+      "page": 25,
+      "section": "Type-2",
+      "stem": "In a family there are 7 members, X and Y are a married couple, X is the father of L, M is the wife of L. C is the brother of L, C has one son O, P is the sister of O. How will C related to P?",
+      "options": {
+        "A": "Father's father",
+        "B": "Father's brother",
+        "C": "Father",
+        "D": "Son"
+      }
+    },
+    {
+      "n": 42,
+      "page": 25,
+      "section": "Type-2",
+      "stem": "X and Z are sisters. Y is the brother of Z. S is the daughter of Z. T is the brother of S.T is married to U. How is Y related to S?",
+      "options": {
+        "A": "Mother's brother",
+        "B": "Mother's father",
+        "C": "Brother",
+        "D": "Father"
+      }
+    },
+    {
+      "n": 43,
+      "page": 25,
+      "section": "Type-2",
+      "stem": "A is married to Z. Z has 3 children L, M and N. Z is not the father of the children. P is the mother of A. L is the husband of D. M has 2 daughters H and J. How is Z related to P?",
+      "options": {
+        "A": "Mother",
+        "B": "Son",
+        "C": "Daughter in law",
+        "D": "Daughter"
+      }
+    },
+    {
+      "n": 44,
+      "page": 25,
+      "section": "Type-2",
+      "stem": "Rajpal and Rampal are two brothers. Sunita is the sister-in-law of Rajpal, Raghuvir, is the father Rampal of Sunita. Sunita, is the only sister of Vikram. Harsh, is only son of Sunita. What's relation of with Harsh?",
+      "options": {
+        "A": "Father",
+        "B": "Uncle",
+        "C": "Grandfather",
+        "D": "Maternal Uncle"
+      }
+    },
+    {
+      "n": 45,
+      "page": 25,
+      "section": "Type-2",
+      "stem": "A is the son of B. B is the son of C. D is the wife of C. E is the daughter of C. How is A related to E?",
+      "options": {
+        "A": "Brother",
+        "B": "Brother's son",
+        "C": "Sister's son",
+        "D": "Son"
+      }
+    },
+    {
+      "n": 46,
+      "page": 25,
+      "section": "Type-2",
+      "stem": "A is the mother of C. D and E are the brothers of G. G is the father of C. H is the son of A. How H related to A?",
+      "options": {
+        "A": "Father",
+        "B": "Brother",
+        "C": "Husband's brother's son",
+        "D": "Son"
+      }
+    },
+    {
+      "n": 47,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "A is the son of C, but C is not the mother of A. B is the sister of A. C and D are a married couple. E is the mother of C. Who is the mother of A?",
+      "options": {
+        "A": "C",
+        "B": "B",
+        "C": "D",
+        "D": "E"
+      }
+    },
+    {
+      "n": 48,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "A is the father of B. B is the daughter of C. D is brother of B. N is the sister of C. How is B related to N?",
+      "options": {
+        "A": "Daughter",
+        "B": "Niece",
+        "C": "Mother",
+        "D": "Sister"
+      }
+    },
+    {
+      "n": 49,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "A is the husband of B. D is the only son of C, who is the brother of E. B is the daughter-in-law of F, whose wife is predeceased. C is the son of F. How many male members are there in the family?",
+      "options": {
+        "A": "5",
+        "B": "4",
+        "C": "3",
+        "D": "2"
+      }
+    },
+    {
+      "n": 50,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "If H is the daughter of R, R is the father of S, S is the son of T, T is the daughter of N, then how is H related to N?",
+      "options": {
+        "A": "Daughter-in-law",
+        "B": "Daughter",
+        "C": "Daughter's daughter",
+        "D": "Niece"
+      }
+    },
+    {
+      "n": 51,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "M is the brother of N, L is the father of M, N is the sister of O. O is the daughter of P. How is P related to N ?",
+      "options": {
+        "A": "Sister",
+        "B": "Maternal Aunt",
+        "C": "Mother",
+        "D": "Paternal Grandmother"
+      }
+    },
+    {
+      "n": 52,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "Q is the sister of R. P is the father of Q. S is the son of T. R is the brother of S. How is T related to P?",
+      "options": {
+        "A": "Niece",
+        "B": "Daughter",
+        "C": "Wife",
+        "D": "Daughter in law"
+      }
+    },
+    {
+      "n": 53,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "N is the brother of Y and Y is the sister of B. B is the wife of Z and C is the mother of Y. How Z is related to C?",
+      "options": {
+        "A": "Son-in-law",
+        "B": "Maternal Uncle",
+        "C": "Sister",
+        "D": "Daughter"
+      }
+    },
+    {
+      "n": 54,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "W is the brother of X. V is the father of W, X is the husband of Z. Z is the sister of A. Who is the father in law of Z?",
+      "options": {
+        "A": "V",
+        "B": "X",
+        "C": "W",
+        "D": "A"
+      }
+    },
+    {
+      "n": 55,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "Vineet is the husband of Antima. Dev is the brother of Kusha. Shalini is the mother of Kusha's mother. Dev is the son of Vineet. How is Antima related to Shalini?",
+      "options": {
+        "A": "Sister",
+        "B": "Maternal aunt",
+        "C": "Daughter",
+        "D": "Mother"
+      }
+    },
+    {
+      "n": 56,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "Asmit's wife is Reena and Rani's husband is Aditya. Rani's father-in-law is the paternal grandfather of Reena's only daughter Sia. How is Asmit related to Aditya ?",
+      "options": {
+        "A": "Brother-in-law",
+        "B": "Uncle",
+        "C": "Brother",
+        "D": "Cousin"
+      }
+    },
+    {
+      "n": 57,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "B and D are cousin brothers. A is the father of B and the uncle of C, who is the sister of D. C's mother is married to E, who is the brother of A. How is B related to C's father ?",
+      "options": {
+        "A": "Uncle",
+        "B": "Brother-in-law",
+        "C": "Nephew",
+        "D": "Son"
+      }
+    },
+    {
+      "n": 58,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "If A is the mother of B, X is the father of Y, H is the brother of J, L is the brother of Y's father. B is the sister of L and J is the husband of A, then how is J related to Y?",
+      "options": {
+        "A": "Son-in-law",
+        "B": "Nephew",
+        "C": "Son",
+        "D": "Paternal grandfather"
+      }
+    },
+    {
+      "n": 59,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "Roshani met a man in the market who is the only son of his mother's father's wife. How is the man's wife related to Roshni.",
+      "options": {
+        "A": "Daugther",
+        "B": "Aunt",
+        "C": "Sister",
+        "D": "Mother"
+      }
+    },
+    {
+      "n": 60,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "Preeti is the only sister of Virat. Manoj is the son of Dilip, who is the husband of Maya. Virat is the son of Devansh. Devansh is the father-in-law of Manoj. How is Maya related to Preeti?",
+      "options": {
+        "A": "Mother-in-law",
+        "B": "Daughter-in-law",
+        "C": "Sister-in-law",
+        "D": "Mother"
+      }
+    },
+    {
+      "n": 61,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "R is K's sister. P is K's brother. Q is T's father who is P's brother. H is K's mother. At least how many sons do Q and H have ?",
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "1",
+        "D": "4"
+      }
+    },
+    {
+      "n": 62,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "A is B's sister. C is B's mother. D is C's father. E is D's mother. Then how is A related to D ?",
+      "options": {
+        "A": "Grandfather",
+        "B": "Grandmother",
+        "C": "Daughter",
+        "D": "Grand-daughter"
+      }
+    },
+    {
+      "n": 63,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "If X is the brother of the son of Y's son, how is X related to Y ?",
+      "options": {
+        "A": "Son",
+        "B": "Brother",
+        "C": "Grandson",
+        "D": "Cousin"
+      }
+    },
+    {
+      "n": 64,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "If Maya is the only daughter of Richa's grandmother's brother, how is Maya related to Richa?",
+      "options": {
+        "A": "Niece",
+        "B": "Cousin",
+        "C": "Aunt",
+        "D": "Mother"
+      }
+    },
+    {
+      "n": 65,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "Given that A and B are a married couple. If X and Y are brothers and X is the brother of A. How is Y related to B ?",
+      "options": {
+        "A": "Brother-in-law",
+        "B": "Brother",
+        "C": "Cousin",
+        "D": "None of these."
+      }
+    },
+    {
+      "n": 66,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "A-B are sisters, R-S are brothers, daughter of A is a sister of R, then what is the relation of B with S ?",
+      "options": {
+        "A": "Mother",
+        "B": "Grandmother",
+        "C": "Sister",
+        "D": "Aunt"
+      }
+    },
+    {
+      "n": 67,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "C is a nephew of A's father. D is A's cousin, but not C's brother. How D. is related to C?",
+      "options": {
+        "A": "Father",
+        "B": "Sister",
+        "C": "Mother",
+        "D": "Aunt (Chachi)"
+      }
+    },
+    {
+      "n": 68,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "Amit is the brother of Sonia. Jyoti is the sister of Nikita. Sonia is the daughter of Satish's father. Nikita is the daughter of Kavinder. Jyoti is the mother of Amit. Mukesh is Nikita's only sister's husband. How is satish related to Kavinder?",
+      "options": {
+        "A": "Son",
+        "B": "Brother",
+        "C": "Grandson",
+        "D": "Son-in-law"
+      }
+    },
+    {
+      "n": 69,
+      "page": 26,
+      "section": "Type-2",
+      "stem": "A an B are sisters C and D are brothers A's daughter is D's sister. How is B is related to C?",
+      "options": {
+        "A": "Aunt",
+        "B": "Sister",
+        "C": "Mother",
+        "D": "None of these"
+      }
+    },
+    {
+      "n": 70,
+      "page": 26,
+      "section": "Type-3",
+      "stem": "'I × J' means 'I is the mother of J'\n'I + J' means 'I is the husband of J'\n'I ÷ J' means 'I is the sister of J'\n'I − J' means 'I is the brother of J'\nHow is Q related to Z in the expression 'Q ÷ X + Y × Z'?",
+      "options": {
+        "A": "Wife's sister",
+        "B": "Daughter",
+        "C": "Wife",
+        "D": "Father's sister"
+      }
+    },
+    {
+      "n": 71,
+      "page": 26,
+      "section": "Type-3",
+      "stem": "If A + B means A is the wife of B, A × B means A is the father of B, A ÷ B means A is the mother of B. A $ B means A is the brother of B and A − B means A is the sister of B.\nIf P ÷ D $ B + H × T − M, then how is P related to H?",
+      "options": {
+        "A": "Mother",
+        "B": "Wife's sister",
+        "C": "Wife's mother",
+        "D": "Sister"
+      }
+    },
+    {
+      "n": 72,
+      "page": 26,
+      "section": "Type-3",
+      "stem": "If A + B means A is the wife of B, A × B means A is the father of B, A ÷ B means A is the mother of B, A $ B means A is the brother of B and A − B means A is the sister of B.\nIf Z − T ÷ S × Y + H $ B, then how is S related to H?",
+      "options": {
+        "A": "Wife's mother",
+        "B": "Wife's father",
+        "C": "Wife's brother",
+        "D": "Wife's sister"
+      }
+    },
+    {
+      "n": 73,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "'A + B' means 'A is the brother of B'.\n'A − B' means 'A is the wife of B'.\n'A × B' means 'A is the son of B'.\n'A ÷ B' means 'A is the husband of B'.\nIf P + Q − S + R × L ÷ M, then which of the following statements is correct?",
+      "options": {
+        "A": "P is S's wife's brother",
+        "B": "P is the brother of S.",
+        "C": "Q is sister of M.",
+        "D": "L is the father of P"
+      }
+    },
+    {
+      "n": 74,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "In a certain code language,\n'A + B' means 'A is the mother of B'\n'A − B' means 'A is the father of B',\n'A × B' means 'A is the brother of B' and\n'A & B' means 'A is the sister of B'.\nHow is Q related to N if N − D × P + Q & C ?",
+      "options": {
+        "A": "Daughter",
+        "B": "Sister",
+        "C": "Sister's daughter",
+        "D": "Daughter's daughter"
+      }
+    },
+    {
+      "n": 75,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "In a certain code language,\n'A + B' means 'A is the brother of B',\n'A − B' means 'A is the mother of B',\n'A × B' means 'A is the husband of B', and\n'A ÷ B' means 'A is the sister of B',\nIf A × G − T − N ÷ D + B, then which of the following statements is not correct ?",
+      "options": {
+        "A": "A is T's father",
+        "B": "D is T's son",
+        "C": "A is maternal grandfather of N",
+        "D": "G is the grandmother of B"
+      }
+    },
+    {
+      "n": 76,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "'A + B' means 'B is the father of A'\n'A @ B' means 'B is the brother of A'\n'A $ B' means 'B is the husband of A'\n'A & B' means 'B is the wife of A'\nIf A @ B + C & D @ E, then how is E related to A?",
+      "options": {
+        "A": "Son",
+        "B": "Mother's brother",
+        "C": "Husband",
+        "D": "Brother"
+      }
+    },
+    {
+      "n": 77,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "'A # B' means 'A is the brother of B'.\n'A @ B' means 'A is the daughter of B'.\n'A & B' means 'A is the husband of B'.\n'A % B' means 'A is the wife of B'.\n'A * B' means 'A is the son of B'.\nIf A & D @ Q * B * K how is D, related to K?",
+      "options": {
+        "A": "Granddaughter",
+        "B": "Grandson",
+        "C": "Great grand daughter",
+        "D": "Daughter"
+      }
+    },
+    {
+      "n": 78,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "D $ E means 'D is the daughter of E'\nD @ E means 'D is the mother of E'\nD + E means 'D is the father of E'\nD * E means 'D is the husband of E'\nIf P * T $ X + Z, then how is P related to Z?",
+      "options": {
+        "A": "Sister's husband",
+        "B": "Daughter",
+        "C": "Paternal uncle",
+        "D": "Sister"
+      }
+    },
+    {
+      "n": 79,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "'A @ B' means 'A is the sister of B'.\n'A & B' means 'A is the brother of B'.\n'A # B' means 'A is the wife of B'.\n'A ^ B' means 'A is the mother of B'.\n'A + B' means 'A is the father of B'.\nIf A & C + E ^ G # I & K + M @ O then which of the following Statements is NOT correct ?",
+      "options": {
+        "A": "M is the daughter of K.",
+        "B": "O is the daughter of K.",
+        "C": "K is the father of O.",
+        "D": "C is the maternal grandfather of G."
+      }
+    },
+    {
+      "n": 80,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "'A + B' means 'A is the brother of B'.\n'A − B' means 'A is the wife of B'.\n'A × B' means 'A is the son of B'.\n'A ÷ B' means 'A is the husband of B'.\nIf P + Q − S + R × L ÷ M, then which of the following statements is not correct ?",
+      "options": {
+        "A": "P is the brother of S's wife.",
+        "B": "Q is the wife of R's brother.",
+        "C": "M is the mother of R.",
+        "D": "M is the sister of Q."
+      }
+    },
+    {
+      "n": 81,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "In a certain code language :\n'A + B' means 'A is the sister of B'.\n'A − B' means 'A is the father of B'\n'A × B' means 'A is the brother of B'.\nHow is R related to S if Q + R − P × N − S ?",
+      "options": {
+        "A": "Father's brother",
+        "B": "Brother",
+        "C": "Father",
+        "D": "Father's father"
+      }
+    },
+    {
+      "n": 82,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "'A + B' means 'B is the father of A'\n'A − B' means 'B is the mother of A'\n'A @ B' means 'B, is the brother of A'\n'A * B' means 'B, is the son of A'\nIfA * B + C @ D − E, then how is E related to A ?",
+      "options": {
+        "A": "Mother-in-law",
+        "B": "Sister",
+        "C": "Mother",
+        "D": "Brother's wife"
+      }
+    },
+    {
+      "n": 83,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "In a certain code language :\n'A + B' means 'A is the mother of B',\n'A − B' means 'A is the father of B',\n'A × B' means 'A is the brother of B', and\n'A & B' means 'A is the daughter of B'.\nHow is N related to R if N & P − Q + T × R ?",
+      "options": {
+        "A": "Mother's mother",
+        "B": "Mother",
+        "C": "Father's mother",
+        "D": "Mother's sister]"
+      }
+    },
+    {
+      "n": 84,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "A @ B means 'A is the sister of B'.\nA & B means 'A is the brother of B'.\nA # B means 'A is the wife of B'.\nA ^ B means 'A is the mother of B'.\nA + B means 'A is the father of B'.\nIf U ^ Q ^ R @ N & C ^ I @ J @ A, then which of the following statements is NOT correct ?",
+      "options": {
+        "A": "J is the daughter of C",
+        "B": "C is the daughter of Q.",
+        "C": "Q is the maternal grandfather of I.",
+        "D": "Q is the mother of N"
+      }
+    },
+    {
+      "n": 85,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "'A − B' means 'B is the mother of A'\n'A # B' means 'B is the sister of A'\n'A $ B' means 'B is the husband of A'\nIf A − B # C − D $ E, then how is E related to A ?",
+      "options": {
+        "A": "Mother's Brother",
+        "B": "Mother",
+        "C": "Husband",
+        "D": "Father"
+      }
+    },
+    {
+      "n": 86,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "A # B means 'A is the brother of B'.\nA @ B means 'A is the daughter of B'.\nA & B means 'A is the husband of B'.\nA % B means 'A is the wife of B'.\nA * B means 'A is the son of B'.\nIf P @ M % H # A @ G & B, then how is B related to P ?",
+      "options": {
+        "A": "Wife's mother",
+        "B": "Mother",
+        "C": "Sister",
+        "D": "Father's mother"
+      }
+    },
+    {
+      "n": 87,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "'F − G' means 'F is the brother of G'.\n'F * G' means 'F is the sister of G'.\n'F + G' means 'F is the father of G'.\n'F $ G' means 'F is the mother of G'.\nIf 'H $ I + J − K', then how is H related to K ?",
+      "options": {
+        "A": "Sister",
+        "B": "Patemal grandfather",
+        "C": "Paternal grandmother",
+        "D": "Father"
+      }
+    },
+    {
+      "n": 88,
+      "page": 27,
+      "section": "Type-3",
+      "stem": "P @ Q means 'P, is sister of Q\nP & Q means 'P, is brother of Q\nP # Q means 'P, is mother of Q\nIf A # B @ C & D # E @ F them how is B, related to F?",
+      "options": {
+        "A": "Grandmother",
+        "B": "Brother",
+        "C": "Sister",
+        "D": "Mother's Sister"
+      }
+    },
+    {
+      "n": 89,
+      "page": 28,
+      "section": "Type-3",
+      "stem": "'A @ B' means 'A is the spouse of B'.\n'A & B' means 'A is the father of B'.\n'A # B' means 'A is the mother of B'.\n'A % B' means 'A is the sister of B'.\nIf H @ V & K % Q # F, how is H related to F ?",
+      "options": {
+        "A": "Mother-in-law",
+        "B": "Maternal grandfather",
+        "C": "Maternal grandmother",
+        "D": "Father-in-law."
+      }
+    },
+    {
+      "n": 90,
+      "page": 28,
+      "section": "Type-3",
+      "stem": "'A @ B' means 'A is the son of B'\n'A & B' means 'A is the mother of B'\n'A # B' means 'A is the doughter of B'\nWhich of the following options means 'R is the sister of P'?",
+      "options": {
+        "A": "R @ S & Q # P",
+        "B": "R @ S @ Q # P",
+        "C": "P @ Q & R # S",
+        "D": "P # Q @ R # S"
+      }
+    },
+    {
+      "n": 91,
+      "page": 28,
+      "section": "Type-3",
+      "stem": "'C / D' means 'C, is the sibling of D'.\n'C < D' means 'C, is the husband of D'.\n'C @ D' means 'C, is the father of D'.\n'C + D' means 'C, is the son of D'.\nIf P @ Q + R / S < T how is T related to Q ?",
+      "options": {
+        "A": "Mother's sister's husband",
+        "B": "Mother's mother",
+        "C": "Mother's brother's wife",
+        "D": "Father's wife's sister"
+      }
+    },
+    {
+      "n": 92,
+      "page": 28,
+      "section": "Type-3",
+      "stem": "'A + B' means 'A is the father of B'\n'A − B' means 'A is the wife of B'\n'A × B' means 'A is the brother of B'\n'A ÷ B' means 'A is the daughter of B'\nif 'P − R × Q + S', then which of the following statements is true ?",
+      "options": {
+        "A": "P is the sister-in-law of Q.",
+        "B": "Q is the sister-in-law of P.",
+        "C": "P is the sister-in-law of S.",
+        "D": "P is the sister-in-law of R."
+      }
+    },
+    {
+      "n": 93,
+      "page": 28,
+      "section": "Type-3",
+      "stem": "'A + B' means 'A is the brother of B'.\n'A/B' means 'A is the mother of B'.\n'A ^ B' means 'A is the husband of B'.\n'A % B' means 'A is the sister of B'.\n'A @ B' means 'A is the son of B'.\nIf U ^ V/ W + X% Y, how is U related to Y?",
+      "options": {
+        "A": "Father's brother",
+        "B": "Father",
+        "C": "Son",
+        "D": "Brother"
+      }
+    },
+    {
+      "n": 94,
+      "page": 28,
+      "section": "Type-3",
+      "stem": "'A @ B' means 'A is the sister of B'.\n'A & B' means 'A is the Brother of B'.\n'A # B' means 'A is the Wife of B'.\n'A ^ B' means 'A is the Mother of B'.\n'A + B' means 'A is the Father of B'.\nIf Z & P + N ^ Q # S & V + E @ L then which of the following statement is correct follow",
+      "options": {
+        "A": "Q is the mother of E.",
+        "B": "P is the mother's father of Q.",
+        "C": "N is the mother-in-law of N.",
+        "D": "V is the father of L."
+      }
+    },
+    {
+      "n": 95,
+      "page": 28,
+      "section": "Type-3",
+      "stem": "'A ^ P' means 'A is the husband of P'.\n'A % P' means 'A is the father of P'\n'A = P' means 'A is the sister of P'.\n'A & P' means 'A is the daughter of P'.\nIf F & G = H ^ J, then which of the following is correct.",
+      "options": {
+        "A": "J is the wife of G's brother",
+        "B": "H and F are siblings",
+        "C": "F is the daughter of J",
+        "D": "G is the mother of J"
+      }
+    },
+    {
+      "n": 96,
+      "page": 28,
+      "section": "Type-3",
+      "stem": "'A + B' means 'B is the brother of A'\n'A − B' means 'B is the sister of A'\n'A % B' means 'B is the daughter of A'\n'A & B' means 'B is the wife of A'\nIf A & B % C + D − E, then how is E related to A ?",
+      "options": {
+        "A": "Mother",
+        "B": "Daughter",
+        "C": "Sister",
+        "D": "Wife"
+      }
+    },
+    {
+      "n": 97,
+      "page": 28,
+      "section": "Type-3",
+      "stem": "'A @ B' means 'A is the sister of B'.\n'A & B' means 'A is the brother of B'.\n'A # B' means 'A is the wife of B'.\n'A ^ B' means 'A is the mother of B'.\n'A + B' means 'A is the father of B'.\nIf X + T ^ M # G & C ^ K @ H ^ Q, then which of the following statements is not correct ?",
+      "options": {
+        "A": "X is the materanal grandfather of M",
+        "B": "C is the mother of H.",
+        "C": "G is the father of K.",
+        "D": "G is the son-in-law of T."
+      }
+    },
+    {
+      "n": 98,
+      "page": 28,
+      "section": "Type-3",
+      "stem": "'K % L' means 'K is brother of L', 'K $ L' means 'K is husband of L', 'K@L' means 'K is sister of B', 'K# L' means 'K is the mother of L'.\nHow is H related to M in the expression 'X @ P % T # M $ Y # J @ H'?",
+      "options": {
+        "A": "Brother or sister",
+        "B": "Father",
+        "C": "Uncle",
+        "D": "Son or Daughter"
+      }
+    }
+  ]
+}

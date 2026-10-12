@@ -224,7 +224,13 @@ ch5 p17-21 · ch6 p22-23 · ch7 p24-28 · ch8 p29-34 · ch9 p35-37 · ch10 p38-4
   questions reasoned. Held: Q1-2 (five options, owner's call), Q27 (lake or
   river), Q59 (no list), Q74 (the middle name is not an option). Medium: Q14
   (a cycle has no first step).
-- **Next:** Chapter 7 (Blood Relation, p24-28), then 10, 1, 2.
+- ~~Chapter 7, Blood Relation~~ — done 2026-10-12: 92 of 98 seeded, every key
+  a family tree traced in words (all reasoned; this chapter most needs the book
+  key). Held: Q31, Q44 (garbled), Q61 (two counts asked at once), Q75 (every
+  statement true), Q85 (the answer, grandfather, is not offered), Q94 (two
+  statements true). Medium: Q36 (which grandfather), Q59, Q64. Two names
+  swapped (Q11, Q13; D27).
+- **Next:** Chapter 10 (Seating, p38-40, with the passage field), then 1, 2.
 
 ### Backfill ledger: Chapter 11's test onto the shared chapter suite
 `oir-agrawal-series.test.ts` predates `oir-chapter-suite.ts` and carries its own

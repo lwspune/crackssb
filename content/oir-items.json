@@ -43,6 +43,16 @@
     },
     {
       "source": "agrawal-examcart-oir",
+      "chapter": 7,
+      "title": "Blood Relation",
+      "pages": [
+        24,
+        28
+      ],
+      "file": "content/oir/agrawal-examcart/ch07-blood-relation.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
       "chapter": 8,
       "title": "Directions",
       "pages": [
@@ -72,11 +82,11 @@
       "file": "content/oir/agrawal-examcart/ch11-series.source.json"
     }
   ],
-  "itemCount": 583,
-  "heldCount": 28,
+  "itemCount": 675,
+  "heldCount": 34,
   "confidence": {
-    "high": 563,
-    "medium": 20
+    "high": 652,
+    "medium": 23
   },
   "held": [
     {
@@ -157,6 +167,36 @@
       "source_ref": "ch6 p23 q50",
       "reason": "Reversed, the 10th from the right is J (17th) and the 18th from the right is R (9th); the middle is the 13th, N, which is not an option. In the normal order the answer is M (C), so the print may have dropped the reversal.",
       "lean": "C"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q31",
+      "reason": "\"His uncle's (mama) uncle (mama)-my uncle (mama) are brothers of each other\" cannot be read as one chain; no single relation follows from the print."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q44",
+      "reason": "\"What's relation of with Harsh?\" names no one to relate to Harsh, and \"Raghuvir, is the father Rampal of Sunita\" cannot be read; the question cannot be answered as printed."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q61",
+      "reason": "\"At least how many sons do Q and H have?\" asks two people's counts at once, and T's sex is not given; no single number follows."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q75",
+      "reason": "All four statements follow: A is T's father (G's husband), D is T's son, A is N's maternal grandfather, G is B's grandmother. None is \"not correct\"."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q85",
+      "reason": "B is A's mother; C is B's sister; D is C's mother, so B's mother too; E is D's husband. E is A's maternal grandfather, which is not an option."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p28 q94",
+      "reason": "Two statements follow: P is N's father, so Q's mother's father (B); and V is E's father, so L's father too (D). The question wants one."
     },
     {
       "source": "agrawal-examcart-oir",
@@ -7421,6 +7461,2033 @@
       "source_ref": "ch6 p23 q51",
       "key_basis": "derived",
       "rule": "T is 7 letters from M. The letter 7 from G is N; 7 the other way runs off the start. Reversing the alphabet keeps the distance, so the answer is N either way.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Looking at a photograph, Meria said \"She is the only daughter of my mother's mother\". How is Maria related to the person seen in the photograph ?",
+        "options": {
+          "A": "Sister",
+          "B": "Bua",
+          "C": "Daughter",
+          "D": "Mausi"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q1",
+      "key_basis": "derived",
+      "rule": "The only daughter of her mother's mother is her own mother, so the photograph is of her mother: she is the daughter.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q002",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Looking at photograph, Anjali said, \"He is the only son of my father.\" How is the man in the photograph related to Anjali",
+        "options": {
+          "A": "Son",
+          "B": "Brother",
+          "C": "Paternal Grandfather",
+          "D": "Mathernal Grandfather"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q2",
+      "key_basis": "derived",
+      "rule": "The only son of her father is her brother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to the photograph of a man, Rajni said, \"He is the brother of the daughter of the wife of my husband.\" How is the man related to Rajni?",
+        "options": {
+          "A": "Brother",
+          "B": "Son",
+          "C": "Father's father",
+          "D": "Father"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q3",
+      "key_basis": "derived",
+      "rule": "The wife of her husband is Rajni herself; the brother of her daughter is her son.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to a lady in a photograph, Vijay said, \"Her sister's mother is the sister of my father's daughter.\" How is the lady related to Vijay?",
+        "options": {
+          "A": "Mother",
+          "B": "Sister's daughter",
+          "C": "Daughter",
+          "D": "Sister"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q4",
+      "key_basis": "derived",
+      "rule": "His father's daughter is his sister, and her sister is his other sister. The lady's mother is that sister, so the lady is his sister's daughter.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to a picture of Rajiv, a lady Neena said. \"His sister's father is the only son of my father-in-law.\" How is Neena related to Rajiv?",
+        "options": {
+          "A": "Paternal Grandmother",
+          "B": "Sister",
+          "C": "Granddaughter",
+          "D": "Mother"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q5",
+      "key_basis": "derived",
+      "rule": "The only son of her father-in-law is her husband, who is Rajiv's father. Neena is Rajiv's mother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to a photograph of a lady, Kanika said, \"Her daughter-in-law is the wife of the only son of my son's grandfather.\" How is the woman in the picture related to Kanika?",
+        "options": {
+          "A": "mother-in-law",
+          "B": "mother",
+          "C": "paternal aunt",
+          "D": "sister-in-law/sister-in-law"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q6",
+      "key_basis": "derived",
+      "rule": "Her son's grandfather's only son is her husband, whose wife is Kanika. The lady's daughter-in-law is Kanika, so the lady is her mother-in-law.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q007",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to the photograph of a girl, Raghav said, 'she is my father's mother's daughter's only brother's daughter.\" How is Raghav's father related to that girl's mother?",
+        "options": {
+          "A": "Maternal Uncle",
+          "B": "Father",
+          "C": "Husband",
+          "D": "Son"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q7",
+      "key_basis": "derived",
+      "rule": "His father's mother's daughter is his aunt, whose only brother is his father; the girl is his father's daughter. His father is the girl's mother's husband.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to the picture of Sanchi, Nitin Said, \"Her mother's father's son's wife is my mother-in-law's only daughter's. How is Nitin related to Sanchi's mother ?",
+        "options": {
+          "A": "Brother",
+          "B": "Grandson",
+          "C": "Paternal Uncle",
+          "D": "Grandfather"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q8",
+      "key_basis": "derived",
+      "rule": "His mother-in-law's only daughter is his wife. She is the wife of Sanchi's mother's brother, so Nitin is Sanchi's mother's brother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to Manish. Ajay said to a woman, \"He is the son of the father of my daughter's mother.\" How is Ajay related to Manish?",
+        "options": {
+          "A": "Brother-in-law",
+          "B": "Uncle",
+          "C": "Father-in-law",
+          "D": "Brother"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q9",
+      "key_basis": "derived",
+      "rule": "His daughter's mother is his wife; her father's son is her brother, Manish. Ajay is Manish's brother-in-law.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing towards Reena, Abhay said, \"I am the only son of her mother's son.\"How is Reena related to Abhay?",
+        "options": {
+          "A": "Mother",
+          "B": "Father's sister's son",
+          "C": "Brother's son",
+          "D": "Father's sister"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q10",
+      "key_basis": "derived",
+      "rule": "Reena's mother's son is Reena's brother, and Abhay is his only son. Reena is Abhay's father's sister.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to Rakesh, Benkat said, \"He is the only son of my father's only son.\" How is Benkat related to Rakesh?",
+        "options": {
+          "A": "Father",
+          "B": "Grandfather",
+          "C": "Brother",
+          "D": "Cousin"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q11",
+      "key_basis": "derived",
+      "rule": "His father's only son is Benkat himself, and Rakesh is Benkat's only son. Benkat is the father.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to Aarti, Sukanya said, \"She is the daughter of the husband of my husband's mother-in-law. How is Aarti related to Sukanya?\"",
+        "options": {
+          "A": "Aunt",
+          "B": "Sister-in-law",
+          "C": "Sister",
+          "D": "Mother"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q12",
+      "key_basis": "derived",
+      "rule": "Her husband's mother-in-law is her mother; her mother's husband is her father; his daughter is her sister.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to a woman, Mohan said, \"She is the sister of the daughter of the son of my father's wife.\" How is that woman related to Mohan?",
+        "options": {
+          "A": "Daughter",
+          "B": "Sister",
+          "C": "Niece",
+          "D": "Daughter or niece"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q13",
+      "key_basis": "derived",
+      "rule": "His father's wife is his mother; her son is Mohan or his brother; that son's daughter is Mohan's daughter or niece, and so is her sister.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing towards a photo of a lady, Priya said, \"She is my brother's only son's mother\". How is that lady related to Priya?",
+        "options": {
+          "A": "Brother's wife",
+          "B": "Mother",
+          "C": "Sister",
+          "D": "Daughter in law"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q14",
+      "key_basis": "derived",
+      "rule": "Her brother's only son's mother is her brother's wife.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Bharti is the sister of Chavi. Avni is the mother of Bharti. Chavi is the wife of Dhruv. Dhruv is the father of Esha. Who is the maternal grandmother of Esha?",
+        "options": {
+          "A": "Avni",
+          "B": "Bharti",
+          "C": "Dhruv",
+          "D": "Chavi"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q15",
+      "key_basis": "derived",
+      "rule": "Esha's mother is Chavi, Dhruv's wife. Chavi's sister Bharti has Avni as mother, so Avni is Chavi's mother and Esha's maternal grandmother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to a woman on the stage, Noor said, \"She is the wife of the son-in-law of the wife of my father.\" How is the woman related to Noor?",
+        "options": {
+          "A": "Sister",
+          "B": "Sister-in-law",
+          "C": "Daughter",
+          "D": "Mother"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q16",
+      "key_basis": "derived",
+      "rule": "His father's wife is his mother; her son-in-law is his sister's husband, whose wife is his sister.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing towards Kapil, Aditya said, \"His father is the husband of my father's father's daughter\". How is Aditya's father related to Kapil's mother?",
+        "options": {
+          "A": "Son",
+          "B": "Brother",
+          "C": "Father",
+          "D": "Husband"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q17",
+      "key_basis": "derived",
+      "rule": "His father's father's daughter is his father's sister. She is married to Kapil's father, so she is Kapil's mother, and Aditya's father is her brother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to Rehan, Rukhshana said, \"His paternal grandfather's daughter-in-law is my daughter's paternal grandmother\". How is Rukhshana related to Rehan ?",
+        "options": {
+          "A": "Mother",
+          "B": "Sister",
+          "C": "Daughter",
+          "D": "Wife"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q18",
+      "key_basis": "derived",
+      "rule": "Rehan's paternal grandfather's daughter-in-law is Rehan's mother; she is the paternal grandmother of Rukhshana's daughter, so Rukhshana is married to her son, Rehan.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to a woman, Param(a man) said, \"She is the mother-in-law of the mother-in-law of the daughter in law of my father.\" How is Param related to the woman ?",
+        "options": {
+          "A": "Father",
+          "B": "Grandson",
+          "C": "Brother",
+          "D": "Son"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q19",
+      "key_basis": "derived",
+      "rule": "His father's daughter-in-law is his wife; her mother-in-law is his mother; her mother-in-law is his paternal grandmother. Param is her grandson.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "While introducing Meera to a group of people, Rajeev said, \"She is the sister of the son of my brother's wife.\" How is Meera related to Rajeev ?",
+        "options": {
+          "A": "Daughter",
+          "B": "Sister",
+          "C": "Niece",
+          "D": "Cousin"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q20",
+      "key_basis": "derived",
+      "rule": "His brother's wife's son is his nephew, and the nephew's sister is his niece.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Sumona introducing a lady, she is the sister of the father of the daughter of the only son of the wife of my father-in-law. How is Sumona's father-in-law related to that woman?",
+        "options": {
+          "A": "Father",
+          "B": "Father-in-law",
+          "C": "Brother-in-law / brother-in-law",
+          "D": "Uncle"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p24 q21",
+      "key_basis": "derived",
+      "rule": "Her father-in-law's wife's only son is her husband; his daughter's father is her husband; the lady is her husband's sister. Her father-in-law is the lady's father.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Introducing a man, a woman said, \"His wife is the only daughter of my mother.\" What is the relation of the woman to the man?",
+        "options": {
+          "A": "Sister-in-law",
+          "B": "Wife",
+          "C": "Aunt",
+          "D": "Mother-in-law"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q22",
+      "key_basis": "derived",
+      "rule": "The only daughter of her mother is the woman herself, so she is his wife.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A man said to a lady, \"Your mother's father-in-law is my father and I am the only son\". How is that man related to that lady?",
+        "options": {
+          "A": "Father",
+          "B": "Son",
+          "C": "Father-in-law",
+          "D": "Brother"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q23",
+      "key_basis": "derived",
+      "rule": "The lady's mother's father-in-law is the lady's paternal grandfather, the man's father. He is the only son, so he is the lady's father.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Introducing a boy, Rama said, 'His sister's father is the only grandson of my grandfather. how is Rama related to the boy?",
+        "options": {
+          "A": "Sister",
+          "B": "Aunt",
+          "C": "Daughter",
+          "D": "Mother"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q24",
+      "key_basis": "derived",
+      "rule": "The only grandson of her grandfather is her brother (she is not a grandson). He is the boy's father, so Rama is the boy's aunt.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Anil introduces Mohan saying that he is the husband of my father's father's grand daughter. How is Mohan related to Anil?",
+        "options": {
+          "A": "Son-in-low",
+          "B": "Brother",
+          "C": "Brother-in-law",
+          "D": "None of these"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q25",
+      "key_basis": "derived",
+      "rule": "His father's father's granddaughter is his sister; her husband, Mohan, is his brother-in-law.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to a woman, Varuna said. My wife's brother is the son of her only brother. How is the woman related to Varuna.",
+        "options": {
+          "A": "Mother in low",
+          "B": "her aunt",
+          "C": "Varun's father in law's sister",
+          "D": "Mother"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q26",
+      "key_basis": "derived",
+      "rule": "His wife's brother is the son of the woman's only brother, so that brother is his father-in-law. The woman is his father-in-law's sister.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q027",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to Neha's picture, Nikhil said, \"The wife of her mother's father's son is my Mother-in-law's only daughter\". How is Nikhil related to Neha's mother ?",
+        "options": {
+          "A": "Grandfather",
+          "B": "Brother",
+          "C": "Uncle",
+          "D": "Maternal uncle"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q27",
+      "key_basis": "derived",
+      "rule": "His mother-in-law's only daughter is his wife. She is the wife of Neha's mother's father's son, Neha's mother's brother. Nikhil is that brother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Sandhya points towards Ashok and says, \"He is the son of the only child of my grandmother.\" How is Ashok related to Sandhya?",
+        "options": {
+          "A": "Cousin",
+          "B": "Brother-in-law",
+          "C": "Brother",
+          "D": "Uncle"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q28",
+      "key_basis": "derived",
+      "rule": "The only child of her grandmother is her parent; that parent's son is her brother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q029",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing towards a man. Vishakha said, \"He is the only son of my husband's father-in-law\". How is the man related to Vishakha ?",
+        "options": {
+          "A": "Husband",
+          "B": "Uncle",
+          "C": "Brother-in-law",
+          "D": "Brother"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q29",
+      "key_basis": "derived",
+      "rule": "Her husband's father-in-law is her father; his only son is her brother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Reena said \"The woman walking on the road is my father's wife\". How is the woman related to Reena ?",
+        "options": {
+          "A": "Sister",
+          "B": "Aunt",
+          "C": "Mother",
+          "D": "Daughter"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q30",
+      "key_basis": "derived",
+      "rule": "Her father's wife is her mother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Abhishek pointed a girl & said. \"She is the daughter of my father's only child\" How Abhishek's wife is related to that girl ?",
+        "options": {
+          "A": "Mother",
+          "B": "Sister",
+          "C": "Aunt",
+          "D": "Daughter"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q32",
+      "key_basis": "derived",
+      "rule": "His father's only child is Abhishek; the girl is his daughter, so his wife is her mother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Mrs. Dixit meets a man at a marriage party who is the brother of the sister of her husband. How is the man related to Mrs. Dixit?",
+        "options": {
+          "A": "Father",
+          "B": "Father-in-law",
+          "C": "Cousin",
+          "D": "Brother-in-law"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q33",
+      "key_basis": "derived",
+      "rule": "The brother of her husband's sister is her husband or his brother; a man she meets is her husband's brother, her brother-in-law.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to a photograph, a man said,\"I have no brother and that man's father is my father's son\". Whose photograph was it?",
+        "options": {
+          "A": "His son",
+          "B": "His own",
+          "C": "His Father",
+          "D": "His nephew"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q34",
+      "key_basis": "derived",
+      "rule": "With no brother, his father's son is himself. The man in the photograph is his son.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to a woman, a man said, \"Her father is the only son of my father\". How is the man related to woman?",
+        "options": {
+          "A": "Brother",
+          "B": "Grand father",
+          "C": "Father",
+          "D": "Son"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q35",
+      "key_basis": "derived",
+      "rule": "The only son of his father is the man himself, so he is the woman's father.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing towars a boy, Veena said, \"He is the son of only son of my grandfather\". How is that boy related to Veena?",
+        "options": {
+          "A": "Uncle",
+          "B": "Brother",
+          "C": "Cousin",
+          "D": "Data inadequate"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q36",
+      "key_basis": "derived",
+      "rule": "The only son of her grandfather is her father, so the boy is her brother.",
+      "confidence": "medium",
+      "note": "If \"my grandfather\" is her mother's father, his only son is her uncle and the boy her cousin (C). Read as the paternal grandfather, as these questions usually mean. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch07-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arun said, \"The girl is the wife of the grandson of my mother\". Who is Arun to the girl?",
+        "options": {
+          "A": "Father",
+          "B": "Grandfather",
+          "C": "Husband",
+          "D": "Father-in-law"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q37",
+      "key_basis": "derived",
+      "rule": "His mother's grandson is his son; the girl is his son's wife, so he is her father-in-law.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Pointing to man on stage, Rita said, \"He is the brother of the daughter of wife of my husband\". How is the man on the stage related to Rita?",
+        "options": {
+          "A": "Son",
+          "B": "Husband",
+          "C": "Cousin",
+          "D": "Nephew"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q38",
+      "key_basis": "derived",
+      "rule": "The wife of her husband is Rita; the brother of her daughter is her son.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q039",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Gaurav said to Tarun, \"That boy playing with the football is the younger of the two brothers of the daughter of my father's wife\". How is the boy playing football related to Gaurav ?",
+        "options": {
+          "A": "Son",
+          "B": "Brother",
+          "C": "Cousin",
+          "D": "Brother-in-law"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q39",
+      "key_basis": "derived",
+      "rule": "His father's wife's daughter is his sister; her two brothers are Gaurav and the boy. The boy is Gaurav's brother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "P is the mother of Q. Q is the sister of R. R is the brother of S. S is the husband of T. T is the sister of U. U is the wife of V. How many female members are in family?",
+        "options": {
+          "A": "4",
+          "B": "2",
+          "C": "3",
+          "D": "1"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q40",
+      "key_basis": "derived",
+      "rule": "P (a mother), Q (a sister), T (a sister) and U (a wife) are female; R, S and V are male. Four.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q041",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a family there are 7 members, X and Y are a married couple, X is the father of L, M is the wife of L. C is the brother of L, C has one son O, P is the sister of O. How will C related to P?",
+        "options": {
+          "A": "Father's father",
+          "B": "Father's brother",
+          "C": "Father",
+          "D": "Son"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q41",
+      "key_basis": "derived",
+      "rule": "O is C's son and P is O's sister, so P is C's daughter: C is her father.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "X and Z are sisters. Y is the brother of Z. S is the daughter of Z. T is the brother of S.T is married to U. How is Y related to S?",
+        "options": {
+          "A": "Mother's brother",
+          "B": "Mother's father",
+          "C": "Brother",
+          "D": "Father"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q42",
+      "key_basis": "derived",
+      "rule": "S is Z's daughter and Y is Z's brother: Y is S's mother's brother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A is married to Z. Z has 3 children L, M and N. Z is not the father of the children. P is the mother of A. L is the husband of D. M has 2 daughters H and J. How is Z related to P?",
+        "options": {
+          "A": "Mother",
+          "B": "Son",
+          "C": "Daughter in law",
+          "D": "Daughter"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q43",
+      "key_basis": "derived",
+      "rule": "Z is the children's mother, so Z is a woman married to A. P is A's mother, so Z is her daughter-in-law.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A is the son of B. B is the son of C. D is the wife of C. E is the daughter of C. How is A related to E?",
+        "options": {
+          "A": "Brother",
+          "B": "Brother's son",
+          "C": "Sister's son",
+          "D": "Son"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q45",
+      "key_basis": "derived",
+      "rule": "B and E are both C's children, so E is B's sister; A is B's son: E's brother's son.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A is the mother of C. D and E are the brothers of G. G is the father of C. H is the son of A. How H related to A?",
+        "options": {
+          "A": "Father",
+          "B": "Brother",
+          "C": "Husband's brother's son",
+          "D": "Son"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p25 q46",
+      "key_basis": "derived",
+      "rule": "H is the son of A, as stated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A is the son of C, but C is not the mother of A. B is the sister of A. C and D are a married couple. E is the mother of C. Who is the mother of A?",
+        "options": {
+          "A": "C",
+          "B": "B",
+          "C": "D",
+          "D": "E"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q47",
+      "key_basis": "derived",
+      "rule": "C is not the mother, so C is A's father; C's wife D is A's mother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A is the father of B. B is the daughter of C. D is brother of B. N is the sister of C. How is B related to N?",
+        "options": {
+          "A": "Daughter",
+          "B": "Niece",
+          "C": "Mother",
+          "D": "Sister"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q48",
+      "key_basis": "derived",
+      "rule": "A is B's father, so C is B's mother; N is C's sister, so B is N's niece.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A is the husband of B. D is the only son of C, who is the brother of E. B is the daughter-in-law of F, whose wife is predeceased. C is the son of F. How many male members are there in the family?",
+        "options": {
+          "A": "5",
+          "B": "4",
+          "C": "3",
+          "D": "2"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q49",
+      "key_basis": "derived",
+      "rule": "A is a husband; B is F's daughter-in-law, so A is F's son, as is C; D is a son; F has a wife. A, C, D and F: four men.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q050",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If H is the daughter of R, R is the father of S, S is the son of T, T is the daughter of N, then how is H related to N?",
+        "options": {
+          "A": "Daughter-in-law",
+          "B": "Daughter",
+          "C": "Daughter's daughter",
+          "D": "Niece"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q50",
+      "key_basis": "derived",
+      "rule": "T is S's mother and R's wife, so H is T's daughter; T is N's daughter. H is N's daughter's daughter.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q051",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "M is the brother of N, L is the father of M, N is the sister of O. O is the daughter of P. How is P related to N ?",
+        "options": {
+          "A": "Sister",
+          "B": "Maternal Aunt",
+          "C": "Mother",
+          "D": "Paternal Grandmother"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q51",
+      "key_basis": "derived",
+      "rule": "L is the father of M, N and O; O is the daughter of P, so P is their mother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q052",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Q is the sister of R. P is the father of Q. S is the son of T. R is the brother of S. How is T related to P?",
+        "options": {
+          "A": "Niece",
+          "B": "Daughter",
+          "C": "Wife",
+          "D": "Daughter in law"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q52",
+      "key_basis": "derived",
+      "rule": "Q, R and S are siblings and P their father; T is S's parent, so T is their mother, P's wife.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q053",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "N is the brother of Y and Y is the sister of B. B is the wife of Z and C is the mother of Y. How Z is related to C?",
+        "options": {
+          "A": "Son-in-law",
+          "B": "Maternal Uncle",
+          "C": "Sister",
+          "D": "Daughter"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q53",
+      "key_basis": "derived",
+      "rule": "B is a sister of Y, so C's daughter; Z is B's husband: C's son-in-law.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q054",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "W is the brother of X. V is the father of W, X is the husband of Z. Z is the sister of A. Who is the father in law of Z?",
+        "options": {
+          "A": "V",
+          "B": "X",
+          "C": "W",
+          "D": "A"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q54",
+      "key_basis": "derived",
+      "rule": "Z's husband is X; X's brother W has V as father, so V is X's father: Z's father-in-law.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q055",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Vineet is the husband of Antima. Dev is the brother of Kusha. Shalini is the mother of Kusha's mother. Dev is the son of Vineet. How is Antima related to Shalini?",
+        "options": {
+          "A": "Sister",
+          "B": "Maternal aunt",
+          "C": "Daughter",
+          "D": "Mother"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q55",
+      "key_basis": "derived",
+      "rule": "Kusha's brother Dev is Vineet's son, so Kusha's mother is Antima; Shalini is Antima's mother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q056",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Asmit's wife is Reena and Rani's husband is Aditya. Rani's father-in-law is the paternal grandfather of Reena's only daughter Sia. How is Asmit related to Aditya ?",
+        "options": {
+          "A": "Brother-in-law",
+          "B": "Uncle",
+          "C": "Brother",
+          "D": "Cousin"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q56",
+      "key_basis": "derived",
+      "rule": "Rani's father-in-law is Aditya's father; he is grandfather of Asmit's daughter Sia on her father's side, so he is Asmit's father too. Asmit and Aditya are brothers.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q057",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "B and D are cousin brothers. A is the father of B and the uncle of C, who is the sister of D. C's mother is married to E, who is the brother of A. How is B related to C's father ?",
+        "options": {
+          "A": "Uncle",
+          "B": "Brother-in-law",
+          "C": "Nephew",
+          "D": "Son"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q57",
+      "key_basis": "derived",
+      "rule": "C's father is E, A's brother; B is A's son, so B is E's nephew.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q058",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If A is the mother of B, X is the father of Y, H is the brother of J, L is the brother of Y's father. B is the sister of L and J is the husband of A, then how is J related to Y?",
+        "options": {
+          "A": "Son-in-law",
+          "B": "Nephew",
+          "C": "Son",
+          "D": "Paternal grandfather"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q58",
+      "key_basis": "derived",
+      "rule": "B and L are siblings, and L is Y's father's brother, so B, L and X are siblings. A is their mother and J her husband, their father: Y's paternal grandfather.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q059",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Roshani met a man in the market who is the only son of his mother's father's wife. How is the man's wife related to Roshni.",
+        "options": {
+          "A": "Daugther",
+          "B": "Aunt",
+          "C": "Sister",
+          "D": "Mother"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q59",
+      "key_basis": "derived",
+      "rule": "Reading \"his\" as \"her\": the only son of Roshni's mother's father's wife is Roshni's maternal uncle, and his wife is her aunt.",
+      "confidence": "medium",
+      "note": "As printed, the man is the only son of his own grandmother, which describes no one. Read as Roshni's grandmother. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch07-q060",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Preeti is the only sister of Virat. Manoj is the son of Dilip, who is the husband of Maya. Virat is the son of Devansh. Devansh is the father-in-law of Manoj. How is Maya related to Preeti?",
+        "options": {
+          "A": "Mother-in-law",
+          "B": "Daughter-in-law",
+          "C": "Sister-in-law",
+          "D": "Mother"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q60",
+      "key_basis": "derived",
+      "rule": "Devansh's daughter is Preeti (Virat's only sister), so Manoj married Preeti. Maya is Manoj's mother: Preeti's mother-in-law.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q062",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A is B's sister. C is B's mother. D is C's father. E is D's mother. Then how is A related to D ?",
+        "options": {
+          "A": "Grandfather",
+          "B": "Grandmother",
+          "C": "Daughter",
+          "D": "Grand-daughter"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q62",
+      "key_basis": "derived",
+      "rule": "A is C's daughter and C is D's daughter, so A is D's granddaughter.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q063",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If X is the brother of the son of Y's son, how is X related to Y ?",
+        "options": {
+          "A": "Son",
+          "B": "Brother",
+          "C": "Grandson",
+          "D": "Cousin"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q63",
+      "key_basis": "derived",
+      "rule": "Y's son's son is Y's grandson, and his brother is too.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q064",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If Maya is the only daughter of Richa's grandmother's brother, how is Maya related to Richa?",
+        "options": {
+          "A": "Niece",
+          "B": "Cousin",
+          "C": "Aunt",
+          "D": "Mother"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q64",
+      "key_basis": "derived",
+      "rule": "Richa's grandmother's brother's daughter is a cousin of Richa's parent, an aunt in the loose sense.",
+      "confidence": "medium",
+      "note": "Strictly she is Richa's parent's cousin; \"Aunt\" is the only option of that generation. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch07-q065",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Given that A and B are a married couple. If X and Y are brothers and X is the brother of A. How is Y related to B ?",
+        "options": {
+          "A": "Brother-in-law",
+          "B": "Brother",
+          "C": "Cousin",
+          "D": "None of these."
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q65",
+      "key_basis": "derived",
+      "rule": "Y is the brother of A, B's spouse: B's brother-in-law.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q066",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A-B are sisters, R-S are brothers, daughter of A is a sister of R, then what is the relation of B with S ?",
+        "options": {
+          "A": "Mother",
+          "B": "Grandmother",
+          "C": "Sister",
+          "D": "Aunt"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q66",
+      "key_basis": "derived",
+      "rule": "A's daughter is R's sister, so R and S are A's sons; B is A's sister, their aunt.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q067",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "C is a nephew of A's father. D is A's cousin, but not C's brother. How D. is related to C?",
+        "options": {
+          "A": "Father",
+          "B": "Sister",
+          "C": "Mother",
+          "D": "Aunt (Chachi)"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q67",
+      "key_basis": "derived",
+      "rule": "C is the son of A's father's sibling, A's cousin. D is A's cousin but not C's brother, so D is C's sister.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q068",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Amit is the brother of Sonia. Jyoti is the sister of Nikita. Sonia is the daughter of Satish's father. Nikita is the daughter of Kavinder. Jyoti is the mother of Amit. Mukesh is Nikita's only sister's husband. How is satish related to Kavinder?",
+        "options": {
+          "A": "Son",
+          "B": "Brother",
+          "C": "Grandson",
+          "D": "Son-in-law"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q68",
+      "key_basis": "derived",
+      "rule": "Satish's father's daughter Sonia is Satish's sister, so Amit, Sonia and Satish are Jyoti's children. Jyoti's sister Nikita is Kavinder's daughter, so Jyoti is too: Satish is Kavinder's grandson.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q069",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A an B are sisters C and D are brothers A's daughter is D's sister. How is B is related to C?",
+        "options": {
+          "A": "Aunt",
+          "B": "Sister",
+          "C": "Mother",
+          "D": "None of these"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q69",
+      "key_basis": "derived",
+      "rule": "A's daughter is D's sister, so C and D are A's sons; B, A's sister, is their aunt.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q070",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'I × J' means 'I is the mother of J'\n'I + J' means 'I is the husband of J'\n'I ÷ J' means 'I is the sister of J'\n'I − J' means 'I is the brother of J'\nHow is Q related to Z in the expression 'Q ÷ X + Y × Z'?",
+        "options": {
+          "A": "Wife's sister",
+          "B": "Daughter",
+          "C": "Wife",
+          "D": "Father's sister"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q70",
+      "key_basis": "derived",
+      "rule": "Q is X's sister; X is Y's husband; Y is Z's mother. X is Z's father, so Q is Z's father's sister.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q071",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If A + B means A is the wife of B, A × B means A is the father of B, A ÷ B means A is the mother of B. A $ B means A is the brother of B and A − B means A is the sister of B.\nIf P ÷ D $ B + H × T − M, then how is P related to H?",
+        "options": {
+          "A": "Mother",
+          "B": "Wife's sister",
+          "C": "Wife's mother",
+          "D": "Sister"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q71",
+      "key_basis": "derived",
+      "rule": "P is D's mother; D is B's brother; B is H's wife. P is B's mother: H's wife's mother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q072",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If A + B means A is the wife of B, A × B means A is the father of B, A ÷ B means A is the mother of B, A $ B means A is the brother of B and A − B means A is the sister of B.\nIf Z − T ÷ S × Y + H $ B, then how is S related to H?",
+        "options": {
+          "A": "Wife's mother",
+          "B": "Wife's father",
+          "C": "Wife's brother",
+          "D": "Wife's sister"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p26 q72",
+      "key_basis": "derived",
+      "rule": "T is S's mother; S is Y's father; Y is H's wife. S is H's wife's father.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q073",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'A + B' means 'A is the brother of B'.\n'A − B' means 'A is the wife of B'.\n'A × B' means 'A is the son of B'.\n'A ÷ B' means 'A is the husband of B'.\nIf P + Q − S + R × L ÷ M, then which of the following statements is correct?",
+        "options": {
+          "A": "P is S's wife's brother",
+          "B": "P is the brother of S.",
+          "C": "Q is sister of M.",
+          "D": "L is the father of P"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q73",
+      "key_basis": "derived",
+      "rule": "P is Q's brother; Q is S's wife. So P is S's wife's brother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q074",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language,\n'A + B' means 'A is the mother of B'\n'A − B' means 'A is the father of B',\n'A × B' means 'A is the brother of B' and\n'A & B' means 'A is the sister of B'.\nHow is Q related to N if N − D × P + Q & C ?",
+        "options": {
+          "A": "Daughter",
+          "B": "Sister",
+          "C": "Sister's daughter",
+          "D": "Daughter's daughter"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q74",
+      "key_basis": "derived",
+      "rule": "N is D's father; D is P's brother; P is Q's mother. P is N's daughter, so Q is N's daughter's daughter.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q076",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'A + B' means 'B is the father of A'\n'A @ B' means 'B is the brother of A'\n'A $ B' means 'B is the husband of A'\n'A & B' means 'B is the wife of A'\nIf A @ B + C & D @ E, then how is E related to A?",
+        "options": {
+          "A": "Son",
+          "B": "Mother's brother",
+          "C": "Husband",
+          "D": "Brother"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q76",
+      "key_basis": "derived",
+      "rule": "B is A's brother; C is B's father; D is C's wife; E is D's brother. E is A's mother's brother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q077",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'A # B' means 'A is the brother of B'.\n'A @ B' means 'A is the daughter of B'.\n'A & B' means 'A is the husband of B'.\n'A % B' means 'A is the wife of B'.\n'A * B' means 'A is the son of B'.\nIf A & D @ Q * B * K how is D, related to K?",
+        "options": {
+          "A": "Granddaughter",
+          "B": "Grandson",
+          "C": "Great grand daughter",
+          "D": "Daughter"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q77",
+      "key_basis": "derived",
+      "rule": "D is Q's daughter; Q is B's son; B is K's son. D is K's great-granddaughter.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q078",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "D $ E means 'D is the daughter of E'\nD @ E means 'D is the mother of E'\nD + E means 'D is the father of E'\nD * E means 'D is the husband of E'\nIf P * T $ X + Z, then how is P related to Z?",
+        "options": {
+          "A": "Sister's husband",
+          "B": "Daughter",
+          "C": "Paternal uncle",
+          "D": "Sister"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q78",
+      "key_basis": "derived",
+      "rule": "P is T's husband; T is X's daughter; X is Z's father. T is Z's sister, so P is Z's sister's husband.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q079",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'A @ B' means 'A is the sister of B'.\n'A & B' means 'A is the brother of B'.\n'A # B' means 'A is the wife of B'.\n'A ^ B' means 'A is the mother of B'.\n'A + B' means 'A is the father of B'.\nIf A & C + E ^ G # I & K + M @ O then which of the following Statements is NOT correct ?",
+        "options": {
+          "A": "M is the daughter of K.",
+          "B": "O is the daughter of K.",
+          "C": "K is the father of O.",
+          "D": "C is the maternal grandfather of G."
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q79",
+      "key_basis": "derived",
+      "rule": "K is the father of M and O, and M is a sister; O's sex is not given, so 'O is the daughter of K' does not follow. The other three do.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q080",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'A + B' means 'A is the brother of B'.\n'A − B' means 'A is the wife of B'.\n'A × B' means 'A is the son of B'.\n'A ÷ B' means 'A is the husband of B'.\nIf P + Q − S + R × L ÷ M, then which of the following statements is not correct ?",
+        "options": {
+          "A": "P is the brother of S's wife.",
+          "B": "Q is the wife of R's brother.",
+          "C": "M is the mother of R.",
+          "D": "M is the sister of Q."
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q80",
+      "key_basis": "derived",
+      "rule": "P is Q's brother, Q is S's wife, S is R's brother, R is L's son, L is M's husband: M is R's mother. Nothing makes M Q's sister.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q081",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language :\n'A + B' means 'A is the sister of B'.\n'A − B' means 'A is the father of B'\n'A × B' means 'A is the brother of B'.\nHow is R related to S if Q + R − P × N − S ?",
+        "options": {
+          "A": "Father's brother",
+          "B": "Brother",
+          "C": "Father",
+          "D": "Father's father"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q81",
+      "key_basis": "derived",
+      "rule": "R is P's father; P is N's brother; N is S's father. R is S's father's father.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q082",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'A + B' means 'B is the father of A'\n'A − B' means 'B is the mother of A'\n'A @ B' means 'B, is the brother of A'\n'A * B' means 'B, is the son of A'\nIfA * B + C @ D − E, then how is E related to A ?",
+        "options": {
+          "A": "Mother-in-law",
+          "B": "Sister",
+          "C": "Mother",
+          "D": "Brother's wife"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q82",
+      "key_basis": "derived",
+      "rule": "B is A's son; C is B's father, so A's husband; D is C's brother; E is D's mother, so C's mother. E is A's mother-in-law.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q083",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a certain code language :\n'A + B' means 'A is the mother of B',\n'A − B' means 'A is the father of B',\n'A × B' means 'A is the brother of B', and\n'A & B' means 'A is the daughter of B'.\nHow is N related to R if N & P − Q + T × R ?",
+        "options": {
+          "A": "Mother's mother",
+          "B": "Mother",
+          "C": "Father's mother",
+          "D": "Mother's sister]"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q83",
+      "key_basis": "derived",
+      "rule": "N is P's daughter; P is Q's father; Q is T's mother; T is R's brother. Q is R's mother and N her sister: R's mother's sister.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q084",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A @ B means 'A is the sister of B'.\nA & B means 'A is the brother of B'.\nA # B means 'A is the wife of B'.\nA ^ B means 'A is the mother of B'.\nA + B means 'A is the father of B'.\nIf U ^ Q ^ R @ N & C ^ I @ J @ A, then which of the following statements is NOT correct ?",
+        "options": {
+          "A": "J is the daughter of C",
+          "B": "C is the daughter of Q.",
+          "C": "Q is the maternal grandfather of I.",
+          "D": "Q is the mother of N"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q84",
+      "key_basis": "derived",
+      "rule": "Q is R's mother (a woman), and C, R's sibling, is I's mother. Q is I's maternal grandmother, not grandfather.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q086",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A # B means 'A is the brother of B'.\nA @ B means 'A is the daughter of B'.\nA & B means 'A is the husband of B'.\nA % B means 'A is the wife of B'.\nA * B means 'A is the son of B'.\nIf P @ M % H # A @ G & B, then how is B related to P ?",
+        "options": {
+          "A": "Wife's mother",
+          "B": "Mother",
+          "C": "Sister",
+          "D": "Father's mother"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q86",
+      "key_basis": "derived",
+      "rule": "P is M's daughter; M is H's wife; H is A's brother; A is G's daughter; G is B's husband. B is H's mother: P's father's mother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q087",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'F − G' means 'F is the brother of G'.\n'F * G' means 'F is the sister of G'.\n'F + G' means 'F is the father of G'.\n'F $ G' means 'F is the mother of G'.\nIf 'H $ I + J − K', then how is H related to K ?",
+        "options": {
+          "A": "Sister",
+          "B": "Patemal grandfather",
+          "C": "Paternal grandmother",
+          "D": "Father"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q87",
+      "key_basis": "derived",
+      "rule": "H is I's mother; I is J's father; J is K's brother. H is K's father's mother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q088",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "P @ Q means 'P, is sister of Q\nP & Q means 'P, is brother of Q\nP # Q means 'P, is mother of Q\nIf A # B @ C & D # E @ F them how is B, related to F?",
+        "options": {
+          "A": "Grandmother",
+          "B": "Brother",
+          "C": "Sister",
+          "D": "Mother's Sister"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p27 q88",
+      "key_basis": "derived",
+      "rule": "A is B's mother; B is C's sister; C is D's brother; D is E's mother; E is F's sister. D is F's mother and B her sister: F's mother's sister.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q089",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'A @ B' means 'A is the spouse of B'.\n'A & B' means 'A is the father of B'.\n'A # B' means 'A is the mother of B'.\n'A % B' means 'A is the sister of B'.\nIf H @ V & K % Q # F, how is H related to F ?",
+        "options": {
+          "A": "Mother-in-law",
+          "B": "Maternal grandfather",
+          "C": "Maternal grandmother",
+          "D": "Father-in-law."
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p28 q89",
+      "key_basis": "derived",
+      "rule": "H is V's spouse and V is K's father, so H is K's mother; K's sister Q is F's mother. H is F's maternal grandmother.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q090",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'A @ B' means 'A is the son of B'\n'A & B' means 'A is the mother of B'\n'A # B' means 'A is the doughter of B'\nWhich of the following options means 'R is the sister of P'?",
+        "options": {
+          "A": "R @ S & Q # P",
+          "B": "R @ S @ Q # P",
+          "C": "P @ Q & R # S",
+          "D": "P # Q @ R # S"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p28 q90",
+      "key_basis": "derived",
+      "rule": "In 'P @ Q & R # S', P is Q's son and Q is R's mother, so R and P are Q's children; R is a daughter (of S), so R is P's sister.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q091",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'C / D' means 'C, is the sibling of D'.\n'C < D' means 'C, is the husband of D'.\n'C @ D' means 'C, is the father of D'.\n'C + D' means 'C, is the son of D'.\nIf P @ Q + R / S < T how is T related to Q ?",
+        "options": {
+          "A": "Mother's sister's husband",
+          "B": "Mother's mother",
+          "C": "Mother's brother's wife",
+          "D": "Father's wife's sister"
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p28 q91",
+      "key_basis": "derived",
+      "rule": "P is Q's father; Q is R's son, so R is Q's mother; S is R's sibling and T's husband. T is Q's mother's brother's wife.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q092",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'A + B' means 'A is the father of B'\n'A − B' means 'A is the wife of B'\n'A × B' means 'A is the brother of B'\n'A ÷ B' means 'A is the daughter of B'\nif 'P − R × Q + S', then which of the following statements is true ?",
+        "options": {
+          "A": "P is the sister-in-law of Q.",
+          "B": "Q is the sister-in-law of P.",
+          "C": "P is the sister-in-law of S.",
+          "D": "P is the sister-in-law of R."
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p28 q92",
+      "key_basis": "derived",
+      "rule": "P is R's wife; R is Q's brother. P is Q's sister-in-law.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q093",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'A + B' means 'A is the brother of B'.\n'A/B' means 'A is the mother of B'.\n'A ^ B' means 'A is the husband of B'.\n'A % B' means 'A is the sister of B'.\n'A @ B' means 'A is the son of B'.\nIf U ^ V/ W + X% Y, how is U related to Y?",
+        "options": {
+          "A": "Father's brother",
+          "B": "Father",
+          "C": "Son",
+          "D": "Brother"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p28 q93",
+      "key_basis": "derived",
+      "rule": "U is V's husband; V is W's mother; W, X and Y are siblings. U is Y's father.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q095",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'A ^ P' means 'A is the husband of P'.\n'A % P' means 'A is the father of P'\n'A = P' means 'A is the sister of P'.\n'A & P' means 'A is the daughter of P'.\nIf F & G = H ^ J, then which of the following is correct.",
+        "options": {
+          "A": "J is the wife of G's brother",
+          "B": "H and F are siblings",
+          "C": "F is the daughter of J",
+          "D": "G is the mother of J"
+        },
+        "key": "A",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p28 q95",
+      "key_basis": "derived",
+      "rule": "F is G's daughter; G is H's sister; H is J's husband. H is G's brother, so J is G's brother's wife.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q096",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'A + B' means 'B is the brother of A'\n'A − B' means 'B is the sister of A'\n'A % B' means 'B is the daughter of A'\n'A & B' means 'B is the wife of A'\nIf A & B % C + D − E, then how is E related to A ?",
+        "options": {
+          "A": "Mother",
+          "B": "Daughter",
+          "C": "Sister",
+          "D": "Wife"
+        },
+        "key": "B",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p28 q96",
+      "key_basis": "derived",
+      "rule": "B is A's wife; C is B's daughter; D is C's brother; E is D's sister. E is B's daughter, and A's.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q097",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'A @ B' means 'A is the sister of B'.\n'A & B' means 'A is the brother of B'.\n'A # B' means 'A is the wife of B'.\n'A ^ B' means 'A is the mother of B'.\n'A + B' means 'A is the father of B'.\nIf X + T ^ M # G & C ^ K @ H ^ Q, then which of the following statements is not correct ?",
+        "options": {
+          "A": "X is the materanal grandfather of M",
+          "B": "C is the mother of H.",
+          "C": "G is the father of K.",
+          "D": "G is the son-in-law of T."
+        },
+        "key": "C",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p28 q97",
+      "key_basis": "derived",
+      "rule": "C is K's mother, and G is C's brother, so G is K's uncle, not father. The other three follow.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch07-q098",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'K % L' means 'K is brother of L', 'K $ L' means 'K is husband of L', 'K@L' means 'K is sister of B', 'K# L' means 'K is the mother of L'.\nHow is H related to M in the expression 'X @ P % T # M $ Y # J @ H'?",
+        "options": {
+          "A": "Brother or sister",
+          "B": "Father",
+          "C": "Uncle",
+          "D": "Son or Daughter"
+        },
+        "key": "D",
+        "reasoningType": "blood_relation"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch7 p28 q98",
+      "key_basis": "derived",
+      "rule": "T is M's mother; M is Y's husband; Y is J's mother; J is H's sister. H is Y's child, so M's son or daughter.",
       "confidence": "high"
     },
     {

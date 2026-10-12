@@ -20,6 +20,7 @@ export const OIR_CHAPTERS: readonly OirChapter[] = [
   { slug: 'word-formation', title: 'Word Formation', reasoningType: 'word_formation', summary: 'Words hidden in a longer word' },
   { slug: 'word-order', title: 'Word Order', reasoningType: 'word_order', summary: 'Dictionary order and logical sequence' },
   { slug: 'alphabet', title: 'Alphabet Positions', reasoningType: 'alphabet', summary: 'Letters by place, forwards and reversed' },
+  { slug: 'blood-relation', title: 'Blood Relation', reasoningType: 'blood_relation', summary: 'Family trees from a sentence or a code' },
   { slug: 'directions', title: 'Directions', reasoningType: 'directions', summary: 'Walks, turns and where things lie' },
   { slug: 'ranking', title: 'Ranking', reasoningType: 'ranking', summary: 'Places in a row, ranks in a class' },
   { slug: 'series', title: 'Series', reasoningType: 'series', summary: 'Number and letter series' },
