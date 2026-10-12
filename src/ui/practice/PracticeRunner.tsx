@@ -40,6 +40,9 @@ interface Reveal {
 const HALF_WIDTH_CHARS = 8;
 /** A single token longer than this does not fit a 320 px phone at the stem's full size. */
 const FULL_SIZE_TOKEN_CHARS = 12;
+/** Words that make a stem a sentence to read rather than a figure to look at ("S O _ _ T A S _ _" has none). */
+const PROSE_WORDS = /\b(the|of|is|to|which|what|how|if|in|from|are|will|and)\b/gi;
+const isProse = (stem: string) => (stem.match(PROSE_WORDS) ?? []).length >= 2;
 
 /** Keys typed into a field belong to the field. */
 function typingIn(target: EventTarget | null): boolean {
@@ -129,7 +132,12 @@ export function PracticeRunner({ items, answer, doneHref }: Props) {
 
   const progress = ((index + (reveal ? 1 : 0)) / items.length) * 100;
   const stacked = OPTION_LABELS.some((l) => item.options[l].length > HALF_WIDTH_CHARS);
-  const longStem = item.stem.split(/\s+/).some((t) => t.length > FULL_SIZE_TOKEN_CHARS);
+  const stemSize =
+    isProse(item.stem)
+      ? 'text-lg font-medium leading-relaxed sm:text-xl'
+      : item.stem.split(/\s+/).some((t) => t.length > FULL_SIZE_TOKEN_CHARS)
+        ? 'text-xl font-semibold tracking-wide sm:text-3xl'
+        : 'text-2xl font-semibold tracking-wide sm:text-3xl';
 
   return (
     <section className="rounded-xl border bg-card shadow-card" aria-label="Question">
@@ -142,7 +150,7 @@ export function PracticeRunner({ items, answer, doneHref }: Props) {
           {index + 1} of {items.length}
         </p>
         {item.direction && <p className="mt-3 text-sm text-muted-foreground">{item.direction}</p>}
-        <p ref={stemRef} tabIndex={-1} className={`mt-2 break-words font-semibold tracking-wide tabular-nums outline-none sm:text-3xl ${longStem ? 'text-xl' : 'text-2xl'}`}>
+        <p ref={stemRef} tabIndex={-1} className={`mt-2 break-words tabular-nums outline-none ${stemSize}`}>
           {item.stem}
         </p>
 

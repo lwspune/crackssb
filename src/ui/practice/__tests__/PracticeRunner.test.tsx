@@ -110,4 +110,18 @@ describe('chapter practice', () => {
     expect(screen.getByRole('group', { name: 'Options' }).className).toMatch(/(^|\s)grid-cols-2(\s|$)/);
     expect(screen.getByText('2, 4, 6, ?').className).toMatch(/text-2xl/);
   });
+
+  it('sets a sentence-length question at reading size, not display size', () => {
+    const prose: PracticeItem = { id: 's1', stem: 'Which letter is seventh to the right of the thirteenth letter from the left end?', options: { A: 'S', B: 'T', C: 'U', D: 'V' } };
+    render(<PracticeRunner items={[prose]} answer={fakeAnswer()} doneHref="/practise/oir" />);
+    const stem = screen.getByText(prose.stem).className;
+    expect(stem).toMatch(/text-lg/);
+    expect(stem).not.toMatch(/text-2xl|text-3xl/);
+  });
+
+  it('keeps a long puzzle that is not a sentence at display size', () => {
+    const puzzle: PracticeItem = { id: 'p1', stem: 'S O _ _ T A S _ _ A T A _ _ N A T _ _ O N A _ _', options: { A: 'a', B: 'b', C: 'c', D: 'd' } };
+    render(<PracticeRunner items={[puzzle]} answer={fakeAnswer()} doneHref="/practise/oir" />);
+    expect(screen.getByText(puzzle.stem).className).not.toMatch(/text-lg/);
+  });
 });
