@@ -21,6 +21,8 @@ export interface CatalogEntry {
   readonly instruments: readonly RunnerInstrument[];
   readonly availability: Availability;
   readonly summary: string;
+  /** Untimed practice that is open even while the test itself is coming (D26). */
+  readonly practice?: { readonly href: string; readonly label: string };
 }
 
 export const SSB_DAYS: readonly { readonly day: SsbDay; readonly title: string; readonly summary: string }[] = [
@@ -32,7 +34,7 @@ export const SSB_DAYS: readonly { readonly day: SsbDay; readonly title: string; 
 ];
 
 export const CATALOG: readonly CatalogEntry[] = [
-  { id: 'oir', name: 'Officer Intelligence Rating', short: 'OIR', day: 1, instruments: ['oir_verbal', 'oir_nonverbal'], availability: 'coming', summary: 'Verbal and non-verbal reasoning · 2 booklets' },
+  { id: 'oir', name: 'Officer Intelligence Rating', short: 'OIR', day: 1, instruments: ['oir_verbal', 'oir_nonverbal'], availability: 'coming', summary: 'Verbal and non-verbal reasoning · 2 booklets', practice: { href: '/practise/oir', label: 'Chapter practice' } },
   { id: 'ppdt', name: 'Picture Perception & Discussion Test', short: 'PPDT', day: 1, instruments: ['ppdt'], availability: 'coming', summary: '30 s picture · 4 min story' },
 
   { id: 'tat', name: 'Thematic Apperception Test', short: 'TAT', day: 2, instruments: ['tat'], availability: 'coming', summary: '12 pictures · 4 min each' },

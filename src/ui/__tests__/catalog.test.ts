@@ -46,6 +46,16 @@ describe('the practise catalogue', () => {
     expect(copy).not.toMatch(/\b(sprint|phase \d)/i);
   });
 
+  it('opens OIR chapter practice while its timed test is still coming (D26)', () => {
+    const oir = CATALOG.find((e) => e.id === 'oir');
+    expect(oir?.practice).toEqual({ href: '/practise/oir', label: 'Chapter practice' });
+    expect(oir?.availability).toBe('coming');
+  });
+
+  it('links practice only inside the practise area', () => {
+    for (const e of CATALOG) if (e.practice) expect(e.practice.href).toMatch(/^\/practise\/[a-z-]+$/);
+  });
+
   it('gives every entry a unique id', () => {
     const ids = CATALOG.map((e) => e.id);
     expect(new Set(ids).size).toBe(ids.length);

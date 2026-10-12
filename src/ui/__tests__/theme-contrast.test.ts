@@ -40,6 +40,13 @@ const TEXT_PAIRS: [text: string, bg: string][] = [
   ['navy-accent', 'navy'],
   ['navy', 'navy-accent'], // the area switcher's current pill (D25)
   ['brand-foreground', 'brand'],
+  // Chapter practice marks the right and the chosen-wrong option (D26).
+  ['correct', 'card'],
+  ['incorrect', 'card'],
+  ['correct', 'secondary'],
+  ['incorrect', 'secondary'],
+  ['card', 'correct'], // the option letter's badge once revealed
+  ['card', 'incorrect'],
 ];
 
 /** Focus rings and the runner's clock bar are non-text: WCAG 1.4.11 asks 3:1. */
@@ -51,6 +58,8 @@ const NON_TEXT_PAIRS: [fg: string, bg: string][] = [
   ['runner-warn', 'runner-track'],
   // Royal blue on navy is ~2.2:1, so the primary button on navy is white, not brand.
   ['navy-ring', 'navy'],
+  ['correct', 'card'],
+  ['incorrect', 'card'],
 ];
 
 describe('theme tokens clear WCAG AA in both modes', () => {

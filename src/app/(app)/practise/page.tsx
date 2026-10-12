@@ -15,12 +15,13 @@ function monogram(entry: CatalogEntry): string {
 
 function EntryCard({ entry }: { entry: CatalogEntry }) {
   const ready = entry.availability === 'ready';
+  const lit = ready || Boolean(entry.practice);
   const body = (
     <>
       <span
         aria-hidden="true"
         className={`grid size-14 shrink-0 place-items-center rounded-xl text-sm font-bold tracking-wide ${
-          ready ? 'bg-gradient-to-br from-brand to-navy text-white shadow-[0_8px_20px_-8px_rgb(29_78_216/0.6)]' : 'bg-secondary text-muted-foreground'
+          lit ? 'bg-gradient-to-br from-brand to-navy text-white shadow-[0_8px_20px_-8px_rgb(29_78_216/0.6)]' : 'bg-secondary text-muted-foreground'
         }`}
       >
         {monogram(entry)}
@@ -28,12 +29,20 @@ function EntryCard({ entry }: { entry: CatalogEntry }) {
       <span className="min-w-0 flex-1">
         <span className="block font-semibold leading-snug">{entry.name}</span>
         <span className="mt-1 block text-sm text-muted-foreground">{entry.summary}</span>
-        <span className="mt-3 block"><StatusBadge availability={entry.availability} /></span>
+        <span className="mt-3 flex flex-wrap items-center gap-2">
+          {entry.practice && (
+            <span className="inline-flex items-center rounded-full bg-brand/10 px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.08em] text-brand-accent ring-1 ring-brand/25">
+              {entry.practice.label}
+            </span>
+          )}
+          <StatusBadge availability={entry.availability} />
+        </span>
       </span>
     </>
   );
-  return ready ? (
-    <Link href={`/run/${entry.instruments[0]}`} className="lift flex h-full gap-4 rounded-xl border border-brand/30 bg-card p-4 shadow-card">
+  const href = ready ? `/run/${entry.instruments[0]}` : entry.practice?.href;
+  return href ? (
+    <Link href={href} className="lift flex h-full gap-4 rounded-xl border border-brand/30 bg-card p-4 shadow-card">
       {body}
     </Link>
   ) : (
