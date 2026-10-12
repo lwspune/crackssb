@@ -235,7 +235,12 @@ ch5 p17-21 · ch6 p22-23 · ch7 p24-28 · ch8 p29-34 · ch9 p35-37 · ch10 p38-4
   ride on the new optional `passage` field (bank, build, practice screen).
   Held: Q2 (subscripts unreadable), Q12 (Raghav never placed), Q15 (two
   orders), Q29 (two facing rows read several ways). Medium: Q16, Q17, Q33.
-- **Next:** Chapter 1 (Analogy, p1-3), then 2.
+- ~~Chapter 1, Analogy~~ — done 2026-10-12: 90 of 98 seeded. Number and
+  letter analogies run their rule on the question's own pair first; word
+  analogies reasoned. Held: Q32 (two coolers), Q35, Q51 (no rule found), Q64
+  (two rules), Q74 (nothing to complete), Q75 (lengths differ), Q88 (no rule
+  reaches an option), Q96 (two readings). Medium: Q23, Q58.
+- **Next:** Chapter 2 (Classification, p4-8), the last.
 
 ### Backfill ledger: Chapter 11's test onto the shared chapter suite
 `oir-agrawal-series.test.ts` predates `oir-chapter-suite.ts` and carries its own

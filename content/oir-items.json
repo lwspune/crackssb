@@ -3,6 +3,16 @@
   "sources": [
     {
       "source": "agrawal-examcart-oir",
+      "chapter": 1,
+      "title": "Analogy",
+      "pages": [
+        1,
+        3
+      ],
+      "file": "content/oir/agrawal-examcart/ch01-analogy.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
       "chapter": 3,
       "title": "Coding Decoding",
       "pages": [
@@ -92,13 +102,57 @@
       "file": "content/oir/agrawal-examcart/ch11-series.source.json"
     }
   ],
-  "itemCount": 722,
-  "heldCount": 38,
+  "itemCount": 812,
+  "heldCount": 46,
   "confidence": {
-    "high": 696,
-    "medium": 26
+    "high": 784,
+    "medium": 28
   },
   "held": [
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q32",
+      "reason": "A furnace makes things hot; a refrigerator and an air conditioner both make things cool, and both are offered (C, D).",
+      "lean": "C"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q35",
+      "reason": "No rule found that takes 6294 to 32 and 4381 to any option: digit sums, products, pair sums and squares of the digits all miss."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q51",
+      "reason": "121 → 1331 (11² → 11³, or ×11, or adding neighbouring digits) gives 1551 or similar for 141, none of the options."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q64",
+      "reason": "8 = 2³ and 64 = 4³: doubling the root gives 27 → 6³ = 216 (not offered; B prints 212), adding 2 gives 5³ = 125 (C). Two rules, two answers.",
+      "lean": "C"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q74",
+      "reason": "The question gives one pair and nothing to complete (\"CEGI : IKMO :: ?\"); no option can be chosen from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q75",
+      "reason": "LATYE has five letters and NETAEO six, so the rearrangement read off the pair (4, 3, 1, 5, 2) cannot be applied."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q88",
+      "reason": "FASTER → GZTUDS is +1, −1, +1, +1, −1, +1, which turns BOXING into CNYJMH; no option matches, and no other rule found fits both.",
+      "lean": "B"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q96",
+      "reason": "RACE → FACE can be \"R becomes F\" (CARE → CAFE, B) or \"the first letter becomes F\" (CARE → FARE, A); the pair does not decide.",
+      "lean": "B"
+    },
     {
       "source": "agrawal-examcart-oir",
       "source_ref": "ch3 p9 q7",
@@ -309,6 +363,2041 @@
     }
   ],
   "items": [
+    {
+      "id": "oir-agx-ch01-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'Near' is related to 'Close' in the same as 'Distant' is related to '...............' (The words must be considered as meaningful English words and must not be related to each other based on the number of letter/ number of consonants/vowels in the word).",
+        "options": {
+          "A": "Beside",
+          "B": "Run",
+          "C": "Compass",
+          "D": "Away"
+        },
+        "key": "D",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q1",
+      "key_basis": "derived",
+      "rule": "Near and close mean the same; distant means away.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q002",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'Flow' is related to 'Stagnant' in the same way as 'Fall' is related to '..........'. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/ vowels in the word)",
+        "options": {
+          "A": "Rise",
+          "B": "Market",
+          "C": "Drop",
+          "D": "Static"
+        },
+        "key": "A",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q2",
+      "key_basis": "derived",
+      "rule": "Flow is the opposite of stagnant; the opposite of fall is rise.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Just as 'Dictionary' is related to 'meaning', in the same way 'Encyclopedia' is related to '..........'",
+        "options": {
+          "A": "News",
+          "B": "Knowledge",
+          "C": "Idiom",
+          "D": "Synonyms"
+        },
+        "key": "B",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q3",
+      "key_basis": "derived",
+      "rule": "A dictionary gives meanings; an encyclopedia gives knowledge.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Just as cataract is related to 'eye', similarly Meniere's disease is related to '...........'.",
+        "options": {
+          "A": "Mouth",
+          "B": "Teeth",
+          "C": "Ear",
+          "D": "Nose"
+        },
+        "key": "C",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q4",
+      "key_basis": "derived",
+      "rule": "Cataract affects the eye; Meniere's disease affects the ear.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'Suva' is related to 'Fiji' in the same way as 'Helsinki' is related to '...........'.",
+        "options": {
+          "A": "France",
+          "B": "Greece",
+          "C": "Hungary",
+          "D": "Finland"
+        },
+        "key": "D",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q5",
+      "key_basis": "derived",
+      "rule": "Suva is the capital of Fiji; Helsinki is the capital of Finland.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The relation of 'Numismatics' to 'Coins', the same relation of 'Orography' is to '...........'.",
+        "options": {
+          "A": "shell",
+          "B": "eggs",
+          "C": "mountains",
+          "D": "fossils"
+        },
+        "key": "C",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q6",
+      "key_basis": "derived",
+      "rule": "Numismatics studies coins; orography studies mountains.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q007",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "As 'Monarch' is related to 'Butterfly', in the same way 'Mamba' is related to '...........'.",
+        "options": {
+          "A": "Shahi",
+          "B": "Snake",
+          "C": "Queen",
+          "D": "Poison"
+        },
+        "key": "B",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q7",
+      "key_basis": "derived",
+      "rule": "A monarch is a kind of butterfly; a mamba is a kind of snake.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'Cricket' is related to 'LBW in the same way as 'Chess' is related to '..............'.",
+        "options": {
+          "A": "Checkmate",
+          "B": "Backstroke",
+          "C": "Deuce",
+          "D": "Hit wicket"
+        },
+        "key": "A",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q8",
+      "key_basis": "derived",
+      "rule": "LBW ends an innings in cricket; checkmate ends a game of chess.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What 'majority is related to 'minority', 'natural' is related to '...........'.",
+        "options": {
+          "A": "Fragrance",
+          "B": "Environment",
+          "C": "Nature",
+          "D": "Artificial"
+        },
+        "key": "D",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q9",
+      "key_basis": "derived",
+      "rule": "Majority is the opposite of minority; natural is the opposite of artificial.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "As 'body temperature' is related to 'fever', in the same way body 'fat' is related to '...........'.",
+        "options": {
+          "A": "Obesity",
+          "B": "Blood",
+          "C": "Food",
+          "D": "Treatment"
+        },
+        "key": "A",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q10",
+      "key_basis": "derived",
+      "rule": "Too high a body temperature is fever; too much body fat is obesity.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'Chicken' is related to '...' as 'Dog' is related to 'Kennel'.",
+        "options": {
+          "A": "Broiler",
+          "B": "Rooster",
+          "C": "Chick",
+          "D": "Coupe"
+        },
+        "key": "D",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q11",
+      "key_basis": "derived",
+      "rule": "A dog lives in a kennel; a chicken lives in a coop (\"Coupe\" in the print).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'Thermometer' is related to 'temperature' in the same way as 'Protractor' is related to '...'.",
+        "options": {
+          "A": "Angle",
+          "B": "Mass",
+          "C": "Height",
+          "D": "Weight"
+        },
+        "key": "A",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q12",
+      "key_basis": "derived",
+      "rule": "A thermometer measures temperature; a protractor measures angles.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'Abundant' is related to 'Scarce' in the same way as 'Artificial' is related to '........' (The words must be considered as meaningful English words and must NOT be related to each other based on the number of letters/number of consonants/ vowels in the word).",
+        "options": {
+          "A": "Hollow",
+          "B": "Insincere",
+          "C": "Natural",
+          "D": "Pretend"
+        },
+        "key": "C",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q13",
+      "key_basis": "derived",
+      "rule": "Abundant is the opposite of scarce; artificial is the opposite of natural.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Fluorine is related to halogens in the same way as argentums is related to :",
+        "options": {
+          "A": "Radioactive",
+          "B": "Gas",
+          "C": "Metal",
+          "D": "Inert gas"
+        },
+        "key": "C",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q14",
+      "key_basis": "derived",
+      "rule": "Fluorine is a halogen; argentum (silver) is a metal.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The relation of 'hydrophobia' with 'water' is 'Hemophobia' has the same relation.",
+        "options": {
+          "A": "Spider",
+          "B": "Blood",
+          "C": "Disease",
+          "D": "Height"
+        },
+        "key": "B",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q15",
+      "key_basis": "derived",
+      "rule": "Hydrophobia is fear of water; hemophobia is fear of blood.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The way 'Windows' is related to 'Computer'. In the same way 'Android' is related to..........",
+        "options": {
+          "A": "Mobile",
+          "B": "Typewriter",
+          "C": "Telephone",
+          "D": "Printer"
+        },
+        "key": "A",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q16",
+      "key_basis": "derived",
+      "rule": "Windows runs computers; Android runs mobiles.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Bromine is related to the halogens in the same way as krypton is related",
+        "options": {
+          "A": "inert gas",
+          "B": "radioactive element",
+          "C": "metal",
+          "D": "gas"
+        },
+        "key": "A",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q17",
+      "key_basis": "derived",
+      "rule": "Bromine is a halogen; krypton is an inert gas.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "As 'greedy' is related to 'generous', in the same way 'vindictive' is related to?",
+        "options": {
+          "A": "kind",
+          "B": "vindictive",
+          "C": "indifferent",
+          "D": "hostile"
+        },
+        "key": "A",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q18",
+      "key_basis": "derived",
+      "rule": "Greedy is the opposite of generous; the opposite of vindictive is forgiving, which \"kind\" comes closest to.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Just as cardiology is related to the heart, similarly pathology is related.",
+        "options": {
+          "A": "Body",
+          "B": "Disease",
+          "C": "Person",
+          "D": "Soil"
+        },
+        "key": "B",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q19",
+      "key_basis": "derived",
+      "rule": "Cardiology studies the heart; pathology studies disease.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following is the same as Taxonomy, Selennography and Pedology ?",
+        "options": {
+          "A": "Moon",
+          "B": "Eccrinology",
+          "C": "Virus",
+          "D": "Skull"
+        },
+        "key": "B",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q20",
+      "key_basis": "derived",
+      "rule": "Taxonomy, selenography and pedology are each a field of study; so is eccrinology (the study of secretions).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If GRAIN is related to WAREHOUSE, then WATER is related to .............. .",
+        "options": {
+          "A": "Estuary",
+          "B": "River",
+          "C": "Canal",
+          "D": "Dam"
+        },
+        "key": "D",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q21",
+      "key_basis": "derived",
+      "rule": "Grain is stored in a warehouse; water is stored behind a dam.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If CATTLE is related to HERD the SHEEP is related to...........",
+        "options": {
+          "A": "FLOCK",
+          "B": "SWARM",
+          "C": "SHOAL",
+          "D": "MOB"
+        },
+        "key": "A",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q22",
+      "key_basis": "derived",
+      "rule": "A group of cattle is a herd; a group of sheep is a flock.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If SCHOOL is to EDUCATION then BANK is to ....",
+        "options": {
+          "A": "ATM",
+          "B": "CHEQUE",
+          "C": "LOAN",
+          "D": "LOCKER."
+        },
+        "key": "C",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q23",
+      "key_basis": "derived",
+      "rule": "A school gives education; a bank gives loans.",
+      "confidence": "medium",
+      "note": "A bank's purpose could also be read as money or deposits; \"loan\" is the service among the options. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch01-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 'Flow' is related to 'River', then 'Stagnant' is related to .... .",
+        "options": {
+          "A": "Pool",
+          "B": "Rain",
+          "C": "Stream",
+          "D": "Canal"
+        },
+        "key": "A",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q24",
+      "key_basis": "derived",
+      "rule": "Water flows in a river; it stands stagnant in a pool.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 'Dog' is to 'Rabies' then 'Mosquito' is to .....",
+        "options": {
+          "A": "Plague",
+          "B": "Death",
+          "C": "Malaria",
+          "D": "Sting"
+        },
+        "key": "C",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q25",
+      "key_basis": "derived",
+      "rule": "Dogs carry rabies; mosquitoes carry malaria.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'Recite' is related to 'Poem' in the same way as 'Read' is related to :",
+        "options": {
+          "A": "Habit",
+          "B": "Passage",
+          "C": "Pencil",
+          "D": "Sharpener"
+        },
+        "key": "B",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q26",
+      "key_basis": "derived",
+      "rule": "A poem is recited; a passage is read.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q027",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'Water' is related to 'Well' in the same way as 'Coal' is related to :",
+        "options": {
+          "A": "Factory",
+          "B": "Mine",
+          "C": "Graphite",
+          "D": "Village"
+        },
+        "key": "B",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p1 q27",
+      "key_basis": "derived",
+      "rule": "Water is drawn from a well; coal is dug from a mine.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'Car' is related to 'Petrol' in the same way as 'Television' is related to :",
+        "options": {
+          "A": "Entertainment",
+          "B": "Broadcast",
+          "C": "Curtain",
+          "D": "Electricity"
+        },
+        "key": "D",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q28",
+      "key_basis": "derived",
+      "rule": "A car runs on petrol; a television runs on electricity.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q029",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'House' is related to 'Shelter' in the same way as 'School' is related to :",
+        "options": {
+          "A": "Education",
+          "B": "Classes",
+          "C": "Student",
+          "D": "Teaching"
+        },
+        "key": "A",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q29",
+      "key_basis": "derived",
+      "rule": "A house gives shelter; a school gives education.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'Stone' is related to 'Hard' in the same way as 'Feather' is related to :",
+        "options": {
+          "A": "Soft",
+          "B": "Fly",
+          "C": "Bird",
+          "D": "White"
+        },
+        "key": "A",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q30",
+      "key_basis": "derived",
+      "rule": "Stone is hard; a feather is soft.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q031",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "'Thermometer' is related to 'Degree' in the same way as 'Clock' is related to :",
+        "options": {
+          "A": "Pendulum",
+          "B": "Hour",
+          "C": "Time",
+          "D": "Wall"
+        },
+        "key": "B",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q31",
+      "key_basis": "derived",
+      "rule": "A thermometer reads in degrees; a clock reads in hours.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "58 : 30 :: 116 : ?",
+        "options": {
+          "A": "56",
+          "B": "59",
+          "C": "95",
+          "D": "65"
+        },
+        "key": "B",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q33",
+      "key_basis": "derived",
+      "rule": "Half the number, plus 1: 58 → 30, 116 → 59.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "9 : 181 :: 14 : ?",
+        "options": {
+          "A": "435",
+          "B": "512",
+          "C": "401",
+          "D": "421"
+        },
+        "key": "D",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q34",
+      "key_basis": "derived",
+      "rule": "n² + (n + 1)²: 81 + 100 = 181; 196 + 225 = 421.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "4751 : 8998 :: 5236 : ?",
+        "options": {
+          "A": "9879",
+          "B": "9999",
+          "C": "8888",
+          "D": "8998"
+        },
+        "key": "C",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q36",
+      "key_basis": "derived",
+      "rule": "Add the two halves (47 + 51 = 98) and write the sum reversed, then as is: 8998. 52 + 36 = 88 → 8888.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "12 : 729 :: 9 : ?",
+        "options": {
+          "A": "225",
+          "B": "261",
+          "C": "216",
+          "D": "252"
+        },
+        "key": "C",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q37",
+      "key_basis": "derived",
+      "rule": "(n − 3)³: 12 → 9³ = 729; 9 → 6³ = 216.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "130 : 5 :: ? : 6 :: 738 : 9",
+        "options": {
+          "A": "218",
+          "B": "232",
+          "C": "304",
+          "D": "222"
+        },
+        "key": "D",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q38",
+      "key_basis": "derived",
+      "rule": "n³ + n: 5 → 130, 9 → 738, so 6 → 216 + 6 = 222.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q039",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "128 : 4 :: ? 11 :: 2592 : 18",
+        "options": {
+          "A": "847",
+          "B": "1089",
+          "C": "968",
+          "D": "1331"
+        },
+        "key": "C",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q39",
+      "key_basis": "derived",
+      "rule": "8n²: 4 → 128, 18 → 2592, so 11 → 968.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "8 : 44 :: 5 : ? :: 11 : 92",
+        "options": {
+          "A": "25",
+          "B": "9",
+          "C": "14",
+          "D": "20"
+        },
+        "key": "C",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q40",
+      "key_basis": "derived",
+      "rule": "n(n − 3) + 4: 8 → 44, 11 → 92, so 5 → 14.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q041",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "15 : 256 :: 14 : ?",
+        "options": {
+          "A": "225",
+          "B": "144",
+          "C": "25",
+          "D": "95"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q41",
+      "key_basis": "derived",
+      "rule": "(n + 1)²: 15 → 256, 14 → 225.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "108 : 11664 :: 107 : ?",
+        "options": {
+          "A": "11449",
+          "B": "10449",
+          "C": "10849",
+          "D": "11749"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q42",
+      "key_basis": "derived",
+      "rule": "n²: 108² = 11664, 107² = 11449.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "105 : 11025 :: 109 : ?",
+        "options": {
+          "A": "11881",
+          "B": "18118",
+          "C": "18181",
+          "D": "11818"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q43",
+      "key_basis": "derived",
+      "rule": "n²: 105² = 11025, 109² = 11881.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q044",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "10 : 101 :: 12 : ?",
+        "options": {
+          "A": "145",
+          "B": "144",
+          "C": "142",
+          "D": "141"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q44",
+      "key_basis": "derived",
+      "rule": "n² + 1: 10 → 101, 12 → 145.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "3476 : 20 :: 4235 : ?",
+        "options": {
+          "A": "14",
+          "B": "13",
+          "C": "12",
+          "D": "16"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q45",
+      "key_basis": "derived",
+      "rule": "The sum of the digits: 3 + 4 + 7 + 6 = 20; 4 + 2 + 3 + 5 = 14.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "107 : 11449 :: 109 : ?",
+        "options": {
+          "A": "11881",
+          "B": "10881",
+          "C": "12991",
+          "D": "13891"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q46",
+      "key_basis": "derived",
+      "rule": "n²: 107² = 11449, 109² = 11881.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "7 : 81 :: ? : ?",
+        "options": {
+          "A": "10 : 144",
+          "B": "12 : 169",
+          "C": "9 : 131",
+          "D": "11 : 225"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q47",
+      "key_basis": "derived",
+      "rule": "(n + 2)²: 7 → 81; of the pairs only 10 → 144 fits.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "102 : 10404 :: 107 : ?",
+        "options": {
+          "A": "11449",
+          "B": "11649",
+          "C": "11049",
+          "D": "12449"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q48",
+      "key_basis": "derived",
+      "rule": "n²: 102² = 10404, 107² = 11449.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "12 : 1728 :: 17 : ?",
+        "options": {
+          "A": "4913",
+          "B": "4927",
+          "C": "4943",
+          "D": "4963"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q49",
+      "key_basis": "derived",
+      "rule": "n³: 12³ = 1728, 17³ = 4913.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q050",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "7 : 63 :: 11 : ?",
+        "options": {
+          "A": "143",
+          "B": "147",
+          "C": "146",
+          "D": "145"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q50",
+      "key_basis": "derived",
+      "rule": "n(n + 2): 7 → 63, 11 → 143.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q052",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that is related to the third term on the same basis as second term is related to the first term.\n365 : 90 :: 623 : ?",
+        "options": {
+          "A": "63",
+          "B": "36",
+          "C": "45",
+          "D": "123"
+        },
+        "key": "B",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q52",
+      "key_basis": "derived",
+      "rule": "The product of the digits: 3 × 6 × 5 = 90; 6 × 2 × 3 = 36.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q053",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the following question, select the related number from the given alternatives.\n12 : 140 :: 29 : ?",
+        "options": {
+          "A": "839",
+          "B": "957",
+          "C": "837",
+          "D": "845"
+        },
+        "key": "C",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q53",
+      "key_basis": "derived",
+      "rule": "n² − 4: 12 → 140, 29 → 837.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q054",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "There is a certain relationship between two given numbers on one side of :: and one number is given on another side of :: while another number is to be found from the given alternatives, having the same relation with the number as the number of the given pair. Choose the correct alternative.\n24 : 144 :: 52 : ?",
+        "options": {
+          "A": "676",
+          "B": "242",
+          "C": "324",
+          "D": "452"
+        },
+        "key": "A",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q54",
+      "key_basis": "derived",
+      "rule": "(n / 2)²: 24 → 144, 52 → 676.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q055",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A group of three interrelated numbers is given. Choose a numbers from the given alternatives that is similar to the given numbers and hence belongs to the same group.\n385 : 473 : 143",
+        "options": {
+          "A": "180",
+          "B": "221",
+          "C": "270",
+          "D": "253"
+        },
+        "key": "D",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q55",
+      "key_basis": "derived",
+      "rule": "385, 473 and 143 are all multiples of 11; of the options only 253 (11 × 23) is.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q056",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the number which is related to third number in the same way as the second number is related to first number?\n2211 : 10 :: 1423 : ?",
+        "options": {
+          "A": "29",
+          "B": "27",
+          "C": "28",
+          "D": "30"
+        },
+        "key": "D",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q56",
+      "key_basis": "derived",
+      "rule": "The sum of the squares of the digits: 4 + 4 + 1 + 1 = 10; 1 + 16 + 4 + 9 = 30.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q057",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "There is a certain relationship between two given numbers on one side of :: and one number is given on another side of :: while another number is to be found from the given alternatives, having the same relation with the number as the number of the given pair.\nChoose the correct alternative\n17 : 374 :: 29 : ?",
+        "options": {
+          "A": "986",
+          "B": "242",
+          "C": "224",
+          "D": "338"
+        },
+        "key": "A",
+        "reasoningType": "analogy"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q57",
+      "key_basis": "derived",
+      "rule": "n(n + 5): 17 × 22 = 374; 29 × 34 = 986.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q058",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "1 : 1 :: 25 : ?",
+        "options": {
+          "A": "240",
+          "B": "625",
+          "C": "26",
+          "D": "125"
+        },
+        "key": "B",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p2 q58",
+      "key_basis": "derived",
+      "rule": "n²: 1 → 1, 25 → 625.",
+      "confidence": "medium",
+      "note": "1 : 1 fits any power; squaring is the plain reading and the only one with an option (25³ = 15625 is not offered). Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch01-q059",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "8 : 28 :: 27 : ?",
+        "options": {
+          "A": "8",
+          "B": "28",
+          "C": "64",
+          "D": "65"
+        },
+        "key": "D",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q59",
+      "key_basis": "derived",
+      "rule": "A cube to the next cube plus 1: 8 = 2³ → 3³ + 1 = 28; 27 = 3³ → 4³ + 1 = 65.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q060",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "85 : 42 :: 139 : ?",
+        "options": {
+          "A": "68",
+          "B": "69",
+          "C": "70",
+          "D": "67"
+        },
+        "key": "B",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q60",
+      "key_basis": "derived",
+      "rule": "(n − 1) / 2: 85 → 42, 139 → 69.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q061",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "18 : 27 :: 60 : ?",
+        "options": {
+          "A": "72",
+          "B": "81",
+          "C": "90",
+          "D": "100"
+        },
+        "key": "C",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q61",
+      "key_basis": "derived",
+      "rule": "× 1.5: 18 → 27, 60 → 90.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q062",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "3 : 11 :: 7 : ?",
+        "options": {
+          "A": "22",
+          "B": "29",
+          "C": "51",
+          "D": "18"
+        },
+        "key": "C",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q62",
+      "key_basis": "derived",
+      "rule": "n² + 2: 3 → 11, 7 → 51.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q063",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "27 : 3 :: 873 : ?",
+        "options": {
+          "A": "23",
+          "B": "97",
+          "C": "9",
+          "D": "87"
+        },
+        "key": "B",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q63",
+      "key_basis": "derived",
+      "rule": "÷ 9: 27 → 3, 873 → 97.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q065",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "8 : 81 :: 64 : ?",
+        "options": {
+          "A": "525",
+          "B": "125",
+          "C": "250",
+          "D": "625"
+        },
+        "key": "D",
+        "reasoningType": "analogy",
+        "direction": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q65",
+      "key_basis": "derived",
+      "rule": "A cube to the next number to the fourth power: 8 = 2³ → 3⁴ = 81; 64 = 4³ → 5⁴ = 625.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q066",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "AZC : VUX :: SUS : ?",
+        "options": {
+          "A": "NPN",
+          "B": "BAX",
+          "C": "DCQ",
+          "D": "CKM"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q66",
+      "key_basis": "derived",
+      "rule": "Each letter 5 back: SUS → NPN.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q067",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "EFG : IJK :: MNO : ?",
+        "options": {
+          "A": "PQR",
+          "B": "OPQ",
+          "C": "QRS",
+          "D": "NOP"
+        },
+        "key": "C",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q67",
+      "key_basis": "derived",
+      "rule": "Each letter 4 on: MNO → QRS.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q068",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "BYWD : DWUF :: FUSH : ?",
+        "options": {
+          "A": "JQOL",
+          "B": "HSQJ",
+          "C": "HSJQ",
+          "D": "HTRJ"
+        },
+        "key": "B",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q68",
+      "key_basis": "derived",
+      "rule": "+2, −2, −2, +2: FUSH → HSQJ.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q069",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "RAILCAR : NEEPYEN :: ICESHOW : ...............",
+        "options": {
+          "A": "MZJOMKU",
+          "B": "MYIOLKT",
+          "C": "EGAWDSS",
+          "D": "NZJPMLU"
+        },
+        "key": "C",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q69",
+      "key_basis": "derived",
+      "rule": "−4, +4 alternately: ICESHOW → EGAWDSS.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q070",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "CUSTOMER : YQWXKIIV :: COMMERCIAL : ?",
+        "options": {
+          "A": "YKQQANGMWH",
+          "B": "GSQQIVGMEP",
+          "C": "YKIIANYEWH",
+          "D": "GSIIEREWEP"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q70",
+      "key_basis": "derived",
+      "rule": "−4, −4, +4, +4 repeating: COMMERCIAL → YKQQANGMWH.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q071",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "PHONETIC : FLWHQRKS :: SHEEPDOG : ?",
+        "options": {
+          "A": "JRVKGSHH",
+          "B": "JRGSHHKV",
+          "C": "VKRJHHSG",
+          "D": "VKHHSGRJ"
+        },
+        "key": "B",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q71",
+      "key_basis": "derived",
+      "rule": "Each half reversed and moved 3 on, second half first: SHEE PDOG → JRGS HHKV.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q072",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "CANVAS : DCQZFY :: LOANER : ?",
+        "options": {
+          "A": "MQDSKY",
+          "B": "MRDRJY",
+          "C": "MQDRJX",
+          "D": "MQERJY"
+        },
+        "key": "C",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q72",
+      "key_basis": "derived",
+      "rule": "+1, +2, +3, +4, +5, +6: LOANER → MQDRJX.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q073",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "CONCEPT : DDFOPQU :: NARROWS : ...............",
+        "options": {
+          "A": "OBSSPXT",
+          "B": "BOPSSTX",
+          "C": "WSRRONA",
+          "D": "XTSPOBS"
+        },
+        "key": "B",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q73",
+      "key_basis": "derived",
+      "rule": "Each letter 1 on, then in alphabetical order: NARROWS → OBSSPXT → BOPSSTX.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q076",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "LARTBZ : BLRTAZ :: PARENF : ?",
+        "options": {
+          "A": "RNPEAF",
+          "B": "NPREAF",
+          "C": "NEARFP",
+          "D": "NREAFP"
+        },
+        "key": "B",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q76",
+      "key_basis": "derived",
+      "rule": "Letters 5, 1, 3, 4, 2, 6: PARENF → NPREAF.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q077",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "NEUTSE : EFPVXZ :: ZWURST : ?",
+        "options": {
+          "A": "RTSVEA",
+          "B": "QXPXAE",
+          "C": "RTVXAE",
+          "D": "QXPTWA"
+        },
+        "key": "C",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q77",
+      "key_basis": "derived",
+      "rule": "In alphabetical order, then +0, +1, +2, +3, +4, +5: ZWURST → RSTUWZ → RTVXAE.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q078",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "DURDG : EFJVZ :: JGFSGR : ?",
+        "options": {
+          "A": "KIJNVX",
+          "B": "GIJNWY",
+          "C": "GJJNVX",
+          "D": "KJJNVX"
+        },
+        "key": "B",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q78",
+      "key_basis": "derived",
+      "rule": "In alphabetical order, then +1, +2, +3…: JGFSGR → FGGJRS → GIJNWY.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q079",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "OESTD : UAVXI :: UISRY : ?",
+        "options": {
+          "A": "AOVYD",
+          "B": "AEVVD",
+          "C": "EAVVD",
+          "D": "AEVWD"
+        },
+        "key": "B",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q79",
+      "key_basis": "derived",
+      "rule": "+6, −4, +3, +4, +5: UISRY → AEVVD.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q080",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "GKNR : SOLH :: MNGB : ?",
+        "options": {
+          "A": "QPSX",
+          "B": "OMNX",
+          "C": "NMTX",
+          "D": "MLSX"
+        },
+        "key": "D",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q80",
+      "key_basis": "derived",
+      "rule": "Each letter and its code add to 26 by position (G 7 + S 19): MNGB → MLSX.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q081",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ROME : QNLD :: MORE : ?",
+        "options": {
+          "A": "LNQD",
+          "B": "LNQC",
+          "C": "LMQD",
+          "D": "LMQC"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q81",
+      "key_basis": "derived",
+      "rule": "Each letter 1 back: MORE → LNQD.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q082",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ABC : EXI :: NOS : ?",
+        "options": {
+          "A": "SJU",
+          "B": "RKY",
+          "C": "TKV",
+          "D": "TJV"
+        },
+        "key": "B",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q82",
+      "key_basis": "derived",
+      "rule": "+4, −4, +6: NOS → RKY.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q083",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ROOM : QNNL :: RENT : ?",
+        "options": {
+          "A": "QDMS",
+          "B": "QEMS",
+          "C": "QDNS",
+          "D": "QDMT"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q83",
+      "key_basis": "derived",
+      "rule": "Each letter 1 back: RENT → QDMS.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q084",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "PHYSICS : KSBHRXH :: CHEMISTRY : ?",
+        "options": {
+          "A": "XSVNRHGIB",
+          "B": "XSVNSHGIB",
+          "C": "XSUNRIGIB",
+          "D": "XSVMSITRC"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q84",
+      "key_basis": "derived",
+      "rule": "Each letter becomes its opposite (A↔Z): CHEMISTRY → XSVNRHGIB.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q085",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "CORD : BNQC :: LESS : ?",
+        "options": {
+          "A": "KDRR",
+          "B": "KFRR",
+          "C": "MDRR",
+          "D": "KCRR"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q85",
+      "key_basis": "derived",
+      "rule": "Each letter 1 back: LESS → KDRR.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q086",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "HANGER : GBMHDS :: GARDEN : ?",
+        "options": {
+          "A": "FBQEDO",
+          "B": "FBQFDO",
+          "C": "FBREDP",
+          "D": "FCQEDP"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q86",
+      "key_basis": "derived",
+      "rule": "−1, +1 alternately: GARDEN → FBQEDO.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q087",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "GOING : HPJOH :: WHERE : ?",
+        "options": {
+          "A": "XIFSF",
+          "B": "XIGSF",
+          "C": "XIHSF",
+          "D": "XIFTG"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q87",
+      "key_basis": "derived",
+      "rule": "Each letter 1 on: WHERE → XIFSF.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q089",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "GDC : AEY :: RON : ?",
+        "options": {
+          "A": "LPJ",
+          "B": "LPG",
+          "C": "MPJ",
+          "D": "MPK"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q89",
+      "key_basis": "derived",
+      "rule": "−6, +1, −4: RON → LPJ.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q090",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ABCD : QRST :: BACD : ?",
+        "options": {
+          "A": "RQST",
+          "B": "STQR",
+          "C": "QRST",
+          "D": "RSTQ"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q90",
+      "key_basis": "derived",
+      "rule": "Each letter 16 on: BACD → RQST.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q091",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "KMF : LLH :: RMS : ?",
+        "options": {
+          "A": "SLR",
+          "B": "SLU",
+          "C": "SSU",
+          "D": "SUS"
+        },
+        "key": "B",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q91",
+      "key_basis": "derived",
+      "rule": "+1, −1, +2: RMS → SLU.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q092",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "CAT : DDY :: BIG : ?",
+        "options": {
+          "A": "CLL",
+          "B": "CLM",
+          "C": "CML",
+          "D": "CEP"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q92",
+      "key_basis": "derived",
+      "rule": "+1, +3, +5: BIG → CLL.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q093",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "LEFT : NGHV :: RIGHT : ?",
+        "options": {
+          "A": "TJKV",
+          "B": "TKIJV",
+          "C": "VKIJT",
+          "D": "TJIKV"
+        },
+        "key": "B",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q93",
+      "key_basis": "derived",
+      "rule": "Each letter 2 on: RIGHT → TKIJV.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q094",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "SUMO : PRJL :: TAXI : ?",
+        "options": {
+          "A": "QXUF",
+          "B": "QDNF",
+          "C": "WDXJ",
+          "D": "QDVF"
+        },
+        "key": "A",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q94",
+      "key_basis": "derived",
+      "rule": "Each letter 3 back: TAXI → QXUF.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q095",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ELJH : MTRP :: UBZX : ?",
+        "options": {
+          "A": "DJIG",
+          "B": "CJHF",
+          "C": "CIGE",
+          "D": "CBYA"
+        },
+        "key": "B",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q95",
+      "key_basis": "derived",
+      "rule": "Each letter 8 on: UBZX → CJHF.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q097",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "FLOWER : REWOLF :: FRUITS : ?",
+        "options": {
+          "A": "STRUIF",
+          "B": "STUIRF",
+          "C": "STIURF",
+          "D": "STUIFR"
+        },
+        "key": "C",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q97",
+      "key_basis": "derived",
+      "rule": "The word reversed: FRUITS → STIURF.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch01-q098",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "AYRRJC : CATTLE :: NCPDCAR : ?",
+        "options": {
+          "A": "SUBJECT",
+          "B": "NEGLECT",
+          "C": "PERFECT",
+          "D": "OPERATE"
+        },
+        "key": "C",
+        "reasoningType": "analogy",
+        "direction": "In the following question, Select the related letters from the given alternatives."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch1 p3 q98",
+      "key_basis": "derived",
+      "rule": "Each letter 2 on: AYRRJC → CATTLE, so NCPDCAR → PERFECT.",
+      "confidence": "high"
+    },
     {
       "id": "oir-agx-ch03-q001",
       "assessment_type": "oir_verbal",

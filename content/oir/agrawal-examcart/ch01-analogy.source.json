@@ -1,0 +1,1213 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSB OIR PAGE NO. 1-44 (phone photos of printed pages 1-44)",
+  "chapter": 1,
+  "title": "Analogy",
+  "pages": [
+    1,
+    3
+  ],
+  "transcribed": "2026-10-12",
+  "note": "Verbatim, typos included (\"Selennography\", \"Coupe\", \"argentums\"). Never edited: corrections live in src/items/oir/. Type-1 prints no direction (text null). Type-2 prints the number direction twice (Q33-50, Q58-65); Q51-57 carry their own wording in the stem (section Type-2b, no direction).",
+  "directions": [
+    {
+      "section": "Type-1",
+      "printed": "Type-1",
+      "text": null
+    },
+    {
+      "section": "Type-2",
+      "printed": "Direction (Q. No. 33 to 50) and (Q. No. 58 to 65)",
+      "text": "In each of the following questions, there is a certain relationship between two given numbers on one side of (: :) and one number is given on another side of (: :) where another number is to be found from the given alternatives, having the same relationship with this number as the number of the given pair. Choose the best alternative."
+    },
+    {
+      "section": "Type-2b",
+      "printed": "Type-2, Q51-57",
+      "text": null
+    },
+    {
+      "section": "Type-3",
+      "printed": "Direction (Q. No. 66 to 98)",
+      "text": "In the following question, Select the related letters from the given alternatives."
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "'Near' is related to 'Close' in the same as 'Distant' is related to '...............' (The words must be considered as meaningful English words and must not be related to each other based on the number of letter/ number of consonants/vowels in the word).",
+      "options": {
+        "A": "Beside",
+        "B": "Run",
+        "C": "Compass",
+        "D": "Away"
+      }
+    },
+    {
+      "n": 2,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "'Flow' is related to 'Stagnant' in the same way as 'Fall' is related to '..........'. (The words must be considered as meaningful English words and must not be related to each other based on the number of letters/number of consonants/ vowels in the word)",
+      "options": {
+        "A": "Rise",
+        "B": "Market",
+        "C": "Drop",
+        "D": "Static"
+      }
+    },
+    {
+      "n": 3,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "Just as 'Dictionary' is related to 'meaning', in the same way 'Encyclopedia' is related to '..........'",
+      "options": {
+        "A": "News",
+        "B": "Knowledge",
+        "C": "Idiom",
+        "D": "Synonyms"
+      }
+    },
+    {
+      "n": 4,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "Just as cataract is related to 'eye', similarly Meniere's disease is related to '...........'.",
+      "options": {
+        "A": "Mouth",
+        "B": "Teeth",
+        "C": "Ear",
+        "D": "Nose"
+      }
+    },
+    {
+      "n": 5,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "'Suva' is related to 'Fiji' in the same way as 'Helsinki' is related to '...........'.",
+      "options": {
+        "A": "France",
+        "B": "Greece",
+        "C": "Hungary",
+        "D": "Finland"
+      }
+    },
+    {
+      "n": 6,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "The relation of 'Numismatics' to 'Coins', the same relation of 'Orography' is to '...........'.",
+      "options": {
+        "A": "shell",
+        "B": "eggs",
+        "C": "mountains",
+        "D": "fossils"
+      }
+    },
+    {
+      "n": 7,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "As 'Monarch' is related to 'Butterfly', in the same way 'Mamba' is related to '...........'.",
+      "options": {
+        "A": "Shahi",
+        "B": "Snake",
+        "C": "Queen",
+        "D": "Poison"
+      }
+    },
+    {
+      "n": 8,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "'Cricket' is related to 'LBW in the same way as 'Chess' is related to '..............'.",
+      "options": {
+        "A": "Checkmate",
+        "B": "Backstroke",
+        "C": "Deuce",
+        "D": "Hit wicket"
+      }
+    },
+    {
+      "n": 9,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "What 'majority is related to 'minority', 'natural' is related to '...........'.",
+      "options": {
+        "A": "Fragrance",
+        "B": "Environment",
+        "C": "Nature",
+        "D": "Artificial"
+      }
+    },
+    {
+      "n": 10,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "As 'body temperature' is related to 'fever', in the same way body 'fat' is related to '...........'.",
+      "options": {
+        "A": "Obesity",
+        "B": "Blood",
+        "C": "Food",
+        "D": "Treatment"
+      }
+    },
+    {
+      "n": 11,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "'Chicken' is related to '...' as 'Dog' is related to 'Kennel'.",
+      "options": {
+        "A": "Broiler",
+        "B": "Rooster",
+        "C": "Chick",
+        "D": "Coupe"
+      }
+    },
+    {
+      "n": 12,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "'Thermometer' is related to 'temperature' in the same way as 'Protractor' is related to '...'.",
+      "options": {
+        "A": "Angle",
+        "B": "Mass",
+        "C": "Height",
+        "D": "Weight"
+      }
+    },
+    {
+      "n": 13,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "'Abundant' is related to 'Scarce' in the same way as 'Artificial' is related to '........' (The words must be considered as meaningful English words and must NOT be related to each other based on the number of letters/number of consonants/ vowels in the word).",
+      "options": {
+        "A": "Hollow",
+        "B": "Insincere",
+        "C": "Natural",
+        "D": "Pretend"
+      }
+    },
+    {
+      "n": 14,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "Fluorine is related to halogens in the same way as argentums is related to :",
+      "options": {
+        "A": "Radioactive",
+        "B": "Gas",
+        "C": "Metal",
+        "D": "Inert gas"
+      }
+    },
+    {
+      "n": 15,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "The relation of 'hydrophobia' with 'water' is 'Hemophobia' has the same relation.",
+      "options": {
+        "A": "Spider",
+        "B": "Blood",
+        "C": "Disease",
+        "D": "Height"
+      }
+    },
+    {
+      "n": 16,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "The way 'Windows' is related to 'Computer'. In the same way 'Android' is related to..........",
+      "options": {
+        "A": "Mobile",
+        "B": "Typewriter",
+        "C": "Telephone",
+        "D": "Printer"
+      }
+    },
+    {
+      "n": 17,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "Bromine is related to the halogens in the same way as krypton is related",
+      "options": {
+        "A": "inert gas",
+        "B": "radioactive element",
+        "C": "metal",
+        "D": "gas"
+      }
+    },
+    {
+      "n": 18,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "As 'greedy' is related to 'generous', in the same way 'vindictive' is related to?",
+      "options": {
+        "A": "kind",
+        "B": "vindictive",
+        "C": "indifferent",
+        "D": "hostile"
+      }
+    },
+    {
+      "n": 19,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "Just as cardiology is related to the heart, similarly pathology is related.",
+      "options": {
+        "A": "Body",
+        "B": "Disease",
+        "C": "Person",
+        "D": "Soil"
+      }
+    },
+    {
+      "n": 20,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "Which of the following is the same as Taxonomy, Selennography and Pedology ?",
+      "options": {
+        "A": "Moon",
+        "B": "Eccrinology",
+        "C": "Virus",
+        "D": "Skull"
+      }
+    },
+    {
+      "n": 21,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "If GRAIN is related to WAREHOUSE, then WATER is related to .............. .",
+      "options": {
+        "A": "Estuary",
+        "B": "River",
+        "C": "Canal",
+        "D": "Dam"
+      }
+    },
+    {
+      "n": 22,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "If CATTLE is related to HERD the SHEEP is related to...........",
+      "options": {
+        "A": "FLOCK",
+        "B": "SWARM",
+        "C": "SHOAL",
+        "D": "MOB"
+      }
+    },
+    {
+      "n": 23,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "If SCHOOL is to EDUCATION then BANK is to ....",
+      "options": {
+        "A": "ATM",
+        "B": "CHEQUE",
+        "C": "LOAN",
+        "D": "LOCKER."
+      }
+    },
+    {
+      "n": 24,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "If 'Flow' is related to 'River', then 'Stagnant' is related to .... .",
+      "options": {
+        "A": "Pool",
+        "B": "Rain",
+        "C": "Stream",
+        "D": "Canal"
+      }
+    },
+    {
+      "n": 25,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "If 'Dog' is to 'Rabies' then 'Mosquito' is to .....",
+      "options": {
+        "A": "Plague",
+        "B": "Death",
+        "C": "Malaria",
+        "D": "Sting"
+      }
+    },
+    {
+      "n": 26,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "'Recite' is related to 'Poem' in the same way as 'Read' is related to :",
+      "options": {
+        "A": "Habit",
+        "B": "Passage",
+        "C": "Pencil",
+        "D": "Sharpener"
+      }
+    },
+    {
+      "n": 27,
+      "page": 1,
+      "section": "Type-1",
+      "stem": "'Water' is related to 'Well' in the same way as 'Coal' is related to :",
+      "options": {
+        "A": "Factory",
+        "B": "Mine",
+        "C": "Graphite",
+        "D": "Village"
+      }
+    },
+    {
+      "n": 28,
+      "page": 2,
+      "section": "Type-1",
+      "stem": "'Car' is related to 'Petrol' in the same way as 'Television' is related to :",
+      "options": {
+        "A": "Entertainment",
+        "B": "Broadcast",
+        "C": "Curtain",
+        "D": "Electricity"
+      }
+    },
+    {
+      "n": 29,
+      "page": 2,
+      "section": "Type-1",
+      "stem": "'House' is related to 'Shelter' in the same way as 'School' is related to :",
+      "options": {
+        "A": "Education",
+        "B": "Classes",
+        "C": "Student",
+        "D": "Teaching"
+      }
+    },
+    {
+      "n": 30,
+      "page": 2,
+      "section": "Type-1",
+      "stem": "'Stone' is related to 'Hard' in the same way as 'Feather' is related to :",
+      "options": {
+        "A": "Soft",
+        "B": "Fly",
+        "C": "Bird",
+        "D": "White"
+      }
+    },
+    {
+      "n": 31,
+      "page": 2,
+      "section": "Type-1",
+      "stem": "'Thermometer' is related to 'Degree' in the same way as 'Clock' is related to :",
+      "options": {
+        "A": "Pendulum",
+        "B": "Hour",
+        "C": "Time",
+        "D": "Wall"
+      }
+    },
+    {
+      "n": 32,
+      "page": 2,
+      "section": "Type-1",
+      "stem": "'Hot' is related to 'Furnace' in the same way as 'Cool' is related to :",
+      "options": {
+        "A": "Pitcher",
+        "B": "Weather",
+        "C": "Refrigerator",
+        "D": "Air Conditioner"
+      }
+    },
+    {
+      "n": 33,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "58 : 30 :: 116 : ?",
+      "options": {
+        "A": "56",
+        "B": "59",
+        "C": "95",
+        "D": "65"
+      }
+    },
+    {
+      "n": 34,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "9 : 181 :: 14 : ?",
+      "options": {
+        "A": "435",
+        "B": "512",
+        "C": "401",
+        "D": "421"
+      }
+    },
+    {
+      "n": 35,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "6294 : 32 :: 4381 : ?",
+      "options": {
+        "A": "29",
+        "B": "42",
+        "C": "38",
+        "D": "43"
+      }
+    },
+    {
+      "n": 36,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "4751 : 8998 :: 5236 : ?",
+      "options": {
+        "A": "9879",
+        "B": "9999",
+        "C": "8888",
+        "D": "8998"
+      }
+    },
+    {
+      "n": 37,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "12 : 729 :: 9 : ?",
+      "options": {
+        "A": "225",
+        "B": "261",
+        "C": "216",
+        "D": "252"
+      }
+    },
+    {
+      "n": 38,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "130 : 5 :: ? : 6 :: 738 : 9",
+      "options": {
+        "A": "218",
+        "B": "232",
+        "C": "304",
+        "D": "222"
+      }
+    },
+    {
+      "n": 39,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "128 : 4 :: ? 11 :: 2592 : 18",
+      "options": {
+        "A": "847",
+        "B": "1089",
+        "C": "968",
+        "D": "1331"
+      }
+    },
+    {
+      "n": 40,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "8 : 44 :: 5 : ? :: 11 : 92",
+      "options": {
+        "A": "25",
+        "B": "9",
+        "C": "14",
+        "D": "20"
+      }
+    },
+    {
+      "n": 41,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "15 : 256 :: 14 : ?",
+      "options": {
+        "A": "225",
+        "B": "144",
+        "C": "25",
+        "D": "95"
+      }
+    },
+    {
+      "n": 42,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "108 : 11664 :: 107 : ?",
+      "options": {
+        "A": "11449",
+        "B": "10449",
+        "C": "10849",
+        "D": "11749"
+      }
+    },
+    {
+      "n": 43,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "105 : 11025 :: 109 : ?",
+      "options": {
+        "A": "11881",
+        "B": "18118",
+        "C": "18181",
+        "D": "11818"
+      }
+    },
+    {
+      "n": 44,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "10 : 101 :: 12 : ?",
+      "options": {
+        "A": "145",
+        "B": "144",
+        "C": "142",
+        "D": "141"
+      }
+    },
+    {
+      "n": 45,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "3476 : 20 :: 4235 : ?",
+      "options": {
+        "A": "14",
+        "B": "13",
+        "C": "12",
+        "D": "16"
+      }
+    },
+    {
+      "n": 46,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "107 : 11449 :: 109 : ?",
+      "options": {
+        "A": "11881",
+        "B": "10881",
+        "C": "12991",
+        "D": "13891"
+      }
+    },
+    {
+      "n": 47,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "7 : 81 :: ? : ?",
+      "options": {
+        "A": "10 : 144",
+        "B": "12 : 169",
+        "C": "9 : 131",
+        "D": "11 : 225"
+      }
+    },
+    {
+      "n": 48,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "102 : 10404 :: 107 : ?",
+      "options": {
+        "A": "11449",
+        "B": "11649",
+        "C": "11049",
+        "D": "12449"
+      }
+    },
+    {
+      "n": 49,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "12 : 1728 :: 17 : ?",
+      "options": {
+        "A": "4913",
+        "B": "4927",
+        "C": "4943",
+        "D": "4963"
+      }
+    },
+    {
+      "n": 50,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "7 : 63 :: 11 : ?",
+      "options": {
+        "A": "143",
+        "B": "147",
+        "C": "146",
+        "D": "145"
+      }
+    },
+    {
+      "n": 51,
+      "page": 2,
+      "section": "Type-2b",
+      "stem": "Select the option that is related to the third term on the same basis as second term is related to the first term.\n121 : 1331 :: 141 : ?",
+      "options": {
+        "A": "1421",
+        "B": "1441",
+        "C": "1661",
+        "D": "1692"
+      }
+    },
+    {
+      "n": 52,
+      "page": 2,
+      "section": "Type-2b",
+      "stem": "Select the option that is related to the third term on the same basis as second term is related to the first term.\n365 : 90 :: 623 : ?",
+      "options": {
+        "A": "63",
+        "B": "36",
+        "C": "45",
+        "D": "123"
+      }
+    },
+    {
+      "n": 53,
+      "page": 2,
+      "section": "Type-2b",
+      "stem": "In the following question, select the related number from the given alternatives.\n12 : 140 :: 29 : ?",
+      "options": {
+        "A": "839",
+        "B": "957",
+        "C": "837",
+        "D": "845"
+      }
+    },
+    {
+      "n": 54,
+      "page": 2,
+      "section": "Type-2b",
+      "stem": "There is a certain relationship between two given numbers on one side of :: and one number is given on another side of :: while another number is to be found from the given alternatives, having the same relation with the number as the number of the given pair. Choose the correct alternative.\n24 : 144 :: 52 : ?",
+      "options": {
+        "A": "676",
+        "B": "242",
+        "C": "324",
+        "D": "452"
+      }
+    },
+    {
+      "n": 55,
+      "page": 2,
+      "section": "Type-2b",
+      "stem": "A group of three interrelated numbers is given. Choose a numbers from the given alternatives that is similar to the given numbers and hence belongs to the same group.\n385 : 473 : 143",
+      "options": {
+        "A": "180",
+        "B": "221",
+        "C": "270",
+        "D": "253"
+      }
+    },
+    {
+      "n": 56,
+      "page": 2,
+      "section": "Type-2b",
+      "stem": "Select the number which is related to third number in the same way as the second number is related to first number?\n2211 : 10 :: 1423 : ?",
+      "options": {
+        "A": "29",
+        "B": "27",
+        "C": "28",
+        "D": "30"
+      }
+    },
+    {
+      "n": 57,
+      "page": 2,
+      "section": "Type-2b",
+      "stem": "There is a certain relationship between two given numbers on one side of :: and one number is given on another side of :: while another number is to be found from the given alternatives, having the same relation with the number as the number of the given pair.\nChoose the correct alternative\n17 : 374 :: 29 : ?",
+      "options": {
+        "A": "986",
+        "B": "242",
+        "C": "224",
+        "D": "338"
+      }
+    },
+    {
+      "n": 58,
+      "page": 2,
+      "section": "Type-2",
+      "stem": "1 : 1 :: 25 : ?",
+      "options": {
+        "A": "240",
+        "B": "625",
+        "C": "26",
+        "D": "125"
+      }
+    },
+    {
+      "n": 59,
+      "page": 3,
+      "section": "Type-2",
+      "stem": "8 : 28 :: 27 : ?",
+      "options": {
+        "A": "8",
+        "B": "28",
+        "C": "64",
+        "D": "65"
+      }
+    },
+    {
+      "n": 60,
+      "page": 3,
+      "section": "Type-2",
+      "stem": "85 : 42 :: 139 : ?",
+      "options": {
+        "A": "68",
+        "B": "69",
+        "C": "70",
+        "D": "67"
+      }
+    },
+    {
+      "n": 61,
+      "page": 3,
+      "section": "Type-2",
+      "stem": "18 : 27 :: 60 : ?",
+      "options": {
+        "A": "72",
+        "B": "81",
+        "C": "90",
+        "D": "100"
+      }
+    },
+    {
+      "n": 62,
+      "page": 3,
+      "section": "Type-2",
+      "stem": "3 : 11 :: 7 : ?",
+      "options": {
+        "A": "22",
+        "B": "29",
+        "C": "51",
+        "D": "18"
+      }
+    },
+    {
+      "n": 63,
+      "page": 3,
+      "section": "Type-2",
+      "stem": "27 : 3 :: 873 : ?",
+      "options": {
+        "A": "23",
+        "B": "97",
+        "C": "9",
+        "D": "87"
+      }
+    },
+    {
+      "n": 64,
+      "page": 3,
+      "section": "Type-2",
+      "stem": "8 : 64 :: 27 : ?",
+      "options": {
+        "A": "64",
+        "B": "212",
+        "C": "125",
+        "D": "81"
+      }
+    },
+    {
+      "n": 65,
+      "page": 3,
+      "section": "Type-2",
+      "stem": "8 : 81 :: 64 : ?",
+      "options": {
+        "A": "525",
+        "B": "125",
+        "C": "250",
+        "D": "625"
+      }
+    },
+    {
+      "n": 66,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "AZC : VUX :: SUS : ?",
+      "options": {
+        "A": "NPN",
+        "B": "BAX",
+        "C": "DCQ",
+        "D": "CKM"
+      }
+    },
+    {
+      "n": 67,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "EFG : IJK :: MNO : ?",
+      "options": {
+        "A": "PQR",
+        "B": "OPQ",
+        "C": "QRS",
+        "D": "NOP"
+      }
+    },
+    {
+      "n": 68,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "BYWD : DWUF :: FUSH : ?",
+      "options": {
+        "A": "JQOL",
+        "B": "HSQJ",
+        "C": "HSJQ",
+        "D": "HTRJ"
+      }
+    },
+    {
+      "n": 69,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "RAILCAR : NEEPYEN :: ICESHOW : ...............",
+      "options": {
+        "A": "MZJOMKU",
+        "B": "MYIOLKT",
+        "C": "EGAWDSS",
+        "D": "NZJPMLU"
+      }
+    },
+    {
+      "n": 70,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "CUSTOMER : YQWXKIIV :: COMMERCIAL : ?",
+      "options": {
+        "A": "YKQQANGMWH",
+        "B": "GSQQIVGMEP",
+        "C": "YKIIANYEWH",
+        "D": "GSIIEREWEP"
+      }
+    },
+    {
+      "n": 71,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "PHONETIC : FLWHQRKS :: SHEEPDOG : ?",
+      "options": {
+        "A": "JRVKGSHH",
+        "B": "JRGSHHKV",
+        "C": "VKRJHHSG",
+        "D": "VKHHSGRJ"
+      }
+    },
+    {
+      "n": 72,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "CANVAS : DCQZFY :: LOANER : ?",
+      "options": {
+        "A": "MQDSKY",
+        "B": "MRDRJY",
+        "C": "MQDRJX",
+        "D": "MQERJY"
+      }
+    },
+    {
+      "n": 73,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "CONCEPT : DDFOPQU :: NARROWS : ...............",
+      "options": {
+        "A": "OBSSPXT",
+        "B": "BOPSSTX",
+        "C": "WSRRONA",
+        "D": "XTSPOBS"
+      }
+    },
+    {
+      "n": 74,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "CEGI : IKMO :: ?",
+      "options": {
+        "A": "JKLNP",
+        "B": "LNPR",
+        "C": "MNPQ",
+        "D": "DFHI"
+      }
+    },
+    {
+      "n": 75,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "LATYE : YTLEA :: NETAEO : ?",
+      "options": {
+        "A": "TONEEA",
+        "B": "TONEAE",
+        "C": "TTNUAE",
+        "D": "TQUNEA"
+      }
+    },
+    {
+      "n": 76,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "LARTBZ : BLRTAZ :: PARENF : ?",
+      "options": {
+        "A": "RNPEAF",
+        "B": "NPREAF",
+        "C": "NEARFP",
+        "D": "NREAFP"
+      }
+    },
+    {
+      "n": 77,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "NEUTSE : EFPVXZ :: ZWURST : ?",
+      "options": {
+        "A": "RTSVEA",
+        "B": "QXPXAE",
+        "C": "RTVXAE",
+        "D": "QXPTWA"
+      }
+    },
+    {
+      "n": 78,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "DURDG : EFJVZ :: JGFSGR : ?",
+      "options": {
+        "A": "KIJNVX",
+        "B": "GIJNWY",
+        "C": "GJJNVX",
+        "D": "KJJNVX"
+      }
+    },
+    {
+      "n": 79,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "OESTD : UAVXI :: UISRY : ?",
+      "options": {
+        "A": "AOVYD",
+        "B": "AEVVD",
+        "C": "EAVVD",
+        "D": "AEVWD"
+      }
+    },
+    {
+      "n": 80,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "GKNR : SOLH :: MNGB : ?",
+      "options": {
+        "A": "QPSX",
+        "B": "OMNX",
+        "C": "NMTX",
+        "D": "MLSX"
+      }
+    },
+    {
+      "n": 81,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "ROME : QNLD :: MORE : ?",
+      "options": {
+        "A": "LNQD",
+        "B": "LNQC",
+        "C": "LMQD",
+        "D": "LMQC"
+      }
+    },
+    {
+      "n": 82,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "ABC : EXI :: NOS : ?",
+      "options": {
+        "A": "SJU",
+        "B": "RKY",
+        "C": "TKV",
+        "D": "TJV"
+      }
+    },
+    {
+      "n": 83,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "ROOM : QNNL :: RENT : ?",
+      "options": {
+        "A": "QDMS",
+        "B": "QEMS",
+        "C": "QDNS",
+        "D": "QDMT"
+      }
+    },
+    {
+      "n": 84,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "PHYSICS : KSBHRXH :: CHEMISTRY : ?",
+      "options": {
+        "A": "XSVNRHGIB",
+        "B": "XSVNSHGIB",
+        "C": "XSUNRIGIB",
+        "D": "XSVMSITRC"
+      }
+    },
+    {
+      "n": 85,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "CORD : BNQC :: LESS : ?",
+      "options": {
+        "A": "KDRR",
+        "B": "KFRR",
+        "C": "MDRR",
+        "D": "KCRR"
+      }
+    },
+    {
+      "n": 86,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "HANGER : GBMHDS :: GARDEN : ?",
+      "options": {
+        "A": "FBQEDO",
+        "B": "FBQFDO",
+        "C": "FBREDP",
+        "D": "FCQEDP"
+      }
+    },
+    {
+      "n": 87,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "GOING : HPJOH :: WHERE : ?",
+      "options": {
+        "A": "XIFSF",
+        "B": "XIGSF",
+        "C": "XIHSF",
+        "D": "XIFTG"
+      }
+    },
+    {
+      "n": 88,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "FASTER : GZTUDS :: BOXING : ?",
+      "options": {
+        "A": "CSYQPJ",
+        "B": "CNYHOH",
+        "C": "ANYHPH",
+        "D": "CMZHOI"
+      }
+    },
+    {
+      "n": 89,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "GDC : AEY :: RON : ?",
+      "options": {
+        "A": "LPJ",
+        "B": "LPG",
+        "C": "MPJ",
+        "D": "MPK"
+      }
+    },
+    {
+      "n": 90,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "ABCD : QRST :: BACD : ?",
+      "options": {
+        "A": "RQST",
+        "B": "STQR",
+        "C": "QRST",
+        "D": "RSTQ"
+      }
+    },
+    {
+      "n": 91,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "KMF : LLH :: RMS : ?",
+      "options": {
+        "A": "SLR",
+        "B": "SLU",
+        "C": "SSU",
+        "D": "SUS"
+      }
+    },
+    {
+      "n": 92,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "CAT : DDY :: BIG : ?",
+      "options": {
+        "A": "CLL",
+        "B": "CLM",
+        "C": "CML",
+        "D": "CEP"
+      }
+    },
+    {
+      "n": 93,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "LEFT : NGHV :: RIGHT : ?",
+      "options": {
+        "A": "TJKV",
+        "B": "TKIJV",
+        "C": "VKIJT",
+        "D": "TJIKV"
+      }
+    },
+    {
+      "n": 94,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "SUMO : PRJL :: TAXI : ?",
+      "options": {
+        "A": "QXUF",
+        "B": "QDNF",
+        "C": "WDXJ",
+        "D": "QDVF"
+      }
+    },
+    {
+      "n": 95,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "ELJH : MTRP :: UBZX : ?",
+      "options": {
+        "A": "DJIG",
+        "B": "CJHF",
+        "C": "CIGE",
+        "D": "CBYA"
+      }
+    },
+    {
+      "n": 96,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "RACE : FACE :: CARE : ?",
+      "options": {
+        "A": "FARE",
+        "B": "CAFE",
+        "C": "CEAF",
+        "D": "ACRE"
+      }
+    },
+    {
+      "n": 97,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "FLOWER : REWOLF :: FRUITS : ?",
+      "options": {
+        "A": "STRUIF",
+        "B": "STUIRF",
+        "C": "STIURF",
+        "D": "STUIFR"
+      }
+    },
+    {
+      "n": 98,
+      "page": 3,
+      "section": "Type-3",
+      "stem": "AYRRJC : CATTLE :: NCPDCAR : ?",
+      "options": {
+        "A": "SUBJECT",
+        "B": "NEGLECT",
+        "C": "PERFECT",
+        "D": "OPERATE"
+      }
+    }
+  ]
+}
