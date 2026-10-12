@@ -32,7 +32,7 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-907 tests passing · npm test        lint clean · npm run lint        npm run build green
+1012 tests passing · npm test        lint clean · npm run lint        npm run build green
 74 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
@@ -134,7 +134,7 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 907 tests (never touches the database)
+npm test              # 1012 tests (never touches the database)
 npm run test:db       # 74 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
@@ -180,7 +180,7 @@ lists every conclusion a second assessor settles.
 
 - **The D5 bake-off** needs an `ANTHROPIC_API_KEY` or an `ant auth login` profile.
   Everything else for it is built.
-- **Sprint 2** (ROADMAP) — OIR verbal has a source (D24; Chapters 4, 6, 9 and 11 seeded and practisable (D26), seven chapters to go — order and page map in SUGGESTIONS.md, timed mocks held until more land,
+- **Sprint 2** (ROADMAP) — OIR verbal has a source (D24; Chapters 4, 6, 8, 9 and 11 seeded and practisable (D26), six chapters to go — order and page map in SUGGESTIONS.md, timed mocks held until more land,
   the book's answer key still to come); non-verbal still needs figure assets.
 - **A second assessor.** Everything it unblocks is listed in the ledger (D17 above).
 
@@ -188,6 +188,9 @@ Deferred work carries over in [`SUGGESTIONS.md`](./SUGGESTIONS.md) with the
 reasoning; strike items there when done rather than deleting them.
 
 ## Git
+
+A local pre-commit hook (`.git/hooks/pre-commit`, not versioned — recreate it on a fresh clone) runs
+the candidate-name scan and refuses the commit on a hit.
 
 Remote: **private** `github.com/lwspune/crackssb` (branch `main`) — keep it private: it holds the OIR book with answer keys and pseudonymised candidate quotes. Before any commit or push, `git status` and re-scan for names
 (D21; `no-candidate-names.test.ts` does the scan locally) — the `.gitignore` covers `corpus/records/`, `corpus/reports/`, `corpus/report-findings.json`

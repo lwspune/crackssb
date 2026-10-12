@@ -208,6 +208,12 @@ ch5 p17-21 · ch6 p22-23 · ch7 p24-28 · ch8 p29-34 · ch9 p35-37 · ch10 p38-4
   with Kavita in the row; 53 is not an option, so the book counts everyone).
   Q12's name matched a candidate's and is now "Rakesh" (D27). The chapter
   prints no direction, so its items carry none.
+- ~~Chapter 8, Directions~~ — done 2026-10-12: 93 of 100 seeded. 89 keys run
+  through `walk`; 4 reasoned (Q11, the two shadow questions Q31-32, Q56 whose
+  option is misprinted "North-Eeast"). Held: Q6, Q10, Q41, Q61, Q62, Q66, Q87
+  (reasons in the key file). Medium: Q5, Q9, Q44, Q45, Q65, Q91, Q95. Three
+  names swapped (Q17, Q89, Q97; D27).
+- **Next:** Chapter 3 (Coding-Decoding, p9-14), then 5, 7, 10, 1, 2.
 
 ### Backfill ledger: Chapter 11's test onto the shared chapter suite
 `oir-agrawal-series.test.ts` predates `oir-chapter-suite.ts` and carries its own
