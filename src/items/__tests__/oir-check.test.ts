@@ -4,6 +4,7 @@ import {
   fromDiffs,
   hamming,
   iterate,
+  lettersShort,
   minimalPeriod,
   normalizeLetters,
   optionLetters,
@@ -105,3 +106,23 @@ describe('splitKey — the database never stores a key next to the question', ()
     expect(() => splitKey({ ...item, payload: keyless }, { sourceRef: 'x', keyBasis: 'derived', rule: 'r' })).toThrow(/no key/);
   });
 });
+
+describe('lettersShort', () => {
+  it('is empty when the candidate can be made from the word, each letter used as often as it appears', () => {
+    expect(lettersShort('ADMINISTRATION', 'RATION')).toEqual([]);
+    expect(lettersShort('CONDUCT', 'Duct')).toEqual([]);
+  });
+
+  it('names a letter the word does not have', () => {
+    expect(lettersShort('IMPOSSIO-NABLE?', 'IMPASSIVE')).toEqual([{ letter: 'V', need: 1, have: 0 }]);
+  });
+
+  it('names a letter needed more often than the word has it', () => {
+    expect(lettersShort('ELECTRICIANS', 'STRICT')).toEqual([{ letter: 'T', need: 2, have: 1 }]);
+  });
+
+  it('reads letters only, in either case', () => {
+    expect(lettersShort('Conduct', 'COUNTED')).toEqual([{ letter: 'E', need: 1, have: 0 }]);
+  });
+});
+

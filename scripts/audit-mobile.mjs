@@ -22,7 +22,7 @@
 const BASE = process.argv[2] ?? 'http://localhost:3000';
 const CDP = process.env.CDP_URL ?? 'http://127.0.0.1:9333';
 const PUBLIC_PAGES = ['/login'];
-const STUDENT_PAGES = ['/', '/practise', '/practise/oir', '/practise/oir/series', '/olq', '/results', '/profile', '/run/wat'];
+const STUDENT_PAGES = ['/', '/practise', '/practise/oir', '/practise/oir/series', '/practise/oir/word-formation', '/olq', '/results', '/profile', '/run/wat'];
 const STAFF_PAGES = ['/staff/people', '/staff/people/new', '/staff/batches', '/staff/review'];
 const CANDIDATE = { email: process.env.AUDIT_CANDIDATE_EMAIL, password: process.env.AUDIT_CANDIDATE_PASSWORD };
 const STAFF = { email: process.env.AUDIT_STAFF_EMAIL, password: process.env.AUDIT_STAFF_PASSWORD };

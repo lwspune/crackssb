@@ -69,6 +69,24 @@ export function hamming(a: string, b: string): number {
   return n;
 }
 
+function letterCounts(s: string): Map<string, number> {
+  const m = new Map<string, number>();
+  for (const c of s.toUpperCase().replace(/[^A-Z]/g, '')) m.set(c, (m.get(c) ?? 0) + 1);
+  return m;
+}
+
+/**
+ * Word formation: what `candidate` needs that `word` cannot give, each letter
+ * usable as often as it appears in `word`. Empty when the candidate can be
+ * made. Letters only, case ignored.
+ */
+export function lettersShort(word: string, candidate: string): { letter: string; need: number; have: number }[] {
+  const have = letterCounts(word);
+  return [...letterCounts(candidate)]
+    .filter(([c, n]) => (have.get(c) ?? 0) < n)
+    .map(([letter, need]) => ({ letter, need, have: have.get(letter) ?? 0 }));
+}
+
 export type KeyBasis = 'derived' | 'book' | 'derived_and_book';
 
 export interface ItemRow {

@@ -3,6 +3,16 @@
   "sources": [
     {
       "source": "agrawal-examcart-oir",
+      "chapter": 4,
+      "title": "Word Formation",
+      "pages": [
+        15,
+        16
+      ],
+      "file": "content/oir/agrawal-examcart/ch04-word-formation.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
       "chapter": 11,
       "title": "Series Test",
       "pages": [
@@ -12,10 +22,10 @@
       "file": "content/oir/agrawal-examcart/ch11-series.source.json"
     }
   ],
-  "itemCount": 118,
+  "itemCount": 165,
   "heldCount": 7,
   "confidence": {
-    "high": 112,
+    "high": 159,
     "medium": 6
   },
   "held": [
@@ -59,6 +69,1087 @@
     }
   ],
   "items": [
+    {
+      "id": "oir-agx-ch04-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ADMINISTRATION",
+        "options": {
+          "A": "STRAIN",
+          "B": "TRADITION",
+          "C": "SITUATION",
+          "D": "RATION"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q1",
+      "key_basis": "derived",
+      "rule": "SITUATION needs a U, which ADMINISTRATION does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q002",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "COMBINATION",
+        "options": {
+          "A": "NATION",
+          "B": "AMBITION",
+          "C": "CAUTION",
+          "D": "MOTION"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q2",
+      "key_basis": "derived",
+      "rule": "CAUTION needs a U, which COMBINATION does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "IMPOSSIO-NABLE?",
+        "options": {
+          "A": "IMPOSSIBLE",
+          "B": "POSSIBLE",
+          "C": "IMPOSE",
+          "D": "IMPASSIVE"
+        },
+        "key": "D",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q3",
+      "key_basis": "derived",
+      "rule": "IMPASSIVE needs a V, which IMPOSSIONABLE does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "FUNDAMENTALY",
+        "options": {
+          "A": "SUNDAY",
+          "B": "MEANT",
+          "C": "FUNNY",
+          "D": "TUNED"
+        },
+        "key": "A",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q4",
+      "key_basis": "derived",
+      "rule": "SUNDAY needs an S, which FUNDAMENTALY does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "DISTRIBUTION",
+        "options": {
+          "A": "BUTTON",
+          "B": "DISTURB",
+          "C": "BRITAIN",
+          "D": "BURNT"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q5",
+      "key_basis": "derived",
+      "rule": "BRITAIN needs an A, which DISTRIBUTION does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ENTERTAINMENT",
+        "options": {
+          "A": "TERMINATE",
+          "B": "TERMINAL",
+          "C": "RETAIN",
+          "D": "RETINA"
+        },
+        "key": "B",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q6",
+      "key_basis": "derived",
+      "rule": "TERMINAL needs an L, which ENTERTAINMENT does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q007",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "UNNECESSARILY",
+        "options": {
+          "A": "RAINY",
+          "B": "CRANE",
+          "C": "LUNAR",
+          "D": "CREATE"
+        },
+        "key": "D",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q7",
+      "key_basis": "derived",
+      "rule": "CREATE needs a T, which UNNECESSARILY does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "SUBSTITUTION",
+        "options": {
+          "A": "BITS",
+          "B": "BOND",
+          "C": "BINS",
+          "D": "BUST"
+        },
+        "key": "B",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q8",
+      "key_basis": "derived",
+      "rule": "BOND needs a D, which SUBSTITUTION does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "CELEBRATIONS",
+        "options": {
+          "A": "CREATE",
+          "B": "COINS",
+          "C": "SONG",
+          "D": "RATES"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q9",
+      "key_basis": "derived",
+      "rule": "SONG needs a G, which CELEBRATIONS does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "PERFORMANCE",
+        "options": {
+          "A": "FORM",
+          "B": "ROMANCE",
+          "C": "DIME",
+          "D": "ROME"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q10",
+      "key_basis": "derived",
+      "rule": "DIME needs D and I, which PERFORMANCE does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "OPERATING",
+        "options": {
+          "A": "GRIEF",
+          "B": "OPERA",
+          "C": "RATE",
+          "D": "RATION"
+        },
+        "key": "A",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q11",
+      "key_basis": "derived",
+      "rule": "GRIEF needs an F, which OPERATING does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ELECTRICIANS",
+        "options": {
+          "A": "STRICT",
+          "B": "TRAINS",
+          "C": "ELECTS",
+          "D": "RACES"
+        },
+        "key": "A",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q12",
+      "key_basis": "derived",
+      "rule": "STRICT needs two Ts, and ELECTRICIANS has one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "BLENDING",
+        "options": {
+          "A": "BLEND",
+          "B": "BALD",
+          "C": "LEND",
+          "D": "BINGE"
+        },
+        "key": "B",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q13",
+      "key_basis": "derived",
+      "rule": "BALD needs an A, which BLENDING does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "TRANSLUCENT",
+        "options": {
+          "A": "TENT",
+          "B": "RENT",
+          "C": "CENT",
+          "D": "BENT"
+        },
+        "key": "D",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q14",
+      "key_basis": "derived",
+      "rule": "BENT needs a B, which TRANSLUCENT does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "INTELLIGENCE",
+        "options": {
+          "A": "GENTLE",
+          "B": "INCITE",
+          "C": "CANCEL",
+          "D": "NEGLECT"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q15",
+      "key_basis": "derived",
+      "rule": "CANCEL needs an A, which INTELLIGENCE does not have. It also needs two Cs, and INTELLIGENCE has one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "DECOMPOSITION",
+        "options": {
+          "A": "COMPOSE",
+          "B": "ECONOMIST",
+          "C": "POSITION",
+          "D": "DOCTOR"
+        },
+        "key": "D",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q16",
+      "key_basis": "derived",
+      "rule": "DOCTOR needs an R, which DECOMPOSITION does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "DISAPPOINTMENT",
+        "options": {
+          "A": "TENSION",
+          "B": "ATTEND",
+          "C": "OINTMENT",
+          "D": "SAMPLE"
+        },
+        "key": "D",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q17",
+      "key_basis": "derived",
+      "rule": "SAMPLE needs an L, which DISAPPOINTMENT does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "CONDUCT",
+        "options": {
+          "A": "Duct",
+          "B": "Counted",
+          "C": "Count",
+          "D": "Donut"
+        },
+        "key": "B",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q18",
+      "key_basis": "derived",
+      "rule": "COUNTED needs an E, which CONDUCT does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "NATIONALISATION",
+        "options": {
+          "A": "NOTATION",
+          "B": "SALINATION",
+          "C": "INSTALLATION",
+          "D": "SANITATION"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q19",
+      "key_basis": "derived",
+      "rule": "INSTALLATION needs two Ls, and NATIONALISATION has one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ORGANISATION",
+        "options": {
+          "A": "GRANT",
+          "B": "NATION",
+          "C": "GIANTS",
+          "D": "ORANGE"
+        },
+        "key": "D",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q20",
+      "key_basis": "derived",
+      "rule": "ORANGE needs an E, which ORGANISATION does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "INTELLIGENCE",
+        "options": {
+          "A": "CANCEL",
+          "B": "NEGLECT",
+          "C": "GENTLE",
+          "D": "INCITE"
+        },
+        "key": "A",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q21",
+      "key_basis": "derived",
+      "rule": "CANCEL needs an A, which INTELLIGENCE does not have. It also needs two Cs, and INTELLIGENCE has one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "DISTRIBUTION",
+        "options": {
+          "A": "TRUST",
+          "B": "SITUATION",
+          "C": "TUITION",
+          "D": "DISTURB"
+        },
+        "key": "B",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q22",
+      "key_basis": "derived",
+      "rule": "SITUATION needs an A, which DISTRIBUTION does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "REPUBLICAN",
+        "options": {
+          "A": "CLIP",
+          "B": "PURE",
+          "C": "ANKLE",
+          "D": "BANE"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q23",
+      "key_basis": "derived",
+      "rule": "ANKLE needs a K, which REPUBLICAN does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ESTRANGE",
+        "options": {
+          "A": "GENERATE",
+          "B": "SERGEANT",
+          "C": "REAGENTS",
+          "D": "GREAT"
+        },
+        "key": "A",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q24",
+      "key_basis": "derived",
+      "rule": "GENERATE needs three Es, and ESTRANGE has two.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ADMINISTRATOR",
+        "options": {
+          "A": "ADMIT",
+          "B": "NEST",
+          "C": "MANTA",
+          "D": "ROAD"
+        },
+        "key": "B",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q25",
+      "key_basis": "derived",
+      "rule": "NEST needs an E, which ADMINISTRATOR does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "SOCIALISATION",
+        "options": {
+          "A": "SCOUT",
+          "B": "CLASS",
+          "C": "LIAISON",
+          "D": "ASSOCIATION"
+        },
+        "key": "A",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q26",
+      "key_basis": "derived",
+      "rule": "SCOUT needs a U, which SOCIALISATION does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q027",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "CARPENTER",
+        "options": {
+          "A": "NECTAR",
+          "B": "CARPET",
+          "C": "PAINTER",
+          "D": "REPENT"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q27",
+      "key_basis": "derived",
+      "rule": "PAINTER needs an I, which CARPENTER does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "REASONABLE",
+        "options": {
+          "A": "BRAIN",
+          "B": "BONES",
+          "C": "NOBLE",
+          "D": "ARSON"
+        },
+        "key": "A",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q28",
+      "key_basis": "derived",
+      "rule": "BRAIN needs an I, which REASONABLE does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q029",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ORGANISATION",
+        "options": {
+          "A": "STATION",
+          "B": "GAIN",
+          "C": "NATION",
+          "D": "RATION"
+        },
+        "key": "A",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q29",
+      "key_basis": "derived",
+      "rule": "STATION needs two Ts, and ORGANISATION has one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "CORRESPONDING",
+        "options": {
+          "A": "GRINDER",
+          "B": "CODING",
+          "C": "DROPPER",
+          "D": "DISCERN"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q30",
+      "key_basis": "derived",
+      "rule": "DROPPER needs two Ps, and CORRESPONDING has one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q031",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "DEPARTMENT",
+        "options": {
+          "A": "RENT",
+          "B": "PARENT",
+          "C": "MEANT",
+          "D": "PAIR"
+        },
+        "key": "D",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q31",
+      "key_basis": "derived",
+      "rule": "PAIR needs an I, which DEPARTMENT does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "RECOMMENDATION",
+        "options": {
+          "A": "NATION",
+          "B": "COMMON",
+          "C": "STONE",
+          "D": "MATION"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q32",
+      "key_basis": "derived",
+      "rule": "STONE needs an S, which RECOMMENDATION does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "REMUNERATION",
+        "options": {
+          "A": "NUMBER",
+          "B": "NATION",
+          "C": "MENTION",
+          "D": "RATION"
+        },
+        "key": "A",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q33",
+      "key_basis": "derived",
+      "rule": "NUMBER needs a B, which REMUNERATION does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "ROTATIONAL",
+        "options": {
+          "A": "TONE",
+          "B": "TOTAL",
+          "C": "NOT",
+          "D": "RATION"
+        },
+        "key": "A",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q34",
+      "key_basis": "derived",
+      "rule": "TONE needs an E, which ROTATIONAL does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "SUPERCONDUCTOR",
+        "options": {
+          "A": "SUPER",
+          "B": "PAIR",
+          "C": "DOCTOR",
+          "D": "CONDUCT"
+        },
+        "key": "B",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q35",
+      "key_basis": "derived",
+      "rule": "PAIR needs A and I, which SUPERCONDUCTOR does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "REMUNERATION",
+        "options": {
+          "A": "MOTION",
+          "B": "RARE",
+          "C": "RUMER",
+          "D": "NATION"
+        },
+        "key": "A",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q36",
+      "key_basis": "derived",
+      "rule": "MOTION needs two Os, and REMUNERATION has one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "NATURALIZATION",
+        "options": {
+          "A": "REAL",
+          "B": "TURN",
+          "C": "NATION",
+          "D": "NATURAL"
+        },
+        "key": "A",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q37",
+      "key_basis": "derived",
+      "rule": "REAL needs an E, which NATURALIZATION does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "SIGNIFICANT",
+        "options": {
+          "A": "GIANT",
+          "B": "FAINT",
+          "C": "SITE",
+          "D": "CANT"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q38",
+      "key_basis": "derived",
+      "rule": "SITE needs an E, which SIGNIFICANT does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q039",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "SIMULTANEOUS",
+        "options": {
+          "A": "STOLE",
+          "B": "SOUR",
+          "C": "SOUL",
+          "D": "LATE"
+        },
+        "key": "B",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p15 q39",
+      "key_basis": "derived",
+      "rule": "SOUR needs an R, which SIMULTANEOUS does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "PARTICIPATION",
+        "options": {
+          "A": "RATION",
+          "B": "PAIR",
+          "C": "TOTAL",
+          "D": "PART"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p16 q40",
+      "key_basis": "derived",
+      "rule": "TOTAL needs an L, which PARTICIPATION does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q041",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "UNIVERSITY",
+        "options": {
+          "A": "UNIVERSE",
+          "B": "SITE",
+          "C": "VIRUS",
+          "D": "TRUE"
+        },
+        "key": "A",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p16 q41",
+      "key_basis": "derived",
+      "rule": "UNIVERSE needs two Es, and UNIVERSITY has one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "GERMINATION",
+        "options": {
+          "A": "GERM",
+          "B": "NATION",
+          "C": "MANIA",
+          "D": "TONE"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p16 q42",
+      "key_basis": "derived",
+      "rule": "MANIA needs two As, and GERMINATION has one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "INFERIORITY",
+        "options": {
+          "A": "INFERIOR",
+          "B": "INFER",
+          "C": "FAIR",
+          "D": "RIOT"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p16 q43",
+      "key_basis": "derived",
+      "rule": "FAIR needs an A, which INFERIORITY does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q044",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "COUNTERPART",
+        "options": {
+          "A": "PROTECT",
+          "B": "TEMPER",
+          "C": "TENOR",
+          "D": "TREAT"
+        },
+        "key": "B",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p16 q44",
+      "key_basis": "derived",
+      "rule": "TEMPER needs an M, which COUNTERPART does not have. It also needs two Es, and COUNTERPART has one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "SUGGESTION",
+        "options": {
+          "A": "GESTURE",
+          "B": "SUGGEST",
+          "C": "GUESS",
+          "D": "NUGGET"
+        },
+        "key": "A",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p16 q45",
+      "key_basis": "derived",
+      "rule": "GESTURE needs an R, which SUGGESTION does not have. It also needs two Es, and SUGGESTION has one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "LAUGHTER",
+        "options": {
+          "A": "HEAL",
+          "B": "REAL",
+          "C": "GAME",
+          "D": "LATER"
+        },
+        "key": "C",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p16 q46",
+      "key_basis": "derived",
+      "rule": "GAME needs an M, which LAUGHTER does not have.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch04-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "CATEGORIZATION",
+        "options": {
+          "A": "CATERING",
+          "B": "CREATION",
+          "C": "RAINCOAT",
+          "D": "NEGATIVE"
+        },
+        "key": "D",
+        "reasoningType": "word_formation",
+        "direction": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch4 p16 q47",
+      "key_basis": "derived",
+      "rule": "NEGATIVE needs a V, which CATEGORIZATION does not have. It also needs two Es, and CATEGORIZATION has one.",
+      "confidence": "high"
+    },
     {
       "id": "oir-agx-ch11-q001",
       "assessment_type": "oir_verbal",

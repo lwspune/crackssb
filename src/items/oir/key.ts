@@ -18,6 +18,8 @@ import type { OptionLabel } from '../bank.ts';
  * - `fill` with `expected`: the keyed letters fill the blanks to `expected`.
  * - `next`: `sequence` regenerates the printed items and the keyed option is
  *   the item after them.
+ * - `letters`: word formation. The keyed option is the only one that cannot be
+ *   made from the stem's letters, each used as often as it appears.
  * - `reasoned`: no mechanical check; the rule is the argument.
  */
 export type KeyCheck =
@@ -26,6 +28,7 @@ export type KeyCheck =
   | { readonly kind: 'fill'; readonly template: string; readonly period: number; readonly misread?: number }
   | { readonly kind: 'fill'; readonly template: string; readonly expected: string; readonly misread?: number }
   | { readonly kind: 'next'; readonly sequence: readonly string[] }
+  | { readonly kind: 'letters' }
   | { readonly kind: 'reasoned' };
 
 /**

@@ -4,7 +4,8 @@
  * in the same chapter. Order is the order the practice page lists them in.
  *
  * Every reasoning type in the seeded bank must appear here (practice.test.ts),
- * so seeding a new chapter without listing it fails a test.
+ * so seeding a new chapter without listing it fails a test. Listed in the
+ * book's chapter order.
  */
 export interface OirChapter {
   readonly slug: string;
@@ -15,6 +16,7 @@ export interface OirChapter {
 }
 
 export const OIR_CHAPTERS: readonly OirChapter[] = [
+  { slug: 'word-formation', title: 'Word Formation', reasoningType: 'word_formation', summary: 'Words hidden in a longer word' },
   { slug: 'series', title: 'Series', reasoningType: 'series', summary: 'Number and letter series' },
 ];
 

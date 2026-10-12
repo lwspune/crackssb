@@ -1,0 +1,586 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSB OIR PAGE NO. 1-44 (phone photos of printed pages 1-44)",
+  "chapter": 4,
+  "title": "Word Formation",
+  "pages": [
+    15,
+    16
+  ],
+  "transcribed": "2026-10-12",
+  "note": "Verbatim, typos included. Never edited: corrections live in src/items/oir/. The printed direction says Q1 to 50; the chapter ends at Q47.",
+  "directions": [
+    {
+      "section": "Main",
+      "printed": "Direction (Q. No. 1 to 50)",
+      "text": "From the given alternatives, select the word which cannot be formed using the letters of the given word."
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 15,
+      "section": "Main",
+      "stem": "ADMINISTRATION",
+      "options": {
+        "A": "STRAIN",
+        "B": "TRADITION",
+        "C": "SITUATION",
+        "D": "RATION"
+      }
+    },
+    {
+      "n": 2,
+      "page": 15,
+      "section": "Main",
+      "stem": "COMBINATION",
+      "options": {
+        "A": "NATION",
+        "B": "AMBITION",
+        "C": "CAUTION",
+        "D": "MOTION"
+      }
+    },
+    {
+      "n": 3,
+      "page": 15,
+      "section": "Main",
+      "stem": "IMPOSSIO-NABLE?",
+      "options": {
+        "A": "IMPOSSIBLE",
+        "B": "POSSIBLE",
+        "C": "IMPOSE",
+        "D": "IMPASSIVE"
+      }
+    },
+    {
+      "n": 4,
+      "page": 15,
+      "section": "Main",
+      "stem": "FUNDAMENTALY",
+      "options": {
+        "A": "SUNDAY",
+        "B": "MEANT",
+        "C": "FUNNY",
+        "D": "TUNED"
+      }
+    },
+    {
+      "n": 5,
+      "page": 15,
+      "section": "Main",
+      "stem": "DISTRIBUTION",
+      "options": {
+        "A": "BUTTON",
+        "B": "DISTURB",
+        "C": "BRITAIN",
+        "D": "BURNT"
+      }
+    },
+    {
+      "n": 6,
+      "page": 15,
+      "section": "Main",
+      "stem": "ENTERTAINMENT",
+      "options": {
+        "A": "TERMINATE",
+        "B": "TERMINAL",
+        "C": "RETAIN",
+        "D": "RETINA"
+      }
+    },
+    {
+      "n": 7,
+      "page": 15,
+      "section": "Main",
+      "stem": "UNNECESSARILY",
+      "options": {
+        "A": "RAINY",
+        "B": "CRANE",
+        "C": "LUNAR",
+        "D": "CREATE"
+      }
+    },
+    {
+      "n": 8,
+      "page": 15,
+      "section": "Main",
+      "stem": "SUBSTITUTION",
+      "options": {
+        "A": "BITS",
+        "B": "BOND",
+        "C": "BINS",
+        "D": "BUST"
+      }
+    },
+    {
+      "n": 9,
+      "page": 15,
+      "section": "Main",
+      "stem": "CELEBRATIONS",
+      "options": {
+        "A": "CREATE",
+        "B": "COINS",
+        "C": "SONG",
+        "D": "RATES"
+      }
+    },
+    {
+      "n": 10,
+      "page": 15,
+      "section": "Main",
+      "stem": "PERFORMANCE",
+      "options": {
+        "A": "FORM",
+        "B": "ROMANCE",
+        "C": "DIME",
+        "D": "ROME"
+      }
+    },
+    {
+      "n": 11,
+      "page": 15,
+      "section": "Main",
+      "stem": "OPERATING",
+      "options": {
+        "A": "GRIEF",
+        "B": "OPERA",
+        "C": "RATE",
+        "D": "RATION"
+      }
+    },
+    {
+      "n": 12,
+      "page": 15,
+      "section": "Main",
+      "stem": "ELECTRICIANS",
+      "options": {
+        "A": "STRICT",
+        "B": "TRAINS",
+        "C": "ELECTS",
+        "D": "RACES"
+      }
+    },
+    {
+      "n": 13,
+      "page": 15,
+      "section": "Main",
+      "stem": "BLENDING",
+      "options": {
+        "A": "BLEND",
+        "B": "BALD",
+        "C": "LEND",
+        "D": "BINGE"
+      }
+    },
+    {
+      "n": 14,
+      "page": 15,
+      "section": "Main",
+      "stem": "TRANSLUCENT",
+      "options": {
+        "A": "TENT",
+        "B": "RENT",
+        "C": "CENT",
+        "D": "BENT"
+      }
+    },
+    {
+      "n": 15,
+      "page": 15,
+      "section": "Main",
+      "stem": "INTELLIGENCE",
+      "options": {
+        "A": "GENTLE",
+        "B": "INCITE",
+        "C": "CANCEL",
+        "D": "NEGLECT"
+      }
+    },
+    {
+      "n": 16,
+      "page": 15,
+      "section": "Main",
+      "stem": "DECOMPOSITION",
+      "options": {
+        "A": "COMPOSE",
+        "B": "ECONOMIST",
+        "C": "POSITION",
+        "D": "DOCTOR"
+      }
+    },
+    {
+      "n": 17,
+      "page": 15,
+      "section": "Main",
+      "stem": "DISAPPOINTMENT",
+      "options": {
+        "A": "TENSION",
+        "B": "ATTEND",
+        "C": "OINTMENT",
+        "D": "SAMPLE"
+      }
+    },
+    {
+      "n": 18,
+      "page": 15,
+      "section": "Main",
+      "stem": "CONDUCT",
+      "options": {
+        "A": "Duct",
+        "B": "Counted",
+        "C": "Count",
+        "D": "Donut"
+      }
+    },
+    {
+      "n": 19,
+      "page": 15,
+      "section": "Main",
+      "stem": "NATIONALISATION",
+      "options": {
+        "A": "NOTATION",
+        "B": "SALINATION",
+        "C": "INSTALLATION",
+        "D": "SANITATION"
+      }
+    },
+    {
+      "n": 20,
+      "page": 15,
+      "section": "Main",
+      "stem": "ORGANISATION",
+      "options": {
+        "A": "GRANT",
+        "B": "NATION",
+        "C": "GIANTS",
+        "D": "ORANGE"
+      }
+    },
+    {
+      "n": 21,
+      "page": 15,
+      "section": "Main",
+      "stem": "INTELLIGENCE",
+      "options": {
+        "A": "CANCEL",
+        "B": "NEGLECT",
+        "C": "GENTLE",
+        "D": "INCITE"
+      }
+    },
+    {
+      "n": 22,
+      "page": 15,
+      "section": "Main",
+      "stem": "DISTRIBUTION",
+      "options": {
+        "A": "TRUST",
+        "B": "SITUATION",
+        "C": "TUITION",
+        "D": "DISTURB"
+      }
+    },
+    {
+      "n": 23,
+      "page": 15,
+      "section": "Main",
+      "stem": "REPUBLICAN",
+      "options": {
+        "A": "CLIP",
+        "B": "PURE",
+        "C": "ANKLE",
+        "D": "BANE"
+      }
+    },
+    {
+      "n": 24,
+      "page": 15,
+      "section": "Main",
+      "stem": "ESTRANGE",
+      "options": {
+        "A": "GENERATE",
+        "B": "SERGEANT",
+        "C": "REAGENTS",
+        "D": "GREAT"
+      }
+    },
+    {
+      "n": 25,
+      "page": 15,
+      "section": "Main",
+      "stem": "ADMINISTRATOR",
+      "options": {
+        "A": "ADMIT",
+        "B": "NEST",
+        "C": "MANTA",
+        "D": "ROAD"
+      }
+    },
+    {
+      "n": 26,
+      "page": 15,
+      "section": "Main",
+      "stem": "SOCIALISATION",
+      "options": {
+        "A": "SCOUT",
+        "B": "CLASS",
+        "C": "LIAISON",
+        "D": "ASSOCIATION"
+      }
+    },
+    {
+      "n": 27,
+      "page": 15,
+      "section": "Main",
+      "stem": "CARPENTER",
+      "options": {
+        "A": "NECTAR",
+        "B": "CARPET",
+        "C": "PAINTER",
+        "D": "REPENT"
+      }
+    },
+    {
+      "n": 28,
+      "page": 15,
+      "section": "Main",
+      "stem": "REASONABLE",
+      "options": {
+        "A": "BRAIN",
+        "B": "BONES",
+        "C": "NOBLE",
+        "D": "ARSON"
+      }
+    },
+    {
+      "n": 29,
+      "page": 15,
+      "section": "Main",
+      "stem": "ORGANISATION",
+      "options": {
+        "A": "STATION",
+        "B": "GAIN",
+        "C": "NATION",
+        "D": "RATION"
+      }
+    },
+    {
+      "n": 30,
+      "page": 15,
+      "section": "Main",
+      "stem": "CORRESPONDING",
+      "options": {
+        "A": "GRINDER",
+        "B": "CODING",
+        "C": "DROPPER",
+        "D": "DISCERN"
+      }
+    },
+    {
+      "n": 31,
+      "page": 15,
+      "section": "Main",
+      "stem": "DEPARTMENT",
+      "options": {
+        "A": "RENT",
+        "B": "PARENT",
+        "C": "MEANT",
+        "D": "PAIR"
+      }
+    },
+    {
+      "n": 32,
+      "page": 15,
+      "section": "Main",
+      "stem": "RECOMMENDATION",
+      "options": {
+        "A": "NATION",
+        "B": "COMMON",
+        "C": "STONE",
+        "D": "MATION"
+      }
+    },
+    {
+      "n": 33,
+      "page": 15,
+      "section": "Main",
+      "stem": "REMUNERATION",
+      "options": {
+        "A": "NUMBER",
+        "B": "NATION",
+        "C": "MENTION",
+        "D": "RATION"
+      }
+    },
+    {
+      "n": 34,
+      "page": 15,
+      "section": "Main",
+      "stem": "ROTATIONAL",
+      "options": {
+        "A": "TONE",
+        "B": "TOTAL",
+        "C": "NOT",
+        "D": "RATION"
+      }
+    },
+    {
+      "n": 35,
+      "page": 15,
+      "section": "Main",
+      "stem": "SUPERCONDUCTOR",
+      "options": {
+        "A": "SUPER",
+        "B": "PAIR",
+        "C": "DOCTOR",
+        "D": "CONDUCT"
+      }
+    },
+    {
+      "n": 36,
+      "page": 15,
+      "section": "Main",
+      "stem": "REMUNERATION",
+      "options": {
+        "A": "MOTION",
+        "B": "RARE",
+        "C": "RUMER",
+        "D": "NATION"
+      }
+    },
+    {
+      "n": 37,
+      "page": 15,
+      "section": "Main",
+      "stem": "NATURALIZATION",
+      "options": {
+        "A": "REAL",
+        "B": "TURN",
+        "C": "NATION",
+        "D": "NATURAL"
+      }
+    },
+    {
+      "n": 38,
+      "page": 15,
+      "section": "Main",
+      "stem": "SIGNIFICANT",
+      "options": {
+        "A": "GIANT",
+        "B": "FAINT",
+        "C": "SITE",
+        "D": "CANT"
+      }
+    },
+    {
+      "n": 39,
+      "page": 15,
+      "section": "Main",
+      "stem": "SIMULTANEOUS",
+      "options": {
+        "A": "STOLE",
+        "B": "SOUR",
+        "C": "SOUL",
+        "D": "LATE"
+      }
+    },
+    {
+      "n": 40,
+      "page": 16,
+      "section": "Main",
+      "stem": "PARTICIPATION",
+      "options": {
+        "A": "RATION",
+        "B": "PAIR",
+        "C": "TOTAL",
+        "D": "PART"
+      }
+    },
+    {
+      "n": 41,
+      "page": 16,
+      "section": "Main",
+      "stem": "UNIVERSITY",
+      "options": {
+        "A": "UNIVERSE",
+        "B": "SITE",
+        "C": "VIRUS",
+        "D": "TRUE"
+      }
+    },
+    {
+      "n": 42,
+      "page": 16,
+      "section": "Main",
+      "stem": "GERMINATION",
+      "options": {
+        "A": "GERM",
+        "B": "NATION",
+        "C": "MANIA",
+        "D": "TONE"
+      }
+    },
+    {
+      "n": 43,
+      "page": 16,
+      "section": "Main",
+      "stem": "INFERIORITY",
+      "options": {
+        "A": "INFERIOR",
+        "B": "INFER",
+        "C": "FAIR",
+        "D": "RIOT"
+      }
+    },
+    {
+      "n": 44,
+      "page": 16,
+      "section": "Main",
+      "stem": "COUNTERPART",
+      "options": {
+        "A": "PROTECT",
+        "B": "TEMPER",
+        "C": "TENOR",
+        "D": "TREAT"
+      }
+    },
+    {
+      "n": 45,
+      "page": 16,
+      "section": "Main",
+      "stem": "SUGGESTION",
+      "options": {
+        "A": "GESTURE",
+        "B": "SUGGEST",
+        "C": "GUESS",
+        "D": "NUGGET"
+      }
+    },
+    {
+      "n": 46,
+      "page": 16,
+      "section": "Main",
+      "stem": "LAUGHTER",
+      "options": {
+        "A": "HEAL",
+        "B": "REAL",
+        "C": "GAME",
+        "D": "LATER"
+      }
+    },
+    {
+      "n": 47,
+      "page": 16,
+      "section": "Main",
+      "stem": "CATEGORIZATION",
+      "options": {
+        "A": "CATERING",
+        "B": "CREATION",
+        "C": "RAINCOAT",
+        "D": "NEGATIVE"
+      }
+    }
+  ]
+}
