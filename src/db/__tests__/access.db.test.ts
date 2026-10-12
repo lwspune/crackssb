@@ -20,11 +20,13 @@ const SPECS = {
   solo: { role: 'candidate', org: null, dob: ADULT },
   mentorA: { role: 'mentor', org: 'a', dob: '1990-06-01' },
   mentorB: { role: 'mentor', org: 'b', dob: '1990-06-01' },
+  admin: { role: 'superadmin', org: null, dob: '1980-01-01' },
   minor: { role: 'candidate', org: 'a', dob: yearsAgo(16) },
   minorConsented: { role: 'candidate', org: 'a', dob: yearsAgo(16), guardianConsent: true },
 } as const;
 
 type Label = keyof typeof SPECS;
+// (The superadmin is in SPECS for the D25 test; it has no academy, so it never appears in a tenancy list.)
 
 describe.skipIf(!hasDatabase)('database access rules — Sprint 1 gate', () => {
   let world: World;
@@ -115,9 +117,29 @@ describe.skipIf(!hasDatabase)('database access rules — Sprint 1 gate', () => {
       for (const [label, id] of [['candA1', own.id], ['candB1', other.id], ['solo', solo.id]] as const) await end(label, id, 'abandon');
     });
 
-    it('a mentor cannot start a test or write an answer', async () => {
-      const { error } = await p('mentorA').client.rpc('start_session', { p_assessment_type: 'wat', p_input_mode: 'typed', p_paper_code: null });
-      expect(error?.message).toMatch(/not_a_candidate/);
+    it('staff and the superadmin take tests as themselves, flagged so they are never counted (D25)', async () => {
+      for (const who of ['mentorA', 'admin'] as const) {
+        const { data, error } = await start(who);
+        expect(error, who).toBeNull();
+        expect(data.by_staff, who).toBe(true);
+        expect((await save(who, data.id, '0', 'staff practice')).error, who).toBeNull();
+        await end(who, data.id, 'abandon');
+      }
+    });
+
+    it('a candidate’s session is not flagged as staff', async () => {
+      const s = await startOk('candA1');
+      const { data } = await world.service.from('sessions').select('by_staff').eq('id', s.id).single();
+      expect(data?.by_staff).toBe(false);
+      await end('candA1', s.id, 'abandon');
+    });
+
+    it('a candidate cannot claim a session as staff practice', async () => {
+      const s = await startOk('candA1');
+      await p('candA1').client.from('sessions').update({ by_staff: true }).eq('id', s.id);
+      const { data } = await world.service.from('sessions').select('by_staff').eq('id', s.id).single();
+      expect(data?.by_staff).toBe(false);
+      await end('candA1', s.id, 'abandon');
     });
 
     it('an academy candidate cannot see the other academy exists', async () => {
