@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import type { ReactNode } from 'react';
 import { HomeIcon, Mark, OlqIcon, PractiseIcon, ProfileIcon, ResultsIcon } from '../icons.tsx';
+import { signOut } from '@/app/login/actions.ts';
 import { ThemeToggle } from './ThemeToggle.tsx';
 
 /**
@@ -37,7 +38,7 @@ function Wordmark() {
   );
 }
 
-export function AppShell({ children }: { children: ReactNode }) {
+export function AppShell({ children, viewerName }: { children: ReactNode; viewerName: string }) {
   const pathname = usePathname();
 
   return (
@@ -70,8 +71,15 @@ export function AppShell({ children }: { children: ReactNode }) {
           </ul>
         </nav>
         <div className="mt-auto space-y-3 border-t border-navy-border px-2 pt-5">
-          <p className="text-xs text-navy-muted">Practice stays in this browser.</p>
-          <ThemeToggle tone="navy" />
+          <p className="truncate text-sm font-medium text-navy-foreground" title={viewerName}>{viewerName}</p>
+          <div className="flex flex-wrap items-center gap-1">
+            <ThemeToggle tone="navy" />
+            <form action={signOut}>
+              <button type="submit" className="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium text-navy-muted hover:bg-white/10 hover:text-navy-foreground">
+                Sign out
+              </button>
+            </form>
+          </div>
         </div>
       </aside>
 
