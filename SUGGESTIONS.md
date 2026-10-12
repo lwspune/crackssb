@@ -230,7 +230,12 @@ ch5 p17-21 · ch6 p22-23 · ch7 p24-28 · ch8 p29-34 · ch9 p35-37 · ch10 p38-4
   statement true), Q85 (the answer, grandfather, is not offered), Q94 (two
   statements true). Medium: Q36 (which grandfather), Q59, Q64. Two names
   swapped (Q11, Q13; D27).
-- **Next:** Chapter 10 (Seating, p38-40, with the passage field), then 1, 2.
+- ~~Chapter 10, Seating Arrangement~~ — done 2026-10-12: 47 of 51 seeded.
+  Puzzles solved by trying every order (22 computed); the three passage sets
+  ride on the new optional `passage` field (bank, build, practice screen).
+  Held: Q2 (subscripts unreadable), Q12 (Raghav never placed), Q15 (two
+  orders), Q29 (two facing rows read several ways). Medium: Q16, Q17, Q33.
+- **Next:** Chapter 1 (Analogy, p1-3), then 2.
 
 ### Backfill ledger: Chapter 11's test onto the shared chapter suite
 `oir-agrawal-series.test.ts` predates `oir-chapter-suite.ts` and carries its own

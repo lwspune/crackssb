@@ -27,6 +27,7 @@ import { AGRAWAL_CH06_SEQUENCE_TEST } from '../src/items/oir/agrawal-ch06-sequen
 import { AGRAWAL_CH07_BLOOD_RELATION } from '../src/items/oir/agrawal-ch07-blood-relation.ts';
 import { AGRAWAL_CH08_DIRECTIONS } from '../src/items/oir/agrawal-ch08-directions.ts';
 import { AGRAWAL_CH09_RANKING } from '../src/items/oir/agrawal-ch09-ranking.ts';
+import { AGRAWAL_CH10_SEATING } from '../src/items/oir/agrawal-ch10-seating.ts';
 import { AGRAWAL_CH11_SERIES } from '../src/items/oir/agrawal-ch11-series.ts';
 import { isHeld } from '../src/items/oir/key.ts';
 import type { KeyEntry } from '../src/items/oir/key.ts';
@@ -39,7 +40,7 @@ interface SourceFile {
   title: string;
   pages: [number, number];
   /** `text: null` when the chapter prints no direction; its questions then carry none. */
-  directions: { section: string; text: string | null }[];
+  directions: { section: string; text: string | null; passage?: string }[];
   questions: { n: number; page: number; section: string; stem: string; options: Record<'A' | 'B' | 'C' | 'D', string> }[];
 }
 
@@ -52,6 +53,7 @@ const CHAPTERS: { file: string; key: Readonly<Record<number, KeyEntry>>; reasoni
   { file: 'content/oir/agrawal-examcart/ch07-blood-relation.source.json', key: AGRAWAL_CH07_BLOOD_RELATION, reasoningType: 'blood_relation', idPrefix: 'oir-agx-ch07' },
   { file: 'content/oir/agrawal-examcart/ch08-directions.source.json', key: AGRAWAL_CH08_DIRECTIONS, reasoningType: 'directions', idPrefix: 'oir-agx-ch08' },
   { file: 'content/oir/agrawal-examcart/ch09-ranking.source.json', key: AGRAWAL_CH09_RANKING, reasoningType: 'ranking', idPrefix: 'oir-agx-ch09' },
+  { file: 'content/oir/agrawal-examcart/ch10-seating.source.json', key: AGRAWAL_CH10_SEATING, reasoningType: 'seating', idPrefix: 'oir-agx-ch10' },
   { file: 'content/oir/agrawal-examcart/ch11-series.source.json', key: AGRAWAL_CH11_SERIES, reasoningType: 'series', idPrefix: 'oir-agx-ch11' },
 ];
 
@@ -91,7 +93,14 @@ for (const chapter of CHAPTERS) {
     const item = {
       id: `${chapter.idPrefix}-q${String(q.n).padStart(3, '0')}`,
       assessment_type: 'oir_verbal',
-      payload: { stem: entry.stemFix ?? q.stem, options: q.options, key: entry.key, reasoningType: chapter.reasoningType, ...(direction ? { direction } : {}) },
+      payload: {
+        stem: entry.stemFix ?? q.stem,
+        options: q.options,
+        key: entry.key,
+        reasoningType: chapter.reasoningType,
+        ...(direction ? { direction } : {}),
+        ...(section.passage ? { passage: section.passage } : {}),
+      },
       difficulty: UNRATED_DIFFICULTY,
       active: true,
       source: src.source,

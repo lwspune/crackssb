@@ -29,7 +29,7 @@ export interface SourceFile {
   readonly pages: readonly number[];
   readonly note?: string;
   /** `text: null`: the chapter prints no direction, and its items carry none. */
-  readonly directions: readonly { readonly section: string; readonly text: string | null }[];
+  readonly directions: readonly { readonly section: string; readonly text: string | null; readonly passage?: string }[];
   readonly questions: readonly SourceQuestion[];
 }
 
@@ -160,7 +160,9 @@ export function chapterSuite(spec: ChapterSpec): void {
         expect(item.payload.stem, `Q${q.n}`).toBe(k.stemFix ?? q.stem);
         expect(item.payload.options, `Q${q.n}`).toEqual(q.options);
         expect(item.payload.reasoningType).toBe(spec.reasoningType);
-        expect(item.payload.direction, `Q${q.n}`).toBe(k.direction ?? source.directions.find((d) => d.section === q.section)!.text ?? undefined);
+        const section = source.directions.find((d) => d.section === q.section)!;
+        expect(item.payload.direction, `Q${q.n}`).toBe(k.direction ?? section.text ?? undefined);
+        expect((item.payload as { passage?: string }).passage, `Q${q.n} passage`).toBe(section.passage);
         expect(item.key_basis).toBe('derived');
         expect(item.rule).toBe(k.rule);
         expect(item.source_ref).toBe(`ch${source.chapter} p${q.page} q${q.n}`);

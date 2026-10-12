@@ -73,6 +73,16 @@
     },
     {
       "source": "agrawal-examcart-oir",
+      "chapter": 10,
+      "title": "Seating Arrangment",
+      "pages": [
+        38,
+        40
+      ],
+      "file": "content/oir/agrawal-examcart/ch10-seating.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
       "chapter": 11,
       "title": "Series Test",
       "pages": [
@@ -82,11 +92,11 @@
       "file": "content/oir/agrawal-examcart/ch11-series.source.json"
     }
   ],
-  "itemCount": 675,
-  "heldCount": 34,
+  "itemCount": 722,
+  "heldCount": 38,
   "confidence": {
-    "high": 652,
-    "medium": 23
+    "high": 696,
+    "medium": 26
   },
   "held": [
     {
@@ -237,6 +247,27 @@
       "source_ref": "ch8 p33 q87",
       "reason": "East (90°) + 90 + 145 = 325°: between North-West and North, none of the options.",
       "lean": "C"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q2",
+      "reason": "The photograph blurs the circles' subscripts, so the comparisons the question is built on cannot be read."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q12",
+      "reason": "Six students are scored but only five are named, and nothing places Raghav; none of the options follows."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q15",
+      "reason": "Kailash is eldest, Daksh second (39), Ashish fourth (19). Manish (younger than Daksh) and Lalit fill third and fifth either way round, so the youngest is not fixed.",
+      "lean": "C"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q29",
+      "reason": "\"Junaid is on the right side who is standing facing Chaman\" and \"who is to the left of Barun\" can be read several ways for two facing rows; no single answer follows."
     },
     {
       "source": "agrawal-examcart-oir",
@@ -12644,6 +12675,1063 @@
       "source_ref": "ch9 p37 q50",
       "key_basis": "derived",
       "rule": "Prabhu is 9th and Ram 12th from the left, so 2 stand between them, which is not among the numbers given. Padma and Radha do not matter.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Sonu is taller than Yatendra. Subhash is taller than Amit. Sattu is the tallest. Amit is taller than Sonu. If they stand according to their height then who will be exactly in the middle?",
+        "options": {
+          "A": "Sonu",
+          "B": "Yatendra",
+          "C": "Amit",
+          "D": "Subhash"
+        },
+        "key": "C",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q1",
+      "key_basis": "derived",
+      "rule": "Sattu, then Subhash, Amit, Sonu, Yatendra: the middle one is Amit.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A is greater than B in height. C and D are same in height. E is shorter than B but taller than D in height. F is shorter in height than C, who is shorter than B. Who is the smallest in height among all of them?",
+        "options": {
+          "A": "F",
+          "B": "E",
+          "C": "D",
+          "D": "C"
+        },
+        "key": "A",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q3",
+      "key_basis": "derived",
+      "rule": "C and D are equal; E is taller than D; F is shorter than C. F is shorter than everyone.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Among five friends, Vivek is older than Akram. Sumit is older than Dara. Manjeet is younger than Dara. There are two persons older than Sumit. Who is the eldest among these friends?",
+        "options": {
+          "A": "Either Akram or Dara",
+          "B": "Dara",
+          "C": "Vivek",
+          "D": "Akram"
+        },
+        "key": "C",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q4",
+      "key_basis": "derived",
+      "rule": "Sumit is older than Dara, who is older than Manjeet; the two older than Sumit are Vivek and Akram, and Vivek is older than Akram. Vivek is eldest.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The height of Rama is greater than that of Saaho. The height of Manoj is less than that of Dinesh. Dinesh's height is more than Tara but less than Saaho. The height of Kailash is less than that of Tara but greater than that of Manoj. Tara's height is less than Saho's. Whose height is the least?",
+        "options": {
+          "A": "Tara",
+          "B": "Dinesh",
+          "C": "Kailash",
+          "D": "Manoj"
+        },
+        "key": "D",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q5",
+      "key_basis": "derived",
+      "rule": "Rama, Saaho, Dinesh, Tara, Kailash, Manoj, tallest to shortest: Manoj is shortest.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "P, Q, R, S, T, U and V are seven friends having different ages. R is elder than 4 persons. Q is elder than R but younger than P. T. is elder than U but younger than S. U is not the youngest. Who is the youngest among all ?",
+        "options": {
+          "A": "P",
+          "B": "S",
+          "C": "V",
+          "D": "Q"
+        },
+        "key": "C",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q6",
+      "key_basis": "derived",
+      "rule": "P, Q, R are the three eldest. S, T, U follow, and U is not the youngest, so V is.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q007",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A, B, C, D, E, F and G are seven friends having different heights. A is taller than C but shorter than B. C is taller than F but shorter than A. B is taller than A but shorter than 2 persons. D is taller than B. E is not the tallest and G is the shortest. How many people are taller than C ?",
+        "options": {
+          "A": "5",
+          "B": "1",
+          "C": "3",
+          "D": "4"
+        },
+        "key": "D",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q7",
+      "key_basis": "derived",
+      "rule": "B has two taller, and D is taller than B; E is not tallest, so D, E, B, then A, C, F, G. Four are taller than C.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "P, Q, R, S, T, U and V are seven friends having different heights. R is taller than 4 persons. Q is taller than R but shorter than P. T is taller than U but shorter than S. U is not the shortest. How many people are shorter than T ?",
+        "options": {
+          "A": "5",
+          "B": "1",
+          "C": "2",
+          "D": "3"
+        },
+        "key": "C",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q8",
+      "key_basis": "derived",
+      "rule": "P, Q, R are the three tallest; S, T, U follow, and U is not the shortest, so V is. U and V are shorter than T: two.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Mohini is taller than Neeta, but not shorter than Sarita. Sarita and Malini are of equal height. Mohini is younger than Hema. Who is the second tallest among them?",
+        "options": {
+          "A": "Mohini",
+          "B": "Nita",
+          "C": "Hema",
+          "D": "Cannot be determined"
+        },
+        "key": "D",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q9",
+      "key_basis": "derived",
+      "rule": "Mohini, Neeta, Sarita and Malini are placed by height, but Hema only by age: her height is unknown, so the second tallest cannot be named.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Seven boys M, K, C, P, S, T and U participate in a contest. All of them finish on different ranks from 1 to 7. 1 being the highest and 7 being the lowest. The rank of S is lower than K, but higher than C. The rank of T is one below U and one above P. U has the second highest rank. The rank of S is less than only four boys. C has the least rank. Whose rank is the third from the last ?",
+        "options": {
+          "A": "S",
+          "B": "T",
+          "C": "P",
+          "D": "K"
+        },
+        "key": "A",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q10",
+      "key_basis": "derived",
+      "rule": "U is 2nd, T 3rd, P 4th; S has four above, so 5th; C is 7th; K above S takes 1st and M 6th. Third from last is 5th: S.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Six people, F, G, H, I, J and K, got different marks in their examination. G got more marks than F and K. F got more marks than I, but not the highest marks. G scored more marks than H. K got more marks than J, but fewer marks than H. I got the third lowest marks. F got more marks than K but less than H. F got 59 marks and K got 46 marks. Who among the following got the highest marks ?",
+        "options": {
+          "A": "K",
+          "B": "H",
+          "C": "G",
+          "D": "J"
+        },
+        "key": "C",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q11",
+      "key_basis": "derived",
+      "rule": "G > H > F > K > J, and I is third lowest, below F: G, H, F, I, K, J. G is highest.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Five children appeared in an aptitude test in a class.\nIn the result report, it is found that boy A got less marks than boy B. Boy C got less marks than boy D, boy B got less marks than boy C and boy A got more marks than boy E. Which child got the second highest marks?",
+        "options": {
+          "A": "B",
+          "B": "D",
+          "C": "C",
+          "D": "A"
+        },
+        "key": "C",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q13",
+      "key_basis": "derived",
+      "rule": "D > C > B > A > E: C is second.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Five students A, B, C, D and E of class XII are appearing for their annual examination. Student A finished his exam before student B but after C. D finished his exam before E but after B. Who among the five students finished his examination first?",
+        "options": {
+          "A": "C",
+          "B": "D",
+          "C": "A",
+          "D": "B"
+        },
+        "key": "A",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q14",
+      "key_basis": "derived",
+      "rule": "C finished before A, A before B, B before D, D before E: C was first.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Among seven friends, A, B, C, D, E, F and G, G is older than A and C. C is older than D. F is older than only one friend. A is the third oldest. E is the youngest. G is younger than B. who is the tallest ?",
+        "options": {
+          "A": "C",
+          "B": "F",
+          "C": "B",
+          "D": "G"
+        },
+        "key": "C",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p38 q16",
+      "key_basis": "derived",
+      "rule": "E is youngest and F sixth; A is third; G is older than A and younger than B, so B first, G second. B is the eldest.",
+      "confidence": "medium",
+      "note": "The question asks \"who is the tallest\" of friends ranked by age; read as the eldest. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch10-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A is older than B while C and D are older than E who is between A and C. If C is elder than B, then who is the youngest?",
+        "options": {
+          "A": "C",
+          "B": "D",
+          "C": "A",
+          "D": "B"
+        },
+        "key": "D",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q17",
+      "key_basis": "derived",
+      "rule": "C and D are older than E; E falls between A and C, so A is younger than E; A is older than B. B is youngest.",
+      "confidence": "medium",
+      "note": "\"E who is between A and C\" is read as E's age lying between theirs. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch10-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Seven athletes A, B, C, D, E, F and G participate in a race. E is ahead of A but behind F. D is ahead of only two athlete. G is running last. C is running behind only two athlete. F is not the first.\nWhich athlete is running in the fourth position from behind ?",
+        "options": {
+          "A": "C",
+          "B": "A",
+          "C": "E",
+          "D": "D"
+        },
+        "key": "C",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q18",
+      "key_basis": "derived",
+      "rule": "G is 7th; D is ahead of only two, so 5th; C is behind only two, so 3rd; F is not first, so F 2nd, E 4th, A 6th, B 1st. Fourth from behind is 4th: E.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Five friends A, B, C, D and E bought cars which were priced differently. B's car was costlier than C's car but was less costly than E's car. A's car was costlier than D's car but less costly than C's car. Whose car was the 2nd costliest ?",
+        "options": {
+          "A": "E",
+          "B": "A",
+          "C": "B",
+          "D": "C"
+        },
+        "key": "C",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q19",
+      "key_basis": "derived",
+      "rule": "E > B > C > A > D: B is second costliest.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Five friends' houses are located in an straight line. Amit's house is not near Dipesh's house. Shayana's house is between Brinda's and Sheetal's house. Brinda's house is between Shayana and Dipesh. Whose houses are located near Sheetal?",
+        "options": {
+          "A": "Shayana and Brinda",
+          "B": "Amit and Dipesh",
+          "C": "Amit and Shayana",
+          "D": "Amit and Brinda"
+        },
+        "key": "C",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q20",
+      "key_basis": "derived",
+      "rule": "Sheetal, Shayana, Brinda, Dipesh run in a line; Amit is not next to Dipesh, so he is at Sheetal's end. Sheetal's neighbours are Amit and Shayana.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "6 phones P1, P2, P3, P4, P5 and P6 are placed in a row facing north. (The order is not necessary.) P1, is placed on the immediate left of P6. P5 is second to the left of P2. P4 is second to the right of P6. P4 is to the immediate right of P5. P3 is to the left of P1. How many phones are there between P3 and P6 ?",
+        "options": {
+          "A": "4",
+          "B": "1",
+          "C": "0",
+          "D": "2"
+        },
+        "key": "B",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q21",
+      "key_basis": "derived",
+      "rule": "P1 P6 P5 P4 P2 are consecutive, and P3 is left of P1: P3 P1 P6 P5 P4 P2. One phone lies between P3 and P6.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Six towels are placed one above the other. The red coloured towel is just above the white coloured towel. The yellow coloured towel is between the blue and green coloured towels. The pink coloured towel is between the red coloured towel and the blue coloured towel. Which colour towel is between the pink and the yellow towel?",
+        "options": {
+          "A": "Red",
+          "B": "Green",
+          "C": "Pink",
+          "D": "Blue"
+        },
+        "key": "D",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q22",
+      "key_basis": "derived",
+      "rule": "White, Red, Pink, Blue, Yellow, Green in a stack: Blue is between Pink and Yellow.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Six soldiers A, B, C, D, E and F are standing one after the other in a row. F sits next to the left of C. F and E are at the ends of the line. C is exactly between F and B. A is immediate next to the left of D. E sits next to the right of D. Which soldier is fourth from the right?",
+        "options": {
+          "A": "D",
+          "B": "B",
+          "C": "C",
+          "D": "A"
+        },
+        "key": "B",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q23",
+      "key_basis": "derived",
+      "rule": "F C B ... with E at the other end and A D E before it: F C B A D E. Fourth from the right is B.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Five animals are in their cages in a zoo. Their cages are in a row. The monkey is at the last position on one side of the line. Cow is next to the immediate left of deer. The lion is at the last position on the right side of the row. The fox is right in between the deer and the lion. Which animal is second from the left?",
+        "options": {
+          "A": "Fox",
+          "B": "Monkey",
+          "C": "Deer",
+          "D": "Cow"
+        },
+        "key": "D",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q24",
+      "key_basis": "derived",
+      "rule": "Monkey at the left end, lion at the right; cow just left of deer, fox between deer and lion: Monkey, Cow, Deer, Fox, Lion.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "There are five houses A, B, C, D, O in a row. A is to the right of B and to the left of C. O is to the right of A, B is to the right of D. Tell which house is in the middle.",
+        "options": {
+          "A": "O",
+          "B": "A",
+          "C": "B",
+          "D": "D"
+        },
+        "key": "B",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q25",
+      "key_basis": "derived",
+      "rule": "D, then B, then A, then C and O in some order: A is in the middle.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Ramesh is richer than Satish, but Jaya is less rich than Ramesh. Ram is less rich than Jaya but richer than Satish but is not as rich as Ramesh. Ramesh is less rich than Navin. The richest amongst than is?",
+        "options": {
+          "A": "Ramesh",
+          "B": "Satish",
+          "C": "Navin",
+          "D": "Jaya"
+        },
+        "key": "C",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q26",
+      "key_basis": "derived",
+      "rule": "Navin is richer than Ramesh, who is richer than everyone else.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q027",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Six friends Asha, Barsha, Selia, Disha, Emili and Ferheen are sitting in a row facing north direction. Selia is middle between Asha and Emili. Disha is not at the end. Barsha is exactly right of Emili Ferheen is not at the right end.\nHow many persons right of Disha ?",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "1",
+          "D": "4"
+        },
+        "key": "D",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q27",
+      "key_basis": "derived",
+      "rule": "Asha, Selia, Emili, Barsha sit together; Disha cannot be at an end and Ferheen not at the right end, which leaves Ferheen, Disha, Asha, Selia, Emili, Barsha. Four sit right of Disha.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "D. C, B and A are sitting around a table facing each other, them different colours Likes Yellow, Blue, Black, Red.\n(a) D sits opposite to the one who likes black colour.\n(b) C sits immediate right of the one who likes Blue colour.\n(c) The one who likes yellow colour is to the left of the one who likes red colour.\n(d) A sits opposite to B who does not like yellow colour.\nWho likes red ?",
+        "options": {
+          "A": "B",
+          "B": "C",
+          "C": "A",
+          "D": "D"
+        },
+        "key": "D",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q28",
+      "key_basis": "derived",
+      "rule": "A faces B, so C faces D and C likes black. C is right of the blue-liker, yellow is left of red, and B is not yellow: only A yellow, C black, B blue, D red works.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Amit, Vinod, Chandu and Dixit are sitting on four consecutive seats in a theatre. But Chandu and Dixit are not sitting together and Vinod is not sitting in the third place. If Amit and Vinod are sitting together, then which of the following must be necessarily true?",
+        "options": {
+          "A": "Dixit is at the first place",
+          "B": "Dixit is not at the first place",
+          "C": "Amit is at the third place",
+          "D": "Chandu is at the first place"
+        },
+        "key": "C",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q30",
+      "key_basis": "derived",
+      "rule": "With Amit and Vinod together, Chandu and Dixit apart and Vinod not third, only Chandu Vinod Amit Dixit and Dixit Vinod Amit Chandu remain: Amit is third in both.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q031",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Sachin, Sahil, Sandhya, Sani, Sanju, Saurahb, Shweta and Sunil are sitting around a round table in the same for such at equal distance. Their positions are Anti-clockwise. If Sandhya sits facing North, then in which direction Sanju is facing.",
+        "options": {
+          "A": "South-East",
+          "B": "West",
+          "C": "Eest",
+          "D": "South-West"
+        },
+        "key": "B",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q31",
+      "key_basis": "derived",
+      "rule": "Facing north, Sandhya sits on the south side. Sanju is two seats on anticlockwise (90°), on the east side, facing west.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Sachin, Sahil, Sandhya, Sani, Sanju, Saurabh, Shweta and Sunil are sitting around a round table in the same order for lunch at equal distance. Their positions are Anti-clockwise. If Sandhya sits facing South then in which direction Sunil is facing",
+        "options": {
+          "A": "South-West",
+          "B": "South - East",
+          "C": "North - East",
+          "D": "North - West"
+        },
+        "key": "D",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q32",
+      "key_basis": "derived",
+      "rule": "Facing south, Sandhya sits on the north side. Sunil is five seats on anticlockwise (225°), on the south-east side, facing north-west.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Eight persons P, Q, R, S, T, U, V and W are sitting around a circular table at equal distance from each other facing the centre. If P is facing North-east then which direction is S facing?",
+        "options": {
+          "A": "South-east",
+          "B": "North",
+          "C": "North-west",
+          "D": "South"
+        },
+        "key": "D",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q33",
+      "key_basis": "derived",
+      "rule": "Facing north-east, P sits on the south-west side. S is three seats on clockwise (135°), on the north side, facing south.",
+      "confidence": "medium",
+      "note": "The question gives no seating order; read as alphabetical, clockwise. Anticlockwise would put S facing west, which is not an option. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch10-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Sachin, Sahil, Sandhya, Sani, Sajnu, Saurabh, Shweta and Sunil are sitting around a round table in the same order for lunch at equal distance. Their positions are Anti-clockwise. If Sandhya, sits facing East, then in which direction Sahil is facing?",
+        "options": {
+          "A": "South-West",
+          "B": "North-East",
+          "C": "South-East",
+          "D": "North-West"
+        },
+        "key": "C",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q34",
+      "key_basis": "derived",
+      "rule": "Facing east, Sandhya sits on the west side. Sahil is one seat back, clockwise (45°), on the north-west side, facing south-east.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Children A, B, C, D, E, F and G are standing in a line. F is to the left of A and right of B, D is between G and B, E is standing left of C and G is right of C. Who is standing at the fourth right of C?",
+        "options": {
+          "A": "F",
+          "B": "E",
+          "C": "D",
+          "D": "A"
+        },
+        "key": "A",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p39 q35",
+      "key_basis": "derived",
+      "rule": "B F A sit together; G D B; E C G: the line is E C G D B F A. Fourth right of C is F.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Sachin, Sahil, Sandhya, Sani, Sanju, Saurabh, Shweta and Sunil are sitting around a round table in the same order of lunch at equal distance. Their positions are Anti-clockwise. If Sandhya sits facing East, then in which direction Saurabh is facing?",
+        "options": {
+          "A": "North-East",
+          "B": "North-West",
+          "C": "South-West",
+          "D": "South-East"
+        },
+        "key": "B",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q36",
+      "key_basis": "derived",
+      "rule": "Facing east, Sandhya sits on the west side. Saurabh is three seats on anticlockwise (135°), on the south-east side, facing north-west.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "S, T, U, V, X, Y and Z are sitting around a round table for group discussion. T is sitting third to the right of S and between U and Z. Z is sitting third to the right of Y, V is sitting right of X. What will be the position of T?",
+        "options": {
+          "A": "is sitting between Y and X",
+          "B": "T is sitting third to the left of X",
+          "C": "T is sitting third to the left of V",
+          "D": "T is sitting Second to the left of U"
+        },
+        "key": "C",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q37",
+      "key_basis": "derived",
+      "rule": "One seating fits (clockwise S V X Z T U Y): T is third to the left of V.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Six people are sitting in a garden with 3 of them facing the other 3. A is sitting to the north of B whereas B is to the immediate west of C. E sits across F who sits to the east of C. In what direction does D sit with respect to C ?",
+        "options": {
+          "A": "South",
+          "B": "South-West",
+          "C": "North-East",
+          "D": "North"
+        },
+        "key": "D",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q38",
+      "key_basis": "derived",
+      "rule": "B, C, F sit in a row west to east; across from them A faces B and E faces F, so D faces C, to its north.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q039",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four Men A, B, C and D and four women W, X, Y and Z are sitting round a table facing each other. No two men or women are sitting together. W is to the right of B. Y is facing X and is to the left of A. C is to the right of Z. Who are the two persons sitting adjacent to D?",
+        "options": {
+          "A": "W and Y",
+          "B": "X and W",
+          "C": "X and Z",
+          "D": "W and Z"
+        },
+        "key": "A",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q39",
+      "key_basis": "derived",
+      "rule": "Men and women alternate; W is right of B, Y faces X and is left of A, C is right of Z. One seating fits, and D sits between W and Y.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "How many are seated between A and C (counting clockwise from A) ?",
+        "options": {
+          "A": "Two",
+          "B": "Four",
+          "C": "One",
+          "D": "None"
+        },
+        "key": "A",
+        "reasoningType": "seating",
+        "direction": "Study the information below and answer the given questions :",
+        "passage": "A, B, C, D, E, F, G, H are sitting in a circle not necessarily in the same order. Four of them are facing outside and four of them are facing the centre. E faces outside, both the immediate neighbours of E face the centre. H sits second to the right of E, B sits third to the left of E. D faces the centre. Both the immediate neighbours of D faces outsides. G sits second to the left of A. B sits third to the right of H. F is an immediate neighbour of D. C is an immediate neighbour of G. D is not an immediate neighbour of B."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q40",
+      "key_basis": "derived",
+      "rule": "The seating (clockwise A H G C B F D E) fits however the outward-facers are chosen; going clockwise from A, H and G sit before C: two.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q041",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Who sits exactly between F and C ?",
+        "options": {
+          "A": "E",
+          "B": "B",
+          "C": "G",
+          "D": "A"
+        },
+        "key": "B",
+        "reasoningType": "seating",
+        "direction": "Study the information below and answer the given questions :",
+        "passage": "A, B, C, D, E, F, G, H are sitting in a circle not necessarily in the same order. Four of them are facing outside and four of them are facing the centre. E faces outside, both the immediate neighbours of E face the centre. H sits second to the right of E, B sits third to the left of E. D faces the centre. Both the immediate neighbours of D faces outsides. G sits second to the left of A. B sits third to the right of H. F is an immediate neighbour of D. C is an immediate neighbour of G. D is not an immediate neighbour of B."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q41",
+      "key_basis": "derived",
+      "rule": "In that seating B sits between C and F.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Who sits third to the right of A ?",
+        "options": {
+          "A": "D",
+          "B": "E",
+          "C": "F",
+          "D": "A"
+        },
+        "key": "C",
+        "reasoningType": "seating",
+        "direction": "Study the information below and answer the given questions :",
+        "passage": "A, B, C, D, E, F, G, H are sitting in a circle not necessarily in the same order. Four of them are facing outside and four of them are facing the centre. E faces outside, both the immediate neighbours of E face the centre. H sits second to the right of E, B sits third to the left of E. D faces the centre. Both the immediate neighbours of D faces outsides. G sits second to the left of A. B sits third to the right of H. F is an immediate neighbour of D. C is an immediate neighbour of G. D is not an immediate neighbour of B."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q42",
+      "key_basis": "derived",
+      "rule": "In that seating F is third to the right of A.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Who is sitting third to the right of O?",
+        "options": {
+          "A": "Q",
+          "B": "N",
+          "C": "M",
+          "D": "Data inadequate"
+        },
+        "key": "B",
+        "reasoningType": "seating",
+        "direction": "Question number 43 and 44 based on the information given below :",
+        "passage": "(i) A, B, C, D and E are five men sitting in a line facing to south-while M, N, O, P and Q are five ladies sitting in a second line parallel to the first line and are facing to North.\n(ii) B who is just next to the left of D, is opposite to Q.\n(iii) C and N are diagonally opposite to each other.\n(iv) E is opposite to-O who is just next right of M.\n(v) P who is just to the left of Q, is opposite to D.\n(vi) M is at one end of the line."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q43",
+      "key_basis": "derived",
+      "rule": "The ladies sit M O P Q N west to east, facing north; third to the right (east) of O is N.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q044",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pair is diagonally opposite to each other?",
+        "options": {
+          "A": "E and Q",
+          "B": "B and O",
+          "C": "A and N",
+          "D": "A and M"
+        },
+        "key": "D",
+        "reasoningType": "seating",
+        "direction": "Question number 43 and 44 based on the information given below :",
+        "passage": "(i) A, B, C, D and E are five men sitting in a line facing to south-while M, N, O, P and Q are five ladies sitting in a second line parallel to the first line and are facing to North.\n(ii) B who is just next to the left of D, is opposite to Q.\n(iii) C and N are diagonally opposite to each other.\n(iv) E is opposite to-O who is just next right of M.\n(v) P who is just to the left of Q, is opposite to D.\n(vi) M is at one end of the line."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q44",
+      "key_basis": "derived",
+      "rule": "The men sit C E D B A west to east and the ladies M O P Q N: A (east end) and M (west end) are diagonally opposite.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Who is on the immediate right of F?",
+        "options": {
+          "A": "H",
+          "B": "A",
+          "C": "G",
+          "D": "E"
+        },
+        "key": "B",
+        "reasoningType": "seating",
+        "direction": "Study the following information carefully and answer the question given below.",
+        "passage": "A, B, C, D, E, F, G and H are sitting around a circular table facing the centre. H is fourth to the left of B and second to the right of F. A is third to the left of C, who is not an immediate neighbour of F. G is second to the left of A. D is second to the right of E."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q45",
+      "key_basis": "derived",
+      "rule": "One seating fits (clockwise A F G B D C E H): A is on F's immediate right.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Who is third to the left of A?",
+        "options": {
+          "A": "C",
+          "B": "F",
+          "C": "B",
+          "D": "G"
+        },
+        "key": "C",
+        "reasoningType": "seating",
+        "direction": "Study the following information carefully and answer the question given below.",
+        "passage": "A, B, C, D, E, F, G and H are sitting around a circular table facing the centre. H is fourth to the left of B and second to the right of F. A is third to the left of C, who is not an immediate neighbour of F. G is second to the left of A. D is second to the right of E."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q46",
+      "key_basis": "derived",
+      "rule": "In that seating B is third to the left of A.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In which of the following pairs is the first person sitting on the immediate left of the second person?",
+        "options": {
+          "A": "EH",
+          "B": "DB",
+          "C": "CE",
+          "D": "AF"
+        },
+        "key": "B",
+        "reasoningType": "seating",
+        "direction": "Study the following information carefully and answer the question given below.",
+        "passage": "A, B, C, D, E, F, G and H are sitting around a circular table facing the centre. H is fourth to the left of B and second to the right of F. A is third to the left of C, who is not an immediate neighbour of F. G is second to the left of A. D is second to the right of E."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q47",
+      "key_basis": "derived",
+      "rule": "In that seating D is on B's immediate left.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pairs represents the immediate neighbour of E?",
+        "options": {
+          "A": "DH",
+          "B": "HC",
+          "C": "CA",
+          "D": "None of these"
+        },
+        "key": "B",
+        "reasoningType": "seating",
+        "direction": "Study the following information carefully and answer the question given below.",
+        "passage": "A, B, C, D, E, F, G and H are sitting around a circular table facing the centre. H is fourth to the left of B and second to the right of F. A is third to the left of C, who is not an immediate neighbour of F. G is second to the left of A. D is second to the right of E."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q48",
+      "key_basis": "derived",
+      "rule": "E's neighbours in that seating are H and C.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Who is on the immediate right of H?",
+        "options": {
+          "A": "E",
+          "B": "C",
+          "C": "H",
+          "D": "F"
+        },
+        "key": "A",
+        "reasoningType": "seating",
+        "direction": "Study the following information carefully and answer the question given below.",
+        "passage": "A, B, C, D, E, F, G and H are sitting around a circular table facing the centre. H is fourth to the left of B and second to the right of F. A is third to the left of C, who is not an immediate neighbour of F. G is second to the left of A. D is second to the right of E."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q49",
+      "key_basis": "derived",
+      "rule": "In that seating E is on H's immediate right.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q050",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Freya is on the left of the person sitting in middle but is on the right of Bella. Sara is on the right of Jamie and Austin is on the right of Sara. Austin is the second person from the person sitting in the middle. Who is sitting in the middle ?",
+        "options": {
+          "A": "Freya",
+          "B": "Jamie",
+          "C": "Bella",
+          "D": "Sara"
+        },
+        "key": "B",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q50",
+      "key_basis": "derived",
+      "rule": "Five in a row: Freya is left of the middle seat and right of Bella, so Bella and Freya take the first two; Austin, two from the middle, is at the right end with Sara beside him. Jamie is in the middle.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch10-q051",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Five boys A, B, C, D and E are sitting in a row. A is to the right of B and E is to the left of B but to the right of C. A is to the left of D. Who is second from the left end ?",
+        "options": {
+          "A": "B",
+          "B": "E",
+          "C": "A",
+          "D": "C"
+        },
+        "key": "B",
+        "reasoningType": "seating"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch10 p40 q51",
+      "key_basis": "derived",
+      "rule": "C, E, B, A, D from the left: E is second.",
       "confidence": "high"
     },
     {

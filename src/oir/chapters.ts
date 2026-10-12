@@ -23,6 +23,7 @@ export const OIR_CHAPTERS: readonly OirChapter[] = [
   { slug: 'blood-relation', title: 'Blood Relation', reasoningType: 'blood_relation', summary: 'Family trees from a sentence or a code' },
   { slug: 'directions', title: 'Directions', reasoningType: 'directions', summary: 'Walks, turns and where things lie' },
   { slug: 'ranking', title: 'Ranking', reasoningType: 'ranking', summary: 'Places in a row, ranks in a class' },
+  { slug: 'seating', title: 'Seating Arrangement', reasoningType: 'seating', summary: 'Rows, tables and who sits where' },
   { slug: 'series', title: 'Series', reasoningType: 'series', summary: 'Number and letter series' },
 ];
 
