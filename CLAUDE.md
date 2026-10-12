@@ -11,7 +11,7 @@ coaching academies. Launch entry type: NDA.
 | [`ARCHITECTURE.md`](./ARCHITECTURE.md) | Schema, the 15-OLQ vector, edge-function contracts, the four seam rules, honest-claims policy |
 | [`ROADMAP.md`](./ROADMAP.md) | Phases, sprint order, gates, blockers, content lift |
 | [`UI.md`](./UI.md) | Roles (4 in schema, 3 experiences), the **seven runner modes** and their contracts, timing rules, per-role IA, build order |
-| [`DECISIONS.md`](./DECISIONS.md) | **D1–D26.** The long-form *why* trail. Append only; supersede rather than edit |
+| [`DECISIONS.md`](./DECISIONS.md) | **D1–D27.** The long-form *why* trail. Append only; supersede rather than edit |
 
 Read `DECISIONS.md` before changing anything in `src/scoring/` — most of what
 looks arbitrary there is a recorded decision with evidence behind it.
@@ -32,7 +32,7 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-843 tests passing · npm test        lint clean · npm run lint        npm run build green
+907 tests passing · npm test        lint clean · npm run lint        npm run build green
 74 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
@@ -52,7 +52,8 @@ surface for the shell and hero; the runner is dark in both modes. Copy is terse 
 colour pair against WCAG AA from `globals.css` as it ships.
 
 **Candidates are ids (D21).** `cand-01`…`cand-11` in everything committed; the mapping is
-`corpus/records/PSEUDONYMS.md`. Never write a real name outside the ignored folders.
+`corpus/records/PSEUDONYMS.md`. Never write a real name outside the ignored folders. A book
+question's name that matches a candidate's is swapped for a neutral one and declared (D27).
 
 ## The five layers
 
@@ -133,7 +134,7 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 843 tests (never touches the database)
+npm test              # 907 tests (never touches the database)
 npm run test:db       # 74 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
@@ -179,7 +180,7 @@ lists every conclusion a second assessor settles.
 
 - **The D5 bake-off** needs an `ANTHROPIC_API_KEY` or an `ant auth login` profile.
   Everything else for it is built.
-- **Sprint 2** (ROADMAP) — OIR verbal has a source (D24; Chapters 4, 6 and 11 seeded and practisable (D26), eight chapters to go — order and page map in SUGGESTIONS.md, timed mocks held until more land,
+- **Sprint 2** (ROADMAP) — OIR verbal has a source (D24; Chapters 4, 6, 9 and 11 seeded and practisable (D26), seven chapters to go — order and page map in SUGGESTIONS.md, timed mocks held until more land,
   the book's answer key still to come); non-verbal still needs figure assets.
 - **A second assessor.** Everything it unblocks is listed in the ledger (D17 above).
 

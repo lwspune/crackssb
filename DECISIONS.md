@@ -626,3 +626,21 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 
 **Revisit if.** Candidates want a timed chapter drill (Question_Bank's sectional tests) before full mocks exist, or academies want practice progress in the staff app (the read policy already allows it).
 
+---
+
+## D27 — A book name that matches a real candidate's is replaced, not transcribed
+
+**Date:** 2026-10-12 · **Status:** Accepted · **Narrows** D24 point 1 (verbatim transcription) where it meets D21
+
+**Context.** OIR Chapter 9 Q12 names a character with a common first name. It is the book's invention, but it is also a real candidate's first name, and the D21 scan (`no-candidate-names.test.ts`) refuses any candidate name part in a committable file. Blood Relation, Direction Sense and Seating will bring many more common first names. The owner chose to swap the name over allow-listing book files in the scan (which would blind it there) or holding the question.
+
+**Decision.**
+
+1. **Swap, in every committed file.** A book name that collides with a candidate's is replaced with a neutral name that does not collide (the scan proves it). The question, its key and its rule use the new name.
+2. **Declare it, without the original.** The question carries `"renamed": true` in the source file and the source note cites D27; the original name is not written anywhere committed. The chapter suite fails if a renamed question's note does not cite D27.
+3. **The scan stays strict.** No allow-list. A collision is fixed in the content, never by weakening the guard.
+
+**Consequences.** Chapter 9 Q12 now reads "Rakesh". Transcriptions are verbatim except for typography noted in each source file and these declared swaps.
+
+**Revisit if.** A swap would change a question's logic (a name whose letters or gender the question depends on); then hold the question instead.
+

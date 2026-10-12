@@ -203,6 +203,11 @@ ch5 p17-21 · ch6 p22-23 · ch7 p24-28 · ch8 p29-34 · ch9 p35-37 · ch10 p38-4
   runs off the alphabet; leans C and A) and Q50 (the reversed-order answer N is
   not an option; the normal-order answer M is, lean C). Q2 keys "None of these"
   as printed, flagged medium: "from the left" would make it M.
+- ~~Chapter 9, Ranking Test~~ — done 2026-10-12: 50 of 50 seeded, every key
+  computed. Medium: Q3 ("facing east", read along the row) and Q24 ("males"
+  with Kavita in the row; 53 is not an option, so the book counts everyone).
+  Q12's name matched a candidate's and is now "Rakesh" (D27). The chapter
+  prints no direction, so its items carry none.
 
 ### Backfill ledger: Chapter 11's test onto the shared chapter suite
 `oir-agrawal-series.test.ts` predates `oir-chapter-suite.ts` and carries its own
