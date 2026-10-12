@@ -79,8 +79,11 @@ export interface Created {
 
 /** The email already has a login. Reported, never touched (Question_Bank's takeover lesson, 2026-10-06). */
 export class ExistingAccount extends Error {
-  constructor(readonly email: string) {
+  // A plain field, not a parameter property: the CLI runs under Node's type stripping, which rejects those.
+  readonly email: string;
+  constructor(email: string) {
     super(`${email} already has an account.`);
+    this.email = email;
   }
 }
 
