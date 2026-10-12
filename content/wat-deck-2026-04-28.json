@@ -1,0 +1,259 @@
+{
+  "source": "WAT-28-04-26.pptx",
+  "extracted": "2026-09-23",
+  "statedWordCount": 60,
+  "statedSecondsPerWord": 15,
+  "extractedWordCount": 60,
+  "duplicates": [
+    {
+      "word": "REGULAR",
+      "ordinals": [
+        11,
+        45
+      ]
+    }
+  ],
+  "missingOrdinals": [],
+  "words": [
+    {
+      "ordinal": 1,
+      "word": "NAUGHTY"
+    },
+    {
+      "ordinal": 2,
+      "word": "JEALOUS"
+    },
+    {
+      "ordinal": 3,
+      "word": "RISK"
+    },
+    {
+      "ordinal": 4,
+      "word": "FAITH"
+    },
+    {
+      "ordinal": 5,
+      "word": "PREDICT"
+    },
+    {
+      "ordinal": 6,
+      "word": "MONEY"
+    },
+    {
+      "ordinal": 7,
+      "word": "LEADER"
+    },
+    {
+      "ordinal": 8,
+      "word": "CHALLENGE"
+    },
+    {
+      "ordinal": 9,
+      "word": "PRACTICE"
+    },
+    {
+      "ordinal": 10,
+      "word": "HUSBAND"
+    },
+    {
+      "ordinal": 11,
+      "word": "REGULAR"
+    },
+    {
+      "ordinal": 12,
+      "word": "CENTURY"
+    },
+    {
+      "ordinal": 13,
+      "word": "IGNORE"
+    },
+    {
+      "ordinal": 14,
+      "word": "TRUTH"
+    },
+    {
+      "ordinal": 15,
+      "word": "TABLE"
+    },
+    {
+      "ordinal": 16,
+      "word": "POLLUTION"
+    },
+    {
+      "ordinal": 17,
+      "word": "RESTRICT"
+    },
+    {
+      "ordinal": 18,
+      "word": "SHY"
+    },
+    {
+      "ordinal": 19,
+      "word": "DIFFCULT"
+    },
+    {
+      "ordinal": 20,
+      "word": "CHEATER"
+    },
+    {
+      "ordinal": 21,
+      "word": "CRIMINAL"
+    },
+    {
+      "ordinal": 22,
+      "word": "CONFLICT"
+    },
+    {
+      "ordinal": 23,
+      "word": "BROTHER"
+    },
+    {
+      "ordinal": 24,
+      "word": "SURPRISE"
+    },
+    {
+      "ordinal": 25,
+      "word": "REAL"
+    },
+    {
+      "ordinal": 26,
+      "word": "DIVIDE"
+    },
+    {
+      "ordinal": 27,
+      "word": "JOKER"
+    },
+    {
+      "ordinal": 28,
+      "word": "STATION"
+    },
+    {
+      "ordinal": 29,
+      "word": "HONESTY"
+    },
+    {
+      "ordinal": 30,
+      "word": "MASTER"
+    },
+    {
+      "ordinal": 31,
+      "word": "PROBLEM"
+    },
+    {
+      "ordinal": 32,
+      "word": "MONSTER"
+    },
+    {
+      "ordinal": 33,
+      "word": "DESTROY"
+    },
+    {
+      "ordinal": 34,
+      "word": "PAST"
+    },
+    {
+      "ordinal": 35,
+      "word": "GROUP"
+    },
+    {
+      "ordinal": 36,
+      "word": "GREED"
+    },
+    {
+      "ordinal": 37,
+      "word": "MOMENT"
+    },
+    {
+      "ordinal": 38,
+      "word": "DREAM"
+    },
+    {
+      "ordinal": 39,
+      "word": "HISTORY"
+    },
+    {
+      "ordinal": 40,
+      "word": "VILLAIN"
+    },
+    {
+      "ordinal": 41,
+      "word": "CORRUPT"
+    },
+    {
+      "ordinal": 42,
+      "word": "ENEMY"
+    },
+    {
+      "ordinal": 43,
+      "word": "CANCEL"
+    },
+    {
+      "ordinal": 44,
+      "word": "FRIENDS"
+    },
+    {
+      "ordinal": 45,
+      "word": "REGULAR"
+    },
+    {
+      "ordinal": 46,
+      "word": "TEMPER"
+    },
+    {
+      "ordinal": 47,
+      "word": "EXCUSE"
+    },
+    {
+      "ordinal": 48,
+      "word": "EFFORTS"
+    },
+    {
+      "ordinal": 49,
+      "word": "TROOPS"
+    },
+    {
+      "ordinal": 50,
+      "word": "ATTACK"
+    },
+    {
+      "ordinal": 51,
+      "word": "DAMES"
+    },
+    {
+      "ordinal": 52,
+      "word": "FOOL"
+    },
+    {
+      "ordinal": 53,
+      "word": "AGREE"
+    },
+    {
+      "ordinal": 54,
+      "word": "HOPE"
+    },
+    {
+      "ordinal": 55,
+      "word": "CHARM"
+    },
+    {
+      "ordinal": 56,
+      "word": "MEND"
+    },
+    {
+      "ordinal": 57,
+      "word": "DISTURBED"
+    },
+    {
+      "ordinal": 58,
+      "word": "CHAPTER"
+    },
+    {
+      "ordinal": 59,
+      "word": "ADVENTURE"
+    },
+    {
+      "ordinal": 60,
+      "word": "SUICIDE"
+    }
+  ]
+}

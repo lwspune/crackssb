@@ -1,0 +1,157 @@
+# CrackSSB
+
+Online portal for **SSB** (Services Selection Board) preparation — the 5-day
+officer-selection process for the Indian Armed Forces. B2C candidates and B2B
+coaching academies. Launch entry type: NDA.
+
+**The four planning documents are authoritative and this file does not repeat them:**
+
+| file | holds |
+|---|---|
+| [`ARCHITECTURE.md`](./ARCHITECTURE.md) | Schema, the 15-OLQ vector, edge-function contracts, the four seam rules, honest-claims policy |
+| [`ROADMAP.md`](./ROADMAP.md) | Phases, sprint order, gates, blockers, content lift |
+| [`UI.md`](./UI.md) | Roles (4 in schema, 3 experiences), the **seven runner modes** and their contracts, timing rules, per-role IA, build order |
+| [`DECISIONS.md`](./DECISIONS.md) | **D1–D19.** The long-form *why* trail. Append only; supersede rather than edit |
+
+Read `DECISIONS.md` before changing anything in `src/scoring/` — most of what
+looks arbitrary there is a recorded decision with evidence behind it.
+
+---
+
+## Current state
+
+**Pre-product, with a UI.** A Next.js 16 app (`src/app/`, `src/ui/`) now runs
+the student surface on local data: app shell, Practise by SSB day, honest empty
+states, and the **WAT runner** wrapping the engine. No Supabase, no auth — the
+rest of `ROADMAP.md` Sprint 1 has not started, so sessions live in
+`localStorage` and the runner says "practice on this device". Also present:
+the psych-scoring engine, built early because hand-graded dossiers arrived
+early (D3's revisit trigger), and the headless runner engine (D18).
+
+```
+414 tests passing · npm test        lint clean · npm run lint        npm run build green
+```
+
+**Type-checking is new.** `npm run typecheck` checks everything and currently
+reports four known errors in pre-existing test files (SUGGESTIONS.md). `next
+build` checks app code only, via `tsconfig.build.json`.
+
+**Look (D20).** PYQVault's palette and fonts, token for token, plus a navy
+surface for the shell and hero; the runner is dark in both modes. Copy is terse by request. `src/ui/__tests__/theme-contrast.test.ts` gates every
+colour pair against WCAG AA from `globals.css` as it ships.
+
+**Candidates are ids (D21).** `cand-01`…`cand-11` in everything committed; the mapping is
+`corpus/records/PSEUDONYMS.md`. Never write a real name outside the ignored folders.
+
+## The five layers
+
+The grader is layered so each one only escalates what the layer below cannot settle.
+
+| layer | what it does | state |
+|---|---|---|
+| **1 — counts** | Attempts, blanks, thresholds. Arithmetic, no model | built, tested |
+| **2 — lexical** | Regex rules: modal obligation, tentative verbs, WAT pronouns, WhatsApp shortcuts, article-before-name | built, tested |
+| **3 — judgement** | LLM behind the D5 adapter. Rubric, entitlement map, structured output | built; **never run against a real model** |
+| **4 — consistency** | Cross-instrument contradictions and corroborations. No model needed | built, tested |
+| **5 — report** | The candidate-facing documents. Template + findings → Word | renderer built; findings still hand-derived |
+
+**Measured:** layers 1–2 reproduce **18.5%** of the assessor's marks at their
+ceiling, 5.8% as shipped. The judgement layer carries **~70%** (`npm run measure`).
+
+## Layout
+
+```
+src/scoring/
+  thresholds.ts          instrument specs — 60 WAT @15s, 45+ SRT target, 80-90 word SDT
+  completeness.ts        Layer 1
+  lexical.ts             Layer 2 — every finding declares a `basis` (D14)
+  judge/
+    contract.ts          15 OLQs, ENTITLEMENTS, validateVerdict — rejects at the boundary
+    rubric.ts            the prompt; STIMULI holds known slide content
+    calibration.ts       measured base rates; rater-aware (D17)
+    adapter.ts           createJudge(provider) — text in, validated vector out
+    providers/           anthropic (SDK, cached, structured) · baseline · verdictsFile
+  consistency/           Layer 4 — signals.ts normalises, engine.ts compares
+  eval/agreement.ts      scores a judge; always reports the majority baseline
+  report/template.ts     FRAMES, SLOTS, the withholding filter
+  report/findings.ts     the reader's input contract (zod) — D16 enforced on parse, one FORBIDDEN regex
+src/items/               item bank — D19
+  bank.ts                `items` row validated per type · assembleBooklet strips the key from what is released
+  stats.ts               sitting-grain rows, pooled at read · p = correct/attempted · null not zero · leads
+src/oir/score.ts         score-oir — raw, per-reasoning-type, percentile+band only WITH a norm, else null
+src/runner/              the test-taking engine — D18, UI.md §3. Pure, `now` injected, no timers
+  modes.ts               seven modes, MODE_RULES, INSTRUMENT_CONFIGS (counts from thresholds.ts)
+  schedule.ts            buildSchedule — timeline fixed at start · positionAt — pure resume
+  engine.ts              start / resume / reduce → { state, effects }; release · persist · submitted
+src/app/                 Next.js routes — (app)/ has the shell; run/[instrument] has none (UI.md §4)
+  globals.css            the tokens — PYQVault's + runner-* (D20)
+src/ui/
+  catalog.ts             every test by SSB day; `ready` must equal RUNNABLE (tested)
+  olq.ts                 15 OLQs by factor, as a candidate reads them
+  shell/                 AppShell (sidebar ≥ md, bottom tabs below) · ThemeToggle
+  runner/
+    registry.ts          RUNNABLE — the only way a test becomes "ready"
+    Runner.tsx           the React wrapper: renders engine state, carries out its effects
+    session-store.ts     SessionStore — local (now) / Supabase (Sprint 1) behind one interface
+    content.ts           WAT words from content/wat-items.json — ships the whole deck (known gap)
+corpus/                  candidate data — records/ is GITIGNORED
+content/                 stimulus material — WAT deck, item bank, TAT images
+scripts/                 build + measurement entry points
+```
+
+## Commands
+
+```bash
+npm test              # 414 tests
+npm run dev           # the app at localhost:3000
+npm run build         # production build (type-checks app code)
+npm run lint
+npm run typecheck     # everything, tests included — 4 known errors, see SUGGESTIONS.md
+npm run measure       # what share of assessor marks each layer reproduces
+npm run consistency   # Layer 4 over the corpus
+npm run evalset       # records/ -> 124 paired TAT stories (gitignored)
+npm run blindset      # eval set with ground truth stripped
+npm run fixture       # pseudonymous count fixture (committed; tests read this)
+npm run watitems      # WAT deck -> seeded item bank
+npm run eval                              # baselines only, no credential needed
+npm run eval -- --model claude-opus-5     # the D5 bake-off
+node scripts/build-reports.mjs [candidate]   # candidate reports as .docx
+```
+
+## Constraints that bite
+
+**Privacy.** `corpus/records/` holds psychological self-disclosure from candidates
+who are mostly minors, under real names. Gitignored and must stay so. Tests read
+`src/scoring/__tests__/fixtures/corpus-counts.json` — pseudonymous integers only.
+
+**Report grounding (D16).** Generated reports may use only the candidate's own
+responses, the known stimulus, the rubric, and Layer 1/2 output. **Never** the
+human assessor's marks — none of that exists in production. **Never** a
+comparison with another candidate. `build-reports.mjs` enforces the second with a
+guard that throws, but a regex only catches what you thought of — read the output.
+
+**One rater (D17).** All 11 records are from `yogesh-dutta`. More assessors are
+expected. **Compute per rater before pooling** — pooling on arrival destroys the
+comparison. [`corpus/SECOND-ASSESSOR-LEDGER.md`](./corpus/SECOND-ASSESSOR-LEDGER.md)
+lists every conclusion a second assessor settles.
+
+**No selection verdict (D15).** The assessor's reports end with a standing band
+(Low-Borderliner / Borderliner / High-Borderliner). We do not emit it —
+`ARCHITECTURE.md` §9.1 forbids predicting a recommendation.
+
+## Blocked on the user
+
+- **The D5 bake-off** needs an `ANTHROPIC_API_KEY` or an `ant auth login` profile.
+  Everything else for it is built.
+- **Sprint 1** — scaffold, auth, tenancy, RLS. Until it exists the Definition of
+  Done ("golden path verified in the browser") cannot be met.
+- **A second assessor.** Everything it unblocks is listed in the ledger (D17 above).
+
+Deferred work carries over in [`SUGGESTIONS.md`](./SUGGESTIONS.md) with the
+reasoning; strike items there when done rather than deleting them.
+
+## Git
+
+Initialised 2026-10-12; nothing committed yet. Before any commit, `git status` and re-scan for names
+(D21; `no-candidate-names.test.ts` does the scan locally) — the `.gitignore` covers `corpus/records/`, `corpus/reports/`, `corpus/report-findings.json`
+and the single-candidate script.

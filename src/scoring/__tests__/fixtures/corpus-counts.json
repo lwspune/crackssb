@@ -1,0 +1,194 @@
+{
+  "note": "Derived from corpus/records by scripts/build-count-fixture.mjs. Pseudonymous and non-identifying: integers and the assessor’s own count marks only. Do not hand-edit — regenerate instead.",
+  "source": "LWS Pune psych dossiers, 11 candidates, assessed 2026-07-31, single assessor",
+  "candidates": [
+    {
+      "id": "cand-01",
+      "tat": {
+        "attempted": 12
+      },
+      "wat": {
+        "attempted": 60,
+        "assessorMarks": [
+          "02 WAT NOT Attempted"
+        ]
+      },
+      "srt": {
+        "attempted": 16,
+        "assessorMarks": [
+          "Only 16 SRT",
+          "You Need to do 45+ SRT"
+        ]
+      },
+      "sdt": {
+        "attempted": 4
+      }
+    },
+    {
+      "id": "cand-02",
+      "tat": {
+        "attempted": 11
+      },
+      "wat": {
+        "attempted": 36,
+        "blanksStated": 24
+      },
+      "srt": {
+        "attempted": 16,
+        "assessorMarks": [
+          "only 16 SRT"
+        ]
+      },
+      "sdt": {
+        "attempted": 5,
+        "assessorMarks": [
+          "You Need to write much more, about 80-90 words (6-7 lines) under each opinion"
+        ]
+      }
+    },
+    {
+      "id": "cand-03",
+      "wat": {
+        "attempted": 50,
+        "blanksStated": 10,
+        "assessorMarks": [
+          "10 WAT Not Attempted"
+        ]
+      },
+      "srt": {
+        "attempted": 16,
+        "assessorMarks": [
+          "16 only"
+        ]
+      },
+      "sdt": {
+        "attempted": 5
+      }
+    },
+    {
+      "id": "cand-04",
+      "tat": {
+        "attempted": 12
+      },
+      "wat": {
+        "attempted": 54,
+        "blanksStated": 6
+      },
+      "srt": {
+        "attempted": 27,
+        "assessorMarks": [
+          "27 SRT",
+          "Attempt to Do 45+ SRT"
+        ]
+      },
+      "sdt": {
+        "attempted": 5
+      }
+    },
+    {
+      "id": "cand-05",
+      "tat": {
+        "attempted": 8,
+        "blanksStated": 4,
+        "assessorMarks": [
+          "04 Blank TAT stories"
+        ]
+      },
+      "wat": {
+        "attempted": 26,
+        "blanksStated": 34
+      },
+      "srt": {
+        "attempted": 16,
+        "assessorMarks": [
+          "only 16 SRT",
+          "Need to Do 45+ SRT"
+        ]
+      },
+      "sdt": {
+        "attempted": 5
+      }
+    },
+    {
+      "id": "cand-06",
+      "tat": {
+        "attempted": 12
+      },
+      "srt": {
+        "attempted": 16,
+        "assessorMarks": [
+          "16 SRT only",
+          "You Need to Do 45+ SRT"
+        ]
+      }
+    },
+    {
+      "id": "cand-07",
+      "tat": {
+        "attempted": 12
+      },
+      "srt": {
+        "attempted": 29,
+        "assessorMarks": [
+          "Did only 29 SRT",
+          "Need to Do 45+ SRT"
+        ]
+      }
+    },
+    {
+      "id": "cand-08",
+      "tat": {
+        "attempted": 11
+      },
+      "srt": {
+        "attempted": 13,
+        "assessorMarks": [
+          "Need to do 45+ SRT"
+        ]
+      }
+    },
+    {
+      "id": "cand-09",
+      "tat": {
+        "attempted": 12
+      },
+      "srt": {
+        "attempted": 27,
+        "assessorMarks": [
+          "27 SRT only"
+        ]
+      },
+      "sdt": {
+        "attempted": 5
+      }
+    },
+    {
+      "id": "cand-10",
+      "tat": {
+        "attempted": 12
+      },
+      "srt": {
+        "attempted": 24,
+        "assessorMarks": [
+          "Did only 19 SRT only"
+        ]
+      }
+    },
+    {
+      "id": "cand-11",
+      "tat": {
+        "attempted": 12
+      },
+      "srt": {
+        "attempted": 17,
+        "assessorMarks": [
+          "only 17 SRT",
+          "Need to do 45+ SRT"
+        ]
+      },
+      "sdt": {
+        "attempted": 5
+      }
+    }
+  ]
+}

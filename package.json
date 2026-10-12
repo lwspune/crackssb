@@ -1,0 +1,44 @@
+{
+  "name": "crackssb",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "fixture": "node scripts/build-count-fixture.mjs",
+    "measure": "node scripts/measure-coverage.mjs",
+    "evalset": "node scripts/build-eval-set.mjs",
+    "eval": "node --experimental-strip-types scripts/run-eval.ts",
+    "consistency": "node --experimental-strip-types scripts/run-consistency.ts",
+    "blindset": "node scripts/build-blind-set.mjs",
+    "watitems": "node scripts/build-wat-items.mjs",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.0",
+    "jsdom": "^29.1.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0",
+    "docx": "^9.7.1",
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  }
+}

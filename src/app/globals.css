@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+  The palette is PYQVault's (Question_Bank/src/app/globals.css, 2026-10-04):
+  navy text, royal-blue brand, a tinted page so white cards stand off it, a
+  navy dark mode. Shared deliberately, so the two products read as one family.
+
+  The runner-* tokens are this product's own. The runner is dark in BOTH
+  modes — UI.md §4: the test surface drops every comfort of the app, and the
+  change of ground is how the candidate knows the clock is real.
+
+  src/ui/__tests__/theme-contrast.test.ts checks every pair the UI paints
+  against WCAG AA, in both modes, from this file as it ships.
+*/
+
+:root {
+  --background: 220 42.9% 97.3%;          /* #F5F7FB */
+  --foreground: 225.8 66.3% 17.5%;        /* #0F1D4A navy */
+  --card: 0 0% 100%;
+  --card-foreground: 225.8 66.3% 17.5%;
+  --primary: 225.8 66.3% 17.5%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 218.6 50% 94.5%;           /* #EAEFF8 */
+  --secondary-foreground: 225.8 66.3% 17.5%;
+  --muted: 218.6 50% 94.5%;
+  --muted-foreground: 217.1 19.8% 41.6%;  /* #55657F */
+  --accent: 219.1 100% 95.5%;             /* #E8F0FF */
+  --accent-foreground: 225.8 66.3% 17.5%;
+  --destructive: 0 72% 42%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 216.7 39.1% 91%;              /* #DFE6F1 */
+  --ring: 224.3 76.3% 48%;
+  --brand: 224.3 76.3% 48%;               /* #1D4ED8 royal blue */
+  --brand-foreground: 0 0% 100%;
+  --brand-accent: 224.3 76.3% 48%;
+  --runner-background: 225.7 60% 6.9%;    /* #070C1C */
+  --runner-foreground: 220 56.3% 93.7%;   /* #E6ECF8 */
+  --runner-muted: 222.3 31.4% 72.5%;      /* #A3B0CF */
+  --runner-warn: 38.3 89.8% 61.4%;        /* #F5B544 amber, last seconds */
+  --runner-track: 224.2 42.2% 17.6%;      /* #1A2440 spent ticks */
+  --runner-ring: 215.6 100% 73.9%;        /* #7AB0FF */
+  --navy: 225.8 66.3% 17.5%;              /* #0F1D4A — sidebar, header, hero */
+  --navy-foreground: 220 56.3% 93.7%;     /* #E6ECF8 */
+  --navy-muted: 222.3 31.4% 72.5%;        /* #A3B0CF */
+  --navy-accent: 215.6 100% 73.9%;        /* #7AB0FF */
+  --navy-border: 224 52% 27.6%;           /* #22356B */
+  --navy-ring: 215.6 100% 73.9%;
+  --radius: 0.75rem;
+  --shadow-card: 0 0 0 1px rgb(15 29 74 / 0.04), 0 1px 2px rgb(15 29 74 / 0.06), 0 8px 24px -12px rgb(15 29 74 / 0.18);
+  --shadow-lift: 0 0 0 1px rgb(15 29 74 / 0.05), 0 2px 4px rgb(15 29 74 / 0.06), 0 18px 40px -16px rgb(15 29 74 / 0.32);
+}
+
+.dark {
+  --background: 224.2 65.5% 11.4%;        /* #0A1430 */
+  --foreground: 220 56.3% 93.7%;          /* #E6ECF8 */
+  --card: 225 56.4% 15.3%;                /* #111C3D */
+  --card-foreground: 220 56.3% 93.7%;
+  --primary: 220 56.3% 93.7%;
+  --primary-foreground: 225.8 66.3% 17.5%;
+  --secondary: 224.4 50.9% 20.8%;         /* #1A2850 */
+  --secondary-foreground: 220 56.3% 93.7%;
+  --muted: 224.4 50.9% 20.8%;
+  --muted-foreground: 222.3 31.4% 72.5%;  /* #A3B0CF */
+  --accent: 224.7 50.4% 22.9%;
+  --accent-foreground: 220 56.3% 93.7%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 210 40% 96%;
+  --border: 224.7 45% 25.7%;              /* #24335F */
+  --ring: 215.6 100% 73.9%;
+  --brand: 221.2 83.2% 53.3%;             /* #2563EB */
+  --brand-foreground: 0 0% 100%;
+  --brand-accent: 215.6 100% 73.9%;       /* #7AB0FF */
+  --runner-background: 225.7 60% 6.9%;
+  --runner-foreground: 220 56.3% 93.7%;
+  --runner-muted: 222.3 31.4% 72.5%;
+  --runner-warn: 38.3 89.8% 61.4%;
+  --runner-track: 224.2 42.2% 17.6%;
+  --runner-ring: 215.6 100% 73.9%;
+  --navy: 225 70% 7.8%;                   /* #060D22 — below the page, so panels still read */
+  --navy-foreground: 220 56.3% 93.7%;
+  --navy-muted: 222.3 31.4% 72.5%;
+  --navy-accent: 215.6 100% 73.9%;
+  --navy-border: 225 46% 19%;             /* #1A2547 */
+  --navy-ring: 215.6 100% 73.9%;
+  --shadow-card: 0 0 0 1px rgb(255 255 255 / 0.03), 0 1px 2px rgb(0 0 0 / 0.35), 0 8px 22px -14px rgb(0 0 0 / 0.6);
+  --shadow-lift: 0 0 0 1px rgb(255 255 255 / 0.05), 0 2px 6px rgb(0 0 0 / 0.4), 0 18px 40px -16px rgb(0 0 0 / 0.75);
+}
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-ring: hsl(var(--ring));
+  --color-brand: hsl(var(--brand));
+  --color-brand-foreground: hsl(var(--brand-foreground));
+  --color-brand-accent: hsl(var(--brand-accent));
+  --color-runner: hsl(var(--runner-background));
+  --color-runner-foreground: hsl(var(--runner-foreground));
+  --color-runner-muted: hsl(var(--runner-muted));
+  --color-runner-warn: hsl(var(--runner-warn));
+  --color-runner-track: hsl(var(--runner-track));
+  --color-runner-ring: hsl(var(--runner-ring));
+  --color-navy: hsl(var(--navy));
+  --color-navy-foreground: hsl(var(--navy-foreground));
+  --color-navy-muted: hsl(var(--navy-muted));
+  --color-navy-accent: hsl(var(--navy-accent));
+  --color-navy-border: hsl(var(--navy-border));
+  --color-navy-ring: hsl(var(--navy-ring));
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), ui-serif, Georgia, serif;
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+  --shadow-card: var(--shadow-card);
+  --shadow-lift: var(--shadow-lift);
+}
+
+/* The small spaced capitals that label every section — "DAY 2 · PSYCHOLOGY". */
+@utility eyebrow {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html, body { overflow-x: clip; }
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+  /* Royal blue vanishes on navy; anything marked as a navy surface rings in the light accent. */
+  [data-surface='navy'] :focus-visible { outline-color: var(--color-navy-ring); }
+}
+
+/* Cards that answer the pointer. A lift, not a bounce. */
+@utility lift {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  &:hover { transform: translateY(-2px); box-shadow: var(--shadow-lift); }
+}
+
+/* Content settles in on load; skipped entirely for anyone who asks for less motion. */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+@utility rise {
+  animation: rise 420ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

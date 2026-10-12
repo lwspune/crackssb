@@ -1,0 +1,687 @@
+{
+  "assessment_type": "wat",
+  "generated": "2026-09-23",
+  "source": "wat-deck-2026-04-28",
+  "itemCount": 60,
+  "secondsPerItem": 15,
+  "valenceCounts": {
+    "neutral": 29,
+    "mild": 12,
+    "loaded": 19
+  },
+  "substitutionCount": 3,
+  "items": [
+    {
+      "ordinal": 1,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "NAUGHTY",
+        "valence": "mild"
+      },
+      "difficulty": 2,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 2,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "JEALOUS",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 3,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "RISK",
+        "valence": "mild"
+      },
+      "difficulty": 2,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 4,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "FAITH",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 5,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "PREDICT",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 6,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "MONEY",
+        "valence": "mild"
+      },
+      "difficulty": 2,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 7,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "LEADER",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 8,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "CHALLENGE",
+        "valence": "mild"
+      },
+      "difficulty": 2,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 9,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "PRACTICE",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 10,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "HUSBAND",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 11,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "REGULAR",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 12,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "CENTURY",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 13,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "IGNORE",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 14,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "TRUTH",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 15,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "TABLE",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 16,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "POLLUTION",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 17,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "RESTRICT",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 18,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "SHY",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 19,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "DIFFICULT",
+        "valence": "mild"
+      },
+      "difficulty": 2,
+      "active": true,
+      "source": "wat-deck-2026-04-28",
+      "substitution": {
+        "replaced": "DIFFCULT",
+        "reason": "Spelling fix. Candidates are marked on their own spelling — several graded sheets carry spelling corrections — so showing them a misspelt stimulus is unfair."
+      }
+    },
+    {
+      "ordinal": 20,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "CHEATER",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 21,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "CRIMINAL",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 22,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "CONFLICT",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 23,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "BROTHER",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 24,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "SURPRISE",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 25,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "REAL",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 26,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "DIVIDE",
+        "valence": "mild"
+      },
+      "difficulty": 2,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 27,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "JOKER",
+        "valence": "mild"
+      },
+      "difficulty": 2,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 28,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "STATION",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 29,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "HONESTY",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 30,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "MASTER",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 31,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "PROBLEM",
+        "valence": "mild"
+      },
+      "difficulty": 2,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 32,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "MONSTER",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 33,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "DESTROY",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 34,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "PAST",
+        "valence": "mild"
+      },
+      "difficulty": 2,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 35,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "GROUP",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 36,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "GREED",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 37,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "MOMENT",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 38,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "DREAM",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 39,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "HISTORY",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 40,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "VILLAIN",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 41,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "CORRUPT",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 42,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "ENEMY",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 43,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "CANCEL",
+        "valence": "mild"
+      },
+      "difficulty": 2,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 44,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "FRIENDS",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 45,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "DISCIPLINE",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28",
+      "substitution": {
+        "replaced": "REGULAR",
+        "reason": "REGULAR appeared at both 11 and 45, so the two items were not independent — the second response is primed by the first. Kept at 11, replaced here with a word in the same habit-and-routine register."
+      }
+    },
+    {
+      "ordinal": 46,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "TEMPER",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 47,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "EXCUSE",
+        "valence": "mild"
+      },
+      "difficulty": 2,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 48,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "EFFORTS",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 49,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "TROOPS",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 50,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "ATTACK",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 51,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "RIVAL",
+        "valence": "mild"
+      },
+      "difficulty": 2,
+      "active": true,
+      "source": "wat-deck-2026-04-28",
+      "substitution": {
+        "replaced": "DAMES",
+        "reason": "DAMES is archaic and gendered, and the deck is used for a mixed cohort (its own title slide reads FOR MALE & FEMALE). RIVAL keeps the competitive/hostile register of the surrounding words without the problem."
+      }
+    },
+    {
+      "ordinal": 52,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "FOOL",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 53,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "AGREE",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 54,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "HOPE",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 55,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "CHARM",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 56,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "MEND",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 57,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "DISTURBED",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 58,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "CHAPTER",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 59,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "ADVENTURE",
+        "valence": "neutral"
+      },
+      "difficulty": 1,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    },
+    {
+      "ordinal": 60,
+      "assessment_type": "wat",
+      "payload": {
+        "word": "SUICIDE",
+        "valence": "loaded"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "wat-deck-2026-04-28"
+    }
+  ]
+}

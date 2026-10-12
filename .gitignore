@@ -1,0 +1,31 @@
+node_modules/
+.next/
+dist/
+*.local
+.env*
+
+# Psychological self-disclosure from candidates who are mostly minors, carrying
+# real names and family detail. Never committed. See corpus/README.md.
+# The non-identifying count fixtures the test suite needs are committed
+# separately under src/scoring/__tests__/fixtures/.
+corpus/records/
+
+# Contains candidate writing. Regenerate with `npm run evalset`.
+corpus/eval-set.json
+
+corpus/eval-runs/
+corpus/blind-set.json
+corpus/my-verdicts.json
+
+# Predicted reports, sealed before ground truth arrives
+corpus/predictions/
+
+# Assessment reports, one file per candidate, under real names.
+corpus/reports/
+
+# Per-candidate findings quoting each candidate's own psych responses. The
+# reader-contract test uses a synthetic sample in src/scoring/__tests__/fixtures/.
+corpus/report-findings.json
+
+# Built for one named candidate; carries their stories inline.
+scripts/build-candidate-docx.mjs

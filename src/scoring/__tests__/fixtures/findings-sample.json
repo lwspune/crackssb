@@ -1,0 +1,223 @@
+{
+  "note": "SYNTHETIC. Shapes copied from the hand-derived findings (corpus/report-findings.json, gitignored); every string replaced, every number and null kept. For the reader-contract test only.",
+  "candidates": {
+    "sample-complete": {
+      "name": "Sample A",
+      "counts": {
+        "tat": [
+          11,
+          12
+        ],
+        "srt": [
+          16,
+          45
+        ],
+        "wat": [
+          36,
+          60
+        ],
+        "sdt": [
+          5,
+          5
+        ]
+      },
+      "headline": "Sample headline.",
+      "oneLine": "Sample oneLine.",
+      "strengths": [
+        {
+          "story": 7,
+          "quote": "Sample quote.",
+          "why": "Sample why."
+        },
+        {
+          "story": 12,
+          "quote": "Sample quote.",
+          "why": "Sample why."
+        }
+      ],
+      "themeIssues": [
+        {
+          "story": 6,
+          "what": "Sample what.",
+          "why": "Sample why."
+        },
+        {
+          "story": 9,
+          "what": "Sample what.",
+          "why": "Sample why."
+        },
+        {
+          "story": 3,
+          "what": "Sample what.",
+          "why": "Sample why."
+        }
+      ],
+      "incomplete": [
+        5,
+        6,
+        10,
+        11
+      ],
+      "blank": [
+        4
+      ],
+      "perception": null,
+      "craft": [
+        "Sample craft.",
+        "Sample craft.",
+        "Sample craft."
+      ],
+      "watNote": "Sample watNote.",
+      "srtNote": "Sample srtNote.",
+      "priorities": [
+        "Sample priorities.",
+        "Sample priorities.",
+        "Sample priorities."
+      ],
+      "closing": "Sample closing."
+    },
+    "sample-tat-only": {
+      "name": "Sample B",
+      "counts": {
+        "tat": [
+          8,
+          12
+        ],
+        "srt": null,
+        "wat": null,
+        "sdt": null
+      },
+      "headline": "Sample headline.",
+      "oneLine": "Sample oneLine.",
+      "strengths": [
+        {
+          "story": 1,
+          "quote": "Sample quote.",
+          "why": "Sample why."
+        },
+        {
+          "story": 11,
+          "quote": "Sample quote.",
+          "why": "Sample why."
+        },
+        {
+          "story": 5,
+          "quote": "Sample quote.",
+          "why": "Sample why."
+        }
+      ],
+      "themeIssues": [
+        {
+          "story": 9,
+          "what": "Sample what.",
+          "why": "Sample why."
+        },
+        {
+          "story": 10,
+          "what": "Sample what.",
+          "why": "Sample why."
+        },
+        {
+          "story": 2,
+          "what": "Sample what.",
+          "why": "Sample why."
+        }
+      ],
+      "incomplete": [
+        12
+      ],
+      "blank": [
+        6
+      ],
+      "perception": null,
+      "craft": [
+        "Sample craft.",
+        "Sample craft.",
+        "Sample craft.",
+        "Sample craft.",
+        "Sample craft."
+      ],
+      "watNote": null,
+      "srtNote": null,
+      "priorities": [
+        "Sample priorities.",
+        "Sample priorities.",
+        "Sample priorities."
+      ],
+      "closing": "Sample closing."
+    },
+    "sample-perception": {
+      "name": "Sample C",
+      "counts": {
+        "tat": [
+          12,
+          12
+        ],
+        "srt": [
+          29,
+          45
+        ],
+        "wat": null,
+        "sdt": null
+      },
+      "headline": "Sample headline.",
+      "oneLine": "Sample oneLine.",
+      "strengths": [
+        {
+          "story": 5,
+          "quote": "Sample quote.",
+          "why": "Sample why."
+        },
+        {
+          "story": 6,
+          "quote": "Sample quote.",
+          "why": "Sample why."
+        },
+        {
+          "story": 4,
+          "quote": "Sample quote.",
+          "why": "Sample why."
+        }
+      ],
+      "themeIssues": [
+        {
+          "story": 10,
+          "what": "Sample what.",
+          "why": "Sample why."
+        },
+        {
+          "story": 9,
+          "what": "Sample what.",
+          "why": "Sample why."
+        },
+        {
+          "story": 1,
+          "what": "Sample what.",
+          "why": "Sample why."
+        }
+      ],
+      "incomplete": [
+        5
+      ],
+      "blank": [],
+      "perception": {
+        "story": 7,
+        "wrote": "Sample wrote.",
+        "shows": "Sample shows."
+      },
+      "craft": [
+        "Sample craft.",
+        "Sample craft.",
+        "Sample craft."
+      ],
+      "watNote": null,
+      "srtNote": "Sample srtNote.",
+      "priorities": [
+        "Sample priorities.",
+        "Sample priorities.",
+        "Sample priorities."
+      ],
+      "closing": "Sample closing."
+    }
+  }
+}
