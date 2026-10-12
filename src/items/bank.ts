@@ -23,6 +23,8 @@ export interface OirPayload {
   readonly reasoningType: string;
   /** Figure for non-verbal items. */
   readonly assetPath?: string;
+  /** The printed instruction a stem sits under ("find the wrong number"). A bare series cannot be answered without it. */
+  readonly direction?: string;
 }
 
 export interface WatPayload {
@@ -57,6 +59,7 @@ const oirPayload = z.object({
   key: optionLabel,
   reasoningType: z.string().min(1),
   assetPath: z.string().min(1).optional(),
+  direction: z.string().min(1).optional(),
 });
 
 const watPayload = z.object({ word: z.string().min(1), valence: z.string().optional() });

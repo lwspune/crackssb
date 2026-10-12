@@ -22,6 +22,13 @@ describe('validateItem', () => {
     expect(validateItem(oir('q1', 'analogy'))).toMatchObject({ id: 'q1', assessment_type: 'oir_verbal' });
   });
 
+  it('keeps an OIR item\'s printed direction, which a bare series cannot be answered without', () => {
+    const item = oir('q1', 'series');
+    const withDirection = { ...item, payload: { ...item.payload, direction: 'Find the wrong number.' } };
+    expect((validateItem(withDirection).payload as OirPayload).direction).toBe('Find the wrong number.');
+    expect(() => validateItem({ ...item, payload: { ...item.payload, direction: '' } })).toThrow(/direction/);
+  });
+
   it('every row of the seeded WAT bank validates as a payload', () => {
     const { items: rows } = JSON.parse(readFileSync('content/wat-items.json', 'utf8')) as { items: Array<{ payload: unknown }> };
     expect(rows.length).toBe(60);
