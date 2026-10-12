@@ -54,6 +54,16 @@ for (const [name, make] of [
       expect(store.load('wat')).toBeNull();
     });
 
+    it('is typed unless told otherwise', () => {
+      store.create('wat', T0);
+      expect(store.load('wat')).toMatchObject({ input: 'typed', code: null });
+    });
+
+    it('remembers a paper session and the code written on its sheet (D22)', () => {
+      store.create('wat', T0, { input: 'paper', code: 'ACD-EFG' });
+      expect(store.load('wat')).toMatchObject({ input: 'paper', code: 'ACD-EFG' });
+    });
+
     it('ignores writes for a session that does not exist rather than inventing one', () => {
       store.persist('wat', '0', 'orphan');
       expect(store.load('wat')).toBeNull();
@@ -68,6 +78,12 @@ describe('local session store', () => {
     first.create('wat', T0);
     first.persist('wat', '0', 'kept');
     expect(createLocalStore(storage).load('wat')).toMatchObject({ startedAtMs: T0, saved: { '0': 'kept' } });
+  });
+
+  it('reads a session saved before paper mode existed as typed', () => {
+    const storage = fakeStorage();
+    storage.setItem('crackssb:session:wat', JSON.stringify({ instrument: 'wat', startedAtMs: T0, saved: {}, endedBy: null }));
+    expect(createLocalStore(storage).load('wat')).toMatchObject({ input: 'typed', code: null });
   });
 
   it('treats unreadable storage as no session instead of crashing the runner', () => {

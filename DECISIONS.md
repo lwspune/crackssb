@@ -520,3 +520,24 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 **Consequences.** Short quoted fragments of candidates' writing remain in `corpus/CODEBOOK.md`, `COVERAGE.md`, this file and the lexical tests, unattributed. The assessor's name (`yogesh-dutta`, D17) is unchanged — an adult professional and a rater key, not a candidate.
 
 **Revisit if.** The corpus grows past the point where a short quote plus an id could identify someone in a known batch, or a candidate asks for deletion (ROADMAP open question 4).
+
+---
+
+## D22 — Offline answer sheets: the app keeps the clock, the candidate writes on paper
+
+**Date:** 2026-10-12 · **Status:** Accepted · **Amends** [D3](#d3--defer-the-ocr-bake-off-to-sprint-x), [D7](#d7--the-sample-corpus-is-self-harvesting), `UI.md` §3.1
+
+**Context.** WAT, SRT, TAT, PPDT and SDT are handwritten at the real SSB, and academies run them on paper (this corpus arrived as paper dossiers). Typed answers on a phone train a different skill — `ARCHITECTURE.md` §9.4 forbids a "realistic simulation" claim until handwriting ships. Question_Bank already runs a checked-answer-sheet service (its migration 0153) whose upload, storage and grading patterns carry over.
+
+**Decision.**
+
+1. **Two ways in, app-timed first.** *Paper mode:* the runner shows the stimulus on the real clock with no answer field; the candidate writes on a sheet and uploads photos. *Self-timed upload* (academies, printed booklets): no timing evidence, so it is labelled self-timed and never presented as equivalent.
+2. **A session code ties sheet to session.** Six characters, `XXX-XXX`, from an alphabet without the pairs handwriting confuses (0/O, 1/I/L, 5/S, 8/B, 2/Z). Shown before the clock starts, printed on every page of the sheet. A scan that does not carry the code is the wrong sheet.
+3. **Paper mode shows the line number, never the total.** An exception to UI.md §3.1's "must not show word 23 of 60", for paper only: the real deck numbers its words, and the corpus shows what happens without it — one sheet ran to 62 rows against 60 words and four answers landed against the wrong stimulus.
+4. **Printable sheets** (`/sheets/[instrument]`): numbered lines, the code on every page, "leave a line blank, never skip it", and no name field (D21). Print CSS, no PDF library.
+5. **Reading is done by people with AI first, automated later.** Candidates upload; at the end of each day the sheets are transcribed and analysed in a working session with a vision model, against a playbook — Question_Bank's `GRADING.md` routine. The API pipeline is built only once that has proven useful. Transcripts enter the existing scorer as text (seam rule 3), with `responses.source = 'handwritten_ocr'`.
+6. **Upload follows Question_Bank's 0153 patterns** when storage exists: signed-URL direct upload (Vercel's 4.5 MB request limit), private bucket with no storage policies and its own size/type limits, a database-enforced submission state machine, consent recorded, rejection with a fixable reason, scans deleted soon after transcription (≤ 30 days; the transcript stays).
+
+**Consequences.** Paper mode and printable sheets ship now; the upload step says "arrives with accounts" until Supabase exists (ROADMAP blocker 1). Every uploaded sheet is a time-pressured handwriting sample paired with a session — D7's corpus, sooner, from paper mode rather than as a by-product of typed PPDT. D3's revisit trigger ("a corpus arrives earlier") will fire on its own.
+
+**Revisit if.** End-of-day transcription load outgrows a session (then the API pipeline and the Sprint X bake-off), or self-timed uploads start being read as timed.

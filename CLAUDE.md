@@ -29,7 +29,7 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-414 tests passing · npm test        lint clean · npm run lint        npm run build green
+438 tests passing · npm test        lint clean · npm run lint        npm run build green
 mobile audit clean · npm run audit:mobile
 ```
 
@@ -95,6 +95,8 @@ src/ui/
     Runner.tsx           the React wrapper: renders engine state, carries out its effects
     session-store.ts     SessionStore — local (now) / Supabase (Sprint 1) behind one interface
     content.ts           WAT words from content/wat-items.json — ships the whole deck (known gap)
+    paper.ts             D22 paper mode — session code (no handwriting-confusable chars), sheet pages
+  sheet/                 AnswerSheet — the printable sheet at /sheets/[instrument]; code on every page, no name
 corpus/                  candidate data — records/ is GITIGNORED
 content/                 stimulus material — WAT deck, item bank, TAT images
 scripts/                 build + measurement entry points
@@ -103,7 +105,7 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 414 tests
+npm test              # 438 tests
 npm run dev           # the app at localhost:3000
 npm run build         # production build (type-checks app code)
 npm run lint

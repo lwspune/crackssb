@@ -159,6 +159,65 @@ describe('abandoning', () => {
   });
 });
 
+describe('paper mode (D22) — the app keeps the clock, the candidate writes on a sheet', () => {
+  function beginOnPaper() {
+    renderRunner();
+    fireEvent.click(screen.getByRole('radio', { name: /write on paper/i }));
+    const code = screen.getByTestId('session-code').textContent ?? '';
+    fireEvent.click(screen.getByRole('button', { name: /begin/i }));
+    return code;
+  }
+
+  it('offers typing or paper before the clock starts, typing by default', () => {
+    renderRunner();
+    expect((screen.getByRole('radio', { name: /type on screen/i }) as HTMLInputElement).checked).toBe(true);
+    expect((screen.getByRole('radio', { name: /write on paper/i }) as HTMLInputElement).checked).toBe(false);
+  });
+
+  it('gives a paper session a code to write on the sheet, and a sheet to print', () => {
+    renderRunner();
+    fireEvent.click(screen.getByRole('radio', { name: /write on paper/i }));
+    const code = screen.getByTestId('session-code').textContent ?? '';
+    expect(code).toMatch(/^[A-Z0-9]{3}-[A-Z0-9]{3}$/);
+    expect(screen.getByRole('link', { name: /print/i }).getAttribute('href')).toBe(`/sheets/wat?code=${code}`);
+  });
+
+  it('records the session as paper, with the code that was shown', () => {
+    const code = beginOnPaper();
+    expect(store.load('wat')).toMatchObject({ input: 'paper', code });
+  });
+
+  it('shows the word and its line number, but no field and never the total', () => {
+    beginOnPaper();
+    expect(screen.getByText('WORD0')).toBeTruthy();
+    expect(screen.getByText(/line 1$/i)).toBeTruthy();
+    expect(screen.queryByLabelText(/your sentence/i)).toBeNull();
+    expect(document.body.textContent).not.toMatch(/\b\d+\s*(of|\/)\s*60\b/i);
+  });
+
+  it('moves to the next line on the clock, like the typed runner', () => {
+    beginOnPaper();
+    advance(WORD_MS);
+    expect(screen.getByText('WORD1')).toBeTruthy();
+    expect(screen.getByText(/line 2$/i)).toBeTruthy();
+  });
+
+  it('ends by keeping the code in view and saying where the photos go', () => {
+    const code = beginOnPaper();
+    advance(WORD_MS * 60);
+    expect(screen.getByRole('heading', { name: /time is up/i })).toBeTruthy();
+    expect(screen.getByText(code)).toBeTruthy();
+    expect(screen.getByText(/upload/i)).toBeTruthy();
+  });
+
+  it('resumes a paper session after a reload, still on paper', () => {
+    store.create('wat', T0 - (WORD_MS + 2_000), { input: 'paper', code: 'ACD-EFG' });
+    renderRunner();
+    expect(screen.getByText('WORD1')).toBeTruthy();
+    expect(screen.queryByLabelText(/your sentence/i)).toBeNull();
+  });
+});
+
 describe('after the test', () => {
   it('lets the candidate read back every word against what they wrote', () => {
     begin();

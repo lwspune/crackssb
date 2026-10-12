@@ -8,7 +8,8 @@ import type { RunnerInstrument } from '../../runner/modes.ts';
 import { ArrowIcon } from '../icons.tsx';
 import { RUNNABLE } from './registry.ts';
 import type { RunnableInstrument } from './registry.ts';
-import type { SessionStore } from './session-store.ts';
+import { sessionCode } from './paper.ts';
+import type { InputMode, SessionStore } from './session-store.ts';
 
 /**
  * The runner shell (UI.md §4): full screen, one thing visible, the deadline in
@@ -50,12 +51,24 @@ function viewOf(state: RunnerState): View {
  * where the clock is, not where it was left; one that expired while the
  * candidate was away arrives ended. Reads storage, so the runner is client-only.
  */
-function arrive(store: SessionStore, instrument: RunnerInstrument, config: RunnerState['config']): { view: View; step: Step | null } {
+/** How this session is answered (D22). Fixed at Begin; a reload resumes it as it was. */
+interface Answering {
+  readonly input: InputMode;
+  readonly code: string | null;
+}
+const TYPED: Answering = { input: 'typed', code: null };
+
+function arrive(
+  store: SessionStore,
+  instrument: RunnerInstrument,
+  config: RunnerState['config'],
+): { view: View; step: Step | null; answering: Answering } {
   const record = store.load(instrument);
-  if (!record) return { view: { kind: 'brief' }, step: null };
-  if (record.endedBy) return { view: { kind: 'ended', endedBy: record.endedBy, saved: record.saved }, step: null };
+  if (!record) return { view: { kind: 'brief' }, step: null, answering: TYPED };
+  const answering = { input: record.input, code: record.code };
+  if (record.endedBy) return { view: { kind: 'ended', endedBy: record.endedBy, saved: record.saved }, step: null, answering };
   const step = resume(config, record.startedAtMs, record.saved, Date.now());
-  return { view: viewOf(step.state), step };
+  return { view: viewOf(step.state), step, answering };
 }
 
 export function Runner({ instrument, title, store, content }: Props) {
@@ -66,6 +79,7 @@ export function Runner({ instrument, title, store, content }: Props) {
   const [arrival] = useState(() => arrive(store, instrument, config));
   const [view, setView] = useState<View>(arrival.view);
   const [confirming, setConfirming] = useState(false);
+  const [answering, setAnswering] = useState<Answering>(arrival.answering);
   const live = useRef<RunnerState | null>(arrival.view.kind === 'live' ? arrival.view.state : null);
 
   /** Write what the engine asked to be written. Storage only — no rendering. */
@@ -109,8 +123,9 @@ export function Runner({ instrument, title, store, content }: Props) {
     return () => clearInterval(id);
   }, [isLive, dispatch]);
 
-  const begin = () => {
-    const record = store.create(instrument, Date.now());
+  const begin = (choice: Answering) => {
+    const record = store.create(instrument, Date.now(), choice);
+    setAnswering(choice);
     apply(start(config, record.startedAtMs, record.startedAtMs));
   };
 
@@ -119,9 +134,21 @@ export function Runner({ instrument, title, store, content }: Props) {
     setView({ kind: 'brief' });
   };
 
-  if (view.kind === 'brief') return <Brief title={title} facts={runnable.facts} instruction={runnable.instruction} onBegin={begin} />;
+  if (view.kind === 'brief') {
+    return <Brief title={title} instrument={instrument} facts={runnable.facts} instruction={runnable.instruction} onBegin={begin} />;
+  }
   if (view.kind === 'ended') {
-    return <Ended title={title} endedBy={view.endedBy} saved={view.saved} itemCount={itemCountOf(config)} content={content} onRestart={restart} />;
+    return (
+      <Ended
+        title={title}
+        endedBy={view.endedBy}
+        saved={view.saved}
+        itemCount={itemCountOf(config)}
+        content={content}
+        answering={answering}
+        onRestart={restart}
+      />
+    );
   }
 
   const { state } = view;
@@ -139,6 +166,7 @@ export function Runner({ instrument, title, store, content }: Props) {
       text={state.saved[key] ?? ''}
       secondsLeft={secondsLeft}
       secondsPerItem={perItem}
+      paper={answering.input === 'paper'}
       confirming={confirming}
       onType={(text) => dispatch({ type: 'input', text })}
       onAskAbandon={() => setConfirming(true)}
@@ -162,12 +190,23 @@ function formatClock(seconds: number): string {
 
 interface BriefProps {
   title: string;
+  instrument: RunnerInstrument;
   facts: RunnableInstrument['facts'];
   instruction: string;
-  onBegin: () => void;
+  onBegin: (choice: Answering) => void;
 }
 
-function Brief({ title, facts, instruction, onBegin }: BriefProps) {
+const CHOICES: readonly { input: InputMode; label: string; hint: string }[] = [
+  { input: 'typed', label: 'Type on screen', hint: 'Saved as you type' },
+  { input: 'paper', label: 'Write on paper', hint: 'As at the SSB · upload photos after' },
+];
+
+function Brief({ title, instrument, facts, instruction, onBegin }: BriefProps) {
+  const [input, setInput] = useState<InputMode>('typed');
+  // One code per brief, shown before the clock starts so writing it costs no test time.
+  const [code] = useState(() => sessionCode(Math.random));
+  const paper = input === 'paper';
+
   return (
     <main className="relative isolate flex min-h-dvh flex-col overflow-hidden bg-runner text-runner-foreground">
       <div aria-hidden="true" className="absolute left-1/2 top-1/3 -z-10 size-[28rem] -translate-x-1/2 rounded-full bg-runner-ring/10 blur-3xl" />
@@ -185,12 +224,55 @@ function Brief({ title, facts, instruction, onBegin }: BriefProps) {
         </dl>
 
         <p className="mt-8 text-lg">{instruction}</p>
-        <p className="mt-2 text-sm text-runner-muted">The clock never pauses. Typed, not handwritten. Saved on this device.</p>
 
-        <div className="mt-10 flex flex-wrap items-center gap-5">
+        <fieldset className="mt-8">
+          <legend className="eyebrow text-runner-muted">How you&rsquo;ll answer</legend>
+          <div className="mt-3 grid gap-3 sm:grid-cols-2">
+            {CHOICES.map((c) => (
+              <label
+                key={c.input}
+                className={`flex min-h-16 cursor-pointer items-start gap-3 rounded-lg p-4 ring-1 transition has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-runner-ring ${
+                  input === c.input ? 'bg-white/[0.06] ring-runner-ring' : 'ring-runner-track hover:ring-runner-muted'
+                }`}
+              >
+                <input
+                  type="radio"
+                  name="answering"
+                  value={c.input}
+                  checked={input === c.input}
+                  onChange={() => setInput(c.input)}
+                  className="mt-1 size-4 accent-[hsl(var(--runner-ring))] focus-visible:outline-none"
+                />
+                <span>
+                  <span className="block font-semibold">{c.label}</span>
+                  <span className="block text-sm text-runner-muted">{c.hint}</span>
+                </span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+
+        {paper && (
+          <div className="mt-4 rounded-lg bg-white/[0.04] p-4 ring-1 ring-runner-track">
+            <p className="text-sm text-runner-muted">Write this code at the top of your sheet:</p>
+            <p data-testid="session-code" className="mt-1 font-mono text-3xl font-semibold tracking-[0.12em]">{code}</p>
+            <p className="mt-3 text-sm text-runner-muted">
+              <Link href={`/sheets/${instrument}?code=${code}`} target="_blank" className="inline-flex min-h-11 items-center font-semibold text-runner-foreground underline underline-offset-4 focus-visible:outline-runner-ring">
+                Print an answer sheet
+              </Link>{' '}
+              — or number a page down the margin.
+            </p>
+          </div>
+        )}
+
+        <p className="mt-6 text-sm text-runner-muted">
+          {paper ? 'The clock never pauses. The screen moves on whether you have finished the line or not.' : 'The clock never pauses. Typed, not handwritten. Saved on this device.'}
+        </p>
+
+        <div className="mt-8 flex flex-wrap items-center gap-5">
           <button
             type="button"
-            onClick={onBegin}
+            onClick={() => onBegin(paper ? { input: 'paper', code } : TYPED)}
             className="inline-flex min-h-12 items-center gap-2 rounded-lg bg-runner-foreground px-7 text-base font-semibold text-runner shadow-[0_8px_30px_-6px_rgb(122_176_255/0.55)] transition hover:bg-white focus-visible:outline-runner-ring"
           >
             Begin <ArrowIcon />
@@ -215,6 +297,8 @@ interface LiveProps {
   text: string;
   secondsLeft: number;
   secondsPerItem: number;
+  /** D22: answers go on a sheet. No field; the line number is shown so the sheet stays aligned. */
+  paper: boolean;
   confirming: boolean;
   onType: (text: string) => void;
   onAskAbandon: () => void;
@@ -238,7 +322,10 @@ function LiveSequence(p: LiveProps) {
     if (p.confirming) keepGoingRef.current?.focus();
   }, [p.confirming]);
 
-  const announcement = urgent ? `${WARN_AT} seconds left` : `New word: ${p.word}`;
+  // Paper shows the line, never the total: the real deck numbers its words, and a sheet that
+  // drifts a line puts every later answer against the wrong word (it happened in the corpus).
+  const line = p.item + 1;
+  const announcement = urgent ? `${WARN_AT} seconds left` : p.paper ? `Line ${line}: ${p.word}` : `New word: ${p.word}`;
 
   return (
     <main className="min-h-dvh bg-runner text-runner-foreground flex flex-col" data-runner>
@@ -260,23 +347,32 @@ function LiveSequence(p: LiveProps) {
         </p>
         <div aria-hidden="true" className="mx-auto mt-6 h-0.5 w-10 rounded-full bg-brand short:mt-3" />
 
-        <label htmlFor="runner-input" className="eyebrow mt-16 block text-runner-muted short:mt-6">
-          Your sentence
-        </label>
-        <input
-          ref={inputRef}
-          id="runner-input"
-          type="text"
-          autoComplete="off"
-          autoCapitalize="sentences"
-          enterKeyHint="done"
-          value={p.text}
-          disabled={p.confirming}
-          onChange={(e) => p.onType(e.target.value)}
-          className="mt-2 w-full border-0 border-b-2 border-runner-track bg-transparent py-3 text-lg text-runner-foreground placeholder:text-runner-muted focus:border-runner-ring focus:outline-none focus-visible:outline-none disabled:opacity-60"
-          placeholder="Write the first thought"
-        />
-        <p className="mt-3 text-sm text-runner-muted">Saved as you type.</p>
+        {p.paper ? (
+          <div className="mt-16 text-center short:mt-6">
+            <p className="text-2xl font-semibold tabular-nums">{`Line ${line}`}</p>
+            <p className="mt-1 text-sm text-runner-muted">Write it on your sheet.</p>
+          </div>
+        ) : (
+          <>
+            <label htmlFor="runner-input" className="eyebrow mt-16 block text-runner-muted short:mt-6">
+              Your sentence
+            </label>
+            <input
+              ref={inputRef}
+              id="runner-input"
+              type="text"
+              autoComplete="off"
+              autoCapitalize="sentences"
+              enterKeyHint="done"
+              value={p.text}
+              disabled={p.confirming}
+              onChange={(e) => p.onType(e.target.value)}
+              className="mt-2 w-full border-0 border-b-2 border-runner-track bg-transparent py-3 text-lg text-runner-foreground placeholder:text-runner-muted focus:border-runner-ring focus:outline-none focus-visible:outline-none disabled:opacity-60"
+              placeholder="Write the first thought"
+            />
+            <p className="mt-3 text-sm text-runner-muted">Saved as you type.</p>
+          </>
+        )}
       </div>
 
       <div aria-hidden="true" className="mx-auto flex w-full max-w-xl items-end justify-between px-4 pb-5 sm:px-6">
@@ -349,12 +445,14 @@ interface EndedProps {
   saved: Readonly<Record<string, string>>;
   itemCount: number;
   content: RunnerContent;
+  answering: Answering;
   onRestart: () => void;
 }
 
-function Ended({ title, endedBy, saved, itemCount, content, onRestart }: EndedProps) {
+function Ended({ title, endedBy, saved, itemCount, content, answering, onRestart }: EndedProps) {
   const rows = Array.from({ length: itemCount }, (_, item) => ({ item, word: content.stimulus(item), text: (saved[keyFor(item, null)] ?? '').trim() }));
   const answered = rows.filter((r) => r.text !== '').length;
+  const paper = answering.input === 'paper';
 
   return (
     <main className="min-h-dvh bg-background">
@@ -363,17 +461,29 @@ function Ended({ title, endedBy, saved, itemCount, content, onRestart }: EndedPr
           <div aria-hidden="true" className="absolute -right-24 -top-24 -z-10 size-72 rounded-full bg-navy-accent/20 blur-3xl" />
           <p className="eyebrow text-navy-accent">{title}</p>
           <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">{ENDED_HEADING[endedBy]}</h1>
-          <dl className="mt-6 flex gap-8">
-            <div className="flex flex-col-reverse">
-              <dt className="text-xs text-navy-muted">Written</dt>
-              <dd className="text-3xl font-semibold tabular-nums">{answered}</dd>
-            </div>
-            <div className="flex flex-col-reverse">
-              <dt className="text-xs text-navy-muted">Blank</dt>
-              <dd className="text-3xl font-semibold tabular-nums">{itemCount - answered}</dd>
-            </div>
-          </dl>
-          <p className="mt-6 text-sm text-navy-muted">No debrief yet — scoring isn&rsquo;t switched on.</p>
+          {paper ? (
+            <>
+              <dl className="mt-6 flex flex-col-reverse">
+                <dt className="text-xs text-navy-muted">Session code</dt>
+                <dd className="font-mono text-3xl font-semibold tracking-[0.12em]">{answering.code}</dd>
+              </dl>
+              <p className="mt-6 text-sm text-navy-muted">Keep your sheet with this code on it. Photo upload arrives with accounts.</p>
+            </>
+          ) : (
+            <>
+              <dl className="mt-6 flex gap-8">
+                <div className="flex flex-col-reverse">
+                  <dt className="text-xs text-navy-muted">Written</dt>
+                  <dd className="text-3xl font-semibold tabular-nums">{answered}</dd>
+                </div>
+                <div className="flex flex-col-reverse">
+                  <dt className="text-xs text-navy-muted">Blank</dt>
+                  <dd className="text-3xl font-semibold tabular-nums">{itemCount - answered}</dd>
+                </div>
+              </dl>
+              <p className="mt-6 text-sm text-navy-muted">No debrief yet — scoring isn&rsquo;t switched on.</p>
+            </>
+          )}
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/practise" className="inline-flex min-h-11 items-center rounded-lg bg-white px-5 text-sm font-semibold text-navy hover:bg-navy-foreground">
               Back to Practise
@@ -384,12 +494,13 @@ function Ended({ title, endedBy, saved, itemCount, content, onRestart }: EndedPr
           </div>
         </section>
 
-        <h2 className="mt-10 text-lg font-semibold">Your responses</h2>
+        <h2 className="mt-10 text-lg font-semibold">{paper ? 'Check your sheet against the words' : 'Your responses'}</h2>
         <ol className="mt-4 divide-y overflow-hidden rounded-xl border bg-card shadow-card">
           {rows.map((r) => (
-            <li key={r.item} className="grid grid-cols-[minmax(0,9rem)_minmax(0,1fr)] gap-4 px-4 py-3 text-sm sm:grid-cols-[minmax(0,12rem)_minmax(0,1fr)]">
+            <li key={r.item} className="grid grid-cols-[2.5rem_minmax(0,9rem)_minmax(0,1fr)] gap-3 px-4 py-3 text-sm sm:grid-cols-[2.5rem_minmax(0,12rem)_minmax(0,1fr)]">
+              <span className="tabular-nums text-muted-foreground">{r.item + 1}</span>
               <span className="font-semibold uppercase tracking-wide">{r.word}</span>
-              {r.text ? <span className="font-serif text-base">{r.text}</span> : <span className="italic text-muted-foreground">Blank</span>}
+              {paper ? null : r.text ? <span className="font-serif text-base">{r.text}</span> : <span className="italic text-muted-foreground">Blank</span>}
             </li>
           ))}
         </ol>

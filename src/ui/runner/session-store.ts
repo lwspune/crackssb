@@ -11,8 +11,15 @@ import type { RunnerInstrument } from '../../runner/modes.ts';
  * UI.md §3.2 rule 1. The runner says "practice on this device" while it is
  * on this store.
  */
+
+/** D22: answers typed into the runner, or written on a paper sheet and uploaded as photos. */
+export type InputMode = 'typed' | 'paper';
+
 export interface SessionRecord {
   readonly instrument: RunnerInstrument;
+  readonly input: InputMode;
+  /** Paper only: the code written at the top of the sheet, linking its scan to this session. */
+  readonly code: string | null;
   readonly startedAtMs: number;
   readonly saved: Readonly<Record<string, string>>;
   readonly endedBy: EndedBy | null;
@@ -20,7 +27,7 @@ export interface SessionRecord {
 
 export interface SessionStore {
   load(instrument: RunnerInstrument): SessionRecord | null;
-  create(instrument: RunnerInstrument, startedAtMs: number): SessionRecord;
+  create(instrument: RunnerInstrument, startedAtMs: number, options?: { input: InputMode; code: string | null }): SessionRecord;
   persist(instrument: RunnerInstrument, key: string, text: string): void;
   finish(instrument: RunnerInstrument, endedBy: EndedBy): void;
   clear(instrument: RunnerInstrument): void;
@@ -34,8 +41,8 @@ function storeOver(read: (k: string) => SessionRecord | null, write: (k: string,
   };
   return {
     load: (instrument) => read(instrument),
-    create(instrument, startedAtMs) {
-      const record: SessionRecord = { instrument, startedAtMs, saved: {}, endedBy: null };
+    create(instrument, startedAtMs, options = { input: 'typed', code: null }) {
+      const record: SessionRecord = { instrument, startedAtMs, saved: {}, endedBy: null, ...options };
       write(instrument, record);
       return record;
     },
@@ -62,13 +69,18 @@ export function createLocalStore(storage: Storage): SessionStore {
       if (raw === null) return null;
       try {
         const parsed: unknown = JSON.parse(raw);
-        return isRecord(parsed) ? parsed : null;
+        return isRecord(parsed) ? withDefaults(parsed) : null;
       } catch {
         return null;
       }
     },
     (k, r) => (r ? storage.setItem(PREFIX + k, JSON.stringify(r)) : storage.removeItem(PREFIX + k)),
   );
+}
+
+/** A session saved before paper mode existed has neither field; it was typed. */
+function withDefaults(r: SessionRecord): SessionRecord {
+  return { ...r, input: r.input === 'paper' ? 'paper' : 'typed', code: typeof r.code === 'string' ? r.code : null };
 }
 
 function isRecord(v: unknown): v is SessionRecord {

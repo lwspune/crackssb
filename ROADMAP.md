@@ -66,7 +66,7 @@ Blocked only on sample data. Everything else in Phase 0 runs without it.
 | 2 | OIR item source decision — author in-house, license, or seed ~150/type and grow | Sprint 2 | **Open** |
 | 3 | Domain validator (ex-GTO / IO / SSB psychologist) to rate a sample set | Sprint 3 eval, and launch credibility | **Open** |
 | 4 | LLM API key, provider per [D5](./DECISIONS.md) | Sprint 3 | Not yet needed |
-| 5 | Handwriting sample corpus | Sprint X only | Self-harvesting from Sprint 4 |
+| 5 | Handwriting sample corpus | Sprint X only | Self-harvesting from paper-mode uploads once storage exists ([D22](./DECISIONS.md)) |
 | 6 | B2B design partner confirmation (LWS Pune?) | Sprint 6 — real vs. stubbed | **Open** |
 | 7 | Brand + domain | Launch | **Open** |
 

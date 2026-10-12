@@ -56,7 +56,7 @@ Each mode has a contract. These are the tests, written per mode, never per instr
 | mode | must | must not |
 |---|---|---|
 | Booklet | serve the whole item list *without* answer keys · accept an answer for any item in any order · submit on expiry with whatever is saved | reveal correctness before submission |
-| Forced sequence | advance on expiry whether or not anything was typed · persist each item before advancing | allow navigation to a previous item · show "word 23 of 60" |
+| Forced sequence | advance on expiry whether or not anything was typed · persist each item before advancing | allow navigation to a previous item · show "word 23 of 60" (paper mode shows "Line 23" — the number, never the total; [D22](./DECISIONS.md)) |
 | Stimulus → write | hide the stimulus when the write phase begins · advance on expiry | let the candidate re-open the stimulus · let the candidate skip ahead |
 | Free-write | persist each field independently · show word count | block submission on word count |
 | Form | save on every field change · keep prior versions | lose a partially completed form |
@@ -178,4 +178,4 @@ The runner and its timing rules come first because they are the riskiest compone
 
 - **OIR non-verbal** needs figure assets before Booklet mode can run it; `ROADMAP.md` already names this the longest pole in Phase 0. The UI cannot hide it.
 - **Abandon semantics.** Whether an explicitly abandoned session is scored on what was saved, or discarded. Lean: scored — a candidate who walks out of the real SSB is still marked on the sheet.
-- **Handwriting upload** (Sprint X) adds a correction step to Stimulus → write. Kept in the mode contract as a phase, disabled until OCR ships.
+- **Handwriting upload** — paper mode shipped 2026-10-12 ([D22](./DECISIONS.md)): stimulus and clock on screen, answers on a printed sheet carrying a session code. Upload waits for storage; reading is end-of-day with AI in a working session before any automated pipeline.
