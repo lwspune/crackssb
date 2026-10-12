@@ -27,6 +27,8 @@ import type { OptionLabel } from '../bank.ts';
  * - `codeSet`: the keyed option holds exactly these codes in any order, split
  *   by `sep` ('' for single characters, ' ' for words), and no other option
  *   does. For phrase codes, where the book orders the answer as it likes.
+ * - `odd`: odd one out. `prop` is applied to each printed option; three share
+ *   a value and the keyed option alone differs.
  * - `reasoned`: no mechanical check; the rule is the argument.
  */
 export type KeyCheck =
@@ -38,6 +40,7 @@ export type KeyCheck =
   | { readonly kind: 'letters' }
   | { readonly kind: 'computed'; readonly answer: string | number | null }
   | { readonly kind: 'codeSet'; readonly codes: readonly string[]; readonly sep: '' | ' ' }
+  | { readonly kind: 'odd'; readonly prop: (option: string) => unknown }
   | { readonly kind: 'reasoned' };
 
 /**

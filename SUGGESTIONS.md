@@ -240,7 +240,13 @@ ch5 p17-21 · ch6 p22-23 · ch7 p24-28 · ch8 p29-34 · ch9 p35-37 · ch10 p38-4
   analogies reasoned. Held: Q32 (two coolers), Q35, Q51 (no rule found), Q64
   (two rules), Q74 (nothing to complete), Q75 (lengths differ), Q88 (no rule
   reaches an option), Q96 (two readings). Medium: Q23, Q58.
-- **Next:** Chapter 2 (Classification, p4-8), the last.
+- ~~Chapter 2, Odd One Out~~ — done 2026-10-12: 256 of 292 seeded. Number and
+  letter questions name the shared property as code (`kind: 'odd'`, applied by
+  the suite to the printed options); word questions reasoned. 36 held where no
+  plain property singles out one option, or two equally plain ones disagree
+  (11 word, 13 number, 12 letter). Medium: Q16, 31, 61, 76, 171, 201, 252,
+  290, 292.
+- **All eleven chapters done:** 1,068 questions seeded, 82 held, 37 medium.
 
 ### Backfill ledger: Chapter 11's test onto the shared chapter suite
 `oir-agrawal-series.test.ts` predates `oir-chapter-suite.ts` and carries its own

@@ -1,0 +1,3536 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSB OIR PAGE NO. 1-44 (phone photos of printed pages 1-44)",
+  "chapter": 2,
+  "title": "Odd One Out (Classification)",
+  "pages": [
+    4,
+    8
+  ],
+  "transcribed": "2026-10-12",
+  "note": "Verbatim, typos included (\"Bijing\", \"Behrin\", \"Viyana\", \"Canbara\", \"Chose ... form\", \"simillar\"). Never edited: corrections live in src/items/oir/. Most questions print only their four options under a group direction; for those the printed direction is the stem, since an item needs one, and the section prints no further direction (text null). A list printed above the options (Q189, Q251) follows the direction on its own line.",
+  "directions": [
+    {
+      "section": "Type-1",
+      "printed": "Type-1",
+      "text": null
+    },
+    {
+      "section": "Type-2",
+      "printed": "Type-2",
+      "text": null
+    },
+    {
+      "section": "Type-3",
+      "printed": "Type-3",
+      "text": null
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Money order",
+        "B": "Speed Post",
+        "C": "Letter",
+        "D": "SMS"
+      }
+    },
+    {
+      "n": 2,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Cargo",
+        "B": "Trolley",
+        "C": "Tempo",
+        "D": "Truck"
+      }
+    },
+    {
+      "n": 3,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Bee hive",
+        "B": "Dog-house",
+        "C": "Piggery",
+        "D": "Cub"
+      }
+    },
+    {
+      "n": 4,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Sukhandi : Bone",
+        "B": "Tuberculosis : Heart",
+        "C": "Night blindness : Eye",
+        "D": "Jaundice : Liver"
+      }
+    },
+    {
+      "n": 5,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Ottawa",
+        "B": "Thimphu",
+        "C": "Bijing",
+        "D": "Chili"
+      }
+    },
+    {
+      "n": 6,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Kabul",
+        "B": "Behrin",
+        "C": "Viyana",
+        "D": "Canbara"
+      }
+    },
+    {
+      "n": 7,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Pink",
+        "B": "Violet",
+        "C": "Orange",
+        "D": "Yellow"
+      }
+    },
+    {
+      "n": 8,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "December",
+        "B": "January",
+        "C": "February",
+        "D": "March"
+      }
+    },
+    {
+      "n": 9,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Sibling",
+        "B": "Nephew",
+        "C": "Brother",
+        "D": "Cousin"
+      }
+    },
+    {
+      "n": 10,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "House",
+        "B": "Flock",
+        "C": "Igloo",
+        "D": "Hut"
+      }
+    },
+    {
+      "n": 11,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Pentagon",
+        "B": "heptagon",
+        "C": "Decagon",
+        "D": "Hexagon"
+      }
+    },
+    {
+      "n": 12,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Stimulate",
+        "B": "Actuate",
+        "C": "Imitate",
+        "D": "Motivate"
+      }
+    },
+    {
+      "n": 13,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Contradiction",
+        "B": "Proved",
+        "C": "Enigma",
+        "D": "Mysterious"
+      }
+    },
+    {
+      "n": 14,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Anarchy",
+        "B": "Discord",
+        "C": "upheaval",
+        "D": "harmony"
+      }
+    },
+    {
+      "n": 15,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Calm",
+        "B": "Convulsion",
+        "C": "Cramp",
+        "D": "Seizure"
+      }
+    },
+    {
+      "n": 16,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Fenugreek",
+        "B": "Kunuru",
+        "C": "Amaranth",
+        "D": "Spinach"
+      }
+    },
+    {
+      "n": 17,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Sword",
+        "B": "Spear",
+        "C": "gun",
+        "D": "dagger"
+      }
+    },
+    {
+      "n": 18,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Red",
+        "B": "Green",
+        "C": "yellow",
+        "D": "pale"
+      }
+    },
+    {
+      "n": 19,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Bottle",
+        "B": "Cup",
+        "C": "Jar",
+        "D": "Funnel"
+      }
+    },
+    {
+      "n": 20,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "white",
+        "B": "colored",
+        "C": "Red",
+        "D": "Green"
+      }
+    },
+    {
+      "n": 21,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Air",
+        "B": "Water",
+        "C": "Forest",
+        "D": "Building"
+      }
+    },
+    {
+      "n": 22,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Circle",
+        "B": "Triangle",
+        "C": "Cube",
+        "D": "Rectangle"
+      }
+    },
+    {
+      "n": 23,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Water",
+        "B": "Milk",
+        "C": "Juice",
+        "D": "Potato"
+      }
+    },
+    {
+      "n": 24,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Spanish",
+        "B": "Italian",
+        "C": "Chemistry",
+        "D": "German"
+      }
+    },
+    {
+      "n": 25,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Petrol",
+        "B": "Coal",
+        "C": "Air",
+        "D": "Natural gas"
+      }
+    },
+    {
+      "n": 26,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Scurvy",
+        "B": "Rickets",
+        "C": "Goiter",
+        "D": "Phosphorus"
+      }
+    },
+    {
+      "n": 27,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "to destroy",
+        "B": "to embellish",
+        "C": "To decorate with bandanwar",
+        "D": "decorate"
+      }
+    },
+    {
+      "n": 28,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Ruby",
+        "B": "Platinum",
+        "C": "Gold",
+        "D": "Silver"
+      }
+    },
+    {
+      "n": 29,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Garden/Park",
+        "B": "School",
+        "C": "Home/House",
+        "D": "Temple"
+      }
+    },
+    {
+      "n": 30,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Snooker",
+        "B": "Table Tennis",
+        "C": "Badminton",
+        "D": "Billiard"
+      }
+    },
+    {
+      "n": 31,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Building",
+        "B": "lodge",
+        "C": "Tent",
+        "D": "Inn"
+      }
+    },
+    {
+      "n": 32,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Geology",
+        "B": "Gynaecology",
+        "C": "Dermatology",
+        "D": "Neurology"
+      }
+    },
+    {
+      "n": 33,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Xylophone",
+        "B": "Saxophone",
+        "C": "Telephone",
+        "D": "Sarangi"
+      }
+    },
+    {
+      "n": 34,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Architect",
+        "B": "Designer",
+        "C": "Doctor",
+        "D": "Engineer"
+      }
+    },
+    {
+      "n": 35,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Honest",
+        "B": "Confident",
+        "C": "Coward",
+        "D": "Intelligent"
+      }
+    },
+    {
+      "n": 36,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Spit",
+        "B": "Bask",
+        "C": "Move",
+        "D": "Tram"
+      }
+    },
+    {
+      "n": 37,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Dermatology",
+        "B": "Nephrology",
+        "C": "Mycology",
+        "D": "Cardiology"
+      }
+    },
+    {
+      "n": 38,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Oslo",
+        "B": "Baht",
+        "C": "Rial",
+        "D": "Peso"
+      }
+    },
+    {
+      "n": 39,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Sri Lanka",
+        "B": "Bangladesh",
+        "C": "Indonesia",
+        "D": "Singapore"
+      }
+    },
+    {
+      "n": 40,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Cygnet",
+        "B": "Grunt",
+        "C": "Nymph",
+        "D": "Fawn"
+      }
+    },
+    {
+      "n": 41,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Applaud",
+        "B": "Criticise",
+        "C": "Admire",
+        "D": "Honour"
+      }
+    },
+    {
+      "n": 42,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Newspaper",
+        "B": "Daily magazine",
+        "C": "Novel",
+        "D": "Magazine"
+      }
+    },
+    {
+      "n": 43,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Square",
+        "B": "Kite",
+        "C": "Rectangle",
+        "D": "Rhombus"
+      }
+    },
+    {
+      "n": 44,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Jaipur",
+        "B": "Manipur",
+        "C": "Raipur",
+        "D": "Dispur"
+      }
+    },
+    {
+      "n": 45,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Select the term from the following alternatives which is different from the other terms.",
+      "options": {
+        "A": "Expresso",
+        "B": "Tea",
+        "C": "Cappuccino",
+        "D": "Latte"
+      }
+    },
+    {
+      "n": 46,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Choose the word that is different from the other three in the group:\nRose, Lotus, Tulip, Hibiscus",
+      "options": {
+        "A": "Lotus",
+        "B": "Hibiscus",
+        "C": "Rose",
+        "D": "Tulip"
+      }
+    },
+    {
+      "n": 47,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Chose the odd one out form the given alternatives.",
+      "options": {
+        "A": "Ace",
+        "B": "Spade card",
+        "C": "Badshah",
+        "D": "Rummy"
+      }
+    },
+    {
+      "n": 48,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Chose the odd one out form the given alternatives.",
+      "options": {
+        "A": "Nitrogen",
+        "B": "Baking powder",
+        "C": "Salt",
+        "D": "Water"
+      }
+    },
+    {
+      "n": 49,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Chose the odd one out form the given alternatives.",
+      "options": {
+        "A": "Bangkok",
+        "B": "Ottawa",
+        "C": "Buenos Aires",
+        "D": "Armenia"
+      }
+    },
+    {
+      "n": 50,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Chose the odd one out form the given alternatives.",
+      "options": {
+        "A": "Innovation",
+        "B": "Conservatism",
+        "C": "Novelty",
+        "D": "Creativity"
+      }
+    },
+    {
+      "n": 51,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Four words are given, out of which three are the same in a certain way while the rest one is different. Find out the different ones.",
+      "options": {
+        "A": "Rodent",
+        "B": "Reptiles",
+        "C": "Owl",
+        "D": "Insect"
+      }
+    },
+    {
+      "n": 52,
+      "page": 4,
+      "section": "Type-1",
+      "stem": "Find the ODD one out:\nShirt, Kurta, Coat, Dhoti",
+      "options": {
+        "A": "Dhoti",
+        "B": "Shirt",
+        "C": "Kurta",
+        "D": "Coat"
+      }
+    },
+    {
+      "n": 53,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Three of the given four words are similar in a certain manner while one is different. Choose the odd one out :",
+      "options": {
+        "A": "Lethargy",
+        "B": "Exuberance",
+        "C": "Inertia",
+        "D": "Drowsiness"
+      }
+    },
+    {
+      "n": 54,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Three of the given four words are similar in a certain manner while one is different. Choose the odd one out :",
+      "options": {
+        "A": "Joule",
+        "B": "Hertz",
+        "C": "Density",
+        "D": "Pascal"
+      }
+    },
+    {
+      "n": 55,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Three of the given four words are similar in a certain manner while one is different. Choose the odd one out :",
+      "options": {
+        "A": "Eyesight",
+        "B": "Memory",
+        "C": "Creativity",
+        "D": "Intelligence"
+      }
+    },
+    {
+      "n": 56,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Three of the given four words are similar in a certain manner while one is different. Choose the odd one out :",
+      "options": {
+        "A": "Jealousy",
+        "B": "Devotion",
+        "C": "Fear",
+        "D": "Anorexia"
+      }
+    },
+    {
+      "n": 57,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Find the odd one out :",
+      "options": {
+        "A": "Summer",
+        "B": "Winter",
+        "C": "Season",
+        "D": "Spring"
+      }
+    },
+    {
+      "n": 58,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Find the odd one out :",
+      "options": {
+        "A": "BEIK",
+        "B": "CEGI",
+        "C": "ACEG",
+        "D": "BDFH"
+      }
+    },
+    {
+      "n": 59,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Find the odd one out :",
+      "options": {
+        "A": "School",
+        "B": "College",
+        "C": "Hotel",
+        "D": "University"
+      }
+    },
+    {
+      "n": 60,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Find the odd one out :",
+      "options": {
+        "A": "Orange",
+        "B": "Earth",
+        "C": "Egg",
+        "D": "Basketball"
+      }
+    },
+    {
+      "n": 61,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Find the odd one out :",
+      "options": {
+        "A": "Book",
+        "B": "Pencil",
+        "C": "Eraser",
+        "D": "Computer"
+      }
+    },
+    {
+      "n": 62,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Find the odd one out :",
+      "options": {
+        "A": "Kanpur",
+        "B": "Vijaywada",
+        "C": "Ganga",
+        "D": "Guwahati"
+      }
+    },
+    {
+      "n": 63,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Find the odd one out :",
+      "options": {
+        "A": "Guitar",
+        "B": "Violin",
+        "C": "Sitar",
+        "D": "Flute"
+      }
+    },
+    {
+      "n": 64,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the word which is least like the words in the group.",
+      "options": {
+        "A": "MS Paint",
+        "B": "Facebook",
+        "C": "Whatsapp",
+        "D": "Twitter"
+      }
+    },
+    {
+      "n": 65,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the word which is least like the words in the group.",
+      "options": {
+        "A": "PLASTIC",
+        "B": "WOOL",
+        "C": "PAPER",
+        "D": "WOOD"
+      }
+    },
+    {
+      "n": 66,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the word which is least like the words in the group.",
+      "options": {
+        "A": "PICTURE",
+        "B": "POSTER",
+        "C": "BOOK",
+        "D": "SCENERY"
+      }
+    },
+    {
+      "n": 67,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the word which is least like the words in the group.",
+      "options": {
+        "A": "EARTH",
+        "B": "SUN",
+        "C": "MERCURY",
+        "D": "JUPITER"
+      }
+    },
+    {
+      "n": 68,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the word which is least like the words in the group.",
+      "options": {
+        "A": "STUDENT",
+        "B": "LAWYER",
+        "C": "MECHANIC",
+        "D": "ENGINEER"
+      }
+    },
+    {
+      "n": 69,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the word which is least like the words in the group.",
+      "options": {
+        "A": "Ladder",
+        "B": "Staircase",
+        "C": "Bridge",
+        "D": "Escalator"
+      }
+    },
+    {
+      "n": 70,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the word which is least like the words in the group.",
+      "options": {
+        "A": "Eyes",
+        "B": "Ear",
+        "C": "Hand",
+        "D": "Scarf"
+      }
+    },
+    {
+      "n": 71,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the word which is least like the words in the group.",
+      "options": {
+        "A": "Sun",
+        "B": "Planets",
+        "C": "Stars",
+        "D": "Satellites"
+      }
+    },
+    {
+      "n": 72,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Find the odd Item",
+      "options": {
+        "A": "Mars",
+        "B": "Sun",
+        "C": "Jupiter",
+        "D": "Saturn"
+      }
+    },
+    {
+      "n": 73,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one.",
+      "options": {
+        "A": "Strong",
+        "B": "Hesitant",
+        "C": "Daring",
+        "D": "Brave"
+      }
+    },
+    {
+      "n": 74,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the word which is different from the rest.",
+      "options": {
+        "A": "Tea",
+        "B": "Chinchona",
+        "C": "Rubber",
+        "D": "Chalk"
+      }
+    },
+    {
+      "n": 75,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Which word does not belong to others?",
+      "options": {
+        "A": "Inch",
+        "B": "Kilogram",
+        "C": "Centimeter",
+        "D": "Yard"
+      }
+    },
+    {
+      "n": 76,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Which word does not belong to others?",
+      "options": {
+        "A": "Carpenter",
+        "B": "Tailor",
+        "C": "Barber",
+        "D": "Black smith"
+      }
+    },
+    {
+      "n": 77,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Which word does not belong to others?",
+      "options": {
+        "A": "Sun",
+        "B": "Star",
+        "C": "Moon",
+        "D": "Universe"
+      }
+    },
+    {
+      "n": 78,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Saturn",
+        "B": "Venus",
+        "C": "Mars",
+        "D": "Moon"
+      }
+    },
+    {
+      "n": 79,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Rajasthan",
+        "B": "Kerala",
+        "C": "Tamil Nadu",
+        "D": "Puducherry"
+      }
+    },
+    {
+      "n": 80,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Tiger",
+        "B": "Lion",
+        "C": "Hyena",
+        "D": "Wolf"
+      }
+    },
+    {
+      "n": 81,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Dollar",
+        "B": "Peso",
+        "C": "Ounce",
+        "D": "Euro"
+      }
+    },
+    {
+      "n": 82,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Turtle",
+        "B": "Snake",
+        "C": "Crocodile",
+        "D": "Whale"
+      }
+    },
+    {
+      "n": 83,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Copper",
+        "B": "Iron",
+        "C": "Iodine",
+        "D": "Tin"
+      }
+    },
+    {
+      "n": 84,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Dr. Hamid Ansari",
+        "B": "Dr. Abdul Kalam",
+        "C": "Dr. Pranab Mukherjee",
+        "D": "Dr. Rajendra Prasad"
+      }
+    },
+    {
+      "n": 85,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Iron",
+        "B": "Gold",
+        "C": "Copper",
+        "D": "Hydrogen"
+      }
+    },
+    {
+      "n": 86,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Badminton",
+        "B": "Hockey",
+        "C": "Football",
+        "D": "Cricket"
+      }
+    },
+    {
+      "n": 87,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Amritsar",
+        "B": "Jagannath Puri",
+        "C": "Ajmer",
+        "D": "Nawada"
+      }
+    },
+    {
+      "n": 88,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Ranchi",
+        "B": "Patna",
+        "C": "Gaya",
+        "D": "Bhagalpur"
+      }
+    },
+    {
+      "n": 89,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Red Fort",
+        "B": "Taj Mahal",
+        "C": "Lotus Temple",
+        "D": "Gandhi Bridge"
+      }
+    },
+    {
+      "n": 90,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Jawaharlal Nehru",
+        "B": "Indira Gandhi",
+        "C": "Narendra Modi",
+        "D": "Dr. Rajendra Prasad"
+      }
+    },
+    {
+      "n": 91,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Bus",
+        "B": "Truck",
+        "C": "Bullock cart",
+        "D": "Car"
+      }
+    },
+    {
+      "n": 92,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Earth",
+        "B": "Moon",
+        "C": "Jupiter",
+        "D": "Mercury"
+      }
+    },
+    {
+      "n": 93,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Tiger",
+        "B": "Leopard",
+        "C": "Cat",
+        "D": "Cow"
+      }
+    },
+    {
+      "n": 94,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Panchtantra",
+        "B": "Geeta",
+        "C": "Quran",
+        "D": "Bible"
+      }
+    },
+    {
+      "n": 95,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Olive oil",
+        "B": "Milk",
+        "C": "The same",
+        "D": "Ghee"
+      }
+    },
+    {
+      "n": 96,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Millimetre",
+        "B": "Centimetre",
+        "C": "Metre",
+        "D": "Watt"
+      }
+    },
+    {
+      "n": 97,
+      "page": 5,
+      "section": "Type-1",
+      "stem": "Choose the odd one out.",
+      "options": {
+        "A": "Tista River",
+        "B": "Ganga River",
+        "C": "Son River",
+        "D": "Koshi River"
+      }
+    },
+    {
+      "n": 98,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "24 : 32",
+        "B": "36 : 48",
+        "C": "26 : 18",
+        "D": "12 : 16"
+      }
+    },
+    {
+      "n": 99,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "11 – 122",
+        "B": "9 – 82",
+        "C": "5 – 26",
+        "D": "10 – 84"
+      }
+    },
+    {
+      "n": 100,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "6, 42",
+        "B": "1, 2",
+        "C": "3, 30",
+        "D": "4, 68"
+      }
+    },
+    {
+      "n": 101,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "13 : 2186",
+        "B": "7 : 336",
+        "C": "11 : 1320",
+        "D": "5 : 120"
+      }
+    },
+    {
+      "n": 102,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "4925 : 35",
+        "B": "1625 : 9",
+        "C": "4964 : 15",
+        "D": "4926 : 36"
+      }
+    },
+    {
+      "n": 103,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "7 – 50",
+        "B": "11 – 122",
+        "C": "15 – 226",
+        "D": "13 – 168"
+      }
+    },
+    {
+      "n": 104,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "7 – 56",
+        "B": "10 – 110",
+        "C": "9 – 90",
+        "D": "8 – 96"
+      }
+    },
+    {
+      "n": 105,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "138 – 12",
+        "B": "237 – 11",
+        "C": "438 – 15",
+        "D": "961 – 16"
+      }
+    },
+    {
+      "n": 106,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "12 – 156",
+        "B": "6 – 42",
+        "C": "8 – 72",
+        "D": "10 – 90"
+      }
+    },
+    {
+      "n": 107,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "14 – 194",
+        "B": "13 – 167",
+        "C": "12 – 146",
+        "D": "11 – 119"
+      }
+    },
+    {
+      "n": 108,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "11 – 1331",
+        "B": "10 – 1000",
+        "C": "12 – 1728",
+        "D": "7 – 363"
+      }
+    },
+    {
+      "n": 109,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "7 – 56",
+        "B": "11 – 132",
+        "C": "13 – 195",
+        "D": "9 – 90"
+      }
+    },
+    {
+      "n": 110,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "223 – 12",
+        "B": "342 – 24",
+        "C": "643 – 72",
+        "D": "864 – 96"
+      }
+    },
+    {
+      "n": 111,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "10 – 99",
+        "B": "12 – 143",
+        "C": "14 – 195",
+        "D": "8 – 65"
+      }
+    },
+    {
+      "n": 112,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "11 – 121",
+        "B": "13 – 199",
+        "C": "14 – 196",
+        "D": "15 – 225"
+      }
+    },
+    {
+      "n": 113,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "6 – 217",
+        "B": "5 – 126",
+        "C": "4 – 63",
+        "D": "3 – 28"
+      }
+    },
+    {
+      "n": 114,
+      "page": 5,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "9 – 90",
+        "B": "6 – 42",
+        "C": "5 – 30",
+        "D": "4 – 36"
+      }
+    },
+    {
+      "n": 115,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "3 – 28",
+        "B": "2 – 9",
+        "C": "5 – 124",
+        "D": "4 – 65"
+      }
+    },
+    {
+      "n": 116,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "7 – 81",
+        "B": "9 – 121",
+        "C": "11 – 169",
+        "D": "5 – 47"
+      }
+    },
+    {
+      "n": 117,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "11 – 110",
+        "B": "9 – 72",
+        "C": "7 – 42",
+        "D": "5 – 30"
+      }
+    },
+    {
+      "n": 118,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "324 : 100",
+        "B": "813 : 169",
+        "C": "123 : 49",
+        "D": "912 : 144"
+      }
+    },
+    {
+      "n": 119,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "32 : 19",
+        "B": "21 : 51",
+        "C": "58 : 26",
+        "D": "43 : 95"
+      }
+    },
+    {
+      "n": 120,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "3797 : 42",
+        "B": "1479 : 83",
+        "C": "2564 : 21",
+        "D": "4632 : 23"
+      }
+    },
+    {
+      "n": 121,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "84, 67",
+        "B": "112, 95",
+        "C": "79, 63",
+        "D": "167, 150"
+      }
+    },
+    {
+      "n": 122,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "4892-5902",
+        "B": "3846-4856",
+        "C": "3264-4274",
+        "D": "4328-5348"
+      }
+    },
+    {
+      "n": 123,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "64 – 4032",
+        "B": "42 – 1764",
+        "C": "38 – 1444",
+        "D": "52 – 2704"
+      }
+    },
+    {
+      "n": 124,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "49401 – 5489",
+        "B": "28125 – 3125",
+        "C": "49374 – 5483",
+        "D": "11322 – 1258"
+      }
+    },
+    {
+      "n": 125,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "4444 – 2222",
+        "B": "8888 – 4444",
+        "C": "6666 – 3333",
+        "D": "3333 – 1111"
+      }
+    },
+    {
+      "n": 126,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "289 – 3194",
+        "B": "361 – 9786",
+        "C": "169 – 7912",
+        "D": "225 – 5733"
+      }
+    },
+    {
+      "n": 127,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "42-1764",
+        "B": "36-1266",
+        "C": "38-1444",
+        "D": "44-1936"
+      }
+    },
+    {
+      "n": 128,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "12 – 1728",
+        "B": "14 – 2844",
+        "C": "20 – 8000",
+        "D": "10 – 1000"
+      }
+    },
+    {
+      "n": 129,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "3241 – 5732",
+        "B": "2354 – 4835",
+        "C": "2345 – 4826",
+        "D": "1326 – 3807"
+      }
+    },
+    {
+      "n": 130,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "81962459 – 75426918",
+        "B": "715623 – 326517",
+        "C": "65428 – 82456",
+        "D": "321645281 – 81256123"
+      }
+    },
+    {
+      "n": 131,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "11 – 1452",
+        "B": "7 – 392",
+        "C": "13 – 2368",
+        "D": "9 – 810"
+      }
+    },
+    {
+      "n": 132,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "106 – 1191016",
+        "B": "102 – 1061208",
+        "C": "108 – 1257912",
+        "D": "104 – 1124864"
+      }
+    },
+    {
+      "n": 133,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "749 – 974",
+        "B": "342 – 243",
+        "C": "317 – 713",
+        "D": "643 – 346"
+      }
+    },
+    {
+      "n": 134,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "15 : 244",
+        "B": "17 : 298",
+        "C": "11 : 130",
+        "D": "19 : 370"
+      }
+    },
+    {
+      "n": 135,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "16 : 1024",
+        "B": "14 : 784",
+        "C": "18 : 1620",
+        "D": "12 : 576"
+      }
+    },
+    {
+      "n": 136,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "361 : 332",
+        "B": "533 : 504",
+        "C": "440 : 411",
+        "D": "520 : 481"
+      }
+    },
+    {
+      "n": 137,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "13 : 28.5",
+        "B": "15 : 32.5",
+        "C": "19 : 38.5",
+        "D": "17 : 35.5"
+      }
+    },
+    {
+      "n": 138,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "47 : 2116",
+        "B": "53 : 2703",
+        "C": "24 : 528",
+        "D": "68 : 4488"
+      }
+    },
+    {
+      "n": 139,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "53 : 2916",
+        "B": "41 : 1765",
+        "C": "23 : 576",
+        "D": "19 : 400"
+      }
+    },
+    {
+      "n": 140,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "12 : 9",
+        "B": "8 : 4",
+        "C": "4 : 15",
+        "D": "20 : 25"
+      }
+    },
+    {
+      "n": 141,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "16 : 224",
+        "B": "21 : 399",
+        "C": "35 : 1155",
+        "D": "17 : 238"
+      }
+    },
+    {
+      "n": 142,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "678 : 42",
+        "B": "546 : 30",
+        "C": "283 : 28",
+        "D": "125 : 16"
+      }
+    },
+    {
+      "n": 143,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "14 : 512",
+        "B": "22 : 1728",
+        "C": "46 : 12167",
+        "D": "38 : 8000"
+      }
+    },
+    {
+      "n": 144,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "2834 : 18",
+        "B": "8671 : 22",
+        "C": "9876 : 30",
+        "D": "3427 : 16"
+      }
+    },
+    {
+      "n": 145,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "4328 : 8324",
+        "B": "2437 : 7342",
+        "C": "3569 : 9653",
+        "D": "1786 : 6871"
+      }
+    },
+    {
+      "n": 146,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "678 : 7",
+        "B": "282 : 6",
+        "C": "366 : 5",
+        "D": "546 : 5"
+      }
+    },
+    {
+      "n": 147,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "576 : 3375",
+        "B": "25 : 216",
+        "C": "16 : 125",
+        "D": "289 : 5832"
+      }
+    },
+    {
+      "n": 148,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "28 – 41",
+        "B": "39 – 52",
+        "C": "17 – 29",
+        "D": "12 – 25"
+      }
+    },
+    {
+      "n": 149,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "25 : 650",
+        "B": "13 : 182",
+        "C": "18 : 306",
+        "D": "23 : 552"
+      }
+    },
+    {
+      "n": 150,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "31 – 41 = 10",
+        "B": "83 – 97 = 14",
+        "C": "73 – 79 = 6",
+        "D": "61 – 71 = 10"
+      }
+    },
+    {
+      "n": 151,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "7 : 50",
+        "B": "14 : 210",
+        "C": "21 : 462",
+        "D": "25 : 650"
+      }
+    },
+    {
+      "n": 152,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "16 – 3",
+        "B": "50 – 7",
+        "C": "64 – 32",
+        "D": "51 – 25"
+      }
+    },
+    {
+      "n": 153,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "37, 75",
+        "B": "68, 137",
+        "C": "19, 39",
+        "D": "25, 53"
+      }
+    },
+    {
+      "n": 154,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "28 : 32",
+        "B": "54 : 64",
+        "C": "119 : 136",
+        "D": "91 : 104"
+      }
+    },
+    {
+      "n": 155,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "4 : 16",
+        "B": "7 : 49",
+        "C": "10 : 100",
+        "D": "64 : 6"
+      }
+    },
+    {
+      "n": 156,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "6 : 34",
+        "B": "5 : 29",
+        "C": "3 : 7",
+        "D": "8 : 62"
+      }
+    },
+    {
+      "n": 157,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "48 : 81",
+        "B": "25 : 49",
+        "C": "16 : 36",
+        "D": "64 : 100"
+      }
+    },
+    {
+      "n": 158,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "11 : 13",
+        "B": "17 : 21",
+        "C": "23 : 29",
+        "D": "3 : 5"
+      }
+    },
+    {
+      "n": 159,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "25 : 65",
+        "B": "46 : 64",
+        "C": "28 : 82",
+        "D": "62 : 26"
+      }
+    },
+    {
+      "n": 160,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "12 : 20",
+        "B": "20 : 30",
+        "C": "42 : 56",
+        "D": "30 : 40"
+      }
+    },
+    {
+      "n": 161,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "15 : 18",
+        "B": "35 : 42",
+        "C": "25 : 30",
+        "D": "45 : 55"
+      }
+    },
+    {
+      "n": 162,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "41 – 43",
+        "B": "61 – 67",
+        "C": "71 – 73",
+        "D": "83 – 97"
+      }
+    },
+    {
+      "n": 163,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "17 – 12",
+        "B": "29 – 14",
+        "C": "21 – 16",
+        "D": "31 – 26"
+      }
+    },
+    {
+      "n": 164,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "3 – 27",
+        "B": "7 – 49",
+        "C": "5 – 125",
+        "D": "6 – 216"
+      }
+    },
+    {
+      "n": 165,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "13 – 2028",
+        "B": "11 – 1210",
+        "C": "7 – 336",
+        "D": "9 – 648"
+      }
+    },
+    {
+      "n": 166,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "8 – 72",
+        "B": "10 – 110",
+        "C": "14 – 220",
+        "D": "16 – 272"
+      }
+    },
+    {
+      "n": 167,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "15 – 45",
+        "B": "9 – 29",
+        "C": "31 – 93",
+        "D": "41 – 123"
+      }
+    },
+    {
+      "n": 168,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "8 – 72",
+        "B": "6 – 42",
+        "C": "12 – 156",
+        "D": "4 – 12"
+      }
+    },
+    {
+      "n": 169,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "36 : 729",
+        "B": "48 : 1728",
+        "C": "87 : 2744",
+        "D": "74 : 1331"
+      }
+    },
+    {
+      "n": 170,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "64 – 109",
+        "B": "36 – 83",
+        "C": "42 – 87",
+        "D": "102 – 147"
+      }
+    },
+    {
+      "n": 171,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "183 – 54",
+        "B": "108 – 97",
+        "C": "243 – 132",
+        "D": "99 – 63"
+      }
+    },
+    {
+      "n": 172,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "120 – 560",
+        "B": "91 – 299",
+        "C": "78 – 169",
+        "D": "104 – 429"
+      }
+    },
+    {
+      "n": 173,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "19 : 68",
+        "B": "17 : 60",
+        "C": "13 : 90",
+        "D": "23 : 84"
+      }
+    },
+    {
+      "n": 174,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "2347 : 1113",
+        "B": "3527 : 2293",
+        "C": "5237 : 4003",
+        "D": "4327 : 2003"
+      }
+    },
+    {
+      "n": 175,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "461 : 20",
+        "B": "182 : 12",
+        "C": "239 : 14",
+        "D": "305 : 16"
+      }
+    },
+    {
+      "n": 176,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "406321 : 493",
+        "B": "324335 : 577",
+        "C": "253471 : 778",
+        "D": "111617 : 278"
+      }
+    },
+    {
+      "n": 177,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "85245 : 24",
+        "B": "41263 : 18",
+        "C": "26584 : 25",
+        "D": "77052 : 21"
+      }
+    },
+    {
+      "n": 178,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "4/5 : 3",
+        "B": "16/20 : 6",
+        "C": "25/41 : 8",
+        "D": "30/51 : 9"
+      }
+    },
+    {
+      "n": 179,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "7359",
+        "B": "1593",
+        "C": "9175",
+        "D": "3781"
+      }
+    },
+    {
+      "n": 180,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+      "options": {
+        "A": "382",
+        "B": "326",
+        "C": "914",
+        "D": "263"
+      }
+    },
+    {
+      "n": 181,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "In the following question select the one which is different from the other three responses.",
+      "options": {
+        "A": "(36, 90)",
+        "B": "(46, 28)",
+        "C": "(72, 54)",
+        "D": "(58, 78)"
+      }
+    },
+    {
+      "n": 182,
+      "page": 6,
+      "section": "Type-2",
+      "stem": "Four numbers are given out of which the three number bear a certain common relationship. Choose the number which is different from others.",
+      "options": {
+        "A": "187",
+        "B": "437",
+        "C": "221",
+        "D": "323"
+      }
+    },
+    {
+      "n": 183,
+      "page": 7,
+      "section": "Type-2",
+      "stem": "Four numbers are given out of which the three numbers bear a certain common relationship. Choose the number which is different from others.",
+      "options": {
+        "A": "112",
+        "B": "208",
+        "C": "176",
+        "D": "274"
+      }
+    },
+    {
+      "n": 184,
+      "page": 7,
+      "section": "Type-2",
+      "stem": "Four pairs of numbers are given out of which the numbers in three pairs bear a certain common relationship. Choose the pair in which the numbers are differently related.",
+      "options": {
+        "A": "42 - 105",
+        "B": "53 - 132.5",
+        "C": "71 - 213",
+        "D": "83 - 207.5"
+      }
+    },
+    {
+      "n": 185,
+      "page": 7,
+      "section": "Type-2",
+      "stem": "Three of the given four number pairs are similar in a certain manner while one is different. Choose the odd one out.",
+      "options": {
+        "A": "446 : 73",
+        "B": "252 : 33",
+        "C": "112 : 41",
+        "D": "846 : 63"
+      }
+    },
+    {
+      "n": 186,
+      "page": 7,
+      "section": "Type-2",
+      "stem": "These of the given four number pairs are simillar in a certain manner while one is different. Chose the odd one out.",
+      "options": {
+        "A": "26 : 126",
+        "B": "63 : 125",
+        "C": "124 : 344",
+        "D": "7 : 65"
+      }
+    },
+    {
+      "n": 187,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "LMWU",
+        "B": "PQZY",
+        "C": "JKUS",
+        "D": "DEOM"
+      }
+    },
+    {
+      "n": 188,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "KNQTW",
+        "B": "PSVYB",
+        "C": "CGILN",
+        "D": "DGJMP"
+      }
+    },
+    {
+      "n": 189,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.\nA, D, I, P, R",
+      "options": {
+        "A": "P",
+        "B": "I",
+        "C": "D",
+        "D": "R"
+      }
+    },
+    {
+      "n": 190,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "HFDZX",
+        "B": "CAYWU",
+        "C": "OMKIG",
+        "D": "TRPNL"
+      }
+    },
+    {
+      "n": 191,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "MAA",
+        "B": "OSD",
+        "C": "OTP",
+        "D": "VOL"
+      }
+    },
+    {
+      "n": 192,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "DEF",
+        "B": "HIK",
+        "C": "CDE",
+        "D": "EFG"
+      }
+    },
+    {
+      "n": 193,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "WXAB",
+        "B": "BCFG",
+        "C": "EGFC",
+        "D": "NORS"
+      }
+    },
+    {
+      "n": 194,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "KM",
+        "B": "PR",
+        "C": "TV",
+        "D": "EH"
+      }
+    },
+    {
+      "n": 195,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "RQP",
+        "B": "LKJ",
+        "C": "HGF",
+        "D": "ECB"
+      }
+    },
+    {
+      "n": 196,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "AD",
+        "B": "VY",
+        "C": "MQ",
+        "D": "IL"
+      }
+    },
+    {
+      "n": 197,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "CY",
+        "B": "NJ",
+        "C": "RN",
+        "D": "SN"
+      }
+    },
+    {
+      "n": 198,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "BKEM",
+        "B": "RUYD",
+        "C": "LOSX",
+        "D": "CFJO"
+      }
+    },
+    {
+      "n": 199,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "UFK",
+        "B": "KQU",
+        "C": "DWB",
+        "D": "TGL"
+      }
+    },
+    {
+      "n": 200,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "DWBZ",
+        "B": "EVCS",
+        "C": "HSFV",
+        "D": "FUDX"
+      }
+    },
+    {
+      "n": 201,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "LOQ",
+        "B": "FIK",
+        "C": "BDG",
+        "D": "SVZ"
+      }
+    },
+    {
+      "n": 202,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "LTPR",
+        "B": "SBWY",
+        "C": "FNJL",
+        "D": "VDZB"
+      }
+    },
+    {
+      "n": 203,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "XCTF",
+        "B": "VERH",
+        "C": "ZAVD",
+        "D": "WDSF"
+      }
+    },
+    {
+      "n": 204,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "VXZ",
+        "B": "CEH",
+        "C": "PRU",
+        "D": "JLO"
+      }
+    },
+    {
+      "n": 205,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "HKE",
+        "B": "TWQ",
+        "C": "DIB",
+        "D": "MPJ"
+      }
+    },
+    {
+      "n": 206,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "ADW",
+        "B": "EHS",
+        "C": "RVV",
+        "D": "JMN"
+      }
+    },
+    {
+      "n": 207,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "JQKP",
+        "B": "MONM",
+        "C": "PKQJ",
+        "D": "FUGT"
+      }
+    },
+    {
+      "n": 208,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "PSQR",
+        "B": "MONP",
+        "C": "JLKM",
+        "D": "FHGI"
+      }
+    },
+    {
+      "n": 209,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "BFJNR",
+        "B": "YBFKT",
+        "C": "VZDHL",
+        "D": "DHLPT"
+      }
+    },
+    {
+      "n": 210,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "KMQWF",
+        "B": "DFJPX",
+        "C": "HJNTB",
+        "D": "BDHNV"
+      }
+    },
+    {
+      "n": 211,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "BKYP",
+        "B": "GDTW",
+        "C": "SXHD",
+        "D": "XJCQ"
+      }
+    },
+    {
+      "n": 212,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "DJOTY",
+        "B": "CHMRW",
+        "C": "DINSX",
+        "D": "BGLQV"
+      }
+    },
+    {
+      "n": 213,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "FZJ",
+        "B": "BVH",
+        "C": "FPE",
+        "D": "BDA"
+      }
+    },
+    {
+      "n": 214,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "FHJL",
+        "B": "RTVX",
+        "C": "BDFH",
+        "D": "NOQT"
+      }
+    },
+    {
+      "n": 215,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "DEGJ",
+        "B": "LMOR",
+        "C": "RSUX",
+        "D": "FGJM"
+      }
+    },
+    {
+      "n": 216,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "CDF",
+        "B": "IJL",
+        "C": "MNQ",
+        "D": "STV"
+      }
+    },
+    {
+      "n": 217,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "JIH",
+        "B": "RQP",
+        "C": "WVU",
+        "D": "ZXY"
+      }
+    },
+    {
+      "n": 218,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "RQP",
+        "B": "LKJ",
+        "C": "GFD",
+        "D": "DCB"
+      }
+    },
+    {
+      "n": 219,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "DG",
+        "B": "LP",
+        "C": "TW",
+        "D": "WZ"
+      }
+    },
+    {
+      "n": 220,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "DG",
+        "B": "PS",
+        "C": "VY",
+        "D": "NR"
+      }
+    },
+    {
+      "n": 221,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "OMK",
+        "B": "RPN",
+        "C": "USP",
+        "D": "XVT"
+      }
+    },
+    {
+      "n": 222,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "JLN",
+        "B": "GIK",
+        "C": "NPR",
+        "D": "TVY"
+      }
+    },
+    {
+      "n": 223,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "GJHI",
+        "B": "MPNO",
+        "C": "RUST",
+        "D": "UVXW"
+      }
+    },
+    {
+      "n": 224,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "GJM",
+        "B": "CFI",
+        "C": "SVY",
+        "D": "PSW"
+      }
+    },
+    {
+      "n": 225,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "PNK",
+        "B": "XUR",
+        "C": "HEB",
+        "D": "IFC"
+      }
+    },
+    {
+      "n": 226,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "P",
+        "B": "I",
+        "C": "B",
+        "D": "N"
+      }
+    },
+    {
+      "n": 227,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "XECV",
+        "B": "LSOH",
+        "C": "PWKD",
+        "D": "CKXQ"
+      }
+    },
+    {
+      "n": 228,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "QUYC",
+        "B": "WADH",
+        "C": "DHLP",
+        "D": "LPTX"
+      }
+    },
+    {
+      "n": 229,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "LOSXD",
+        "B": "JMQVB",
+        "C": "DGKPV",
+        "D": "TWAFK"
+      }
+    },
+    {
+      "n": 230,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "TZA",
+        "B": "HNM",
+        "C": "LRI",
+        "D": "CHR"
+      }
+    },
+    {
+      "n": 231,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "JPMS",
+        "B": "AZDJ",
+        "C": "EVHN",
+        "D": "CXFL"
+      }
+    },
+    {
+      "n": 232,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "DWH",
+        "B": "TGX",
+        "C": "QJU",
+        "D": "OKS"
+      }
+    },
+    {
+      "n": 233,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "LIF",
+        "B": "DAX",
+        "C": "HEB",
+        "D": "BYT"
+      }
+    },
+    {
+      "n": 234,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "OBGWS",
+        "B": "FYSNJ",
+        "C": "LEYTP",
+        "D": "ZSMHD"
+      }
+    },
+    {
+      "n": 235,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "HSY",
+        "B": "FUB",
+        "C": "DWC",
+        "D": "KPV"
+      }
+    },
+    {
+      "n": 236,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "KHE",
+        "B": "ZWT",
+        "C": "ROL",
+        "D": "GDB"
+      }
+    },
+    {
+      "n": 237,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "TTVZ",
+        "B": "JJLP",
+        "C": "RRTX",
+        "D": "DDFK"
+      }
+    },
+    {
+      "n": 238,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "PSV",
+        "B": "RTW",
+        "C": "ADG",
+        "D": "ILO"
+      }
+    },
+    {
+      "n": 239,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "RPMN",
+        "B": "MKHG",
+        "C": "HFCX",
+        "D": "LJGT"
+      }
+    },
+    {
+      "n": 240,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "ONKP",
+        "B": "YXUF",
+        "C": "EDAZ",
+        "D": "IHEW"
+      }
+    },
+    {
+      "n": 241,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "QSVY",
+        "B": "ABDG",
+        "C": "LMOR",
+        "D": "VWYB"
+      }
+    },
+    {
+      "n": 242,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "BDC",
+        "B": "VXW",
+        "C": "OQP",
+        "D": "EFG"
+      }
+    },
+    {
+      "n": 243,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "HDZ",
+        "B": "EAW",
+        "C": "WSM",
+        "D": "YUQ"
+      }
+    },
+    {
+      "n": 244,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "URO",
+        "B": "SPL",
+        "C": "AXU",
+        "D": "NKH"
+      }
+    },
+    {
+      "n": 245,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "HS",
+        "B": "MN",
+        "C": "JP",
+        "D": "CX"
+      }
+    },
+    {
+      "n": 246,
+      "page": 7,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "FJN",
+        "B": "NRV",
+        "C": "IMQ",
+        "D": "OSX"
+      }
+    },
+    {
+      "n": 247,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "KLIO",
+        "B": "RSPT",
+        "C": "HIFJ",
+        "D": "VWTX"
+      }
+    },
+    {
+      "n": 248,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "GCKT",
+        "B": "DZHW",
+        "C": "HDLS",
+        "D": "PLSK"
+      }
+    },
+    {
+      "n": 249,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "ILORUZ",
+        "B": "ASOJIB",
+        "C": "EGIKOT",
+        "D": "ABEGIJ"
+      }
+    },
+    {
+      "n": 250,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "DHPFL",
+        "B": "ABDGN",
+        "C": "BDHPF",
+        "D": "CFLXV"
+      }
+    },
+    {
+      "n": 251,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.\nEC, H, HF, N, KI, U",
+      "options": {
+        "A": "U",
+        "B": "N",
+        "C": "HF",
+        "D": "EC"
+      }
+    },
+    {
+      "n": 252,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "OMANI",
+        "B": "AMANA",
+        "C": "EVOLV",
+        "D": "UGALI"
+      }
+    },
+    {
+      "n": 253,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "FHN",
+        "B": "MQS",
+        "C": "DLP",
+        "D": "JPZ"
+      }
+    },
+    {
+      "n": 254,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "NOTA",
+        "B": "NATO",
+        "C": "NASA",
+        "D": "NAM"
+      }
+    },
+    {
+      "n": 255,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "VYS",
+        "B": "PSM",
+        "C": "ROL",
+        "D": "RUO"
+      }
+    },
+    {
+      "n": 256,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "JHFA",
+        "B": "NLIE",
+        "C": "XVSO",
+        "D": "MKHD"
+      }
+    },
+    {
+      "n": 257,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "GKOQ",
+        "B": "QUXZ",
+        "C": "KOSU",
+        "D": "AEIK"
+      }
+    },
+    {
+      "n": 258,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "JPN",
+        "B": "MSQ",
+        "C": "CJI",
+        "D": "QWU"
+      }
+    },
+    {
+      "n": 259,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "FIMP",
+        "B": "BEIL",
+        "C": "LOSV",
+        "D": "JMPT"
+      }
+    },
+    {
+      "n": 260,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "MSN",
+        "B": "QUK",
+        "C": "OUL",
+        "D": "PVK"
+      }
+    },
+    {
+      "n": 261,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "JQT",
+        "B": "PKN",
+        "C": "EUY",
+        "D": "DWZ"
+      }
+    },
+    {
+      "n": 262,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "JLPV",
+        "B": "FHLR",
+        "C": "HJNU",
+        "D": "CEIO"
+      }
+    },
+    {
+      "n": 263,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "DHN",
+        "B": "EIO",
+        "C": "YCI",
+        "D": "PTY"
+      }
+    },
+    {
+      "n": 264,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "NKHE",
+        "B": "MJGD",
+        "C": "WTQN",
+        "D": "XUSO"
+      }
+    },
+    {
+      "n": 265,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "QTWZC",
+        "B": "HKNQT",
+        "C": "BEHKN",
+        "D": "RUXAE"
+      }
+    },
+    {
+      "n": 266,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "KFBY",
+        "B": "TOKH",
+        "C": "ZUQO",
+        "D": "BWSP"
+      }
+    },
+    {
+      "n": 267,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "OMSVY",
+        "B": "ORUXA",
+        "C": "CFILO",
+        "D": "UXADG"
+      }
+    },
+    {
+      "n": 268,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "UFAL",
+        "B": "DWJC",
+        "C": "BYHE",
+        "D": "HSNZ"
+      }
+    },
+    {
+      "n": 269,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "MQU",
+        "B": "XBG",
+        "C": "HLP",
+        "D": "AEI"
+      }
+    },
+    {
+      "n": 270,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "EZAMI",
+        "B": "ETWAH",
+        "C": "REAYBL",
+        "D": "SEHCWA"
+      }
+    },
+    {
+      "n": 271,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "OQRT",
+        "B": "IKMO",
+        "C": "CEGI",
+        "D": "TVXZ"
+      }
+    },
+    {
+      "n": 272,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "BEHK",
+        "B": "MPSV",
+        "C": "RUXA",
+        "D": "GJMQ"
+      }
+    },
+    {
+      "n": 273,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "dEeFF",
+        "B": "mnNoOO",
+        "C": "pqQrRR",
+        "D": "uvVwWW"
+      }
+    },
+    {
+      "n": 274,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "PIOUS",
+        "B": "AEONS",
+        "C": "QUAIL",
+        "D": "PENAL"
+      }
+    },
+    {
+      "n": 275,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "NMKL",
+        "B": "LKIJ",
+        "C": "YXVW",
+        "D": "FEDC"
+      }
+    },
+    {
+      "n": 276,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "UVwXYY",
+        "B": "PCrSSTT",
+        "C": "BCdEFFF",
+        "D": "IJkLLMM"
+      }
+    },
+    {
+      "n": 277,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "LMOQ",
+        "B": "DFHJ",
+        "C": "TVXZ",
+        "D": "GIKM"
+      }
+    },
+    {
+      "n": 278,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "EGIKM",
+        "B": "NPRTV",
+        "C": "MOQSU",
+        "D": "IKLPS"
+      }
+    },
+    {
+      "n": 279,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "BDGK",
+        "B": "XZCG",
+        "C": "TVYB",
+        "D": "NPSW"
+      }
+    },
+    {
+      "n": 280,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "RS",
+        "B": "VW",
+        "C": "CD",
+        "D": "TV"
+      }
+    },
+    {
+      "n": 281,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "ADG",
+        "B": "CFI",
+        "C": "JMQ",
+        "D": "SVY"
+      }
+    },
+    {
+      "n": 282,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "DWEV",
+        "B": "HSIR",
+        "C": "KPLO",
+        "D": "PKQI"
+      }
+    },
+    {
+      "n": 283,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "NQTW",
+        "B": "PSVZ",
+        "C": "WZCF",
+        "D": "BEHK"
+      }
+    },
+    {
+      "n": 284,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "XTCG",
+        "B": "NJMQ",
+        "C": "EAUZ",
+        "D": "SOHL"
+      }
+    },
+    {
+      "n": 285,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "GEF",
+        "B": "MLK",
+        "C": "IKJ",
+        "D": "VWY"
+      }
+    },
+    {
+      "n": 286,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "AEI",
+        "B": "IMQ",
+        "C": "EIL",
+        "D": "MQU"
+      }
+    },
+    {
+      "n": 287,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "KMPT",
+        "B": "NPSW",
+        "C": "DFOU",
+        "D": "DFIM"
+      }
+    },
+    {
+      "n": 288,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "INU",
+        "B": "MSY",
+        "C": "AGM",
+        "D": "LRX"
+      }
+    },
+    {
+      "n": 289,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "6903 : 2582",
+        "B": "6286 : 1965",
+        "C": "6571 : 2448",
+        "D": "8247 : 3926"
+      }
+    },
+    {
+      "n": 290,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "FJQL",
+        "B": "EMNK",
+        "C": "IDWG",
+        "D": "BTGN"
+      }
+    },
+    {
+      "n": 291,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "OVG",
+        "B": "GMF",
+        "C": "HFE",
+        "D": "DVR"
+      }
+    },
+    {
+      "n": 292,
+      "page": 8,
+      "section": "Type-3",
+      "stem": "Choose the one which is different from the rest.",
+      "options": {
+        "A": "VINE",
+        "B": "LAIM",
+        "C": "SWJK",
+        "D": "NOHA"
+      }
+    }
+  ]
+}

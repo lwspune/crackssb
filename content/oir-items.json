@@ -13,6 +13,16 @@
     },
     {
       "source": "agrawal-examcart-oir",
+      "chapter": 2,
+      "title": "Odd One Out (Classification)",
+      "pages": [
+        4,
+        8
+      ],
+      "file": "content/oir/agrawal-examcart/ch02-classification.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
       "chapter": 3,
       "title": "Coding Decoding",
       "pages": [
@@ -102,11 +112,11 @@
       "file": "content/oir/agrawal-examcart/ch11-series.source.json"
     }
   ],
-  "itemCount": 812,
-  "heldCount": 46,
+  "itemCount": 1068,
+  "heldCount": 82,
   "confidence": {
-    "high": 784,
-    "medium": 28
+    "high": 1031,
+    "medium": 37
   },
   "held": [
     {
@@ -152,6 +162,186 @@
       "source_ref": "ch1 p3 q96",
       "reason": "RACE → FACE can be \"R becomes F\" (CARE → CAFE, B) or \"the first letter becomes F\" (CARE → FARE, A); the pair does not decide.",
       "lean": "B"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q9",
+      "reason": "Nephew and brother are male, sibling and cousin either sex; and a nephew is the only one a generation away. No single odd word."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q11",
+      "reason": "Pentagon and heptagon have an odd number of sides, decagon and hexagon an even number; no one shape is odd."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q29",
+      "reason": "A garden, school, home and temple can each be set apart (open air, learning, living, worship); no one place is odd."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q36",
+      "reason": "Spit, Bask, Move and Tram share no meaning, and their reversals (tips, ksab, evom, mart) split two and two; no single odd word."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q66",
+      "reason": "A picture, poster, book and scenery can each be set apart (printed text, natural view, a sheet); no one word is odd."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q71",
+      "reason": "The Sun is itself a star, so \"Sun\" and \"Stars\" overlap, and planets and satellites both orbit; no single odd word."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q80",
+      "reason": "Tiger and lion are big cats, hyena and wolf are not, splitting two and two; no single odd animal."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q87",
+      "reason": "Amritsar, Puri and Ajmer are famous pilgrim towns, and Nawada has a well-known shrine too; no single odd place is sure."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q89",
+      "reason": "The Red Fort and Taj Mahal are Mughal, the Lotus Temple modern, and \"Gandhi Bridge\" names no single landmark; no one is clearly odd."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q95",
+      "reason": "Option C reads \"The same\", which names nothing; the question cannot be answered as printed."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q97",
+      "reason": "The Tista joins the Brahmaputra, and the Son and Koshi join the Ganga, which is itself the main river; two readings, two answers."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q102",
+      "reason": "4925 → 35 is 7 × 5 (√49 × √25), but 1625 → 9 and 4964 → 15 are 4 + 5 and 7 + 8: product and sum split the pairs, and 4926 has no square halves."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q119",
+      "reason": "No rule found that links three of 32 : 19, 21 : 51, 58 : 26, 43 : 95."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q120",
+      "reason": "No rule found that links three of 3797 : 42, 1479 : 83, 2564 : 21, 4632 : 23."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q126",
+      "reason": "No rule found that links three of 289 – 3194, 361 – 9786, 169 – 7912, 225 – 5733."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q130",
+      "reason": "Two pairs are digit reversals, but neither A nor D is; no single pair is odd."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q137",
+      "reason": "No rule found that links three of 13 : 28.5, 15 : 32.5, 19 : 38.5, 17 : 35.5; 2a + 2.5 fits only two."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q140",
+      "reason": "No rule found that links three of 12 : 9, 8 : 4, 4 : 15, 20 : 25."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q146",
+      "reason": "No rule found that links three of 678 : 7, 282 : 6, 366 : 5, 546 : 5."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q150",
+      "reason": "Every pair is two primes and every difference is printed correctly; only 73 and 79 are consecutive primes, and B alone differs by 14. No single plain rule."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q152",
+      "reason": "No rule found that links three of 16 – 3, 50 – 7, 64 – 32, 51 – 25."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q175",
+      "reason": "No rule found that links three of 461 : 20, 182 : 12, 239 : 14, 305 : 16."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q178",
+      "reason": "No rule found that links three of 4/5 : 3, 16/20 : 6, 25/41 : 8, 30/51 : 9."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q185",
+      "reason": "No rule found that links three of 446 : 73, 252 : 33, 112 : 41, 846 : 63."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q191",
+      "reason": "No plain property splits MAA, OSD, OTP, VOL three to one."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q206",
+      "reason": "No plain property splits ADW, EHS, RVV, JMN three to one."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q213",
+      "reason": "No plain property splits FZJ, BVH, FPE, BDA three to one."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q235",
+      "reason": "Every option opens with an opposite pair (H+S, F+U, D+W, K+P); the third letters share nothing plain."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q239",
+      "reason": "The first two steps (−2, −3) are shared by all four; the last steps share nothing plain."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q240",
+      "reason": "The first two steps (−1, −3) are shared by all four; the last steps share nothing plain."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q248",
+      "reason": "No plain property splits GCKT, DZHW, HDLS, PLSK three to one."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q249",
+      "reason": "No plain property splits ILORUZ, ASOJIB, EGIKOT, ABEGIJ three to one."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q251",
+      "reason": "\"EC, H, HF, N, KI, U\" mixes single letters and pairs with no plain rule to single one out."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q276",
+      "reason": "UVwXYY, PCrSSTT, BCdEFFF and IJkLLMM differ in length and pattern with no plain rule singling one out."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q285",
+      "reason": "No plain property splits GEF, MLK, IKJ, VWY three to one."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q291",
+      "reason": "No plain property splits OVG, GMF, HFE, DVR three to one."
     },
     {
       "source": "agrawal-examcart-oir",
@@ -2397,6 +2587,5647 @@
       "key_basis": "derived",
       "rule": "Each letter 2 on: AYRRJC → CATTLE, so NCPDCAR → PERFECT.",
       "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Money order",
+          "B": "Speed Post",
+          "C": "Letter",
+          "D": "SMS"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q1",
+      "key_basis": "derived",
+      "rule": "Money order, speed post and letter go by post; an SMS does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q002",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Cargo",
+          "B": "Trolley",
+          "C": "Tempo",
+          "D": "Truck"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q2",
+      "key_basis": "derived",
+      "rule": "A trolley, tempo and truck carry loads; cargo is the load.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Bee hive",
+          "B": "Dog-house",
+          "C": "Piggery",
+          "D": "Cub"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q3",
+      "key_basis": "derived",
+      "rule": "A bee hive, dog-house and piggery are homes; a cub is a young animal.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Sukhandi : Bone",
+          "B": "Tuberculosis : Heart",
+          "C": "Night blindness : Eye",
+          "D": "Jaundice : Liver"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q4",
+      "key_basis": "derived",
+      "rule": "Each pair is a disease and the organ it affects, except tuberculosis, which affects the lungs, not the heart.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Ottawa",
+          "B": "Thimphu",
+          "C": "Bijing",
+          "D": "Chili"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q5",
+      "key_basis": "derived",
+      "rule": "Ottawa, Thimphu and Beijing (\"Bijing\") are capitals; Chile (\"Chili\") is a country.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Kabul",
+          "B": "Behrin",
+          "C": "Viyana",
+          "D": "Canbara"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q6",
+      "key_basis": "derived",
+      "rule": "Kabul, Vienna (\"Viyana\") and Canberra are capitals; Bahrain (\"Behrin\") is a country.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q007",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Pink",
+          "B": "Violet",
+          "C": "Orange",
+          "D": "Yellow"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q7",
+      "key_basis": "derived",
+      "rule": "Violet, orange and yellow are colours of the rainbow; pink is not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "December",
+          "B": "January",
+          "C": "February",
+          "D": "March"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q8",
+      "key_basis": "derived",
+      "rule": "December, January and March have 31 days; February does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "House",
+          "B": "Flock",
+          "C": "Igloo",
+          "D": "Hut"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q10",
+      "key_basis": "derived",
+      "rule": "A house, igloo and hut are dwellings; a flock is a group of animals.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Stimulate",
+          "B": "Actuate",
+          "C": "Imitate",
+          "D": "Motivate"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q12",
+      "key_basis": "derived",
+      "rule": "Stimulate, actuate and motivate mean to drive into action; imitate means to copy.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Contradiction",
+          "B": "Proved",
+          "C": "Enigma",
+          "D": "Mysterious"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q13",
+      "key_basis": "derived",
+      "rule": "Contradiction, enigma and mysterious leave a matter unsettled; proved settles it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Anarchy",
+          "B": "Discord",
+          "C": "upheaval",
+          "D": "harmony"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q14",
+      "key_basis": "derived",
+      "rule": "Anarchy, discord and upheaval are disorder; harmony is order.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Calm",
+          "B": "Convulsion",
+          "C": "Cramp",
+          "D": "Seizure"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q15",
+      "key_basis": "derived",
+      "rule": "Convulsion, cramp and seizure are spasms; calm is their opposite.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Fenugreek",
+          "B": "Kunuru",
+          "C": "Amaranth",
+          "D": "Spinach"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q16",
+      "key_basis": "derived",
+      "rule": "Fenugreek, amaranth and spinach are leafy greens; \"Kunuru\" (likely kundru, ivy gourd) is a fruiting vegetable.",
+      "confidence": "medium",
+      "note": "\"Kunuru\" is read as kundru. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch02-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Sword",
+          "B": "Spear",
+          "C": "gun",
+          "D": "dagger"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q17",
+      "key_basis": "derived",
+      "rule": "A sword, spear and dagger are bladed weapons; a gun fires.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Red",
+          "B": "Green",
+          "C": "yellow",
+          "D": "pale"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q18",
+      "key_basis": "derived",
+      "rule": "Red, green and yellow are colours; pale is a shade of any.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Bottle",
+          "B": "Cup",
+          "C": "Jar",
+          "D": "Funnel"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q19",
+      "key_basis": "derived",
+      "rule": "A bottle, cup and jar hold liquid; a funnel passes it on.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "white",
+          "B": "colored",
+          "C": "Red",
+          "D": "Green"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q20",
+      "key_basis": "derived",
+      "rule": "White, red and green are colours; \"colored\" describes having one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Air",
+          "B": "Water",
+          "C": "Forest",
+          "D": "Building"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q21",
+      "key_basis": "derived",
+      "rule": "Air, water and forest are natural; a building is made.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Circle",
+          "B": "Triangle",
+          "C": "Cube",
+          "D": "Rectangle"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q22",
+      "key_basis": "derived",
+      "rule": "A circle, triangle and rectangle are flat; a cube is solid.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Water",
+          "B": "Milk",
+          "C": "Juice",
+          "D": "Potato"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q23",
+      "key_basis": "derived",
+      "rule": "Water, milk and juice are drinks; a potato is solid food.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Spanish",
+          "B": "Italian",
+          "C": "Chemistry",
+          "D": "German"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q24",
+      "key_basis": "derived",
+      "rule": "Spanish, Italian and German are languages; chemistry is a science.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Petrol",
+          "B": "Coal",
+          "C": "Air",
+          "D": "Natural gas"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q25",
+      "key_basis": "derived",
+      "rule": "Petrol, coal and natural gas are fuels; air is not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Scurvy",
+          "B": "Rickets",
+          "C": "Goiter",
+          "D": "Phosphorus"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q26",
+      "key_basis": "derived",
+      "rule": "Scurvy, rickets and goitre are deficiency diseases; phosphorus is a mineral.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q027",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "to destroy",
+          "B": "to embellish",
+          "C": "To decorate with bandanwar",
+          "D": "decorate"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q27",
+      "key_basis": "derived",
+      "rule": "To embellish, decorate with a bandanwar, and decorate all adorn; to destroy does the opposite.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Ruby",
+          "B": "Platinum",
+          "C": "Gold",
+          "D": "Silver"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q28",
+      "key_basis": "derived",
+      "rule": "Platinum, gold and silver are metals; ruby is a gemstone.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Snooker",
+          "B": "Table Tennis",
+          "C": "Badminton",
+          "D": "Billiard"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q30",
+      "key_basis": "derived",
+      "rule": "Snooker, table tennis and billiards are played on a table; badminton is not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q031",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Building",
+          "B": "lodge",
+          "C": "Tent",
+          "D": "Inn"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q31",
+      "key_basis": "derived",
+      "rule": "A lodge, tent and inn are places to stay a while; \"building\" is any structure.",
+      "confidence": "medium",
+      "note": "A tent could also be set apart as the one not built. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch02-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Geology",
+          "B": "Gynaecology",
+          "C": "Dermatology",
+          "D": "Neurology"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q32",
+      "key_basis": "derived",
+      "rule": "Gynaecology, dermatology and neurology are branches of medicine; geology studies the earth.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Xylophone",
+          "B": "Saxophone",
+          "C": "Telephone",
+          "D": "Sarangi"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q33",
+      "key_basis": "derived",
+      "rule": "A xylophone, saxophone and sarangi are musical instruments; a telephone is not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Architect",
+          "B": "Designer",
+          "C": "Doctor",
+          "D": "Engineer"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q34",
+      "key_basis": "derived",
+      "rule": "An architect, designer and engineer design things; a doctor treats people.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Honest",
+          "B": "Confident",
+          "C": "Coward",
+          "D": "Intelligent"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q35",
+      "key_basis": "derived",
+      "rule": "Honest, confident and intelligent are virtues; coward is a failing.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Dermatology",
+          "B": "Nephrology",
+          "C": "Mycology",
+          "D": "Cardiology"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q37",
+      "key_basis": "derived",
+      "rule": "Dermatology, nephrology and cardiology are branches of medicine; mycology studies fungi.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Oslo",
+          "B": "Baht",
+          "C": "Rial",
+          "D": "Peso"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q38",
+      "key_basis": "derived",
+      "rule": "Baht, rial and peso are currencies; Oslo is a capital.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q039",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Sri Lanka",
+          "B": "Bangladesh",
+          "C": "Indonesia",
+          "D": "Singapore"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q39",
+      "key_basis": "derived",
+      "rule": "Sri Lanka, Indonesia and Singapore are island nations; Bangladesh is not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Cygnet",
+          "B": "Grunt",
+          "C": "Nymph",
+          "D": "Fawn"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q40",
+      "key_basis": "derived",
+      "rule": "A cygnet, nymph and fawn are young animals; a grunt is a sound.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q041",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Applaud",
+          "B": "Criticise",
+          "C": "Admire",
+          "D": "Honour"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q41",
+      "key_basis": "derived",
+      "rule": "Applaud, admire and honour praise; criticise finds fault.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Newspaper",
+          "B": "Daily magazine",
+          "C": "Novel",
+          "D": "Magazine"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q42",
+      "key_basis": "derived",
+      "rule": "A newspaper and magazines come out regularly; a novel does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Square",
+          "B": "Kite",
+          "C": "Rectangle",
+          "D": "Rhombus"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q43",
+      "key_basis": "derived",
+      "rule": "A square, rectangle and rhombus are parallelograms; a kite is not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q044",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Jaipur",
+          "B": "Manipur",
+          "C": "Raipur",
+          "D": "Dispur"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q44",
+      "key_basis": "derived",
+      "rule": "Jaipur, Raipur and Dispur are state capitals; Manipur is a state.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the term from the following alternatives which is different from the other terms.",
+        "options": {
+          "A": "Expresso",
+          "B": "Tea",
+          "C": "Cappuccino",
+          "D": "Latte"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q45",
+      "key_basis": "derived",
+      "rule": "Espresso (\"Expresso\"), cappuccino and latte are coffees; tea is not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the word that is different from the other three in the group:\nRose, Lotus, Tulip, Hibiscus",
+        "options": {
+          "A": "Lotus",
+          "B": "Hibiscus",
+          "C": "Rose",
+          "D": "Tulip"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q46",
+      "key_basis": "derived",
+      "rule": "A rose, tulip and hibiscus grow on land; a lotus grows in water.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Chose the odd one out form the given alternatives.",
+        "options": {
+          "A": "Ace",
+          "B": "Spade card",
+          "C": "Badshah",
+          "D": "Rummy"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q47",
+      "key_basis": "derived",
+      "rule": "Ace, spade card and badshah (king) are playing cards; rummy is a card game.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Chose the odd one out form the given alternatives.",
+        "options": {
+          "A": "Nitrogen",
+          "B": "Baking powder",
+          "C": "Salt",
+          "D": "Water"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q48",
+      "key_basis": "derived",
+      "rule": "Baking powder, salt and water are compounds; nitrogen is an element.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Chose the odd one out form the given alternatives.",
+        "options": {
+          "A": "Bangkok",
+          "B": "Ottawa",
+          "C": "Buenos Aires",
+          "D": "Armenia"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q49",
+      "key_basis": "derived",
+      "rule": "Bangkok, Ottawa and Buenos Aires are capitals; Armenia is a country.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q050",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Chose the odd one out form the given alternatives.",
+        "options": {
+          "A": "Innovation",
+          "B": "Conservatism",
+          "C": "Novelty",
+          "D": "Creativity"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q50",
+      "key_basis": "derived",
+      "rule": "Innovation, novelty and creativity welcome the new; conservatism resists it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q051",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four words are given, out of which three are the same in a certain way while the rest one is different. Find out the different ones.",
+        "options": {
+          "A": "Rodent",
+          "B": "Reptiles",
+          "C": "Owl",
+          "D": "Insect"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q51",
+      "key_basis": "derived",
+      "rule": "Rodents, reptiles and insects are groups of animals; an owl is one kind of bird.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q052",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Find the ODD one out:\nShirt, Kurta, Coat, Dhoti",
+        "options": {
+          "A": "Dhoti",
+          "B": "Shirt",
+          "C": "Kurta",
+          "D": "Coat"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p4 q52",
+      "key_basis": "derived",
+      "rule": "A shirt, kurta and coat are worn on the upper body; a dhoti on the lower.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q053",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Three of the given four words are similar in a certain manner while one is different. Choose the odd one out :",
+        "options": {
+          "A": "Lethargy",
+          "B": "Exuberance",
+          "C": "Inertia",
+          "D": "Drowsiness"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q53",
+      "key_basis": "derived",
+      "rule": "Lethargy, inertia and drowsiness are low energy; exuberance is high.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q054",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Three of the given four words are similar in a certain manner while one is different. Choose the odd one out :",
+        "options": {
+          "A": "Joule",
+          "B": "Hertz",
+          "C": "Density",
+          "D": "Pascal"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q54",
+      "key_basis": "derived",
+      "rule": "Joule, hertz and pascal are units; density is a quantity.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q055",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Three of the given four words are similar in a certain manner while one is different. Choose the odd one out :",
+        "options": {
+          "A": "Eyesight",
+          "B": "Memory",
+          "C": "Creativity",
+          "D": "Intelligence"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q55",
+      "key_basis": "derived",
+      "rule": "Memory, creativity and intelligence are powers of the mind; eyesight is a sense.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q056",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Three of the given four words are similar in a certain manner while one is different. Choose the odd one out :",
+        "options": {
+          "A": "Jealousy",
+          "B": "Devotion",
+          "C": "Fear",
+          "D": "Anorexia"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q56",
+      "key_basis": "derived",
+      "rule": "Jealousy, devotion and fear are feelings; anorexia is a disorder.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q057",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Find the odd one out :",
+        "options": {
+          "A": "Summer",
+          "B": "Winter",
+          "C": "Season",
+          "D": "Spring"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q57",
+      "key_basis": "derived",
+      "rule": "Summer, winter and spring are seasons; \"season\" names them all.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q058",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Find the odd one out :",
+        "options": {
+          "A": "BEIK",
+          "B": "CEGI",
+          "C": "ACEG",
+          "D": "BDFH"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q58",
+      "key_basis": "derived",
+      "rule": "CEGI, ACEG and BDFH step by 2; BEIK does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q059",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Find the odd one out :",
+        "options": {
+          "A": "School",
+          "B": "College",
+          "C": "Hotel",
+          "D": "University"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q59",
+      "key_basis": "derived",
+      "rule": "A school, college and university teach; a hotel lodges.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q060",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Find the odd one out :",
+        "options": {
+          "A": "Orange",
+          "B": "Earth",
+          "C": "Egg",
+          "D": "Basketball"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q60",
+      "key_basis": "derived",
+      "rule": "An orange, the earth and a basketball are round; an egg is oval.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q061",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Find the odd one out :",
+        "options": {
+          "A": "Book",
+          "B": "Pencil",
+          "C": "Eraser",
+          "D": "Computer"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q61",
+      "key_basis": "derived",
+      "rule": "A book, pencil and eraser are everyday school things; a computer is a machine.",
+      "confidence": "medium",
+      "note": "Read as stationery against a machine. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch02-q062",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Find the odd one out :",
+        "options": {
+          "A": "Kanpur",
+          "B": "Vijaywada",
+          "C": "Ganga",
+          "D": "Guwahati"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q62",
+      "key_basis": "derived",
+      "rule": "Kanpur, Vijayawada and Guwahati are cities; the Ganga is a river.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q063",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Find the odd one out :",
+        "options": {
+          "A": "Guitar",
+          "B": "Violin",
+          "C": "Sitar",
+          "D": "Flute"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q63",
+      "key_basis": "derived",
+      "rule": "A guitar, violin and sitar are string instruments; a flute is wind.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q064",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the word which is least like the words in the group.",
+        "options": {
+          "A": "MS Paint",
+          "B": "Facebook",
+          "C": "Whatsapp",
+          "D": "Twitter"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q64",
+      "key_basis": "derived",
+      "rule": "Facebook, WhatsApp and Twitter are social apps; MS Paint is a drawing program.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q065",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the word which is least like the words in the group.",
+        "options": {
+          "A": "PLASTIC",
+          "B": "WOOL",
+          "C": "PAPER",
+          "D": "WOOD"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q65",
+      "key_basis": "derived",
+      "rule": "Wool, paper and wood come from nature; plastic is synthetic.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q067",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the word which is least like the words in the group.",
+        "options": {
+          "A": "EARTH",
+          "B": "SUN",
+          "C": "MERCURY",
+          "D": "JUPITER"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q67",
+      "key_basis": "derived",
+      "rule": "Earth, Mercury and Jupiter are planets; the Sun is a star.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q068",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the word which is least like the words in the group.",
+        "options": {
+          "A": "STUDENT",
+          "B": "LAWYER",
+          "C": "MECHANIC",
+          "D": "ENGINEER"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q68",
+      "key_basis": "derived",
+      "rule": "A lawyer, mechanic and engineer are professions; a student is still learning.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q069",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the word which is least like the words in the group.",
+        "options": {
+          "A": "Ladder",
+          "B": "Staircase",
+          "C": "Bridge",
+          "D": "Escalator"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q69",
+      "key_basis": "derived",
+      "rule": "A ladder, staircase and escalator take you up; a bridge takes you across.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q070",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the word which is least like the words in the group.",
+        "options": {
+          "A": "Eyes",
+          "B": "Ear",
+          "C": "Hand",
+          "D": "Scarf"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q70",
+      "key_basis": "derived",
+      "rule": "Eyes, ears and hands are parts of the body; a scarf is not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q072",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Find the odd Item",
+        "options": {
+          "A": "Mars",
+          "B": "Sun",
+          "C": "Jupiter",
+          "D": "Saturn"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q72",
+      "key_basis": "derived",
+      "rule": "Mars, Jupiter and Saturn are planets; the Sun is a star.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q073",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one.",
+        "options": {
+          "A": "Strong",
+          "B": "Hesitant",
+          "C": "Daring",
+          "D": "Brave"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q73",
+      "key_basis": "derived",
+      "rule": "Strong, daring and brave show courage; hesitant does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q074",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the word which is different from the rest.",
+        "options": {
+          "A": "Tea",
+          "B": "Chinchona",
+          "C": "Rubber",
+          "D": "Chalk"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q74",
+      "key_basis": "derived",
+      "rule": "Tea, cinchona and rubber come from plants; chalk does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q075",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which word does not belong to others?",
+        "options": {
+          "A": "Inch",
+          "B": "Kilogram",
+          "C": "Centimeter",
+          "D": "Yard"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q75",
+      "key_basis": "derived",
+      "rule": "Inch, centimetre and yard measure length; kilogram measures mass.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q076",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which word does not belong to others?",
+        "options": {
+          "A": "Carpenter",
+          "B": "Tailor",
+          "C": "Barber",
+          "D": "Black smith"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q76",
+      "key_basis": "derived",
+      "rule": "A carpenter, tailor and blacksmith make things; a barber serves people.",
+      "confidence": "medium",
+      "note": "Read as makers against a service. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch02-q077",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which word does not belong to others?",
+        "options": {
+          "A": "Sun",
+          "B": "Star",
+          "C": "Moon",
+          "D": "Universe"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q77",
+      "key_basis": "derived",
+      "rule": "The Sun, a star and the Moon are bodies in space; the universe holds them all.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q078",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Saturn",
+          "B": "Venus",
+          "C": "Mars",
+          "D": "Moon"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q78",
+      "key_basis": "derived",
+      "rule": "Saturn, Venus and Mars are planets; the Moon is a satellite.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q079",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Rajasthan",
+          "B": "Kerala",
+          "C": "Tamil Nadu",
+          "D": "Puducherry"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q79",
+      "key_basis": "derived",
+      "rule": "Rajasthan, Kerala and Tamil Nadu are states; Puducherry is a union territory.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q081",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Dollar",
+          "B": "Peso",
+          "C": "Ounce",
+          "D": "Euro"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q81",
+      "key_basis": "derived",
+      "rule": "Dollar, peso and euro are currencies; an ounce is a weight.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q082",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Turtle",
+          "B": "Snake",
+          "C": "Crocodile",
+          "D": "Whale"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q82",
+      "key_basis": "derived",
+      "rule": "A turtle, snake and crocodile are reptiles; a whale is a mammal.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q083",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Copper",
+          "B": "Iron",
+          "C": "Iodine",
+          "D": "Tin"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q83",
+      "key_basis": "derived",
+      "rule": "Copper, iron and tin are metals; iodine is not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q084",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Dr. Hamid Ansari",
+          "B": "Dr. Abdul Kalam",
+          "C": "Dr. Pranab Mukherjee",
+          "D": "Dr. Rajendra Prasad"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q84",
+      "key_basis": "derived",
+      "rule": "Kalam, Mukherjee and Rajendra Prasad were Presidents of India; Hamid Ansari was Vice-President.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q085",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Iron",
+          "B": "Gold",
+          "C": "Copper",
+          "D": "Hydrogen"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q85",
+      "key_basis": "derived",
+      "rule": "Iron, gold and copper are metals; hydrogen is a gas.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q086",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Badminton",
+          "B": "Hockey",
+          "C": "Football",
+          "D": "Cricket"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q86",
+      "key_basis": "derived",
+      "rule": "Hockey, football and cricket are played with a ball; badminton with a shuttlecock.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q088",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Ranchi",
+          "B": "Patna",
+          "C": "Gaya",
+          "D": "Bhagalpur"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q88",
+      "key_basis": "derived",
+      "rule": "Patna, Gaya and Bhagalpur are in Bihar; Ranchi is in Jharkhand.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q090",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Jawaharlal Nehru",
+          "B": "Indira Gandhi",
+          "C": "Narendra Modi",
+          "D": "Dr. Rajendra Prasad"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q90",
+      "key_basis": "derived",
+      "rule": "Nehru, Indira Gandhi and Modi have been Prime Ministers; Rajendra Prasad was President.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q091",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Bus",
+          "B": "Truck",
+          "C": "Bullock cart",
+          "D": "Car"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q91",
+      "key_basis": "derived",
+      "rule": "A bus, truck and car have engines; a bullock cart does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q092",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Earth",
+          "B": "Moon",
+          "C": "Jupiter",
+          "D": "Mercury"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q92",
+      "key_basis": "derived",
+      "rule": "Earth, Jupiter and Mercury are planets; the Moon is a satellite.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q093",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Tiger",
+          "B": "Leopard",
+          "C": "Cat",
+          "D": "Cow"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q93",
+      "key_basis": "derived",
+      "rule": "A tiger, leopard and cat are carnivores; a cow eats plants.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q094",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Panchtantra",
+          "B": "Geeta",
+          "C": "Quran",
+          "D": "Bible"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q94",
+      "key_basis": "derived",
+      "rule": "The Geeta, Quran and Bible are scriptures; the Panchatantra is a book of fables.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q096",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the odd one out.",
+        "options": {
+          "A": "Millimetre",
+          "B": "Centimetre",
+          "C": "Metre",
+          "D": "Watt"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q96",
+      "key_basis": "derived",
+      "rule": "Millimetre, centimetre and metre measure length; watt measures power.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q098",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "24 : 32",
+          "B": "36 : 48",
+          "C": "26 : 18",
+          "D": "12 : 16"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q98",
+      "key_basis": "derived",
+      "rule": "The other pairs are in the ratio 3 : 4; 26 : 18 is not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q099",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "11 – 122",
+          "B": "9 – 82",
+          "C": "5 – 26",
+          "D": "10 – 84"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q99",
+      "key_basis": "derived",
+      "rule": "b = a² + 1 (11 → 122, 9 → 82, 5 → 26); 10 → 101, not 84.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q100",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "6, 42",
+          "B": "1, 2",
+          "C": "3, 30",
+          "D": "4, 68"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q100",
+      "key_basis": "derived",
+      "rule": "b = a³ + a (1 → 2, 3 → 30, 4 → 68); 6 → 222, not 42.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q101",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "13 : 2186",
+          "B": "7 : 336",
+          "C": "11 : 1320",
+          "D": "5 : 120"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q101",
+      "key_basis": "derived",
+      "rule": "b = a³ − a (7 → 336, 11 → 1320, 5 → 120); 13 → 2184, not 2186.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q103",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "7 – 50",
+          "B": "11 – 122",
+          "C": "15 – 226",
+          "D": "13 – 168"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q103",
+      "key_basis": "derived",
+      "rule": "b = a² + 1; 13 → 170, not 168.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q104",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "7 – 56",
+          "B": "10 – 110",
+          "C": "9 – 90",
+          "D": "8 – 96"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q104",
+      "key_basis": "derived",
+      "rule": "b = a(a + 1); 8 → 72, not 96.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q105",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "138 – 12",
+          "B": "237 – 11",
+          "C": "438 – 15",
+          "D": "961 – 16"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q105",
+      "key_basis": "derived",
+      "rule": "b is the sum of the digits of a; 2 + 3 + 7 = 12, not 11.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q106",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "12 – 156",
+          "B": "6 – 42",
+          "C": "8 – 72",
+          "D": "10 – 90"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q106",
+      "key_basis": "derived",
+      "rule": "b = a(a + 1); 10 → 110, not 90.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q107",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "14 – 194",
+          "B": "13 – 167",
+          "C": "12 – 146",
+          "D": "11 – 119"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q107",
+      "key_basis": "derived",
+      "rule": "b = a² − 2; 12 → 142, not 146.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q108",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "11 – 1331",
+          "B": "10 – 1000",
+          "C": "12 – 1728",
+          "D": "7 – 363"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q108",
+      "key_basis": "derived",
+      "rule": "b = a³; 7 → 343, not 363.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q109",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "7 – 56",
+          "B": "11 – 132",
+          "C": "13 – 195",
+          "D": "9 – 90"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q109",
+      "key_basis": "derived",
+      "rule": "b = a(a + 1); 13 → 182, not 195.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q110",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "223 – 12",
+          "B": "342 – 24",
+          "C": "643 – 72",
+          "D": "864 – 96"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q110",
+      "key_basis": "derived",
+      "rule": "b is the product of the digits of a; 8 × 6 × 4 = 192, not 96.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q111",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "10 – 99",
+          "B": "12 – 143",
+          "C": "14 – 195",
+          "D": "8 – 65"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q111",
+      "key_basis": "derived",
+      "rule": "b = a² − 1; 8 → 63, not 65.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q112",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "11 – 121",
+          "B": "13 – 199",
+          "C": "14 – 196",
+          "D": "15 – 225"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q112",
+      "key_basis": "derived",
+      "rule": "b = a²; 13 → 169, not 199.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q113",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "6 – 217",
+          "B": "5 – 126",
+          "C": "4 – 63",
+          "D": "3 – 28"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q113",
+      "key_basis": "derived",
+      "rule": "b = a³ + 1; 4 → 65, not 63.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q114",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "9 – 90",
+          "B": "6 – 42",
+          "C": "5 – 30",
+          "D": "4 – 36"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p5 q114",
+      "key_basis": "derived",
+      "rule": "b = a(a + 1); 4 → 20, not 36.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q115",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "3 – 28",
+          "B": "2 – 9",
+          "C": "5 – 124",
+          "D": "4 – 65"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q115",
+      "key_basis": "derived",
+      "rule": "b = a³ + 1; 5 → 126, not 124.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q116",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "7 – 81",
+          "B": "9 – 121",
+          "C": "11 – 169",
+          "D": "5 – 47"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q116",
+      "key_basis": "derived",
+      "rule": "b = (a + 2)²; 5 → 49, not 47.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q117",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "11 – 110",
+          "B": "9 – 72",
+          "C": "7 – 42",
+          "D": "5 – 30"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q117",
+      "key_basis": "derived",
+      "rule": "b = a(a − 1); 5 → 20, not 30.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q118",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "324 : 100",
+          "B": "813 : 169",
+          "C": "123 : 49",
+          "D": "912 : 144"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q118",
+      "key_basis": "derived",
+      "rule": "b = (digit sum of a + 1)²; 912 → 13² = 169, not 144.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q121",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "84, 67",
+          "B": "112, 95",
+          "C": "79, 63",
+          "D": "167, 150"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q121",
+      "key_basis": "derived",
+      "rule": "a − b = 17; 79 − 63 = 16.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q122",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "4892-5902",
+          "B": "3846-4856",
+          "C": "3264-4274",
+          "D": "4328-5348"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q122",
+      "key_basis": "derived",
+      "rule": "b − a = 1010; 5348 − 4328 = 1020.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q123",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "64 – 4032",
+          "B": "42 – 1764",
+          "C": "38 – 1444",
+          "D": "52 – 2704"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q123",
+      "key_basis": "derived",
+      "rule": "b = a²; 64² = 4096, not 4032.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q124",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "49401 – 5489",
+          "B": "28125 – 3125",
+          "C": "49374 – 5483",
+          "D": "11322 – 1258"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q124",
+      "key_basis": "derived",
+      "rule": "a = 9b; 49374 ÷ 9 = 5486, not 5483.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q125",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "4444 – 2222",
+          "B": "8888 – 4444",
+          "C": "6666 – 3333",
+          "D": "3333 – 1111"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q125",
+      "key_basis": "derived",
+      "rule": "a = 2b; 3333 is three times 1111.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q127",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "42-1764",
+          "B": "36-1266",
+          "C": "38-1444",
+          "D": "44-1936"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q127",
+      "key_basis": "derived",
+      "rule": "b = a²; 36² = 1296, not 1266.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q128",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "12 – 1728",
+          "B": "14 – 2844",
+          "C": "20 – 8000",
+          "D": "10 – 1000"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q128",
+      "key_basis": "derived",
+      "rule": "b = a³; 14³ = 2744, not 2844.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q129",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "3241 – 5732",
+          "B": "2354 – 4835",
+          "C": "2345 – 4826",
+          "D": "1326 – 3807"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q129",
+      "key_basis": "derived",
+      "rule": "b − a = 2481; 5732 − 3241 = 2491.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q131",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "11 – 1452",
+          "B": "7 – 392",
+          "C": "13 – 2368",
+          "D": "9 – 810"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q131",
+      "key_basis": "derived",
+      "rule": "b = a³ + a²; 13 → 2366, not 2368.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q132",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "106 – 1191016",
+          "B": "102 – 1061208",
+          "C": "108 – 1257912",
+          "D": "104 – 1124864"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q132",
+      "key_basis": "derived",
+      "rule": "b = a³; 108³ = 1259712, not 1257912.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q133",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "749 – 974",
+          "B": "342 – 243",
+          "C": "317 – 713",
+          "D": "643 – 346"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q133",
+      "key_basis": "derived",
+      "rule": "b is a reversed; 749 reversed is 947, not 974.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q134",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "15 : 244",
+          "B": "17 : 298",
+          "C": "11 : 130",
+          "D": "19 : 370"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q134",
+      "key_basis": "derived",
+      "rule": "b = a² + 9; 15 → 234, not 244.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q135",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "16 : 1024",
+          "B": "14 : 784",
+          "C": "18 : 1620",
+          "D": "12 : 576"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q135",
+      "key_basis": "derived",
+      "rule": "b = 4a²; 18 → 1296, not 1620.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q136",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "361 : 332",
+          "B": "533 : 504",
+          "C": "440 : 411",
+          "D": "520 : 481"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q136",
+      "key_basis": "derived",
+      "rule": "a − b = 29; 520 − 481 = 39.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q138",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "47 : 2116",
+          "B": "53 : 2703",
+          "C": "24 : 528",
+          "D": "68 : 4488"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q138",
+      "key_basis": "derived",
+      "rule": "b = a(a − 2); 47 → 2115, not 2116.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q139",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "53 : 2916",
+          "B": "41 : 1765",
+          "C": "23 : 576",
+          "D": "19 : 400"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q139",
+      "key_basis": "derived",
+      "rule": "b = (a + 1)²; 41 → 1764, not 1765.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q141",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "16 : 224",
+          "B": "21 : 399",
+          "C": "35 : 1155",
+          "D": "17 : 238"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q141",
+      "key_basis": "derived",
+      "rule": "b = a(a − 2); 17 → 255, not 238.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q142",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "678 : 42",
+          "B": "546 : 30",
+          "C": "283 : 28",
+          "D": "125 : 16"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q142",
+      "key_basis": "derived",
+      "rule": "b is twice the digit sum of a; 283 → 26, not 28.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q143",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "14 : 512",
+          "B": "22 : 1728",
+          "C": "46 : 12167",
+          "D": "38 : 8000"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q143",
+      "key_basis": "derived",
+      "rule": "b = (a/2 + 1)³; 46 → 24³ = 13824, not 12167.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q144",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "2834 : 18",
+          "B": "8671 : 22",
+          "C": "9876 : 30",
+          "D": "3427 : 16"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q144",
+      "key_basis": "derived",
+      "rule": "b is the digit sum of a; 2 + 8 + 3 + 4 = 17, not 18.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q145",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "4328 : 8324",
+          "B": "2437 : 7342",
+          "C": "3569 : 9653",
+          "D": "1786 : 6871"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q145",
+      "key_basis": "derived",
+      "rule": "b is a reversed; 4328 reversed is 8234, not 8324.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q147",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "576 : 3375",
+          "B": "25 : 216",
+          "C": "16 : 125",
+          "D": "289 : 5832"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q147",
+      "key_basis": "derived",
+      "rule": "a = n² and b = (n + 1)³; 576 = 24², but 3375 = 15³, not 25³.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q148",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "28 – 41",
+          "B": "39 – 52",
+          "C": "17 – 29",
+          "D": "12 – 25"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q148",
+      "key_basis": "derived",
+      "rule": "b − a = 13; 29 − 17 = 12.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q149",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "25 : 650",
+          "B": "13 : 182",
+          "C": "18 : 306",
+          "D": "23 : 552"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q149",
+      "key_basis": "derived",
+      "rule": "b = a(a + 1); 18 → 342, not 306.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q151",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "7 : 50",
+          "B": "14 : 210",
+          "C": "21 : 462",
+          "D": "25 : 650"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q151",
+      "key_basis": "derived",
+      "rule": "b = a(a + 1); 7 → 56, not 50.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q153",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "37, 75",
+          "B": "68, 137",
+          "C": "19, 39",
+          "D": "25, 53"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q153",
+      "key_basis": "derived",
+      "rule": "b = 2a + 1; 25 → 51, not 53.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q154",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "28 : 32",
+          "B": "54 : 64",
+          "C": "119 : 136",
+          "D": "91 : 104"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q154",
+      "key_basis": "derived",
+      "rule": "The other pairs are in the ratio 7 : 8; 54 : 64 is 27 : 32.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q155",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "4 : 16",
+          "B": "7 : 49",
+          "C": "10 : 100",
+          "D": "64 : 6"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q155",
+      "key_basis": "derived",
+      "rule": "b = a²; 64 : 6 is the wrong way round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q156",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "6 : 34",
+          "B": "5 : 29",
+          "C": "3 : 7",
+          "D": "8 : 62"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q156",
+      "key_basis": "derived",
+      "rule": "b = a² − 2; 5 → 23, not 29.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q157",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "48 : 81",
+          "B": "25 : 49",
+          "C": "16 : 36",
+          "D": "64 : 100"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q157",
+      "key_basis": "derived",
+      "rule": "Both numbers are squares; 48 is not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q158",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "11 : 13",
+          "B": "17 : 21",
+          "C": "23 : 29",
+          "D": "3 : 5"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q158",
+      "key_basis": "derived",
+      "rule": "The other pairs are consecutive primes; 21 is not prime.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q159",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "25 : 65",
+          "B": "46 : 64",
+          "C": "28 : 82",
+          "D": "62 : 26"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q159",
+      "key_basis": "derived",
+      "rule": "b is a reversed; 25 reversed is 52, not 65.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q160",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "12 : 20",
+          "B": "20 : 30",
+          "C": "42 : 56",
+          "D": "30 : 40"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q160",
+      "key_basis": "derived",
+      "rule": "The other pairs are consecutive products n(n + 1): 3×4 and 4×5, 4×5 and 5×6, 6×7 and 7×8; 40 is not one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q161",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "15 : 18",
+          "B": "35 : 42",
+          "C": "25 : 30",
+          "D": "45 : 55"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q161",
+      "key_basis": "derived",
+      "rule": "The other pairs are in the ratio 5 : 6; 45 : 55 is 9 : 11.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q162",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "41 – 43",
+          "B": "61 – 67",
+          "C": "71 – 73",
+          "D": "83 – 97"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q162",
+      "key_basis": "derived",
+      "rule": "The other pairs are consecutive primes; 89 comes between 83 and 97.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q163",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "17 – 12",
+          "B": "29 – 14",
+          "C": "21 – 16",
+          "D": "31 – 26"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q163",
+      "key_basis": "derived",
+      "rule": "a − b = 5; 29 − 14 = 15.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q164",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "3 – 27",
+          "B": "7 – 49",
+          "C": "5 – 125",
+          "D": "6 – 216"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q164",
+      "key_basis": "derived",
+      "rule": "b = a³; 7³ = 343, not 49.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q165",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "13 – 2028",
+          "B": "11 – 1210",
+          "C": "7 – 336",
+          "D": "9 – 648"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q165",
+      "key_basis": "derived",
+      "rule": "b = a³ − a²; 7 → 294, not 336.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q166",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "8 – 72",
+          "B": "10 – 110",
+          "C": "14 – 220",
+          "D": "16 – 272"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q166",
+      "key_basis": "derived",
+      "rule": "b = a(a + 1); 14 → 210, not 220.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q167",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "15 – 45",
+          "B": "9 – 29",
+          "C": "31 – 93",
+          "D": "41 – 123"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q167",
+      "key_basis": "derived",
+      "rule": "b = 3a; 9 → 27, not 29.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q168",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "8 – 72",
+          "B": "6 – 42",
+          "C": "12 – 156",
+          "D": "4 – 12"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q168",
+      "key_basis": "derived",
+      "rule": "b = a(a + 1); 4 → 20, not 12.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q169",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "36 : 729",
+          "B": "48 : 1728",
+          "C": "87 : 2744",
+          "D": "74 : 1331"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q169",
+      "key_basis": "derived",
+      "rule": "b = (digit sum of a)³; 87 → 15³ = 3375, not 2744.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q170",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "64 – 109",
+          "B": "36 – 83",
+          "C": "42 – 87",
+          "D": "102 – 147"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q170",
+      "key_basis": "derived",
+      "rule": "b − a = 45; 83 − 36 = 47.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q171",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "183 – 54",
+          "B": "108 – 97",
+          "C": "243 – 132",
+          "D": "99 – 63"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q171",
+      "key_basis": "derived",
+      "rule": "In the other pairs both numbers are multiples of 3; 108 is, 97 is not.",
+      "confidence": "medium",
+      "note": "The only rule found; a weak one for a book question. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch02-q172",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "120 – 560",
+          "B": "91 – 299",
+          "C": "78 – 169",
+          "D": "104 – 429"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q172",
+      "key_basis": "derived",
+      "rule": "In the other pairs both numbers are multiples of 13; 120 is not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q173",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "19 : 68",
+          "B": "17 : 60",
+          "C": "13 : 90",
+          "D": "23 : 84"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q173",
+      "key_basis": "derived",
+      "rule": "b = 4a − 8; 13 → 44, not 90.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q174",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "2347 : 1113",
+          "B": "3527 : 2293",
+          "C": "5237 : 4003",
+          "D": "4327 : 2003"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q174",
+      "key_basis": "derived",
+      "rule": "a − b = 1234; 4327 − 2003 = 2324.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q176",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "406321 : 493",
+          "B": "324335 : 577",
+          "C": "253471 : 778",
+          "D": "111617 : 278"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q176",
+      "key_basis": "derived",
+      "rule": "Both numbers have the same digit sum; 324335 sums to 20, 577 to 19.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q177",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "85245 : 24",
+          "B": "41263 : 18",
+          "C": "26584 : 25",
+          "D": "77052 : 21"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q177",
+      "key_basis": "derived",
+      "rule": "b is the digit sum of a; 4 + 1 + 2 + 6 + 3 = 16, not 18.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q179",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "7359",
+          "B": "1593",
+          "C": "9175",
+          "D": "3781"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q179",
+      "key_basis": "derived",
+      "rule": "The other numbers use only odd digits; 3781 has an 8.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q180",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four options are given, out of which three are alike in some way and one is different. Select the odd.",
+        "options": {
+          "A": "382",
+          "B": "326",
+          "C": "914",
+          "D": "263"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q180",
+      "key_basis": "derived",
+      "rule": "The digits of the others multiply to 36; 3 × 8 × 2 = 48.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q181",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the following question select the one which is different from the other three responses.",
+        "options": {
+          "A": "(36, 90)",
+          "B": "(46, 28)",
+          "C": "(72, 54)",
+          "D": "(58, 78)"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q181",
+      "key_basis": "derived",
+      "rule": "Both numbers in the other pairs have the same digit sum; 58 sums to 13, 78 to 15.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q182",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four numbers are given out of which the three number bear a certain common relationship. Choose the number which is different from others.",
+        "options": {
+          "A": "187",
+          "B": "437",
+          "C": "221",
+          "D": "323"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p6 q182",
+      "key_basis": "derived",
+      "rule": "The others are products of consecutive primes (19 × 23, 13 × 17, 17 × 19); 187 = 11 × 17 skips 13.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q183",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four numbers are given out of which the three numbers bear a certain common relationship. Choose the number which is different from others.",
+        "options": {
+          "A": "112",
+          "B": "208",
+          "C": "176",
+          "D": "274"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q183",
+      "key_basis": "derived",
+      "rule": "The others are multiples of 16; 274 is not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q184",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four pairs of numbers are given out of which the numbers in three pairs bear a certain common relationship. Choose the pair in which the numbers are differently related.",
+        "options": {
+          "A": "42 - 105",
+          "B": "53 - 132.5",
+          "C": "71 - 213",
+          "D": "83 - 207.5"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q184",
+      "key_basis": "derived",
+      "rule": "b = 2.5a; 71 → 177.5, not 213.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q186",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "These of the given four number pairs are simillar in a certain manner while one is different. Chose the odd one out.",
+        "options": {
+          "A": "26 : 126",
+          "B": "63 : 125",
+          "C": "124 : 344",
+          "D": "7 : 65"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q186",
+      "key_basis": "derived",
+      "rule": "a = n³ − 1 and b = (n + 2)³ + 1 (3 → 26 : 126, 5 → 124 : 344, 2 → 7 : 65); 63 = 4³ − 1 gives 217, not 125.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q187",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "LMWU",
+          "B": "PQZY",
+          "C": "JKUS",
+          "D": "DEOM"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q187",
+      "key_basis": "derived",
+      "rule": "The others step +1, +10, −2; PQZY steps +1, +9, −1.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q188",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "KNQTW",
+          "B": "PSVYB",
+          "C": "CGILN",
+          "D": "DGJMP"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q188",
+      "key_basis": "derived",
+      "rule": "The others step +3 throughout (round the alphabet); CGILN does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q189",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.\nA, D, I, P, R",
+        "options": {
+          "A": "P",
+          "B": "I",
+          "C": "D",
+          "D": "R"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q189",
+      "key_basis": "derived",
+      "rule": "A, D, I and P are the 1st, 4th, 9th and 16th letters, squares; R is the 18th.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q190",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "HFDZX",
+          "B": "CAYWU",
+          "C": "OMKIG",
+          "D": "TRPNL"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q190",
+      "key_basis": "derived",
+      "rule": "The others step back 2 throughout; HFDZX steps back 4 at D → Z.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q192",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "DEF",
+          "B": "HIK",
+          "C": "CDE",
+          "D": "EFG"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q192",
+      "key_basis": "derived",
+      "rule": "The other three step through the alphabet by the same gaps; this one does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q193",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "WXAB",
+          "B": "BCFG",
+          "C": "EGFC",
+          "D": "NORS"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q193",
+      "key_basis": "derived",
+      "rule": "The others step +1, +3, +1; EGFC does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q194",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "KM",
+          "B": "PR",
+          "C": "TV",
+          "D": "EH"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q194",
+      "key_basis": "derived",
+      "rule": "The others step +2; EH steps +3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q195",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "RQP",
+          "B": "LKJ",
+          "C": "HGF",
+          "D": "ECB"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q195",
+      "key_basis": "derived",
+      "rule": "The others step −1, −1; ECB steps −2, −1.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q196",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "AD",
+          "B": "VY",
+          "C": "MQ",
+          "D": "IL"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q196",
+      "key_basis": "derived",
+      "rule": "The others step +3; MQ steps +4.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q197",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "CY",
+          "B": "NJ",
+          "C": "RN",
+          "D": "SN"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q197",
+      "key_basis": "derived",
+      "rule": "The others step 22 forward (4 back); SN steps 5 back.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q198",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "BKEM",
+          "B": "RUYD",
+          "C": "LOSX",
+          "D": "CFJO"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q198",
+      "key_basis": "derived",
+      "rule": "The others step +3, +4, +5; BKEM does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q199",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "UFK",
+          "B": "KQU",
+          "C": "DWB",
+          "D": "TGL"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q199",
+      "key_basis": "derived",
+      "rule": "In the others the first two letters are opposites (U+F, D+W, T+G = 27); K+Q = 28.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q200",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "DWBZ",
+          "B": "EVCS",
+          "C": "HSFV",
+          "D": "FUDX"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q200",
+      "key_basis": "derived",
+      "rule": "The last two letters add to 28 (B+Z, F+V, D+X); C+S = 22.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q201",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "LOQ",
+          "B": "FIK",
+          "C": "BDG",
+          "D": "SVZ"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q201",
+      "key_basis": "derived",
+      "rule": "The first and last letters are 5 apart (L–Q, F–K, B–G); S–Z are 7 apart.",
+      "confidence": "medium",
+      "note": "The inner steps (+3 +2, +3 +2, +2 +3) also set C apart from A and B; read as the end-to-end span. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch02-q202",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "LTPR",
+          "B": "SBWY",
+          "C": "FNJL",
+          "D": "VDZB"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q202",
+      "key_basis": "derived",
+      "rule": "The others step +8, +22, +2 forward; SBWY steps +9, +21, +2.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q203",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "XCTF",
+          "B": "VERH",
+          "C": "ZAVD",
+          "D": "WDSF"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q203",
+      "key_basis": "derived",
+      "rule": "The last two letters add to 26 (T+F, R+H, V+D); S+F = 25.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q204",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "VXZ",
+          "B": "CEH",
+          "C": "PRU",
+          "D": "JLO"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q204",
+      "key_basis": "derived",
+      "rule": "The others step +2, +3; VXZ steps +2, +2.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q205",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "HKE",
+          "B": "TWQ",
+          "C": "DIB",
+          "D": "MPJ"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q205",
+      "key_basis": "derived",
+      "rule": "The others step +3, then 6 back; DIB does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q207",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "JQKP",
+          "B": "MONM",
+          "C": "PKQJ",
+          "D": "FUGT"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q207",
+      "key_basis": "derived",
+      "rule": "In the others letters 1–2 and 3–4 are opposite pairs (J+Q, K+P); M+O = 28.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q208",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "PSQR",
+          "B": "MONP",
+          "C": "JLKM",
+          "D": "FHGI"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q208",
+      "key_basis": "derived",
+      "rule": "The others step +2, −1, +2; PSQR steps +3, −2, +1.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q209",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "BFJNR",
+          "B": "YBFKT",
+          "C": "VZDHL",
+          "D": "DHLPT"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q209",
+      "key_basis": "derived",
+      "rule": "The others step +4 throughout; YBFKT steps +3 at Y → B.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q210",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "KMQWF",
+          "B": "DFJPX",
+          "C": "HJNTB",
+          "D": "BDHNV"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q210",
+      "key_basis": "derived",
+      "rule": "The others step +2, +4, +6, +8; KMQWF ends +9.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q211",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "BKYP",
+          "B": "GDTW",
+          "C": "SXHD",
+          "D": "XJCQ"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q211",
+      "key_basis": "derived",
+      "rule": "In the others letters 1–3 and 2–4 are opposite pairs (B+Y, K+P); X+D = 28.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q212",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "DJOTY",
+          "B": "CHMRW",
+          "C": "DINSX",
+          "D": "BGLQV"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q212",
+      "key_basis": "derived",
+      "rule": "The others step +5 throughout; DJOTY starts +6.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q214",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "FHJL",
+          "B": "RTVX",
+          "C": "BDFH",
+          "D": "NOQT"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q214",
+      "key_basis": "derived",
+      "rule": "The others step +2 throughout; NOQT steps +1, +2, +3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q215",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "DEGJ",
+          "B": "LMOR",
+          "C": "RSUX",
+          "D": "FGJM"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q215",
+      "key_basis": "derived",
+      "rule": "The others step +1, +2, +3; FGJM steps +1, +3, +3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q216",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "CDF",
+          "B": "IJL",
+          "C": "MNQ",
+          "D": "STV"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q216",
+      "key_basis": "derived",
+      "rule": "The others step +1, +2; MNQ steps +1, +3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q217",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "JIH",
+          "B": "RQP",
+          "C": "WVU",
+          "D": "ZXY"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q217",
+      "key_basis": "derived",
+      "rule": "The others step −1, −1; ZXY does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q218",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "RQP",
+          "B": "LKJ",
+          "C": "GFD",
+          "D": "DCB"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q218",
+      "key_basis": "derived",
+      "rule": "The others step −1, −1; GFD steps −1, −2.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q219",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "DG",
+          "B": "LP",
+          "C": "TW",
+          "D": "WZ"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q219",
+      "key_basis": "derived",
+      "rule": "The others step +3; LP steps +4.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q220",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "DG",
+          "B": "PS",
+          "C": "VY",
+          "D": "NR"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q220",
+      "key_basis": "derived",
+      "rule": "The others step +3; NR steps +4.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q221",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "OMK",
+          "B": "RPN",
+          "C": "USP",
+          "D": "XVT"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q221",
+      "key_basis": "derived",
+      "rule": "The others step −2, −2; USP steps −2, −3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q222",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "JLN",
+          "B": "GIK",
+          "C": "NPR",
+          "D": "TVY"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q222",
+      "key_basis": "derived",
+      "rule": "The others step +2, +2; TVY steps +2, +3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q223",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "GJHI",
+          "B": "MPNO",
+          "C": "RUST",
+          "D": "UVXW"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q223",
+      "key_basis": "derived",
+      "rule": "The others step +3, −2, +1; UVXW does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q224",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "GJM",
+          "B": "CFI",
+          "C": "SVY",
+          "D": "PSW"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q224",
+      "key_basis": "derived",
+      "rule": "The others step +3, +3; PSW steps +3, +4.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q225",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "PNK",
+          "B": "XUR",
+          "C": "HEB",
+          "D": "IFC"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q225",
+      "key_basis": "derived",
+      "rule": "The others step −3, −3; PNK steps −2, −3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q226",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "P",
+          "B": "I",
+          "C": "B",
+          "D": "N"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q226",
+      "key_basis": "derived",
+      "rule": "P, B and N are consonants; I is a vowel.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q227",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "XECV",
+          "B": "LSOH",
+          "C": "PWKD",
+          "D": "CKXQ"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q227",
+      "key_basis": "derived",
+      "rule": "In the others letters 1–3 and 2–4 are opposite pairs (X+C, E+V); K+Q = 28.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q228",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "QUYC",
+          "B": "WADH",
+          "C": "DHLP",
+          "D": "LPTX"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q228",
+      "key_basis": "derived",
+      "rule": "The others step +4 throughout; WADH steps +4, +3, +4.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q229",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "LOSXD",
+          "B": "JMQVB",
+          "C": "DGKPV",
+          "D": "TWAFK"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q229",
+      "key_basis": "derived",
+      "rule": "The others step +3, +4, +5, +6; TWAFK ends +5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q230",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "TZA",
+          "B": "HNM",
+          "C": "LRI",
+          "D": "CHR"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q230",
+      "key_basis": "derived",
+      "rule": "The first two letters are 6 apart (T–Z, H–N, L–R); C–H are 5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q231",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "JPMS",
+          "B": "AZDJ",
+          "C": "EVHN",
+          "D": "CXFL"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q231",
+      "key_basis": "derived",
+      "rule": "The first two letters are opposites (A+Z, E+V, C+X); J+P = 26.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q232",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "DWH",
+          "B": "TGX",
+          "C": "QJU",
+          "D": "OKS"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q232",
+      "key_basis": "derived",
+      "rule": "The first two letters are opposites (D+W, T+G, Q+J); O+K = 26.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q233",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "LIF",
+          "B": "DAX",
+          "C": "HEB",
+          "D": "BYT"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q233",
+      "key_basis": "derived",
+      "rule": "The others step 3 back, 3 back; BYT steps 3, then 5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q234",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "OBGWS",
+          "B": "FYSNJ",
+          "C": "LEYTP",
+          "D": "ZSMHD"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q234",
+      "key_basis": "derived",
+      "rule": "The others step back 7, 6, 5, 4; OBGWS does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q236",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "KHE",
+          "B": "ZWT",
+          "C": "ROL",
+          "D": "GDB"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q236",
+      "key_basis": "derived",
+      "rule": "The others step −3, −3; GDB steps −3, −2.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q237",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "TTVZ",
+          "B": "JJLP",
+          "C": "RRTX",
+          "D": "DDFK"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q237",
+      "key_basis": "derived",
+      "rule": "The others step +0, +2, +4; DDFK ends +5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q238",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "PSV",
+          "B": "RTW",
+          "C": "ADG",
+          "D": "ILO"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q238",
+      "key_basis": "derived",
+      "rule": "The others step +3, +3; RTW steps +2, +3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q241",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "QSVY",
+          "B": "ABDG",
+          "C": "LMOR",
+          "D": "VWYB"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q241",
+      "key_basis": "derived",
+      "rule": "The others step +1, +2, +3; QSVY steps +2, +3, +3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q242",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "BDC",
+          "B": "VXW",
+          "C": "OQP",
+          "D": "EFG"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q242",
+      "key_basis": "derived",
+      "rule": "The others step +2, −1; EFG steps +1, +1.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q243",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "HDZ",
+          "B": "EAW",
+          "C": "WSM",
+          "D": "YUQ"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q243",
+      "key_basis": "derived",
+      "rule": "The others step 4 back, 4 back (round the alphabet); WSM steps 4, then 6.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q244",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "URO",
+          "B": "SPL",
+          "C": "AXU",
+          "D": "NKH"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q244",
+      "key_basis": "derived",
+      "rule": "The others step 3 back, 3 back (round the alphabet); SPL steps 3, then 4.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q245",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "HS",
+          "B": "MN",
+          "C": "JP",
+          "D": "CX"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q245",
+      "key_basis": "derived",
+      "rule": "The pairs are opposites (H+S, M+N, C+X); J+P = 26.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q246",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "FJN",
+          "B": "NRV",
+          "C": "IMQ",
+          "D": "OSX"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p7 q246",
+      "key_basis": "derived",
+      "rule": "The others step +4, +4; OSX steps +4, +5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q247",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "KLIO",
+          "B": "RSPT",
+          "C": "HIFJ",
+          "D": "VWTX"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q247",
+      "key_basis": "derived",
+      "rule": "The others step +1, −3, +4; KLIO ends +6.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q250",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "DHPFL",
+          "B": "ABDGN",
+          "C": "BDHPF",
+          "D": "CFLXV"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q250",
+      "key_basis": "derived",
+      "rule": "In the others each step doubles the last, round the alphabet (2, 4, 8, 16); ABDGN steps 1, 2, 3, 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q252",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "OMANI",
+          "B": "AMANA",
+          "C": "EVOLV",
+          "D": "UGALI"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q252",
+      "key_basis": "derived",
+      "rule": "The others have three vowels; EVOLV has two.",
+      "confidence": "medium",
+      "note": "The only plain property found. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch02-q253",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "FHN",
+          "B": "MQS",
+          "C": "DLP",
+          "D": "JPZ"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q253",
+      "key_basis": "derived",
+      "rule": "In the others the first two letters add to the third (F+H = N, D+L = P, J+P = Z); M+Q is not S.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q254",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "NOTA",
+          "B": "NATO",
+          "C": "NASA",
+          "D": "NAM"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q254",
+      "key_basis": "derived",
+      "rule": "NATO, NASA and NAM are organisations; NOTA (\"none of the above\") is a ballot option.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q255",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "VYS",
+          "B": "PSM",
+          "C": "ROL",
+          "D": "RUO"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q255",
+      "key_basis": "derived",
+      "rule": "The others step +3, then 6 back; ROL steps 3 back.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q256",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "JHFA",
+          "B": "NLIE",
+          "C": "XVSO",
+          "D": "MKHD"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q256",
+      "key_basis": "derived",
+      "rule": "The others step −2, −3, −4; JHFA does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q257",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "GKOQ",
+          "B": "QUXZ",
+          "C": "KOSU",
+          "D": "AEIK"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q257",
+      "key_basis": "derived",
+      "rule": "The others step +4, +4, +2; QUXZ does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q258",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "JPN",
+          "B": "MSQ",
+          "C": "CJI",
+          "D": "QWU"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q258",
+      "key_basis": "derived",
+      "rule": "The others step +6, −2; CJI steps +7, −1.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q259",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "FIMP",
+          "B": "BEIL",
+          "C": "LOSV",
+          "D": "JMPT"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q259",
+      "key_basis": "derived",
+      "rule": "The others step +3, +4, +3; JMPT steps +3, +3, +4.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q260",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "MSN",
+          "B": "QUK",
+          "C": "OUL",
+          "D": "PVK"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q260",
+      "key_basis": "derived",
+      "rule": "The first and last letters are opposites (M+N, O+L, P+K); Q+K = 28.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q261",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "JQT",
+          "B": "PKN",
+          "C": "EUY",
+          "D": "DWZ"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q261",
+      "key_basis": "derived",
+      "rule": "The first two letters are opposites (J+Q, P+K, D+W); E+U = 26.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q262",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "JLPV",
+          "B": "FHLR",
+          "C": "HJNU",
+          "D": "CEIO"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q262",
+      "key_basis": "derived",
+      "rule": "The others step +2, +4, +6; HJNU ends +7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q263",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "DHN",
+          "B": "EIO",
+          "C": "YCI",
+          "D": "PTY"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q263",
+      "key_basis": "derived",
+      "rule": "The others step +4, +6; PTY steps +4, +5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q264",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "NKHE",
+          "B": "MJGD",
+          "C": "WTQN",
+          "D": "XUSO"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q264",
+      "key_basis": "derived",
+      "rule": "The others step −3 throughout; XUSO does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q265",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "QTWZC",
+          "B": "HKNQT",
+          "C": "BEHKN",
+          "D": "RUXAE"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q265",
+      "key_basis": "derived",
+      "rule": "The others step +3 throughout; RUXAE ends +4.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q266",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "KFBY",
+          "B": "TOKH",
+          "C": "ZUQO",
+          "D": "BWSP"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q266",
+      "key_basis": "derived",
+      "rule": "The others step back 5, 4, 3; ZUQO steps back 5, 4, 2.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q267",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "OMSVY",
+          "B": "ORUXA",
+          "C": "CFILO",
+          "D": "UXADG"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q267",
+      "key_basis": "derived",
+      "rule": "The others step +3 throughout; OMSVY does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q268",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "UFAL",
+          "B": "DWJC",
+          "C": "BYHE",
+          "D": "HSNZ"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q268",
+      "key_basis": "derived",
+      "rule": "In each the first two letters are opposites, and in the others the last two add to 13 (A+L, J+C, H+E); N+Z = 40.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q269",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "MQU",
+          "B": "XBG",
+          "C": "HLP",
+          "D": "AEI"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q269",
+      "key_basis": "derived",
+      "rule": "The others step +4, +4; XBG steps +4, +5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q270",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "EZAMI",
+          "B": "ETWAH",
+          "C": "REAYBL",
+          "D": "SEHCWA"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q270",
+      "key_basis": "derived",
+      "rule": "Unscrambled, EZAMI is MAIZE, ETWAH is WHEAT and REAYBL is BARLEY, all grains; SEHCWA is CASHEW, a nut.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q271",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "OQRT",
+          "B": "IKMO",
+          "C": "CEGI",
+          "D": "TVXZ"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q271",
+      "key_basis": "derived",
+      "rule": "The others step +2 throughout; OQRT steps +2, +1, +2.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q272",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "BEHK",
+          "B": "MPSV",
+          "C": "RUXA",
+          "D": "GJMQ"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q272",
+      "key_basis": "derived",
+      "rule": "The others step +3 throughout; GJMQ ends +4.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q273",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "dEeFF",
+          "B": "mnNoOO",
+          "C": "pqQrRR",
+          "D": "uvVwWW"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q273",
+      "key_basis": "derived",
+      "rule": "The others are six characters in one pattern (mnNoOO); dEeFF has five.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q274",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "PIOUS",
+          "B": "AEONS",
+          "C": "QUAIL",
+          "D": "PENAL"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q274",
+      "key_basis": "derived",
+      "rule": "The others have three vowels; PENAL has two.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q275",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "NMKL",
+          "B": "LKIJ",
+          "C": "YXVW",
+          "D": "FEDC"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q275",
+      "key_basis": "derived",
+      "rule": "The others step −1, −2, +1; FEDC does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q277",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "LMOQ",
+          "B": "DFHJ",
+          "C": "TVXZ",
+          "D": "GIKM"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q277",
+      "key_basis": "derived",
+      "rule": "The others step +2 throughout; LMOQ starts +1.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q278",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "EGIKM",
+          "B": "NPRTV",
+          "C": "MOQSU",
+          "D": "IKLPS"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q278",
+      "key_basis": "derived",
+      "rule": "The others step +2 throughout; IKLPS does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q279",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "BDGK",
+          "B": "XZCG",
+          "C": "TVYB",
+          "D": "NPSW"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q279",
+      "key_basis": "derived",
+      "rule": "The others step +2, +3, +4; TVYB ends +3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q280",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "RS",
+          "B": "VW",
+          "C": "CD",
+          "D": "TV"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q280",
+      "key_basis": "derived",
+      "rule": "The others step +1; TV steps +2.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q281",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "ADG",
+          "B": "CFI",
+          "C": "JMQ",
+          "D": "SVY"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q281",
+      "key_basis": "derived",
+      "rule": "The others step +3, +3; JMQ steps +3, +4.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q282",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "DWEV",
+          "B": "HSIR",
+          "C": "KPLO",
+          "D": "PKQI"
+        },
+        "key": "D",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q282",
+      "key_basis": "derived",
+      "rule": "In the others letters 1–2 and 3–4 are opposite pairs (D+W, E+V); Q+I = 26.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q283",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "NQTW",
+          "B": "PSVZ",
+          "C": "WZCF",
+          "D": "BEHK"
+        },
+        "key": "B",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q283",
+      "key_basis": "derived",
+      "rule": "The others step +3 throughout; PSVZ ends +4.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q284",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "XTCG",
+          "B": "NJMQ",
+          "C": "EAUZ",
+          "D": "SOHL"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q284",
+      "key_basis": "derived",
+      "rule": "In the others letters 1–3 and 2–4 are opposite pairs (X+C, T+G); E+U = 26.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q286",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "AEI",
+          "B": "IMQ",
+          "C": "EIL",
+          "D": "MQU"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q286",
+      "key_basis": "derived",
+      "rule": "The others step +4, +4; EIL steps +4, +3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q287",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "KMPT",
+          "B": "NPSW",
+          "C": "DFOU",
+          "D": "DFIM"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q287",
+      "key_basis": "derived",
+      "rule": "The others step +2, +3, +4; DFOU does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q288",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "INU",
+          "B": "MSY",
+          "C": "AGM",
+          "D": "LRX"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q288",
+      "key_basis": "derived",
+      "rule": "The others step +6, +6; INU steps +5, +7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q289",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "6903 : 2582",
+          "B": "6286 : 1965",
+          "C": "6571 : 2448",
+          "D": "8247 : 3926"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q289",
+      "key_basis": "derived",
+      "rule": "a − b = 4321; 6571 − 2448 = 4123.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch02-q290",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "FJQL",
+          "B": "EMNK",
+          "C": "IDWG",
+          "D": "BTGN"
+        },
+        "key": "A",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q290",
+      "key_basis": "derived",
+      "rule": "The letter positions of the others add to 43; FJQL adds to 45.",
+      "confidence": "medium",
+      "note": "The only plain property found. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch02-q292",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the one which is different from the rest.",
+        "options": {
+          "A": "VINE",
+          "B": "LAIM",
+          "C": "SWJK",
+          "D": "NOHA"
+        },
+        "key": "C",
+        "reasoningType": "classification"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch2 p8 q292",
+      "key_basis": "derived",
+      "rule": "The others have two vowels; SWJK has none.",
+      "confidence": "medium",
+      "note": "The only plain property found. Check against the book key."
     },
     {
       "id": "oir-agx-ch03-q001",

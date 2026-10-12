@@ -80,6 +80,13 @@ function runCheck(check: KeyCheck, q: SourceQuestion, k: KeyedEntry): void {
       expect(fits, `options holding exactly ${check.codes.join(check.sep || ',')}`).toEqual([k.key]);
       return;
     }
+    case 'odd': {
+      const values = OPTION_LABELS.map((l) => JSON.stringify(check.prop(q.options[l])));
+      const others = OPTION_LABELS.filter((l) => l !== k.key).map((l) => values[OPTION_LABELS.indexOf(l)]);
+      expect(new Set(others).size, 'the other three share the property').toBe(1);
+      expect(values[OPTION_LABELS.indexOf(k.key)], 'the keyed option differs').not.toBe(others[0]);
+      return;
+    }
     case 'reasoned':
       return;
     default:

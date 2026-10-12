@@ -17,6 +17,7 @@ export interface OirChapter {
 
 export const OIR_CHAPTERS: readonly OirChapter[] = [
   { slug: 'analogy', title: 'Analogy', reasoningType: 'analogy', summary: 'Words, numbers and letters in pairs' },
+  { slug: 'odd-one-out', title: 'Odd One Out', reasoningType: 'classification', summary: 'Words, numbers and letters that do not belong' },
   { slug: 'coding', title: 'Coding-Decoding', reasoningType: 'coding', summary: 'Crack the code from its examples' },
   { slug: 'word-formation', title: 'Word Formation', reasoningType: 'word_formation', summary: 'Words hidden in a longer word' },
   { slug: 'word-order', title: 'Word Order', reasoningType: 'word_order', summary: 'Dictionary order and logical sequence' },
