@@ -100,4 +100,14 @@ describe('chapter practice', () => {
     await act(async () => fireEvent.keyDown(screen.getByLabelText('search'), { key: 'a' }));
     expect(answer).not.toHaveBeenCalled();
   });
+
+  it('stacks options one per row on a phone when a word is too long for half the width, and keeps short ones in a 2×2 grid', () => {
+    const long: PracticeItem = { id: 'w1', stem: 'NATIONALISATION', options: { A: 'NOTATION', B: 'SALINATION', C: 'INSTALLATION', D: 'SANITATION' } };
+    const { rerender } = render(<PracticeRunner items={[long]} answer={fakeAnswer()} doneHref="/practise/oir" />);
+    expect(screen.getByRole('group', { name: 'Options' }).className).toMatch(/(^|\s)grid-cols-1(\s|$)/);
+    expect(screen.getByText('NATIONALISATION').className).toMatch(/text-xl/);
+    rerender(<PracticeRunner key="short" items={ITEMS} answer={fakeAnswer()} doneHref="/practise/oir" />);
+    expect(screen.getByRole('group', { name: 'Options' }).className).toMatch(/(^|\s)grid-cols-2(\s|$)/);
+    expect(screen.getByText('2, 4, 6, ?').className).toMatch(/text-2xl/);
+  });
 });
