@@ -219,7 +219,12 @@ ch5 p17-21 · ch6 p22-23 · ch7 p24-28 · ch8 p29-34 · ch9 p35-37 · ch10 p38-4
   as `codeSet`). Held: Q7 (example lengths differ), Q27, Q69 (no rule found),
   Q98 (the right code is not an option), Q121 (examples disagree), Q124 (one
   example fixes no rule). Medium: Q23 (one example misprinted), Q58, Q140.
-- **Next:** Chapter 5 (Logical Sequence, p17-21), then 7, 10, 1, 2.
+- ~~Chapter 5, Logical Sequence of Words~~ — done 2026-10-12: 83 of 88 seeded
+  as "Word Order". Dictionary questions sorted in code; 19 logical-order
+  questions reasoned. Held: Q1-2 (five options, owner's call), Q27 (lake or
+  river), Q59 (no list), Q74 (the middle name is not an option). Medium: Q14
+  (a cycle has no first step).
+- **Next:** Chapter 7 (Blood Relation, p24-28), then 10, 1, 2.
 
 ### Backfill ledger: Chapter 11's test onto the shared chapter suite
 `oir-agrawal-series.test.ts` predates `oir-chapter-suite.ts` and carries its own

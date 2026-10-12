@@ -23,6 +23,16 @@
     },
     {
       "source": "agrawal-examcart-oir",
+      "chapter": 5,
+      "title": "Logical Sequence of Words",
+      "pages": [
+        17,
+        21
+      ],
+      "file": "content/oir/agrawal-examcart/ch05-logical-sequence.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
       "chapter": 6,
       "title": "Sequence Test",
       "pages": [
@@ -62,11 +72,11 @@
       "file": "content/oir/agrawal-examcart/ch11-series.source.json"
     }
   ],
-  "itemCount": 500,
-  "heldCount": 23,
+  "itemCount": 583,
+  "heldCount": 28,
   "confidence": {
-    "high": 481,
-    "medium": 19
+    "high": 563,
+    "medium": 20
   },
   "held": [
     {
@@ -100,6 +110,35 @@
       "source": "agrawal-examcart-oir",
       "source_ref": "ch3 p13 q124",
       "reason": "One example, 117 for TRACTOR, does not fix a rule: its letters sum to 95 and their reverse positions to 94, and no rule built on either leads to an option for MEDICAL."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q1",
+      "reason": "The print gives five options (A-E); the bank holds four. The dictionary order Recall, Recant, Receive, Recent, Recess puts Receive (B) third.",
+      "lean": "B"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q2",
+      "reason": "The print gives five options (A-E); the bank holds four. The dictionary order Slobber, Slouch, Slough, Sloven, Slow puts Slough (C) third.",
+      "lean": "C"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q27",
+      "reason": "Ocean is largest and Puddle smallest, but whether a lake or a river is bigger has no fixed answer: A (Ocean, Lake, River) and D (Ocean, River, Lake) differ only there.",
+      "lean": "A"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q59",
+      "reason": "The question asks for \"a logical and meaningful order\" but gives single words as options and no list to order; it cannot be answered as printed."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q74",
+      "reason": "Dictionary order: PAJRATJMAM, RAAJRATHNAM, RAJRATANAM, RAJRATHNAM, RAJRATNAM. The middle name is RAJRATANAM (4), which is not an option.",
+      "lean": "B"
     },
     {
       "source": "agrawal-examcart-oir",
@@ -4450,6 +4489,1833 @@
       "source_ref": "ch4 p16 q47",
       "key_basis": "derived",
       "rule": "NEGATIVE needs a V, which CATEGORIZATION does not have. It also needs two Es, and CATEGORIZATION has one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the given words in the sequence in which they occur in the dictionary.\n1. Decant\n2. Decamp\n3. Decade\n4. Decagon\n5. Decay",
+        "options": {
+          "A": "3, 4, 2, 1, 5",
+          "B": "3, 4, 2, 5, 1",
+          "C": "4, 3, 2, 1, 5",
+          "D": "4, 3, 2, 5, 1"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q3",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Decade, Decagon, Decamp, Decant, Decay.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the given words in the sequence in which they occur in the dictionary.\n1. Bandit\n2. Banana\n3. Bangle\n4. Band\n5. Bank",
+        "options": {
+          "A": "2, 4, 1, 5, 3",
+          "B": "2, 4, 1, 3, 5",
+          "C": "5, 4, 3, 2, 1",
+          "D": "5, 4, 3, 1, 2"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q4",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Banana, Band, Bandit, Bangle, Bank.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. TOPOLOGY\n2. TOPIC\n3. TOPAZ\n4. TOUR\n5. TORTILLA\n6. TORN",
+        "options": {
+          "A": "1, 2, 3, 6, 5, 4",
+          "B": "1, 3, 2, 6, 5, 4",
+          "C": "2, 3, 1, 6, 5, 4",
+          "D": "3, 2, 1, 6, 5, 4"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q5",
+      "key_basis": "derived",
+      "rule": "Dictionary order: TOPAZ, TOPIC, TOPOLOGY, TORN, TORTILLA, TOUR.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which option represents the correct order of the given words as they would appear in the English dictionary ?\n1. power\n2. pour\n3. powder\n4. pointed\n5. polite",
+        "options": {
+          "A": "4, 2, 5, 3, 1",
+          "B": "4, 2, 3, 1, 5",
+          "C": "4, 3, 5, 2, 1",
+          "D": "4, 5, 2, 3, 1"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q6",
+      "key_basis": "derived",
+      "rule": "Dictionary order: pointed, polite, pour, powder, power.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q007",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option from the following options, which shows that correct order of given words, In which order these words appear in English Dictionary.\nI. Marmatites\nII. Martinec\nIII. Marijuana\nIV. Marehan\nV. Marienbad",
+        "options": {
+          "A": "IV, V, III, I, II",
+          "B": "IV, V, II, I, III",
+          "C": "IV, V, III, II, I",
+          "D": "IV, V, I, III, II"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q7",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Marehan, Marienbad, Marijuana, Marmatites, Martinec.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option, which shows that correct order of given words, In which they appear in an English dictionary.\nI. Possibility\nII. Possession\nIII. Posthumous\nIV. Posterity\nV. Possessive",
+        "options": {
+          "A": "II, V, I, III, IV",
+          "B": "III, V, I, IV, II",
+          "C": "II, V, III, IV, I",
+          "D": "II, V, I, IV, III"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q8",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Possession, Possessive, Possibility, Posterity, Posthumous.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option in which the order of the following words in the English dictionary is given.\nI. Subsidiary\nII. Subscribe\nIII. Substantiate\nIV. Substandard\nV. Subsequent",
+        "options": {
+          "A": "II, V, I, III, IV",
+          "B": "III, V, I, IV, II",
+          "C": "II, V, III, IV, I",
+          "D": "II, V, I, IV, III"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q9",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Subscribe, Subsequent, Subsidiary, Substandard, Substantiate.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that shows the order in which the following words appear in the English dictionary.\n1. Dreamlike\n2. Dreamer\n3. Dreamy\n4. Dreamland\n5. Dreamtime",
+        "options": {
+          "A": "4 − 1 − 2 − 3 − 5",
+          "B": "1 − 4 − 2 − 5 − 3",
+          "C": "2 − 4 − 1 − 5 − 3",
+          "D": "2 − 4 − 1 − 3 − 5"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q10",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Dreamer, Dreamland, Dreamlike, Dreamtime, Dreamy.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Write the following words according to the order in which they appear in the dictionary :\n1. Noble\n2. Notable\n3. Nomadic\n4. Norway\n5. Nostalgia",
+        "options": {
+          "A": "13452",
+          "B": "13425",
+          "C": "13542",
+          "D": "13524"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q11",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Noble, Nomadic, Norway, Nostalgia, Notable.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Write the following words according to the order in which they appear in the dictionary-\n(1) Expense\n(2) Expensive\n(3) Expand\n(4) Expanded\n(5) Extra",
+        "options": {
+          "A": "43125",
+          "B": "34125",
+          "C": "43215",
+          "D": "34215"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q12",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Expand, Expanded, Expense, Expensive, Extra.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Neural\n2. Newspaper\n3. Neglect\n4. Newfound\n5. Neutron\n6. Nephew",
+        "options": {
+          "A": "3, 1, 6, 5, 4, 2",
+          "B": "3, 6, 5, 1, 4, 2",
+          "C": "3, 6, 1, 5, 4, 2",
+          "D": "3, 6, 1, 4, 5, 2"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q13",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Neglect, Nephew, Neural, Neutron, Newfound, Newspaper.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Rain\n2. Sea\n3. Evaporation\n4. Clouds",
+        "options": {
+          "A": "3, 4, 1, 2",
+          "B": "1, 2, 3, 4",
+          "C": "2, 3, 4, 1",
+          "D": "1, 2, 4, 3"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q14",
+      "key_basis": "derived",
+      "rule": "The water cycle from the sea: Sea, Evaporation, Clouds, Rain.",
+      "confidence": "medium",
+      "note": "A cycle has no first step: A (Evaporation, Clouds, Rain, Sea) is the same cycle started one step later. Read as starting from the sea. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch05-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Country\n2. City\n3. Town\n4. State\n5. District",
+        "options": {
+          "A": "3, 2, 4, 1, 5",
+          "B": "3, 2, 5, 4, 1",
+          "C": "3, 2, 4, 5, 1",
+          "D": "3, 5, 2, 4, 1"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q15",
+      "key_basis": "derived",
+      "rule": "Smallest to largest: Town, City, District, State, Country.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Drop\n2. Ocean\n3. Pond\n4. Puddle\n5. River",
+        "options": {
+          "A": "1, 4, 3, 5, 2",
+          "B": "1, 3, 4, 2, 5",
+          "C": "3, 1, 2, 4, 5",
+          "D": "5, 4, 3, 1, 2"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q16",
+      "key_basis": "derived",
+      "rule": "Smallest to largest: Drop, Puddle, Pond, River, Ocean.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Paragraph\n2. Letters\n3. Phrase\n4. Sentence\n5. Words",
+        "options": {
+          "A": "2, 3, 5, 1, 4",
+          "B": "2, 5, 3, 4, 1",
+          "C": "2, 5, 4, 3, 1",
+          "D": "2, 5, 1, 3, 4"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p17 q17",
+      "key_basis": "derived",
+      "rule": "Smallest to largest: Letters, Words, Phrase, Sentence, Paragraph.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Western Europe\n2. Germany\n3. Munich\n4. Europe\n5. Bavaria",
+        "options": {
+          "A": "4, 1, 3, 5, 2",
+          "B": "4, 1, 2, 5, 3",
+          "C": "4, 1, 2, 3, 5",
+          "D": "4, 1, 5, 3, 2"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q18",
+      "key_basis": "derived",
+      "rule": "Largest to smallest: Europe, Western Europe, Germany, Bavaria, Munich.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Grouping\n2. Grotesque\n3. Grovel\n4. Ground\n5. Groundless",
+        "options": {
+          "A": "1, 2, 3, 4, 5",
+          "B": "2, 4, 5, 1, 3",
+          "C": "4, 1, 5, 2, 3",
+          "D": "3, 5, 1, 4, 2"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q19",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Grotesque, Ground, Groundless, Grouping, Grovel.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Manufacturing\n2. Raw material\n3. Consumption\n4. Material processing\n5. Distribution",
+        "options": {
+          "A": "2, 4, 1, 5,3",
+          "B": "4, 2, 1, 5, 3",
+          "C": "2, 1, 4, 5, 3",
+          "D": "4, 5, 2, 1, 3"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q20",
+      "key_basis": "derived",
+      "rule": "Raw material, Material processing, Manufacturing, Distribution, Consumption.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the following countries according to world map from East to West.\n1. Canada\n2. Japan\n3. India\n4. Uzbekistan\n5. Germany\n6. Malaysia",
+        "options": {
+          "A": "1, 5, 4, 3, 2, 6",
+          "B": "2, 6, 3, 4, 5, 1",
+          "C": "1, 5, 4, 3, 6, 2",
+          "D": "2, 6, 4, 3, 1, 5"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q21",
+      "key_basis": "derived",
+      "rule": "By longitude, east to west: Japan (~138° E), Malaysia (~102° E), India (~79° E), Uzbekistan (~64° E), Germany (~10° E), Canada (~106° W).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Autorickshaw\n2. Car\n3. Train\n4. Bicycle\n5. Bus",
+        "options": {
+          "A": "1, 5, 2, 4, 3",
+          "B": "2, 4, 3, 1, 5",
+          "C": "3, 1, 2, 5, 4",
+          "D": "4, 1, 2, 5, 3"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q22",
+      "key_basis": "derived",
+      "rule": "Smallest to largest vehicle: Bicycle, Autorickshaw, Car, Bus, Train.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Building\n2. City\n3. State\n4. Country\n5. Apartment",
+        "options": {
+          "A": "5, 1, 2, 3, 4",
+          "B": "1, 2, 3, 5, 4",
+          "C": "5, 3, 2, 1, 4",
+          "D": "1, 3, 2, 4, 5"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q23",
+      "key_basis": "derived",
+      "rule": "Smallest to largest: Apartment, Building, City, State, Country.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Nail\n2. Elbow\n3. Finger\n4. Shoulder\n5. Wrist",
+        "options": {
+          "A": "1, 3, 5, 2, 4",
+          "B": "3, 1, 2, 5, 4",
+          "C": "1, 5, 3, 2, 4",
+          "D": "3, 5, 1, 2, 4"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q24",
+      "key_basis": "derived",
+      "rule": "Along the arm from the tip: Nail, Finger, Wrist, Elbow, Shoulder.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Toddler\n2. Adult\n3. Adolescent\n4. Foetus\n5. Baby",
+        "options": {
+          "A": "4, 1, 5, 3, 2",
+          "B": "4, 5, 1, 3, 2",
+          "C": "1, 5, 4, 3, 2",
+          "D": "1, 5, 3, 2, 4"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q25",
+      "key_basis": "derived",
+      "rule": "Stages of life: Foetus, Baby, Toddler, Adolescent, Adult.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Micro\n2. Hecto\n3. Nano\n4. Kilo\n5. Mili",
+        "options": {
+          "A": "3, 1, 2, 5, 4",
+          "B": "1, 3, 5, 2, 4",
+          "C": "3, 1, 5, 2, 4",
+          "D": "3, 1, 5, 4, 2"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q26",
+      "key_basis": "derived",
+      "rule": "Smallest to largest prefix: Nano (10⁻⁹), Micro (10⁻⁶), Milli (10⁻³), Hecto (10²), Kilo (10³).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Interview\n2. Application\n3. Selection\n4. Examination\n5. Appointment",
+        "options": {
+          "A": "2, 4, 1, 3, 5",
+          "B": "3, 4, 1, 5, 2",
+          "C": "4, 2, 3, 5, 1",
+          "D": "5, 1, 2, 3, 4"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q28",
+      "key_basis": "derived",
+      "rule": "Hiring in order: Application, Examination, Interview, Selection, Appointment.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q029",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that indicates the correct arrangement of the given words in a logical and meaningful order.\n1. Fox\n2. Lion\n3. Caterpillar\n4. Leaf\n5. Bird",
+        "options": {
+          "A": "4, 3, 5, 1, 2",
+          "B": "3, 4, 5, 1, 2",
+          "C": "1, 2, 5, 3, 4",
+          "D": "4, 3, 1, 2, 5"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q29",
+      "key_basis": "derived",
+      "rule": "The food chain: Leaf, Caterpillar, Bird, Fox, Lion.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Seed\n2. Tree\n3. Furniture\n4. Wood\n5. Plant",
+        "options": {
+          "A": "1, 5, 2, 4, 3",
+          "B": "1, 5, 2, 3, 4",
+          "C": "1, 5, 4, 2, 3",
+          "D": "1, 2, 5, 4, 3"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q30",
+      "key_basis": "derived",
+      "rule": "Seed, Plant, Tree, Wood, Furniture.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q031",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that indicates the correct arrangement of the given words in a logical and meaningful order.\n1. Wool\n2. Shops\n3. Garments\n4. Yarn\n5. Sheep",
+        "options": {
+          "A": "5, 1, 3, 4, 2",
+          "B": "1, 5, 4, 3, 2",
+          "C": "5, 1, 4, 2, 3",
+          "D": "5, 1, 4, 3, 2"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q31",
+      "key_basis": "derived",
+      "rule": "Sheep, Wool, Yarn, Garments, Shops.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option which shows the correct arrangement of the given words in a logical and meaningful order.\n1. Flowers\n2. Bees\n3. Seeds\n4. Nectar\n5. Honey",
+        "options": {
+          "A": "3, 1, 2, 4, 5",
+          "B": "3, 1, 4, 2, 5",
+          "C": "1, 3, 2, 4, 5",
+          "D": "1, 4, 2, 5, 3"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q32",
+      "key_basis": "derived",
+      "rule": "Seeds, Flowers, Nectar, Bees, Honey.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Block\n2. Province\n3. District\n4. Country\n5. Street\n6. Village",
+        "options": {
+          "A": "5, 1, 6, 3, 2, 4",
+          "B": "5, 6, 1, 2, 3, 4",
+          "C": "5, 6, 1, 3, 2, 4",
+          "D": "5, 6, 1, 3, 4, 2"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q33",
+      "key_basis": "derived",
+      "rule": "Smallest to largest: Street, Village, Block, District, Province, Country.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that indicates the correct arrangement of the given words in a logical and meaningful order.\n1. Rinse\n2. Iron\n3. Soak\n4. Dry\n5. Wash",
+        "options": {
+          "A": "5, 3, 1, 4, 2",
+          "B": "3, 5, 1, 4, 2",
+          "C": "3, 1, 5, 4, 2",
+          "D": "3, 5, 1, 2, 4"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p18 q34",
+      "key_basis": "derived",
+      "rule": "Washing clothes: Soak, Wash, Rinse, Dry, Iron.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the following words in a logical and meaningful order.\n1. Bacteria\n2. Butterfly\n3. Mosquito\n4. Vulture\n5. Sparrow",
+        "options": {
+          "A": "1, 3, 2, 4, 5",
+          "B": "1, 3, 2, 5, 4",
+          "C": "1, 2, 3, 5, 4",
+          "D": "1, 3, 5, 2, 4"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q35",
+      "key_basis": "derived",
+      "rule": "Smallest to largest: Bacteria, Mosquito, Butterfly, Sparrow, Vulture.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which option represents the correct order of the given words as they would appear in an English dictionary ?\n1. Anywhere\n2. Antipathy\n3. Anticipation\n4. Anyone\n5. Antonym",
+        "options": {
+          "A": "3, 2, 1, 4, 5",
+          "B": "3, 2, 4, 5, 1",
+          "C": "3, 2, 5, 4, 1",
+          "D": "2, 3, 5, 4, 1"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q36",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Anticipation, Antipathy, Antonym, Anyone, Anywhere.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following options represents the correct order of the given words as they would appear in the English dictionary?\n1. Hooter\n2. Hoodlum\n3. Hoover\n4. Hoodwink\n5. Hoop",
+        "options": {
+          "A": "4, 2, 5, 3, 1",
+          "B": "2, 4, 5, 1, 3",
+          "C": "5, 2, 4, 1, 3",
+          "D": "2, 5, 4, 3, 1"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q37",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Hoodlum, Hoodwink, Hoop, Hooter, Hoover.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which option represents the correct order of the given words as they would appear in an English dictionary ?\n1. Literatre\n2. Literature\n3. Literacy\n4. Literary\n5. Literal",
+        "options": {
+          "A": "5, 3, 4, 1, 2",
+          "B": "3, 5, 4, 1, 2",
+          "C": "3, 5, 1, 4, 2",
+          "D": "3, 5, 4, 2, 1"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q38",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Literacy, Literal, Literary, Literatre, Literature.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q039",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Monocrystal\n2. Monitoral\n3. Monocular\n4. Monsieur\n5. Monochromist\n6. Mongoose",
+        "options": {
+          "A": "6, 2, 1, 3, 5, 4",
+          "B": "6, 2, 4, 5, 1, 3",
+          "C": "6, 2, 5, 3, 1, 4",
+          "D": "6, 2, 5, 1, 3, 4"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q39",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Mongoose, Monitoral, Monochromist, Monocrystal, Monocular, Monsieur.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that shows the given words in the order in which they appear in the English dictionary.\n1. Fragile\n2. Fracture\n3. Fraud\n4. Fragment\n5. Fridge",
+        "options": {
+          "A": "1, 2, 4, 3, 5",
+          "B": "2, 1, 4, 3, 5",
+          "C": "2, 1, 4, 5, 3",
+          "D": "1, 2, 5, 3, 4"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q40",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Fracture, Fragile, Fragment, Fraud, Fridge.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q041",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option which correctly represents the order of the given words as per the English dictionary.\n1. Profess\n2. Product\n3. Prosecute\n4. Precaution\n5. Proctor",
+        "options": {
+          "A": "2, 5, 4, 1, 3",
+          "B": "3, 5, 2, 1, 4",
+          "C": "4, 5, 2, 3, 1",
+          "D": "4, 5, 2, 1, 3"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q41",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Precaution, Proctor, Product, Profess, Prosecute.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which word will come at the fourth position when arranged according to the dictionary?",
+        "options": {
+          "A": "Dinner",
+          "B": "Dimple",
+          "C": "Dictation",
+          "D": "Dictionary"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q42",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Dictation, Dictionary, Dimple, Dinner. Fourth: Dinner.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which word will come third when arranged according to the dictionary?\n1. Crumble\n2. Crop\n3. Croatia\n4. Crow\n5. Crown",
+        "options": {
+          "A": "Crow",
+          "B": "Crown",
+          "C": "Crop",
+          "D": "Croatia"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q43",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Croatia, Crop, Crow, Crown, Crumble. Third: Crow.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q044",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which word will come second when arranged according to the dictionary?\n1. Stubborn\n2. Stalemate\n3. Stocking\n4. Straight\n5. Stromy",
+        "options": {
+          "A": "Straight",
+          "B": "Stromy",
+          "C": "Stocking",
+          "D": "None of these"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q44",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Stalemate, Stocking, Straight, Stromy, Stubborn. Second: Stocking.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which word will come end when arranged according to the dictionary?\n1. Onion\n2. Owl\n3. Omnious\n4. Ostrich\n5. Oxford",
+        "options": {
+          "A": "Ostrich",
+          "B": "Owl",
+          "C": "Oxford",
+          "D": "Onion"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q45",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Omnious, Onion, Ostrich, Owl, Oxford. Last: Oxford.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If the given words are arranged in order according to the English dictionary, which word will appear at the end?\n1. Distrub,\n2. Distance,\n3. Distilled,\n4. Distribution,\n5. Distort",
+        "options": {
+          "A": "Distribution",
+          "B": "Distrub",
+          "C": "Distort",
+          "D": "Distilled"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q46",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Distance, Distilled, Distort, Distribution, Distrub. Last: Distrub (as printed).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "38 is related to 80 following a certain logic. Following the same logic, 42 is related to 88. To which of the following is 29 related, following the same logic ?",
+        "options": {
+          "A": "62",
+          "B": "54",
+          "C": "78",
+          "D": "66"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q47",
+      "key_basis": "derived",
+      "rule": "Twice the number plus 4: 38 → 80, 42 → 88, so 29 → 62.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "After arranging the given words according to dictionary order, which word will come at 'Fourth' position?\n(i) Activity (ii) Activist\n(iii) Activismal (iv) Activisticy\n(v) Activize",
+        "options": {
+          "A": "Activity",
+          "B": "Activist",
+          "C": "Activismal",
+          "D": "Activize"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q48",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Activismal, Activist, Activisticy, Activity, Activize. Fourth: Activity.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\nI. Vantage\nII. Wherefore\nIII. Uplift\nIV. Various\nV. Variety\nVI. Valor",
+        "options": {
+          "A": "III, VI, I, V, IV, II",
+          "B": "III, I, VI, IV, V, II",
+          "C": "III, VI, I, IV, V, II",
+          "D": "VI, III, I, V, IV, II"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q49",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Uplift, Valor, Vantage, Variety, Various, Wherefore.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q050",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that Represents the correct Order of the given words as they would appear in an English dictionary.\nI. Mathematic\nII. Malfunction\nIII. Masterpiece\nIV. Manipulation\nV. Manageable",
+        "options": {
+          "A": "II, V, III, IV, I",
+          "B": "II, IV, V, III, I",
+          "C": "V, II, IV, III, I",
+          "D": "II, V, IV, III, I"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q50",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Malfunction, Manageable, Manipulation, Masterpiece, Mathematic.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q051",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\nI. Hypocrisy\nII. Hilarious\nIII. Humidity\nIV. Highlight\nV. Hallucinate",
+        "options": {
+          "A": "V, II, IV, III, I",
+          "B": "V, III, IV, II, I",
+          "C": "V, IV, II, III, I",
+          "D": "V, IV, III, II, I"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q51",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Hallucinate, Highlight, Hilarious, Humidity, Hypocrisy.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q052",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\nI. Perilous\nII. Pessimist\nIII. Pedestrian\nIV. Perceive\nV. Perfect\nVI. Peasant",
+        "options": {
+          "A": "VI, IV, III, I, II, V",
+          "B": "VI, III, IV, V, I, II",
+          "C": "III, VI, V, IV, II, I",
+          "D": "III, V, IV, VI, I, II"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q52",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Peasant, Pedestrian, Perceive, Perfect, Perilous, Pessimist.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q053",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the following words in the order as they appear in the dictionary.\n1. Exception\n2. Exceptional\n3. Exchanging\n4. Exchanged\n5. Excess",
+        "options": {
+          "A": "12543",
+          "B": "21453",
+          "C": "42531",
+          "D": "32154"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q53",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Exception, Exceptional, Excess, Exchanged, Exchanging.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q054",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Ferocious\n2. Fervor\n3. Fiction\n4. Faith\n5. Feign\n6. Ferment",
+        "options": {
+          "A": "6, 5, 2, 1, 4, 3",
+          "B": "4, 5, 6, 1, 2, 3",
+          "C": "4, 6, 5, 2, 1, 3",
+          "D": "6, 4, 5, 3, 2, 1"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q54",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Faith, Feign, Ferment, Ferocious, Fervor, Fiction.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q055",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that indicates the correct arrangement of the given words in the order in which they appear in an English dictionary.\n1. Elate\n2. Election\n3. Elbow\n4. Elastic\n5. Electoral",
+        "options": {
+          "A": "1, 3, 4, 2, 5",
+          "B": "1, 4, 5, 2, 3",
+          "C": "4, 1, 3, 2, 5",
+          "D": "4, 3, 2, 1, 5"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p19 q55",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Elastic, Elate, Elbow, Election, Electoral.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q056",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that indicates the correct arrangement of the given words in the order in which they appear in an English dictionary.\n1. Kibble\n2. Kennel\n3. Kettle\n4. Kicker\n5. Kernel",
+        "options": {
+          "A": "5, 2, 3, 1, 4",
+          "B": "5, 3, 2, 1, 4",
+          "C": "2, 3, 5, 4, 1",
+          "D": "2, 5, 3, 1, 4"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q56",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Kennel, Kernel, Kettle, Kibble, Kicker.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q057",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which option represents the correct order of the given words as they would appear in the English dictionary?\n1. Method\n2. Methanol\n3. Metrics\n4. Metro\n5. Melody",
+        "options": {
+          "A": "5, 3, 1, 2, 4",
+          "B": "5, 1, 2, 4, 3",
+          "C": "5, 2, 1, 4, 3",
+          "D": "5, 2, 1, 3, 4"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q57",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Melody, Methanol, Method, Metrics, Metro.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q058",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the following words in the order as they appear in the English dictionary.\n1. Piquant\n2. Pierce\n3. Patent\n4. Perjury\n5. Pasture\nCode :",
+        "options": {
+          "A": "5, 3, 4, 1, 2",
+          "B": "5, 3, 4, 2, 1",
+          "C": "3, 5, 4, 1, 2",
+          "D": "3, 4, 5, 1, 2"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q58",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Pasture, Patent, Perjury, Pierce, Piquant.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q060",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\n1. Fustian\n2. Funerary\n3. Fusion\n4. Funicular\n5. Fuscous\n6. Fundament\n7. Fuselage",
+        "options": {
+          "A": "6, 2, 4, 5, 7, 3, 1",
+          "B": "6, 2, 5, 7, 3, 4, 1",
+          "C": "6, 2, 5, 7, 4, 1, 3",
+          "D": "6, 2, 5, 4, 7, 3, 1"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q60",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Fundament, Funerary, Funicular, Fuscous, Fuselage, Fusion, Fustian.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q061",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that represents the correct order of the given words as they would appear in an english dictionary.\n1. Lesage\n2. Laudatory\n3. Laureate\n4. Latitude\n5. Legacy\n6. Laudanum\n7. Launder",
+        "options": {
+          "A": "4, 6, 7, 3, 2, 1, 5",
+          "B": "4, 6, 7, 2, 3, 1, 5",
+          "C": "4, 6, 2, 3, 7, 1, 5",
+          "D": "4, 6, 2, 7, 3, 5, 1"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q61",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Latitude, Laudanum, Laudatory, Launder, Laureate, Legacy, Lesage.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q062",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct option that indicates the arrangement of the given words in the order in which they appear in an English dictionary.\nI. Junketeered\nII. Junction\nIII. Junketers\nIV. Junketeering\nV. Junctures",
+        "options": {
+          "A": "II, V, I, IV, III",
+          "B": "II, V, III, I, IV",
+          "C": "II, V, IV, III, I",
+          "D": "I, IV, II, III, V"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q62",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Junction, Junctures, Junketeered, Junketeering, Junketers.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q063",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that represents the correct order of the given words as they would appear in an English dictionary.\nI. Disaster\nII. Disappointment\nIII. Discharge\nIV. Disappear\nV. Disadvantage\nVI. Disarticulate",
+        "options": {
+          "A": "V, II, IV, I, VI, III",
+          "B": "V, IV, II, I, VI, III",
+          "C": "V, II, IV, VI, I, III",
+          "D": "V, IV, II, VI, I, III"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q63",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Disadvantage, Disappear, Disappointment, Disarticulate, Disaster, Discharge.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q064",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the following words as per in the following English dictionary.\n1. Cadartrally\n2. Caddisflies\n3. Caducities\n4. Caddisworms\n5. Cadetships",
+        "options": {
+          "A": "12453",
+          "B": "12534",
+          "C": "21345",
+          "D": "45213"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q64",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Cadartrally, Caddisflies, Caddisworms, Cadetships, Caducities.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q065",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the option that Represents a logical and meaningful sequence of the words given below :\n1. Shirt Piece\n2. Thread\n3. Fabric\n4. Shirt\n5. Cotton",
+        "options": {
+          "A": "5, 2, 3, 1, 4",
+          "B": "3, 5, 1, 2, 4",
+          "C": "5, 3, 1, 2,4",
+          "D": "3, 1, 2, 4, 5"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q65",
+      "key_basis": "derived",
+      "rule": "Cotton, Thread, Fabric, Shirt Piece, Shirt.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q066",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the given words in the sequence in which they occur in the dictionary.\n(1) Cardiodynias\n(2) Cardiospasms\n(3) Carburetting\n(4) Carburettors\n(5) Carcinogenic",
+        "options": {
+          "A": "34512",
+          "B": "43512",
+          "C": "34521",
+          "D": "43521"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q66",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Carburetting, Carburettors, Carcinogenic, Cardiodynias, Cardiospasms.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q067",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the given words in the sequence in which they occur in the dictionary.\n(1) Paleobiology\n(2) Pacifistically\n(3) Paleoecology\n(4) Pantomimically\n(5) Palletization",
+        "options": {
+          "A": "23154",
+          "B": "21354",
+          "C": "21345",
+          "D": "23145"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q67",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Pacifistically, Paleobiology, Paleoecology, Palletization, Pantomimically.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q068",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the given words in the sequence in which they occur in the dictionary.\n(1) Vaccillating\n(2) Vacationing\n(3) Vaccination\n(4) Vacuumising\n(5) Vacillatory",
+        "options": {
+          "A": "23154",
+          "B": "21354",
+          "C": "23145",
+          "D": "21345"
+        },
+        "key": "B",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q68",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Vacationing, Vaccillating, Vaccination, Vacillatory, Vacuumising.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q069",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the following words as per order in the dictionary\n(1) haemostasis\n(2) haematite\n(3) haemoglobin\n(4) haemophilia",
+        "options": {
+          "A": "2431",
+          "B": "2143",
+          "C": "1432",
+          "D": "2341"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q69",
+      "key_basis": "derived",
+      "rule": "Dictionary order: haematite, haemoglobin, haemophilia, haemostasis.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q070",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Write the following words in dictionary order.\n1. Narcoanalyses\n2. Narcotization\n3. Narcoanalysis\n4. Narrowcasting\n5. Narrativizing",
+        "options": {
+          "A": "31245",
+          "B": "13245",
+          "C": "13254",
+          "D": "31254"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q70",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Narcoanalyses, Narcoanalysis, Narcotization, Narrativizing, Narrowcasting.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q071",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Write the following words according to dictionary order.\n1. Lamellosities\n2. Lamellibranch\n3. Lamprophonies\n4. Lamprophanies\n5. Laminectomies",
+        "options": {
+          "A": "21543",
+          "B": "12543",
+          "C": "12534",
+          "D": "21534"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q71",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Lamellibranch, Lamellosities, Laminectomies, Lamprophanies, Lamprophonies.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q072",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Write the following words according to English dictionary.\n1. Tangleberries\n2. Tangentiality\n3. Tangibilities\n4. Tangoreceptor\n5. Tangentially",
+        "options": {
+          "A": "52314",
+          "B": "25134",
+          "C": "25314",
+          "D": "52134"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q72",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Tangentiality, Tangentially, Tangibilities, Tangleberries, Tangoreceptor.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q073",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the given words in the sequence in which they occur in the dictionary.\n1. Quarantine\n2. Quadrangle\n3. Quantifier\n4. Quadruple\n5. Quadriceps",
+        "options": {
+          "A": "51234",
+          "B": "25413",
+          "C": "52134",
+          "D": "25431"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p20 q73",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Quadrangle, Quadriceps, Quadruple, Quantifier, Quarantine.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q075",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the given words as they occur in the dictionary :\n(a) PRISTINE (b) PRINTER\n(c) PREVIOUS (d) PREVENT\n(e) PRIORITY\nChoose the correct answer from the options given below :",
+        "options": {
+          "A": "(b), (a), (c), (d), (e)",
+          "B": "(c), (d), (a), (e), (b)",
+          "C": "(d), (c), (b), (e), (a)",
+          "D": "(a), (e), (b), (c), (d)"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p21 q75",
+      "key_basis": "derived",
+      "rule": "Dictionary order: PREVENT, PREVIOUS, PRINTER, PRIORITY, PRISTINE.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q076",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The following words in the sequence in which they occur in the dictionary\n1. Select\n2. Seldom\n3. Send\n4. Selfish\n5. Seller",
+        "options": {
+          "A": "1, 2, 4, 5, 3",
+          "B": "2, 1, 5, 4, 3",
+          "C": "2, 1, 4, 5, 3",
+          "D": "2, 5, 4, 1, 3"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p21 q76",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Seldom, Select, Selfish, Seller, Send.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q077",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the given words in the sequence in which they occur in the dictionary and choose the correct sequence.\n1. Protein\n2. Problem\n3. Proverb\n4. Property\n5. Project",
+        "options": {
+          "A": "1, 2, 3, 4, 5",
+          "B": "2, 1, 4, 3, 5",
+          "C": "2, 5, 4, 1, 3",
+          "D": "3, 4, 5, 2, 1"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p21 q77",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Problem, Project, Property, Protein, Proverb.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q078",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the following words according to English Dictionary.\n(a) slunk (b) slung\n(c) slump (d) slum",
+        "options": {
+          "A": "d, c, b, a",
+          "B": "c, b, d, a",
+          "C": "c, a, d, b",
+          "D": "a, b, c, d"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p21 q78",
+      "key_basis": "derived",
+      "rule": "Dictionary order: slum, slump, slung, slunk.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q079",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If we arrange the given words in alphabetical order, which word would come at last place, choose the correct alternative ?",
+        "options": {
+          "A": "ROBBER",
+          "B": "RANDOM",
+          "C": "RESTRICT",
+          "D": "RESTAURANT"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p21 q79",
+      "key_basis": "derived",
+      "rule": "Dictionary order: RANDOM, RESTAURANT, RESTRICT, ROBBER. Last: ROBBER.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q080",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If we arrange of the given words in alphabetical order, which word would come at the second place, choose the correct alternative.",
+        "options": {
+          "A": "Plane",
+          "B": "Plain",
+          "C": "Plenty",
+          "D": "Player"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p21 q80",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Plain, Plane, Player, Plenty. Second: Plane.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q081",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If the following words are arranged in reverse order of dictionary arrangement, then which word would come at third place ?",
+        "options": {
+          "A": "Occulist",
+          "B": "Odium",
+          "C": "Odious",
+          "D": "Ordeum"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p21 q81",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Occulist, Odious, Odium, Ordeum. Reversed, third: Odious.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q082",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Some letters are given which are numbered 1, 2, 3, 4 and 5. Find the combination of numbers from the options so that the letters arranged accordingly form a meaningful word.\nN C R W O\n1 2 3 4 5",
+        "options": {
+          "A": "2, 3, 5, 4, 1",
+          "B": "2, 3, 5, 1, 4",
+          "C": "3, 2, 4, 5, 1",
+          "D": "2, 1, 5, 4, 3"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p21 q82",
+      "key_basis": "derived",
+      "rule": "The letters make CROWN: C 2, R 3, O 5, W 4, N 1.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q083",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If A interchanges position with B, similarly C and D interchange positions and so on upto Y and Z then which of the following will be seventh from the left?",
+        "options": {
+          "A": "A",
+          "B": "F",
+          "C": "I",
+          "D": "H"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p21 q83",
+      "key_basis": "derived",
+      "rule": "After the swaps the alphabet reads B A D C F E H G …; the seventh letter is H.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q084",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the given words in the sequence in which they occur in the dictionary.\n(a) Aaersid (b) Aaersted (c) Amquarine (d) Acgledhi (e) Acgledih\nChoose the correct answer from the options given below :",
+        "options": {
+          "A": "(a), (b), (c), (d), (e)",
+          "B": "(a), (b), (d), (c), (e)",
+          "C": "(a), (b), (d), (e), (c)",
+          "D": "(a), (b), (c), (e), (d)"
+        },
+        "key": "C",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p21 q84",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Aaersid, Aaersted, Acgledhi, Acgledih, Amquarine.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q085",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If the English alphabets are divided into two equal halves from A to M and N to Z such as A corresponds to N, then which letter in the later half would be corresponding to letter K.",
+        "options": {
+          "A": "X",
+          "B": "Y",
+          "C": "Z",
+          "D": "W"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p21 q85",
+      "key_basis": "derived",
+      "rule": "A pairs with N, 13 places on, so K (11th) pairs with the 24th letter, X.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q086",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the following words as per order in the dictionary :\n1. Quilt\n2. Quite\n3. Queen\n4. Queue",
+        "options": {
+          "A": "1, 4, 2, 3",
+          "B": "4, 3, 1, 2",
+          "C": "2, 3, 4, 1",
+          "D": "3, 4, 1, 2"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p21 q86",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Queen, Queue, Quilt, Quite.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q087",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Arrange the following words as per order in the dictionary.\n1. Live\n2. Litter\n3. Little\n4. Literacy\n5. Living",
+        "options": {
+          "A": "3, 4, 2, 1, 5",
+          "B": "3, 2, 4, 5, 1",
+          "C": "4, 3, 5, 2, 1",
+          "D": "4, 2, 3, 1, 5"
+        },
+        "key": "D",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p21 q87",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Literacy, Litter, Little, Live, Living.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch05-q088",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What is the sequence of the following when arranged in a dictionary ?\n1. Telegraph\n2. Telephone\n3. Teleprinte\n4. Telemetry\n5. Telepathy",
+        "options": {
+          "A": "14523",
+          "B": "14253",
+          "C": "15423",
+          "D": "14325"
+        },
+        "key": "A",
+        "reasoningType": "word_order"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch5 p21 q88",
+      "key_basis": "derived",
+      "rule": "Dictionary order: Telegraph, Telemetry, Telepathy, Telephone, Teleprinte.",
       "confidence": "high"
     },
     {

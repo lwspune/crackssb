@@ -22,6 +22,7 @@ import { fileURLToPath } from 'node:url';
 import { validateItem } from '../src/items/bank.ts';
 import { AGRAWAL_CH03_CODING_DECODING } from '../src/items/oir/agrawal-ch03-coding-decoding.ts';
 import { AGRAWAL_CH04_WORD_FORMATION } from '../src/items/oir/agrawal-ch04-word-formation.ts';
+import { AGRAWAL_CH05_LOGICAL_SEQUENCE } from '../src/items/oir/agrawal-ch05-logical-sequence.ts';
 import { AGRAWAL_CH06_SEQUENCE_TEST } from '../src/items/oir/agrawal-ch06-sequence-test.ts';
 import { AGRAWAL_CH08_DIRECTIONS } from '../src/items/oir/agrawal-ch08-directions.ts';
 import { AGRAWAL_CH09_RANKING } from '../src/items/oir/agrawal-ch09-ranking.ts';
@@ -45,6 +46,7 @@ interface SourceFile {
 const CHAPTERS: { file: string; key: Readonly<Record<number, KeyEntry>>; reasoningType: string; idPrefix: string }[] = [
   { file: 'content/oir/agrawal-examcart/ch03-coding-decoding.source.json', key: AGRAWAL_CH03_CODING_DECODING, reasoningType: 'coding', idPrefix: 'oir-agx-ch03' },
   { file: 'content/oir/agrawal-examcart/ch04-word-formation.source.json', key: AGRAWAL_CH04_WORD_FORMATION, reasoningType: 'word_formation', idPrefix: 'oir-agx-ch04' },
+  { file: 'content/oir/agrawal-examcart/ch05-logical-sequence.source.json', key: AGRAWAL_CH05_LOGICAL_SEQUENCE, reasoningType: 'word_order', idPrefix: 'oir-agx-ch05' },
   { file: 'content/oir/agrawal-examcart/ch06-sequence-test.source.json', key: AGRAWAL_CH06_SEQUENCE_TEST, reasoningType: 'alphabet', idPrefix: 'oir-agx-ch06' },
   { file: 'content/oir/agrawal-examcart/ch08-directions.source.json', key: AGRAWAL_CH08_DIRECTIONS, reasoningType: 'directions', idPrefix: 'oir-agx-ch08' },
   { file: 'content/oir/agrawal-examcart/ch09-ranking.source.json', key: AGRAWAL_CH09_RANKING, reasoningType: 'ranking', idPrefix: 'oir-agx-ch09' },
