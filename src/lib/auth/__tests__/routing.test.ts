@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { homeFor, isPublicPath, parseCredentials, safeNext } from '../routing.ts';
+import { areasFor, homeFor, isPublicPath, parseCredentials, pathAllowedFor, safeNext } from '../routing.ts';
+import type { Role } from '../routing.ts';
 
 /** Sign-in routing: where each role lands, and what a `?next=` may point at. */
 describe('homeFor', () => {
@@ -30,14 +31,58 @@ describe('safeNext — never an open redirect', () => {
     expect(safeNext(null, 'candidate')).toBeNull();
   });
 
-  it('refuses another role’s area, so a link cannot land a candidate on a staff page', () => {
+  it('refuses an area above the role, so a link cannot land a candidate on a staff page', () => {
     expect(safeNext('/staff', 'candidate')).toBeNull();
+    expect(safeNext('/admin', 'candidate')).toBeNull();
     expect(safeNext('/admin', 'mentor')).toBeNull();
-    expect(safeNext('/practise', 'mentor')).toBeNull();
+    expect(safeNext('/admin', 'org_admin')).toBeNull();
+  });
+
+  it('keeps a link into an area below the role (D25)', () => {
+    expect(safeNext('/practise', 'mentor')).toBe('/practise');
+    expect(safeNext('/staff/people', 'superadmin')).toBe('/staff/people');
   });
 
   it('refuses the sign-in page itself, so a sign-in cannot loop', () => {
     expect(safeNext('/login', 'candidate')).toBeNull();
+  });
+});
+
+describe('layered access (D25): each role reaches its own area and every area below it', () => {
+  const table: [Role, string, boolean][] = [
+    ['candidate', '/', true],
+    ['candidate', '/run/wat', true],
+    ['candidate', '/staff/people', false],
+    ['candidate', '/admin/academies', false],
+    ['mentor', '/', true],
+    ['mentor', '/run/wat', true],
+    ['mentor', '/staff/people', true],
+    ['mentor', '/admin/academies', false],
+    ['org_admin', '/practise', true],
+    ['org_admin', '/staff/people/new', true],
+    ['org_admin', '/admin', false],
+    ['superadmin', '/', true],
+    ['superadmin', '/run/wat', true],
+    ['superadmin', '/staff/people', true],
+    ['superadmin', '/admin/academies', true],
+  ];
+  for (const [role, path, allowed] of table) {
+    it(`${role} ${allowed ? 'may' : 'may not'} open ${path}`, () => {
+      expect(pathAllowedFor(path, role)).toBe(allowed);
+    });
+  }
+
+  it('lists the areas a role may switch between, its own first', () => {
+    expect(areasFor('candidate')).toEqual(['student']);
+    expect(areasFor('mentor')).toEqual(['staff', 'student']);
+    expect(areasFor('org_admin')).toEqual(['staff', 'student']);
+    expect(areasFor('superadmin')).toEqual(['admin', 'staff', 'student']);
+  });
+
+  it('still signs each role in to its own area', () => {
+    expect(homeFor('candidate')).toBe('/');
+    expect(homeFor('mentor')).toBe('/staff');
+    expect(homeFor('superadmin')).toBe('/admin');
   });
 });
 

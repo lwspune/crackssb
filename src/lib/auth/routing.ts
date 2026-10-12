@@ -6,28 +6,41 @@
 export type Role = 'candidate' | 'mentor' | 'org_admin' | 'superadmin';
 export const ROLES: readonly Role[] = ['candidate', 'mentor', 'org_admin', 'superadmin'];
 
-type Area = 'student' | 'staff' | 'admin';
+export type Area = 'student' | 'staff' | 'admin';
 
-function areaOfRole(role: Role): Area {
-  if (role === 'superadmin') return 'admin';
-  return role === 'candidate' ? 'student' : 'staff';
+/**
+ * Layered access (D25): each role reaches its own area and every area below
+ * it, own area first. A candidate stays in the student app; staff add the
+ * staff app; the superadmin reaches all three. Data is still scoped by row
+ * level security — reaching an area never widens whose rows a user can read.
+ */
+const AREAS: Readonly<Record<Role, readonly Area[]>> = {
+  candidate: ['student'],
+  mentor: ['staff', 'student'],
+  org_admin: ['staff', 'student'],
+  superadmin: ['admin', 'staff', 'student'],
+};
+
+export function areasFor(role: Role): readonly Area[] {
+  return AREAS[role];
 }
 
-function areaOfPath(pathname: string): Area {
+export function areaOfPath(pathname: string): Area {
   if (pathname === '/staff' || pathname.startsWith('/staff/')) return 'staff';
   if (pathname === '/admin' || pathname.startsWith('/admin/')) return 'admin';
   return 'student';
 }
 
-const HOME: Readonly<Record<Area, string>> = { student: '/', staff: '/staff', admin: '/admin' };
+export const AREA_HOME: Readonly<Record<Area, string>> = { student: '/', staff: '/staff', admin: '/admin' };
 
+/** Where a role lands at sign-in: its own area, not the ones below it. */
 export function homeFor(role: Role): string {
-  return HOME[areaOfRole(role)];
+  return AREA_HOME[AREAS[role][0]];
 }
 
-/** May this user be at this path at all? Staff use the staff app, candidates the student app (UI.md §2). */
+/** May this user be at this path at all? */
 export function pathAllowedFor(pathname: string, role: Role): boolean {
-  return areaOfPath(pathname) === areaOfRole(role);
+  return AREAS[role].includes(areaOfPath(pathname));
 }
 
 const BASE = 'https://crackssb.invalid';
