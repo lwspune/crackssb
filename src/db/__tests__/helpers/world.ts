@@ -14,6 +14,8 @@ import type { SupabaseClient } from '@supabase/supabase-js';
 
 export const FIXTURE_DOMAIN = 'test.crackssb.invalid';
 export const FIXTURE_ORG_PREFIX = 'test-';
+/** Fixture item ids start with this; no seeded item id does (they start with the instrument, e.g. `oir-`). */
+export const FIXTURE_ITEM_PREFIX = 'test-';
 
 const URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? '';
 const ANON = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? '';
@@ -126,5 +128,8 @@ export async function leftovers(service: SupabaseClient): Promise<string[]> {
   const { data: orgs, error } = await service.from('organisations').select('slug').like('slug', `${FIXTURE_ORG_PREFIX}%`);
   if (error) throw new Error(`orgs: ${error.message}`);
   for (const o of orgs ?? []) found.push(`org ${o.slug}`);
+  const { data: items, error: itemsError } = await service.from('items').select('id').like('id', `${FIXTURE_ITEM_PREFIX}%`);
+  if (itemsError) throw new Error(`items: ${itemsError.message}`);
+  for (const i of items ?? []) found.push(`item ${i.id}`);
   return found;
 }
