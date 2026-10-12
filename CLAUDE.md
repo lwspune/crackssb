@@ -22,8 +22,7 @@ looks arbitrary there is a recorded decision with evidence behind it.
 
 **Pre-product, with a UI.** A Next.js 16 app (`src/app/`, `src/ui/`) now runs
 the student surface on local data: app shell, Practise by SSB day, honest empty
-states, and the **WAT runner** wrapping the engine. **Sprint 1 is under way:** the
-**Sprint 1 is complete.** The database (tenancy, access rules) is live and gated by
+states, and the **WAT runner** wrapping the engine. **Sprint 1 is complete.** The database (tenancy, access rules) is live and gated by
 tests; sign-in works (email + password, manual logins); staff create logins in the
 app (`/staff/people`, D23) and the superadmin creates academies (`/admin`). The
 runner saves to the server and runs on the server's clock: start time from
@@ -33,13 +32,16 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-645 tests passing · npm test        lint clean · npm run lint        npm run build green
-64 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
+675 tests passing · npm test        lint clean · npm run lint        npm run build green
+66 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
 **Type-checking is new.** `npm run typecheck` checks everything and currently
 reports four known errors in pre-existing test files (SUGGESTIONS.md). `next
 build` checks app code only, via `tsconfig.build.json`.
+
+**Layered access (D25).** Staff also reach the student app and the superadmin reaches all three, through a switcher.
+Staff tests are flagged `by_staff` by the database and must stay out of results and item statistics.
 
 **Look (D20).** PYQVault's palette and fonts, token for token, plus a navy
 surface for the shell and hero; the runner is dark in both modes. Copy is terse by request. `src/ui/__tests__/theme-contrast.test.ts` gates every
@@ -107,12 +109,13 @@ src/ui/
   sheet/                 AnswerSheet — the printable sheet at /sheets/[instrument]; code on every page, no name
   auth/ · staff/ · admin/  LoginForm · AddPeopleForm, people-lines (paste parser), PeopleTable · CreateAcademyForm
 src/lib/
-  auth/routing.ts        where each role lands; safeNext (no open redirects); which paths are public
+  auth/routing.ts        layered areas per role (D25); where each role lands; safeNext (no open redirects); which paths are public
+  auth/acting.ts         the staff area's academy: staff their own, superadmin the one picked (acting_org cookie, checked)
   auth/viewer.ts         the data access layer — getViewer / requireViewerAt; every page asks here
   supabase/              server · browser (the user's RLS client) · admin (service role — only after the DB says yes)
 src/proxy.ts             refreshes the session; sends visitors with none to /login (optimistic only)
 src/db/admin/            users.ts (insertAccount, user:create) · people.ts (createPeople — D23)
-supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people creation · 0004 create_academy · 0005 items + item_keys (keys server-only)
+supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people creation · 0004 create_academy · 0005 items + item_keys (keys server-only) · 0006 staff practice (by_staff)
 corpus/                  candidate data — records/ is GITIGNORED
 content/                 stimulus material — WAT deck, item bank, TAT images, OIR transcriptions (oir/) + oir-items.json
 scripts/                 build + measurement entry points
@@ -121,8 +124,8 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 645 tests (never touches the database)
-npm run test:db       # 57 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
+npm test              # 675 tests (never touches the database)
+npm run test:db       # 66 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
 npm run build         # production build (type-checks app code)

@@ -171,3 +171,20 @@ the transcription stays verbatim.
 ### Difficulty is 3 for every book item
 A placeholder, not a measurement (D24 point 7). Replace from item statistics
 (D19) once sittings exist; until then booklet assembly cannot balance on it.
+
+## 2026-10-12 (layered access, D25)
+
+### Results and item statistics must filter `by_staff`
+
+Nothing reads sessions for results or item statistics yet, so nothing leaks today.
+When the Results page, the staff review queue or the D19 stats read lands, it must
+select `by_staff = false` — and a test should plant a staff session and watch it
+stay out. Best enforced in the view or function those reads go through, not in
+each page.
+
+### Admin's academy page and the staff area overlap
+
+`/admin/academies/[id]` and the superadmin's `/staff/people` (with that academy
+picked) both list and add people. Kept both: Admin is the platform view, Staff is
+"what the academy sees". If they drift, make the Admin page link into the staff
+area with the academy picked rather than keep two forms.

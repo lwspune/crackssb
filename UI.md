@@ -28,6 +28,8 @@ The schema has four roles (`ARCHITECTURE.md` §4). The UI presents three.
 | **Staff** | `mentor`, `org_admin` | one staff app. `org_admin` is a mentor with an additional *Manage* section — batches, seats, other staff. In a small academy they are the same person |
 | **Superadmin** | `superadmin` | the platform: every org, the item bank, content, costs, models, assessor calibration |
 
+**Layered, not separate (D25).** Each role reaches its own experience and every one below it: staff can open the student app and take tests as themselves (flagged `by_staff`, never counted); the superadmin can open the staff app for an academy they pick, and the student app. A switcher shows exactly the experiences a role reaches; candidates see none.
+
 `org_admin` and `superadmin` are never merged. An academy owner must not see another academy's students — that is the B2B tenancy model and the Sprint 1 RLS gate. The role decides what is *permitted*; the experience decides what is *shown*. The report reader (§6) is the clearest case: one component, layered by role.
 
 ---

@@ -583,3 +583,23 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 **Consequences.** Chapter 11 (Series) is seeded: 118 items. The other ten chapters follow the same path; Chapter 5 (two five-option questions) and Chapter 10 (questions sharing a passage) need a format change first (SUGGESTIONS.md). Ids are permanent (`oir-agx-ch11-q013`): a corrected key or stem replaces the row in place.
 
 **Revisit if.** The book's key disagrees with more than a few derived keys in a chapter (then the derivation method, not just the rows, needs review), or the owner wants original items instead.
+
+---
+
+## D25 — Access is layered: each role reaches its own area and every area below it
+
+**Date:** 2026-10-12 · **Status:** Accepted · **Supersedes** the "each role in its own area" reading of UI.md §2
+
+**Context.** Each role was confined to one area: a mentor asking for `/` was sent to `/staff`, the superadmin to `/admin`. The owner wants the superadmin to see what staff and students see, and staff to see what students see — to know the product their candidates use, and to run an academy without logging in as its owner.
+
+**Decision.**
+
+1. **Areas stack** (`routing.ts`, `areasFor`): candidate → student; mentor and academy owner → staff, student; superadmin → admin, staff, student. Sign-in lands on the first (own) area. A switcher in the sidebar and the phone header lists exactly these; a candidate has one area and sees none.
+2. **Reaching an area never widens whose rows you read.** Row level security is unchanged; the switcher only decides which screens render.
+3. **Staff in the student area use it as themselves** (the owner's choice over "view as a candidate"). They take tests on the real clock. `start_session` (0006) skips the date-of-birth and guardian-consent checks for non-candidates and sets `sessions.by_staff` from the caller's role — never from the caller. Results and item statistics (D19) must leave `by_staff` sessions out. The student area says so in one line: "Staff view. Your tests aren't counted."
+4. **The superadmin picks an academy for the staff area** (the owner's choice over a merged all-academies view). The pick is an httpOnly cookie, `acting_org`, set by a server action and honoured only when it names an academy that exists (`acting.ts`, tested). It is never read for staff: they always work in their own academy, and a planted cookie was checked not to move a mentor. Adding people from there binds the picked academy; `can_create_person` still decides.
+5. **Admin stays the superadmin's alone.** An academy owner is never shown another academy (UI.md §2's tenancy rule stands).
+
+**Consequences.** `access.db.test.ts` proves a mentor and the superadmin can start, save and end a WAT flagged `by_staff`, that a candidate's session is not flagged, and that a candidate cannot set the flag. The browser walk covers the switcher at three roles, the picker, people created into the picked academy, and a mentor's flagged WAT. The `not_a_candidate` refusal now means only "a login with no profile".
+
+**Revisit if.** Staff need to see a *specific* candidate's student view (a read-only "view as", which would need its own audit trail), or academies want their staff's practice runs counted somewhere.
