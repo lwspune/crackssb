@@ -228,6 +228,81 @@ export function charMap(examples: readonly (readonly [string, string])[]): Map<s
   return map;
 }
 
+/** The book's minus prints as −, – or -; all three mean subtraction. */
+const MINUS = /[−–-]/;
+
+/**
+ * Works out a printed sum: brackets, then × and ÷ left to right, then + and −.
+ * A small parser rather than `eval`, so anything that is not a sum (a leftover
+ * code letter, an unclosed bracket) throws instead of being guessed at.
+ */
+export function evaluate(expr: string): number {
+  const tokens = expr.match(/\d+(?:\.\d+)?|[+×÷*/()]|[−–-]|\S/g) ?? [];
+  let i = 0;
+  const peek = () => tokens[i];
+  const fail = (why: string): never => {
+    throw new Error(`cannot evaluate "${expr}": ${why}`);
+  };
+  const factor = (): number => {
+    const t = tokens[i++];
+    if (t === undefined) return fail('it ends early');
+    if (t === '(') {
+      const v = sum();
+      if (tokens[i++] !== ')') fail('a bracket is not closed');
+      return v;
+    }
+    if (MINUS.test(t)) return -factor();
+    if (/^\d/.test(t)) return Number(t);
+    return fail(`"${t}" is not a number or a sign`);
+  };
+  const product = (): number => {
+    let v = factor();
+    while (peek() !== undefined && /^[×÷*/]$/.test(peek())) v = /^[×*]$/.test(tokens[i++]) ? v * factor() : v / factor();
+    return v;
+  };
+  const sum = (): number => {
+    let v = product();
+    while (peek() !== undefined && (peek() === '+' || MINUS.test(peek()))) v = tokens[i++] === '+' ? v + product() : v - product();
+    return v;
+  };
+  const v = sum();
+  if (i !== tokens.length) fail(`"${tokens[i]}" is left over`);
+  return v;
+}
+
+/** True when an equation's one `=` has equal sides. A swap that leaves no `=`, or two, makes no equation: false. */
+export function holds(equation: string): boolean {
+  const sides = equation.split('=');
+  if (sides.length !== 2) return false;
+  return Math.abs(evaluate(sides[0]) - evaluate(sides[1])) < 1e-9;
+}
+
+/**
+ * Reads each symbol through `map` in one pass, so a two-way swap (+ means ×,
+ * × means +) does not undo itself. Numbers are never touched, and neither is
+ * the minus of a negative number (one at the start, or after =, ( or a sign):
+ * it belongs to the number.
+ */
+export function substitute(expr: string, map: Readonly<Record<string, string>>): string {
+  let prev: string | null = null;
+  return expr.replace(/\d+(?:\.\d+)?|\S/g, (t) => {
+    const negative = MINUS.test(t) && (prev === null || /^[=(+×÷*/−–-]$/.test(prev));
+    const out = /^\d/.test(t) || negative ? t : map[t] ?? t;
+    prev = t;
+    return out;
+  });
+}
+
+/** Swaps two signs everywhere, and optionally two numbers wherever each stands whole. */
+export function swapIn(expr: string, signs: readonly [string, string], numbers?: readonly [string, string]): string {
+  const [a, b] = signs;
+  const map: Record<string, string> = { [a]: b, [b]: a };
+  const swapped = substitute(expr, map);
+  if (!numbers) return swapped;
+  const [x, y] = numbers;
+  return swapped.replace(/\d+(?:\.\d+)?/g, (n) => (n === x ? y : n === y ? x : n));
+}
+
 /** 1 → "1st", 12 → "12th", 23 → "23rd": a rank as the book prints it. */
 export function ordinal(n: number): string {
   const teen = n % 100 >= 11 && n % 100 <= 13;

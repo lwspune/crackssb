@@ -2,6 +2,10 @@ import { describe, it, expect } from 'vitest';
 import {
   ALPHABETS,
   bearingName,
+  evaluate,
+  holds,
+  substitute,
+  swapIn,
   between,
   charMap,
   facingName,
@@ -256,3 +260,62 @@ describe('charMap', () => {
   });
 });
 
+
+describe('evaluate', () => {
+  it('works a printed sum in the usual order: brackets, then × and ÷, then + and −', () => {
+    expect(evaluate('18 × 3 − 4 ÷ 2 + 7')).toBe(59);
+    expect(evaluate('(9 × 3 + 169 ÷ 13) × 5 − 10 + 16')).toBe(206);
+    expect(evaluate('6 ÷ 3 × 2')).toBe(4);
+  });
+
+  it('reads the minus as the book prints it (−, – or -), a negative number, and a decimal', () => {
+    expect(evaluate('87 ÷ 3 + 39 – 67 × 3')).toBe(-133);
+    expect(evaluate('−4 × −3')).toBe(12);
+    expect(evaluate('3 ÷ 6 − 2 + 4 × 7')).toBe(26.5);
+  });
+
+  it('refuses anything that is not a sum, rather than guessing', () => {
+    expect(() => evaluate('2 + ')).toThrow();
+    expect(() => evaluate('2 # 3')).toThrow(/#/);
+    expect(() => evaluate('(2 + 3')).toThrow();
+  });
+});
+
+describe('holds', () => {
+  it('is true when both sides of the one = agree', () => {
+    expect(holds('25 ÷ 5 × 6 + 20 = 62 − 12')).toBe(true);
+    expect(holds('25 × 5 ÷ 6 + 20 = 62 − 12')).toBe(false);
+  });
+
+  it('is false, not an error, for a swap that leaves no = or two', () => {
+    expect(holds('12 + 6 × 2 − 24 ÷ 8 − 3')).toBe(false);
+    expect(holds('1 = 1 = 1')).toBe(false);
+  });
+});
+
+describe('substitute', () => {
+  it('reads every symbol at once, so a swap of + and × does not undo itself', () => {
+    expect(substitute('2 + 3 × 4', { '+': '×', '×': '+' })).toBe('2 × 3 + 4');
+    expect(substitute('36 B 17 D 59', { B: '×', D: '−' })).toBe('36 × 17 − 59');
+  });
+
+  it('keeps the minus of a negative number, which is part of the number and not a sign', () => {
+    expect(substitute('87 ÷ 3 = −133', { '÷': '−', '−': '÷' })).toBe('87 − 3 = −133');
+    expect(substitute('−4 × (−3) − 2', { '−': '+' })).toBe('−4 × (−3) + 2');
+  });
+
+  it('leaves numbers alone, even when a digit is a key', () => {
+    expect(substitute('12 @ 2', { '@': '+', 2: '9' })).toBe('12 + 2');
+  });
+});
+
+describe('swapIn', () => {
+  it('swaps two signs everywhere, and two numbers by value', () => {
+    expect(swapIn('26 + 2 ÷ 4 − 8 × 25 = 30', ['×', '+'])).toBe('26 × 2 ÷ 4 − 8 + 25 = 30');
+    expect(swapIn('12 ÷ 4 × 16 + 2 − 7 = 43', ['+', '−'], ['2', '7'])).toBe('12 ÷ 4 × 16 − 7 + 2 = 43');
+  });
+
+  it('does not touch a number that only contains the swapped one', () => {
+    expect(swapIn('12 + 2 = 14', ['+', '+'], ['2', '5'])).toBe('12 + 5 = 14');
+  });
+});
