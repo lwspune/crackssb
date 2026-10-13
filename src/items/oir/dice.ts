@@ -115,6 +115,13 @@ export function adjacent(cubes: readonly Cube[], face: string): string[] {
  * connected squares that land on six different faces.
  */
 export function foldNet(cells: readonly NetCell[]): Cube {
+  const normals = foldNormals(cells);
+  if (new Set(cells.map((c) => c.face)).size !== 6) throw new Error('two squares carry the same mark; use netShows');
+  return new Map(cells.map((c, i) => [c.face, normals[i]] as const));
+}
+
+/** Each square's outward normal once the net is folded (see foldNet). */
+function foldNormals(cells: readonly NetCell[]): Vec[] {
   if (cells.length !== 6) throw new Error('a net has six squares');
   const at = new Map(cells.map((c) => [`${c.r},${c.c}`, c]));
   interface Frame {
@@ -143,5 +150,53 @@ export function foldNet(cells: readonly NetCell[]): Cube {
   if (placed.size !== 6) throw new Error('the squares of a net are connected');
   const normals = [...placed.values()].map((f) => f.n);
   if (normals.some((n, i) => normals.findIndex((m) => same(m, n)) !== i)) throw new Error('two squares fold onto one face');
-  return new Map([...placed].map(([c, f]) => [c.face, f.n] as const));
+  return cells.map((c) => placed.get(c)!.n);
+}
+
+/** The 24 turns of a cube, as the images of the top (+z) and right (+x) directions. */
+const TURNS: readonly (readonly [Vec, Vec])[] = NORMALS.flatMap((up) => NORMALS.filter((r) => dot(r, up) === 0).map((right) => [up, right] as const));
+
+/**
+ * Can the folded net be turned to show the view? Tries all 24 turns, so two
+ * squares marked alike (two black faces) are handled: either may be the one
+ * seen. The view's front is -y, its right +x, its top +z.
+ */
+export function netShows(cells: readonly NetCell[], view: DiceView): boolean {
+  const normals = foldNormals(cells);
+  const labelAt = (n: Vec) => cells[normals.findIndex((m) => same(m, n))].face;
+  return TURNS.some(([up, right]) => {
+    // z × x = y points away from the viewer, so the face toward the viewer is −(up × right).
+    const toward = neg(crossV(up, right));
+    return labelAt(up) === view.top && labelAt(right) === view.right && labelAt(toward) === view.left;
+  });
+}
+
+/**
+ * The exam's way to find an opposite face, used where a book draws its views
+ * so that no real cube shows them all (one in mirror image of another): faces
+ * seen in one view are beside each other, so a face's opposite is one never
+ * seen with it. Faces with a single candidate are paired off, and their
+ * partners struck from the rest, until nothing changes.
+ */
+export function oppositeBySight(labels: readonly string[], views: readonly DiceView[], face: string): string[] {
+  const padded = [...labels, ...Array.from({ length: 6 - labels.length }, (_, i) => (i === 0 ? '?' : `?${i + 1}`))];
+  const beside = new Map(padded.map((l) => [l, new Set<string>()]));
+  for (const v of views) for (const a of [v.top, v.left, v.right]) for (const b of [v.top, v.left, v.right]) if (a !== b) beside.get(a)!.add(b);
+  const can = new Map(padded.map((l) => [l, new Set(padded.filter((m) => m !== l && !beside.get(l)!.has(m)))]));
+  for (let changed = true; changed; ) {
+    changed = false;
+    for (const [l, set] of can) {
+      if (set.size !== 1) continue;
+      const [m] = set;
+      for (const [k, other] of can) {
+        if (k === l || k === m) continue;
+        if (other.delete(l) || other.delete(m)) changed = true;
+      }
+      if (can.get(m)!.size > 1) {
+        can.set(m, new Set([l]));
+        changed = true;
+      }
+    }
+  }
+  return [...new Set([...can.get(face)!].map(unknown))];
 }
