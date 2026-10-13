@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { matchMarks, reflectFigure, sameFigure, unfold } from '../oir/fold.ts';
+import { matchMarks, reflectFigure, sameFigure, unfold, unfoldPaper } from '../oir/fold.ts';
 import type { Mark } from '../oir/fold.ts';
 
 /**
@@ -34,6 +34,31 @@ describe('unfold', () => {
 
   it('keeps one mark where a punch sits on the fold line', () => {
     expect(unfold([hole(6, 3)], [[[6, 0], [6, 12]]])).toHaveLength(1);
+  });
+});
+
+describe('unfoldPaper', () => {
+  const SQUARE: [number, number][] = [[0, 0], [12, 0], [12, 12], [0, 12]];
+
+  it('mirrors a punch only where the folded flap lies over it', () => {
+    // A strip 3 wide folded over from the left: a punch at x = 4 is under it, one at x = 8 is not.
+    const out = unfoldPaper(SQUARE, [{ line: [[3, 0], [3, 12]], keep: [10, 6] }], [hole(4, 6), hole(8, 6)]);
+    expect(out.map((m) => m.at).sort()).toEqual([[2, 6], [4, 6], [8, 6]].sort());
+  });
+
+  it('follows the paper through two folds: a corner punch under both flaps comes back four times', () => {
+    const folds = [
+      { line: [[0, 3], [12, 3]] as const, keep: [6, 8] as const },
+      { line: [[3, 0], [3, 12]] as const, keep: [8, 8] as const },
+    ];
+    const out = unfoldPaper(SQUARE, folds, [hole(4, 4), hole(10, 10)]);
+    expect(out).toHaveLength(5);
+    expect(out.map((m) => m.at).sort()).toEqual([[2, 2], [2, 4], [4, 2], [4, 4], [10, 10]].sort());
+  });
+
+  it('agrees with unfold when every fold is in half', () => {
+    const half = [{ line: [[6, 0], [6, 12]] as const, keep: [9, 6] as const }];
+    expect(unfoldPaper(SQUARE, half, [hole(8, 3)]).map((m) => m.at)).toEqual(unfold([hole(8, 3)], [[[6, 0], [6, 12]]]).map((m) => m.at));
   });
 });
 

@@ -57,6 +57,67 @@ export function unfold(punched: readonly Mark[], folds: readonly FoldLine[]): Ma
   return marks;
 }
 
+/** A fold: the line it folds along, and a point on the side that stays put. */
+export interface Fold {
+  readonly line: FoldLine;
+  readonly keep: Pt;
+}
+
+const side = ([a, b]: FoldLine, p: Pt) => (b[0] - a[0]) * (p[1] - a[1]) - (b[1] - a[1]) * (p[0] - a[0]);
+
+/** The part of a polygon on the kept side of a fold (Sutherland-Hodgman, one edge). */
+function clip(poly: readonly Pt[], f: Fold): Pt[] {
+  const s0 = Math.sign(side(f.line, f.keep));
+  const inside = (p: Pt) => side(f.line, p) * s0 >= -1e-9;
+  const out: Pt[] = [];
+  for (let i = 0; i < poly.length; i++) {
+    const [p, q] = [poly[i], poly[(i + 1) % poly.length]];
+    if (inside(p)) out.push(p);
+    if (inside(p) !== inside(q)) {
+      const [sp, sq] = [side(f.line, p), side(f.line, q)];
+      const t = sp / (sp - sq);
+      out.push([p[0] + t * (q[0] - p[0]), p[1] + t * (q[1] - p[1])]);
+    }
+  }
+  return out;
+}
+
+/** Is a point inside a polygon (or on its edge)? */
+function within(p: Pt, poly: readonly Pt[]): boolean {
+  let inside = false;
+  for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+    const [a, b] = [poly[i], poly[j]];
+    const cross = (b[0] - a[0]) * (p[1] - a[1]) - (b[1] - a[1]) * (p[0] - a[0]);
+    const onEdge = Math.abs(cross) < 1e-6 && p[0] >= Math.min(a[0], b[0]) - 1e-6 && p[0] <= Math.max(a[0], b[0]) + 1e-6 && p[1] >= Math.min(a[1], b[1]) - 1e-6 && p[1] <= Math.max(a[1], b[1]) + 1e-6;
+    if (onEdge) return true;
+    if (a[1] > p[1] !== b[1] > p[1] && p[0] < ((b[0] - a[0]) * (p[1] - a[1])) / (b[1] - a[1]) + a[0]) inside = !inside;
+  }
+  return inside;
+}
+
+/**
+ * Every mark once the paper is opened out, following the paper through each
+ * fold: a punch goes through a folded-over flap only where the flap lies
+ * over it, so a mark is mirrored across a fold only when its mirror falls on
+ * the paper as it was before that fold. `folds` are in the order made.
+ */
+export function unfoldPaper(paper: readonly Pt[], folds: readonly Fold[], punched: readonly Mark[]): Mark[] {
+  const before: Pt[][] = [];
+  let sheet: Pt[] = [...paper];
+  for (const f of folds) {
+    before.push(sheet);
+    sheet = clip(sheet, f);
+  }
+  let marks = [...punched];
+  for (let k = folds.length - 1; k >= 0; k--) {
+    const mirrored = marks
+      .map((m) => reflectMark(m, folds[k].line))
+      .filter((r) => within(r.at, before[k]) && !marks.some((m) => m.shape === r.shape && near(m.at, r.at, 1e-6)));
+    marks = [...marks, ...mirrored];
+  }
+  return marks;
+}
+
 const unit = ([x, y]: Pt): Pt => ((l) => [x / l, y / l] as const)(Math.hypot(x, y) || 1);
 const samePoly = (a: readonly Pt[], b: readonly Pt[], tol: number) =>
   a.length === b.length && a.every((p) => b.some((q) => near(p, q, tol))) && b.every((q) => a.some((p) => near(p, q, tol)));
