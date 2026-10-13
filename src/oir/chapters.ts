@@ -30,6 +30,7 @@ export const OIR_CHAPTERS: readonly OirChapter[] = [
   { slug: 'missing-term', title: 'Missing Term', reasoningType: 'missing_term', summary: 'Grids and figures with one number gone' },
   { slug: 'math-operations', title: 'Mathematical Operations', reasoningType: 'mathematical_operations', summary: 'Swapped signs, coded sums, number rules' },
   { slug: 'calendar-clock', title: 'Calendar and Clock', reasoningType: 'calendar_clock', summary: 'Weekdays from dates, angles between the hands' },
+  { slug: 'arithmetic', title: 'Arithmetic Reasoning', reasoningType: 'arithmetic', summary: 'Ages, speeds, shares and percentages' },
 ];
 
 export function chapterBySlug(slug: string): OirChapter | undefined {

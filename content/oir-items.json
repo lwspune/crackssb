@@ -140,13 +140,23 @@
         54
       ],
       "file": "content/oir/agrawal-examcart/ch14-calendar-clock.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "chapter": 15,
+      "title": "Arithmetic Reasoning",
+      "pages": [
+        55,
+        58
+      ],
+      "file": "content/oir/agrawal-examcart/ch15-arithmetic-reasoning.source.json"
     }
   ],
-  "itemCount": 1302,
-  "heldCount": 91,
+  "itemCount": 1390,
+  "heldCount": 93,
   "confidence": {
-    "high": 1222,
-    "medium": 80
+    "high": 1308,
+    "medium": 82
   },
   "held": [
     {
@@ -625,6 +635,16 @@
       "source": "agrawal-examcart-oir",
       "source_ref": "ch14 p54 q41",
       "reason": "The hands meet at 38 2/11 minutes past 7 (420/11), and no option prints that; the nearest are 38 3/11 and 38 5/11."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q34",
+      "reason": "Two unknowns (Amit's and his sister's ages) and one equation: options A and B both give whole ages whichever age of Amit the father's is compared with."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q39",
+      "reason": "The sentence drops a name: read as printed, Mohan is 3 years younger than Suresh (3, option A); read as the usual question, Aman is 3 older than Mohan and 3 younger than Suresh (6, option C). Both options are printed."
     }
   ],
   "items": [
@@ -31027,6 +31047,1944 @@
       "source_ref": "ch14 p54 q50",
       "key_basis": "derived",
       "rule": "At 8:30, |240 − 165| = 75°.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A father says to his son, I was thrice as old as you are at your birth. If the present age of the father is 48 years, then what was the age of the son 4 years ago ?",
+        "options": {
+          "A": "24 years",
+          "B": "8 years",
+          "C": "12 years",
+          "D": "16 years"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q1",
+      "key_basis": "derived",
+      "rule": "At the son's birth the father was three times the son's present age: 48 − s = 3s, so s = 12, and 4 years ago he was 8.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q002",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The sum of the ages of Reena and her father is 60 and the difference between their ages is 36. Find the age of Reena's father.",
+        "options": {
+          "A": "58 Years",
+          "B": "60 Years",
+          "C": "48 Years",
+          "D": "52 Years"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q2",
+      "key_basis": "derived",
+      "rule": "Father + Reena = 60 and father − Reena = 36, so the father is (60 + 36) ÷ 2 = 48.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The ratio of the present ages of A and B is 3 : 5. After 7 years B's age will be double of C's age. If C celebrated his 10th birthday 4 years ago, then what is the present age (in years) of A?",
+        "options": {
+          "A": "14",
+          "B": "21",
+          "C": "28",
+          "D": "42"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q3",
+      "key_basis": "derived",
+      "rule": "C is 10 + 4 = 14, so 21 in 7 years; B will then be 42, so B is 35 now and A is 3/5 of it: 21.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The ratio of the present ages of A and B is 4 : 5. After 5 years the age of B will be 35 years. What is the present age (in years) of A?",
+        "options": {
+          "A": "24",
+          "B": "29",
+          "C": "26",
+          "D": "31"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q4",
+      "key_basis": "derived",
+      "rule": "B is 35 − 5 = 30, so A is 4/5 of it: 24.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The ratio of the present ages of Richa and her husband is 3 : 4. Five years from now, the ratio of the ages of her husband and son will be 3 : 1. If the present age of Richa is 21 years, then what will be the present age (in years) of her son?",
+        "options": {
+          "A": "16",
+          "B": "11",
+          "C": "6",
+          "D": "5"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q5",
+      "key_basis": "derived",
+      "rule": "Richa is 21, so her husband is 28 and will be 33 in five years; the son will then be 11, so he is 6 now.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The present age of A is twice that of B. B's age after 5 years. will be 4 times the present age of C. If C celebrated his seventh birthday 4 years ago, then what will be the present age (in years) of A?",
+        "options": {
+          "A": "73",
+          "B": "64",
+          "C": "78",
+          "D": "59"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q6",
+      "key_basis": "derived",
+      "rule": "C is 7 + 4 = 11; B + 5 = 44, so B is 39 and A is 78.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q007",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The present age of A is 52 years. After 8 years the ratio of the ages of A and B will be 4 : 5. What is the present age (in years) of B?",
+        "options": {
+          "A": "67",
+          "B": "75",
+          "C": "72",
+          "D": "60"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q7",
+      "key_basis": "derived",
+      "rule": "A will be 60 in 8 years; 60 : B = 4 : 5 makes B 75 then, 67 now.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "4 years ago, A was twice as old as B. After 6 years C's age will be twice of A's age. Present age of A. is 10 years more than the present age of B. What is the present age of C?",
+        "options": {
+          "A": "34 years",
+          "B": "50 years",
+          "C": "54 years",
+          "D": "74 years"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q8",
+      "key_basis": "derived",
+      "rule": "A − 4 = 2(B − 4) and A = B + 10 give B = 14, A = 24. C + 6 = 2(24 + 6) = 60, so C is 54.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The ratio of the age of the father to the age of the son is 5 : 2. If the product of their ages is 160, then what is the age of the father?",
+        "options": {
+          "A": "22",
+          "B": "18",
+          "C": "24",
+          "D": "20"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q9",
+      "key_basis": "derived",
+      "rule": "5k × 2k = 160 gives k = 4: the father is 20.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Amit is 6 years younger than Arjun. If the ratio of the ages of Amit and Arjun is 5 : 7, then what is the age (in years) of Amit?",
+        "options": {
+          "A": "35",
+          "B": "45",
+          "C": "15",
+          "D": "41"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q10",
+      "key_basis": "derived",
+      "rule": "7k − 5k = 6 gives k = 3: Amit is 15.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The present age of Ashok is twice the present age of Kishan. After 7 years, Kishan's age will be 4 times of Karthik's present age. If karthik celebrated his 9th birthday 3 years ago, then What is the present age of Ashok ?",
+        "options": {
+          "A": "82",
+          "B": "78",
+          "C": "72",
+          "D": "84"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q11",
+      "key_basis": "derived",
+      "rule": "Karthik is 9 + 3 = 12; Kishan + 7 = 48, so Kishan is 41 and Ashok 82.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Manoj starts from his home and reaches the temple in 7 hours, he travels 1/4th of the total distance at a speed of 10km/h and the remaining distance at 12km/h. Find the distance between his home and the temple.",
+        "options": {
+          "A": "70 km",
+          "B": "90 km",
+          "C": "72 km",
+          "D": "80 km"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q12",
+      "key_basis": "derived",
+      "rule": "d/4 at 10 km/h and 3d/4 at 12 km/h take d/40 + d/16 = 7d/80 hours = 7, so d = 80 km.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If a car covers a distance of 210 km in 3 hours and 30 minutes, then what is the average speed of the car in kmph?",
+        "options": {
+          "A": "50",
+          "B": "60",
+          "C": "45",
+          "D": "48"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q13",
+      "key_basis": "derived",
+      "rule": "210 km in 3.5 hours is 60 km/h.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Train A, which runs at a speed of 90 km/h, starts from Station Y at 8 a.m. Train B, which runs at a speed of 120 km/h, starts from Station Y on the same route at 8.10 a.m.. If Train B catches up with Train A at 8.40 a.m. at Station Z, then what is the distance between Stations Y and Z ?",
+        "options": {
+          "A": "50 km",
+          "B": "60 km",
+          "C": "54 km",
+          "D": "62 km"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q14",
+      "key_basis": "derived",
+      "rule": "By 8.40 Train A has run 40 minutes at 90 km/h and Train B 30 minutes at 120 km/h: 60 km each.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "When the price of petrol was increased by 25%, Yogesh reduced his journey so that his monthly expenditure on petrol remained the same as before. By what percent did Yogesh cut down his journey?",
+        "options": {
+          "A": "30%",
+          "B": "25%",
+          "C": "15%",
+          "D": "20%"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q15",
+      "key_basis": "derived",
+      "rule": "Spending the same at 1.25 times the price buys 1 ÷ 1.25 = 0.8 as much: a 20% cut.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a class of 45 students, all the students participate in either one or both of the games Chess and Badminton. 11 students participate in both the games, while 17 students participate in only Chess. Find the total number of students who participated in Badminton.",
+        "options": {
+          "A": "30",
+          "B": "24",
+          "C": "26",
+          "D": "28"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q16",
+      "key_basis": "derived",
+      "rule": "Everyone plays at least one: 45 − 17 who play only chess = 28 play badminton.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A student has to obtain 40% of the maximum marks in order to pass. If she scored 80 marks and still failed by 20 marks, then calculate the maximum marks?",
+        "options": {
+          "A": "300",
+          "B": "220",
+          "C": "250",
+          "D": "200"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q17",
+      "key_basis": "derived",
+      "rule": "The pass mark is 80 + 20 = 100 = 40% of the maximum: 250.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If the price of a product is first decreased by 35% and then increased by 20%, what will be the net change in the price of the product?",
+        "options": {
+          "A": "22%",
+          "B": "25%",
+          "C": "30%",
+          "D": "20%"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q18",
+      "key_basis": "derived",
+      "rule": "0.65 × 1.2 = 0.78: the price falls by 22%.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Sunita appeared for a test consisting of 260 questions and answered 40% of the first 130 questions correctly. What percentage of the rest 130 questions must she answer correctly so as to score 60% in the entire test ?",
+        "options": {
+          "A": "80%",
+          "B": "75%",
+          "C": "84%",
+          "D": "70%"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q19",
+      "key_basis": "derived",
+      "rule": "60% of 260 is 156; she has 40% of 130 = 52, so needs 104 of the last 130: 80%.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "When a number is subtracted from the square of 25, it becomes 124 times of the number. Find the number.",
+        "options": {
+          "A": "25",
+          "B": "10",
+          "C": "5",
+          "D": "15"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q20",
+      "key_basis": "derived",
+      "rule": "625 − x = 124x gives x = 5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "When twice of a number added to 3 is multiplied by 5 and added to the number itself, it gives 158. What is the square of that number ?",
+        "options": {
+          "A": "169",
+          "B": "225",
+          "C": "121",
+          "D": "289"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q21",
+      "key_basis": "derived",
+      "rule": "5(2x + 3) + x = 158 gives x = 13; 13² = 169.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A book has 300 pages and each page has 20 lines of 10-10 words each. How many words are there in the book ?",
+        "options": {
+          "A": "6,000",
+          "B": "60,000",
+          "C": "66,000",
+          "D": "600,000"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p55 q22",
+      "key_basis": "derived",
+      "rule": "300 pages × 20 lines × 10 words = 60,000.",
+      "confidence": "medium",
+      "note": "\"10-10 words\" is read as 10 words to a line."
+    },
+    {
+      "id": "oir-agx-ch15-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The last three digits of the binary equivalent of the number 85432578 are :",
+        "options": {
+          "A": "001",
+          "B": "100",
+          "C": "110",
+          "D": "010"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q23",
+      "key_basis": "derived",
+      "rule": "The last three binary digits are the remainder by 8: 578 leaves 2, which is 010.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The average income of six friends A, B, C, D, E and F is ₹ 6,500. The total income of B, D, E and F is ₹ 25,000. If A's income is ₹ 4,000 less than that of C, then find C's income.",
+        "options": {
+          "A": "₹ 7,000",
+          "B": "₹ 10,000",
+          "C": "₹ 9,000",
+          "D": "₹ 8,000"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q24",
+      "key_basis": "derived",
+      "rule": "Six incomes total 39,000; A + C = 14,000 and C = A + 4,000, so C is ₹ 9,000.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The average weight of 8 students is 57 kg. Their individual weights are 55 kg, 49 kg, 57 kg, 63 kg, 68 kg, 52 kg, X kg and Y kg respectively. What is the sum of X and Y?",
+        "options": {
+          "A": "114 kg",
+          "B": "110 kg",
+          "C": "116 kg",
+          "D": "112 kg"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q25",
+      "key_basis": "derived",
+      "rule": "The eight weigh 456 kg; the six named weigh 344 kg, so X + Y = 112 kg.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A fruit shop consists of only two types of fruits namely oranges and mangoes. The number of oranges is three times the number of mangoes. Which of the following number CANNOT represent the total number of fruits in the shop?",
+        "options": {
+          "A": "40",
+          "B": "48",
+          "C": "44",
+          "D": "42"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q26",
+      "key_basis": "derived",
+      "rule": "Oranges and mangoes make 3m + m = 4m: the total divides by 4, and only 42 does not.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q027",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What is the difference between the largest and the smallest of the following fractions?\n4/5, 5/6, 3/8, 5/7, 6/7",
+        "options": {
+          "A": "15/28",
+          "B": "13/49",
+          "C": "27/56",
+          "D": "15/42"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q27",
+      "key_basis": "derived",
+      "rule": "The largest is 6/7 and the smallest 3/8: 48/56 − 21/56 = 27/56.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "An amount of Rs. 1,189 is to be divided among Rakesh, Mrinal and Sanjay in the ratio of 11:13:17, respectively. How much amount will Sanjay get more than Rakesh?",
+        "options": {
+          "A": "₹160",
+          "B": "₹222",
+          "C": "₹194",
+          "D": "₹174"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q28",
+      "key_basis": "derived",
+      "rule": "1,189 ÷ 41 parts = 29 a part; Sanjay gets 17 − 11 = 6 parts more: ₹174.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q029",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A certain sum of money was divided among Darshan, Swati and Nivriti. Out of that Nivriti got ₹ 539. If the ratio of the money distributed among Darshan, Swati and Nivruti is 5:6:7, then what was the total money distributed?",
+        "options": {
+          "A": "₹ 1,422",
+          "B": "₹ 1,341",
+          "C": "₹1,356",
+          "D": "₹ 1,386"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q29",
+      "key_basis": "derived",
+      "rule": "7 parts are ₹ 539, so a part is 77 and the 18 parts total ₹ 1,386.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A sum of Rs 6,764 is to be distributed among four friends P, Q R and S in the ratio 8 : 6 : 3 : 2. What is the total amount that P and R together will get?",
+        "options": {
+          "A": "₹ 3,916",
+          "B": "₹ 3,766",
+          "C": "₹ 2,848",
+          "D": "₹ 4,120"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q30",
+      "key_basis": "derived",
+      "rule": "6,764 ÷ 19 parts = 356 a part; P and R have 8 + 3 = 11 parts: ₹ 3,916.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q031",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "There are two numbers. The difference between the two numbers is 2 and the difference between their squares is 8. Find the value of these two numbers?",
+        "options": {
+          "A": "8, 6",
+          "B": "3, 1",
+          "C": "7, 5",
+          "D": "12, 10"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q31",
+      "key_basis": "derived",
+      "rule": "a² − b² = (a − b)(a + b) = 8 with a − b = 2, so a + b = 4: 3 and 1.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A drum contains 40 litres of milk. One-fourth of the milk is taken out and replaced with water. Then, half of the mixture is taken out and replaced with water. What is the respective quantity of milk and water left in the drum ?",
+        "options": {
+          "A": "25 litres and 15 litres",
+          "B": "20 litres and 20 litres",
+          "C": "15 litres and 25 litres",
+          "D": "10 litres and 30 litres"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q32",
+      "key_basis": "derived",
+      "rule": "Taking out a quarter leaves 30 l of milk; taking out half leaves 15 l. The drum is topped up to 40 l: 15 l milk, 25 l water.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "₹ 2,871 is to be divided among A, B and C in the ratio of 9 : 11 : 13 respectively. How much more money (in ₹) will C get than A?",
+        "options": {
+          "A": "₹ 783",
+          "B": "₹ 348",
+          "C": "₹ 402",
+          "D": "₹ 296"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q33",
+      "key_basis": "derived",
+      "rule": "2,871 ÷ 33 parts = 87 a part; C gets 13 − 9 = 4 parts more: ₹ 348.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The present age of a father is three times that of his son. Son's age after 10 years will be 5 times of Raman's present age. If Raman celebrated his third birthday 2 years ago, then what is the present age (in years) of the father?",
+        "options": {
+          "A": "45",
+          "B": "40",
+          "C": "36",
+          "D": "39"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q35",
+      "key_basis": "derived",
+      "rule": "Raman is 3 + 2 = 5; the son will be 25 in 10 years, so is 15, and the father 45.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Saksham's present age is one-third of his father's present age. 5 years ago Saksham's father's age was half of Saksham's grandfather's age. If Saksham's grandfather will celebrate his 88th birthday after 3 years, then what is the present age (in years) of Saksham?",
+        "options": {
+          "A": "18",
+          "B": "15",
+          "C": "16",
+          "D": "20"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q36",
+      "key_basis": "derived",
+      "rule": "The grandfather is 85, 80 five years ago; the father was 40 then, 45 now, and Saksham is 15.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The ratio of the present ages of Sumit and Amit is 3 : 4. If Sumit's age after 20 years will be 62 years, then what is Amit's present age (in years)?",
+        "options": {
+          "A": "56",
+          "B": "64",
+          "C": "60",
+          "D": "52"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q37",
+      "key_basis": "derived",
+      "rule": "Sumit is 62 − 20 = 42 = 3 parts, so Amit is 4 parts: 56.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Among the four friends, Govind is twice the age of Krishna. Nandu is half of Krishna's age. Gwala is 6 years older than Krishna, but 6 years younger than Govind. Who is the youngest in age?",
+        "options": {
+          "A": "Govind",
+          "B": "Krishna",
+          "C": "Nandu",
+          "D": "Cannot be determined"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q38",
+      "key_basis": "derived",
+      "rule": "Gwala = K + 6 = 2K − 6 gives Krishna 12, Govind 24, Gwala 18 and Nandu 6: Nandu is the youngest.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Mona is 6 years younger to her husband and her husband's age is five times that of their daughter Reena. If Reena was 5 years old 3 years ago, then what is the present age of Mona?",
+        "options": {
+          "A": "30",
+          "B": "34",
+          "C": "35",
+          "D": "40"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q40",
+      "key_basis": "derived",
+      "rule": "Reena is 8, her father 40, and Mona 6 years younger: 34.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q041",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "15 chains were bought for ₹7,520 and sold for ₹9,450. What is the approximate profit percentage per chain?",
+        "options": {
+          "A": "26%",
+          "B": "28%",
+          "C": "24%",
+          "D": "27%"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q41",
+      "key_basis": "derived",
+      "rule": "Profit 1,930 on 7,520 is 25.7%: about 26%.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Neha wants to sell an item. If he wants to make a profit of 200%, then the selling price should be how many times the cost price?",
+        "options": {
+          "A": "3 times",
+          "B": "4 times",
+          "C": "6 times",
+          "D": "2 times"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q42",
+      "key_basis": "derived",
+      "rule": "A 200% profit adds twice the cost: the price is 3 times the cost.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The difference between the simple interest and the compound interest on a certain sum of money for 2 years at 10% per annum is ₹ 732. Find the amount.",
+        "options": {
+          "A": "₹ 73,200",
+          "B": "₹ 70,320",
+          "C": "₹ 72,300",
+          "D": "₹ 70,230"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q43",
+      "key_basis": "derived",
+      "rule": "Over two years the gap is P × 10% × 10% = P/100 = 732, so P = ₹ 73,200.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q044",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Among five objects E, F, G, H and K, the weight of H is three times that of K. The weight of G is 7.5 kg. The weight of E is twice the weight of F. The weight of K is four times the weight of G. If the weight of F is the same as that of G, then which is the second heavier object?",
+        "options": {
+          "A": "K",
+          "B": "H",
+          "C": "E",
+          "D": "F"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q44",
+      "key_basis": "derived",
+      "rule": "G = F = 7.5, E = 15, K = 30, H = 90: K is second heaviest.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Among five things named K, L, M, N and O, the weight of M is 60 kg. The weight of L is twice that of N. The weight of O is thrice that of L. The weight of K is half that of O. If the weight of K is equal to that of M, then what is the weight of N?",
+        "options": {
+          "A": "40 kg",
+          "B": "30 kg",
+          "C": "80 kg",
+          "D": "20 kg"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q45",
+      "key_basis": "derived",
+      "rule": "K = M = 60, so O = 120, L = 40 and N = 20 kg.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "There are three books coded as A, B and C. The price of book A is twice the price of book B and one-third the price of book C. If book C costs ₹ 84, then what are the costs of book A and book B, respectively ?",
+        "options": {
+          "A": "₹ 24 and ₹ 42",
+          "B": "₹ 14 and ₹ 7",
+          "C": "₹ 14 and ₹ 42",
+          "D": "₹ 28 and ₹ 14"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p56 q46",
+      "key_basis": "derived",
+      "rule": "A is a third of 84, ₹ 28, and B half of A, ₹ 14.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "There are 12 dozens of apples in a basket. Two dozens are added later. Ten apples got spoiled and are removed. The remaining are transferred equally into two baskets, how many are in each ?",
+        "options": {
+          "A": "168",
+          "B": "158",
+          "C": "79",
+          "D": "89"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q47",
+      "key_basis": "derived",
+      "rule": "14 dozen = 168, less 10 spoiled = 158, split in two: 79.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "On a farm there are 48 ducks, 42 goats and 10 cows including some attendants. If the total number of legs is 216 more than the number of heads, then what is the number of attendants on the form?",
+        "options": {
+          "A": "10",
+          "B": "14",
+          "C": "8",
+          "D": "12"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q48",
+      "key_basis": "derived",
+      "rule": "Animals have 100 heads and 96 + 168 + 40 = 304 legs; each attendant adds 1 head and 2 legs. 304 + 2a = 100 + a + 216 gives a = 12.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "390625 is at which position in the series 5, 25, 125, 625, ............ ?",
+        "options": {
+          "A": "9th",
+          "B": "8th",
+          "C": "7th",
+          "D": "10th"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q49",
+      "key_basis": "derived",
+      "rule": "390625 = 5⁸: the 8th term.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q050",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A father tells his son, \"I was three times of your present age when you were born.\" If the father's present age is 48 years, how old was the boy 4 years ago ?",
+        "options": {
+          "A": "24 years",
+          "B": "8 years",
+          "C": "12 years",
+          "D": "16 years"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q50",
+      "key_basis": "derived",
+      "rule": "As Q1: 48 − s = 3s gives s = 12, so 4 years ago he was 8.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q051",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If a train 150 m long crosses a pole in 12 seconds, then what is the speed of the train in km/hr ?",
+        "options": {
+          "A": "45",
+          "B": "60",
+          "C": "50",
+          "D": "75"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q51",
+      "key_basis": "derived",
+      "rule": "150 m in 12 s is 12.5 m/s = 45 km/h.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q052",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What number is as much more than 10 as it is less than one half of that from which 50 is 10 less?",
+        "options": {
+          "A": "15",
+          "B": "20",
+          "C": "25",
+          "D": "30"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q52",
+      "key_basis": "derived",
+      "rule": "50 is 10 less than 60, and half of 60 is 30. x − 10 = 30 − x gives 20.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q053",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "6 years ago, Raju's age was 2 years less than half his brother's age, which was 20 years. What is his present age?",
+        "options": {
+          "A": "12 years",
+          "B": "14 years",
+          "C": "8 years",
+          "D": "10 years"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q53",
+      "key_basis": "derived",
+      "rule": "Six years ago Raju was 20 ÷ 2 − 2 = 8; now he is 14.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q054",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Mother was three times the age of her daughter five years ago. After five years, mother will be twice as old as her daughter. How old is the daughter today ?",
+        "options": {
+          "A": "5 years",
+          "B": "10 years",
+          "C": "15 years",
+          "D": "20 years"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q54",
+      "key_basis": "derived",
+      "rule": "M − 5 = 3(D − 5) and M + 5 = 2(D + 5) give D = 15.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q055",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The age of a father is thrice that of his son. If the sum of their ages is 48 years, what is the age of the father ?",
+        "options": {
+          "A": "30 years",
+          "B": "32 years",
+          "C": "36 years",
+          "D": "40 years"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q55",
+      "key_basis": "derived",
+      "rule": "Son + 3 × son = 48: the son is 12, the father 36.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q056",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The sum of the squares of the digits of the largest prime number in two digits is :",
+        "options": {
+          "A": "97",
+          "B": "118",
+          "C": "148",
+          "D": "130"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q56",
+      "key_basis": "derived",
+      "rule": "The largest two-digit prime is 97: 81 + 49 = 130.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q057",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Find the number lying between 900 and 1000 which when divided by 38 and 57 leaves in each case a remainder of 23.",
+        "options": {
+          "A": "935",
+          "B": "962",
+          "C": "912",
+          "D": "926"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q57",
+      "key_basis": "derived",
+      "rule": "The LCM of 38 and 57 is 114; 114 × 8 + 23 = 935 is the one between 900 and 1000.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q058",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Raju can do a piece of work in 20 days, while Ram can do it in 30 days. If both of them work at it together, then the number of days in which they will be able to finish the work is :",
+        "options": {
+          "A": "50 days",
+          "B": "25 days",
+          "C": "12 days",
+          "D": "10 days"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q58",
+      "key_basis": "derived",
+      "rule": "Together they do 1/20 + 1/30 = 1/12 a day: 12 days.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q059",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "There are 2000 students in a school. 10 per cent of these students travel to school by car, 40 per cent of the students travel by bus. How many students of that school walk to school?",
+        "options": {
+          "A": "600",
+          "B": "800",
+          "C": "1200",
+          "D": "1000"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q59",
+      "key_basis": "derived",
+      "rule": "10% go by car and 40% by bus; the other 50% walk: 1000.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q060",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a money bag there are ₹ 1 coins, ₹ 2 coins and ₹ 5 coins. If the ratio of the number of coins be 4 : 3 : 2 and the total money in the bag is ₹ 500, the amount of money in ₹ 2 denomination is :",
+        "options": {
+          "A": "₹ 250",
+          "B": "₹ 200",
+          "C": "₹150",
+          "D": "₹ 100"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q60",
+      "key_basis": "derived",
+      "rule": "4k × 1 + 3k × 2 + 2k × 5 = 20k = 500, so k = 25: 75 two-rupee coins make ₹150.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q061",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The average of 5 consecutive odd positive integers is 9. The least one among them is :",
+        "options": {
+          "A": "5",
+          "B": "3",
+          "C": "1",
+          "D": "7"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q61",
+      "key_basis": "derived",
+      "rule": "Five consecutive odd numbers averaging 9: 5, 7, 9, 11, 13.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q062",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a department, 24 employees know typing and 11 know stenography, 25 know how to use a computer. 7 know both typing and stenography, 4 know stenography and computers, 12 know typing and computers and 3 know all the three. If there were 50 employees in the department, find how many employees don't know any of the three jobs.",
+        "options": {
+          "A": "40",
+          "B": "10",
+          "C": "47",
+          "D": "33"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q62",
+      "key_basis": "derived",
+      "rule": "At least one skill: 24 + 11 + 25 − 7 − 4 − 12 + 3 = 40, so 50 − 40 = 10 know none.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q063",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "An official meeting is attended by 130 department employees. Of them, 66 drink tea, 56 drink coffee and 63 drink juice, 27 can drink either tea or coffee. 25 can drink coffee or juice and 23 can drink juice and tea, 5 employees can drink any of the three. How many drink only tea ?",
+        "options": {
+          "A": "21",
+          "B": "22",
+          "C": "18",
+          "D": "20"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q63",
+      "key_basis": "derived",
+      "rule": "Only tea = 66 − 27 (tea and coffee) − 23 (juice and tea) + 5 (all three) = 21.",
+      "confidence": "medium",
+      "note": "\"either tea or coffee\" and \"coffee or juice\" are read as both, as the counts only make sense that way."
+    },
+    {
+      "id": "oir-agx-ch15-q064",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Joel and Tom were travelling from Town X to Town Y which was 210 km apart. Joel set off 1 h 15 min later than Tom but arrived 15 min earlier. If the average speed of Tom was 42 km/h, find the average speed of Joel.",
+        "options": {
+          "A": "50 km/h",
+          "B": "60 km/h",
+          "C": "65 km/h",
+          "D": "70 km/h"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q64",
+      "key_basis": "derived",
+      "rule": "Tom took 210 ÷ 42 = 5 h; Joel took 5 − 1¼ − ¼ = 3½ h: 60 km/h.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q065",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A bus driver wants to travel a distance of 200 km. He travels with the speed of 40 km/h. He takes rest at 3 different hotels for 15 min, 30 min and 15 min, respectively. He starts his journey at 9:00 am. At what time does he reach his final destination ?",
+        "options": {
+          "A": "3 : 00 am",
+          "B": "3 : 00 pm",
+          "C": "3 : 30 am",
+          "D": "2 : 30 pm"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q65",
+      "key_basis": "derived",
+      "rule": "200 ÷ 40 = 5 hours of driving and 1 hour of rest: 9:00 am + 6 h = 3 : 00 pm.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q066",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Town A and town B were 600 km apart. Joshua left town A for town B and travelled at an average speed of 65 km/h. At the same time, Menon left town B for town A. The two of them meet 5 h later. Find Menon's average speed.",
+        "options": {
+          "A": "55 km/h",
+          "B": "60 km/h",
+          "C": "65 km/h",
+          "D": "120 km/h"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q66",
+      "key_basis": "derived",
+      "rule": "Together they close 600 km in 5 h, 120 km/h; Menon makes 120 − 65 = 55.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q067",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "While Suresh set out on a journey he found that the tank of his scooter was 2/3 full. After riding for some hours, he spent 3 litres and lent his friend another 3 litres of petrol. Suresh then found that he had 1/6th of the tank full. What was the full capacity of his petrol tank ?",
+        "options": {
+          "A": "12 litres",
+          "B": "15 litres",
+          "C": "16 litres",
+          "D": "20 litres"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q67",
+      "key_basis": "derived",
+      "rule": "2/3 − 1/6 = 1/2 of the tank is 6 litres: 12 litres.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q068",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Present ages of father and son are in the ratio of 5 : 1, respectively. 7 yr. later, this ratio becomes 3 : 1. What is the son's present age (in yr.) ?",
+        "options": {
+          "A": "8",
+          "B": "7",
+          "C": "6",
+          "D": "5"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q68",
+      "key_basis": "derived",
+      "rule": "5s + 7 = 3(s + 7) gives s = 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q069",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Mani is double the age of Prabhu. Ramona is half the age of Prabhu. If Mani is sixty, find out the age of Ramona.",
+        "options": {
+          "A": "20",
+          "B": "15",
+          "C": "10",
+          "D": "24"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q69",
+      "key_basis": "derived",
+      "rule": "Prabhu is 30, Ramona half that: 15.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q070",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Your mother is 4 years younger than your father who is six times older than you. If your age is 6 years, what is your mother's age ?",
+        "options": {
+          "A": "36 years",
+          "B": "34 years",
+          "C": "28 years",
+          "D": "32 years"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q70",
+      "key_basis": "derived",
+      "rule": "The father is 6 × 6 = 36, the mother 4 younger: 32.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q071",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "An accurate clock shows 8 O' clock in the morning. Through how many degrees will the hour hand rotate when the clock shows 2 O' clock in the afternoon ?",
+        "options": {
+          "A": "144°",
+          "B": "150°",
+          "C": "168°",
+          "D": "180°"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q71",
+      "key_basis": "derived",
+      "rule": "Six hours at 30° an hour: 180°.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q072",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The sum of ages of mother, daughter and son is 87 yr. What will be the sum of their ages after 8 yr. ?",
+        "options": {
+          "A": "105",
+          "B": "101",
+          "C": "110",
+          "D": "111"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q72",
+      "key_basis": "derived",
+      "rule": "Three people each 8 years older: 87 + 24 = 111.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q073",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The age of Sunita's father today is four times as that of her age. After 8 years, the age of her father will be three times that of her age. What is Sunita's age today ?",
+        "options": {
+          "A": "18 years",
+          "B": "16 years",
+          "C": "24 years",
+          "D": "20 years"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p57 q73",
+      "key_basis": "derived",
+      "rule": "4s + 8 = 3(s + 8) gives s = 16.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q074",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Ramesh got some mangoes among which the ripe ones were 3 times the raw ones. If he got 68 mangoes in all, how many of them were raw ?",
+        "options": {
+          "A": "17",
+          "B": "16",
+          "C": "34",
+          "D": "18"
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q74",
+      "key_basis": "derived",
+      "rule": "Raw + 3 × raw = 68: 17 raw.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q075",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "There are ostriches and zebras in a zoo. By counting their heads they are 40 and the number of their legs is 100. How many ostriches are there ?",
+        "options": {
+          "A": "25",
+          "B": "30",
+          "C": "35",
+          "D": "40"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q75",
+      "key_basis": "derived",
+      "rule": "40 heads and 100 legs: z = (100 − 80) ÷ 2 = 10 zebras, so 30 ostriches.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q076",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a retail shop, there were 54 cupboards. In each cupboard, 28 racks were made. In each rack, 10 boxes were kept. In each box, 4 shirts were packed. One day 500 boxes were sold and 250 boxes were purchased. How many shirts were there on that day ?",
+        "options": {
+          "A": "60380",
+          "B": "59360",
+          "C": "59580",
+          "D": "59480"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q76",
+      "key_basis": "derived",
+      "rule": "54 × 28 × 10 × 4 = 60,480 shirts; 250 boxes fewer is 1,000 shirts fewer: 59,480.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q077",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a row, 25 trees are planted at equal distance from each other. The distance between 1st and 25th tree is 30 m. What is the distance between 3rd and 15th tree ?",
+        "options": {
+          "A": "8m",
+          "B": "15m",
+          "C": "16m",
+          "D": "18m"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q77",
+      "key_basis": "derived",
+      "rule": "24 gaps make 30 m, 1.25 m each; 3rd to 15th is 12 gaps: 15 m.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q078",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In a class composed of x girls and y boys what part of the class is composed of girls?",
+        "options": {
+          "A": "y (x + y)",
+          "B": "x/xy",
+          "C": "x/(x + y)",
+          "D": "y/xy"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q78",
+      "key_basis": "derived",
+      "rule": "Girls over the whole class: x/(x + y).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q079",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If a number is greater than 5 but less than 9 and greater than 7 but less than 11, the number is :",
+        "options": {
+          "A": "5",
+          "B": "6",
+          "C": "7",
+          "D": "8"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q79",
+      "key_basis": "derived",
+      "rule": "Between 5 and 9 and between 7 and 11 leaves only 8.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q080",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Mahesh is 60 yr. old. Ram is 5 yrs. junior to Mahesh and 4 yrs. senior to Raju. The youngest brother of Raju is Babu and he is 6 yrs. junior to him. What is the age difference between Mahesh and Babu ?",
+        "options": {
+          "A": "06",
+          "B": "18",
+          "C": "15",
+          "D": "10"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q80",
+      "key_basis": "derived",
+      "rule": "Ram is 55, Raju 51, Babu 45: 60 − 45 = 15.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q081",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "There were 120 tigers in the sanctuary. 20% of them were killed by unknown hunters. 50% of the remaining died in fire in the sanctuary. How many tigers are there in the sanctuary now ?",
+        "options": {
+          "A": "36",
+          "B": "48",
+          "C": "30",
+          "D": "50"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q81",
+      "key_basis": "derived",
+      "rule": "120 less 20% is 96; half of those died: 48.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q082",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Two cubes have volumes in the ratio 1 : 27. The ratio of the face of one to that of the other is :",
+        "options": {
+          "A": "1 : 18",
+          "B": "1 : 3",
+          "C": "1 : 6",
+          "D": "1 : 9"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q82",
+      "key_basis": "derived",
+      "rule": "Volumes 1 : 27 mean sides 1 : 3 and faces 1 : 9.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q083",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Two buses start at the same time from Delhi and Agra, which are 300 km apart, towards each other. After what time will they cross each other if their speeds are 38 km/hr and 37km/hr respectively?",
+        "options": {
+          "A": "4hr.",
+          "B": "3hr.",
+          "C": "5hr.",
+          "D": "6hr."
+        },
+        "key": "A",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q83",
+      "key_basis": "derived",
+      "rule": "They close at 75 km/h: 300 km in 4 hours.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q084",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Ravi has spent a quarter (1/4) of his life as a boy, one-fifth (1/5) as a youth, one-third (1/3) as a man and 13 yrs. in old age. What is his present age ?",
+        "options": {
+          "A": "70 yr.",
+          "B": "80 yr.",
+          "C": "60 yr.",
+          "D": "65 yr."
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q84",
+      "key_basis": "derived",
+      "rule": "1/4 + 1/5 + 1/3 = 47/60, so 13 years is 13/60 of his life: 60 years.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q085",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "15/20 ÷ 4/5 × 2/3 × 8/5 = ?",
+        "options": {
+          "A": "0",
+          "B": "1",
+          "C": "3",
+          "D": "5"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q85",
+      "key_basis": "derived",
+      "rule": "15/20 ÷ 4/5 = 15/16; × 2/3 = 5/8; × 8/5 = 1.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q086",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A husband and a wife had five married sons and each of them had four children. How many members are there in the family ?",
+        "options": {
+          "A": "36",
+          "B": "30",
+          "C": "40",
+          "D": "32"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q86",
+      "key_basis": "derived",
+      "rule": "Husband and wife, five sons, their five wives and twenty children: 32.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q087",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The average age of 25 subordinates in an office is 30 yr. If the age of Manager is added, the average increases to 31 yr. What is the age of the Manager ?",
+        "options": {
+          "A": "26",
+          "B": "36",
+          "C": "46",
+          "D": "56"
+        },
+        "key": "D",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q87",
+      "key_basis": "derived",
+      "rule": "26 × 31 − 25 × 30 = 806 − 750 = 56.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q088",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Find the lowest number which when divided by 8,12,15 and 20 leaves the remainder 2.",
+        "options": {
+          "A": "360",
+          "B": "242",
+          "C": "122",
+          "D": "82"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q88",
+      "key_basis": "derived",
+      "rule": "The LCM of 8, 12, 15 and 20 is 120: 120 + 2 = 122.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q089",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A group of 1500 persons consisting of captains and soldiers is travelling in a train. For every 19 soldiers there is one captain. The number of captains in the group is :",
+        "options": {
+          "A": "85",
+          "B": "80",
+          "C": "75",
+          "D": "70"
+        },
+        "key": "C",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q89",
+      "key_basis": "derived",
+      "rule": "One captain in every 20 people: 1500 ÷ 20 = 75.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch15-q090",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "There are some balls of red, green and yellow colour lying on a table. There are as many as red balls as there are yellow balls. There are twice as many yellow balls as there are green ones. The number of red balls :",
+        "options": {
+          "A": "is equal to the sum of yellow and green balls.",
+          "B": "is double the number of green balls.",
+          "C": "is equal to yellow balls minus green balls.",
+          "D": "cannot be determined"
+        },
+        "key": "B",
+        "reasoningType": "arithmetic"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch15 p58 q90",
+      "key_basis": "derived",
+      "rule": "Red = yellow = 2 × green, so red is double the green.",
       "confidence": "high"
     }
   ]

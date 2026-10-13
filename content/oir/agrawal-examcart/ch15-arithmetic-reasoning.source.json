@@ -1,0 +1,1103 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSR OIR 1-127 (phone photos of printed pages 1-127)",
+  "chapter": 15,
+  "title": "Arithmetic Reasoning",
+  "pages": [
+    55,
+    58
+  ],
+  "transcribed": "2026-10-13",
+  "note": "Verbatim, typos included (\"on the form\", \"younger to\", \"10-10 words\", \"as many as red balls\", \"second heavier\", \"If he wants\", \"Nivriti\"/\"Nivruti\", \"older than and\"). Never edited: corrections live in src/items/oir/. Fractions print stacked (1/4, 15/20) and are transcribed with a slash; Q84 prints each fraction in words and figures. Ordinals print with superscript suffixes. The chapter prints no direction. Q39 names a character whose book name matches a real candidate's and is replaced (D27).",
+  "directions": [
+    {
+      "section": "Main",
+      "printed": null,
+      "text": null
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 55,
+      "section": "Main",
+      "stem": "A father says to his son, I was thrice as old as you are at your birth. If the present age of the father is 48 years, then what was the age of the son 4 years ago ?",
+      "options": {
+        "A": "24 years",
+        "B": "8 years",
+        "C": "12 years",
+        "D": "16 years"
+      }
+    },
+    {
+      "n": 2,
+      "page": 55,
+      "section": "Main",
+      "stem": "The sum of the ages of Reena and her father is 60 and the difference between their ages is 36. Find the age of Reena's father.",
+      "options": {
+        "A": "58 Years",
+        "B": "60 Years",
+        "C": "48 Years",
+        "D": "52 Years"
+      }
+    },
+    {
+      "n": 3,
+      "page": 55,
+      "section": "Main",
+      "stem": "The ratio of the present ages of A and B is 3 : 5. After 7 years B's age will be double of C's age. If C celebrated his 10th birthday 4 years ago, then what is the present age (in years) of A?",
+      "options": {
+        "A": "14",
+        "B": "21",
+        "C": "28",
+        "D": "42"
+      }
+    },
+    {
+      "n": 4,
+      "page": 55,
+      "section": "Main",
+      "stem": "The ratio of the present ages of A and B is 4 : 5. After 5 years the age of B will be 35 years. What is the present age (in years) of A?",
+      "options": {
+        "A": "24",
+        "B": "29",
+        "C": "26",
+        "D": "31"
+      }
+    },
+    {
+      "n": 5,
+      "page": 55,
+      "section": "Main",
+      "stem": "The ratio of the present ages of Richa and her husband is 3 : 4. Five years from now, the ratio of the ages of her husband and son will be 3 : 1. If the present age of Richa is 21 years, then what will be the present age (in years) of her son?",
+      "options": {
+        "A": "16",
+        "B": "11",
+        "C": "6",
+        "D": "5"
+      }
+    },
+    {
+      "n": 6,
+      "page": 55,
+      "section": "Main",
+      "stem": "The present age of A is twice that of B. B's age after 5 years. will be 4 times the present age of C. If C celebrated his seventh birthday 4 years ago, then what will be the present age (in years) of A?",
+      "options": {
+        "A": "73",
+        "B": "64",
+        "C": "78",
+        "D": "59"
+      }
+    },
+    {
+      "n": 7,
+      "page": 55,
+      "section": "Main",
+      "stem": "The present age of A is 52 years. After 8 years the ratio of the ages of A and B will be 4 : 5. What is the present age (in years) of B?",
+      "options": {
+        "A": "67",
+        "B": "75",
+        "C": "72",
+        "D": "60"
+      }
+    },
+    {
+      "n": 8,
+      "page": 55,
+      "section": "Main",
+      "stem": "4 years ago, A was twice as old as B. After 6 years C's age will be twice of A's age. Present age of A. is 10 years more than the present age of B. What is the present age of C?",
+      "options": {
+        "A": "34 years",
+        "B": "50 years",
+        "C": "54 years",
+        "D": "74 years"
+      }
+    },
+    {
+      "n": 9,
+      "page": 55,
+      "section": "Main",
+      "stem": "The ratio of the age of the father to the age of the son is 5 : 2. If the product of their ages is 160, then what is the age of the father?",
+      "options": {
+        "A": "22",
+        "B": "18",
+        "C": "24",
+        "D": "20"
+      }
+    },
+    {
+      "n": 10,
+      "page": 55,
+      "section": "Main",
+      "stem": "Amit is 6 years younger than Arjun. If the ratio of the ages of Amit and Arjun is 5 : 7, then what is the age (in years) of Amit?",
+      "options": {
+        "A": "35",
+        "B": "45",
+        "C": "15",
+        "D": "41"
+      }
+    },
+    {
+      "n": 11,
+      "page": 55,
+      "section": "Main",
+      "stem": "The present age of Ashok is twice the present age of Kishan. After 7 years, Kishan's age will be 4 times of Karthik's present age. If karthik celebrated his 9th birthday 3 years ago, then What is the present age of Ashok ?",
+      "options": {
+        "A": "82",
+        "B": "78",
+        "C": "72",
+        "D": "84"
+      }
+    },
+    {
+      "n": 12,
+      "page": 55,
+      "section": "Main",
+      "stem": "Manoj starts from his home and reaches the temple in 7 hours, he travels 1/4th of the total distance at a speed of 10km/h and the remaining distance at 12km/h. Find the distance between his home and the temple.",
+      "options": {
+        "A": "70 km",
+        "B": "90 km",
+        "C": "72 km",
+        "D": "80 km"
+      }
+    },
+    {
+      "n": 13,
+      "page": 55,
+      "section": "Main",
+      "stem": "If a car covers a distance of 210 km in 3 hours and 30 minutes, then what is the average speed of the car in kmph?",
+      "options": {
+        "A": "50",
+        "B": "60",
+        "C": "45",
+        "D": "48"
+      }
+    },
+    {
+      "n": 14,
+      "page": 55,
+      "section": "Main",
+      "stem": "Train A, which runs at a speed of 90 km/h, starts from Station Y at 8 a.m. Train B, which runs at a speed of 120 km/h, starts from Station Y on the same route at 8.10 a.m.. If Train B catches up with Train A at 8.40 a.m. at Station Z, then what is the distance between Stations Y and Z ?",
+      "options": {
+        "A": "50 km",
+        "B": "60 km",
+        "C": "54 km",
+        "D": "62 km"
+      }
+    },
+    {
+      "n": 15,
+      "page": 55,
+      "section": "Main",
+      "stem": "When the price of petrol was increased by 25%, Yogesh reduced his journey so that his monthly expenditure on petrol remained the same as before. By what percent did Yogesh cut down his journey?",
+      "options": {
+        "A": "30%",
+        "B": "25%",
+        "C": "15%",
+        "D": "20%"
+      }
+    },
+    {
+      "n": 16,
+      "page": 55,
+      "section": "Main",
+      "stem": "In a class of 45 students, all the students participate in either one or both of the games Chess and Badminton. 11 students participate in both the games, while 17 students participate in only Chess. Find the total number of students who participated in Badminton.",
+      "options": {
+        "A": "30",
+        "B": "24",
+        "C": "26",
+        "D": "28"
+      }
+    },
+    {
+      "n": 17,
+      "page": 55,
+      "section": "Main",
+      "stem": "A student has to obtain 40% of the maximum marks in order to pass. If she scored 80 marks and still failed by 20 marks, then calculate the maximum marks?",
+      "options": {
+        "A": "300",
+        "B": "220",
+        "C": "250",
+        "D": "200"
+      }
+    },
+    {
+      "n": 18,
+      "page": 55,
+      "section": "Main",
+      "stem": "If the price of a product is first decreased by 35% and then increased by 20%, what will be the net change in the price of the product?",
+      "options": {
+        "A": "22%",
+        "B": "25%",
+        "C": "30%",
+        "D": "20%"
+      }
+    },
+    {
+      "n": 19,
+      "page": 55,
+      "section": "Main",
+      "stem": "Sunita appeared for a test consisting of 260 questions and answered 40% of the first 130 questions correctly. What percentage of the rest 130 questions must she answer correctly so as to score 60% in the entire test ?",
+      "options": {
+        "A": "80%",
+        "B": "75%",
+        "C": "84%",
+        "D": "70%"
+      }
+    },
+    {
+      "n": 20,
+      "page": 55,
+      "section": "Main",
+      "stem": "When a number is subtracted from the square of 25, it becomes 124 times of the number. Find the number.",
+      "options": {
+        "A": "25",
+        "B": "10",
+        "C": "5",
+        "D": "15"
+      }
+    },
+    {
+      "n": 21,
+      "page": 55,
+      "section": "Main",
+      "stem": "When twice of a number added to 3 is multiplied by 5 and added to the number itself, it gives 158. What is the square of that number ?",
+      "options": {
+        "A": "169",
+        "B": "225",
+        "C": "121",
+        "D": "289"
+      }
+    },
+    {
+      "n": 22,
+      "page": 55,
+      "section": "Main",
+      "stem": "A book has 300 pages and each page has 20 lines of 10-10 words each. How many words are there in the book ?",
+      "options": {
+        "A": "6,000",
+        "B": "60,000",
+        "C": "66,000",
+        "D": "600,000"
+      }
+    },
+    {
+      "n": 23,
+      "page": 56,
+      "section": "Main",
+      "stem": "The last three digits of the binary equivalent of the number 85432578 are :",
+      "options": {
+        "A": "001",
+        "B": "100",
+        "C": "110",
+        "D": "010"
+      }
+    },
+    {
+      "n": 24,
+      "page": 56,
+      "section": "Main",
+      "stem": "The average income of six friends A, B, C, D, E and F is ₹ 6,500. The total income of B, D, E and F is ₹ 25,000. If A's income is ₹ 4,000 less than that of C, then find C's income.",
+      "options": {
+        "A": "₹ 7,000",
+        "B": "₹ 10,000",
+        "C": "₹ 9,000",
+        "D": "₹ 8,000"
+      }
+    },
+    {
+      "n": 25,
+      "page": 56,
+      "section": "Main",
+      "stem": "The average weight of 8 students is 57 kg. Their individual weights are 55 kg, 49 kg, 57 kg, 63 kg, 68 kg, 52 kg, X kg and Y kg respectively. What is the sum of X and Y?",
+      "options": {
+        "A": "114 kg",
+        "B": "110 kg",
+        "C": "116 kg",
+        "D": "112 kg"
+      }
+    },
+    {
+      "n": 26,
+      "page": 56,
+      "section": "Main",
+      "stem": "A fruit shop consists of only two types of fruits namely oranges and mangoes. The number of oranges is three times the number of mangoes. Which of the following number CANNOT represent the total number of fruits in the shop?",
+      "options": {
+        "A": "40",
+        "B": "48",
+        "C": "44",
+        "D": "42"
+      }
+    },
+    {
+      "n": 27,
+      "page": 56,
+      "section": "Main",
+      "stem": "What is the difference between the largest and the smallest of the following fractions?\n4/5, 5/6, 3/8, 5/7, 6/7",
+      "options": {
+        "A": "15/28",
+        "B": "13/49",
+        "C": "27/56",
+        "D": "15/42"
+      }
+    },
+    {
+      "n": 28,
+      "page": 56,
+      "section": "Main",
+      "stem": "An amount of Rs. 1,189 is to be divided among Rakesh, Mrinal and Sanjay in the ratio of 11:13:17, respectively. How much amount will Sanjay get more than Rakesh?",
+      "options": {
+        "A": "₹160",
+        "B": "₹222",
+        "C": "₹194",
+        "D": "₹174"
+      }
+    },
+    {
+      "n": 29,
+      "page": 56,
+      "section": "Main",
+      "stem": "A certain sum of money was divided among Darshan, Swati and Nivriti. Out of that Nivriti got ₹ 539. If the ratio of the money distributed among Darshan, Swati and Nivruti is 5:6:7, then what was the total money distributed?",
+      "options": {
+        "A": "₹ 1,422",
+        "B": "₹ 1,341",
+        "C": "₹1,356",
+        "D": "₹ 1,386"
+      }
+    },
+    {
+      "n": 30,
+      "page": 56,
+      "section": "Main",
+      "stem": "A sum of Rs 6,764 is to be distributed among four friends P, Q R and S in the ratio 8 : 6 : 3 : 2. What is the total amount that P and R together will get?",
+      "options": {
+        "A": "₹ 3,916",
+        "B": "₹ 3,766",
+        "C": "₹ 2,848",
+        "D": "₹ 4,120"
+      }
+    },
+    {
+      "n": 31,
+      "page": 56,
+      "section": "Main",
+      "stem": "There are two numbers. The difference between the two numbers is 2 and the difference between their squares is 8. Find the value of these two numbers?",
+      "options": {
+        "A": "8, 6",
+        "B": "3, 1",
+        "C": "7, 5",
+        "D": "12, 10"
+      }
+    },
+    {
+      "n": 32,
+      "page": 56,
+      "section": "Main",
+      "stem": "A drum contains 40 litres of milk. One-fourth of the milk is taken out and replaced with water. Then, half of the mixture is taken out and replaced with water. What is the respective quantity of milk and water left in the drum ?",
+      "options": {
+        "A": "25 litres and 15 litres",
+        "B": "20 litres and 20 litres",
+        "C": "15 litres and 25 litres",
+        "D": "10 litres and 30 litres"
+      }
+    },
+    {
+      "n": 33,
+      "page": 56,
+      "section": "Main",
+      "stem": "₹ 2,871 is to be divided among A, B and C in the ratio of 9 : 11 : 13 respectively. How much more money (in ₹) will C get than A?",
+      "options": {
+        "A": "₹ 783",
+        "B": "₹ 348",
+        "C": "₹ 402",
+        "D": "₹ 296"
+      }
+    },
+    {
+      "n": 34,
+      "page": 56,
+      "section": "Main",
+      "stem": "Amit's present age is 5/4 of his sister's age at the time of her marriage. If his sister got married 5 years ago and her father's age at that time was twice the age of Amit, then what is the present age (in years) of his father?",
+      "options": {
+        "A": "55",
+        "B": "45",
+        "C": "50",
+        "D": "40"
+      }
+    },
+    {
+      "n": 35,
+      "page": 56,
+      "section": "Main",
+      "stem": "The present age of a father is three times that of his son. Son's age after 10 years will be 5 times of Raman's present age. If Raman celebrated his third birthday 2 years ago, then what is the present age (in years) of the father?",
+      "options": {
+        "A": "45",
+        "B": "40",
+        "C": "36",
+        "D": "39"
+      }
+    },
+    {
+      "n": 36,
+      "page": 56,
+      "section": "Main",
+      "stem": "Saksham's present age is one-third of his father's present age. 5 years ago Saksham's father's age was half of Saksham's grandfather's age. If Saksham's grandfather will celebrate his 88th birthday after 3 years, then what is the present age (in years) of Saksham?",
+      "options": {
+        "A": "18",
+        "B": "15",
+        "C": "16",
+        "D": "20"
+      }
+    },
+    {
+      "n": 37,
+      "page": 56,
+      "section": "Main",
+      "stem": "The ratio of the present ages of Sumit and Amit is 3 : 4. If Sumit's age after 20 years will be 62 years, then what is Amit's present age (in years)?",
+      "options": {
+        "A": "56",
+        "B": "64",
+        "C": "60",
+        "D": "52"
+      }
+    },
+    {
+      "n": 38,
+      "page": 56,
+      "section": "Main",
+      "stem": "Among the four friends, Govind is twice the age of Krishna. Nandu is half of Krishna's age. Gwala is 6 years older than Krishna, but 6 years younger than Govind. Who is the youngest in age?",
+      "options": {
+        "A": "Govind",
+        "B": "Krishna",
+        "C": "Nandu",
+        "D": "Cannot be determined"
+      }
+    },
+    {
+      "n": 39,
+      "page": 56,
+      "section": "Main",
+      "stem": "Aman is 3 years older than and Mohan 3 years younger than Suresh, while Mohan and Danish are twins. Suresh is how many years older than Danish?",
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "6",
+        "D": "12"
+      },
+      "renamed": true
+    },
+    {
+      "n": 40,
+      "page": 56,
+      "section": "Main",
+      "stem": "Mona is 6 years younger to her husband and her husband's age is five times that of their daughter Reena. If Reena was 5 years old 3 years ago, then what is the present age of Mona?",
+      "options": {
+        "A": "30",
+        "B": "34",
+        "C": "35",
+        "D": "40"
+      }
+    },
+    {
+      "n": 41,
+      "page": 56,
+      "section": "Main",
+      "stem": "15 chains were bought for ₹7,520 and sold for ₹9,450. What is the approximate profit percentage per chain?",
+      "options": {
+        "A": "26%",
+        "B": "28%",
+        "C": "24%",
+        "D": "27%"
+      }
+    },
+    {
+      "n": 42,
+      "page": 56,
+      "section": "Main",
+      "stem": "Neha wants to sell an item. If he wants to make a profit of 200%, then the selling price should be how many times the cost price?",
+      "options": {
+        "A": "3 times",
+        "B": "4 times",
+        "C": "6 times",
+        "D": "2 times"
+      }
+    },
+    {
+      "n": 43,
+      "page": 56,
+      "section": "Main",
+      "stem": "The difference between the simple interest and the compound interest on a certain sum of money for 2 years at 10% per annum is ₹ 732. Find the amount.",
+      "options": {
+        "A": "₹ 73,200",
+        "B": "₹ 70,320",
+        "C": "₹ 72,300",
+        "D": "₹ 70,230"
+      }
+    },
+    {
+      "n": 44,
+      "page": 56,
+      "section": "Main",
+      "stem": "Among five objects E, F, G, H and K, the weight of H is three times that of K. The weight of G is 7.5 kg. The weight of E is twice the weight of F. The weight of K is four times the weight of G. If the weight of F is the same as that of G, then which is the second heavier object?",
+      "options": {
+        "A": "K",
+        "B": "H",
+        "C": "E",
+        "D": "F"
+      }
+    },
+    {
+      "n": 45,
+      "page": 56,
+      "section": "Main",
+      "stem": "Among five things named K, L, M, N and O, the weight of M is 60 kg. The weight of L is twice that of N. The weight of O is thrice that of L. The weight of K is half that of O. If the weight of K is equal to that of M, then what is the weight of N?",
+      "options": {
+        "A": "40 kg",
+        "B": "30 kg",
+        "C": "80 kg",
+        "D": "20 kg"
+      }
+    },
+    {
+      "n": 46,
+      "page": 56,
+      "section": "Main",
+      "stem": "There are three books coded as A, B and C. The price of book A is twice the price of book B and one-third the price of book C. If book C costs ₹ 84, then what are the costs of book A and book B, respectively ?",
+      "options": {
+        "A": "₹ 24 and ₹ 42",
+        "B": "₹ 14 and ₹ 7",
+        "C": "₹ 14 and ₹ 42",
+        "D": "₹ 28 and ₹ 14"
+      }
+    },
+    {
+      "n": 47,
+      "page": 57,
+      "section": "Main",
+      "stem": "There are 12 dozens of apples in a basket. Two dozens are added later. Ten apples got spoiled and are removed. The remaining are transferred equally into two baskets, how many are in each ?",
+      "options": {
+        "A": "168",
+        "B": "158",
+        "C": "79",
+        "D": "89"
+      }
+    },
+    {
+      "n": 48,
+      "page": 57,
+      "section": "Main",
+      "stem": "On a farm there are 48 ducks, 42 goats and 10 cows including some attendants. If the total number of legs is 216 more than the number of heads, then what is the number of attendants on the form?",
+      "options": {
+        "A": "10",
+        "B": "14",
+        "C": "8",
+        "D": "12"
+      }
+    },
+    {
+      "n": 49,
+      "page": 57,
+      "section": "Main",
+      "stem": "390625 is at which position in the series 5, 25, 125, 625, ............ ?",
+      "options": {
+        "A": "9th",
+        "B": "8th",
+        "C": "7th",
+        "D": "10th"
+      }
+    },
+    {
+      "n": 50,
+      "page": 57,
+      "section": "Main",
+      "stem": "A father tells his son, \"I was three times of your present age when you were born.\" If the father's present age is 48 years, how old was the boy 4 years ago ?",
+      "options": {
+        "A": "24 years",
+        "B": "8 years",
+        "C": "12 years",
+        "D": "16 years"
+      }
+    },
+    {
+      "n": 51,
+      "page": 57,
+      "section": "Main",
+      "stem": "If a train 150 m long crosses a pole in 12 seconds, then what is the speed of the train in km/hr ?",
+      "options": {
+        "A": "45",
+        "B": "60",
+        "C": "50",
+        "D": "75"
+      }
+    },
+    {
+      "n": 52,
+      "page": 57,
+      "section": "Main",
+      "stem": "What number is as much more than 10 as it is less than one half of that from which 50 is 10 less?",
+      "options": {
+        "A": "15",
+        "B": "20",
+        "C": "25",
+        "D": "30"
+      }
+    },
+    {
+      "n": 53,
+      "page": 57,
+      "section": "Main",
+      "stem": "6 years ago, Raju's age was 2 years less than half his brother's age, which was 20 years. What is his present age?",
+      "options": {
+        "A": "12 years",
+        "B": "14 years",
+        "C": "8 years",
+        "D": "10 years"
+      }
+    },
+    {
+      "n": 54,
+      "page": 57,
+      "section": "Main",
+      "stem": "Mother was three times the age of her daughter five years ago. After five years, mother will be twice as old as her daughter. How old is the daughter today ?",
+      "options": {
+        "A": "5 years",
+        "B": "10 years",
+        "C": "15 years",
+        "D": "20 years"
+      }
+    },
+    {
+      "n": 55,
+      "page": 57,
+      "section": "Main",
+      "stem": "The age of a father is thrice that of his son. If the sum of their ages is 48 years, what is the age of the father ?",
+      "options": {
+        "A": "30 years",
+        "B": "32 years",
+        "C": "36 years",
+        "D": "40 years"
+      }
+    },
+    {
+      "n": 56,
+      "page": 57,
+      "section": "Main",
+      "stem": "The sum of the squares of the digits of the largest prime number in two digits is :",
+      "options": {
+        "A": "97",
+        "B": "118",
+        "C": "148",
+        "D": "130"
+      }
+    },
+    {
+      "n": 57,
+      "page": 57,
+      "section": "Main",
+      "stem": "Find the number lying between 900 and 1000 which when divided by 38 and 57 leaves in each case a remainder of 23.",
+      "options": {
+        "A": "935",
+        "B": "962",
+        "C": "912",
+        "D": "926"
+      }
+    },
+    {
+      "n": 58,
+      "page": 57,
+      "section": "Main",
+      "stem": "Raju can do a piece of work in 20 days, while Ram can do it in 30 days. If both of them work at it together, then the number of days in which they will be able to finish the work is :",
+      "options": {
+        "A": "50 days",
+        "B": "25 days",
+        "C": "12 days",
+        "D": "10 days"
+      }
+    },
+    {
+      "n": 59,
+      "page": 57,
+      "section": "Main",
+      "stem": "There are 2000 students in a school. 10 per cent of these students travel to school by car, 40 per cent of the students travel by bus. How many students of that school walk to school?",
+      "options": {
+        "A": "600",
+        "B": "800",
+        "C": "1200",
+        "D": "1000"
+      }
+    },
+    {
+      "n": 60,
+      "page": 57,
+      "section": "Main",
+      "stem": "In a money bag there are ₹ 1 coins, ₹ 2 coins and ₹ 5 coins. If the ratio of the number of coins be 4 : 3 : 2 and the total money in the bag is ₹ 500, the amount of money in ₹ 2 denomination is :",
+      "options": {
+        "A": "₹ 250",
+        "B": "₹ 200",
+        "C": "₹150",
+        "D": "₹ 100"
+      }
+    },
+    {
+      "n": 61,
+      "page": 57,
+      "section": "Main",
+      "stem": "The average of 5 consecutive odd positive integers is 9. The least one among them is :",
+      "options": {
+        "A": "5",
+        "B": "3",
+        "C": "1",
+        "D": "7"
+      }
+    },
+    {
+      "n": 62,
+      "page": 57,
+      "section": "Main",
+      "stem": "In a department, 24 employees know typing and 11 know stenography, 25 know how to use a computer. 7 know both typing and stenography, 4 know stenography and computers, 12 know typing and computers and 3 know all the three. If there were 50 employees in the department, find how many employees don't know any of the three jobs.",
+      "options": {
+        "A": "40",
+        "B": "10",
+        "C": "47",
+        "D": "33"
+      }
+    },
+    {
+      "n": 63,
+      "page": 57,
+      "section": "Main",
+      "stem": "An official meeting is attended by 130 department employees. Of them, 66 drink tea, 56 drink coffee and 63 drink juice, 27 can drink either tea or coffee. 25 can drink coffee or juice and 23 can drink juice and tea, 5 employees can drink any of the three. How many drink only tea ?",
+      "options": {
+        "A": "21",
+        "B": "22",
+        "C": "18",
+        "D": "20"
+      }
+    },
+    {
+      "n": 64,
+      "page": 57,
+      "section": "Main",
+      "stem": "Joel and Tom were travelling from Town X to Town Y which was 210 km apart. Joel set off 1 h 15 min later than Tom but arrived 15 min earlier. If the average speed of Tom was 42 km/h, find the average speed of Joel.",
+      "options": {
+        "A": "50 km/h",
+        "B": "60 km/h",
+        "C": "65 km/h",
+        "D": "70 km/h"
+      }
+    },
+    {
+      "n": 65,
+      "page": 57,
+      "section": "Main",
+      "stem": "A bus driver wants to travel a distance of 200 km. He travels with the speed of 40 km/h. He takes rest at 3 different hotels for 15 min, 30 min and 15 min, respectively. He starts his journey at 9:00 am. At what time does he reach his final destination ?",
+      "options": {
+        "A": "3 : 00 am",
+        "B": "3 : 00 pm",
+        "C": "3 : 30 am",
+        "D": "2 : 30 pm"
+      }
+    },
+    {
+      "n": 66,
+      "page": 57,
+      "section": "Main",
+      "stem": "Town A and town B were 600 km apart. Joshua left town A for town B and travelled at an average speed of 65 km/h. At the same time, Menon left town B for town A. The two of them meet 5 h later. Find Menon's average speed.",
+      "options": {
+        "A": "55 km/h",
+        "B": "60 km/h",
+        "C": "65 km/h",
+        "D": "120 km/h"
+      }
+    },
+    {
+      "n": 67,
+      "page": 57,
+      "section": "Main",
+      "stem": "While Suresh set out on a journey he found that the tank of his scooter was 2/3 full. After riding for some hours, he spent 3 litres and lent his friend another 3 litres of petrol. Suresh then found that he had 1/6th of the tank full. What was the full capacity of his petrol tank ?",
+      "options": {
+        "A": "12 litres",
+        "B": "15 litres",
+        "C": "16 litres",
+        "D": "20 litres"
+      }
+    },
+    {
+      "n": 68,
+      "page": 57,
+      "section": "Main",
+      "stem": "Present ages of father and son are in the ratio of 5 : 1, respectively. 7 yr. later, this ratio becomes 3 : 1. What is the son's present age (in yr.) ?",
+      "options": {
+        "A": "8",
+        "B": "7",
+        "C": "6",
+        "D": "5"
+      }
+    },
+    {
+      "n": 69,
+      "page": 57,
+      "section": "Main",
+      "stem": "Mani is double the age of Prabhu. Ramona is half the age of Prabhu. If Mani is sixty, find out the age of Ramona.",
+      "options": {
+        "A": "20",
+        "B": "15",
+        "C": "10",
+        "D": "24"
+      }
+    },
+    {
+      "n": 70,
+      "page": 57,
+      "section": "Main",
+      "stem": "Your mother is 4 years younger than your father who is six times older than you. If your age is 6 years, what is your mother's age ?",
+      "options": {
+        "A": "36 years",
+        "B": "34 years",
+        "C": "28 years",
+        "D": "32 years"
+      }
+    },
+    {
+      "n": 71,
+      "page": 57,
+      "section": "Main",
+      "stem": "An accurate clock shows 8 O' clock in the morning. Through how many degrees will the hour hand rotate when the clock shows 2 O' clock in the afternoon ?",
+      "options": {
+        "A": "144°",
+        "B": "150°",
+        "C": "168°",
+        "D": "180°"
+      }
+    },
+    {
+      "n": 72,
+      "page": 57,
+      "section": "Main",
+      "stem": "The sum of ages of mother, daughter and son is 87 yr. What will be the sum of their ages after 8 yr. ?",
+      "options": {
+        "A": "105",
+        "B": "101",
+        "C": "110",
+        "D": "111"
+      }
+    },
+    {
+      "n": 73,
+      "page": 57,
+      "section": "Main",
+      "stem": "The age of Sunita's father today is four times as that of her age. After 8 years, the age of her father will be three times that of her age. What is Sunita's age today ?",
+      "options": {
+        "A": "18 years",
+        "B": "16 years",
+        "C": "24 years",
+        "D": "20 years"
+      }
+    },
+    {
+      "n": 74,
+      "page": 58,
+      "section": "Main",
+      "stem": "Ramesh got some mangoes among which the ripe ones were 3 times the raw ones. If he got 68 mangoes in all, how many of them were raw ?",
+      "options": {
+        "A": "17",
+        "B": "16",
+        "C": "34",
+        "D": "18"
+      }
+    },
+    {
+      "n": 75,
+      "page": 58,
+      "section": "Main",
+      "stem": "There are ostriches and zebras in a zoo. By counting their heads they are 40 and the number of their legs is 100. How many ostriches are there ?",
+      "options": {
+        "A": "25",
+        "B": "30",
+        "C": "35",
+        "D": "40"
+      }
+    },
+    {
+      "n": 76,
+      "page": 58,
+      "section": "Main",
+      "stem": "In a retail shop, there were 54 cupboards. In each cupboard, 28 racks were made. In each rack, 10 boxes were kept. In each box, 4 shirts were packed. One day 500 boxes were sold and 250 boxes were purchased. How many shirts were there on that day ?",
+      "options": {
+        "A": "60380",
+        "B": "59360",
+        "C": "59580",
+        "D": "59480"
+      }
+    },
+    {
+      "n": 77,
+      "page": 58,
+      "section": "Main",
+      "stem": "In a row, 25 trees are planted at equal distance from each other. The distance between 1st and 25th tree is 30 m. What is the distance between 3rd and 15th tree ?",
+      "options": {
+        "A": "8m",
+        "B": "15m",
+        "C": "16m",
+        "D": "18m"
+      }
+    },
+    {
+      "n": 78,
+      "page": 58,
+      "section": "Main",
+      "stem": "In a class composed of x girls and y boys what part of the class is composed of girls?",
+      "options": {
+        "A": "y (x + y)",
+        "B": "x/xy",
+        "C": "x/(x + y)",
+        "D": "y/xy"
+      }
+    },
+    {
+      "n": 79,
+      "page": 58,
+      "section": "Main",
+      "stem": "If a number is greater than 5 but less than 9 and greater than 7 but less than 11, the number is :",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8"
+      }
+    },
+    {
+      "n": 80,
+      "page": 58,
+      "section": "Main",
+      "stem": "Mahesh is 60 yr. old. Ram is 5 yrs. junior to Mahesh and 4 yrs. senior to Raju. The youngest brother of Raju is Babu and he is 6 yrs. junior to him. What is the age difference between Mahesh and Babu ?",
+      "options": {
+        "A": "06",
+        "B": "18",
+        "C": "15",
+        "D": "10"
+      }
+    },
+    {
+      "n": 81,
+      "page": 58,
+      "section": "Main",
+      "stem": "There were 120 tigers in the sanctuary. 20% of them were killed by unknown hunters. 50% of the remaining died in fire in the sanctuary. How many tigers are there in the sanctuary now ?",
+      "options": {
+        "A": "36",
+        "B": "48",
+        "C": "30",
+        "D": "50"
+      }
+    },
+    {
+      "n": 82,
+      "page": 58,
+      "section": "Main",
+      "stem": "Two cubes have volumes in the ratio 1 : 27. The ratio of the face of one to that of the other is :",
+      "options": {
+        "A": "1 : 18",
+        "B": "1 : 3",
+        "C": "1 : 6",
+        "D": "1 : 9"
+      }
+    },
+    {
+      "n": 83,
+      "page": 58,
+      "section": "Main",
+      "stem": "Two buses start at the same time from Delhi and Agra, which are 300 km apart, towards each other. After what time will they cross each other if their speeds are 38 km/hr and 37km/hr respectively?",
+      "options": {
+        "A": "4hr.",
+        "B": "3hr.",
+        "C": "5hr.",
+        "D": "6hr."
+      }
+    },
+    {
+      "n": 84,
+      "page": 58,
+      "section": "Main",
+      "stem": "Ravi has spent a quarter (1/4) of his life as a boy, one-fifth (1/5) as a youth, one-third (1/3) as a man and 13 yrs. in old age. What is his present age ?",
+      "options": {
+        "A": "70 yr.",
+        "B": "80 yr.",
+        "C": "60 yr.",
+        "D": "65 yr."
+      }
+    },
+    {
+      "n": 85,
+      "page": 58,
+      "section": "Main",
+      "stem": "15/20 ÷ 4/5 × 2/3 × 8/5 = ?",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "3",
+        "D": "5"
+      }
+    },
+    {
+      "n": 86,
+      "page": 58,
+      "section": "Main",
+      "stem": "A husband and a wife had five married sons and each of them had four children. How many members are there in the family ?",
+      "options": {
+        "A": "36",
+        "B": "30",
+        "C": "40",
+        "D": "32"
+      }
+    },
+    {
+      "n": 87,
+      "page": 58,
+      "section": "Main",
+      "stem": "The average age of 25 subordinates in an office is 30 yr. If the age of Manager is added, the average increases to 31 yr. What is the age of the Manager ?",
+      "options": {
+        "A": "26",
+        "B": "36",
+        "C": "46",
+        "D": "56"
+      }
+    },
+    {
+      "n": 88,
+      "page": 58,
+      "section": "Main",
+      "stem": "Find the lowest number which when divided by 8,12,15 and 20 leaves the remainder 2.",
+      "options": {
+        "A": "360",
+        "B": "242",
+        "C": "122",
+        "D": "82"
+      }
+    },
+    {
+      "n": 89,
+      "page": 58,
+      "section": "Main",
+      "stem": "A group of 1500 persons consisting of captains and soldiers is travelling in a train. For every 19 soldiers there is one captain. The number of captains in the group is :",
+      "options": {
+        "A": "85",
+        "B": "80",
+        "C": "75",
+        "D": "70"
+      }
+    },
+    {
+      "n": 90,
+      "page": 58,
+      "section": "Main",
+      "stem": "There are some balls of red, green and yellow colour lying on a table. There are as many as red balls as there are yellow balls. There are twice as many yellow balls as there are green ones. The number of red balls :",
+      "options": {
+        "A": "is equal to the sum of yellow and green balls.",
+        "B": "is double the number of green balls.",
+        "C": "is equal to yellow balls minus green balls.",
+        "D": "cannot be determined"
+      }
+    }
+  ]
+}
