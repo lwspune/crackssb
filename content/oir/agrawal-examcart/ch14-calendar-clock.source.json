@@ -1,0 +1,623 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSR OIR 1-127 (phone photos of printed pages 1-127)",
+  "chapter": 14,
+  "title": "Calender and Clock",
+  "pages": [
+    53,
+    54
+  ],
+  "transcribed": "2026-10-13",
+  "note": "Verbatim, typos included (\"Calender\", \"become an adult\", \"it be on\", \"minutes hand\", \"minute hands points\"). Never edited: corrections live in src/items/oir/. Ordinals print with superscript suffixes, transcribed inline; fractions print stacked (39 6/11, 12½). The chapter prints no direction. Q43's minute count sits on the page curl and reads 38. Q32 names a character whose book name matches a real candidate's and is replaced (D27).",
+  "directions": [
+    {
+      "section": "Main",
+      "printed": null,
+      "text": null
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 53,
+      "section": "Main",
+      "stem": "If the 8th of April falls on Monday, then on which day will the 30th of that month fall ?",
+      "options": {
+        "A": "Sunday",
+        "B": "Monday",
+        "C": "Tuesday",
+        "D": "Wednesday"
+      }
+    },
+    {
+      "n": 2,
+      "page": 53,
+      "section": "Main",
+      "stem": "If 25th February, 2008 was Monday, then what was the day on 2nd March 2008 ?",
+      "options": {
+        "A": "Tuesday",
+        "B": "Saturday",
+        "C": "Sunday",
+        "D": "Monday"
+      }
+    },
+    {
+      "n": 3,
+      "page": 53,
+      "section": "Main",
+      "stem": "What will be the day of the week on 19th November, 2053 ?",
+      "options": {
+        "A": "Wednesday",
+        "B": "Tuesday",
+        "C": "Monday",
+        "D": "Thursday"
+      }
+    },
+    {
+      "n": 4,
+      "page": 53,
+      "section": "Main",
+      "stem": "What was the day of the week on 10th October, 2021 ?",
+      "options": {
+        "A": "Wednesday",
+        "B": "Friday",
+        "C": "Monday",
+        "D": "Sunday"
+      }
+    },
+    {
+      "n": 5,
+      "page": 53,
+      "section": "Main",
+      "stem": "What was the day of the week on 17 November, 1855 ?",
+      "options": {
+        "A": "Sunday",
+        "B": "Monday",
+        "C": "Saturday",
+        "D": "Tuesday"
+      }
+    },
+    {
+      "n": 6,
+      "page": 53,
+      "section": "Main",
+      "stem": "What day of the week will it be on 15th April, 2029?",
+      "options": {
+        "A": "Sunday",
+        "B": "Saturday",
+        "C": "Tuesday",
+        "D": "Monday"
+      }
+    },
+    {
+      "n": 7,
+      "page": 53,
+      "section": "Main",
+      "stem": "John bought a puppy on Friday, 21 January, 2022. The puppy become an adult dog on the 380th day since John bought him. On which day did the puppy become an adult ?",
+      "options": {
+        "A": "Sunday",
+        "B": "Monday",
+        "C": "Saturday",
+        "D": "Wednesday"
+      }
+    },
+    {
+      "n": 8,
+      "page": 53,
+      "section": "Main",
+      "stem": "The birth date of Viaan is 9 March, 2002. Find the day of the week of that day.",
+      "options": {
+        "A": "Monday",
+        "B": "Friday",
+        "C": "Tuesday",
+        "D": "Saturday"
+      }
+    },
+    {
+      "n": 9,
+      "page": 53,
+      "section": "Main",
+      "stem": "What was the day of the week on 31st January, 2009?",
+      "options": {
+        "A": "Monday",
+        "B": "Friday",
+        "C": "Sunday",
+        "D": "Saturday"
+      }
+    },
+    {
+      "n": 10,
+      "page": 53,
+      "section": "Main",
+      "stem": "What was the day of the week on 22nd February 2012 ?",
+      "options": {
+        "A": "Tuesday",
+        "B": "Thursday",
+        "C": "Friday",
+        "D": "Wednesday"
+      }
+    },
+    {
+      "n": 11,
+      "page": 53,
+      "section": "Main",
+      "stem": "If the 10th day of a month of 30 days is Tuesday, then which day of the week will be the last day of that month?",
+      "options": {
+        "A": "Monday",
+        "B": "Friday",
+        "C": "Wednesday",
+        "D": "Sunday"
+      }
+    },
+    {
+      "n": 12,
+      "page": 53,
+      "section": "Main",
+      "stem": "The first day of April is Wednesday. What day of the week will it be on the first of May in the same year ?",
+      "options": {
+        "A": "Saturday",
+        "B": "Friday",
+        "C": "Sunday",
+        "D": "Monday"
+      }
+    },
+    {
+      "n": 13,
+      "page": 53,
+      "section": "Main",
+      "stem": "What day of the week it be on 15 August, 2021 ?",
+      "options": {
+        "A": "Sunday",
+        "B": "Wednesday",
+        "C": "Saturday",
+        "D": "Monday"
+      }
+    },
+    {
+      "n": 14,
+      "page": 53,
+      "section": "Main",
+      "stem": "My friend was born on 4th December. I am 20 days younger than him. This year Children's Day is on Thursday, what day is my birthday?",
+      "options": {
+        "A": "Saturday",
+        "B": "Friday",
+        "C": "Monday",
+        "D": "Sunday"
+      }
+    },
+    {
+      "n": 15,
+      "page": 53,
+      "section": "Main",
+      "stem": "In the year 2017, India celebrated its Republic Day on Thursday. On which day of the same year it celebrated its Independence Day?",
+      "options": {
+        "A": "Wednesday",
+        "B": "Sunday",
+        "C": "Thursday",
+        "D": "Tuesday"
+      }
+    },
+    {
+      "n": 16,
+      "page": 53,
+      "section": "Main",
+      "stem": "Which year will have the same calendar as that of 2012 ?",
+      "options": {
+        "A": "2020",
+        "B": "2040",
+        "C": "2025",
+        "D": "2031"
+      }
+    },
+    {
+      "n": 17,
+      "page": 53,
+      "section": "Main",
+      "stem": "The day before the day before yesterday is three days after Saturday. What day is it today ?",
+      "options": {
+        "A": "Monday",
+        "B": "Wednesday",
+        "C": "Friday",
+        "D": "Saturday"
+      }
+    },
+    {
+      "n": 18,
+      "page": 53,
+      "section": "Main",
+      "stem": "If the fifth date of a month is Tuesday, what date will be three days after the third Friday in the month ?",
+      "options": {
+        "A": "18",
+        "B": "19",
+        "C": "21",
+        "D": "23"
+      }
+    },
+    {
+      "n": 19,
+      "page": 53,
+      "section": "Main",
+      "stem": "Rakshita went to the movies 8 days ago. She goes to the movies only on Friday. What day of the week is today ?",
+      "options": {
+        "A": "Sunday",
+        "B": "Saturday",
+        "C": "Thursday",
+        "D": "Monday"
+      }
+    },
+    {
+      "n": 20,
+      "page": 53,
+      "section": "Main",
+      "stem": "Charithra went to the movies nine days ago. She goes to the movies only on thursday, what day of the week is today ?",
+      "options": {
+        "A": "Sunday",
+        "B": "Tuesday",
+        "C": "Thursday",
+        "D": "Saturday"
+      }
+    },
+    {
+      "n": 21,
+      "page": 53,
+      "section": "Main",
+      "stem": "Assume that a clock shows 6:15 and the minute hands points North. In what direction will the hour hand point at 11:00?",
+      "options": {
+        "A": "North-East",
+        "B": "North-West",
+        "C": "South-East",
+        "D": "South-West"
+      }
+    },
+    {
+      "n": 22,
+      "page": 53,
+      "section": "Main",
+      "stem": "16 girls are participating in the game of musical chairs. The duration of each musical step is 2 minutes. An interval of 5 minutes is given after every 5 steps of the music. How much time will be taken to complete the game, if condition is kept that 1 person will be subtracted after each step?",
+      "options": {
+        "A": "47 minutes",
+        "B": "45 minutes",
+        "C": "38 minutes",
+        "D": "40 minutes"
+      }
+    },
+    {
+      "n": 23,
+      "page": 53,
+      "section": "Main",
+      "stem": "Rohan looked at his watch and told his sister Rima that it was 6:23 pm. But Rima told him that he had misread the long hand for short hand and vice-versa. What was the correct time ?",
+      "options": {
+        "A": "4 : 15 pm",
+        "B": "4 :27 pm",
+        "C": "4 : 23 pm",
+        "D": "4 : 33 pm"
+      }
+    },
+    {
+      "n": 24,
+      "page": 53,
+      "section": "Main",
+      "stem": "If the minutes hand of a clock advances at the rate of 9° per minute, how many minutes does the clock gain in half hour ?",
+      "options": {
+        "A": "20 minutes",
+        "B": "12½ minutes",
+        "C": "15 minutes",
+        "D": "None of these"
+      }
+    },
+    {
+      "n": 25,
+      "page": 53,
+      "section": "Main",
+      "stem": "A clock, which gains 10 minutes in 24 hours, is set right at 8 A.M. on Monday. What is the correct time when the clock indicates 1 P.M. on Tuesday ?",
+      "options": {
+        "A": "12.36 P.M.",
+        "B": "1 P.M.",
+        "C": "12.56 P.M.",
+        "D": "12.48 P.M."
+      }
+    },
+    {
+      "n": 26,
+      "page": 53,
+      "section": "Main",
+      "stem": "Flight to Ahmedabad leaves every 5 hours. The last flight left 25 minutes ago. If the time now is 10:45 A.M., what is the time for the next flight ?",
+      "options": {
+        "A": "2 : 20 AM",
+        "B": "3 : 20 PM",
+        "C": "3 : 35 AM",
+        "D": "3 : 55 PM"
+      }
+    },
+    {
+      "n": 27,
+      "page": 53,
+      "section": "Main",
+      "stem": "How many minutes is it before 12 noon if nine minutes ago it was twice as many minutes past 10 A.M. ?",
+      "options": {
+        "A": "23",
+        "B": "47",
+        "C": "37",
+        "D": "17"
+      }
+    },
+    {
+      "n": 28,
+      "page": 53,
+      "section": "Main",
+      "stem": "When Sandeep reached the railway station, it was 5 minutes late and the train had already departed. The scheduled time of departure of the train was 10:45 A.M. The time taken by Sandeep to reach the railway station from his house was 30 minutes. At what time did he start from the house ?",
+      "options": {
+        "A": "10.20 AM",
+        "B": "10.15 AM",
+        "C": "10.35 AM",
+        "D": "10.25 AM"
+      }
+    },
+    {
+      "n": 29,
+      "page": 54,
+      "section": "Main",
+      "stem": "If we substitute number 1 to 12 indicating hours on the dial clock by letters of the alphabet in their order starting with C, which letter would represent 8 ?",
+      "options": {
+        "A": "J",
+        "B": "K",
+        "C": "L",
+        "D": "I"
+      }
+    },
+    {
+      "n": 30,
+      "page": 54,
+      "section": "Main",
+      "stem": "Through how many degrees does the hour hand in a clock move as the time changes from 3 hours and 36 minutes to 6 hours ?",
+      "options": {
+        "A": "72",
+        "B": "84",
+        "C": "76",
+        "D": "80"
+      }
+    },
+    {
+      "n": 31,
+      "page": 54,
+      "section": "Main",
+      "stem": "The priest told the devotee, \"The bell rings at regular intervals of 45 minutes. The last bell rang 5 minutes ago. The next bell is due to be rung at 7:45 am.' At what time did the priest give this information to the devotee ?",
+      "options": {
+        "A": "6:55 am",
+        "B": "7:00 am",
+        "C": "7:05 am",
+        "D": "7:40 am"
+      }
+    },
+    {
+      "n": 32,
+      "page": 54,
+      "section": "Main",
+      "stem": "Rakesh put his timepiece on the table in such a way that at 6 PM the hour hand points to North, then in which direction will the minute hand point at 9.15 PM'?",
+      "options": {
+        "A": "East",
+        "B": "South",
+        "C": "North",
+        "D": "West"
+      },
+      "renamed": true
+    },
+    {
+      "n": 33,
+      "page": 54,
+      "section": "Main",
+      "stem": "A clock shows time 7:30 hrs. If the minute needle shows the West, then what will be direction of the hour needle ?",
+      "options": {
+        "A": "North",
+        "B": "N − E",
+        "C": "N − W",
+        "D": "S − W"
+      }
+    },
+    {
+      "n": 34,
+      "page": 54,
+      "section": "Main",
+      "stem": "Choose the correct alternative from the given options :\nIf 8th of April falls on Monday, what Day would be the 30th May of that year ?",
+      "options": {
+        "A": "Sunday",
+        "B": "Monday",
+        "C": "Thursday",
+        "D": "Wednesday"
+      }
+    },
+    {
+      "n": 35,
+      "page": 54,
+      "section": "Main",
+      "stem": "If the seventh day of a month is three days earlier than Friday. What day will it be on the nineteenth day of the month ?",
+      "options": {
+        "A": "Wednesday",
+        "B": "Monday",
+        "C": "Friday",
+        "D": "Sunday"
+      }
+    },
+    {
+      "n": 36,
+      "page": 54,
+      "section": "Main",
+      "stem": "What is the angle between the hour hand and the minute hand when it is 5 : 10 pm ?",
+      "options": {
+        "A": "150 degrees",
+        "B": "120 degrees",
+        "C": "115 degrees",
+        "D": "95 degrees"
+      }
+    },
+    {
+      "n": 37,
+      "page": 54,
+      "section": "Main",
+      "stem": "If in the year 2012, January 1st is Sunday, then which day is the Indian Republic Day in the year 2012 ?",
+      "options": {
+        "A": "Saturday",
+        "B": "Monday",
+        "C": "Thursday",
+        "D": "Friday"
+      }
+    },
+    {
+      "n": 38,
+      "page": 54,
+      "section": "Main",
+      "stem": "If 30th January 2003 was Thursday, what was the day on 2nd March, 2003 ?",
+      "options": {
+        "A": "Sunday",
+        "B": "Monday",
+        "C": "Saturday",
+        "D": "Tuesday"
+      }
+    },
+    {
+      "n": 39,
+      "page": 54,
+      "section": "Main",
+      "stem": "If 1st October is Sunday, then 1st November will be :",
+      "options": {
+        "A": "Tuesday",
+        "B": "Friday",
+        "C": "Wednesday",
+        "D": "Thursday"
+      }
+    },
+    {
+      "n": 40,
+      "page": 54,
+      "section": "Main",
+      "stem": "Which among the following year is a leap year ?",
+      "options": {
+        "A": "2500",
+        "B": "2800",
+        "C": "2600",
+        "D": "2700"
+      }
+    },
+    {
+      "n": 41,
+      "page": 54,
+      "section": "Main",
+      "stem": "At what time between 7 : 15 and 8 : 15, the hands of a clock will coincide with each other ?",
+      "options": {
+        "A": "39 6/11 min",
+        "B": "39 4/11 min",
+        "C": "38 5/11 min",
+        "D": "38 3/11 min"
+      }
+    },
+    {
+      "n": 42,
+      "page": 54,
+      "section": "Main",
+      "stem": "What is the angle between the two hands of a clock when the time is 15 minutes past 4 O' clock ?",
+      "options": {
+        "A": "38·5°",
+        "B": "36·5°",
+        "C": "37·5°",
+        "D": "None of these"
+      }
+    },
+    {
+      "n": 43,
+      "page": 54,
+      "section": "Main",
+      "stem": "Find the angle between the hour hand and the minute hand of a clock when it is 38 minutes past 7 pm.",
+      "options": {
+        "A": "2°",
+        "B": "1°",
+        "C": "4·5°",
+        "D": "None of these"
+      }
+    },
+    {
+      "n": 44,
+      "page": 54,
+      "section": "Main",
+      "stem": "An accurate clock shows 8 O' clock in the morning. Through how many degrees will the hour hand rotate when the clock shows 2 O' clock in the afternoon ?",
+      "options": {
+        "A": "144°",
+        "B": "150°",
+        "C": "168°",
+        "D": "180°"
+      }
+    },
+    {
+      "n": 45,
+      "page": 54,
+      "section": "Main",
+      "stem": "The reflex angle between the hands of a clock at 10 : 25 is :",
+      "options": {
+        "A": "180°",
+        "B": "162½°",
+        "C": "195°",
+        "D": "197½°"
+      }
+    },
+    {
+      "n": 46,
+      "page": 54,
+      "section": "Main",
+      "stem": "A clock is started at noon. By 10 minutes past 5, the hour hand has turned through :",
+      "options": {
+        "A": "145°",
+        "B": "150°",
+        "C": "155°",
+        "D": "160°"
+      }
+    },
+    {
+      "n": 47,
+      "page": 54,
+      "section": "Main",
+      "stem": "The angle between the minute hand and the hour hand of a clock when the time is 4 : 20, is :",
+      "options": {
+        "A": "0°",
+        "B": "10°",
+        "C": "5°",
+        "D": "20°"
+      }
+    },
+    {
+      "n": 48,
+      "page": 54,
+      "section": "Main",
+      "stem": "At what angle the hands of a clock are inclined at 15 minutes past 5 ?",
+      "options": {
+        "A": "58½°",
+        "B": "64°",
+        "C": "67½°",
+        "D": "72½°"
+      }
+    },
+    {
+      "n": 49,
+      "page": 54,
+      "section": "Main",
+      "stem": "How many times are the hands of a clock at right angle in a day ?",
+      "options": {
+        "A": "22",
+        "B": "24",
+        "C": "44",
+        "D": "48"
+      }
+    },
+    {
+      "n": 50,
+      "page": 54,
+      "section": "Main",
+      "stem": "The angle between the minute hand and the hour hand of a clock when the time is 8 : 30, is :",
+      "options": {
+        "A": "80°",
+        "B": "75°",
+        "C": "60°",
+        "D": "105°"
+      }
+    }
+  ]
+}

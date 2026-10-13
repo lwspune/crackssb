@@ -32,6 +32,7 @@ import { AGRAWAL_CH09_RANKING } from '../src/items/oir/agrawal-ch09-ranking.ts';
 import { AGRAWAL_CH10_SEATING } from '../src/items/oir/agrawal-ch10-seating.ts';
 import { AGRAWAL_CH11_SERIES } from '../src/items/oir/agrawal-ch11-series.ts';
 import { AGRAWAL_CH12_MISSING_TERM } from '../src/items/oir/agrawal-ch12-missing-term.ts';
+import { AGRAWAL_CH14_CALENDAR_CLOCK } from '../src/items/oir/agrawal-ch14-calendar-clock.ts';
 import { AGRAWAL_CH13_MATHEMATICAL_OPERATIONS } from '../src/items/oir/agrawal-ch13-mathematical-operations.ts';
 import { isHeld } from '../src/items/oir/key.ts';
 import type { KeyEntry } from '../src/items/oir/key.ts';
@@ -63,6 +64,7 @@ const CHAPTERS: { file: string; key: Readonly<Record<number, KeyEntry>>; reasoni
   { file: 'content/oir/agrawal-examcart/ch11-series.source.json', key: AGRAWAL_CH11_SERIES, reasoningType: 'series', idPrefix: 'oir-agx-ch11' },
   { file: 'content/oir/agrawal-examcart/ch12-missing-term.source.json', key: AGRAWAL_CH12_MISSING_TERM, reasoningType: 'missing_term', idPrefix: 'oir-agx-ch12' },
   { file: 'content/oir/agrawal-examcart/ch13-mathematical-operations.source.json', key: AGRAWAL_CH13_MATHEMATICAL_OPERATIONS, reasoningType: 'mathematical_operations', idPrefix: 'oir-agx-ch13' },
+  { file: 'content/oir/agrawal-examcart/ch14-calendar-clock.source.json', key: AGRAWAL_CH14_CALENDAR_CLOCK, reasoningType: 'calendar_clock', idPrefix: 'oir-agx-ch14' },
 ];
 
 /** No measurement exists yet; 3 is the declared "unrated" midpoint until item stats say otherwise (D19). */

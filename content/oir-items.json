@@ -130,13 +130,23 @@
         52
       ],
       "file": "content/oir/agrawal-examcart/ch13-mathematical-operations.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "chapter": 14,
+      "title": "Calender and Clock",
+      "pages": [
+        53,
+        54
+      ],
+      "file": "content/oir/agrawal-examcart/ch14-calendar-clock.source.json"
     }
   ],
-  "itemCount": 1255,
-  "heldCount": 88,
+  "itemCount": 1302,
+  "heldCount": 91,
   "confidence": {
-    "high": 1179,
-    "medium": 76
+    "high": 1222,
+    "medium": 80
   },
   "held": [
     {
@@ -600,6 +610,21 @@
       "source": "agrawal-examcart-oir",
       "source_ref": "ch13 p51 q68",
       "reason": "The question prints the legend and \"then ?\" but no equation to work out, so no option can be chosen."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q14",
+      "reason": "Born 20 days after 4 December is 24 December, 40 days after Children's Day (14 November, a Thursday): a Tuesday, not among the options. No other reading found lands on one."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q23",
+      "reason": "No time has its hands where swapping them reads 6:23, so the question has no exact answer; the options sit near 4:32 only by rounding, and which one the book meant cannot be told."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q41",
+      "reason": "The hands meet at 38 2/11 minutes past 7 (420/11), and no option prints that; the nearest are 38 3/11 and 38 5/11."
     }
   ],
   "items": [
@@ -29965,6 +29990,1044 @@
       "rule": "7 × 21 + 81 − 9 − 3 + 14 = 147 + 81 − 9 − 3 + 14 = 230.",
       "confidence": "medium",
       "note": "The legend's third sign is ÷ (\"'÷' stands for '−'\"), and the equation's third sign is ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch14-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If the 8th of April falls on Monday, then on which day will the 30th of that month fall ?",
+        "options": {
+          "A": "Sunday",
+          "B": "Monday",
+          "C": "Tuesday",
+          "D": "Wednesday"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q1",
+      "key_basis": "derived",
+      "rule": "The 30th is 22 days after the 8th: 22 = 3 weeks + 1 day, so Monday + 1 = Tuesday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q002",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 25th February, 2008 was Monday, then what was the day on 2nd March 2008 ?",
+        "options": {
+          "A": "Tuesday",
+          "B": "Saturday",
+          "C": "Sunday",
+          "D": "Monday"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q2",
+      "key_basis": "derived",
+      "rule": "2008 is a leap year: 26, 27, 28, 29 February, 1 and 2 March make 6 days. Monday + 6 = Sunday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What will be the day of the week on 19th November, 2053 ?",
+        "options": {
+          "A": "Wednesday",
+          "B": "Tuesday",
+          "C": "Monday",
+          "D": "Thursday"
+        },
+        "key": "A",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q3",
+      "key_basis": "derived",
+      "rule": "19 November 2053 falls on a Wednesday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What was the day of the week on 10th October, 2021 ?",
+        "options": {
+          "A": "Wednesday",
+          "B": "Friday",
+          "C": "Monday",
+          "D": "Sunday"
+        },
+        "key": "D",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q4",
+      "key_basis": "derived",
+      "rule": "10 October 2021 fell on a Sunday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What was the day of the week on 17 November, 1855 ?",
+        "options": {
+          "A": "Sunday",
+          "B": "Monday",
+          "C": "Saturday",
+          "D": "Tuesday"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q5",
+      "key_basis": "derived",
+      "rule": "17 November 1855 fell on a Saturday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What day of the week will it be on 15th April, 2029?",
+        "options": {
+          "A": "Sunday",
+          "B": "Saturday",
+          "C": "Tuesday",
+          "D": "Monday"
+        },
+        "key": "A",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q6",
+      "key_basis": "derived",
+      "rule": "15 April 2029 falls on a Sunday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q007",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "John bought a puppy on Friday, 21 January, 2022. The puppy become an adult dog on the 380th day since John bought him. On which day did the puppy become an adult ?",
+        "options": {
+          "A": "Sunday",
+          "B": "Monday",
+          "C": "Saturday",
+          "D": "Wednesday"
+        },
+        "key": "A",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q7",
+      "key_basis": "derived",
+      "rule": "380 days after Friday 21 January 2022 is 5 February 2023: 380 = 54 weeks + 2 days, so Friday + 2 = Sunday.",
+      "confidence": "medium",
+      "note": "Read as 380 days after the purchase. Counting the purchase day as the first day gives Saturday, also an option. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch14-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The birth date of Viaan is 9 March, 2002. Find the day of the week of that day.",
+        "options": {
+          "A": "Monday",
+          "B": "Friday",
+          "C": "Tuesday",
+          "D": "Saturday"
+        },
+        "key": "D",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q8",
+      "key_basis": "derived",
+      "rule": "9 March 2002 fell on a Saturday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What was the day of the week on 31st January, 2009?",
+        "options": {
+          "A": "Monday",
+          "B": "Friday",
+          "C": "Sunday",
+          "D": "Saturday"
+        },
+        "key": "D",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q9",
+      "key_basis": "derived",
+      "rule": "31 January 2009 fell on a Saturday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What was the day of the week on 22nd February 2012 ?",
+        "options": {
+          "A": "Tuesday",
+          "B": "Thursday",
+          "C": "Friday",
+          "D": "Wednesday"
+        },
+        "key": "D",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q10",
+      "key_basis": "derived",
+      "rule": "22 February 2012 fell on a Wednesday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If the 10th day of a month of 30 days is Tuesday, then which day of the week will be the last day of that month?",
+        "options": {
+          "A": "Monday",
+          "B": "Friday",
+          "C": "Wednesday",
+          "D": "Sunday"
+        },
+        "key": "A",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q11",
+      "key_basis": "derived",
+      "rule": "The 30th is 20 days after the 10th: 2 weeks + 6 days, so Tuesday + 6 = Monday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The first day of April is Wednesday. What day of the week will it be on the first of May in the same year ?",
+        "options": {
+          "A": "Saturday",
+          "B": "Friday",
+          "C": "Sunday",
+          "D": "Monday"
+        },
+        "key": "B",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q12",
+      "key_basis": "derived",
+      "rule": "April has 30 days: 30 = 4 weeks + 2 days, so Wednesday + 2 = Friday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What day of the week it be on 15 August, 2021 ?",
+        "options": {
+          "A": "Sunday",
+          "B": "Wednesday",
+          "C": "Saturday",
+          "D": "Monday"
+        },
+        "key": "A",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q13",
+      "key_basis": "derived",
+      "rule": "15 August 2021 fell on a Sunday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "In the year 2017, India celebrated its Republic Day on Thursday. On which day of the same year it celebrated its Independence Day?",
+        "options": {
+          "A": "Wednesday",
+          "B": "Sunday",
+          "C": "Thursday",
+          "D": "Tuesday"
+        },
+        "key": "D",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q15",
+      "key_basis": "derived",
+      "rule": "15 August is 201 days after 26 January in 2017: 28 weeks + 5 days, so Thursday + 5 = Tuesday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which year will have the same calendar as that of 2012 ?",
+        "options": {
+          "A": "2020",
+          "B": "2040",
+          "C": "2025",
+          "D": "2031"
+        },
+        "key": "B",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q16",
+      "key_basis": "derived",
+      "rule": "2012 is a leap year starting on Sunday. Of the options only 2040 is a leap year that starts on Sunday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The day before the day before yesterday is three days after Saturday. What day is it today ?",
+        "options": {
+          "A": "Monday",
+          "B": "Wednesday",
+          "C": "Friday",
+          "D": "Saturday"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q17",
+      "key_basis": "derived",
+      "rule": "Three days before today is Saturday + 3 = Tuesday, so today is Friday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If the fifth date of a month is Tuesday, what date will be three days after the third Friday in the month ?",
+        "options": {
+          "A": "18",
+          "B": "19",
+          "C": "21",
+          "D": "23"
+        },
+        "key": "A",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q18",
+      "key_basis": "derived",
+      "rule": "The 5th is Tuesday, so the 1st is Friday and the Fridays are 1, 8, 15. Three days after the 15th is the 18th.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Rakshita went to the movies 8 days ago. She goes to the movies only on Friday. What day of the week is today ?",
+        "options": {
+          "A": "Sunday",
+          "B": "Saturday",
+          "C": "Thursday",
+          "D": "Monday"
+        },
+        "key": "B",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q19",
+      "key_basis": "derived",
+      "rule": "Friday + 8 days = Saturday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Charithra went to the movies nine days ago. She goes to the movies only on thursday, what day of the week is today ?",
+        "options": {
+          "A": "Sunday",
+          "B": "Tuesday",
+          "C": "Thursday",
+          "D": "Saturday"
+        },
+        "key": "D",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q20",
+      "key_basis": "derived",
+      "rule": "Thursday + 9 days = Saturday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Assume that a clock shows 6:15 and the minute hands points North. In what direction will the hour hand point at 11:00?",
+        "options": {
+          "A": "North-East",
+          "B": "North-West",
+          "C": "South-East",
+          "D": "South-West"
+        },
+        "key": "D",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q21",
+      "key_basis": "derived",
+      "rule": "At 6:15 the minute hand is on the 3, so 3 faces North and 12 faces West. The 11 is 30° anticlockwise of 12: towards South-West.",
+      "confidence": "medium",
+      "note": "The 11 lies 30° from West, not 45°; South-West is the nearest of the four options. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch14-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "16 girls are participating in the game of musical chairs. The duration of each musical step is 2 minutes. An interval of 5 minutes is given after every 5 steps of the music. How much time will be taken to complete the game, if condition is kept that 1 person will be subtracted after each step?",
+        "options": {
+          "A": "47 minutes",
+          "B": "45 minutes",
+          "C": "38 minutes",
+          "D": "40 minutes"
+        },
+        "key": "D",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q22",
+      "key_basis": "derived",
+      "rule": "15 steps leave one girl: 15 × 2 = 30 minutes, with an interval after the 5th and 10th steps (the game ends at the 15th): 30 + 10 = 40.",
+      "confidence": "medium",
+      "note": "Read with no interval after the last step; counting one there gives 45, also an option. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch14-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If the minutes hand of a clock advances at the rate of 9° per minute, how many minutes does the clock gain in half hour ?",
+        "options": {
+          "A": "20 minutes",
+          "B": "12½ minutes",
+          "C": "15 minutes",
+          "D": "None of these"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q24",
+      "key_basis": "derived",
+      "rule": "In 30 minutes the hand turns 9 × 30 = 270°, which is 45 minutes of dial. It gains 15 minutes.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A clock, which gains 10 minutes in 24 hours, is set right at 8 A.M. on Monday. What is the correct time when the clock indicates 1 P.M. on Tuesday ?",
+        "options": {
+          "A": "12.36 P.M.",
+          "B": "1 P.M.",
+          "C": "12.56 P.M.",
+          "D": "12.48 P.M."
+        },
+        "key": "D",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q25",
+      "key_basis": "derived",
+      "rule": "The clock shows 29 hours while 29 × 24 ÷ 24⅙ = 28.8 hours pass: 8 A.M. Monday + 28 h 48 min = 12.48 P.M. Tuesday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Flight to Ahmedabad leaves every 5 hours. The last flight left 25 minutes ago. If the time now is 10:45 A.M., what is the time for the next flight ?",
+        "options": {
+          "A": "2 : 20 AM",
+          "B": "3 : 20 PM",
+          "C": "3 : 35 AM",
+          "D": "3 : 55 PM"
+        },
+        "key": "B",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q26",
+      "key_basis": "derived",
+      "rule": "The last flight left at 10:20 A.M.; five hours later is 3:20 PM.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q027",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "How many minutes is it before 12 noon if nine minutes ago it was twice as many minutes past 10 A.M. ?",
+        "options": {
+          "A": "23",
+          "B": "47",
+          "C": "37",
+          "D": "17"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q27",
+      "key_basis": "derived",
+      "rule": "x minutes before noon is 120 − x past 10; nine minutes earlier it was 111 − x = 2x past 10, so x = 37.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "When Sandeep reached the railway station, it was 5 minutes late and the train had already departed. The scheduled time of departure of the train was 10:45 A.M. The time taken by Sandeep to reach the railway station from his house was 30 minutes. At what time did he start from the house ?",
+        "options": {
+          "A": "10.20 AM",
+          "B": "10.15 AM",
+          "C": "10.35 AM",
+          "D": "10.25 AM"
+        },
+        "key": "A",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p53 q28",
+      "key_basis": "derived",
+      "rule": "He arrived at 10:50, after 30 minutes on the way: he left at 10.20 AM.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q029",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If we substitute number 1 to 12 indicating hours on the dial clock by letters of the alphabet in their order starting with C, which letter would represent 8 ?",
+        "options": {
+          "A": "J",
+          "B": "K",
+          "C": "L",
+          "D": "I"
+        },
+        "key": "A",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q29",
+      "key_basis": "derived",
+      "rule": "1 is C, so 8 is seven letters on: J.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Through how many degrees does the hour hand in a clock move as the time changes from 3 hours and 36 minutes to 6 hours ?",
+        "options": {
+          "A": "72",
+          "B": "84",
+          "C": "76",
+          "D": "80"
+        },
+        "key": "A",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q30",
+      "key_basis": "derived",
+      "rule": "From 3:36 to 6:00 is 144 minutes; the hour hand turns ½° a minute: 72°.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q031",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The priest told the devotee, \"The bell rings at regular intervals of 45 minutes. The last bell rang 5 minutes ago. The next bell is due to be rung at 7:45 am.' At what time did the priest give this information to the devotee ?",
+        "options": {
+          "A": "6:55 am",
+          "B": "7:00 am",
+          "C": "7:05 am",
+          "D": "7:40 am"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q31",
+      "key_basis": "derived",
+      "rule": "The last bell rang 45 minutes before 7:45, at 7:00; five minutes later is 7:05 am.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Rakesh put his timepiece on the table in such a way that at 6 PM the hour hand points to North, then in which direction will the minute hand point at 9.15 PM'?",
+        "options": {
+          "A": "East",
+          "B": "South",
+          "C": "North",
+          "D": "West"
+        },
+        "key": "D",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q32",
+      "key_basis": "derived",
+      "rule": "The 6 faces North, so going clockwise the 9 faces East, the 12 South and the 3 West. At 9:15 the minute hand is on the 3: West.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A clock shows time 7:30 hrs. If the minute needle shows the West, then what will be direction of the hour needle ?",
+        "options": {
+          "A": "North",
+          "B": "N − E",
+          "C": "N − W",
+          "D": "S − W"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q33",
+      "key_basis": "derived",
+      "rule": "At 7:30 the minute hand is on the 6, facing West. The hour hand, halfway between 7 and 8, is 45° clockwise of it: North-West.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the correct alternative from the given options :\nIf 8th of April falls on Monday, what Day would be the 30th May of that year ?",
+        "options": {
+          "A": "Sunday",
+          "B": "Monday",
+          "C": "Thursday",
+          "D": "Wednesday"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q34",
+      "key_basis": "derived",
+      "rule": "30 May is 22 + 30 = 52 days after 8 April: 7 weeks + 3 days, so Monday + 3 = Thursday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If the seventh day of a month is three days earlier than Friday. What day will it be on the nineteenth day of the month ?",
+        "options": {
+          "A": "Wednesday",
+          "B": "Monday",
+          "C": "Friday",
+          "D": "Sunday"
+        },
+        "key": "D",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q35",
+      "key_basis": "derived",
+      "rule": "The 7th is Tuesday; the 19th is 12 days later, 1 week + 5 days: Sunday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What is the angle between the hour hand and the minute hand when it is 5 : 10 pm ?",
+        "options": {
+          "A": "150 degrees",
+          "B": "120 degrees",
+          "C": "115 degrees",
+          "D": "95 degrees"
+        },
+        "key": "D",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q36",
+      "key_basis": "derived",
+      "rule": "At 5:10, |150 − 55| = 95 degrees.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If in the year 2012, January 1st is Sunday, then which day is the Indian Republic Day in the year 2012 ?",
+        "options": {
+          "A": "Saturday",
+          "B": "Monday",
+          "C": "Thursday",
+          "D": "Friday"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q37",
+      "key_basis": "derived",
+      "rule": "26 January is 25 days after 1 January: 3 weeks + 4 days, so Sunday + 4 = Thursday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 30th January 2003 was Thursday, what was the day on 2nd March, 2003 ?",
+        "options": {
+          "A": "Sunday",
+          "B": "Monday",
+          "C": "Saturday",
+          "D": "Tuesday"
+        },
+        "key": "A",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q38",
+      "key_basis": "derived",
+      "rule": "2 March 2003 is 31 days after 30 January: 4 weeks + 3 days, so Thursday + 3 = Sunday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q039",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 1st October is Sunday, then 1st November will be :",
+        "options": {
+          "A": "Tuesday",
+          "B": "Friday",
+          "C": "Wednesday",
+          "D": "Thursday"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q39",
+      "key_basis": "derived",
+      "rule": "October has 31 days: 4 weeks + 3, so Sunday + 3 = Wednesday.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which among the following year is a leap year ?",
+        "options": {
+          "A": "2500",
+          "B": "2800",
+          "C": "2600",
+          "D": "2700"
+        },
+        "key": "B",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q40",
+      "key_basis": "derived",
+      "rule": "A century year is a leap year only when it divides by 400: 2800.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What is the angle between the two hands of a clock when the time is 15 minutes past 4 O' clock ?",
+        "options": {
+          "A": "38·5°",
+          "B": "36·5°",
+          "C": "37·5°",
+          "D": "None of these"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q42",
+      "key_basis": "derived",
+      "rule": "At 4:15, |120 − 82.5| = 37.5°.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Find the angle between the hour hand and the minute hand of a clock when it is 38 minutes past 7 pm.",
+        "options": {
+          "A": "2°",
+          "B": "1°",
+          "C": "4·5°",
+          "D": "None of these"
+        },
+        "key": "B",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q43",
+      "key_basis": "derived",
+      "rule": "At 7:38, |210 − 209| = 1°.",
+      "confidence": "medium",
+      "note": "The minute count sits on the page curl and is read as 38."
+    },
+    {
+      "id": "oir-agx-ch14-q044",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "An accurate clock shows 8 O' clock in the morning. Through how many degrees will the hour hand rotate when the clock shows 2 O' clock in the afternoon ?",
+        "options": {
+          "A": "144°",
+          "B": "150°",
+          "C": "168°",
+          "D": "180°"
+        },
+        "key": "D",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q44",
+      "key_basis": "derived",
+      "rule": "Six hours at 30° an hour: 180°.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The reflex angle between the hands of a clock at 10 : 25 is :",
+        "options": {
+          "A": "180°",
+          "B": "162½°",
+          "C": "195°",
+          "D": "197½°"
+        },
+        "key": "D",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q45",
+      "key_basis": "derived",
+      "rule": "At 10:25 the hands are |300 − 137.5| = 162.5° apart; the reflex angle is 360 − 162.5 = 197½°.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A clock is started at noon. By 10 minutes past 5, the hour hand has turned through :",
+        "options": {
+          "A": "145°",
+          "B": "150°",
+          "C": "155°",
+          "D": "160°"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q46",
+      "key_basis": "derived",
+      "rule": "Noon to 5:10 is 310 minutes, at ½° a minute: 155°.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The angle between the minute hand and the hour hand of a clock when the time is 4 : 20, is :",
+        "options": {
+          "A": "0°",
+          "B": "10°",
+          "C": "5°",
+          "D": "20°"
+        },
+        "key": "B",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q47",
+      "key_basis": "derived",
+      "rule": "At 4:20, |120 − 110| = 10°.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "At what angle the hands of a clock are inclined at 15 minutes past 5 ?",
+        "options": {
+          "A": "58½°",
+          "B": "64°",
+          "C": "67½°",
+          "D": "72½°"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q48",
+      "key_basis": "derived",
+      "rule": "At 5:15, |150 − 82.5| = 67½°.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "How many times are the hands of a clock at right angle in a day ?",
+        "options": {
+          "A": "22",
+          "B": "24",
+          "C": "44",
+          "D": "48"
+        },
+        "key": "C",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q49",
+      "key_basis": "derived",
+      "rule": "The hands are at right angles twice in every 12/11 hours, so 2 × 22 = 44 times in a day.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch14-q050",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "The angle between the minute hand and the hour hand of a clock when the time is 8 : 30, is :",
+        "options": {
+          "A": "80°",
+          "B": "75°",
+          "C": "60°",
+          "D": "105°"
+        },
+        "key": "B",
+        "reasoningType": "calendar_clock"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch14 p54 q50",
+      "key_basis": "derived",
+      "rule": "At 8:30, |240 − 165| = 75°.",
+      "confidence": "high"
     }
   ]
 }
