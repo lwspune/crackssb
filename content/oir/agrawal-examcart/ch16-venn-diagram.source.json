@@ -1,0 +1,6423 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSR OIR 1-127 (phone photos of printed pages 1-127)",
+  "chapter": 16,
+  "title": "Ven Diagram",
+  "pages": [
+    59,
+    61
+  ],
+  "transcribed": "2026-10-13",
+  "note": "Diagrams are redrawn (D29), not cut from the photos: each is a set of circles (Q39-40: rectangles, four lines each) in a clean layout that keeps every printed relation, which shapes are apart, which overlap and which sit inside which; sizes and positions are not the photo's. Ovals are drawn as circles. Where a question gives the classes and asks for the diagram, `options` describes each drawn answer in words for screen readers and `answerPanels` draws it. Where a diagram is given and the options are classes (Q9, 25, 44-48), the diagram is `figure` and `stem` describes it. A square or rectangle printed round the circles (Q4, 5, 20, 21, 22, 31, 41, 42, 43) is drawn as four lines round them; it is the whole page, not a class. Printed letters and numbers inside circles (Q2, 13, 14, 17, 49, 50) are kept as labels, each set in the part of its circle that no smaller circle covers. Q4: the third circle in options A and B meets the others at a single point in the photo; it is read as touching, not overlapping, and drawn just clear of them. Q12 B: the third circle meets the inner circle at a point, read the same way. Q34 prints its four diagrams in a row lettered A-D above options that read only \"(A) A (B) B (C) C (D) D\"; it is set as the other questions are, each option drawn and described. Q41 begins with the stray word \"classes.\" as printed, and lists four classes under a direction about three elements. The chapter direction prints \"Q. No. 1 to 38\"; Q39-48 have a second printed direction, and Q49-50 each print their own instruction, kept as its direction. Q49-50 print their statements on separate lines, kept as line breaks. Typos kept as printed: \"Ven\" in the title and direction, \"Shripm\" (Q1), \"coardiologist\" (Q2), \"Unit,Watt\" without a space (Q5), the full stop after \"Village people\" (Q6), \"intense linkage\" (direction Q39-48).",
+  "directions": [
+    {
+      "section": "Q1-38",
+      "printed": "Direction (Q. No. 1 to 38)",
+      "text": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram."
+    },
+    {
+      "section": "Q39-48",
+      "printed": "Direction (Q. No. 39 to 48)",
+      "text": "Each of the questions given below contains three elements. These elements may or may not have some intense linkage. Each group of elements may fit into one of the diagrams lettered (A), (B), (C) or (D). You have to indicate the diagram in which the group of elements fit correctly."
+    },
+    {
+      "section": "Q49",
+      "printed": null,
+      "text": "Ignoring commonly known facts, read the following statements and then choose the Venn diagram from the four alternatives which best represents the given statements."
+    },
+    {
+      "section": "Q50",
+      "printed": null,
+      "text": "Ignoring commonly known facts, read the following statements and then choose the Venn diagram from the given four alternatives which best represents the given statements."
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 59,
+      "section": "Q1-38",
+      "stem": "Sea animals, Shripm, Walrus",
+      "options": {
+        "A": "Three circles, one inside the next",
+        "B": "A circle inside another, and a third circle apart from both",
+        "C": "Two separate circles inside a larger one",
+        "D": "Three separate circles in a row"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                17,
+                50,
+                15
+              ],
+              [
+                50,
+                50,
+                15
+              ],
+              [
+                83,
+                50,
+                15
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 2,
+      "page": 59,
+      "section": "Q1-38",
+      "stem": "Doctor, Professor, Cardiologist\n1=doctor, 2=coardiologist, 3=Professor",
+      "options": {
+        "A": "Circle 2 inside circle 1, and circle 3 crossing both",
+        "B": "Circle 2 inside circle 1, and circle 3 apart from both",
+        "C": "Circles 2, 1 and 3 in a chain: 1 overlaps the other two, which do not meet",
+        "D": "Circle 3 inside circle 1, inside circle 2"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                38,
+                50,
+                16
+              ],
+              [
+                72,
+                50,
+                24
+              ]
+            ],
+            "labels": [
+              [
+                38,
+                26,
+                "1"
+              ],
+              [
+                32,
+                50,
+                "2"
+              ],
+              [
+                84,
+                50,
+                "3"
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ],
+            "labels": [
+              [
+                32,
+                28,
+                "1"
+              ],
+              [
+                32,
+                50,
+                "2"
+              ],
+              [
+                80,
+                50,
+                "3"
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ],
+            "labels": [
+              [
+                18,
+                50,
+                "2"
+              ],
+              [
+                50,
+                38,
+                "1"
+              ],
+              [
+                82,
+                50,
+                "3"
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ],
+            "labels": [
+              [
+                50,
+                12,
+                "2"
+              ],
+              [
+                50,
+                26,
+                "1"
+              ],
+              [
+                50,
+                50,
+                "3"
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 3,
+      "page": 59,
+      "section": "Q1-38",
+      "stem": "Student, College and School.",
+      "options": {
+        "A": "Three circles, each overlapping the other two",
+        "B": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+        "C": "Three circles, one inside the next",
+        "D": "Two separate circles inside a larger one"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                40,
+                40,
+                20
+              ],
+              [
+                60,
+                40,
+                20
+              ],
+              [
+                50,
+                58,
+                20
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 4,
+      "page": 59,
+      "section": "Q1-38",
+      "stem": "Girls, Healthy, Trains",
+      "options": {
+        "A": "Two overlapping circles, and a third touching both, in a square",
+        "B": "Three circles, each touching the other two, in a square",
+        "C": "A circle inside another, and a third circle apart from both, in a square",
+        "D": "Two separate circles inside a larger one, in a square"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [
+              [
+                11,
+                11,
+                86,
+                11
+              ],
+              [
+                86,
+                11,
+                86,
+                93
+              ],
+              [
+                86,
+                93,
+                11,
+                93
+              ],
+              [
+                11,
+                93,
+                11,
+                11
+              ]
+            ],
+            "circles": [
+              [
+                35,
+                35,
+                18
+              ],
+              [
+                62,
+                35,
+                18
+              ],
+              [
+                48.5,
+                69,
+                18
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [
+              [
+                8,
+                11,
+                92.5,
+                11
+              ],
+              [
+                92.5,
+                11,
+                92.5,
+                90.7
+              ],
+              [
+                92.5,
+                90.7,
+                8,
+                90.7
+              ],
+              [
+                8,
+                90.7,
+                8,
+                11
+              ]
+            ],
+            "circles": [
+              [
+                32,
+                35,
+                18
+              ],
+              [
+                68.5,
+                35,
+                18
+              ],
+              [
+                50.25,
+                66.7,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [
+              [
+                -2,
+                16,
+                101,
+                16
+              ],
+              [
+                101,
+                16,
+                101,
+                84
+              ],
+              [
+                101,
+                84,
+                -2,
+                84
+              ],
+              [
+                -2,
+                84,
+                -2,
+                16
+              ]
+            ],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                -1,
+                101,
+                -1
+              ],
+              [
+                101,
+                -1,
+                101,
+                101
+              ],
+              [
+                101,
+                101,
+                -1,
+                101
+              ],
+              [
+                -1,
+                101,
+                -1,
+                -1
+              ]
+            ],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 5,
+      "page": 59,
+      "section": "Q1-38",
+      "stem": "Unit,Watt, Volt",
+      "options": {
+        "A": "Three circles in a chain: the middle one overlaps the other two, which do not meet, in a square",
+        "B": "Two separate circles inside a larger one, in a square",
+        "C": "Three circles, one inside the next, in a square",
+        "D": "A circle inside another, and a third circle apart from both, in a square"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [
+              [
+                1,
+                26,
+                99,
+                26
+              ],
+              [
+                99,
+                26,
+                99,
+                74
+              ],
+              [
+                99,
+                74,
+                1,
+                74
+              ],
+              [
+                1,
+                74,
+                1,
+                26
+              ]
+            ],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                -1,
+                101,
+                -1
+              ],
+              [
+                101,
+                -1,
+                101,
+                101
+              ],
+              [
+                101,
+                101,
+                -1,
+                101
+              ],
+              [
+                -1,
+                101,
+                -1,
+                -1
+              ]
+            ],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                -1,
+                101,
+                -1
+              ],
+              [
+                101,
+                -1,
+                101,
+                101
+              ],
+              [
+                101,
+                101,
+                -1,
+                101
+              ],
+              [
+                -1,
+                101,
+                -1,
+                -1
+              ]
+            ],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [
+              [
+                -2,
+                16,
+                101,
+                16
+              ],
+              [
+                101,
+                16,
+                101,
+                84
+              ],
+              [
+                101,
+                84,
+                -2,
+                84
+              ],
+              [
+                -2,
+                84,
+                -2,
+                16
+              ]
+            ],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 6,
+      "page": 59,
+      "section": "Q1-38",
+      "stem": "Village people. Educated people, Intelligent people",
+      "options": {
+        "A": "Three circles, one inside the next",
+        "B": "Three circles, each overlapping the other two",
+        "C": "Two overlapping circles, and a third apart from both",
+        "D": "Three separate circles"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                40,
+                40,
+                20
+              ],
+              [
+                60,
+                40,
+                20
+              ],
+              [
+                50,
+                58,
+                20
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                40,
+                17
+              ],
+              [
+                48,
+                40,
+                17
+              ],
+              [
+                70,
+                74,
+                15
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                28,
+                32,
+                15
+              ],
+              [
+                72,
+                32,
+                15
+              ],
+              [
+                50,
+                72,
+                15
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 7,
+      "page": 59,
+      "section": "Q1-38",
+      "stem": "Charcoal, Black Colour, Classroom Board",
+      "options": {
+        "A": "A circle inside another, and a third circle apart from both",
+        "B": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+        "C": "A circle inside another, and a third circle crossing both",
+        "D": "A circle inside another, and a third circle crossing only the outer one"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                38,
+                50,
+                16
+              ],
+              [
+                72,
+                50,
+                24
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                32,
+                50,
+                12
+              ],
+              [
+                78,
+                50,
+                20
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 8,
+      "page": 59,
+      "section": "Q1-38",
+      "stem": "Student, Women, Teacher",
+      "options": {
+        "A": "A circle inside another, and a third circle apart from both",
+        "B": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+        "C": "Two separate circles inside a larger one",
+        "D": "Three circles, one inside the next"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 9,
+      "page": 59,
+      "section": "Q1-38",
+      "stem": "A circle inside another, and a third circle apart from both.",
+      "options": {
+        "A": "Furniture, Plastic, Bag",
+        "B": "Furniture, Chair, Book",
+        "C": "India, Monsoon, Desert",
+        "D": "Ponds, Waterfall, River"
+      },
+      "figure": {
+        "lines": [],
+        "circles": [
+          [
+            32,
+            50,
+            28
+          ],
+          [
+            32,
+            50,
+            15
+          ],
+          [
+            80,
+            50,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "n": 10,
+      "page": 59,
+      "section": "Q1-38",
+      "stem": "Window, door, house",
+      "options": {
+        "A": "Two separate circles inside a larger one",
+        "B": "A circle inside another, and a third circle apart from both",
+        "C": "Three separate circles in a row",
+        "D": "A circle inside another, and a third circle crossing only the outer one"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                17,
+                50,
+                15
+              ],
+              [
+                50,
+                50,
+                15
+              ],
+              [
+                83,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                32,
+                50,
+                12
+              ],
+              [
+                78,
+                50,
+                20
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 11,
+      "page": 59,
+      "section": "Q1-38",
+      "stem": "Father, surgeon, man",
+      "options": {
+        "A": "A circle inside another, and a third circle apart from both",
+        "B": "A circle inside another, and a third circle crossing both",
+        "C": "A circle inside another, and a third circle crossing only the outer one",
+        "D": "Two separate circles inside a larger one"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                38,
+                50,
+                16
+              ],
+              [
+                72,
+                50,
+                24
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                32,
+                50,
+                12
+              ],
+              [
+                78,
+                50,
+                20
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 12,
+      "page": 59,
+      "section": "Q1-38",
+      "stem": "Woman, mother, father",
+      "options": {
+        "A": "Three separate circles in a row",
+        "B": "A circle inside another, and a third circle crossing only the outer one",
+        "C": "A circle inside another, and a third circle apart from both",
+        "D": "A circle inside another, and a third circle crossing both"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                17,
+                50,
+                15
+              ],
+              [
+                50,
+                50,
+                15
+              ],
+              [
+                83,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                32,
+                50,
+                12
+              ],
+              [
+                78,
+                50,
+                20
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                38,
+                50,
+                16
+              ],
+              [
+                72,
+                50,
+                24
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 13,
+      "page": 59,
+      "section": "Q1-38",
+      "stem": "Animal, Leopard, banner",
+      "options": {
+        "A": "Circle C inside circle A, and circle B crossing A only",
+        "B": "Circles B and C inside circle A, apart from each other",
+        "C": "Circle C inside circle A, and circle B apart from both",
+        "D": "Circles C and A overlapping, and circle B apart from both"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                40,
+                50,
+                32
+              ],
+              [
+                32,
+                50,
+                12
+              ],
+              [
+                80,
+                50,
+                18
+              ]
+            ],
+            "labels": [
+              [
+                52,
+                30,
+                "A"
+              ],
+              [
+                32,
+                50,
+                "C"
+              ],
+              [
+                88,
+                50,
+                "B"
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                42
+              ],
+              [
+                32,
+                50,
+                13
+              ],
+              [
+                68,
+                50,
+                13
+              ]
+            ],
+            "labels": [
+              [
+                50,
+                22,
+                "A"
+              ],
+              [
+                32,
+                50,
+                "B"
+              ],
+              [
+                68,
+                50,
+                "C"
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                35,
+                50,
+                30
+              ],
+              [
+                35,
+                50,
+                13
+              ],
+              [
+                85,
+                50,
+                13
+              ]
+            ],
+            "labels": [
+              [
+                35,
+                28,
+                "A"
+              ],
+              [
+                35,
+                50,
+                "C"
+              ],
+              [
+                85,
+                50,
+                "B"
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                22,
+                50,
+                16
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                85,
+                50,
+                12
+              ]
+            ],
+            "labels": [
+              [
+                16,
+                50,
+                "C"
+              ],
+              [
+                56,
+                50,
+                "A"
+              ],
+              [
+                85,
+                50,
+                "B"
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 14,
+      "page": 59,
+      "section": "Q1-38",
+      "stem": "Bird, tuna, canary",
+      "options": {
+        "A": "Circles T and C inside circle B, apart from each other",
+        "B": "Circle B with circles T and C each crossing its edge, apart from each other",
+        "C": "Circle C inside circle T, inside circle B",
+        "D": "Circle C inside circle B, and circle T apart from both"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                42
+              ],
+              [
+                32,
+                50,
+                13
+              ],
+              [
+                68,
+                50,
+                13
+              ]
+            ],
+            "labels": [
+              [
+                50,
+                20,
+                "B"
+              ],
+              [
+                32,
+                50,
+                "T"
+              ],
+              [
+                68,
+                50,
+                "C"
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                30
+              ],
+              [
+                18,
+                50,
+                14
+              ],
+              [
+                82,
+                50,
+                14
+              ]
+            ],
+            "labels": [
+              [
+                50,
+                50,
+                "B"
+              ],
+              [
+                12,
+                50,
+                "T"
+              ],
+              [
+                88,
+                50,
+                "C"
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ],
+            "labels": [
+              [
+                50,
+                12,
+                "B"
+              ],
+              [
+                50,
+                26,
+                "T"
+              ],
+              [
+                50,
+                50,
+                "C"
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ],
+            "labels": [
+              [
+                32,
+                28,
+                "B"
+              ],
+              [
+                32,
+                50,
+                "C"
+              ],
+              [
+                80,
+                50,
+                "T"
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 15,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Man, pharmacist, brother",
+      "options": {
+        "A": "Two overlapping circles inside a larger one",
+        "B": "A circle inside another, and a third circle crossing only the outer one",
+        "C": "A circle inside another, and a third circle crossing both",
+        "D": "Three circles in a chain: the middle one overlaps the other two, which do not meet"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                38,
+                50,
+                18
+              ],
+              [
+                62,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                32,
+                50,
+                12
+              ],
+              [
+                78,
+                50,
+                20
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                38,
+                50,
+                16
+              ],
+              [
+                72,
+                50,
+                24
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 16,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Industry, Workers, Machines",
+      "options": {
+        "A": "Three separate circles",
+        "B": "Two separate circles inside a larger one",
+        "C": "Three circles, one inside the next",
+        "D": "Three circles in a chain: the middle one overlaps the other two, which do not meet"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                28,
+                32,
+                15
+              ],
+              [
+                72,
+                32,
+                15
+              ],
+              [
+                50,
+                72,
+                15
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 17,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Carnivore, Lion, Elephant",
+      "options": {
+        "A": "Circles L and E inside circle C, apart from each other",
+        "B": "Circle L inside circle C, and circle E apart from both",
+        "C": "Circles L, C and E in a chain: C overlaps the other two, which do not meet",
+        "D": "Circle L inside circle C, and circle E crossing C only"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                42
+              ],
+              [
+                32,
+                50,
+                13
+              ],
+              [
+                68,
+                56,
+                13
+              ]
+            ],
+            "labels": [
+              [
+                55,
+                24,
+                "C"
+              ],
+              [
+                32,
+                50,
+                "L"
+              ],
+              [
+                68,
+                56,
+                "E"
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                32,
+                50,
+                13
+              ],
+              [
+                85,
+                50,
+                13
+              ]
+            ],
+            "labels": [
+              [
+                48,
+                30,
+                "C"
+              ],
+              [
+                32,
+                50,
+                "L"
+              ],
+              [
+                85,
+                50,
+                "E"
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ],
+            "labels": [
+              [
+                18,
+                50,
+                "L"
+              ],
+              [
+                50,
+                38,
+                "C"
+              ],
+              [
+                82,
+                50,
+                "E"
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                40,
+                50,
+                32
+              ],
+              [
+                32,
+                50,
+                12
+              ],
+              [
+                78,
+                50,
+                16
+              ]
+            ],
+            "labels": [
+              [
+                48,
+                28,
+                "C"
+              ],
+              [
+                32,
+                50,
+                "L"
+              ],
+              [
+                86,
+                50,
+                "E"
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 18,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Peach, Lychee, Fruit",
+      "options": {
+        "A": "A circle inside another, and a third circle crossing both",
+        "B": "Two separate circles inside a larger one",
+        "C": "Three circles, one inside the next",
+        "D": "Two overlapping circles inside a larger one"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                38,
+                50,
+                16
+              ],
+              [
+                72,
+                50,
+                24
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                38,
+                50,
+                18
+              ],
+              [
+                62,
+                50,
+                18
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 19,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Computer, cycle, forest",
+      "options": {
+        "A": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+        "B": "Three circles, one inside the next",
+        "C": "Three separate circles in a row",
+        "D": "A circle inside another, and a third circle crossing both"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                17,
+                50,
+                15
+              ],
+              [
+                50,
+                50,
+                15
+              ],
+              [
+                83,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                38,
+                50,
+                16
+              ],
+              [
+                72,
+                50,
+                24
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Red, blue, colour",
+      "options": {
+        "A": "Two separate circles inside a larger one, in a square",
+        "B": "Two overlapping circles inside a larger one, in a square",
+        "C": "Three circles, one inside the next, in a square",
+        "D": "A circle inside another, and a third circle crossing both, in a square"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                -1,
+                101,
+                -1
+              ],
+              [
+                101,
+                -1,
+                101,
+                101
+              ],
+              [
+                101,
+                101,
+                -1,
+                101
+              ],
+              [
+                -1,
+                101,
+                -1,
+                -1
+              ]
+            ],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                -1,
+                101,
+                -1
+              ],
+              [
+                101,
+                -1,
+                101,
+                101
+              ],
+              [
+                101,
+                101,
+                -1,
+                101
+              ],
+              [
+                -1,
+                101,
+                -1,
+                -1
+              ]
+            ],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                38,
+                50,
+                18
+              ],
+              [
+                62,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                -1,
+                101,
+                -1
+              ],
+              [
+                101,
+                -1,
+                101,
+                101
+              ],
+              [
+                101,
+                101,
+                -1,
+                101
+              ],
+              [
+                -1,
+                101,
+                -1,
+                -1
+              ]
+            ],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [
+              [
+                2,
+                14,
+                102,
+                14
+              ],
+              [
+                102,
+                14,
+                102,
+                86
+              ],
+              [
+                102,
+                86,
+                2,
+                86
+              ],
+              [
+                2,
+                86,
+                2,
+                14
+              ]
+            ],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                38,
+                50,
+                16
+              ],
+              [
+                72,
+                50,
+                24
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 21,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Kidney, leg, head",
+      "options": {
+        "A": "Two separate circles inside a larger one, in a square",
+        "B": "A circle inside another, and a third circle apart from both, in a square",
+        "C": "Two overlapping circles inside a larger one, in a square",
+        "D": "Three separate circles, in a square"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                -1,
+                101,
+                -1
+              ],
+              [
+                101,
+                -1,
+                101,
+                101
+              ],
+              [
+                101,
+                101,
+                -1,
+                101
+              ],
+              [
+                -1,
+                101,
+                -1,
+                -1
+              ]
+            ],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [
+              [
+                -2,
+                16,
+                101,
+                16
+              ],
+              [
+                101,
+                16,
+                101,
+                84
+              ],
+              [
+                101,
+                84,
+                -2,
+                84
+              ],
+              [
+                -2,
+                84,
+                -2,
+                16
+              ]
+            ],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                -1,
+                101,
+                -1
+              ],
+              [
+                101,
+                -1,
+                101,
+                101
+              ],
+              [
+                101,
+                101,
+                -1,
+                101
+              ],
+              [
+                -1,
+                101,
+                -1,
+                -1
+              ]
+            ],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                38,
+                50,
+                18
+              ],
+              [
+                62,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [
+              [
+                7,
+                11,
+                93,
+                11
+              ],
+              [
+                93,
+                11,
+                93,
+                93
+              ],
+              [
+                93,
+                93,
+                7,
+                93
+              ],
+              [
+                7,
+                93,
+                7,
+                11
+              ]
+            ],
+            "circles": [
+              [
+                28,
+                32,
+                15
+              ],
+              [
+                72,
+                32,
+                15
+              ],
+              [
+                50,
+                72,
+                15
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 22,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Vegetables, onion, food",
+      "options": {
+        "A": "A circle inside another, and a third circle crossing only the outer one, in a square",
+        "B": "Three circles, one inside the next, in a square",
+        "C": "Two overlapping circles inside a larger one, in a square",
+        "D": "Three circles, each overlapping the other two, in a square"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [
+              [
+                2,
+                14,
+                104,
+                14
+              ],
+              [
+                104,
+                14,
+                104,
+                86
+              ],
+              [
+                104,
+                86,
+                2,
+                86
+              ],
+              [
+                2,
+                86,
+                2,
+                14
+              ]
+            ],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                32,
+                50,
+                12
+              ],
+              [
+                78,
+                50,
+                20
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                -1,
+                101,
+                -1
+              ],
+              [
+                101,
+                -1,
+                101,
+                101
+              ],
+              [
+                101,
+                101,
+                -1,
+                101
+              ],
+              [
+                -1,
+                101,
+                -1,
+                -1
+              ]
+            ],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                -1,
+                101,
+                -1
+              ],
+              [
+                101,
+                -1,
+                101,
+                101
+              ],
+              [
+                101,
+                101,
+                -1,
+                101
+              ],
+              [
+                -1,
+                101,
+                -1,
+                -1
+              ]
+            ],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                38,
+                50,
+                18
+              ],
+              [
+                62,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [
+              [
+                14,
+                14,
+                86,
+                14
+              ],
+              [
+                86,
+                14,
+                86,
+                84
+              ],
+              [
+                86,
+                84,
+                14,
+                84
+              ],
+              [
+                14,
+                84,
+                14,
+                14
+              ]
+            ],
+            "circles": [
+              [
+                40,
+                40,
+                20
+              ],
+              [
+                60,
+                40,
+                20
+              ],
+              [
+                50,
+                58,
+                20
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 23,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Ostrich, Snake, Frog",
+      "options": {
+        "A": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+        "B": "Three circles, one inside the next",
+        "C": "Three separate circles",
+        "D": "Three circles, each overlapping the other two"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                28,
+                32,
+                15
+              ],
+              [
+                72,
+                32,
+                15
+              ],
+              [
+                50,
+                72,
+                15
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                40,
+                40,
+                20
+              ],
+              [
+                60,
+                40,
+                20
+              ],
+              [
+                50,
+                58,
+                20
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 24,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Social Science, Psychology, Sociology",
+      "options": {
+        "A": "Two separate circles inside a larger one",
+        "B": "Three circles, each overlapping the other two",
+        "C": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+        "D": "Three circles, one inside the next"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                40,
+                40,
+                20
+              ],
+              [
+                60,
+                40,
+                20
+              ],
+              [
+                50,
+                58,
+                20
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 25,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "A circle inside another, and a third circle apart from both.",
+      "options": {
+        "A": "solid, gas, milk",
+        "B": "men, women, children",
+        "C": "father, mother, sibling",
+        "D": "gas, liquid, milk"
+      },
+      "figure": {
+        "lines": [],
+        "circles": [
+          [
+            32,
+            50,
+            28
+          ],
+          [
+            32,
+            50,
+            15
+          ],
+          [
+            80,
+            50,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "n": 26,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Elephant, Animal, Lion",
+      "options": {
+        "A": "Two separate circles inside a larger one",
+        "B": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+        "C": "Two overlapping circles inside a larger one",
+        "D": "Three circles, one inside the next"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                38,
+                50,
+                18
+              ],
+              [
+                62,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 27,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Television Set, Electrical Appliances, Refrigerator",
+      "options": {
+        "A": "Two separate circles inside a larger one",
+        "B": "Two overlapping circles inside a larger one",
+        "C": "A circle inside another, and a third circle crossing both",
+        "D": "A large circle with two small circles each crossing its edge, apart from each other"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                38,
+                50,
+                18
+              ],
+              [
+                62,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                38,
+                50,
+                16
+              ],
+              [
+                72,
+                50,
+                24
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                30
+              ],
+              [
+                18,
+                50,
+                14
+              ],
+              [
+                82,
+                50,
+                14
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 28,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Cereals, Wheat, Asafoetida",
+      "options": {
+        "A": "Two overlapping circles, and a third apart from both",
+        "B": "Two overlapping circles inside a larger one",
+        "C": "A circle inside another, and a third circle crossing both",
+        "D": "A circle inside another, and a third circle apart from both"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                40,
+                17
+              ],
+              [
+                48,
+                40,
+                17
+              ],
+              [
+                70,
+                74,
+                15
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                38,
+                50,
+                18
+              ],
+              [
+                62,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                38,
+                50,
+                16
+              ],
+              [
+                72,
+                50,
+                24
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 29,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Honey, milk, dog",
+      "options": {
+        "A": "Three separate circles",
+        "B": "Three circles, each overlapping the other two",
+        "C": "Two overlapping circles, and a third apart from both",
+        "D": "Two separate circles inside a larger one"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                28,
+                32,
+                15
+              ],
+              [
+                72,
+                32,
+                15
+              ],
+              [
+                50,
+                72,
+                15
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                40,
+                40,
+                20
+              ],
+              [
+                60,
+                40,
+                20
+              ],
+              [
+                50,
+                58,
+                20
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                40,
+                17
+              ],
+              [
+                48,
+                40,
+                17
+              ],
+              [
+                70,
+                74,
+                15
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 30,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Honeybee, insect, ant",
+      "options": {
+        "A": "Three circles, each overlapping the other two",
+        "B": "A circle inside another, and a third circle apart from both",
+        "C": "Two overlapping circles, and a third apart from both",
+        "D": "Two separate circles inside a larger one"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                40,
+                40,
+                20
+              ],
+              [
+                60,
+                40,
+                20
+              ],
+              [
+                50,
+                58,
+                20
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                40,
+                17
+              ],
+              [
+                48,
+                40,
+                17
+              ],
+              [
+                70,
+                74,
+                15
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 31,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Parents, Graduates, Cricketers.",
+      "options": {
+        "A": "Two separate circles inside a larger one, in a square",
+        "B": "Three circles in a chain: the middle one overlaps the other two, which do not meet, in a square",
+        "C": "Three circles, each overlapping the other two, in a square",
+        "D": "Two overlapping circles inside a larger one, in a square"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                -1,
+                101,
+                -1
+              ],
+              [
+                101,
+                -1,
+                101,
+                101
+              ],
+              [
+                101,
+                101,
+                -1,
+                101
+              ],
+              [
+                -1,
+                101,
+                -1,
+                -1
+              ]
+            ],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [
+              [
+                1,
+                26,
+                99,
+                26
+              ],
+              [
+                99,
+                26,
+                99,
+                74
+              ],
+              [
+                99,
+                74,
+                1,
+                74
+              ],
+              [
+                1,
+                74,
+                1,
+                26
+              ]
+            ],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [
+              [
+                14,
+                14,
+                86,
+                14
+              ],
+              [
+                86,
+                14,
+                86,
+                84
+              ],
+              [
+                86,
+                84,
+                14,
+                84
+              ],
+              [
+                14,
+                84,
+                14,
+                14
+              ]
+            ],
+            "circles": [
+              [
+                40,
+                40,
+                20
+              ],
+              [
+                60,
+                40,
+                20
+              ],
+              [
+                50,
+                58,
+                20
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                -1,
+                101,
+                -1
+              ],
+              [
+                101,
+                -1,
+                101,
+                101
+              ],
+              [
+                101,
+                101,
+                -1,
+                101
+              ],
+              [
+                -1,
+                101,
+                -1,
+                -1
+              ]
+            ],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                38,
+                50,
+                18
+              ],
+              [
+                62,
+                50,
+                18
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 32,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Statisticians, Men, Pathologists",
+      "options": {
+        "A": "Two overlapping circles inside a larger one",
+        "B": "Three circles, one inside the next",
+        "C": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+        "D": "Three circles, each overlapping the other two"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                38,
+                50,
+                18
+              ],
+              [
+                62,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                40,
+                40,
+                20
+              ],
+              [
+                60,
+                40,
+                20
+              ],
+              [
+                50,
+                58,
+                20
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 33,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Parabola, Polygon, Hexagon",
+      "options": {
+        "A": "A circle inside another, and a third circle crossing both",
+        "B": "A circle inside another, and a third circle apart from both",
+        "C": "Three circles, one inside the next",
+        "D": "Three circles, each overlapping the other two"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                38,
+                50,
+                30
+              ],
+              [
+                38,
+                50,
+                16
+              ],
+              [
+                72,
+                50,
+                24
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                40,
+                40,
+                20
+              ],
+              [
+                60,
+                40,
+                20
+              ],
+              [
+                50,
+                58,
+                20
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 34,
+      "page": 60,
+      "section": "Q1-38",
+      "stem": "Table, Chair, Furniture ?",
+      "options": {
+        "A": "Three circles, one inside the next",
+        "B": "Two overlapping circles inside a larger one",
+        "C": "Three circles, each overlapping the other two",
+        "D": "Two separate circles inside a larger one"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                38,
+                50,
+                18
+              ],
+              [
+                62,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                40,
+                40,
+                20
+              ],
+              [
+                60,
+                40,
+                20
+              ],
+              [
+                50,
+                58,
+                20
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 35,
+      "page": 61,
+      "section": "Q1-38",
+      "stem": "India, Haryana and World ?",
+      "options": {
+        "A": "A circle inside another, and a third circle apart from both",
+        "B": "Three separate circles",
+        "C": "Two separate circles inside a larger one",
+        "D": "Three circles, one inside the next"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                28,
+                32,
+                15
+              ],
+              [
+                72,
+                32,
+                15
+              ],
+              [
+                50,
+                72,
+                15
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 36,
+      "page": 61,
+      "section": "Q1-38",
+      "stem": "Flower, Lotus and Rose ?",
+      "options": {
+        "A": "Two separate circles inside a larger one",
+        "B": "A circle inside another, and a third circle apart from both",
+        "C": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+        "D": "One large and two small circles, all separate"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                30,
+                50,
+                25
+              ],
+              [
+                75,
+                30,
+                12
+              ],
+              [
+                75,
+                70,
+                12
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 37,
+      "page": 61,
+      "section": "Q1-38",
+      "stem": "Travellers, Train and Bus ?",
+      "options": {
+        "A": "A circle inside another, and a third circle apart from both",
+        "B": "Three separate circles",
+        "C": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+        "D": "Three circles, one inside the next"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                28,
+                32,
+                15
+              ],
+              [
+                72,
+                32,
+                15
+              ],
+              [
+                50,
+                72,
+                15
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 38,
+      "page": 61,
+      "section": "Q1-38",
+      "stem": "Country, Nepal and India",
+      "options": {
+        "A": "Two separate circles inside a larger one",
+        "B": "Three separate circles",
+        "C": "A circle inside another, and a third circle apart from both",
+        "D": "Three circles, one inside the next"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                28,
+                32,
+                15
+              ],
+              [
+                72,
+                32,
+                15
+              ],
+              [
+                50,
+                72,
+                15
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 39,
+      "page": 61,
+      "section": "Q39-48",
+      "stem": "Teachers, Pilots, Human beings.",
+      "options": {
+        "A": "Three rectangles in a chain: the middle one overlaps the other two, which do not meet",
+        "B": "A large rectangle with two small rectangles each crossing its edge, apart from each other",
+        "C": "A rectangle inside another, and a third rectangle apart from both",
+        "D": "Two separate rectangles inside a larger one"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [
+              [
+                5,
+                5,
+                45,
+                5
+              ],
+              [
+                45,
+                5,
+                45,
+                35
+              ],
+              [
+                45,
+                35,
+                5,
+                35
+              ],
+              [
+                5,
+                35,
+                5,
+                5
+              ],
+              [
+                25,
+                20,
+                65,
+                20
+              ],
+              [
+                65,
+                20,
+                65,
+                50
+              ],
+              [
+                65,
+                50,
+                25,
+                50
+              ],
+              [
+                25,
+                50,
+                25,
+                20
+              ],
+              [
+                50,
+                45,
+                95,
+                45
+              ],
+              [
+                95,
+                45,
+                95,
+                80
+              ],
+              [
+                95,
+                80,
+                50,
+                80
+              ],
+              [
+                50,
+                80,
+                50,
+                45
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [
+              [
+                25,
+                10,
+                80,
+                10
+              ],
+              [
+                80,
+                10,
+                80,
+                70
+              ],
+              [
+                80,
+                70,
+                25,
+                70
+              ],
+              [
+                25,
+                70,
+                25,
+                10
+              ],
+              [
+                10,
+                30,
+                35,
+                30
+              ],
+              [
+                35,
+                30,
+                35,
+                50
+              ],
+              [
+                35,
+                50,
+                10,
+                50
+              ],
+              [
+                10,
+                50,
+                10,
+                30
+              ],
+              [
+                70,
+                30,
+                95,
+                30
+              ],
+              [
+                95,
+                30,
+                95,
+                50
+              ],
+              [
+                95,
+                50,
+                70,
+                50
+              ],
+              [
+                70,
+                50,
+                70,
+                30
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [
+              [
+                5,
+                15,
+                55,
+                15
+              ],
+              [
+                55,
+                15,
+                55,
+                75
+              ],
+              [
+                55,
+                75,
+                5,
+                75
+              ],
+              [
+                5,
+                75,
+                5,
+                15
+              ],
+              [
+                15,
+                30,
+                40,
+                30
+              ],
+              [
+                40,
+                30,
+                40,
+                55
+              ],
+              [
+                40,
+                55,
+                15,
+                55
+              ],
+              [
+                15,
+                55,
+                15,
+                30
+              ],
+              [
+                65,
+                30,
+                95,
+                30
+              ],
+              [
+                95,
+                30,
+                95,
+                60
+              ],
+              [
+                95,
+                60,
+                65,
+                60
+              ],
+              [
+                65,
+                60,
+                65,
+                30
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [
+              [
+                10,
+                10,
+                90,
+                10
+              ],
+              [
+                90,
+                10,
+                90,
+                80
+              ],
+              [
+                90,
+                80,
+                10,
+                80
+              ],
+              [
+                10,
+                80,
+                10,
+                10
+              ],
+              [
+                20,
+                30,
+                45,
+                30
+              ],
+              [
+                45,
+                30,
+                45,
+                60
+              ],
+              [
+                45,
+                60,
+                20,
+                60
+              ],
+              [
+                20,
+                60,
+                20,
+                30
+              ],
+              [
+                55,
+                30,
+                80,
+                30
+              ],
+              [
+                80,
+                30,
+                80,
+                60
+              ],
+              [
+                80,
+                60,
+                55,
+                60
+              ],
+              [
+                55,
+                60,
+                55,
+                30
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 40,
+      "page": 61,
+      "section": "Q39-48",
+      "stem": "Sweets, Oranges, Fruits.",
+      "options": {
+        "A": "Three rectangles in a chain: the middle one overlaps the other two, which do not meet",
+        "B": "A large rectangle with two small rectangles each crossing its edge, apart from each other",
+        "C": "A rectangle inside another, and a third rectangle apart from both",
+        "D": "Two separate rectangles inside a larger one"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [
+              [
+                5,
+                5,
+                45,
+                5
+              ],
+              [
+                45,
+                5,
+                45,
+                35
+              ],
+              [
+                45,
+                35,
+                5,
+                35
+              ],
+              [
+                5,
+                35,
+                5,
+                5
+              ],
+              [
+                25,
+                20,
+                65,
+                20
+              ],
+              [
+                65,
+                20,
+                65,
+                50
+              ],
+              [
+                65,
+                50,
+                25,
+                50
+              ],
+              [
+                25,
+                50,
+                25,
+                20
+              ],
+              [
+                50,
+                45,
+                95,
+                45
+              ],
+              [
+                95,
+                45,
+                95,
+                80
+              ],
+              [
+                95,
+                80,
+                50,
+                80
+              ],
+              [
+                50,
+                80,
+                50,
+                45
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [
+              [
+                25,
+                10,
+                80,
+                10
+              ],
+              [
+                80,
+                10,
+                80,
+                70
+              ],
+              [
+                80,
+                70,
+                25,
+                70
+              ],
+              [
+                25,
+                70,
+                25,
+                10
+              ],
+              [
+                10,
+                30,
+                35,
+                30
+              ],
+              [
+                35,
+                30,
+                35,
+                50
+              ],
+              [
+                35,
+                50,
+                10,
+                50
+              ],
+              [
+                10,
+                50,
+                10,
+                30
+              ],
+              [
+                70,
+                30,
+                95,
+                30
+              ],
+              [
+                95,
+                30,
+                95,
+                50
+              ],
+              [
+                95,
+                50,
+                70,
+                50
+              ],
+              [
+                70,
+                50,
+                70,
+                30
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [
+              [
+                5,
+                15,
+                55,
+                15
+              ],
+              [
+                55,
+                15,
+                55,
+                75
+              ],
+              [
+                55,
+                75,
+                5,
+                75
+              ],
+              [
+                5,
+                75,
+                5,
+                15
+              ],
+              [
+                15,
+                30,
+                40,
+                30
+              ],
+              [
+                40,
+                30,
+                40,
+                55
+              ],
+              [
+                40,
+                55,
+                15,
+                55
+              ],
+              [
+                15,
+                55,
+                15,
+                30
+              ],
+              [
+                65,
+                30,
+                95,
+                30
+              ],
+              [
+                95,
+                30,
+                95,
+                60
+              ],
+              [
+                95,
+                60,
+                65,
+                60
+              ],
+              [
+                65,
+                60,
+                65,
+                30
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [
+              [
+                10,
+                10,
+                90,
+                10
+              ],
+              [
+                90,
+                10,
+                90,
+                80
+              ],
+              [
+                90,
+                80,
+                10,
+                80
+              ],
+              [
+                10,
+                80,
+                10,
+                10
+              ],
+              [
+                20,
+                30,
+                45,
+                30
+              ],
+              [
+                45,
+                30,
+                45,
+                60
+              ],
+              [
+                45,
+                60,
+                20,
+                60
+              ],
+              [
+                20,
+                60,
+                20,
+                30
+              ],
+              [
+                55,
+                30,
+                80,
+                30
+              ],
+              [
+                80,
+                30,
+                80,
+                60
+              ],
+              [
+                80,
+                60,
+                55,
+                60
+              ],
+              [
+                55,
+                60,
+                55,
+                30
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 41,
+      "page": 61,
+      "section": "Q39-48",
+      "stem": "classes. Computer hardware, Monitor, Keyboard, Operating system.",
+      "options": {
+        "A": "Two separate circles inside a larger one, and a fourth circle apart from it, in a square",
+        "B": "Three circles one inside the next, and a fourth circle apart, in a square",
+        "C": "Four separate circles, in a square",
+        "D": "Three circles each overlapping the other two, and a fourth circle apart, in a square"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [
+              [
+                1,
+                11,
+                96,
+                11
+              ],
+              [
+                96,
+                11,
+                96,
+                86
+              ],
+              [
+                96,
+                86,
+                1,
+                86
+              ],
+              [
+                1,
+                86,
+                1,
+                11
+              ]
+            ],
+            "circles": [
+              [
+                35,
+                45,
+                28
+              ],
+              [
+                25,
+                45,
+                9
+              ],
+              [
+                45,
+                45,
+                9
+              ],
+              [
+                80,
+                70,
+                10
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                14,
+                100,
+                14
+              ],
+              [
+                100,
+                14,
+                100,
+                86
+              ],
+              [
+                100,
+                86,
+                -1,
+                86
+              ],
+              [
+                -1,
+                86,
+                -1,
+                14
+              ]
+            ],
+            "circles": [
+              [
+                35,
+                50,
+                30
+              ],
+              [
+                35,
+                50,
+                20
+              ],
+              [
+                35,
+                50,
+                10
+              ],
+              [
+                82,
+                50,
+                12
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [
+              [
+                5,
+                5,
+                95,
+                5
+              ],
+              [
+                95,
+                5,
+                95,
+                95
+              ],
+              [
+                95,
+                95,
+                5,
+                95
+              ],
+              [
+                5,
+                95,
+                5,
+                5
+              ]
+            ],
+            "circles": [
+              [
+                25,
+                25,
+                14
+              ],
+              [
+                75,
+                25,
+                14
+              ],
+              [
+                25,
+                75,
+                14
+              ],
+              [
+                75,
+                75,
+                14
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [
+              [
+                8,
+                13,
+                100,
+                13
+              ],
+              [
+                100,
+                13,
+                100,
+                93
+              ],
+              [
+                100,
+                93,
+                8,
+                93
+              ],
+              [
+                8,
+                93,
+                8,
+                13
+              ]
+            ],
+            "circles": [
+              [
+                30,
+                35,
+                16
+              ],
+              [
+                48,
+                35,
+                16
+              ],
+              [
+                39,
+                52,
+                16
+              ],
+              [
+                82,
+                75,
+                12
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 42,
+      "page": 61,
+      "section": "Q39-48",
+      "stem": "Sister, Mother, Brother",
+      "options": {
+        "A": "Three separate circles, in a square",
+        "B": "Two overlapping circles, and a third apart from both, in a square",
+        "C": "Three circles, each overlapping the other two, in a square",
+        "D": "A circle inside another, and a third circle apart from both, in a square"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [
+              [
+                7,
+                11,
+                93,
+                11
+              ],
+              [
+                93,
+                11,
+                93,
+                93
+              ],
+              [
+                93,
+                93,
+                7,
+                93
+              ],
+              [
+                7,
+                93,
+                7,
+                11
+              ]
+            ],
+            "circles": [
+              [
+                28,
+                32,
+                15
+              ],
+              [
+                72,
+                32,
+                15
+              ],
+              [
+                50,
+                72,
+                15
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [
+              [
+                2,
+                17,
+                91,
+                17
+              ],
+              [
+                91,
+                17,
+                91,
+                95
+              ],
+              [
+                91,
+                95,
+                2,
+                95
+              ],
+              [
+                2,
+                95,
+                2,
+                17
+              ]
+            ],
+            "circles": [
+              [
+                25,
+                40,
+                17
+              ],
+              [
+                48,
+                40,
+                17
+              ],
+              [
+                70,
+                74,
+                15
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [
+              [
+                14,
+                14,
+                86,
+                14
+              ],
+              [
+                86,
+                14,
+                86,
+                84
+              ],
+              [
+                86,
+                84,
+                14,
+                84
+              ],
+              [
+                14,
+                84,
+                14,
+                14
+              ]
+            ],
+            "circles": [
+              [
+                40,
+                40,
+                20
+              ],
+              [
+                60,
+                40,
+                20
+              ],
+              [
+                50,
+                58,
+                20
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [
+              [
+                -2,
+                16,
+                101,
+                16
+              ],
+              [
+                101,
+                16,
+                101,
+                84
+              ],
+              [
+                101,
+                84,
+                -2,
+                84
+              ],
+              [
+                -2,
+                84,
+                -2,
+                16
+              ]
+            ],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 43,
+      "page": 61,
+      "section": "Q39-48",
+      "stem": "Boys, Class, Girls",
+      "options": {
+        "A": "A circle inside another, and a third circle apart from both, in a rectangle",
+        "B": "Three circles, one inside the next, in a rectangle",
+        "C": "Three circles in a chain: the middle one overlaps the other two, which do not meet, in a rectangle",
+        "D": "Two separate circles inside a larger one, in a rectangle"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [
+              [
+                -2,
+                16,
+                101,
+                16
+              ],
+              [
+                101,
+                16,
+                101,
+                84
+              ],
+              [
+                101,
+                84,
+                -2,
+                84
+              ],
+              [
+                -2,
+                84,
+                -2,
+                16
+              ]
+            ],
+            "circles": [
+              [
+                32,
+                50,
+                28
+              ],
+              [
+                32,
+                50,
+                15
+              ],
+              [
+                80,
+                50,
+                15
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                -1,
+                101,
+                -1
+              ],
+              [
+                101,
+                -1,
+                101,
+                101
+              ],
+              [
+                101,
+                101,
+                -1,
+                101
+              ],
+              [
+                -1,
+                101,
+                -1,
+                -1
+              ]
+            ],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [
+              [
+                1,
+                26,
+                99,
+                26
+              ],
+              [
+                99,
+                26,
+                99,
+                74
+              ],
+              [
+                99,
+                74,
+                1,
+                74
+              ],
+              [
+                1,
+                74,
+                1,
+                26
+              ]
+            ],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [
+              [
+                -1,
+                -1,
+                101,
+                -1
+              ],
+              [
+                101,
+                -1,
+                101,
+                101
+              ],
+              [
+                101,
+                101,
+                -1,
+                101
+              ],
+              [
+                -1,
+                101,
+                -1,
+                -1
+              ]
+            ],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                32,
+                50,
+                14
+              ],
+              [
+                68,
+                50,
+                14
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 44,
+      "page": 61,
+      "section": "Q39-48",
+      "stem": "Three circles, one inside the next.",
+      "options": {
+        "A": "Pulse, black gram, root",
+        "B": "Doctor, Nurse, Engineer",
+        "C": "Currency, Rupee, China",
+        "D": "Boy, man, human"
+      },
+      "figure": {
+        "lines": [],
+        "circles": [
+          [
+            50,
+            50,
+            45
+          ],
+          [
+            50,
+            50,
+            32
+          ],
+          [
+            50,
+            50,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "n": 45,
+      "page": 61,
+      "section": "Q39-48",
+      "stem": "A circle inside another, and a third circle crossing both.",
+      "options": {
+        "A": "Mothers, doctors, women",
+        "B": "Musician, Teacher, Engineer",
+        "C": "Letter, post office, paper",
+        "D": "Book, copy, student"
+      },
+      "figure": {
+        "lines": [],
+        "circles": [
+          [
+            38,
+            50,
+            30
+          ],
+          [
+            38,
+            50,
+            16
+          ],
+          [
+            72,
+            50,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "n": 46,
+      "page": 61,
+      "section": "Q39-48",
+      "stem": "Two overlapping circles inside a larger one.",
+      "options": {
+        "A": "Doctor, Engineer, Carpenter",
+        "B": "Mammal, Animal, Blue whale",
+        "C": "Sisters, Mothers, Women",
+        "D": "Brother, Man, Aunt"
+      },
+      "figure": {
+        "lines": [],
+        "circles": [
+          [
+            50,
+            50,
+            45
+          ],
+          [
+            38,
+            50,
+            18
+          ],
+          [
+            62,
+            50,
+            18
+          ]
+        ]
+      }
+    },
+    {
+      "n": 47,
+      "page": 61,
+      "section": "Q39-48",
+      "stem": "Three circles, each overlapping the other two.",
+      "options": {
+        "A": "Police officers, doctors, nurses",
+        "B": "Father, uncle, brother",
+        "C": "Artist, Father, Girls",
+        "D": "Brother, men, women"
+      },
+      "figure": {
+        "lines": [],
+        "circles": [
+          [
+            40,
+            40,
+            20
+          ],
+          [
+            60,
+            40,
+            20
+          ],
+          [
+            50,
+            58,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "n": 48,
+      "page": 61,
+      "section": "Q39-48",
+      "stem": "Two separate circles inside a larger one.",
+      "options": {
+        "A": "Hindi, English, Spanish",
+        "B": "Television, Refrigerator, Fan",
+        "C": "Languages, Social Sciences, Scientific",
+        "D": "Hindi, English, Languages"
+      },
+      "figure": {
+        "lines": [],
+        "circles": [
+          [
+            50,
+            50,
+            45
+          ],
+          [
+            32,
+            50,
+            14
+          ],
+          [
+            68,
+            50,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "n": 49,
+      "page": 61,
+      "section": "Q49",
+      "stem": "Statements :\n(1) All markers (M) are boards (B).\n(2) All boards (B) are printers (P).",
+      "options": {
+        "A": "Circle B inside circle P, inside circle M",
+        "B": "Circle B inside circle P, and circle M crossing both",
+        "C": "Circles B, P and M, each overlapping the other two",
+        "D": "Circle B inside circle P, and circle M apart from both"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ],
+            "labels": [
+              [
+                50,
+                12,
+                "M"
+              ],
+              [
+                50,
+                26,
+                "P"
+              ],
+              [
+                50,
+                50,
+                "B"
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                40,
+                50,
+                32
+              ],
+              [
+                36,
+                50,
+                14
+              ],
+              [
+                62,
+                50,
+                16
+              ]
+            ],
+            "labels": [
+              [
+                40,
+                24,
+                "P"
+              ],
+              [
+                30,
+                50,
+                "B"
+              ],
+              [
+                74,
+                50,
+                "M"
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                40,
+                40,
+                20
+              ],
+              [
+                60,
+                40,
+                20
+              ],
+              [
+                50,
+                58,
+                20
+              ]
+            ],
+            "labels": [
+              [
+                32,
+                34,
+                "B"
+              ],
+              [
+                68,
+                34,
+                "P"
+              ],
+              [
+                50,
+                70,
+                "M"
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                35,
+                50,
+                30
+              ],
+              [
+                35,
+                50,
+                13
+              ],
+              [
+                83,
+                50,
+                13
+              ]
+            ],
+            "labels": [
+              [
+                35,
+                28,
+                "P"
+              ],
+              [
+                35,
+                50,
+                "B"
+              ],
+              [
+                83,
+                50,
+                "M"
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 50,
+      "page": 61,
+      "section": "Q50",
+      "stem": "Statements :\nSome mugs (M) are drones (D).\nSome drones (D) are robots (R).",
+      "options": {
+        "A": "Circle M inside circle D, and circle R crossing D only",
+        "B": "Circles M, D and R in a chain: D overlaps the other two, which do not meet",
+        "C": "Circle M inside circle D, and circle R apart from both",
+        "D": "Circle R inside circle M, inside circle D"
+      },
+      "answerPanels": {
+        "A": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                40,
+                50,
+                30
+              ],
+              [
+                44,
+                50,
+                14
+              ],
+              [
+                76,
+                58,
+                14
+              ]
+            ],
+            "labels": [
+              [
+                20,
+                50,
+                "D"
+              ],
+              [
+                44,
+                50,
+                "M"
+              ],
+              [
+                82,
+                62,
+                "R"
+              ]
+            ]
+          }
+        },
+        "B": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                25,
+                50,
+                18
+              ],
+              [
+                50,
+                50,
+                18
+              ],
+              [
+                75,
+                50,
+                18
+              ]
+            ],
+            "labels": [
+              [
+                18,
+                50,
+                "M"
+              ],
+              [
+                50,
+                38,
+                "D"
+              ],
+              [
+                82,
+                50,
+                "R"
+              ]
+            ]
+          }
+        },
+        "C": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                35,
+                50,
+                30
+              ],
+              [
+                40,
+                50,
+                14
+              ],
+              [
+                83,
+                50,
+                14
+              ]
+            ],
+            "labels": [
+              [
+                15,
+                50,
+                "D"
+              ],
+              [
+                40,
+                50,
+                "M"
+              ],
+              [
+                83,
+                50,
+                "R"
+              ]
+            ]
+          }
+        },
+        "D": {
+          "figure": {
+            "lines": [],
+            "circles": [
+              [
+                50,
+                50,
+                45
+              ],
+              [
+                50,
+                50,
+                32
+              ],
+              [
+                50,
+                50,
+                18
+              ]
+            ],
+            "labels": [
+              [
+                50,
+                12,
+                "D"
+              ],
+              [
+                50,
+                26,
+                "M"
+              ],
+              [
+                50,
+                50,
+                "R"
+              ]
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

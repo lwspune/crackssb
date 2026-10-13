@@ -153,6 +153,16 @@
     },
     {
       "source": "agrawal-examcart-oir",
+      "chapter": 16,
+      "title": "Ven Diagram",
+      "pages": [
+        59,
+        61
+      ],
+      "file": "content/oir/agrawal-examcart/ch16-venn-diagram.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
       "chapter": 17,
       "title": "Syllogism",
       "pages": [
@@ -182,11 +192,11 @@
       "file": "content/oir/agrawal-examcart/ch28-counting-figures.source.json"
     }
   ],
-  "itemCount": 1589,
-  "heldCount": 117,
+  "itemCount": 1633,
+  "heldCount": 123,
   "confidence": {
-    "high": 1498,
-    "medium": 91
+    "high": 1529,
+    "medium": 104
   },
   "held": [
     {
@@ -675,6 +685,40 @@
       "source": "agrawal-examcart-oir",
       "source_ref": "ch15 p56 q39",
       "reason": "The sentence drops a name: read as printed, Mohan is 3 years younger than Suresh (3, option A); read as the usual question, Aman is 3 older than Mohan and 3 younger than Suresh (6, option C). Both options are printed."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p59 q3",
+      "reason": "The classes read two ways and each reading fits a different option: colleges and schools as places with students and others in them (one option); college and school as the students of each (another). The first gives the chain (B), the second two circles inside a larger one (D); strictly, students, colleges and schools are three separate classes, which no option draws. Waiting for the book's key."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p59 q10",
+      "reason": "The classes read two ways and each reading fits a different option: three kinds of object (one option); windows and doors as parts of a house (another). Three separate circles (C) or two inside a larger one (A); A follows the part-of-a-whole reading the book uses in Q43. Waiting for the book's key.",
+      "lean": "A"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q16",
+      "reason": "The classes read two ways and each reading fits a different option: three kinds of thing (one option); workers and machines as parts of an industry (another). Three separate circles (A) or two inside a larger one (B). Waiting for the book's key.",
+      "lean": "B"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q32",
+      "reason": "The classes read two ways and each reading fits a different option: statistician and pathologist as distinct professions (one option); one person may be both (another). A chain with men in the middle (C), or all three overlapping (D). Waiting for the book's key."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q37",
+      "reason": "The classes read two ways and each reading fits a different option: people, and two kinds of vehicle (one option); travellers on trains and travellers on buses (another). Three separate circles (B) or a chain (C). Waiting for the book's key.",
+      "lean": "C"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q49",
+      "reason": "The statements put markers inside boards inside printers, and no option draws that: the one option with three nested circles (A) labels them M outside P outside B, the wrong way round. A misprint of the labels is likely.",
+      "lean": "A"
     },
     {
       "source": "agrawal-examcart-oir",
@@ -33137,6 +33181,6210 @@
       "key_basis": "derived",
       "rule": "Red = yellow = 2 × green, so red is double the green.",
       "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q001",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Sea animals, Shripm, Walrus",
+        "options": {
+          "A": "Three circles, one inside the next",
+          "B": "A circle inside another, and a third circle apart from both",
+          "C": "Two separate circles inside a larger one",
+          "D": "Three separate circles in a row"
+        },
+        "key": "C",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  17,
+                  50,
+                  15
+                ],
+                [
+                  50,
+                  50,
+                  15
+                ],
+                [
+                  83,
+                  50,
+                  15
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p59 q1",
+      "key_basis": "derived",
+      "rule": "Shrimps and walruses are both sea animals, and no shrimp is a walrus: two separate circles inside a larger one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q002",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Doctor, Professor, Cardiologist\n1=doctor, 2=coardiologist, 3=Professor",
+        "options": {
+          "A": "Circle 2 inside circle 1, and circle 3 crossing both",
+          "B": "Circle 2 inside circle 1, and circle 3 apart from both",
+          "C": "Circles 2, 1 and 3 in a chain: 1 overlaps the other two, which do not meet",
+          "D": "Circle 3 inside circle 1, inside circle 2"
+        },
+        "key": "A",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  38,
+                  50,
+                  16
+                ],
+                [
+                  72,
+                  50,
+                  24
+                ]
+              ],
+              "labels": [
+                [
+                  38,
+                  26,
+                  "1"
+                ],
+                [
+                  32,
+                  50,
+                  "2"
+                ],
+                [
+                  84,
+                  50,
+                  "3"
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ],
+              "labels": [
+                [
+                  32,
+                  28,
+                  "1"
+                ],
+                [
+                  32,
+                  50,
+                  "2"
+                ],
+                [
+                  80,
+                  50,
+                  "3"
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  75,
+                  50,
+                  18
+                ]
+              ],
+              "labels": [
+                [
+                  18,
+                  50,
+                  "2"
+                ],
+                [
+                  50,
+                  38,
+                  "1"
+                ],
+                [
+                  82,
+                  50,
+                  "3"
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ],
+              "labels": [
+                [
+                  50,
+                  12,
+                  "2"
+                ],
+                [
+                  50,
+                  26,
+                  "1"
+                ],
+                [
+                  50,
+                  50,
+                  "3"
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p59 q2",
+      "key_basis": "derived",
+      "rule": "Every cardiologist (2) is a doctor (1); some doctors are professors (3), and some professors are cardiologists: 2 inside 1, and 3 crossing both.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q004",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Girls, Healthy, Trains",
+        "options": {
+          "A": "Two overlapping circles, and a third touching both, in a square",
+          "B": "Three circles, each touching the other two, in a square",
+          "C": "A circle inside another, and a third circle apart from both, in a square",
+          "D": "Two separate circles inside a larger one, in a square"
+        },
+        "key": "A",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [
+                [
+                  11,
+                  11,
+                  86,
+                  11
+                ],
+                [
+                  86,
+                  11,
+                  86,
+                  93
+                ],
+                [
+                  86,
+                  93,
+                  11,
+                  93
+                ],
+                [
+                  11,
+                  93,
+                  11,
+                  11
+                ]
+              ],
+              "circles": [
+                [
+                  35,
+                  35,
+                  18
+                ],
+                [
+                  62,
+                  35,
+                  18
+                ],
+                [
+                  48.5,
+                  69,
+                  18
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [
+                [
+                  8,
+                  11,
+                  92.5,
+                  11
+                ],
+                [
+                  92.5,
+                  11,
+                  92.5,
+                  90.7
+                ],
+                [
+                  92.5,
+                  90.7,
+                  8,
+                  90.7
+                ],
+                [
+                  8,
+                  90.7,
+                  8,
+                  11
+                ]
+              ],
+              "circles": [
+                [
+                  32,
+                  35,
+                  18
+                ],
+                [
+                  68.5,
+                  35,
+                  18
+                ],
+                [
+                  50.25,
+                  66.7,
+                  18
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [
+                [
+                  -2,
+                  16,
+                  101,
+                  16
+                ],
+                [
+                  101,
+                  16,
+                  101,
+                  84
+                ],
+                [
+                  101,
+                  84,
+                  -2,
+                  84
+                ],
+                [
+                  -2,
+                  84,
+                  -2,
+                  16
+                ]
+              ],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  -1,
+                  101,
+                  -1
+                ],
+                [
+                  101,
+                  -1,
+                  101,
+                  101
+                ],
+                [
+                  101,
+                  101,
+                  -1,
+                  101
+                ],
+                [
+                  -1,
+                  101,
+                  -1,
+                  -1
+                ]
+              ],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p59 q4",
+      "key_basis": "derived",
+      "rule": "Some girls are healthy and some are not; a train is neither a girl nor healthy: two overlapping circles, and a third apart from both.",
+      "confidence": "medium",
+      "note": "In option A the third circle meets the other two at a single point in the photo, read as touching (apart), not overlapping; the next closest option, B, has no overlap at all."
+    },
+    {
+      "id": "oir-agx-ch16-q005",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Unit,Watt, Volt",
+        "options": {
+          "A": "Three circles in a chain: the middle one overlaps the other two, which do not meet, in a square",
+          "B": "Two separate circles inside a larger one, in a square",
+          "C": "Three circles, one inside the next, in a square",
+          "D": "A circle inside another, and a third circle apart from both, in a square"
+        },
+        "key": "B",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [
+                [
+                  1,
+                  26,
+                  99,
+                  26
+                ],
+                [
+                  99,
+                  26,
+                  99,
+                  74
+                ],
+                [
+                  99,
+                  74,
+                  1,
+                  74
+                ],
+                [
+                  1,
+                  74,
+                  1,
+                  26
+                ]
+              ],
+              "circles": [
+                [
+                  25,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  75,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  -1,
+                  101,
+                  -1
+                ],
+                [
+                  101,
+                  -1,
+                  101,
+                  101
+                ],
+                [
+                  101,
+                  101,
+                  -1,
+                  101
+                ],
+                [
+                  -1,
+                  101,
+                  -1,
+                  -1
+                ]
+              ],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  -1,
+                  101,
+                  -1
+                ],
+                [
+                  101,
+                  -1,
+                  101,
+                  101
+                ],
+                [
+                  101,
+                  101,
+                  -1,
+                  101
+                ],
+                [
+                  -1,
+                  101,
+                  -1,
+                  -1
+                ]
+              ],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [
+                [
+                  -2,
+                  16,
+                  101,
+                  16
+                ],
+                [
+                  101,
+                  16,
+                  101,
+                  84
+                ],
+                [
+                  101,
+                  84,
+                  -2,
+                  84
+                ],
+                [
+                  -2,
+                  84,
+                  -2,
+                  16
+                ]
+              ],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p59 q5",
+      "key_basis": "derived",
+      "rule": "The watt and the volt are both units, and different ones: two separate circles inside a larger one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q006",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Village people. Educated people, Intelligent people",
+        "options": {
+          "A": "Three circles, one inside the next",
+          "B": "Three circles, each overlapping the other two",
+          "C": "Two overlapping circles, and a third apart from both",
+          "D": "Three separate circles"
+        },
+        "key": "B",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  40,
+                  40,
+                  20
+                ],
+                [
+                  60,
+                  40,
+                  20
+                ],
+                [
+                  50,
+                  58,
+                  20
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  40,
+                  17
+                ],
+                [
+                  48,
+                  40,
+                  17
+                ],
+                [
+                  70,
+                  74,
+                  15
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  28,
+                  32,
+                  15
+                ],
+                [
+                  72,
+                  32,
+                  15
+                ],
+                [
+                  50,
+                  72,
+                  15
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p59 q6",
+      "key_basis": "derived",
+      "rule": "Some village people are educated, some intelligent, and some educated people are intelligent; none of the three holds another: three circles each overlapping the other two.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q007",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Charcoal, Black Colour, Classroom Board",
+        "options": {
+          "A": "A circle inside another, and a third circle apart from both",
+          "B": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+          "C": "A circle inside another, and a third circle crossing both",
+          "D": "A circle inside another, and a third circle crossing only the outer one"
+        },
+        "key": "D",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  75,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  38,
+                  50,
+                  16
+                ],
+                [
+                  72,
+                  50,
+                  24
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  32,
+                  50,
+                  12
+                ],
+                [
+                  78,
+                  50,
+                  20
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p59 q7",
+      "key_basis": "derived",
+      "rule": "All charcoal is black; some classroom boards are black and some are not (white boards); no board is charcoal: a circle inside another, and a third crossing only the outer one.",
+      "confidence": "medium",
+      "note": "\"Black Colour\" is read as the class of black things, holding all charcoal and the black boards."
+    },
+    {
+      "id": "oir-agx-ch16-q008",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Student, Women, Teacher",
+        "options": {
+          "A": "A circle inside another, and a third circle apart from both",
+          "B": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+          "C": "Two separate circles inside a larger one",
+          "D": "Three circles, one inside the next"
+        },
+        "key": "B",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  75,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p59 q8",
+      "key_basis": "derived",
+      "rule": "Some women are students and some are teachers; a student is not the teacher: a chain, with women in the middle.",
+      "confidence": "medium",
+      "note": "Two jobs or roles are read as distinct classes (none of one is the other), as the book draws them; in life one person can hold both. No option draws all three overlapping."
+    },
+    {
+      "id": "oir-agx-ch16-q009",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A circle inside another, and a third circle apart from both.",
+        "options": {
+          "A": "Furniture, Plastic, Bag",
+          "B": "Furniture, Chair, Book",
+          "C": "India, Monsoon, Desert",
+          "D": "Ponds, Waterfall, River"
+        },
+        "key": "B",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "figure": {
+          "lines": [],
+          "circles": [
+            [
+              32,
+              50,
+              28
+            ],
+            [
+              32,
+              50,
+              15
+            ],
+            [
+              80,
+              50,
+              15
+            ]
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p59 q9",
+      "key_basis": "derived",
+      "rule": "A circle inside another and one apart: every chair is furniture, and a book is neither. Plastic furniture and plastic bags make a chain (A); ponds, waterfalls and rivers are three separate things (D); India, the monsoon and deserts share parts but none holds another (C).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q011",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Father, surgeon, man",
+        "options": {
+          "A": "A circle inside another, and a third circle apart from both",
+          "B": "A circle inside another, and a third circle crossing both",
+          "C": "A circle inside another, and a third circle crossing only the outer one",
+          "D": "Two separate circles inside a larger one"
+        },
+        "key": "B",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  38,
+                  50,
+                  16
+                ],
+                [
+                  72,
+                  50,
+                  24
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  32,
+                  50,
+                  12
+                ],
+                [
+                  78,
+                  50,
+                  20
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p59 q11",
+      "key_basis": "derived",
+      "rule": "Every father is a man; some men are surgeons (and some surgeons are women); some fathers are surgeons: a circle inside another, and a third crossing both.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q012",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Woman, mother, father",
+        "options": {
+          "A": "Three separate circles in a row",
+          "B": "A circle inside another, and a third circle crossing only the outer one",
+          "C": "A circle inside another, and a third circle apart from both",
+          "D": "A circle inside another, and a third circle crossing both"
+        },
+        "key": "C",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  17,
+                  50,
+                  15
+                ],
+                [
+                  50,
+                  50,
+                  15
+                ],
+                [
+                  83,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  32,
+                  50,
+                  12
+                ],
+                [
+                  78,
+                  50,
+                  20
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  38,
+                  50,
+                  16
+                ],
+                [
+                  72,
+                  50,
+                  24
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p59 q12",
+      "key_basis": "derived",
+      "rule": "Every mother is a woman; no father is either: a circle inside another, and a third apart from both.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q013",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Animal, Leopard, banner",
+        "options": {
+          "A": "Circle C inside circle A, and circle B crossing A only",
+          "B": "Circles B and C inside circle A, apart from each other",
+          "C": "Circle C inside circle A, and circle B apart from both",
+          "D": "Circles C and A overlapping, and circle B apart from both"
+        },
+        "key": "C",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  40,
+                  50,
+                  32
+                ],
+                [
+                  32,
+                  50,
+                  12
+                ],
+                [
+                  80,
+                  50,
+                  18
+                ]
+              ],
+              "labels": [
+                [
+                  52,
+                  30,
+                  "A"
+                ],
+                [
+                  32,
+                  50,
+                  "C"
+                ],
+                [
+                  88,
+                  50,
+                  "B"
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  42
+                ],
+                [
+                  32,
+                  50,
+                  13
+                ],
+                [
+                  68,
+                  50,
+                  13
+                ]
+              ],
+              "labels": [
+                [
+                  50,
+                  22,
+                  "A"
+                ],
+                [
+                  32,
+                  50,
+                  "B"
+                ],
+                [
+                  68,
+                  50,
+                  "C"
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  35,
+                  50,
+                  30
+                ],
+                [
+                  35,
+                  50,
+                  13
+                ],
+                [
+                  85,
+                  50,
+                  13
+                ]
+              ],
+              "labels": [
+                [
+                  35,
+                  28,
+                  "A"
+                ],
+                [
+                  35,
+                  50,
+                  "C"
+                ],
+                [
+                  85,
+                  50,
+                  "B"
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  22,
+                  50,
+                  16
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  85,
+                  50,
+                  12
+                ]
+              ],
+              "labels": [
+                [
+                  16,
+                  50,
+                  "C"
+                ],
+                [
+                  56,
+                  50,
+                  "A"
+                ],
+                [
+                  85,
+                  50,
+                  "B"
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p59 q13",
+      "key_basis": "derived",
+      "rule": "Every leopard is an animal; a banner is neither: a circle inside another, and a third apart from both (A holding C, B apart).",
+      "confidence": "medium",
+      "note": "The print letters the circles A, B and C without saying which class each is; read as names of circles, only option C draws the relation. Taken as Animal, Leopard, banner in printed order, no option fits."
+    },
+    {
+      "id": "oir-agx-ch16-q014",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Bird, tuna, canary",
+        "options": {
+          "A": "Circles T and C inside circle B, apart from each other",
+          "B": "Circle B with circles T and C each crossing its edge, apart from each other",
+          "C": "Circle C inside circle T, inside circle B",
+          "D": "Circle C inside circle B, and circle T apart from both"
+        },
+        "key": "D",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  42
+                ],
+                [
+                  32,
+                  50,
+                  13
+                ],
+                [
+                  68,
+                  50,
+                  13
+                ]
+              ],
+              "labels": [
+                [
+                  50,
+                  20,
+                  "B"
+                ],
+                [
+                  32,
+                  50,
+                  "T"
+                ],
+                [
+                  68,
+                  50,
+                  "C"
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  30
+                ],
+                [
+                  18,
+                  50,
+                  14
+                ],
+                [
+                  82,
+                  50,
+                  14
+                ]
+              ],
+              "labels": [
+                [
+                  50,
+                  50,
+                  "B"
+                ],
+                [
+                  12,
+                  50,
+                  "T"
+                ],
+                [
+                  88,
+                  50,
+                  "C"
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ],
+              "labels": [
+                [
+                  50,
+                  12,
+                  "B"
+                ],
+                [
+                  50,
+                  26,
+                  "T"
+                ],
+                [
+                  50,
+                  50,
+                  "C"
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ],
+              "labels": [
+                [
+                  32,
+                  28,
+                  "B"
+                ],
+                [
+                  32,
+                  50,
+                  "C"
+                ],
+                [
+                  80,
+                  50,
+                  "T"
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p59 q14",
+      "key_basis": "derived",
+      "rule": "Every canary (C) is a bird (B); a tuna (T) is a fish, neither: C inside B, and T apart.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q015",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Man, pharmacist, brother",
+        "options": {
+          "A": "Two overlapping circles inside a larger one",
+          "B": "A circle inside another, and a third circle crossing only the outer one",
+          "C": "A circle inside another, and a third circle crossing both",
+          "D": "Three circles in a chain: the middle one overlaps the other two, which do not meet"
+        },
+        "key": "C",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  38,
+                  50,
+                  18
+                ],
+                [
+                  62,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  32,
+                  50,
+                  12
+                ],
+                [
+                  78,
+                  50,
+                  20
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  38,
+                  50,
+                  16
+                ],
+                [
+                  72,
+                  50,
+                  24
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  75,
+                  50,
+                  18
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q15",
+      "key_basis": "derived",
+      "rule": "Every brother is male; some men are pharmacists (and some pharmacists are women); some brothers are pharmacists: a circle inside another, and a third crossing both.",
+      "confidence": "medium",
+      "note": "\"Man\" is read as a male person, boys included, as the book reads it in Q15 and Q44."
+    },
+    {
+      "id": "oir-agx-ch16-q017",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Carnivore, Lion, Elephant",
+        "options": {
+          "A": "Circles L and E inside circle C, apart from each other",
+          "B": "Circle L inside circle C, and circle E apart from both",
+          "C": "Circles L, C and E in a chain: C overlaps the other two, which do not meet",
+          "D": "Circle L inside circle C, and circle E crossing C only"
+        },
+        "key": "B",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  42
+                ],
+                [
+                  32,
+                  50,
+                  13
+                ],
+                [
+                  68,
+                  56,
+                  13
+                ]
+              ],
+              "labels": [
+                [
+                  55,
+                  24,
+                  "C"
+                ],
+                [
+                  32,
+                  50,
+                  "L"
+                ],
+                [
+                  68,
+                  56,
+                  "E"
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  32,
+                  50,
+                  13
+                ],
+                [
+                  85,
+                  50,
+                  13
+                ]
+              ],
+              "labels": [
+                [
+                  48,
+                  30,
+                  "C"
+                ],
+                [
+                  32,
+                  50,
+                  "L"
+                ],
+                [
+                  85,
+                  50,
+                  "E"
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  75,
+                  50,
+                  18
+                ]
+              ],
+              "labels": [
+                [
+                  18,
+                  50,
+                  "L"
+                ],
+                [
+                  50,
+                  38,
+                  "C"
+                ],
+                [
+                  82,
+                  50,
+                  "E"
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  40,
+                  50,
+                  32
+                ],
+                [
+                  32,
+                  50,
+                  12
+                ],
+                [
+                  78,
+                  50,
+                  16
+                ]
+              ],
+              "labels": [
+                [
+                  48,
+                  28,
+                  "C"
+                ],
+                [
+                  32,
+                  50,
+                  "L"
+                ],
+                [
+                  86,
+                  50,
+                  "E"
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q17",
+      "key_basis": "derived",
+      "rule": "Every lion (L) is a carnivore (C); an elephant (E) eats plants, neither: L inside C, and E apart.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q018",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Peach, Lychee, Fruit",
+        "options": {
+          "A": "A circle inside another, and a third circle crossing both",
+          "B": "Two separate circles inside a larger one",
+          "C": "Three circles, one inside the next",
+          "D": "Two overlapping circles inside a larger one"
+        },
+        "key": "B",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  38,
+                  50,
+                  16
+                ],
+                [
+                  72,
+                  50,
+                  24
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  38,
+                  50,
+                  18
+                ],
+                [
+                  62,
+                  50,
+                  18
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q18",
+      "key_basis": "derived",
+      "rule": "Peaches and lychees are both fruits, and different ones: two separate circles inside a larger one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q019",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Computer, cycle, forest",
+        "options": {
+          "A": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+          "B": "Three circles, one inside the next",
+          "C": "Three separate circles in a row",
+          "D": "A circle inside another, and a third circle crossing both"
+        },
+        "key": "C",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  75,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  17,
+                  50,
+                  15
+                ],
+                [
+                  50,
+                  50,
+                  15
+                ],
+                [
+                  83,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  38,
+                  50,
+                  16
+                ],
+                [
+                  72,
+                  50,
+                  24
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q19",
+      "key_basis": "derived",
+      "rule": "A computer, a cycle and a forest have nothing in common: three separate circles.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q020",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Red, blue, colour",
+        "options": {
+          "A": "Two separate circles inside a larger one, in a square",
+          "B": "Two overlapping circles inside a larger one, in a square",
+          "C": "Three circles, one inside the next, in a square",
+          "D": "A circle inside another, and a third circle crossing both, in a square"
+        },
+        "key": "A",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  -1,
+                  101,
+                  -1
+                ],
+                [
+                  101,
+                  -1,
+                  101,
+                  101
+                ],
+                [
+                  101,
+                  101,
+                  -1,
+                  101
+                ],
+                [
+                  -1,
+                  101,
+                  -1,
+                  -1
+                ]
+              ],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  -1,
+                  101,
+                  -1
+                ],
+                [
+                  101,
+                  -1,
+                  101,
+                  101
+                ],
+                [
+                  101,
+                  101,
+                  -1,
+                  101
+                ],
+                [
+                  -1,
+                  101,
+                  -1,
+                  -1
+                ]
+              ],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  38,
+                  50,
+                  18
+                ],
+                [
+                  62,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  -1,
+                  101,
+                  -1
+                ],
+                [
+                  101,
+                  -1,
+                  101,
+                  101
+                ],
+                [
+                  101,
+                  101,
+                  -1,
+                  101
+                ],
+                [
+                  -1,
+                  101,
+                  -1,
+                  -1
+                ]
+              ],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [
+                [
+                  2,
+                  14,
+                  102,
+                  14
+                ],
+                [
+                  102,
+                  14,
+                  102,
+                  86
+                ],
+                [
+                  102,
+                  86,
+                  2,
+                  86
+                ],
+                [
+                  2,
+                  86,
+                  2,
+                  14
+                ]
+              ],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  38,
+                  50,
+                  16
+                ],
+                [
+                  72,
+                  50,
+                  24
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q20",
+      "key_basis": "derived",
+      "rule": "Red and blue are both colours, and different ones: two separate circles inside a larger one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q021",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Kidney, leg, head",
+        "options": {
+          "A": "Two separate circles inside a larger one, in a square",
+          "B": "A circle inside another, and a third circle apart from both, in a square",
+          "C": "Two overlapping circles inside a larger one, in a square",
+          "D": "Three separate circles, in a square"
+        },
+        "key": "D",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  -1,
+                  101,
+                  -1
+                ],
+                [
+                  101,
+                  -1,
+                  101,
+                  101
+                ],
+                [
+                  101,
+                  101,
+                  -1,
+                  101
+                ],
+                [
+                  -1,
+                  101,
+                  -1,
+                  -1
+                ]
+              ],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [
+                [
+                  -2,
+                  16,
+                  101,
+                  16
+                ],
+                [
+                  101,
+                  16,
+                  101,
+                  84
+                ],
+                [
+                  101,
+                  84,
+                  -2,
+                  84
+                ],
+                [
+                  -2,
+                  84,
+                  -2,
+                  16
+                ]
+              ],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  -1,
+                  101,
+                  -1
+                ],
+                [
+                  101,
+                  -1,
+                  101,
+                  101
+                ],
+                [
+                  101,
+                  101,
+                  -1,
+                  101
+                ],
+                [
+                  -1,
+                  101,
+                  -1,
+                  -1
+                ]
+              ],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  38,
+                  50,
+                  18
+                ],
+                [
+                  62,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [
+                [
+                  7,
+                  11,
+                  93,
+                  11
+                ],
+                [
+                  93,
+                  11,
+                  93,
+                  93
+                ],
+                [
+                  93,
+                  93,
+                  7,
+                  93
+                ],
+                [
+                  7,
+                  93,
+                  7,
+                  11
+                ]
+              ],
+              "circles": [
+                [
+                  28,
+                  32,
+                  15
+                ],
+                [
+                  72,
+                  32,
+                  15
+                ],
+                [
+                  50,
+                  72,
+                  15
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q21",
+      "key_basis": "derived",
+      "rule": "Kidney, leg and head are three separate parts of the body, none part of another: three separate circles.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q022",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Vegetables, onion, food",
+        "options": {
+          "A": "A circle inside another, and a third circle crossing only the outer one, in a square",
+          "B": "Three circles, one inside the next, in a square",
+          "C": "Two overlapping circles inside a larger one, in a square",
+          "D": "Three circles, each overlapping the other two, in a square"
+        },
+        "key": "B",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [
+                [
+                  2,
+                  14,
+                  104,
+                  14
+                ],
+                [
+                  104,
+                  14,
+                  104,
+                  86
+                ],
+                [
+                  104,
+                  86,
+                  2,
+                  86
+                ],
+                [
+                  2,
+                  86,
+                  2,
+                  14
+                ]
+              ],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  32,
+                  50,
+                  12
+                ],
+                [
+                  78,
+                  50,
+                  20
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  -1,
+                  101,
+                  -1
+                ],
+                [
+                  101,
+                  -1,
+                  101,
+                  101
+                ],
+                [
+                  101,
+                  101,
+                  -1,
+                  101
+                ],
+                [
+                  -1,
+                  101,
+                  -1,
+                  -1
+                ]
+              ],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  -1,
+                  101,
+                  -1
+                ],
+                [
+                  101,
+                  -1,
+                  101,
+                  101
+                ],
+                [
+                  101,
+                  101,
+                  -1,
+                  101
+                ],
+                [
+                  -1,
+                  101,
+                  -1,
+                  -1
+                ]
+              ],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  38,
+                  50,
+                  18
+                ],
+                [
+                  62,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [
+                [
+                  14,
+                  14,
+                  86,
+                  14
+                ],
+                [
+                  86,
+                  14,
+                  86,
+                  84
+                ],
+                [
+                  86,
+                  84,
+                  14,
+                  84
+                ],
+                [
+                  14,
+                  84,
+                  14,
+                  14
+                ]
+              ],
+              "circles": [
+                [
+                  40,
+                  40,
+                  20
+                ],
+                [
+                  60,
+                  40,
+                  20
+                ],
+                [
+                  50,
+                  58,
+                  20
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q22",
+      "key_basis": "derived",
+      "rule": "An onion is a vegetable, and every vegetable is food: three circles, one inside the next.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q023",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Ostrich, Snake, Frog",
+        "options": {
+          "A": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+          "B": "Three circles, one inside the next",
+          "C": "Three separate circles",
+          "D": "Three circles, each overlapping the other two"
+        },
+        "key": "C",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  75,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  28,
+                  32,
+                  15
+                ],
+                [
+                  72,
+                  32,
+                  15
+                ],
+                [
+                  50,
+                  72,
+                  15
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  40,
+                  40,
+                  20
+                ],
+                [
+                  60,
+                  40,
+                  20
+                ],
+                [
+                  50,
+                  58,
+                  20
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q23",
+      "key_basis": "derived",
+      "rule": "A bird, a reptile and an amphibian: three separate circles.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q024",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Social Science, Psychology, Sociology",
+        "options": {
+          "A": "Two separate circles inside a larger one",
+          "B": "Three circles, each overlapping the other two",
+          "C": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+          "D": "Three circles, one inside the next"
+        },
+        "key": "A",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  40,
+                  40,
+                  20
+                ],
+                [
+                  60,
+                  40,
+                  20
+                ],
+                [
+                  50,
+                  58,
+                  20
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  75,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q24",
+      "key_basis": "derived",
+      "rule": "Psychology and sociology are both social sciences, and different ones: two separate circles inside a larger one.",
+      "confidence": "medium",
+      "note": "Psychology is counted a social science, as it usually is in school syllabuses; it is sometimes also classed with the natural sciences."
+    },
+    {
+      "id": "oir-agx-ch16-q025",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A circle inside another, and a third circle apart from both.",
+        "options": {
+          "A": "solid, gas, milk",
+          "B": "men, women, children",
+          "C": "father, mother, sibling",
+          "D": "gas, liquid, milk"
+        },
+        "key": "D",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "figure": {
+          "lines": [],
+          "circles": [
+            [
+              32,
+              50,
+              28
+            ],
+            [
+              32,
+              50,
+              15
+            ],
+            [
+              80,
+              50,
+              15
+            ]
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q25",
+      "key_basis": "derived",
+      "rule": "A circle inside another and one apart: milk is a liquid, and a gas is neither. Solid, gas and milk are three separate things (A), as are men, women and children (B); a sibling can be a father or a mother (C).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q026",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Elephant, Animal, Lion",
+        "options": {
+          "A": "Two separate circles inside a larger one",
+          "B": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+          "C": "Two overlapping circles inside a larger one",
+          "D": "Three circles, one inside the next"
+        },
+        "key": "A",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  75,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  38,
+                  50,
+                  18
+                ],
+                [
+                  62,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q26",
+      "key_basis": "derived",
+      "rule": "Elephants and lions are both animals, and different ones: two separate circles inside a larger one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q027",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Television Set, Electrical Appliances, Refrigerator",
+        "options": {
+          "A": "Two separate circles inside a larger one",
+          "B": "Two overlapping circles inside a larger one",
+          "C": "A circle inside another, and a third circle crossing both",
+          "D": "A large circle with two small circles each crossing its edge, apart from each other"
+        },
+        "key": "A",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  38,
+                  50,
+                  18
+                ],
+                [
+                  62,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  38,
+                  50,
+                  16
+                ],
+                [
+                  72,
+                  50,
+                  24
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  30
+                ],
+                [
+                  18,
+                  50,
+                  14
+                ],
+                [
+                  82,
+                  50,
+                  14
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q27",
+      "key_basis": "derived",
+      "rule": "Television sets and refrigerators are both electrical appliances, and different ones: two separate circles inside a larger one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q028",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Cereals, Wheat, Asafoetida",
+        "options": {
+          "A": "Two overlapping circles, and a third apart from both",
+          "B": "Two overlapping circles inside a larger one",
+          "C": "A circle inside another, and a third circle crossing both",
+          "D": "A circle inside another, and a third circle apart from both"
+        },
+        "key": "D",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  40,
+                  17
+                ],
+                [
+                  48,
+                  40,
+                  17
+                ],
+                [
+                  70,
+                  74,
+                  15
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  38,
+                  50,
+                  18
+                ],
+                [
+                  62,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  38,
+                  50,
+                  16
+                ],
+                [
+                  72,
+                  50,
+                  24
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q28",
+      "key_basis": "derived",
+      "rule": "Wheat is a cereal; asafoetida is a spice, neither: a circle inside another, and a third apart.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q029",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Honey, milk, dog",
+        "options": {
+          "A": "Three separate circles",
+          "B": "Three circles, each overlapping the other two",
+          "C": "Two overlapping circles, and a third apart from both",
+          "D": "Two separate circles inside a larger one"
+        },
+        "key": "A",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  28,
+                  32,
+                  15
+                ],
+                [
+                  72,
+                  32,
+                  15
+                ],
+                [
+                  50,
+                  72,
+                  15
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  40,
+                  40,
+                  20
+                ],
+                [
+                  60,
+                  40,
+                  20
+                ],
+                [
+                  50,
+                  58,
+                  20
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  40,
+                  17
+                ],
+                [
+                  48,
+                  40,
+                  17
+                ],
+                [
+                  70,
+                  74,
+                  15
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q29",
+      "key_basis": "derived",
+      "rule": "Honey, milk and a dog are three separate things: three separate circles.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q030",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Honeybee, insect, ant",
+        "options": {
+          "A": "Three circles, each overlapping the other two",
+          "B": "A circle inside another, and a third circle apart from both",
+          "C": "Two overlapping circles, and a third apart from both",
+          "D": "Two separate circles inside a larger one"
+        },
+        "key": "D",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  40,
+                  40,
+                  20
+                ],
+                [
+                  60,
+                  40,
+                  20
+                ],
+                [
+                  50,
+                  58,
+                  20
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  40,
+                  17
+                ],
+                [
+                  48,
+                  40,
+                  17
+                ],
+                [
+                  70,
+                  74,
+                  15
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q30",
+      "key_basis": "derived",
+      "rule": "Honeybees and ants are both insects, and different ones: two separate circles inside a larger one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q031",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Parents, Graduates, Cricketers.",
+        "options": {
+          "A": "Two separate circles inside a larger one, in a square",
+          "B": "Three circles in a chain: the middle one overlaps the other two, which do not meet, in a square",
+          "C": "Three circles, each overlapping the other two, in a square",
+          "D": "Two overlapping circles inside a larger one, in a square"
+        },
+        "key": "C",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  -1,
+                  101,
+                  -1
+                ],
+                [
+                  101,
+                  -1,
+                  101,
+                  101
+                ],
+                [
+                  101,
+                  101,
+                  -1,
+                  101
+                ],
+                [
+                  -1,
+                  101,
+                  -1,
+                  -1
+                ]
+              ],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [
+                [
+                  1,
+                  26,
+                  99,
+                  26
+                ],
+                [
+                  99,
+                  26,
+                  99,
+                  74
+                ],
+                [
+                  99,
+                  74,
+                  1,
+                  74
+                ],
+                [
+                  1,
+                  74,
+                  1,
+                  26
+                ]
+              ],
+              "circles": [
+                [
+                  25,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  75,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [
+                [
+                  14,
+                  14,
+                  86,
+                  14
+                ],
+                [
+                  86,
+                  14,
+                  86,
+                  84
+                ],
+                [
+                  86,
+                  84,
+                  14,
+                  84
+                ],
+                [
+                  14,
+                  84,
+                  14,
+                  14
+                ]
+              ],
+              "circles": [
+                [
+                  40,
+                  40,
+                  20
+                ],
+                [
+                  60,
+                  40,
+                  20
+                ],
+                [
+                  50,
+                  58,
+                  20
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  -1,
+                  101,
+                  -1
+                ],
+                [
+                  101,
+                  -1,
+                  101,
+                  101
+                ],
+                [
+                  101,
+                  101,
+                  -1,
+                  101
+                ],
+                [
+                  -1,
+                  101,
+                  -1,
+                  -1
+                ]
+              ],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  38,
+                  50,
+                  18
+                ],
+                [
+                  62,
+                  50,
+                  18
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q31",
+      "key_basis": "derived",
+      "rule": "A parent may be a graduate or a cricketer, and a graduate a cricketer; none holds another: three circles each overlapping the other two.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q033",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Parabola, Polygon, Hexagon",
+        "options": {
+          "A": "A circle inside another, and a third circle crossing both",
+          "B": "A circle inside another, and a third circle apart from both",
+          "C": "Three circles, one inside the next",
+          "D": "Three circles, each overlapping the other two"
+        },
+        "key": "B",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  38,
+                  50,
+                  30
+                ],
+                [
+                  38,
+                  50,
+                  16
+                ],
+                [
+                  72,
+                  50,
+                  24
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  40,
+                  40,
+                  20
+                ],
+                [
+                  60,
+                  40,
+                  20
+                ],
+                [
+                  50,
+                  58,
+                  20
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q33",
+      "key_basis": "derived",
+      "rule": "Every hexagon is a polygon; a parabola is a curve, neither: a circle inside another, and a third apart.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q034",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Table, Chair, Furniture ?",
+        "options": {
+          "A": "Three circles, one inside the next",
+          "B": "Two overlapping circles inside a larger one",
+          "C": "Three circles, each overlapping the other two",
+          "D": "Two separate circles inside a larger one"
+        },
+        "key": "D",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  38,
+                  50,
+                  18
+                ],
+                [
+                  62,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  40,
+                  40,
+                  20
+                ],
+                [
+                  60,
+                  40,
+                  20
+                ],
+                [
+                  50,
+                  58,
+                  20
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p60 q34",
+      "key_basis": "derived",
+      "rule": "Tables and chairs are both furniture, and different things: two separate circles inside a larger one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q035",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "India, Haryana and World ?",
+        "options": {
+          "A": "A circle inside another, and a third circle apart from both",
+          "B": "Three separate circles",
+          "C": "Two separate circles inside a larger one",
+          "D": "Three circles, one inside the next"
+        },
+        "key": "D",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  28,
+                  32,
+                  15
+                ],
+                [
+                  72,
+                  32,
+                  15
+                ],
+                [
+                  50,
+                  72,
+                  15
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q35",
+      "key_basis": "derived",
+      "rule": "Haryana lies in India, and India in the world: three circles, one inside the next.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q036",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Flower, Lotus and Rose ?",
+        "options": {
+          "A": "Two separate circles inside a larger one",
+          "B": "A circle inside another, and a third circle apart from both",
+          "C": "Three circles in a chain: the middle one overlaps the other two, which do not meet",
+          "D": "One large and two small circles, all separate"
+        },
+        "key": "A",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  75,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  30,
+                  50,
+                  25
+                ],
+                [
+                  75,
+                  30,
+                  12
+                ],
+                [
+                  75,
+                  70,
+                  12
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q36",
+      "key_basis": "derived",
+      "rule": "Lotuses and roses are both flowers, and different ones: two separate circles inside a larger one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q038",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Country, Nepal and India",
+        "options": {
+          "A": "Two separate circles inside a larger one",
+          "B": "Three separate circles",
+          "C": "A circle inside another, and a third circle apart from both",
+          "D": "Three circles, one inside the next"
+        },
+        "key": "A",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes. And select the set of classes whose relationship between them is best represented by the following ven diagram.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  28,
+                  32,
+                  15
+                ],
+                [
+                  72,
+                  32,
+                  15
+                ],
+                [
+                  50,
+                  72,
+                  15
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q38",
+      "key_basis": "derived",
+      "rule": "Nepal and India are both countries, and different ones: two separate circles inside a larger one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q039",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Teachers, Pilots, Human beings.",
+        "options": {
+          "A": "Three rectangles in a chain: the middle one overlaps the other two, which do not meet",
+          "B": "A large rectangle with two small rectangles each crossing its edge, apart from each other",
+          "C": "A rectangle inside another, and a third rectangle apart from both",
+          "D": "Two separate rectangles inside a larger one"
+        },
+        "key": "D",
+        "reasoningType": "venn",
+        "direction": "Each of the questions given below contains three elements. These elements may or may not have some intense linkage. Each group of elements may fit into one of the diagrams lettered (A), (B), (C) or (D). You have to indicate the diagram in which the group of elements fit correctly.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [
+                [
+                  5,
+                  5,
+                  45,
+                  5
+                ],
+                [
+                  45,
+                  5,
+                  45,
+                  35
+                ],
+                [
+                  45,
+                  35,
+                  5,
+                  35
+                ],
+                [
+                  5,
+                  35,
+                  5,
+                  5
+                ],
+                [
+                  25,
+                  20,
+                  65,
+                  20
+                ],
+                [
+                  65,
+                  20,
+                  65,
+                  50
+                ],
+                [
+                  65,
+                  50,
+                  25,
+                  50
+                ],
+                [
+                  25,
+                  50,
+                  25,
+                  20
+                ],
+                [
+                  50,
+                  45,
+                  95,
+                  45
+                ],
+                [
+                  95,
+                  45,
+                  95,
+                  80
+                ],
+                [
+                  95,
+                  80,
+                  50,
+                  80
+                ],
+                [
+                  50,
+                  80,
+                  50,
+                  45
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [
+                [
+                  25,
+                  10,
+                  80,
+                  10
+                ],
+                [
+                  80,
+                  10,
+                  80,
+                  70
+                ],
+                [
+                  80,
+                  70,
+                  25,
+                  70
+                ],
+                [
+                  25,
+                  70,
+                  25,
+                  10
+                ],
+                [
+                  10,
+                  30,
+                  35,
+                  30
+                ],
+                [
+                  35,
+                  30,
+                  35,
+                  50
+                ],
+                [
+                  35,
+                  50,
+                  10,
+                  50
+                ],
+                [
+                  10,
+                  50,
+                  10,
+                  30
+                ],
+                [
+                  70,
+                  30,
+                  95,
+                  30
+                ],
+                [
+                  95,
+                  30,
+                  95,
+                  50
+                ],
+                [
+                  95,
+                  50,
+                  70,
+                  50
+                ],
+                [
+                  70,
+                  50,
+                  70,
+                  30
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [
+                [
+                  5,
+                  15,
+                  55,
+                  15
+                ],
+                [
+                  55,
+                  15,
+                  55,
+                  75
+                ],
+                [
+                  55,
+                  75,
+                  5,
+                  75
+                ],
+                [
+                  5,
+                  75,
+                  5,
+                  15
+                ],
+                [
+                  15,
+                  30,
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  30,
+                  40,
+                  55
+                ],
+                [
+                  40,
+                  55,
+                  15,
+                  55
+                ],
+                [
+                  15,
+                  55,
+                  15,
+                  30
+                ],
+                [
+                  65,
+                  30,
+                  95,
+                  30
+                ],
+                [
+                  95,
+                  30,
+                  95,
+                  60
+                ],
+                [
+                  95,
+                  60,
+                  65,
+                  60
+                ],
+                [
+                  65,
+                  60,
+                  65,
+                  30
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [
+                [
+                  10,
+                  10,
+                  90,
+                  10
+                ],
+                [
+                  90,
+                  10,
+                  90,
+                  80
+                ],
+                [
+                  90,
+                  80,
+                  10,
+                  80
+                ],
+                [
+                  10,
+                  80,
+                  10,
+                  10
+                ],
+                [
+                  20,
+                  30,
+                  45,
+                  30
+                ],
+                [
+                  45,
+                  30,
+                  45,
+                  60
+                ],
+                [
+                  45,
+                  60,
+                  20,
+                  60
+                ],
+                [
+                  20,
+                  60,
+                  20,
+                  30
+                ],
+                [
+                  55,
+                  30,
+                  80,
+                  30
+                ],
+                [
+                  80,
+                  30,
+                  80,
+                  60
+                ],
+                [
+                  80,
+                  60,
+                  55,
+                  60
+                ],
+                [
+                  55,
+                  60,
+                  55,
+                  30
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q39",
+      "key_basis": "derived",
+      "rule": "Teachers and pilots are all human beings, and different jobs: two separate rectangles inside a larger one.",
+      "confidence": "medium",
+      "note": "Two jobs or roles are read as distinct classes (none of one is the other), as the book draws them; in life one person can hold both. No option draws them overlapping inside the larger one."
+    },
+    {
+      "id": "oir-agx-ch16-q040",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Sweets, Oranges, Fruits.",
+        "options": {
+          "A": "Three rectangles in a chain: the middle one overlaps the other two, which do not meet",
+          "B": "A large rectangle with two small rectangles each crossing its edge, apart from each other",
+          "C": "A rectangle inside another, and a third rectangle apart from both",
+          "D": "Two separate rectangles inside a larger one"
+        },
+        "key": "C",
+        "reasoningType": "venn",
+        "direction": "Each of the questions given below contains three elements. These elements may or may not have some intense linkage. Each group of elements may fit into one of the diagrams lettered (A), (B), (C) or (D). You have to indicate the diagram in which the group of elements fit correctly.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [
+                [
+                  5,
+                  5,
+                  45,
+                  5
+                ],
+                [
+                  45,
+                  5,
+                  45,
+                  35
+                ],
+                [
+                  45,
+                  35,
+                  5,
+                  35
+                ],
+                [
+                  5,
+                  35,
+                  5,
+                  5
+                ],
+                [
+                  25,
+                  20,
+                  65,
+                  20
+                ],
+                [
+                  65,
+                  20,
+                  65,
+                  50
+                ],
+                [
+                  65,
+                  50,
+                  25,
+                  50
+                ],
+                [
+                  25,
+                  50,
+                  25,
+                  20
+                ],
+                [
+                  50,
+                  45,
+                  95,
+                  45
+                ],
+                [
+                  95,
+                  45,
+                  95,
+                  80
+                ],
+                [
+                  95,
+                  80,
+                  50,
+                  80
+                ],
+                [
+                  50,
+                  80,
+                  50,
+                  45
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [
+                [
+                  25,
+                  10,
+                  80,
+                  10
+                ],
+                [
+                  80,
+                  10,
+                  80,
+                  70
+                ],
+                [
+                  80,
+                  70,
+                  25,
+                  70
+                ],
+                [
+                  25,
+                  70,
+                  25,
+                  10
+                ],
+                [
+                  10,
+                  30,
+                  35,
+                  30
+                ],
+                [
+                  35,
+                  30,
+                  35,
+                  50
+                ],
+                [
+                  35,
+                  50,
+                  10,
+                  50
+                ],
+                [
+                  10,
+                  50,
+                  10,
+                  30
+                ],
+                [
+                  70,
+                  30,
+                  95,
+                  30
+                ],
+                [
+                  95,
+                  30,
+                  95,
+                  50
+                ],
+                [
+                  95,
+                  50,
+                  70,
+                  50
+                ],
+                [
+                  70,
+                  50,
+                  70,
+                  30
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [
+                [
+                  5,
+                  15,
+                  55,
+                  15
+                ],
+                [
+                  55,
+                  15,
+                  55,
+                  75
+                ],
+                [
+                  55,
+                  75,
+                  5,
+                  75
+                ],
+                [
+                  5,
+                  75,
+                  5,
+                  15
+                ],
+                [
+                  15,
+                  30,
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  30,
+                  40,
+                  55
+                ],
+                [
+                  40,
+                  55,
+                  15,
+                  55
+                ],
+                [
+                  15,
+                  55,
+                  15,
+                  30
+                ],
+                [
+                  65,
+                  30,
+                  95,
+                  30
+                ],
+                [
+                  95,
+                  30,
+                  95,
+                  60
+                ],
+                [
+                  95,
+                  60,
+                  65,
+                  60
+                ],
+                [
+                  65,
+                  60,
+                  65,
+                  30
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [
+                [
+                  10,
+                  10,
+                  90,
+                  10
+                ],
+                [
+                  90,
+                  10,
+                  90,
+                  80
+                ],
+                [
+                  90,
+                  80,
+                  10,
+                  80
+                ],
+                [
+                  10,
+                  80,
+                  10,
+                  10
+                ],
+                [
+                  20,
+                  30,
+                  45,
+                  30
+                ],
+                [
+                  45,
+                  30,
+                  45,
+                  60
+                ],
+                [
+                  45,
+                  60,
+                  20,
+                  60
+                ],
+                [
+                  20,
+                  60,
+                  20,
+                  30
+                ],
+                [
+                  55,
+                  30,
+                  80,
+                  30
+                ],
+                [
+                  80,
+                  30,
+                  80,
+                  60
+                ],
+                [
+                  80,
+                  60,
+                  55,
+                  60
+                ],
+                [
+                  55,
+                  60,
+                  55,
+                  30
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q40",
+      "key_basis": "derived",
+      "rule": "Every orange is a fruit; sweets are neither: a rectangle inside another, and a third apart.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q041",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Computer hardware, Monitor, Keyboard, Operating system.",
+        "options": {
+          "A": "Two separate circles inside a larger one, and a fourth circle apart from it, in a square",
+          "B": "Three circles one inside the next, and a fourth circle apart, in a square",
+          "C": "Four separate circles, in a square",
+          "D": "Three circles each overlapping the other two, and a fourth circle apart, in a square"
+        },
+        "key": "A",
+        "reasoningType": "venn",
+        "direction": "Select the venn diagram that best represents the relationship between the following classes.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [
+                [
+                  1,
+                  11,
+                  96,
+                  11
+                ],
+                [
+                  96,
+                  11,
+                  96,
+                  86
+                ],
+                [
+                  96,
+                  86,
+                  1,
+                  86
+                ],
+                [
+                  1,
+                  86,
+                  1,
+                  11
+                ]
+              ],
+              "circles": [
+                [
+                  35,
+                  45,
+                  28
+                ],
+                [
+                  25,
+                  45,
+                  9
+                ],
+                [
+                  45,
+                  45,
+                  9
+                ],
+                [
+                  80,
+                  70,
+                  10
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  14,
+                  100,
+                  14
+                ],
+                [
+                  100,
+                  14,
+                  100,
+                  86
+                ],
+                [
+                  100,
+                  86,
+                  -1,
+                  86
+                ],
+                [
+                  -1,
+                  86,
+                  -1,
+                  14
+                ]
+              ],
+              "circles": [
+                [
+                  35,
+                  50,
+                  30
+                ],
+                [
+                  35,
+                  50,
+                  20
+                ],
+                [
+                  35,
+                  50,
+                  10
+                ],
+                [
+                  82,
+                  50,
+                  12
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [
+                [
+                  5,
+                  5,
+                  95,
+                  5
+                ],
+                [
+                  95,
+                  5,
+                  95,
+                  95
+                ],
+                [
+                  95,
+                  95,
+                  5,
+                  95
+                ],
+                [
+                  5,
+                  95,
+                  5,
+                  5
+                ]
+              ],
+              "circles": [
+                [
+                  25,
+                  25,
+                  14
+                ],
+                [
+                  75,
+                  25,
+                  14
+                ],
+                [
+                  25,
+                  75,
+                  14
+                ],
+                [
+                  75,
+                  75,
+                  14
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [
+                [
+                  8,
+                  13,
+                  100,
+                  13
+                ],
+                [
+                  100,
+                  13,
+                  100,
+                  93
+                ],
+                [
+                  100,
+                  93,
+                  8,
+                  93
+                ],
+                [
+                  8,
+                  93,
+                  8,
+                  13
+                ]
+              ],
+              "circles": [
+                [
+                  30,
+                  35,
+                  16
+                ],
+                [
+                  48,
+                  35,
+                  16
+                ],
+                [
+                  39,
+                  52,
+                  16
+                ],
+                [
+                  82,
+                  75,
+                  12
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q41",
+      "key_basis": "derived",
+      "rule": "Monitors and keyboards are both computer hardware, and different parts; an operating system is software: two separate circles inside a larger one, and a fourth apart.",
+      "confidence": "medium",
+      "note": "The print begins \"classes.\" (the end of a sentence it does not print) and names four classes under a direction about three elements. The stray word is dropped from the stem, and the direction is the chapter's own first sentence, which ends in that word.",
+      "printedStem": "classes. Computer hardware, Monitor, Keyboard, Operating system."
+    },
+    {
+      "id": "oir-agx-ch16-q042",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Sister, Mother, Brother",
+        "options": {
+          "A": "Three separate circles, in a square",
+          "B": "Two overlapping circles, and a third apart from both, in a square",
+          "C": "Three circles, each overlapping the other two, in a square",
+          "D": "A circle inside another, and a third circle apart from both, in a square"
+        },
+        "key": "B",
+        "reasoningType": "venn",
+        "direction": "Each of the questions given below contains three elements. These elements may or may not have some intense linkage. Each group of elements may fit into one of the diagrams lettered (A), (B), (C) or (D). You have to indicate the diagram in which the group of elements fit correctly.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [
+                [
+                  7,
+                  11,
+                  93,
+                  11
+                ],
+                [
+                  93,
+                  11,
+                  93,
+                  93
+                ],
+                [
+                  93,
+                  93,
+                  7,
+                  93
+                ],
+                [
+                  7,
+                  93,
+                  7,
+                  11
+                ]
+              ],
+              "circles": [
+                [
+                  28,
+                  32,
+                  15
+                ],
+                [
+                  72,
+                  32,
+                  15
+                ],
+                [
+                  50,
+                  72,
+                  15
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [
+                [
+                  2,
+                  17,
+                  91,
+                  17
+                ],
+                [
+                  91,
+                  17,
+                  91,
+                  95
+                ],
+                [
+                  91,
+                  95,
+                  2,
+                  95
+                ],
+                [
+                  2,
+                  95,
+                  2,
+                  17
+                ]
+              ],
+              "circles": [
+                [
+                  25,
+                  40,
+                  17
+                ],
+                [
+                  48,
+                  40,
+                  17
+                ],
+                [
+                  70,
+                  74,
+                  15
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [
+                [
+                  14,
+                  14,
+                  86,
+                  14
+                ],
+                [
+                  86,
+                  14,
+                  86,
+                  84
+                ],
+                [
+                  86,
+                  84,
+                  14,
+                  84
+                ],
+                [
+                  14,
+                  84,
+                  14,
+                  14
+                ]
+              ],
+              "circles": [
+                [
+                  40,
+                  40,
+                  20
+                ],
+                [
+                  60,
+                  40,
+                  20
+                ],
+                [
+                  50,
+                  58,
+                  20
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [
+                [
+                  -2,
+                  16,
+                  101,
+                  16
+                ],
+                [
+                  101,
+                  16,
+                  101,
+                  84
+                ],
+                [
+                  101,
+                  84,
+                  -2,
+                  84
+                ],
+                [
+                  -2,
+                  84,
+                  -2,
+                  16
+                ]
+              ],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q42",
+      "key_basis": "derived",
+      "rule": "A sister may be a mother and a mother a sister; a brother is neither: two overlapping circles, and a third apart.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q043",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Boys, Class, Girls",
+        "options": {
+          "A": "A circle inside another, and a third circle apart from both, in a rectangle",
+          "B": "Three circles, one inside the next, in a rectangle",
+          "C": "Three circles in a chain: the middle one overlaps the other two, which do not meet, in a rectangle",
+          "D": "Two separate circles inside a larger one, in a rectangle"
+        },
+        "key": "D",
+        "reasoningType": "venn",
+        "direction": "Each of the questions given below contains three elements. These elements may or may not have some intense linkage. Each group of elements may fit into one of the diagrams lettered (A), (B), (C) or (D). You have to indicate the diagram in which the group of elements fit correctly.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [
+                [
+                  -2,
+                  16,
+                  101,
+                  16
+                ],
+                [
+                  101,
+                  16,
+                  101,
+                  84
+                ],
+                [
+                  101,
+                  84,
+                  -2,
+                  84
+                ],
+                [
+                  -2,
+                  84,
+                  -2,
+                  16
+                ]
+              ],
+              "circles": [
+                [
+                  32,
+                  50,
+                  28
+                ],
+                [
+                  32,
+                  50,
+                  15
+                ],
+                [
+                  80,
+                  50,
+                  15
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  -1,
+                  101,
+                  -1
+                ],
+                [
+                  101,
+                  -1,
+                  101,
+                  101
+                ],
+                [
+                  101,
+                  101,
+                  -1,
+                  101
+                ],
+                [
+                  -1,
+                  101,
+                  -1,
+                  -1
+                ]
+              ],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [
+                [
+                  1,
+                  26,
+                  99,
+                  26
+                ],
+                [
+                  99,
+                  26,
+                  99,
+                  74
+                ],
+                [
+                  99,
+                  74,
+                  1,
+                  74
+                ],
+                [
+                  1,
+                  74,
+                  1,
+                  26
+                ]
+              ],
+              "circles": [
+                [
+                  25,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  75,
+                  50,
+                  18
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [
+                [
+                  -1,
+                  -1,
+                  101,
+                  -1
+                ],
+                [
+                  101,
+                  -1,
+                  101,
+                  101
+                ],
+                [
+                  101,
+                  101,
+                  -1,
+                  101
+                ],
+                [
+                  -1,
+                  101,
+                  -1,
+                  -1
+                ]
+              ],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  32,
+                  50,
+                  14
+                ],
+                [
+                  68,
+                  50,
+                  14
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q43",
+      "key_basis": "derived",
+      "rule": "A class is made of boys and girls, and no boy is a girl: two separate circles inside a larger one.",
+      "confidence": "medium",
+      "note": "The parts of a whole are drawn inside it, as the book draws a class and its pupils (Q43). Read strictly, as three separate classes, no option fits."
+    },
+    {
+      "id": "oir-agx-ch16-q044",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Three circles, one inside the next.",
+        "options": {
+          "A": "Pulse, black gram, root",
+          "B": "Doctor, Nurse, Engineer",
+          "C": "Currency, Rupee, China",
+          "D": "Boy, man, human"
+        },
+        "key": "D",
+        "reasoningType": "venn",
+        "direction": "Each of the questions given below contains three elements. These elements may or may not have some intense linkage. Each group of elements may fit into one of the diagrams lettered (A), (B), (C) or (D). You have to indicate the diagram in which the group of elements fit correctly.",
+        "figure": {
+          "lines": [],
+          "circles": [
+            [
+              50,
+              50,
+              45
+            ],
+            [
+              50,
+              50,
+              32
+            ],
+            [
+              50,
+              50,
+              18
+            ]
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q44",
+      "key_basis": "derived",
+      "rule": "Three circles, one inside the next: every boy is male, and every male a human. Black gram is a pulse but a root is neither (A); the rupee is a currency but China is not (C); doctor, nurse and engineer are three jobs (B).",
+      "confidence": "medium",
+      "note": "\"Man\" is read as a male person, boys included, as the book reads it in Q15 and Q44. Read as an adult male, boys and men would be two separate circles inside \"human\", and no option would fit."
+    },
+    {
+      "id": "oir-agx-ch16-q045",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A circle inside another, and a third circle crossing both.",
+        "options": {
+          "A": "Mothers, doctors, women",
+          "B": "Musician, Teacher, Engineer",
+          "C": "Letter, post office, paper",
+          "D": "Book, copy, student"
+        },
+        "key": "A",
+        "reasoningType": "venn",
+        "direction": "Each of the questions given below contains three elements. These elements may or may not have some intense linkage. Each group of elements may fit into one of the diagrams lettered (A), (B), (C) or (D). You have to indicate the diagram in which the group of elements fit correctly.",
+        "figure": {
+          "lines": [],
+          "circles": [
+            [
+              38,
+              50,
+              30
+            ],
+            [
+              38,
+              50,
+              16
+            ],
+            [
+              72,
+              50,
+              24
+            ]
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q45",
+      "key_basis": "derived",
+      "rule": "A circle inside another, and a third crossing both: every mother is a woman; some women are doctors (and some doctors are men); some mothers are doctors. Musician, teacher and engineer all overlap one another (B); letters overlap paper, and a post office is neither (C); book, copy and student are three things (D).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q046",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two overlapping circles inside a larger one.",
+        "options": {
+          "A": "Doctor, Engineer, Carpenter",
+          "B": "Mammal, Animal, Blue whale",
+          "C": "Sisters, Mothers, Women",
+          "D": "Brother, Man, Aunt"
+        },
+        "key": "C",
+        "reasoningType": "venn",
+        "direction": "Each of the questions given below contains three elements. These elements may or may not have some intense linkage. Each group of elements may fit into one of the diagrams lettered (A), (B), (C) or (D). You have to indicate the diagram in which the group of elements fit correctly.",
+        "figure": {
+          "lines": [],
+          "circles": [
+            [
+              50,
+              50,
+              45
+            ],
+            [
+              38,
+              50,
+              18
+            ],
+            [
+              62,
+              50,
+              18
+            ]
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q46",
+      "key_basis": "derived",
+      "rule": "Two overlapping circles inside a larger one: sisters and mothers are all women, and some sisters are mothers. Blue whale, mammal, animal nest one inside the next (B); a brother is a man but an aunt is not (D); doctor, engineer and carpenter are three jobs (A).",
+      "confidence": "medium",
+      "note": "\"Man\" is read as a male person, boys included, as the book reads it in Q15 and Q44. (Option D.) Two jobs or roles are read as distinct classes (none of one is the other), as the book draws them; in life one person can hold both. (Option A.)"
+    },
+    {
+      "id": "oir-agx-ch16-q047",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Three circles, each overlapping the other two.",
+        "options": {
+          "A": "Police officers, doctors, nurses",
+          "B": "Father, uncle, brother",
+          "C": "Artist, Father, Girls",
+          "D": "Brother, men, women"
+        },
+        "key": "B",
+        "reasoningType": "venn",
+        "direction": "Each of the questions given below contains three elements. These elements may or may not have some intense linkage. Each group of elements may fit into one of the diagrams lettered (A), (B), (C) or (D). You have to indicate the diagram in which the group of elements fit correctly.",
+        "figure": {
+          "lines": [],
+          "circles": [
+            [
+              40,
+              40,
+              20
+            ],
+            [
+              60,
+              40,
+              20
+            ],
+            [
+              50,
+              58,
+              20
+            ]
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q47",
+      "key_basis": "derived",
+      "rule": "Three circles each overlapping the other two: one man can be a father, an uncle and a brother at once, and none of the three holds another. A father may be an artist and so may a girl, but no girl is a father (C); every brother is male and no woman is (D).",
+      "confidence": "medium",
+      "note": "Two jobs or roles are read as distinct classes (none of one is the other), as the book draws them; in life one person can hold both. (Option A.)"
+    },
+    {
+      "id": "oir-agx-ch16-q048",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two separate circles inside a larger one.",
+        "options": {
+          "A": "Hindi, English, Spanish",
+          "B": "Television, Refrigerator, Fan",
+          "C": "Languages, Social Sciences, Scientific",
+          "D": "Hindi, English, Languages"
+        },
+        "key": "D",
+        "reasoningType": "venn",
+        "direction": "Each of the questions given below contains three elements. These elements may or may not have some intense linkage. Each group of elements may fit into one of the diagrams lettered (A), (B), (C) or (D). You have to indicate the diagram in which the group of elements fit correctly.",
+        "figure": {
+          "lines": [],
+          "circles": [
+            [
+              50,
+              50,
+              45
+            ],
+            [
+              32,
+              50,
+              14
+            ],
+            [
+              68,
+              50,
+              14
+            ]
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q48",
+      "key_basis": "derived",
+      "rule": "Two separate circles inside a larger one: Hindi and English are both languages, and different ones. Options A and B name three things of one kind with no class holding them; languages, social sciences and \"scientific\" are three separate fields (C).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch16-q050",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Statements :\nSome mugs (M) are drones (D).\nSome drones (D) are robots (R).",
+        "options": {
+          "A": "Circle M inside circle D, and circle R crossing D only",
+          "B": "Circles M, D and R in a chain: D overlaps the other two, which do not meet",
+          "C": "Circle M inside circle D, and circle R apart from both",
+          "D": "Circle R inside circle M, inside circle D"
+        },
+        "key": "B",
+        "reasoningType": "venn",
+        "direction": "Ignoring commonly known facts, read the following statements and then choose the Venn diagram from the given four alternatives which best represents the given statements.",
+        "answerPanels": {
+          "A": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  40,
+                  50,
+                  30
+                ],
+                [
+                  44,
+                  50,
+                  14
+                ],
+                [
+                  76,
+                  58,
+                  14
+                ]
+              ],
+              "labels": [
+                [
+                  20,
+                  50,
+                  "D"
+                ],
+                [
+                  44,
+                  50,
+                  "M"
+                ],
+                [
+                  82,
+                  62,
+                  "R"
+                ]
+              ]
+            }
+          },
+          "B": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  25,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ],
+                [
+                  75,
+                  50,
+                  18
+                ]
+              ],
+              "labels": [
+                [
+                  18,
+                  50,
+                  "M"
+                ],
+                [
+                  50,
+                  38,
+                  "D"
+                ],
+                [
+                  82,
+                  50,
+                  "R"
+                ]
+              ]
+            }
+          },
+          "C": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  35,
+                  50,
+                  30
+                ],
+                [
+                  40,
+                  50,
+                  14
+                ],
+                [
+                  83,
+                  50,
+                  14
+                ]
+              ],
+              "labels": [
+                [
+                  15,
+                  50,
+                  "D"
+                ],
+                [
+                  40,
+                  50,
+                  "M"
+                ],
+                [
+                  83,
+                  50,
+                  "R"
+                ]
+              ]
+            }
+          },
+          "D": {
+            "figure": {
+              "lines": [],
+              "circles": [
+                [
+                  50,
+                  50,
+                  45
+                ],
+                [
+                  50,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  50,
+                  18
+                ]
+              ],
+              "labels": [
+                [
+                  50,
+                  12,
+                  "D"
+                ],
+                [
+                  50,
+                  26,
+                  "M"
+                ],
+                [
+                  50,
+                  50,
+                  "R"
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch16 p61 q50",
+      "key_basis": "derived",
+      "rule": "\"Some mugs are drones\" and \"some drones are robots\": M overlaps D, D overlaps R, and nothing links mugs to robots: a chain with D in the middle.",
+      "confidence": "medium",
+      "note": "Each \"some\" is drawn as an overlap and the unlinked pair (mugs, robots) apart, as statement diagrams are usually drawn; the statements allow other pictures too."
     },
     {
       "id": "oir-agx-ch17-q001",
