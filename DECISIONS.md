@@ -644,3 +644,21 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 
 **Revisit if.** A swap would change a question's logic (a name whose letters or gender the question depends on); then hold the question instead.
 
+
+---
+
+## D28 — A number figure is shown as its tables, or described in words when it cannot be tabled
+
+**Date:** 2026-10-13 · **Status:** Accepted · **Extends** D24 point 1 (verbatim transcription) to Chapter 12's figures
+
+**Context.** Chapter 12 (Find the Missing Term) prints most questions as figures: number grids, crosses, boxes, trees, triangles, circles. As one line of text a grid ("13 26 39 / 30 42 ? / 17 16 15") is hard to read, and a tree cannot be written at all. The owner chose drawing grids as tables over holding them.
+
+**Decision.**
+
+1. **Grids are transcribed cell by cell.** An OIR payload may carry `tables`: a list of tables, each a list of rows, `""` a blank cell (a cross is a 3 × 3 table with blank corners). `stem` still holds the same numbers as text, rows split by " / " and figures by " // "; the chapter suite checks the two agree. The practice screen draws the tables in place of the stem, the gap marked.
+2. **Other figures are described in words, in a fixed form** ("27 over 3 and 6"; "clockwise from the top left: F, C, ?, I, L, A"). The source note declares it. A figure that cannot be read is held.
+3. **A stem keeps its line breaks.** An equation or list printed on its own line shows on its own line.
+
+**Consequences.** 59 of Chapter 12's 79 questions carry tables; 17 are described. `bank.ts` validates `tables` (no empty table, no ragged row, something printed). Chapter 13 sets each equation on its own line.
+
+**Revisit if.** Non-verbal chapters arrive: they need images (`assetPath`), not tables or words.

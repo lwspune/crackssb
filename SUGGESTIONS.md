@@ -259,6 +259,18 @@ copy of the transcription / key / bank checks. Moving it onto the suite (adding
 the `missing`, `wrong`, `fill`, `next` kinds to the suite's `runCheck`) removes
 the duplicate. Shipped and passing, so it waits for a 360 and a yes.
 
+### ~~Backfill ledger: stem line breaks now show in Chapters 1-11 (D28)~~ — done 2026-10-13, the owner said yes
+The practice screen now keeps a stem's line breaks (`whitespace-pre-line`), added for Chapters 12-13. 119 shipped stems already
+carry breaks from transcription (Ch1 6, Ch2 3, Ch5 76, Ch7 26, Ch8 3, Ch10 4, Ch11 1): numbered word lists, legends, statements
+I/II. Today they run together on one line ("1. Decant 2. Decamp 3. Decade"). 360: scope 119 stems, display only, no data change ·
+blast radius the practice screen only (sheets and runner do not render OIR stems) · it does apply: every break is a printed line ·
+risk low, one class to revert · cost none. Recommendation: do. Confirmed and shipped with D28.
+
+### Non-verbal chapters 16, 18-28 (~820 questions): figures from the photos
+A trial cut nine Counting Figures (Ch 28) figures from the phone photos at 3× (`screenshots/oir-ch12-13/FIGURE-TRIAL.png`).
+Line figures read; faint show-through from the facing page remains, and every crop box is placed by hand. Keys cannot be run as
+code. Flat scans and the book's answer key would settle both.
+
 ### Printed typos shown to candidates
 Directions and stems are verbatim, so candidates see "which dase not fit". Decide
 whether shown text gets spelling fixes (declared, as WAT's DIFFCULT was) while

@@ -11,7 +11,7 @@ coaching academies. Launch entry type: NDA.
 | [`ARCHITECTURE.md`](./ARCHITECTURE.md) | Schema, the 15-OLQ vector, edge-function contracts, the four seam rules, honest-claims policy |
 | [`ROADMAP.md`](./ROADMAP.md) | Phases, sprint order, gates, blockers, content lift |
 | [`UI.md`](./UI.md) | Roles (4 in schema, 3 experiences), the **seven runner modes** and their contracts, timing rules, per-role IA, build order |
-| [`DECISIONS.md`](./DECISIONS.md) | **D1–D27.** The long-form *why* trail. Append only; supersede rather than edit |
+| [`DECISIONS.md`](./DECISIONS.md) | **D1–D28.** The long-form *why* trail. Append only; supersede rather than edit |
 
 Read `DECISIONS.md` before changing anything in `src/scoring/` — most of what
 looks arbitrary there is a recorded decision with evidence behind it.
@@ -32,7 +32,7 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-1528 tests passing · npm test        lint clean · npm run lint        npm run build green
+1762 tests passing · npm test        lint clean · npm run lint        npm run build green
 74 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
@@ -41,9 +41,9 @@ reports four known errors in pre-existing test files (SUGGESTIONS.md). `next
 build` checks app code only, via `tsconfig.build.json`.
 
 **OIR chapter practice (D26).** `/practise/oir`: untimed, one question at a time; the key and its
-rule come back only after an answer (`answer_practice`), every answer kept for progress. All eleven
-chapters of the book are seeded: **1,068 verbal questions**, 82 held, keys derived (D24). Timed OIR
-mocks are the next step now that every chapter is in (SUGGESTIONS.md has the plan).
+rule come back only after an answer (`answer_practice`), every answer kept for progress. Chapters 1-13 of the book are
+seeded: **1,255 verbal questions**, 88 held, keys derived (D24); number grids show as tables (D28). Timed OIR
+mocks are unblocked (SUGGESTIONS.md has the plan).
 
 **Layered access (D25).** Staff also reach the student app and the superadmin reaches all three, through a switcher.
 Staff tests are flagged `by_staff` by the database and must stay out of results and item statistics.
@@ -136,7 +136,7 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 1528 tests (never touches the database)
+npm test              # 1762 tests (never touches the database)
 npm run test:db       # 74 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
@@ -182,7 +182,7 @@ lists every conclusion a second assessor settles.
 
 - **The D5 bake-off** needs an `ANTHROPIC_API_KEY` or an `ant auth login` profile.
   Everything else for it is built.
-- **Sprint 2** (ROADMAP) — OIR verbal is complete from the book (D24; all eleven chapters seeded and practisable, D26);
+- **Sprint 2** (ROADMAP) — OIR verbal is complete from the book (D24; chapters 1-13 seeded and practisable, D26, D28; 14, 15, 17 still to transcribe);
   the book's answer key still to come (37 medium keys are listed for it to settle first); timed mocks are now unblocked;
   non-verbal still needs figure assets.
 - **A second assessor.** Everything it unblocks is listed in the ledger (D17 above).
