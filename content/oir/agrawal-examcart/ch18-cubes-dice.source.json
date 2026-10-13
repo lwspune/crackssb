@@ -1,0 +1,3677 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSR OIR 1-127 (phone photos of printed pages 1-127)",
+  "chapter": 18,
+  "title": "Cubes and Dice",
+  "pages": [
+    69,
+    74
+  ],
+  "transcribed": "2026-10-13",
+  "note": "Dice and nets are redrawn (D29): a view lists its top face and the faces drawn on the left and right of the corner; a net lists its squares. Pips are pips:N; a black face is fill, a crossed face cross, a blank face \"\". Only which mark is on which face is kept, not which way up a mark is drawn. Typos kept (\"oppositge\", \"intechanged\", \"oppsite\", \"pane\", \"Are\"; Q11 offers \"In\", not on the die, and prints NO for No). Q54-71 share the printed direction; Q54-59 print it on page 72. Q65 and Q66 print no question of their own under that direction; their stem says what is asked. Where the printed options are drawings, each option is also described in words.",
+  "directions": [
+    {
+      "section": "Main",
+      "printed": null,
+      "text": null
+    },
+    {
+      "section": "Form",
+      "printed": "Direction (Q. No. 54 to 71)",
+      "text": "Which of the following answer figure can be formed by folding the figure given in the question?"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 69,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown having names of different body parts - Ear, Eye, Nose, Mouth, Head and Hand. Find the body part on the face opposite the face showing 'Ear'.",
+      "options": {
+        "A": "Head",
+        "B": "Eye",
+        "C": "Hand",
+        "D": "Mouth"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "Ear",
+            "left": "Eye",
+            "right": "Nose"
+          },
+          {
+            "top": "Nose",
+            "left": "Eye",
+            "right": "Hand"
+          }
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "page": 69,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown having numbers 1 to 6 represented as dots. Find the number on the face opposite the face showing '5'.",
+      "options": {
+        "A": "6",
+        "B": "1",
+        "C": "2",
+        "D": "4"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "pips:5",
+            "left": "pips:1",
+            "right": "pips:3"
+          },
+          {
+            "top": "pips:3",
+            "left": "pips:1",
+            "right": "pips:4"
+          }
+        ]
+      }
+    },
+    {
+      "n": 3,
+      "page": 69,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown having six different words : Life, Eat, Enjoy, Sleep, Love and Care. Find the word of the face oppositge the face showing 'Life'.",
+      "options": {
+        "A": "Sleep",
+        "B": "Care",
+        "C": "Love",
+        "D": "Enjoy"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "Life",
+            "left": "Enjoy",
+            "right": "Eat"
+          },
+          {
+            "top": "Enjoy",
+            "left": "Sleep",
+            "right": "Eat"
+          }
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "page": 69,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown having alphabets U to Z. Find the alphabet on the face opposite the face showing 'U'.",
+      "options": {
+        "A": "X",
+        "B": "Y",
+        "C": "V",
+        "D": "W"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "U",
+            "left": "Z",
+            "right": "V"
+          },
+          {
+            "top": "V",
+            "left": "Z",
+            "right": "X"
+          }
+        ]
+      }
+    },
+    {
+      "n": 5,
+      "page": 69,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown having number 13 to 18. Find the number on the face opposite the face showing '16'.",
+      "options": {
+        "A": "15",
+        "B": "14",
+        "C": "17",
+        "D": "13"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "16",
+            "left": "17",
+            "right": "18"
+          },
+          {
+            "top": "15",
+            "left": "17",
+            "right": "13"
+          }
+        ]
+      }
+    },
+    {
+      "n": 6,
+      "page": 69,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown having numbers 1 to 6 represented as dots. Find the number on the face opposite the face showing '2'",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "1",
+        "D": "5"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "pips:2",
+            "left": "pips:5",
+            "right": "pips:3"
+          },
+          {
+            "top": "pips:3",
+            "left": "pips:4",
+            "right": "pips:1"
+          }
+        ]
+      }
+    },
+    {
+      "n": 7,
+      "page": 69,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown having symbols @, Δ, □, Ω, ∞ and * Find the symbol on the face opposite the face showing '@'.",
+      "options": {
+        "A": "Ω",
+        "B": "Δ",
+        "C": "∞",
+        "D": "*"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "Δ",
+            "left": "□",
+            "right": "@"
+          },
+          {
+            "top": "∞",
+            "left": "□",
+            "right": "Δ"
+          }
+        ]
+      }
+    },
+    {
+      "n": 8,
+      "page": 69,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown having symbols- +,@,O,∞,€ and β. Find the symbol on the face opposite the face showing 'O'.",
+      "options": {
+        "A": "@",
+        "B": "∞",
+        "C": "+",
+        "D": "€"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "O",
+            "left": "β",
+            "right": "+"
+          },
+          {
+            "top": "+",
+            "left": "β",
+            "right": "∞"
+          }
+        ]
+      }
+    },
+    {
+      "n": 9,
+      "page": 69,
+      "section": "Main",
+      "stem": "Two different positions of a dice are shown on which the numbers 4, 5, 6, 7, 8 and 9 are marked on each of its faces. select the number which will be on the face opposite to the face showing the number '9'.",
+      "options": {
+        "A": "4",
+        "B": "7",
+        "C": "8",
+        "D": "6"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "5",
+            "left": "8",
+            "right": "9"
+          },
+          {
+            "top": "6",
+            "left": "7",
+            "right": "5"
+          }
+        ]
+      }
+    },
+    {
+      "n": 10,
+      "page": 69,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown. How many points will be there on the surface opposite to the surface having one point?",
+      "options": {
+        "A": "2",
+        "B": "5",
+        "C": "4",
+        "D": "6"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "pips:1",
+            "left": "pips:3",
+            "right": "pips:2"
+          },
+          {
+            "top": "pips:1",
+            "left": "pips:5",
+            "right": "pips:6"
+          }
+        ]
+      }
+    },
+    {
+      "n": 11,
+      "page": 69,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown with one of the words 'Yes', 'No' 'if' 'it' and 'is' marked on each of the six faces. Select the word marked on the pane opposite to the pane containing 'Yes'.",
+      "options": {
+        "A": "No",
+        "B": "It",
+        "C": "Is",
+        "D": "In"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "Yes",
+            "left": "NO",
+            "right": "if"
+          },
+          {
+            "top": "Is",
+            "left": "It",
+            "right": "Yes"
+          }
+        ]
+      }
+    },
+    {
+      "n": 12,
+      "page": 69,
+      "section": "Main",
+      "stem": "Two different positions of the same block are shown. When 2 dots are is at the bottom, how many dots will be on the top?",
+      "options": {
+        "A": "4",
+        "B": "1",
+        "C": "3",
+        "D": "5"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "pips:3",
+            "left": "pips:2",
+            "right": "pips:6"
+          },
+          {
+            "top": "pips:2",
+            "left": "pips:1",
+            "right": "pips:5"
+          }
+        ]
+      }
+    },
+    {
+      "n": 13,
+      "page": 69,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown, the six faces of which are marked as Ant, Bat, Cat, Dog, Egg, Fog. Select the word that will be on the face opposite to the one showing 'Fog'.",
+      "options": {
+        "A": "Ant",
+        "B": "Dog",
+        "C": "Bat",
+        "D": "Egg"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "Egg",
+            "left": "Bat",
+            "right": "Cat"
+          },
+          {
+            "top": "Fog",
+            "left": "Bat",
+            "right": "Cat"
+          }
+        ]
+      }
+    },
+    {
+      "n": 14,
+      "page": 69,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown, the six faces of which are marked as €, ₭, ₮, ₴, ₹, ₢. Select the symbol that will be on the face opposite to the one showing '₢'.",
+      "options": {
+        "A": "₭",
+        "B": "₴",
+        "C": "₮",
+        "D": "€"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "₮",
+            "left": "₹",
+            "right": "₢"
+          },
+          {
+            "top": "₮",
+            "left": "₭",
+            "right": "₹"
+          }
+        ]
+      }
+    },
+    {
+      "n": 15,
+      "page": 70,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown, the six faces of which are numbered from 11 to 16. Select the number that will be on the face opposite to the one showing '15'.",
+      "options": {
+        "A": "13",
+        "B": "12",
+        "C": "14",
+        "D": "16"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "11",
+            "left": "16",
+            "right": "14"
+          },
+          {
+            "top": "15",
+            "left": "11",
+            "right": "14"
+          }
+        ]
+      }
+    },
+    {
+      "n": 16,
+      "page": 70,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown, the six faces of which are marked as €, ₭, ₮, ₴, ₹, ₢. Select the symbol that will be on the face opposite to the one showing '€'.",
+      "options": {
+        "A": "₴",
+        "B": "₮",
+        "C": "₭",
+        "D": "₢"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "₮",
+            "left": "₹",
+            "right": "€"
+          },
+          {
+            "top": "₮",
+            "left": "₭",
+            "right": "₹"
+          }
+        ]
+      }
+    },
+    {
+      "n": 17,
+      "page": 70,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown, the six faces of which are numbered from 7 to 12. Select the number that will be on the face opposite to the one showing '8'.",
+      "options": {
+        "A": "11",
+        "B": "10",
+        "C": "9",
+        "D": "12"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "10",
+            "left": "9",
+            "right": "8"
+          },
+          {
+            "top": "12",
+            "left": "9",
+            "right": "10"
+          }
+        ]
+      }
+    },
+    {
+      "n": 18,
+      "page": 70,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown the six faces of which are numbered from 1 to 6. Select the number that will be on the face opposite to the one showing 1.",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "5",
+        "D": "4"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "4",
+            "left": "2",
+            "right": "3"
+          },
+          {
+            "top": "2",
+            "left": "1",
+            "right": "3"
+          }
+        ]
+      }
+    },
+    {
+      "n": 19,
+      "page": 70,
+      "section": "Main",
+      "stem": "Two different positions of the same dice are shown, with six faces numbered from 1 to 6. Select the number which will be on the face opposite to the face showing '5'.",
+      "options": {
+        "A": "6",
+        "B": "4",
+        "C": "3",
+        "D": "1"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "1",
+            "left": "2",
+            "right": "4"
+          },
+          {
+            "top": "5",
+            "left": "4",
+            "right": "2"
+          }
+        ]
+      }
+    },
+    {
+      "n": 20,
+      "page": 70,
+      "section": "Main",
+      "stem": "Two positions of a dice are shown. Which number should be on the face opposite to 4?",
+      "options": {
+        "A": "5",
+        "B": "4",
+        "C": "3",
+        "D": "2"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "2",
+            "left": "1",
+            "right": "5",
+            "caption": "(a)"
+          },
+          {
+            "top": "1",
+            "left": "4",
+            "right": "5",
+            "caption": "(b)"
+          }
+        ]
+      }
+    },
+    {
+      "n": 21,
+      "page": 70,
+      "section": "Main",
+      "stem": "Six numbers, 5 , 10, 15, 20, 25 and 30, are written on different faces of a dice. Two position of this dice are shown. Select the number that will be on the face opposite to the face having the number '15:,",
+      "options": {
+        "A": "10",
+        "B": "5",
+        "C": "30",
+        "D": "20"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "25",
+            "left": "10",
+            "right": "30"
+          },
+          {
+            "top": "10",
+            "left": "15",
+            "right": "20"
+          }
+        ]
+      }
+    },
+    {
+      "n": 22,
+      "page": 70,
+      "section": "Main",
+      "stem": "The two different positions of the same dice are shown, the six faces of which are marked as IX, X, XI, XII, XIII and XIV, select the number that will be on the face opposite to the face showing the number 'XIV'.",
+      "options": {
+        "A": "XI",
+        "B": "X",
+        "C": "XII",
+        "D": "IX"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "X",
+            "left": "XIII",
+            "right": "XI"
+          },
+          {
+            "top": "X",
+            "left": "IX",
+            "right": "XIV"
+          }
+        ]
+      }
+    },
+    {
+      "n": 23,
+      "page": 70,
+      "section": "Main",
+      "stem": "Three different shapes of a dice are shown. Select the face symbol ! opposite the face shown.",
+      "options": {
+        "A": "@",
+        "B": "$",
+        "C": "%",
+        "D": "&"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "!",
+            "left": "@",
+            "right": "%"
+          },
+          {
+            "top": "#",
+            "left": "!",
+            "right": "%"
+          },
+          {
+            "top": "!",
+            "left": "$",
+            "right": "@"
+          }
+        ]
+      }
+    },
+    {
+      "n": 24,
+      "page": 70,
+      "section": "Main",
+      "stem": "Three different positions of the same dice are shown. Which number will be on the surface opposite to the surface with '3'?",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "1",
+        "D": "5"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "1",
+            "left": "5",
+            "right": "4"
+          },
+          {
+            "top": "1",
+            "left": "4",
+            "right": "2"
+          },
+          {
+            "top": "1",
+            "left": "3",
+            "right": "6"
+          }
+        ]
+      }
+    },
+    {
+      "n": 25,
+      "page": 70,
+      "section": "Main",
+      "stem": "Three different positions of the same non-standard dice are shown. Select the number from the alternatives which will be on the page opposite to the page numbered '1'.",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "4",
+            "left": "5",
+            "right": "2"
+          },
+          {
+            "top": "6",
+            "left": "3",
+            "right": "2"
+          },
+          {
+            "top": "1",
+            "left": "6",
+            "right": "5"
+          }
+        ]
+      }
+    },
+    {
+      "n": 26,
+      "page": 70,
+      "section": "Main",
+      "stem": "Three positions of a dice are given below. What can come on the adjacent faces of the face containing '4' on it?",
+      "options": {
+        "A": "3 and 7",
+        "B": "7 and 6",
+        "C": "6 and 5",
+        "D": "7 and 5"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "7",
+            "left": "3",
+            "right": "5"
+          },
+          {
+            "top": "3",
+            "left": "4",
+            "right": "5"
+          },
+          {
+            "top": "4",
+            "left": "6",
+            "right": "5"
+          }
+        ]
+      }
+    },
+    {
+      "n": 27,
+      "page": 70,
+      "section": "Main",
+      "stem": "Three different positions (X, Y and Z) of the same dice are shown. Which symbol is on the face opposite to the face having the symbol '!' ?",
+      "options": {
+        "A": "%",
+        "B": "$",
+        "C": "@",
+        "D": "#"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "#",
+            "left": "@",
+            "right": "%",
+            "caption": "X"
+          },
+          {
+            "top": "@",
+            "left": "!",
+            "right": "$",
+            "caption": "Y"
+          },
+          {
+            "top": "%",
+            "left": "*",
+            "right": "!",
+            "caption": "Z"
+          }
+        ]
+      }
+    },
+    {
+      "n": 28,
+      "page": 70,
+      "section": "Main",
+      "stem": "Two positions of the same dice are shown below. Which number will come opposite to the face with number 4?",
+      "options": {
+        "A": "6",
+        "B": "5",
+        "C": "2",
+        "D": "3"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "5",
+            "left": "2",
+            "right": "3"
+          },
+          {
+            "top": "6",
+            "left": "4",
+            "right": "1"
+          },
+          {
+            "top": "1",
+            "left": "2",
+            "right": "5"
+          }
+        ]
+      }
+    },
+    {
+      "n": 29,
+      "page": 70,
+      "section": "Main",
+      "stem": "Three states of a cube are shown below. What letters will appear on the faces marked 1 and 2?",
+      "options": {
+        "A": "U and P",
+        "B": "Q and R",
+        "C": "P and S",
+        "D": "R and P"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "P",
+            "left": "U",
+            "right": "S"
+          },
+          {
+            "top": "R",
+            "left": "P",
+            "right": "Q"
+          },
+          {
+            "top": "R",
+            "left": "T",
+            "right": "U"
+          },
+          {
+            "top": "T",
+            "left": "1",
+            "right": "2",
+            "caption": "Find 1 and 2"
+          }
+        ]
+      }
+    },
+    {
+      "n": 30,
+      "page": 70,
+      "section": "Main",
+      "stem": "Three states of a cube are shown below. What marks will appear on both the faces marked 'A' and 'B'?",
+      "options": {
+        "A": "1 OR 2",
+        "B": "6 OR 1",
+        "C": "4 OR 2",
+        "D": "5 OR 2"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "5",
+            "left": "3",
+            "right": "4"
+          },
+          {
+            "top": "3",
+            "left": "6",
+            "right": "2"
+          },
+          {
+            "top": "6",
+            "left": "5",
+            "right": "1"
+          },
+          {
+            "top": "A",
+            "left": "B",
+            "right": "3",
+            "caption": "Find A and B"
+          }
+        ]
+      }
+    },
+    {
+      "n": 31,
+      "page": 70,
+      "section": "Main",
+      "stem": "Four different positions of the same dice Are shown. Which letter will be on the page opposite to the page showing 'M'?",
+      "options": {
+        "A": "D",
+        "B": "R",
+        "C": "Z",
+        "D": "S"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "M",
+            "left": "D",
+            "right": "S"
+          },
+          {
+            "top": "Z",
+            "left": "M",
+            "right": "S"
+          },
+          {
+            "top": "T",
+            "left": "M",
+            "right": "Z"
+          },
+          {
+            "top": "D",
+            "left": "T",
+            "right": "R"
+          }
+        ]
+      }
+    },
+    {
+      "n": 32,
+      "page": 71,
+      "section": "Main",
+      "stem": "Four different positions of a dice are shown. Select the symbol from the alternatives which will be on the page opposite to the page with symbol '×'.",
+      "options": {
+        "A": "⊕",
+        "B": "∂",
+        "C": "+",
+        "D": "\\"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "pips:3",
+            "left": "pips:1",
+            "right": "×"
+          },
+          {
+            "top": "pips:3",
+            "left": "×",
+            "right": "⊕"
+          },
+          {
+            "top": "×",
+            "left": "∂",
+            "right": "⊕"
+          },
+          {
+            "top": "∂",
+            "left": "+",
+            "right": "⊕"
+          }
+        ]
+      }
+    },
+    {
+      "n": 33,
+      "page": 71,
+      "section": "Main",
+      "stem": "Six different symbols are drawn on the six faces of a cube. Symbol ◆, −, →, □, + and ✓ Which of the following symbols will be opposite to the three different positions of the same cube shown in the given figures.",
+      "options": {
+        "A": "✓",
+        "B": "+",
+        "C": "□",
+        "D": "◆"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "◆",
+            "left": "□",
+            "right": "−"
+          },
+          {
+            "top": "+",
+            "left": "−",
+            "right": "□"
+          },
+          {
+            "top": "→",
+            "left": "−",
+            "right": "✓"
+          }
+        ]
+      }
+    },
+    {
+      "n": 34,
+      "page": 71,
+      "section": "Main",
+      "stem": "Four different positions of the same dice are shown. Select the symbol which will be on the face opposite to the one with 'O'?",
+      "options": {
+        "A": "☼",
+        "B": "□",
+        "C": "△",
+        "D": "@"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "☼",
+            "left": "O",
+            "right": "△",
+            "caption": "1"
+          },
+          {
+            "top": "☼",
+            "left": "△",
+            "right": "□",
+            "caption": "2"
+          },
+          {
+            "top": "☼",
+            "left": "□",
+            "right": "@",
+            "caption": "3"
+          },
+          {
+            "top": "O",
+            "left": "△",
+            "right": "☼",
+            "caption": "4"
+          }
+        ]
+      }
+    },
+    {
+      "n": 35,
+      "page": 71,
+      "section": "Main",
+      "stem": "Given below are 4 positions of a dice. Identify the number on the bottom when there is a 5 on the top.",
+      "options": {
+        "A": "1",
+        "B": "4",
+        "C": "2",
+        "D": "3"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "1",
+            "left": "3",
+            "right": "2"
+          },
+          {
+            "top": "6",
+            "left": "2",
+            "right": "3"
+          },
+          {
+            "top": "3",
+            "left": "4",
+            "right": "6"
+          },
+          {
+            "top": "3",
+            "left": "2",
+            "right": "1"
+          }
+        ]
+      }
+    },
+    {
+      "n": 36,
+      "page": 71,
+      "section": "Main",
+      "stem": "Four different positions of the same dice are shown, the six faces of which are numbered 1 to 6. Select the number that will be on the face opposite to the one showing '4'.",
+      "options": {
+        "A": "1",
+        "B": "3",
+        "C": "5",
+        "D": "2"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "6",
+            "left": "1",
+            "right": "3"
+          },
+          {
+            "top": "5",
+            "left": "2",
+            "right": "4"
+          },
+          {
+            "top": "4",
+            "left": "6",
+            "right": "3"
+          },
+          {
+            "top": "5",
+            "left": "3",
+            "right": "1"
+          }
+        ]
+      }
+    },
+    {
+      "n": 37,
+      "page": 71,
+      "section": "Main",
+      "stem": "Select the cube which cannot be formed on folding the given sheet.",
+      "options": {
+        "A": "A cube with + on top, % in front and @ on the right",
+        "B": "A cube with ! on top, % in front and 0 on the right",
+        "C": "A cube with + on top, − in front and @ on the right",
+        "D": "A cube with 0 on top, % in front and − on the right"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 0,
+                "face": "0"
+              },
+              {
+                "r": 0,
+                "c": 1,
+                "face": "+"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "−"
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "face": "%"
+              },
+              {
+                "r": 3,
+                "c": 1,
+                "face": "!"
+              },
+              {
+                "r": 3,
+                "c": 2,
+                "face": "@"
+              }
+            ]
+          }
+        ]
+      },
+      "answerPanels": {
+        "A": {
+          "dice": {
+            "views": [
+              {
+                "top": "+",
+                "left": "%",
+                "right": "@"
+              }
+            ]
+          }
+        },
+        "B": {
+          "dice": {
+            "views": [
+              {
+                "top": "!",
+                "left": "%",
+                "right": "0"
+              }
+            ]
+          }
+        },
+        "C": {
+          "dice": {
+            "views": [
+              {
+                "top": "+",
+                "left": "−",
+                "right": "@"
+              }
+            ]
+          }
+        },
+        "D": {
+          "dice": {
+            "views": [
+              {
+                "top": "0",
+                "left": "%",
+                "right": "−"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 38,
+      "page": 71,
+      "section": "Main",
+      "stem": "Select the box which can be obtained by folding the following sheet (s) on the lines.",
+      "options": {
+        "A": "Only C",
+        "B": "A and C",
+        "C": "D and B",
+        "D": "Only A"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 0,
+                "face": "5"
+              },
+              {
+                "r": 0,
+                "c": 1,
+                "face": "6"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "3"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "2"
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "face": "1"
+              },
+              {
+                "r": 3,
+                "c": 1,
+                "face": "4"
+              }
+            ]
+          }
+        ],
+        "views": [
+          {
+            "top": "1",
+            "left": "4",
+            "right": "2",
+            "caption": "A"
+          },
+          {
+            "top": "4",
+            "left": "3",
+            "right": "2",
+            "caption": "B"
+          },
+          {
+            "top": "2",
+            "left": "3",
+            "right": "1",
+            "caption": "C"
+          },
+          {
+            "top": "1",
+            "left": "6",
+            "right": "2",
+            "caption": "D"
+          }
+        ]
+      }
+    },
+    {
+      "n": 39,
+      "page": 71,
+      "section": "Main",
+      "stem": "The following is a non-standard open dice. Which two pages of the dice need to be intechanged to make a standard dice?",
+      "options": {
+        "A": "4, 3",
+        "B": "5, 6",
+        "C": "2, 3",
+        "D": "1, 5"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 1,
+                "face": "1"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "3"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "4"
+              },
+              {
+                "r": 2,
+                "c": 0,
+                "face": "2"
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "face": "6"
+              },
+              {
+                "r": 3,
+                "c": 1,
+                "face": "5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "n": 40,
+      "page": 71,
+      "section": "Main",
+      "stem": "The given sheet is folded to form a cube. In the cube so formed, which number will be on the face opposite to the face showing the number '7'?",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "8",
+        "D": "4"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 1,
+                "face": "4"
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": "8"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "5"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "6"
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "face": "3"
+              },
+              {
+                "r": 3,
+                "c": 1,
+                "face": "7"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "n": 41,
+      "page": 71,
+      "section": "Main",
+      "stem": "A box is made by folding the given sheet. in the box so formed, select the face that will be oppsite to the face having four dots.",
+      "options": {
+        "A": "Six dots",
+        "B": "Five dots",
+        "C": "Three dots",
+        "D": "One dot"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 3,
+                "face": "pips:3"
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": "pips:1"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "pips:6"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "pips:2"
+              },
+              {
+                "r": 1,
+                "c": 3,
+                "face": "pips:4"
+              },
+              {
+                "r": 2,
+                "c": 0,
+                "face": "pips:5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "n": 42,
+      "page": 71,
+      "section": "Main",
+      "stem": "Which of the following answer figures cannot be made from the open cube in the given question figure?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "n": 43,
+      "page": 71,
+      "section": "Main",
+      "stem": "Which of the following options will be formed as a dice?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "n": 44,
+      "page": 71,
+      "section": "Main",
+      "stem": "If the given sheet is folded to form a cube, which of the given figures are possible? (The letters are shown to indicate the sides only.)",
+      "options": {
+        "A": "Only C and D",
+        "B": "Only A, C and D",
+        "C": "Only B and C",
+        "D": "Only A and C"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 1,
+                "face": "e"
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": "u"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "a"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "i"
+              },
+              {
+                "r": 1,
+                "c": 3,
+                "face": "z"
+              },
+              {
+                "r": 2,
+                "c": 2,
+                "face": "o"
+              }
+            ]
+          }
+        ],
+        "views": [
+          {
+            "top": "z",
+            "left": "i",
+            "right": "o",
+            "caption": "A"
+          },
+          {
+            "top": "z",
+            "left": "o",
+            "right": "e",
+            "caption": "B"
+          },
+          {
+            "top": "i",
+            "left": "a",
+            "right": "e",
+            "caption": "C"
+          },
+          {
+            "top": "i",
+            "left": "u",
+            "right": "o",
+            "caption": "D"
+          }
+        ]
+      }
+    },
+    {
+      "n": 45,
+      "page": 71,
+      "section": "Main",
+      "stem": "The given sheet is folded into a cube. Which letter will be on the face opposite to the one showing 'P' in the cube thus formed?",
+      "options": {
+        "A": "H",
+        "B": "L",
+        "C": "K",
+        "D": "A"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 2,
+                "face": "A"
+              },
+              {
+                "r": 0,
+                "c": 3,
+                "face": "H"
+              },
+              {
+                "r": 0,
+                "c": 4,
+                "face": "K"
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": "F"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "P"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "L"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "n": 46,
+      "page": 71,
+      "section": "Main",
+      "stem": "The given sheet is folded into a cube. In the cube thus formed, which of the following symbol pairs will not be on opposite faces?",
+      "options": {
+        "A": "$ and #",
+        "B": "@ and %",
+        "C": "& and $",
+        "D": "# and >"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 2,
+                "face": "#"
+              },
+              {
+                "r": 0,
+                "c": 3,
+                "face": "&"
+              },
+              {
+                "r": 0,
+                "c": 4,
+                "face": ">"
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": "@"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "$"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "%"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "n": 47,
+      "page": 72,
+      "section": "Main",
+      "stem": "When the given sheet is folded to form a cube, which of the following pairs of symbols will be on the opposite faces?",
+      "options": {
+        "A": "% and +",
+        "B": "@ and &",
+        "C": "+ and @",
+        "D": "# and &"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 1,
+                "face": "%"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "@"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "$"
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "face": "#"
+              },
+              {
+                "r": 3,
+                "c": 0,
+                "face": "&"
+              },
+              {
+                "r": 3,
+                "c": 1,
+                "face": "+"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "n": 48,
+      "page": 72,
+      "section": "Main",
+      "stem": "Select the dice which can be made by folding the given sheet in the form of a cube.",
+      "options": {
+        "A": "1 and 4 can be made",
+        "B": "Only 3 can be made",
+        "C": "Only 2 can be made.",
+        "D": "None can be made."
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 2,
+                "face": "D"
+              },
+              {
+                "r": 0,
+                "c": 3,
+                "face": "B"
+              },
+              {
+                "r": 0,
+                "c": 4,
+                "face": "E"
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": "A"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "F"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "C"
+              }
+            ]
+          }
+        ],
+        "views": [
+          {
+            "top": "B",
+            "left": "A",
+            "right": "C",
+            "caption": "1"
+          },
+          {
+            "top": "D",
+            "left": "E",
+            "right": "F",
+            "caption": "2"
+          },
+          {
+            "top": "D",
+            "left": "C",
+            "right": "E",
+            "caption": "3"
+          },
+          {
+            "top": "F",
+            "left": "B",
+            "right": "D",
+            "caption": "4"
+          }
+        ]
+      }
+    },
+    {
+      "n": 49,
+      "page": 72,
+      "section": "Main",
+      "stem": "The given sheet is folded into a cube. What will be the symbol ☆ on the opposite face of the cube thus formed?",
+      "options": {
+        "A": "⬠",
+        "B": "⬡",
+        "C": "□",
+        "D": "◇"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 0,
+                "face": "◇"
+              },
+              {
+                "r": 0,
+                "c": 1,
+                "face": "⬡"
+              },
+              {
+                "r": 0,
+                "c": 2,
+                "face": "△"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "⬠"
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "face": "□"
+              },
+              {
+                "r": 3,
+                "c": 1,
+                "face": "☆"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "n": 50,
+      "page": 72,
+      "section": "Main",
+      "stem": "If the given figure is folded to form a cube, what will be the symbol 8 on the opposite side?",
+      "options": {
+        "A": "%",
+        "B": "#",
+        "C": "$",
+        "D": "@"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 1,
+                "face": "@"
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": "#"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "$"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "&"
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "face": "%"
+              },
+              {
+                "r": 3,
+                "c": 1,
+                "face": "!"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "n": 51,
+      "page": 72,
+      "section": "Main",
+      "stem": "The given sheet is folded into a cube. What will be the sign on the face opposite to the cube '+' thus formed?",
+      "options": {
+        "A": "%",
+        "B": "&",
+        "C": "$",
+        "D": "#"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 0,
+                "face": "%"
+              },
+              {
+                "r": 0,
+                "c": 1,
+                "face": "*"
+              },
+              {
+                "r": 0,
+                "c": 2,
+                "face": "#"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "&"
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "face": "$"
+              },
+              {
+                "r": 3,
+                "c": 1,
+                "face": "+"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "n": 52,
+      "page": 72,
+      "section": "Main",
+      "stem": "Find out that a cube is formed by folding the given figure, which sign '◇' will come opposite to it.",
+      "options": {
+        "A": "□",
+        "B": "✡",
+        "C": "○",
+        "D": "▭"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 0,
+                "face": "○"
+              },
+              {
+                "r": 0,
+                "c": 1,
+                "face": "◇"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "⬠"
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "face": "▭"
+              },
+              {
+                "r": 3,
+                "c": 1,
+                "face": "✡"
+              },
+              {
+                "r": 3,
+                "c": 2,
+                "face": "□"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "n": 53,
+      "page": 72,
+      "section": "Main",
+      "stem": "Which of the following answer figures can be formed by folding the figure given in the question?",
+      "options": {
+        "A": "A cube with N on top, Q in front and P on the right",
+        "B": "A cube with N on top, P in front and R on the right",
+        "C": "A cube with Q on top, S in front and R on the right",
+        "D": "A cube with O on top, P in front and Q on the right"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 0,
+                "face": "N"
+              },
+              {
+                "r": 0,
+                "c": 1,
+                "face": "S"
+              },
+              {
+                "r": 0,
+                "c": 2,
+                "face": "O"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "Q"
+              },
+              {
+                "r": 1,
+                "c": 3,
+                "face": "R"
+              },
+              {
+                "r": 1,
+                "c": 4,
+                "face": "P"
+              }
+            ]
+          }
+        ]
+      },
+      "answerPanels": {
+        "A": {
+          "dice": {
+            "views": [
+              {
+                "top": "N",
+                "left": "Q",
+                "right": "P"
+              }
+            ]
+          }
+        },
+        "B": {
+          "dice": {
+            "views": [
+              {
+                "top": "N",
+                "left": "P",
+                "right": "R"
+              }
+            ]
+          }
+        },
+        "C": {
+          "dice": {
+            "views": [
+              {
+                "top": "Q",
+                "left": "S",
+                "right": "R"
+              }
+            ]
+          }
+        },
+        "D": {
+          "dice": {
+            "views": [
+              {
+                "top": "O",
+                "left": "P",
+                "right": "Q"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 54,
+      "page": 72,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four answer figures.",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "n": 55,
+      "page": 72,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four cubes.",
+      "options": {
+        "A": "A cube with a small square on top, a dot in front and a black face on the right",
+        "B": "A cube with a black top, a small square in front and a black face on the right",
+        "C": "A cube with a black top, a black front and a blank right face",
+        "D": "A cube with a blank top, a dot in front and a blank right face"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 0,
+                "face": "•"
+              },
+              {
+                "r": 0,
+                "c": 1,
+                "face": ""
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "fill"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": ""
+              },
+              {
+                "r": 2,
+                "c": 2,
+                "face": "□"
+              },
+              {
+                "r": 2,
+                "c": 3,
+                "face": "fill"
+              }
+            ]
+          }
+        ]
+      },
+      "answerPanels": {
+        "A": {
+          "dice": {
+            "views": [
+              {
+                "top": "□",
+                "left": "•",
+                "right": "fill"
+              }
+            ]
+          }
+        },
+        "B": {
+          "dice": {
+            "views": [
+              {
+                "top": "fill",
+                "left": "□",
+                "right": "fill"
+              }
+            ]
+          }
+        },
+        "C": {
+          "dice": {
+            "views": [
+              {
+                "top": "fill",
+                "left": "fill",
+                "right": ""
+              }
+            ]
+          }
+        },
+        "D": {
+          "dice": {
+            "views": [
+              {
+                "top": "",
+                "left": "•",
+                "right": ""
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 56,
+      "page": 72,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four cubes.",
+      "options": {
+        "A": "A cube with L on top, P in front and B on the right",
+        "B": "A cube with B on top, C in front and K on the right",
+        "C": "A cube with K on top, P in front and N on the right",
+        "D": "A cube with L on top, C in front and K on the right"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 2,
+                "face": "L"
+              },
+              {
+                "r": 0,
+                "c": 3,
+                "face": "P"
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": "B"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "N"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "C"
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "face": "K"
+              }
+            ]
+          }
+        ]
+      },
+      "answerPanels": {
+        "A": {
+          "dice": {
+            "views": [
+              {
+                "top": "L",
+                "left": "P",
+                "right": "B"
+              }
+            ]
+          }
+        },
+        "B": {
+          "dice": {
+            "views": [
+              {
+                "top": "B",
+                "left": "C",
+                "right": "K"
+              }
+            ]
+          }
+        },
+        "C": {
+          "dice": {
+            "views": [
+              {
+                "top": "K",
+                "left": "P",
+                "right": "N"
+              }
+            ]
+          }
+        },
+        "D": {
+          "dice": {
+            "views": [
+              {
+                "top": "L",
+                "left": "C",
+                "right": "K"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 57,
+      "page": 72,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four cubes.",
+      "options": {
+        "A": "A cube with 6 on top, 5 in front and 4 on the right",
+        "B": "A cube with 1 on top, 2 in front and 4 on the right",
+        "C": "A cube with 2 on top, 3 in front and 1 on the right",
+        "D": "A cube with 3 on top, 5 in front and 2 on the right"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 1,
+                "face": "3"
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": "6"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "5"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "4"
+              },
+              {
+                "r": 2,
+                "c": 2,
+                "face": "1"
+              },
+              {
+                "r": 2,
+                "c": 3,
+                "face": "2"
+              }
+            ]
+          }
+        ]
+      },
+      "answerPanels": {
+        "A": {
+          "dice": {
+            "views": [
+              {
+                "top": "6",
+                "left": "5",
+                "right": "4"
+              }
+            ]
+          }
+        },
+        "B": {
+          "dice": {
+            "views": [
+              {
+                "top": "1",
+                "left": "2",
+                "right": "4"
+              }
+            ]
+          }
+        },
+        "C": {
+          "dice": {
+            "views": [
+              {
+                "top": "2",
+                "left": "3",
+                "right": "1"
+              }
+            ]
+          }
+        },
+        "D": {
+          "dice": {
+            "views": [
+              {
+                "top": "3",
+                "left": "5",
+                "right": "2"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 58,
+      "page": 72,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four cubes.",
+      "options": {
+        "A": "A cube with α on top, ∞ in front and β on the right",
+        "B": "A cube with ∞ on top, δ in front and θ on the right",
+        "C": "A cube with ψ on top, β in front and δ on the right",
+        "D": "A cube with β on top, θ in front and ψ on the right"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 0,
+                "face": "α"
+              },
+              {
+                "r": 0,
+                "c": 1,
+                "face": "∞"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "δ"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "β"
+              },
+              {
+                "r": 2,
+                "c": 2,
+                "face": "θ"
+              },
+              {
+                "r": 2,
+                "c": 3,
+                "face": "ψ"
+              }
+            ]
+          }
+        ]
+      },
+      "answerPanels": {
+        "A": {
+          "dice": {
+            "views": [
+              {
+                "top": "α",
+                "left": "∞",
+                "right": "β"
+              }
+            ]
+          }
+        },
+        "B": {
+          "dice": {
+            "views": [
+              {
+                "top": "∞",
+                "left": "δ",
+                "right": "θ"
+              }
+            ]
+          }
+        },
+        "C": {
+          "dice": {
+            "views": [
+              {
+                "top": "ψ",
+                "left": "β",
+                "right": "δ"
+              }
+            ]
+          }
+        },
+        "D": {
+          "dice": {
+            "views": [
+              {
+                "top": "β",
+                "left": "θ",
+                "right": "ψ"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 59,
+      "page": 72,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four cubes.",
+      "options": {
+        "A": "A cube with X on top, Z in front and Q on the right",
+        "B": "A cube with X on top, Q in front and R on the right",
+        "C": "A cube with Z on top, Y in front and P on the right",
+        "D": "A cube with R on top, X in front and P on the right"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 1,
+                "face": "X"
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": "Y"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "Q"
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "face": "Z"
+              },
+              {
+                "r": 2,
+                "c": 2,
+                "face": "P"
+              },
+              {
+                "r": 3,
+                "c": 2,
+                "face": "R"
+              }
+            ]
+          }
+        ]
+      },
+      "answerPanels": {
+        "A": {
+          "dice": {
+            "views": [
+              {
+                "top": "X",
+                "left": "Z",
+                "right": "Q"
+              }
+            ]
+          }
+        },
+        "B": {
+          "dice": {
+            "views": [
+              {
+                "top": "X",
+                "left": "Q",
+                "right": "R"
+              }
+            ]
+          }
+        },
+        "C": {
+          "dice": {
+            "views": [
+              {
+                "top": "Z",
+                "left": "Y",
+                "right": "P"
+              }
+            ]
+          }
+        },
+        "D": {
+          "dice": {
+            "views": [
+              {
+                "top": "R",
+                "left": "X",
+                "right": "P"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 60,
+      "page": 73,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four cubes.",
+      "options": {
+        "A": "A cube with a black top, a black front and A on the right",
+        "B": "A cube with a black top, A in front and a crossed face on the right",
+        "C": "A cube with a blank top, a blank front and a crossed face on the right",
+        "D": "A cube with a blank top, a black front and a crossed face on the right"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 1,
+                "face": "cross"
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": ""
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "A"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": ""
+              },
+              {
+                "r": 1,
+                "c": 3,
+                "face": "fill"
+              },
+              {
+                "r": 2,
+                "c": 2,
+                "face": "fill"
+              }
+            ]
+          }
+        ]
+      },
+      "answerPanels": {
+        "A": {
+          "dice": {
+            "views": [
+              {
+                "top": "fill",
+                "left": "fill",
+                "right": "A"
+              }
+            ]
+          }
+        },
+        "B": {
+          "dice": {
+            "views": [
+              {
+                "top": "fill",
+                "left": "A",
+                "right": "cross"
+              }
+            ]
+          }
+        },
+        "C": {
+          "dice": {
+            "views": [
+              {
+                "top": "",
+                "left": "",
+                "right": "cross"
+              }
+            ]
+          }
+        },
+        "D": {
+          "dice": {
+            "views": [
+              {
+                "top": "",
+                "left": "fill",
+                "right": "cross"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 61,
+      "page": 73,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four cubes.",
+      "options": {
+        "A": "A cube with a ring on top, a crossed face in front and a black dot on the right",
+        "B": "A cube with a blank top, + in front and a crossed face on the right",
+        "C": "A cube with a blank top, a black dot in front and a blank right face",
+        "D": "A cube with a blank top, a blank front and a ring on the right"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 0,
+                "face": ""
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": "+"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "●"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "cross"
+              },
+              {
+                "r": 1,
+                "c": 3,
+                "face": ""
+              },
+              {
+                "r": 2,
+                "c": 3,
+                "face": "○"
+              }
+            ]
+          }
+        ]
+      },
+      "answerPanels": {
+        "A": {
+          "dice": {
+            "views": [
+              {
+                "top": "○",
+                "left": "cross",
+                "right": "●"
+              }
+            ]
+          }
+        },
+        "B": {
+          "dice": {
+            "views": [
+              {
+                "top": "",
+                "left": "+",
+                "right": "cross"
+              }
+            ]
+          }
+        },
+        "C": {
+          "dice": {
+            "views": [
+              {
+                "top": "",
+                "left": "●",
+                "right": ""
+              }
+            ]
+          }
+        },
+        "D": {
+          "dice": {
+            "views": [
+              {
+                "top": "",
+                "left": "",
+                "right": "○"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 62,
+      "page": 73,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four answer figures.",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "n": 63,
+      "page": 73,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four cubes.",
+      "options": {
+        "A": "I and II",
+        "B": "I and IV",
+        "C": "II and IV",
+        "D": "I, III and IV"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 0,
+                "face": "fill"
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": ""
+              },
+              {
+                "r": 2,
+                "c": 0,
+                "face": "•"
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "face": ""
+              },
+              {
+                "r": 3,
+                "c": 1,
+                "face": "fill"
+              },
+              {
+                "r": 4,
+                "c": 1,
+                "face": ""
+              }
+            ]
+          }
+        ],
+        "views": [
+          {
+            "top": "•",
+            "left": "",
+            "right": "",
+            "caption": "I"
+          },
+          {
+            "top": "•",
+            "left": "fill",
+            "right": "fill",
+            "caption": "II"
+          },
+          {
+            "top": "fill",
+            "left": "",
+            "right": "•",
+            "caption": "III"
+          },
+          {
+            "top": "fill",
+            "left": "",
+            "right": "fill",
+            "caption": "IV"
+          }
+        ]
+      }
+    },
+    {
+      "n": 64,
+      "page": 73,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four answer figures.",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "n": 65,
+      "page": 73,
+      "section": "Main",
+      "stem": "Two positions of a cube are shown. Which of the sheets can be folded into it?",
+      "options": {
+        "A": "Sheet A",
+        "B": "Sheet B",
+        "C": "Sheet C",
+        "D": "Sheet D"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "L",
+            "left": "P",
+            "right": "O"
+          },
+          {
+            "top": "L",
+            "left": "Q",
+            "right": "N"
+          }
+        ]
+      },
+      "answerPanels": {
+        "A": {
+          "dice": {
+            "nets": [
+              {
+                "cells": [
+                  {
+                    "r": 0,
+                    "c": 1,
+                    "face": "Q"
+                  },
+                  {
+                    "r": 1,
+                    "c": 0,
+                    "face": "N"
+                  },
+                  {
+                    "r": 1,
+                    "c": 1,
+                    "face": "L"
+                  },
+                  {
+                    "r": 1,
+                    "c": 2,
+                    "face": "O"
+                  },
+                  {
+                    "r": 2,
+                    "c": 1,
+                    "face": "P"
+                  },
+                  {
+                    "r": 3,
+                    "c": 1,
+                    "face": "M"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "B": {
+          "dice": {
+            "nets": [
+              {
+                "cells": [
+                  {
+                    "r": 0,
+                    "c": 1,
+                    "face": "Q"
+                  },
+                  {
+                    "r": 1,
+                    "c": 0,
+                    "face": "O"
+                  },
+                  {
+                    "r": 1,
+                    "c": 1,
+                    "face": "M"
+                  },
+                  {
+                    "r": 1,
+                    "c": 2,
+                    "face": "P"
+                  },
+                  {
+                    "r": 2,
+                    "c": 1,
+                    "face": "N"
+                  },
+                  {
+                    "r": 3,
+                    "c": 1,
+                    "face": "L"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "C": {
+          "dice": {
+            "nets": [
+              {
+                "cells": [
+                  {
+                    "r": 0,
+                    "c": 1,
+                    "face": "Q"
+                  },
+                  {
+                    "r": 1,
+                    "c": 0,
+                    "face": "P"
+                  },
+                  {
+                    "r": 1,
+                    "c": 1,
+                    "face": "L"
+                  },
+                  {
+                    "r": 1,
+                    "c": 2,
+                    "face": "O"
+                  },
+                  {
+                    "r": 2,
+                    "c": 1,
+                    "face": "N"
+                  },
+                  {
+                    "r": 3,
+                    "c": 1,
+                    "face": "M"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "D": {
+          "dice": {
+            "nets": [
+              {
+                "cells": [
+                  {
+                    "r": 0,
+                    "c": 1,
+                    "face": "M"
+                  },
+                  {
+                    "r": 1,
+                    "c": 0,
+                    "face": "Q"
+                  },
+                  {
+                    "r": 1,
+                    "c": 1,
+                    "face": "O"
+                  },
+                  {
+                    "r": 1,
+                    "c": 2,
+                    "face": "L"
+                  },
+                  {
+                    "r": 2,
+                    "c": 1,
+                    "face": "N"
+                  },
+                  {
+                    "r": 3,
+                    "c": 1,
+                    "face": "P"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 66,
+      "page": 73,
+      "section": "Main",
+      "stem": "Two positions of a cube are shown. Which of the sheets can be folded into it?",
+      "options": {
+        "A": "Sheet A",
+        "B": "Sheet B",
+        "C": "Sheet C",
+        "D": "Sheet D"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "$",
+            "left": "&",
+            "right": "@"
+          },
+          {
+            "top": "$",
+            "left": "#",
+            "right": "%"
+          }
+        ]
+      },
+      "answerPanels": {
+        "A": {
+          "dice": {
+            "nets": [
+              {
+                "cells": [
+                  {
+                    "r": 0,
+                    "c": 1,
+                    "face": "&"
+                  },
+                  {
+                    "r": 1,
+                    "c": 0,
+                    "face": "@"
+                  },
+                  {
+                    "r": 1,
+                    "c": 1,
+                    "face": "#"
+                  },
+                  {
+                    "r": 1,
+                    "c": 2,
+                    "face": "%"
+                  },
+                  {
+                    "r": 2,
+                    "c": 1,
+                    "face": "$"
+                  },
+                  {
+                    "r": 3,
+                    "c": 1,
+                    "face": "G"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "B": {
+          "dice": {
+            "nets": [
+              {
+                "cells": [
+                  {
+                    "r": 0,
+                    "c": 1,
+                    "face": "&"
+                  },
+                  {
+                    "r": 1,
+                    "c": 0,
+                    "face": "@"
+                  },
+                  {
+                    "r": 1,
+                    "c": 1,
+                    "face": "$"
+                  },
+                  {
+                    "r": 1,
+                    "c": 2,
+                    "face": "%"
+                  },
+                  {
+                    "r": 2,
+                    "c": 1,
+                    "face": "#"
+                  },
+                  {
+                    "r": 3,
+                    "c": 1,
+                    "face": "G"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "C": {
+          "dice": {
+            "nets": [
+              {
+                "cells": [
+                  {
+                    "r": 0,
+                    "c": 1,
+                    "face": "%"
+                  },
+                  {
+                    "r": 1,
+                    "c": 0,
+                    "face": "$"
+                  },
+                  {
+                    "r": 1,
+                    "c": 1,
+                    "face": "&"
+                  },
+                  {
+                    "r": 1,
+                    "c": 2,
+                    "face": "#"
+                  },
+                  {
+                    "r": 2,
+                    "c": 1,
+                    "face": "@"
+                  },
+                  {
+                    "r": 3,
+                    "c": 1,
+                    "face": "$"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "D": {
+          "dice": {
+            "nets": [
+              {
+                "cells": [
+                  {
+                    "r": 0,
+                    "c": 1,
+                    "face": "G"
+                  },
+                  {
+                    "r": 1,
+                    "c": 0,
+                    "face": "#"
+                  },
+                  {
+                    "r": 1,
+                    "c": 1,
+                    "face": "@"
+                  },
+                  {
+                    "r": 1,
+                    "c": 2,
+                    "face": "%"
+                  },
+                  {
+                    "r": 2,
+                    "c": 1,
+                    "face": "$"
+                  },
+                  {
+                    "r": 3,
+                    "c": 1,
+                    "face": "&"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 67,
+      "page": 73,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four cubes.",
+      "options": {
+        "A": "only 1, 2 and 3",
+        "B": "All 1, 2, 3 and 4",
+        "C": "only 2 and 4",
+        "D": "only 1"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 2,
+                "face": "2"
+              },
+              {
+                "r": 0,
+                "c": 3,
+                "face": ""
+              },
+              {
+                "r": 0,
+                "c": 4,
+                "face": ""
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": "•"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "◇"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": ""
+              }
+            ]
+          }
+        ],
+        "views": [
+          {
+            "top": "◇",
+            "left": "",
+            "right": "",
+            "caption": "1"
+          },
+          {
+            "top": "",
+            "left": "◇",
+            "right": "•",
+            "caption": "2"
+          },
+          {
+            "top": "2",
+            "left": "",
+            "right": "•",
+            "caption": "3"
+          },
+          {
+            "top": "",
+            "left": "•",
+            "right": "2",
+            "caption": "4"
+          }
+        ]
+      }
+    },
+    {
+      "n": 68,
+      "page": 73,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four cubes.",
+      "options": {
+        "A": "A cube with B on top, O in front and G on the right",
+        "B": "A cube with G on top, O in front and Y on the right",
+        "C": "A cube with G on top, Y in front and I on the right",
+        "D": "A cube with I on top, G in front and R on the right"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 0,
+                "face": "G"
+              },
+              {
+                "r": 0,
+                "c": 1,
+                "face": "B"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "Y"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "R"
+              },
+              {
+                "r": 2,
+                "c": 2,
+                "face": "O"
+              },
+              {
+                "r": 2,
+                "c": 3,
+                "face": "I"
+              }
+            ]
+          }
+        ]
+      },
+      "answerPanels": {
+        "A": {
+          "dice": {
+            "views": [
+              {
+                "top": "B",
+                "left": "O",
+                "right": "G"
+              }
+            ]
+          }
+        },
+        "B": {
+          "dice": {
+            "views": [
+              {
+                "top": "G",
+                "left": "O",
+                "right": "Y"
+              }
+            ]
+          }
+        },
+        "C": {
+          "dice": {
+            "views": [
+              {
+                "top": "G",
+                "left": "Y",
+                "right": "I"
+              }
+            ]
+          }
+        },
+        "D": {
+          "dice": {
+            "views": [
+              {
+                "top": "I",
+                "left": "G",
+                "right": "R"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 69,
+      "page": 73,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four answer figures.",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "n": 70,
+      "page": 73,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four answer figures.",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "n": 71,
+      "page": 74,
+      "section": "Form",
+      "stem": "A sheet to fold into a cube, and four answer figures.",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "n": 72,
+      "page": 74,
+      "section": "Main",
+      "stem": "In a given dice the marks '@', '#', '&' and '%' are marked on the adjacent faces in clockwise order, and the marks '* and $' are at the top and bottom respectively. If the '%' sign is at the top, which sign will be at the bottom?",
+      "options": {
+        "A": "@",
+        "B": "#",
+        "C": "&",
+        "D": "*"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "*",
+            "left": "@",
+            "right": "%"
+          }
+        ]
+      }
+    },
+    {
+      "n": 73,
+      "page": 74,
+      "section": "Main",
+      "stem": "The figure (X) below is a standard dice. Select the option that will be obtained by rolling the die 4 times 90 degrees clockwise and then once anticlockwise.",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "n": 74,
+      "page": 74,
+      "section": "Main",
+      "stem": "Two positions of dice are shown below. Identify the number at the bottom when the top is '5'?",
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "6",
+        "D": "4"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "3",
+            "left": "2",
+            "right": "4"
+          },
+          {
+            "top": "3",
+            "left": "6",
+            "right": "5"
+          }
+        ]
+      }
+    },
+    {
+      "n": 75,
+      "page": 74,
+      "section": "Main",
+      "stem": "Two positions of a cube are as follows. Point out which number will be on the top if number 3 is at the bottom.",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "1",
+        "D": "6"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "4",
+            "left": "1",
+            "right": "3"
+          },
+          {
+            "top": "5",
+            "left": "3",
+            "right": "2"
+          }
+        ]
+      }
+    },
+    {
+      "n": 76,
+      "page": 74,
+      "section": "Main",
+      "stem": "Choose the box that is similar to the box formed from the given sheet of paper (X).",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "n": 77,
+      "page": 74,
+      "section": "Main",
+      "stem": "Which number is on the face opposite to face having number 1?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "dice": {
+        "views": [
+          {
+            "top": "3",
+            "left": "2",
+            "right": "5"
+          },
+          {
+            "top": "2",
+            "left": "1",
+            "right": "4"
+          },
+          {
+            "top": "5",
+            "left": "6",
+            "right": "1"
+          }
+        ]
+      }
+    },
+    {
+      "n": 78,
+      "page": 74,
+      "section": "Main",
+      "stem": "Observe the dice. If the surface of the below given the are reconstructed to form a perfect as shown in the fig. How many dots lie opposite to the face having three dots?",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "5",
+        "D": "6"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 0,
+                "face": "pips:6"
+              },
+              {
+                "r": 1,
+                "c": 0,
+                "face": "pips:1"
+              },
+              {
+                "r": 2,
+                "c": 0,
+                "face": "pips:3"
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "face": "pips:4"
+              },
+              {
+                "r": 3,
+                "c": 1,
+                "face": "pips:2"
+              },
+              {
+                "r": 4,
+                "c": 1,
+                "face": "pips:5"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "n": 79,
+      "page": 74,
+      "section": "Main",
+      "stem": "Which of the following cubes cannot be formed using the given cube net ?",
+      "options": {
+        "A": "A cube with P on top, A in front and C on the right",
+        "B": "A cube with 7 on top, B in front and P on the right",
+        "C": "A cube with 4 on top, 7 in front and C on the right",
+        "D": "A cube with B on top, 4 in front and C on the right"
+      },
+      "dice": {
+        "nets": [
+          {
+            "cells": [
+              {
+                "r": 0,
+                "c": 1,
+                "face": "A"
+              },
+              {
+                "r": 1,
+                "c": 1,
+                "face": "4"
+              },
+              {
+                "r": 1,
+                "c": 2,
+                "face": "C"
+              },
+              {
+                "r": 2,
+                "c": 0,
+                "face": "B"
+              },
+              {
+                "r": 2,
+                "c": 1,
+                "face": "7"
+              },
+              {
+                "r": 3,
+                "c": 1,
+                "face": "P"
+              }
+            ]
+          }
+        ]
+      },
+      "answerPanels": {
+        "A": {
+          "dice": {
+            "views": [
+              {
+                "top": "P",
+                "left": "A",
+                "right": "C"
+              }
+            ]
+          }
+        },
+        "B": {
+          "dice": {
+            "views": [
+              {
+                "top": "7",
+                "left": "B",
+                "right": "P"
+              }
+            ]
+          }
+        },
+        "C": {
+          "dice": {
+            "views": [
+              {
+                "top": "4",
+                "left": "7",
+                "right": "C"
+              }
+            ]
+          }
+        },
+        "D": {
+          "dice": {
+            "views": [
+              {
+                "top": "B",
+                "left": "4",
+                "right": "C"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "n": 80,
+      "page": 74,
+      "section": "Main",
+      "stem": "A cube painted blue on all the faces is cut into 125 cubes of equal size. Then, how many cubes are not painted on any face ?",
+      "options": {
+        "A": "8",
+        "B": "16",
+        "C": "27",
+        "D": "54"
+      }
+    }
+  ]
+}

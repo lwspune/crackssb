@@ -163,6 +163,16 @@
     },
     {
       "source": "agrawal-examcart-oir",
+      "chapter": 18,
+      "title": "Cubes and Dice",
+      "pages": [
+        69,
+        74
+      ],
+      "file": "content/oir/agrawal-examcart/ch18-cubes-dice.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
       "chapter": 28,
       "title": "Counting Figures",
       "pages": [
@@ -172,11 +182,11 @@
       "file": "content/oir/agrawal-examcart/ch28-counting-figures.source.json"
     }
   ],
-  "itemCount": 1524,
-  "heldCount": 102,
+  "itemCount": 1589,
+  "heldCount": 117,
   "confidence": {
-    "high": 1438,
-    "medium": 86
+    "high": 1498,
+    "medium": 91
   },
   "held": [
     {
@@ -671,6 +681,81 @@
       "source_ref": "ch17 p68 q92",
       "reason": "Iron sits inside zinc and no gold is zinc, so no iron is gold: II follows on its own and I cannot be true. No printed option says \"only II\"; the book likely means the either-or (C), which the statements do not support.",
       "lean": "C"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q24",
+      "reason": "All three views put 1 on top, with 5, 4, 2, 3 and 6 round it: five faces round one, which no cube has. The figure cannot be right as printed."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q29",
+      "reason": "The fourth cube asks for two faces beside T; the three views allow more than one printed pair there, so no single option can be keyed."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q30",
+      "reason": "Asks for the faces A and B in a fourth view; several pairs fit, and the options print alternatives (\"1 OR 2\") that do not say which is A and which is B."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q33",
+      "reason": "The question does not say which face it asks about, and one mark on the second cube cannot be read in the photo."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q42",
+      "reason": "The answer cubes show a face with a slanting line the open cube does not have, and the solver does not track which way a mark turns on its face."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q43",
+      "reason": "The half-shaded face points a different way in each option, and the solver does not track which way a mark turns on its face."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q44",
+      "reason": "Folding the sheet, only cube A comes out the right way round, and no option says \"only A\"; waiting for the book key."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p72 q54",
+      "reason": "The sheet has flaps narrower than its faces, so it is not a cube net the solver can fold, and the marks on the flaps cannot be placed."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p73 q62",
+      "reason": "One option marks a face with a small rectangle the sheet does not have, and the small marks are too close to tell apart in the photo."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p73 q64",
+      "reason": "The faces are half shaded, and the solver does not track which way a mark turns on its face."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p73 q69",
+      "reason": "The sheet has triangular tabs and arrow marks, and the solver does not track which way a mark turns on its face."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p73 q70",
+      "reason": "The sheet has triangular tabs and half-shaded faces, and the solver does not track which way a mark turns on its face."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p74 q71",
+      "reason": "The faces are cut diagonally into black and white halves, and the solver does not track which way a mark turns on its face."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p74 q73",
+      "reason": "The question does not say about which axis the die rolls, so the position after rolling cannot be fixed."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p74 q76",
+      "reason": "One face is cut diagonally into black and white halves, and the solver does not track which way a mark turns on its face."
     },
     {
       "source": "agrawal-examcart-oir",
@@ -35171,6 +35256,3989 @@
       "source_ref": "ch17 p68 q93",
       "key_basis": "derived",
       "rule": "The tables that are chairs need not be ladders, and other tables need not be furniture: neither.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q001",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown having names of different body parts - Ear, Eye, Nose, Mouth, Head and Hand. Find the body part on the face opposite the face showing 'Ear'.",
+        "options": {
+          "A": "Head",
+          "B": "Eye",
+          "C": "Hand",
+          "D": "Mouth"
+        },
+        "key": "C",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "Ear",
+              "left": "Eye",
+              "right": "Nose"
+            },
+            {
+              "top": "Nose",
+              "left": "Eye",
+              "right": "Hand"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p69 q1",
+      "key_basis": "derived",
+      "rule": "Ear is seen beside Eye and Nose; turning the views onto one die leaves Hand across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q002",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown having numbers 1 to 6 represented as dots. Find the number on the face opposite the face showing '5'.",
+        "options": {
+          "A": "6",
+          "B": "1",
+          "C": "2",
+          "D": "4"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "pips:5",
+              "left": "pips:1",
+              "right": "pips:3"
+            },
+            {
+              "top": "pips:3",
+              "left": "pips:1",
+              "right": "pips:4"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p69 q2",
+      "key_basis": "derived",
+      "rule": "5 dots is seen beside 1 dots and 3 dots; turning the views onto one die leaves 4 dots across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q003",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown having six different words : Life, Eat, Enjoy, Sleep, Love and Care. Find the word of the face oppositge the face showing 'Life'.",
+        "options": {
+          "A": "Sleep",
+          "B": "Care",
+          "C": "Love",
+          "D": "Enjoy"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "Life",
+              "left": "Enjoy",
+              "right": "Eat"
+            },
+            {
+              "top": "Enjoy",
+              "left": "Sleep",
+              "right": "Eat"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p69 q3",
+      "key_basis": "derived",
+      "rule": "Life is seen beside Enjoy and Eat; turning the views onto one die leaves Sleep across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q004",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown having alphabets U to Z. Find the alphabet on the face opposite the face showing 'U'.",
+        "options": {
+          "A": "X",
+          "B": "Y",
+          "C": "V",
+          "D": "W"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "U",
+              "left": "Z",
+              "right": "V"
+            },
+            {
+              "top": "V",
+              "left": "Z",
+              "right": "X"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p69 q4",
+      "key_basis": "derived",
+      "rule": "U is seen beside Z and V; turning the views onto one die leaves X across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q005",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown having number 13 to 18. Find the number on the face opposite the face showing '16'.",
+        "options": {
+          "A": "15",
+          "B": "14",
+          "C": "17",
+          "D": "13"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "16",
+              "left": "17",
+              "right": "18"
+            },
+            {
+              "top": "15",
+              "left": "17",
+              "right": "13"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p69 q5",
+      "key_basis": "derived",
+      "rule": "16 is seen beside 17 and 18; turning the views onto one die leaves 15 across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q006",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown having numbers 1 to 6 represented as dots. Find the number on the face opposite the face showing '2'",
+        "options": {
+          "A": "4",
+          "B": "3",
+          "C": "1",
+          "D": "5"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "pips:2",
+              "left": "pips:5",
+              "right": "pips:3"
+            },
+            {
+              "top": "pips:3",
+              "left": "pips:4",
+              "right": "pips:1"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p69 q6",
+      "key_basis": "derived",
+      "rule": "2 dots is seen beside 5 dots and 3 dots; turning the views onto one die leaves 4 dots across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q007",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown having symbols @, Δ, □, Ω, ∞ and * Find the symbol on the face opposite the face showing '@'.",
+        "options": {
+          "A": "Ω",
+          "B": "Δ",
+          "C": "∞",
+          "D": "*"
+        },
+        "key": "C",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "Δ",
+              "left": "□",
+              "right": "@"
+            },
+            {
+              "top": "∞",
+              "left": "□",
+              "right": "Δ"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p69 q7",
+      "key_basis": "derived",
+      "rule": "@ is seen beside Δ and □; turning the views onto one die leaves ∞ across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q008",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown having symbols- +,@,O,∞,€ and β. Find the symbol on the face opposite the face showing 'O'.",
+        "options": {
+          "A": "@",
+          "B": "∞",
+          "C": "+",
+          "D": "€"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "O",
+              "left": "β",
+              "right": "+"
+            },
+            {
+              "top": "+",
+              "left": "β",
+              "right": "∞"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p69 q8",
+      "key_basis": "derived",
+      "rule": "O is seen beside β and +; turning the views onto one die leaves ∞ across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q009",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of a dice are shown on which the numbers 4, 5, 6, 7, 8 and 9 are marked on each of its faces. select the number which will be on the face opposite to the face showing the number '9'.",
+        "options": {
+          "A": "4",
+          "B": "7",
+          "C": "8",
+          "D": "6"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "5",
+              "left": "8",
+              "right": "9"
+            },
+            {
+              "top": "6",
+              "left": "7",
+              "right": "5"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p69 q9",
+      "key_basis": "derived",
+      "rule": "9 is seen beside 5 and 8; turning the views onto one die leaves 7 across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q010",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown. How many points will be there on the surface opposite to the surface having one point?",
+        "options": {
+          "A": "2",
+          "B": "5",
+          "C": "4",
+          "D": "6"
+        },
+        "key": "C",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "pips:1",
+              "left": "pips:3",
+              "right": "pips:2"
+            },
+            {
+              "top": "pips:1",
+              "left": "pips:5",
+              "right": "pips:6"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p69 q10",
+      "key_basis": "derived",
+      "rule": "1 dots is seen beside 3 dots, 2 dots, 5 dots and 6 dots; turning the views onto one die leaves 4 dots across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q011",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown with one of the words 'Yes', 'No' 'if' 'it' and 'is' marked on each of the six faces. Select the word marked on the pane opposite to the pane containing 'Yes'.",
+        "options": {
+          "A": "No",
+          "B": "It",
+          "C": "Is",
+          "D": "In"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "Yes",
+              "left": "NO",
+              "right": "if"
+            },
+            {
+              "top": "Is",
+              "left": "It",
+              "right": "Yes"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p69 q11",
+      "key_basis": "derived",
+      "rule": "Yes is seen beside NO, if, Is and It; turning the views onto one die leaves the sixth face, which the question does not name across from it.",
+      "confidence": "medium",
+      "note": "The die names five words; of the options only In is not one of them, so it is read as the sixth."
+    },
+    {
+      "id": "oir-agx-ch18-q012",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same block are shown. When 2 dots are is at the bottom, how many dots will be on the top?",
+        "options": {
+          "A": "4",
+          "B": "1",
+          "C": "3",
+          "D": "5"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "pips:3",
+              "left": "pips:2",
+              "right": "pips:6"
+            },
+            {
+              "top": "pips:2",
+              "left": "pips:1",
+              "right": "pips:5"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p69 q12",
+      "key_basis": "derived",
+      "rule": "2 dots is seen beside 3 dots, 6 dots, 1 dots and 5 dots; turning the views onto one die leaves 4 dots across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q013",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown, the six faces of which are marked as Ant, Bat, Cat, Dog, Egg, Fog. Select the word that will be on the face opposite to the one showing 'Fog'.",
+        "options": {
+          "A": "Ant",
+          "B": "Dog",
+          "C": "Bat",
+          "D": "Egg"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "Egg",
+              "left": "Bat",
+              "right": "Cat"
+            },
+            {
+              "top": "Fog",
+              "left": "Bat",
+              "right": "Cat"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p69 q13",
+      "key_basis": "derived",
+      "rule": "Bat and Cat sit in the same places in both views, so the faces above them, Egg and Fog, lie across from each other.",
+      "confidence": "medium",
+      "note": "A real cube cannot show Bat and Cat in the same places under two different tops; the book draws it so, and the exam reading (same two faces in place, so the third faces are opposite) is keyed."
+    },
+    {
+      "id": "oir-agx-ch18-q014",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown, the six faces of which are marked as €, ₭, ₮, ₴, ₹, ₢. Select the symbol that will be on the face opposite to the one showing '₢'.",
+        "options": {
+          "A": "₭",
+          "B": "₴",
+          "C": "₮",
+          "D": "€"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "₮",
+              "left": "₹",
+              "right": "₢"
+            },
+            {
+              "top": "₮",
+              "left": "₭",
+              "right": "₹"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p69 q14",
+      "key_basis": "derived",
+      "rule": "₢ is seen beside ₮ and ₹; turning the views onto one die leaves ₭ across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q015",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown, the six faces of which are numbered from 11 to 16. Select the number that will be on the face opposite to the one showing '15'.",
+        "options": {
+          "A": "13",
+          "B": "12",
+          "C": "14",
+          "D": "16"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "11",
+              "left": "16",
+              "right": "14"
+            },
+            {
+              "top": "15",
+              "left": "11",
+              "right": "14"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q15",
+      "key_basis": "derived",
+      "rule": "15 is seen beside 11 and 14; turning the views onto one die leaves 16 across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q016",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown, the six faces of which are marked as €, ₭, ₮, ₴, ₹, ₢. Select the symbol that will be on the face opposite to the one showing '€'.",
+        "options": {
+          "A": "₴",
+          "B": "₮",
+          "C": "₭",
+          "D": "₢"
+        },
+        "key": "C",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "₮",
+              "left": "₹",
+              "right": "€"
+            },
+            {
+              "top": "₮",
+              "left": "₭",
+              "right": "₹"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q16",
+      "key_basis": "derived",
+      "rule": "€ is seen beside ₮ and ₹; turning the views onto one die leaves ₭ across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q017",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown, the six faces of which are numbered from 7 to 12. Select the number that will be on the face opposite to the one showing '8'.",
+        "options": {
+          "A": "11",
+          "B": "10",
+          "C": "9",
+          "D": "12"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "10",
+              "left": "9",
+              "right": "8"
+            },
+            {
+              "top": "12",
+              "left": "9",
+              "right": "10"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q17",
+      "key_basis": "derived",
+      "rule": "8 is seen beside 10 and 9; turning the views onto one die leaves 12 across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q018",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown the six faces of which are numbered from 1 to 6. Select the number that will be on the face opposite to the one showing 1.",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "5",
+          "D": "4"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "4",
+              "left": "2",
+              "right": "3"
+            },
+            {
+              "top": "2",
+              "left": "1",
+              "right": "3"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q18",
+      "key_basis": "derived",
+      "rule": "1 is seen beside 2 and 3; turning the views onto one die leaves 4 across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q019",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two different positions of the same dice are shown, with six faces numbered from 1 to 6. Select the number which will be on the face opposite to the face showing '5'.",
+        "options": {
+          "A": "6",
+          "B": "4",
+          "C": "3",
+          "D": "1"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "1",
+              "left": "2",
+              "right": "4"
+            },
+            {
+              "top": "5",
+              "left": "4",
+              "right": "2"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q19",
+      "key_basis": "derived",
+      "rule": "5 is seen beside 4 and 2; turning the views onto one die leaves 1 across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q020",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two positions of a dice are shown. Which number should be on the face opposite to 4?",
+        "options": {
+          "A": "5",
+          "B": "4",
+          "C": "3",
+          "D": "2"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "2",
+              "left": "1",
+              "right": "5",
+              "caption": "(a)"
+            },
+            {
+              "top": "1",
+              "left": "4",
+              "right": "5",
+              "caption": "(b)"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q20",
+      "key_basis": "derived",
+      "rule": "4 is seen beside 1 and 5; turning the views onto one die leaves 2 across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q021",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Six numbers, 5 , 10, 15, 20, 25 and 30, are written on different faces of a dice. Two position of this dice are shown. Select the number that will be on the face opposite to the face having the number '15:,",
+        "options": {
+          "A": "10",
+          "B": "5",
+          "C": "30",
+          "D": "20"
+        },
+        "key": "C",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "25",
+              "left": "10",
+              "right": "30"
+            },
+            {
+              "top": "10",
+              "left": "15",
+              "right": "20"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q21",
+      "key_basis": "derived",
+      "rule": "15 is seen beside 10 and 20; turning the views onto one die leaves 30 across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q022",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "The two different positions of the same dice are shown, the six faces of which are marked as IX, X, XI, XII, XIII and XIV, select the number that will be on the face opposite to the face showing the number 'XIV'.",
+        "options": {
+          "A": "XI",
+          "B": "X",
+          "C": "XII",
+          "D": "IX"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "X",
+              "left": "XIII",
+              "right": "XI"
+            },
+            {
+              "top": "X",
+              "left": "IX",
+              "right": "XIV"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q22",
+      "key_basis": "derived",
+      "rule": "XIV is seen beside X and IX; turning the views onto one die leaves XI across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q023",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Three different shapes of a dice are shown. Select the face symbol ! opposite the face shown.",
+        "options": {
+          "A": "@",
+          "B": "$",
+          "C": "%",
+          "D": "&"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "!",
+              "left": "@",
+              "right": "%"
+            },
+            {
+              "top": "#",
+              "left": "!",
+              "right": "%"
+            },
+            {
+              "top": "!",
+              "left": "$",
+              "right": "@"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q23",
+      "key_basis": "derived",
+      "rule": "! is seen beside @, %, # and $; turning the views onto one die leaves & across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q025",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Three different positions of the same non-standard dice are shown. Select the number from the alternatives which will be on the page opposite to the page numbered '1'.",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "4",
+              "left": "5",
+              "right": "2"
+            },
+            {
+              "top": "6",
+              "left": "3",
+              "right": "2"
+            },
+            {
+              "top": "1",
+              "left": "6",
+              "right": "5"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q25",
+      "key_basis": "derived",
+      "rule": "1 is seen beside 6 and 5; turning the views onto one die leaves 2 across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q026",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Three positions of a dice are given below. What can come on the adjacent faces of the face containing '4' on it?",
+        "options": {
+          "A": "3 and 7",
+          "B": "7 and 6",
+          "C": "6 and 5",
+          "D": "7 and 5"
+        },
+        "key": "C",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "7",
+              "left": "3",
+              "right": "5"
+            },
+            {
+              "top": "3",
+              "left": "4",
+              "right": "5"
+            },
+            {
+              "top": "4",
+              "left": "6",
+              "right": "5"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q26",
+      "key_basis": "derived",
+      "rule": "4 is seen beside 3, 5 and 6; 7 never is. Of the pairs, only 6 and 5 are beside 4 on every die the views allow.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q027",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Three different positions (X, Y and Z) of the same dice are shown. Which symbol is on the face opposite to the face having the symbol '!' ?",
+        "options": {
+          "A": "%",
+          "B": "$",
+          "C": "@",
+          "D": "#"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "#",
+              "left": "@",
+              "right": "%",
+              "caption": "X"
+            },
+            {
+              "top": "@",
+              "left": "!",
+              "right": "$",
+              "caption": "Y"
+            },
+            {
+              "top": "%",
+              "left": "*",
+              "right": "!",
+              "caption": "Z"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q27",
+      "key_basis": "derived",
+      "rule": "! is seen beside @, $, % and *; striking out every face seen with it leaves # across from it.",
+      "confidence": "medium",
+      "note": "No real cube shows every view as drawn (one is in mirror image of another), so the face never seen beside ! is keyed, as the exam reads it."
+    },
+    {
+      "id": "oir-agx-ch18-q028",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two positions of the same dice are shown below. Which number will come opposite to the face with number 4?",
+        "options": {
+          "A": "6",
+          "B": "5",
+          "C": "2",
+          "D": "3"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "5",
+              "left": "2",
+              "right": "3"
+            },
+            {
+              "top": "6",
+              "left": "4",
+              "right": "1"
+            },
+            {
+              "top": "1",
+              "left": "2",
+              "right": "5"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q28",
+      "key_basis": "derived",
+      "rule": "4 is seen beside 6 and 1; turning the views onto one die leaves 5 across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q031",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Four different positions of the same dice Are shown. Which letter will be on the page opposite to the page showing 'M'?",
+        "options": {
+          "A": "D",
+          "B": "R",
+          "C": "Z",
+          "D": "S"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "M",
+              "left": "D",
+              "right": "S"
+            },
+            {
+              "top": "Z",
+              "left": "M",
+              "right": "S"
+            },
+            {
+              "top": "T",
+              "left": "M",
+              "right": "Z"
+            },
+            {
+              "top": "D",
+              "left": "T",
+              "right": "R"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p70 q31",
+      "key_basis": "derived",
+      "rule": "M is seen beside D, S, Z and T; turning the views onto one die leaves R across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q032",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Four different positions of a dice are shown. Select the symbol from the alternatives which will be on the page opposite to the page with symbol '×'.",
+        "options": {
+          "A": "⊕",
+          "B": "∂",
+          "C": "+",
+          "D": "\\"
+        },
+        "key": "C",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "pips:3",
+              "left": "pips:1",
+              "right": "×"
+            },
+            {
+              "top": "pips:3",
+              "left": "×",
+              "right": "⊕"
+            },
+            {
+              "top": "×",
+              "left": "∂",
+              "right": "⊕"
+            },
+            {
+              "top": "∂",
+              "left": "+",
+              "right": "⊕"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q32",
+      "key_basis": "derived",
+      "rule": "× is seen beside 3 dots, 1 dots, ⊕ and ∂; turning the views onto one die leaves + across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q034",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Four different positions of the same dice are shown. Select the symbol which will be on the face opposite to the one with 'O'?",
+        "options": {
+          "A": "☼",
+          "B": "□",
+          "C": "△",
+          "D": "@"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "☼",
+              "left": "O",
+              "right": "△",
+              "caption": "1"
+            },
+            {
+              "top": "☼",
+              "left": "△",
+              "right": "□",
+              "caption": "2"
+            },
+            {
+              "top": "☼",
+              "left": "□",
+              "right": "@",
+              "caption": "3"
+            },
+            {
+              "top": "O",
+              "left": "△",
+              "right": "☼",
+              "caption": "4"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q34",
+      "key_basis": "derived",
+      "rule": "O is seen beside ☼ and △; turning the views onto one die leaves □ across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q035",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Given below are 4 positions of a dice. Identify the number on the bottom when there is a 5 on the top.",
+        "options": {
+          "A": "1",
+          "B": "4",
+          "C": "2",
+          "D": "3"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "1",
+              "left": "3",
+              "right": "2"
+            },
+            {
+              "top": "6",
+              "left": "2",
+              "right": "3"
+            },
+            {
+              "top": "3",
+              "left": "4",
+              "right": "6"
+            },
+            {
+              "top": "3",
+              "left": "2",
+              "right": "1"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q35",
+      "key_basis": "derived",
+      "rule": "5 is seen beside ; turning the views onto one die leaves 3 across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q036",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Four different positions of the same dice are shown, the six faces of which are numbered 1 to 6. Select the number that will be on the face opposite to the one showing '4'.",
+        "options": {
+          "A": "1",
+          "B": "3",
+          "C": "5",
+          "D": "2"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "6",
+              "left": "1",
+              "right": "3"
+            },
+            {
+              "top": "5",
+              "left": "2",
+              "right": "4"
+            },
+            {
+              "top": "4",
+              "left": "6",
+              "right": "3"
+            },
+            {
+              "top": "5",
+              "left": "3",
+              "right": "1"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q36",
+      "key_basis": "derived",
+      "rule": "4 is seen beside 5, 2, 6 and 3; turning the views onto one die leaves 1 across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q037",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Select the cube which cannot be formed on folding the given sheet.",
+        "options": {
+          "A": "A cube with + on top, % in front and @ on the right",
+          "B": "A cube with ! on top, % in front and 0 on the right",
+          "C": "A cube with + on top, − in front and @ on the right",
+          "D": "A cube with 0 on top, % in front and − on the right"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 0,
+                  "face": "0"
+                },
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "+"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "−"
+                },
+                {
+                  "r": 2,
+                  "c": 1,
+                  "face": "%"
+                },
+                {
+                  "r": 3,
+                  "c": 1,
+                  "face": "!"
+                },
+                {
+                  "r": 3,
+                  "c": 2,
+                  "face": "@"
+                }
+              ]
+            }
+          ]
+        },
+        "answerPanels": {
+          "A": {
+            "dice": {
+              "views": [
+                {
+                  "top": "+",
+                  "left": "%",
+                  "right": "@"
+                }
+              ]
+            }
+          },
+          "B": {
+            "dice": {
+              "views": [
+                {
+                  "top": "!",
+                  "left": "%",
+                  "right": "0"
+                }
+              ]
+            }
+          },
+          "C": {
+            "dice": {
+              "views": [
+                {
+                  "top": "+",
+                  "left": "−",
+                  "right": "@"
+                }
+              ]
+            }
+          },
+          "D": {
+            "dice": {
+              "views": [
+                {
+                  "top": "0",
+                  "left": "%",
+                  "right": "−"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q37",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it every way: + on top, % in front and @ on the right never comes out; the other three do.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q038",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Select the box which can be obtained by folding the following sheet (s) on the lines.",
+        "options": {
+          "A": "Only C",
+          "B": "A and C",
+          "C": "D and B",
+          "D": "Only A"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 0,
+                  "face": "5"
+                },
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "6"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "3"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "2"
+                },
+                {
+                  "r": 2,
+                  "c": 1,
+                  "face": "1"
+                },
+                {
+                  "r": 3,
+                  "c": 1,
+                  "face": "4"
+                }
+              ]
+            }
+          ],
+          "views": [
+            {
+              "top": "1",
+              "left": "4",
+              "right": "2",
+              "caption": "A"
+            },
+            {
+              "top": "4",
+              "left": "3",
+              "right": "2",
+              "caption": "B"
+            },
+            {
+              "top": "2",
+              "left": "3",
+              "right": "1",
+              "caption": "C"
+            },
+            {
+              "top": "1",
+              "left": "6",
+              "right": "2",
+              "caption": "D"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q38",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it to each cube: A and C come out the right way round; B and D cannot.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q039",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "The following is a non-standard open dice. Which two pages of the dice need to be intechanged to make a standard dice?",
+        "options": {
+          "A": "4, 3",
+          "B": "5, 6",
+          "C": "2, 3",
+          "D": "1, 5"
+        },
+        "key": "C",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "1"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "3"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "4"
+                },
+                {
+                  "r": 2,
+                  "c": 0,
+                  "face": "2"
+                },
+                {
+                  "r": 2,
+                  "c": 1,
+                  "face": "6"
+                },
+                {
+                  "r": 3,
+                  "c": 1,
+                  "face": "5"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q39",
+      "key_basis": "derived",
+      "rule": "On a standard die opposite faces add to 7. Folded as printed, 1 is across from 6, 2 from 4 and 3 from 5; swapping 2 and 3 makes 2 and 5, and 3 and 4, opposite, so every pair adds to 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q040",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "The given sheet is folded to form a cube. In the cube so formed, which number will be on the face opposite to the face showing the number '7'?",
+        "options": {
+          "A": "5",
+          "B": "6",
+          "C": "8",
+          "D": "4"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "4"
+                },
+                {
+                  "r": 1,
+                  "c": 0,
+                  "face": "8"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "5"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "6"
+                },
+                {
+                  "r": 2,
+                  "c": 1,
+                  "face": "3"
+                },
+                {
+                  "r": 3,
+                  "c": 1,
+                  "face": "7"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q40",
+      "key_basis": "derived",
+      "rule": "Folded, the sheet puts 7 across from 5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q041",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A box is made by folding the given sheet. in the box so formed, select the face that will be oppsite to the face having four dots.",
+        "options": {
+          "A": "Six dots",
+          "B": "Five dots",
+          "C": "Three dots",
+          "D": "One dot"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 3,
+                  "face": "pips:3"
+                },
+                {
+                  "r": 1,
+                  "c": 0,
+                  "face": "pips:1"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "pips:6"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "pips:2"
+                },
+                {
+                  "r": 1,
+                  "c": 3,
+                  "face": "pips:4"
+                },
+                {
+                  "r": 2,
+                  "c": 0,
+                  "face": "pips:5"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q41",
+      "key_basis": "derived",
+      "rule": "Folded, the sheet puts 4 dots across from 6 dots.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q045",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "The given sheet is folded into a cube. Which letter will be on the face opposite to the one showing 'P' in the cube thus formed?",
+        "options": {
+          "A": "H",
+          "B": "L",
+          "C": "K",
+          "D": "A"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 2,
+                  "face": "A"
+                },
+                {
+                  "r": 0,
+                  "c": 3,
+                  "face": "H"
+                },
+                {
+                  "r": 0,
+                  "c": 4,
+                  "face": "K"
+                },
+                {
+                  "r": 1,
+                  "c": 0,
+                  "face": "F"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "P"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "L"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q45",
+      "key_basis": "derived",
+      "rule": "Folded, the sheet puts P across from H.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q046",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "The given sheet is folded into a cube. In the cube thus formed, which of the following symbol pairs will not be on opposite faces?",
+        "options": {
+          "A": "$ and #",
+          "B": "@ and %",
+          "C": "& and $",
+          "D": "# and >"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 2,
+                  "face": "#"
+                },
+                {
+                  "r": 0,
+                  "c": 3,
+                  "face": "&"
+                },
+                {
+                  "r": 0,
+                  "c": 4,
+                  "face": ">"
+                },
+                {
+                  "r": 1,
+                  "c": 0,
+                  "face": "@"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "$"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "%"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p71 q46",
+      "key_basis": "derived",
+      "rule": "Folded, the sheet puts # and >, $ and & and % and @ on opposite faces.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q047",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "When the given sheet is folded to form a cube, which of the following pairs of symbols will be on the opposite faces?",
+        "options": {
+          "A": "% and +",
+          "B": "@ and &",
+          "C": "+ and @",
+          "D": "# and &"
+        },
+        "key": "C",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "%"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "@"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "$"
+                },
+                {
+                  "r": 2,
+                  "c": 1,
+                  "face": "#"
+                },
+                {
+                  "r": 3,
+                  "c": 0,
+                  "face": "&"
+                },
+                {
+                  "r": 3,
+                  "c": 1,
+                  "face": "+"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p72 q47",
+      "key_basis": "derived",
+      "rule": "Folded, the sheet puts $ and &, # and % and + and @ on opposite faces.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q048",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Select the dice which can be made by folding the given sheet in the form of a cube.",
+        "options": {
+          "A": "1 and 4 can be made",
+          "B": "Only 3 can be made",
+          "C": "Only 2 can be made.",
+          "D": "None can be made."
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 2,
+                  "face": "D"
+                },
+                {
+                  "r": 0,
+                  "c": 3,
+                  "face": "B"
+                },
+                {
+                  "r": 0,
+                  "c": 4,
+                  "face": "E"
+                },
+                {
+                  "r": 1,
+                  "c": 0,
+                  "face": "A"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "F"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "C"
+                }
+              ]
+            }
+          ],
+          "views": [
+            {
+              "top": "B",
+              "left": "A",
+              "right": "C",
+              "caption": "1"
+            },
+            {
+              "top": "D",
+              "left": "E",
+              "right": "F",
+              "caption": "2"
+            },
+            {
+              "top": "D",
+              "left": "C",
+              "right": "E",
+              "caption": "3"
+            },
+            {
+              "top": "F",
+              "left": "B",
+              "right": "D",
+              "caption": "4"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p72 q48",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it to each cube: none comes out the right way round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q049",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "The given sheet is folded into a cube. What will be the symbol ☆ on the opposite face of the cube thus formed?",
+        "options": {
+          "A": "⬠",
+          "B": "⬡",
+          "C": "□",
+          "D": "◇"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 0,
+                  "face": "◇"
+                },
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "⬡"
+                },
+                {
+                  "r": 0,
+                  "c": 2,
+                  "face": "△"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "⬠"
+                },
+                {
+                  "r": 2,
+                  "c": 1,
+                  "face": "□"
+                },
+                {
+                  "r": 3,
+                  "c": 1,
+                  "face": "☆"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p72 q49",
+      "key_basis": "derived",
+      "rule": "Folded, the sheet puts ☆ across from ⬠.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q050",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "If the given figure is folded to form a cube, what will be the symbol 8 on the opposite side?",
+        "options": {
+          "A": "%",
+          "B": "#",
+          "C": "$",
+          "D": "@"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "@"
+                },
+                {
+                  "r": 1,
+                  "c": 0,
+                  "face": "#"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "$"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "&"
+                },
+                {
+                  "r": 2,
+                  "c": 1,
+                  "face": "%"
+                },
+                {
+                  "r": 3,
+                  "c": 1,
+                  "face": "!"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p72 q50",
+      "key_basis": "derived",
+      "rule": "Folded, the sheet puts & across from #.",
+      "confidence": "medium",
+      "note": "The question prints \"symbol 8\"; the net has no 8, and & is read for it, as the two look alike in this type."
+    },
+    {
+      "id": "oir-agx-ch18-q051",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "The given sheet is folded into a cube. What will be the sign on the face opposite to the cube '+' thus formed?",
+        "options": {
+          "A": "%",
+          "B": "&",
+          "C": "$",
+          "D": "#"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 0,
+                  "face": "%"
+                },
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "*"
+                },
+                {
+                  "r": 0,
+                  "c": 2,
+                  "face": "#"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "&"
+                },
+                {
+                  "r": 2,
+                  "c": 1,
+                  "face": "$"
+                },
+                {
+                  "r": 3,
+                  "c": 1,
+                  "face": "+"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p72 q51",
+      "key_basis": "derived",
+      "rule": "Folded, the sheet puts + across from &.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q052",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Find out that a cube is formed by folding the given figure, which sign '◇' will come opposite to it.",
+        "options": {
+          "A": "□",
+          "B": "✡",
+          "C": "○",
+          "D": "▭"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 0,
+                  "face": "○"
+                },
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "◇"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "⬠"
+                },
+                {
+                  "r": 2,
+                  "c": 1,
+                  "face": "▭"
+                },
+                {
+                  "r": 3,
+                  "c": 1,
+                  "face": "✡"
+                },
+                {
+                  "r": 3,
+                  "c": 2,
+                  "face": "□"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p72 q52",
+      "key_basis": "derived",
+      "rule": "Folded, the sheet puts ◇ across from ▭.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q053",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Which of the following answer figures can be formed by folding the figure given in the question?",
+        "options": {
+          "A": "A cube with N on top, Q in front and P on the right",
+          "B": "A cube with N on top, P in front and R on the right",
+          "C": "A cube with Q on top, S in front and R on the right",
+          "D": "A cube with O on top, P in front and Q on the right"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 0,
+                  "face": "N"
+                },
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "S"
+                },
+                {
+                  "r": 0,
+                  "c": 2,
+                  "face": "O"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "Q"
+                },
+                {
+                  "r": 1,
+                  "c": 3,
+                  "face": "R"
+                },
+                {
+                  "r": 1,
+                  "c": 4,
+                  "face": "P"
+                }
+              ]
+            }
+          ]
+        },
+        "answerPanels": {
+          "A": {
+            "dice": {
+              "views": [
+                {
+                  "top": "N",
+                  "left": "Q",
+                  "right": "P"
+                }
+              ]
+            }
+          },
+          "B": {
+            "dice": {
+              "views": [
+                {
+                  "top": "N",
+                  "left": "P",
+                  "right": "R"
+                }
+              ]
+            }
+          },
+          "C": {
+            "dice": {
+              "views": [
+                {
+                  "top": "Q",
+                  "left": "S",
+                  "right": "R"
+                }
+              ]
+            }
+          },
+          "D": {
+            "dice": {
+              "views": [
+                {
+                  "top": "O",
+                  "left": "P",
+                  "right": "Q"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p72 q53",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it every way: only N on top, P in front and R on the right comes out, the right way round; the other cubes put together faces that fold apart, or show them the wrong way round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q055",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A sheet to fold into a cube, and four cubes.",
+        "options": {
+          "A": "A cube with a small square on top, a dot in front and a black face on the right",
+          "B": "A cube with a black top, a small square in front and a black face on the right",
+          "C": "A cube with a black top, a black front and a blank right face",
+          "D": "A cube with a blank top, a dot in front and a blank right face"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "direction": "Which of the following answer figure can be formed by folding the figure given in the question?",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 0,
+                  "face": "•"
+                },
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": ""
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "fill"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": ""
+                },
+                {
+                  "r": 2,
+                  "c": 2,
+                  "face": "□"
+                },
+                {
+                  "r": 2,
+                  "c": 3,
+                  "face": "fill"
+                }
+              ]
+            }
+          ]
+        },
+        "answerPanels": {
+          "A": {
+            "dice": {
+              "views": [
+                {
+                  "top": "□",
+                  "left": "•",
+                  "right": "fill"
+                }
+              ]
+            }
+          },
+          "B": {
+            "dice": {
+              "views": [
+                {
+                  "top": "fill",
+                  "left": "□",
+                  "right": "fill"
+                }
+              ]
+            }
+          },
+          "C": {
+            "dice": {
+              "views": [
+                {
+                  "top": "fill",
+                  "left": "fill",
+                  "right": ""
+                }
+              ]
+            }
+          },
+          "D": {
+            "dice": {
+              "views": [
+                {
+                  "top": "",
+                  "left": "•",
+                  "right": ""
+                }
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p72 q55",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it every way: only □ on top, • in front and a black face on the right comes out, the right way round; the other cubes put together faces that fold apart, or show them the wrong way round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q056",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A sheet to fold into a cube, and four cubes.",
+        "options": {
+          "A": "A cube with L on top, P in front and B on the right",
+          "B": "A cube with B on top, C in front and K on the right",
+          "C": "A cube with K on top, P in front and N on the right",
+          "D": "A cube with L on top, C in front and K on the right"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "direction": "Which of the following answer figure can be formed by folding the figure given in the question?",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 2,
+                  "face": "L"
+                },
+                {
+                  "r": 0,
+                  "c": 3,
+                  "face": "P"
+                },
+                {
+                  "r": 1,
+                  "c": 0,
+                  "face": "B"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "N"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "C"
+                },
+                {
+                  "r": 2,
+                  "c": 1,
+                  "face": "K"
+                }
+              ]
+            }
+          ]
+        },
+        "answerPanels": {
+          "A": {
+            "dice": {
+              "views": [
+                {
+                  "top": "L",
+                  "left": "P",
+                  "right": "B"
+                }
+              ]
+            }
+          },
+          "B": {
+            "dice": {
+              "views": [
+                {
+                  "top": "B",
+                  "left": "C",
+                  "right": "K"
+                }
+              ]
+            }
+          },
+          "C": {
+            "dice": {
+              "views": [
+                {
+                  "top": "K",
+                  "left": "P",
+                  "right": "N"
+                }
+              ]
+            }
+          },
+          "D": {
+            "dice": {
+              "views": [
+                {
+                  "top": "L",
+                  "left": "C",
+                  "right": "K"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p72 q56",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it every way: only L on top, P in front and B on the right comes out, the right way round; the other cubes put together faces that fold apart, or show them the wrong way round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q057",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A sheet to fold into a cube, and four cubes.",
+        "options": {
+          "A": "A cube with 6 on top, 5 in front and 4 on the right",
+          "B": "A cube with 1 on top, 2 in front and 4 on the right",
+          "C": "A cube with 2 on top, 3 in front and 1 on the right",
+          "D": "A cube with 3 on top, 5 in front and 2 on the right"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "direction": "Which of the following answer figure can be formed by folding the figure given in the question?",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "3"
+                },
+                {
+                  "r": 1,
+                  "c": 0,
+                  "face": "6"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "5"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "4"
+                },
+                {
+                  "r": 2,
+                  "c": 2,
+                  "face": "1"
+                },
+                {
+                  "r": 2,
+                  "c": 3,
+                  "face": "2"
+                }
+              ]
+            }
+          ]
+        },
+        "answerPanels": {
+          "A": {
+            "dice": {
+              "views": [
+                {
+                  "top": "6",
+                  "left": "5",
+                  "right": "4"
+                }
+              ]
+            }
+          },
+          "B": {
+            "dice": {
+              "views": [
+                {
+                  "top": "1",
+                  "left": "2",
+                  "right": "4"
+                }
+              ]
+            }
+          },
+          "C": {
+            "dice": {
+              "views": [
+                {
+                  "top": "2",
+                  "left": "3",
+                  "right": "1"
+                }
+              ]
+            }
+          },
+          "D": {
+            "dice": {
+              "views": [
+                {
+                  "top": "3",
+                  "left": "5",
+                  "right": "2"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p72 q57",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it every way: only 1 on top, 2 in front and 4 on the right comes out, the right way round; the other cubes put together faces that fold apart, or show them the wrong way round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q058",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A sheet to fold into a cube, and four cubes.",
+        "options": {
+          "A": "A cube with α on top, ∞ in front and β on the right",
+          "B": "A cube with ∞ on top, δ in front and θ on the right",
+          "C": "A cube with ψ on top, β in front and δ on the right",
+          "D": "A cube with β on top, θ in front and ψ on the right"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "direction": "Which of the following answer figure can be formed by folding the figure given in the question?",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 0,
+                  "face": "α"
+                },
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "∞"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "δ"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "β"
+                },
+                {
+                  "r": 2,
+                  "c": 2,
+                  "face": "θ"
+                },
+                {
+                  "r": 2,
+                  "c": 3,
+                  "face": "ψ"
+                }
+              ]
+            }
+          ]
+        },
+        "answerPanels": {
+          "A": {
+            "dice": {
+              "views": [
+                {
+                  "top": "α",
+                  "left": "∞",
+                  "right": "β"
+                }
+              ]
+            }
+          },
+          "B": {
+            "dice": {
+              "views": [
+                {
+                  "top": "∞",
+                  "left": "δ",
+                  "right": "θ"
+                }
+              ]
+            }
+          },
+          "C": {
+            "dice": {
+              "views": [
+                {
+                  "top": "ψ",
+                  "left": "β",
+                  "right": "δ"
+                }
+              ]
+            }
+          },
+          "D": {
+            "dice": {
+              "views": [
+                {
+                  "top": "β",
+                  "left": "θ",
+                  "right": "ψ"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p72 q58",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it every way: only β on top, θ in front and ψ on the right comes out, the right way round; the other cubes put together faces that fold apart, or show them the wrong way round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q059",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A sheet to fold into a cube, and four cubes.",
+        "options": {
+          "A": "A cube with X on top, Z in front and Q on the right",
+          "B": "A cube with X on top, Q in front and R on the right",
+          "C": "A cube with Z on top, Y in front and P on the right",
+          "D": "A cube with R on top, X in front and P on the right"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "direction": "Which of the following answer figure can be formed by folding the figure given in the question?",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "X"
+                },
+                {
+                  "r": 1,
+                  "c": 0,
+                  "face": "Y"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "Q"
+                },
+                {
+                  "r": 2,
+                  "c": 1,
+                  "face": "Z"
+                },
+                {
+                  "r": 2,
+                  "c": 2,
+                  "face": "P"
+                },
+                {
+                  "r": 3,
+                  "c": 2,
+                  "face": "R"
+                }
+              ]
+            }
+          ]
+        },
+        "answerPanels": {
+          "A": {
+            "dice": {
+              "views": [
+                {
+                  "top": "X",
+                  "left": "Z",
+                  "right": "Q"
+                }
+              ]
+            }
+          },
+          "B": {
+            "dice": {
+              "views": [
+                {
+                  "top": "X",
+                  "left": "Q",
+                  "right": "R"
+                }
+              ]
+            }
+          },
+          "C": {
+            "dice": {
+              "views": [
+                {
+                  "top": "Z",
+                  "left": "Y",
+                  "right": "P"
+                }
+              ]
+            }
+          },
+          "D": {
+            "dice": {
+              "views": [
+                {
+                  "top": "R",
+                  "left": "X",
+                  "right": "P"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p72 q59",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it every way: only R on top, X in front and P on the right comes out, the right way round; the other cubes put together faces that fold apart, or show them the wrong way round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q060",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A sheet to fold into a cube, and four cubes.",
+        "options": {
+          "A": "A cube with a black top, a black front and A on the right",
+          "B": "A cube with a black top, A in front and a crossed face on the right",
+          "C": "A cube with a blank top, a blank front and a crossed face on the right",
+          "D": "A cube with a blank top, a black front and a crossed face on the right"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "direction": "Which of the following answer figure can be formed by folding the figure given in the question?",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "cross"
+                },
+                {
+                  "r": 1,
+                  "c": 0,
+                  "face": ""
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "A"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": ""
+                },
+                {
+                  "r": 1,
+                  "c": 3,
+                  "face": "fill"
+                },
+                {
+                  "r": 2,
+                  "c": 2,
+                  "face": "fill"
+                }
+              ]
+            }
+          ]
+        },
+        "answerPanels": {
+          "A": {
+            "dice": {
+              "views": [
+                {
+                  "top": "fill",
+                  "left": "fill",
+                  "right": "A"
+                }
+              ]
+            }
+          },
+          "B": {
+            "dice": {
+              "views": [
+                {
+                  "top": "fill",
+                  "left": "A",
+                  "right": "cross"
+                }
+              ]
+            }
+          },
+          "C": {
+            "dice": {
+              "views": [
+                {
+                  "top": "",
+                  "left": "",
+                  "right": "cross"
+                }
+              ]
+            }
+          },
+          "D": {
+            "dice": {
+              "views": [
+                {
+                  "top": "",
+                  "left": "fill",
+                  "right": "cross"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p73 q60",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it every way: only a blank face on top, a black face in front and a crossed face on the right comes out, the right way round; the other cubes put together faces that fold apart, or show them the wrong way round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q061",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A sheet to fold into a cube, and four cubes.",
+        "options": {
+          "A": "A cube with a ring on top, a crossed face in front and a black dot on the right",
+          "B": "A cube with a blank top, + in front and a crossed face on the right",
+          "C": "A cube with a blank top, a black dot in front and a blank right face",
+          "D": "A cube with a blank top, a blank front and a ring on the right"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "direction": "Which of the following answer figure can be formed by folding the figure given in the question?",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 0,
+                  "face": ""
+                },
+                {
+                  "r": 1,
+                  "c": 0,
+                  "face": "+"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "●"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "cross"
+                },
+                {
+                  "r": 1,
+                  "c": 3,
+                  "face": ""
+                },
+                {
+                  "r": 2,
+                  "c": 3,
+                  "face": "○"
+                }
+              ]
+            }
+          ]
+        },
+        "answerPanels": {
+          "A": {
+            "dice": {
+              "views": [
+                {
+                  "top": "○",
+                  "left": "cross",
+                  "right": "●"
+                }
+              ]
+            }
+          },
+          "B": {
+            "dice": {
+              "views": [
+                {
+                  "top": "",
+                  "left": "+",
+                  "right": "cross"
+                }
+              ]
+            }
+          },
+          "C": {
+            "dice": {
+              "views": [
+                {
+                  "top": "",
+                  "left": "●",
+                  "right": ""
+                }
+              ]
+            }
+          },
+          "D": {
+            "dice": {
+              "views": [
+                {
+                  "top": "",
+                  "left": "",
+                  "right": "○"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p73 q61",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it every way: only ○ on top, a crossed face in front and ● on the right comes out, the right way round; the other cubes put together faces that fold apart, or show them the wrong way round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q063",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A sheet to fold into a cube, and four cubes.",
+        "options": {
+          "A": "I and II",
+          "B": "I and IV",
+          "C": "II and IV",
+          "D": "I, III and IV"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "direction": "Which of the following answer figure can be formed by folding the figure given in the question?",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 0,
+                  "face": "fill"
+                },
+                {
+                  "r": 1,
+                  "c": 0,
+                  "face": ""
+                },
+                {
+                  "r": 2,
+                  "c": 0,
+                  "face": "•"
+                },
+                {
+                  "r": 2,
+                  "c": 1,
+                  "face": ""
+                },
+                {
+                  "r": 3,
+                  "c": 1,
+                  "face": "fill"
+                },
+                {
+                  "r": 4,
+                  "c": 1,
+                  "face": ""
+                }
+              ]
+            }
+          ],
+          "views": [
+            {
+              "top": "•",
+              "left": "",
+              "right": "",
+              "caption": "I"
+            },
+            {
+              "top": "•",
+              "left": "fill",
+              "right": "fill",
+              "caption": "II"
+            },
+            {
+              "top": "fill",
+              "left": "",
+              "right": "•",
+              "caption": "III"
+            },
+            {
+              "top": "fill",
+              "left": "",
+              "right": "fill",
+              "caption": "IV"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p73 q63",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it to each cube: I, III and IV come out the right way round; II cannot.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q065",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two positions of a cube are shown. Which of the sheets can be folded into it?",
+        "options": {
+          "A": "Sheet A",
+          "B": "Sheet B",
+          "C": "Sheet C",
+          "D": "Sheet D"
+        },
+        "key": "A",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "L",
+              "left": "P",
+              "right": "O"
+            },
+            {
+              "top": "L",
+              "left": "Q",
+              "right": "N"
+            }
+          ]
+        },
+        "answerPanels": {
+          "A": {
+            "dice": {
+              "nets": [
+                {
+                  "cells": [
+                    {
+                      "r": 0,
+                      "c": 1,
+                      "face": "Q"
+                    },
+                    {
+                      "r": 1,
+                      "c": 0,
+                      "face": "N"
+                    },
+                    {
+                      "r": 1,
+                      "c": 1,
+                      "face": "L"
+                    },
+                    {
+                      "r": 1,
+                      "c": 2,
+                      "face": "O"
+                    },
+                    {
+                      "r": 2,
+                      "c": 1,
+                      "face": "P"
+                    },
+                    {
+                      "r": 3,
+                      "c": 1,
+                      "face": "M"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "B": {
+            "dice": {
+              "nets": [
+                {
+                  "cells": [
+                    {
+                      "r": 0,
+                      "c": 1,
+                      "face": "Q"
+                    },
+                    {
+                      "r": 1,
+                      "c": 0,
+                      "face": "O"
+                    },
+                    {
+                      "r": 1,
+                      "c": 1,
+                      "face": "M"
+                    },
+                    {
+                      "r": 1,
+                      "c": 2,
+                      "face": "P"
+                    },
+                    {
+                      "r": 2,
+                      "c": 1,
+                      "face": "N"
+                    },
+                    {
+                      "r": 3,
+                      "c": 1,
+                      "face": "L"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "C": {
+            "dice": {
+              "nets": [
+                {
+                  "cells": [
+                    {
+                      "r": 0,
+                      "c": 1,
+                      "face": "Q"
+                    },
+                    {
+                      "r": 1,
+                      "c": 0,
+                      "face": "P"
+                    },
+                    {
+                      "r": 1,
+                      "c": 1,
+                      "face": "L"
+                    },
+                    {
+                      "r": 1,
+                      "c": 2,
+                      "face": "O"
+                    },
+                    {
+                      "r": 2,
+                      "c": 1,
+                      "face": "N"
+                    },
+                    {
+                      "r": 3,
+                      "c": 1,
+                      "face": "M"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "D": {
+            "dice": {
+              "nets": [
+                {
+                  "cells": [
+                    {
+                      "r": 0,
+                      "c": 1,
+                      "face": "M"
+                    },
+                    {
+                      "r": 1,
+                      "c": 0,
+                      "face": "Q"
+                    },
+                    {
+                      "r": 1,
+                      "c": 1,
+                      "face": "O"
+                    },
+                    {
+                      "r": 1,
+                      "c": 2,
+                      "face": "L"
+                    },
+                    {
+                      "r": 2,
+                      "c": 1,
+                      "face": "N"
+                    },
+                    {
+                      "r": 3,
+                      "c": 1,
+                      "face": "P"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p73 q65",
+      "key_basis": "derived",
+      "rule": "Fold each sheet and turn it to both views: only sheet A shows L with P and O, and L with Q and N, the right way round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q066",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two positions of a cube are shown. Which of the sheets can be folded into it?",
+        "options": {
+          "A": "Sheet A",
+          "B": "Sheet B",
+          "C": "Sheet C",
+          "D": "Sheet D"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "$",
+              "left": "&",
+              "right": "@"
+            },
+            {
+              "top": "$",
+              "left": "#",
+              "right": "%"
+            }
+          ]
+        },
+        "answerPanels": {
+          "A": {
+            "dice": {
+              "nets": [
+                {
+                  "cells": [
+                    {
+                      "r": 0,
+                      "c": 1,
+                      "face": "&"
+                    },
+                    {
+                      "r": 1,
+                      "c": 0,
+                      "face": "@"
+                    },
+                    {
+                      "r": 1,
+                      "c": 1,
+                      "face": "#"
+                    },
+                    {
+                      "r": 1,
+                      "c": 2,
+                      "face": "%"
+                    },
+                    {
+                      "r": 2,
+                      "c": 1,
+                      "face": "$"
+                    },
+                    {
+                      "r": 3,
+                      "c": 1,
+                      "face": "G"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "B": {
+            "dice": {
+              "nets": [
+                {
+                  "cells": [
+                    {
+                      "r": 0,
+                      "c": 1,
+                      "face": "&"
+                    },
+                    {
+                      "r": 1,
+                      "c": 0,
+                      "face": "@"
+                    },
+                    {
+                      "r": 1,
+                      "c": 1,
+                      "face": "$"
+                    },
+                    {
+                      "r": 1,
+                      "c": 2,
+                      "face": "%"
+                    },
+                    {
+                      "r": 2,
+                      "c": 1,
+                      "face": "#"
+                    },
+                    {
+                      "r": 3,
+                      "c": 1,
+                      "face": "G"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "C": {
+            "dice": {
+              "nets": [
+                {
+                  "cells": [
+                    {
+                      "r": 0,
+                      "c": 1,
+                      "face": "%"
+                    },
+                    {
+                      "r": 1,
+                      "c": 0,
+                      "face": "$"
+                    },
+                    {
+                      "r": 1,
+                      "c": 1,
+                      "face": "&"
+                    },
+                    {
+                      "r": 1,
+                      "c": 2,
+                      "face": "#"
+                    },
+                    {
+                      "r": 2,
+                      "c": 1,
+                      "face": "@"
+                    },
+                    {
+                      "r": 3,
+                      "c": 1,
+                      "face": "$"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "D": {
+            "dice": {
+              "nets": [
+                {
+                  "cells": [
+                    {
+                      "r": 0,
+                      "c": 1,
+                      "face": "G"
+                    },
+                    {
+                      "r": 1,
+                      "c": 0,
+                      "face": "#"
+                    },
+                    {
+                      "r": 1,
+                      "c": 1,
+                      "face": "@"
+                    },
+                    {
+                      "r": 1,
+                      "c": 2,
+                      "face": "%"
+                    },
+                    {
+                      "r": 2,
+                      "c": 1,
+                      "face": "$"
+                    },
+                    {
+                      "r": 3,
+                      "c": 1,
+                      "face": "&"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p73 q66",
+      "key_basis": "derived",
+      "rule": "Fold each sheet and turn it to both views: only sheet B shows $ with & and @, and $ with # and %, the right way round. Sheet C prints $ twice and is no cube.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q067",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A sheet to fold into a cube, and four cubes.",
+        "options": {
+          "A": "only 1, 2 and 3",
+          "B": "All 1, 2, 3 and 4",
+          "C": "only 2 and 4",
+          "D": "only 1"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "direction": "Which of the following answer figure can be formed by folding the figure given in the question?",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 2,
+                  "face": "2"
+                },
+                {
+                  "r": 0,
+                  "c": 3,
+                  "face": ""
+                },
+                {
+                  "r": 0,
+                  "c": 4,
+                  "face": ""
+                },
+                {
+                  "r": 1,
+                  "c": 0,
+                  "face": "•"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "◇"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": ""
+                }
+              ]
+            }
+          ],
+          "views": [
+            {
+              "top": "◇",
+              "left": "",
+              "right": "",
+              "caption": "1"
+            },
+            {
+              "top": "",
+              "left": "◇",
+              "right": "•",
+              "caption": "2"
+            },
+            {
+              "top": "2",
+              "left": "",
+              "right": "•",
+              "caption": "3"
+            },
+            {
+              "top": "",
+              "left": "•",
+              "right": "2",
+              "caption": "4"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p73 q67",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it to each cube: 1, 2, 3 and 4 come out the right way round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q068",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A sheet to fold into a cube, and four cubes.",
+        "options": {
+          "A": "A cube with B on top, O in front and G on the right",
+          "B": "A cube with G on top, O in front and Y on the right",
+          "C": "A cube with G on top, Y in front and I on the right",
+          "D": "A cube with I on top, G in front and R on the right"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "direction": "Which of the following answer figure can be formed by folding the figure given in the question?",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 0,
+                  "face": "G"
+                },
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "B"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "Y"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "R"
+                },
+                {
+                  "r": 2,
+                  "c": 2,
+                  "face": "O"
+                },
+                {
+                  "r": 2,
+                  "c": 3,
+                  "face": "I"
+                }
+              ]
+            }
+          ]
+        },
+        "answerPanels": {
+          "A": {
+            "dice": {
+              "views": [
+                {
+                  "top": "B",
+                  "left": "O",
+                  "right": "G"
+                }
+              ]
+            }
+          },
+          "B": {
+            "dice": {
+              "views": [
+                {
+                  "top": "G",
+                  "left": "O",
+                  "right": "Y"
+                }
+              ]
+            }
+          },
+          "C": {
+            "dice": {
+              "views": [
+                {
+                  "top": "G",
+                  "left": "Y",
+                  "right": "I"
+                }
+              ]
+            }
+          },
+          "D": {
+            "dice": {
+              "views": [
+                {
+                  "top": "I",
+                  "left": "G",
+                  "right": "R"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p73 q68",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it every way: only G on top, O in front and Y on the right comes out, the right way round; the other cubes put together faces that fold apart, or show them the wrong way round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q072",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "In a given dice the marks '@', '#', '&' and '%' are marked on the adjacent faces in clockwise order, and the marks '* and $' are at the top and bottom respectively. If the '%' sign is at the top, which sign will be at the bottom?",
+        "options": {
+          "A": "@",
+          "B": "#",
+          "C": "&",
+          "D": "*"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "*",
+              "left": "@",
+              "right": "%"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p74 q72",
+      "key_basis": "derived",
+      "rule": "@, #, & and % run round the sides in order, so each lies across from the one two places on: % across from #. Turned so % is on top, # is at the bottom.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q074",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two positions of dice are shown below. Identify the number at the bottom when the top is '5'?",
+        "options": {
+          "A": "3",
+          "B": "2",
+          "C": "6",
+          "D": "4"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "3",
+              "left": "2",
+              "right": "4"
+            },
+            {
+              "top": "3",
+              "left": "6",
+              "right": "5"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p74 q74",
+      "key_basis": "derived",
+      "rule": "5 is seen beside 3 and 6; turning the views onto one die leaves 4 across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q075",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Two positions of a cube are as follows. Point out which number will be on the top if number 3 is at the bottom.",
+        "options": {
+          "A": "4",
+          "B": "5",
+          "C": "1",
+          "D": "6"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "4",
+              "left": "1",
+              "right": "3"
+            },
+            {
+              "top": "5",
+              "left": "3",
+              "right": "2"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p74 q75",
+      "key_basis": "derived",
+      "rule": "3 is seen beside 4, 1, 5 and 2; turning the views onto one die leaves 6 across from it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q077",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Which number is on the face opposite to face having number 1?",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        },
+        "key": "B",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "views": [
+            {
+              "top": "3",
+              "left": "2",
+              "right": "5"
+            },
+            {
+              "top": "2",
+              "left": "1",
+              "right": "4"
+            },
+            {
+              "top": "5",
+              "left": "6",
+              "right": "1"
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p74 q77",
+      "key_basis": "derived",
+      "rule": "1 is seen beside 2, 4, 5 and 6; striking out every face seen with it leaves 3 across from it.",
+      "confidence": "medium",
+      "note": "No real cube shows every view as drawn (one is in mirror image of another), so the face never seen beside 1 is keyed, as the exam reads it. The third cube is drawn from below; its faces 5, 6 and 1 are read as meeting at one corner."
+    },
+    {
+      "id": "oir-agx-ch18-q078",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Observe the dice. If the surface of the below given the are reconstructed to form a perfect as shown in the fig. How many dots lie opposite to the face having three dots?",
+        "options": {
+          "A": "2",
+          "B": "4",
+          "C": "5",
+          "D": "6"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 0,
+                  "face": "pips:6"
+                },
+                {
+                  "r": 1,
+                  "c": 0,
+                  "face": "pips:1"
+                },
+                {
+                  "r": 2,
+                  "c": 0,
+                  "face": "pips:3"
+                },
+                {
+                  "r": 2,
+                  "c": 1,
+                  "face": "pips:4"
+                },
+                {
+                  "r": 3,
+                  "c": 1,
+                  "face": "pips:2"
+                },
+                {
+                  "r": 4,
+                  "c": 1,
+                  "face": "pips:5"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p74 q78",
+      "key_basis": "derived",
+      "rule": "Folded, the sheet puts 3 dots across from 6 dots.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q079",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Which of the following cubes cannot be formed using the given cube net ?",
+        "options": {
+          "A": "A cube with P on top, A in front and C on the right",
+          "B": "A cube with 7 on top, B in front and P on the right",
+          "C": "A cube with 4 on top, 7 in front and C on the right",
+          "D": "A cube with B on top, 4 in front and C on the right"
+        },
+        "key": "D",
+        "reasoningType": "cubes_dice",
+        "dice": {
+          "nets": [
+            {
+              "cells": [
+                {
+                  "r": 0,
+                  "c": 1,
+                  "face": "A"
+                },
+                {
+                  "r": 1,
+                  "c": 1,
+                  "face": "4"
+                },
+                {
+                  "r": 1,
+                  "c": 2,
+                  "face": "C"
+                },
+                {
+                  "r": 2,
+                  "c": 0,
+                  "face": "B"
+                },
+                {
+                  "r": 2,
+                  "c": 1,
+                  "face": "7"
+                },
+                {
+                  "r": 3,
+                  "c": 1,
+                  "face": "P"
+                }
+              ]
+            }
+          ]
+        },
+        "answerPanels": {
+          "A": {
+            "dice": {
+              "views": [
+                {
+                  "top": "P",
+                  "left": "A",
+                  "right": "C"
+                }
+              ]
+            }
+          },
+          "B": {
+            "dice": {
+              "views": [
+                {
+                  "top": "7",
+                  "left": "B",
+                  "right": "P"
+                }
+              ]
+            }
+          },
+          "C": {
+            "dice": {
+              "views": [
+                {
+                  "top": "4",
+                  "left": "7",
+                  "right": "C"
+                }
+              ]
+            }
+          },
+          "D": {
+            "dice": {
+              "views": [
+                {
+                  "top": "B",
+                  "left": "4",
+                  "right": "C"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p74 q79",
+      "key_basis": "derived",
+      "rule": "Fold the sheet and turn it every way: B on top, 4 in front and C on the right never comes out; the other three do.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch18-q080",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A cube painted blue on all the faces is cut into 125 cubes of equal size. Then, how many cubes are not painted on any face ?",
+        "options": {
+          "A": "8",
+          "B": "16",
+          "C": "27",
+          "D": "54"
+        },
+        "key": "C",
+        "reasoningType": "cubes_dice"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch18 p74 q80",
+      "key_basis": "derived",
+      "rule": "125 cubes make a 5 × 5 × 5 block; the unpainted ones are the 3 × 3 × 3 inside: 27.",
       "confidence": "high"
     },
     {
