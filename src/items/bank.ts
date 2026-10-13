@@ -3,6 +3,8 @@ import { figureSchema } from './oir/figure.ts';
 import type { Figure } from './oir/figure.ts';
 import { diceSchema } from './oir/dice.ts';
 import type { DiceFigure } from './oir/dice.ts';
+import { glyphSchema } from './oir/mirror.ts';
+import type { Glyph } from './oir/mirror.ts';
 
 /**
  * The item bank — the `items` row of ARCHITECTURE.md §4, validated, and
@@ -41,6 +43,15 @@ export interface OirPayload {
   readonly figure?: Figure;
   /** Dice views and nets (D29), shown in place of `stem`, which describes them. */
   readonly dice?: DiceFigure;
+  /** Picture answers (D29): each option drawn, in the button; the option's text describes it for screen readers. */
+  readonly answerPanels?: Readonly<Record<OptionLabel, AnswerPanel>>;
+}
+
+/** One picture answer: exactly one of a figure, a dice drawing, or a row of glyphs. */
+export interface AnswerPanel {
+  readonly figure?: Figure;
+  readonly dice?: DiceFigure;
+  readonly glyphs?: readonly Glyph[];
 }
 
 export interface WatPayload {
@@ -69,6 +80,12 @@ export interface Item<P = unknown> {
 
 const optionLabel = z.enum(OPTION_LABELS);
 
+/** One picture answer: exactly one of a figure, a dice drawing, or a row of glyphs. */
+const answerPanel = z
+  .object({ figure: figureSchema.optional(), dice: diceSchema.optional(), glyphs: z.array(glyphSchema).min(1).optional() })
+  .strict()
+  .refine((p) => [p.figure, p.dice, p.glyphs].filter(Boolean).length === 1, 'a picture answer draws one thing');
+
 const oirPayload = z.object({
   stem: z.string().min(1),
   options: z.object({ A: z.string().min(1), B: z.string().min(1), C: z.string().min(1), D: z.string().min(1) }),
@@ -89,6 +106,8 @@ const oirPayload = z.object({
     .optional(),
   figure: figureSchema.optional(),
   dice: diceSchema.optional(),
+  answerPanels: z.object({ A: answerPanel, B: answerPanel, C: answerPanel, D: answerPanel }).strict()
+    .optional(),
 });
 
 const watPayload = z.object({ word: z.string().min(1), valence: z.string().optional() });

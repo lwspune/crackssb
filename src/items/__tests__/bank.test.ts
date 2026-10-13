@@ -66,6 +66,27 @@ describe('validateItem', () => {
     expect(() => validateItem({ ...item, payload: { ...item.payload, dice: {} } })).toThrow(/dice/);
   });
 
+  it('keeps picture answers, one per option, each a figure, a dice drawing or a row of glyphs (D29)', () => {
+    const item = { ...oir('nv3', 'mirror'), assessment_type: 'oir_nonverbal' as const };
+    const answerPanels = {
+      A: { glyphs: [{ ch: 'b', flip: 'x' }, { ch: 'a' }] },
+      B: { figure: { lines: [], circles: [[0, 0, 1]], labels: [[0, 0, 'A']] } },
+      C: { dice: { views: [{ top: '1', left: '2', right: '3' }] } },
+      D: { glyphs: [{ ch: 'a', flip: 'y' }] },
+    };
+    expect((validateItem({ ...item, payload: { ...item.payload, answerPanels } }).payload as OirPayload).answerPanels).toEqual(answerPanels);
+  });
+
+  it('refuses picture answers that miss an option, draw nothing, or draw two things in one panel', () => {
+    const item = { ...oir('nv4', 'mirror'), assessment_type: 'oir_nonverbal' as const };
+    const g = { glyphs: [{ ch: 'a' }] };
+    const bad = (answerPanels: unknown) => () => validateItem({ ...item, payload: { ...item.payload, answerPanels } });
+    expect(bad({ A: g, B: g, C: g })).toThrow(/answerPanels/);
+    expect(bad({ A: {}, B: g, C: g, D: g })).toThrow(/answerPanels/);
+    expect(bad({ A: { ...g, figure: { lines: [[0, 0, 1, 1]] } }, B: g, C: g, D: g })).toThrow(/answerPanels/);
+    expect(bad({ A: { glyphs: [{ ch: 'ab' }] }, B: g, C: g, D: g })).toThrow(/answerPanels/);
+  });
+
   it('every row of the seeded WAT bank validates as a payload', () => {
     const { items: rows } = JSON.parse(readFileSync('content/wat-items.json', 'utf8')) as { items: Array<{ payload: unknown }> };
     expect(rows.length).toBe(60);

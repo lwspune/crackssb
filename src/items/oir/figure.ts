@@ -14,8 +14,10 @@ import { z } from 'zod';
 export interface Figure {
   /** [x1, y1, x2, y2] per straight line. A figure of circles alone has none. */
   readonly lines: readonly (readonly [number, number, number, number])[];
-  /** [cx, cy, r] per circle. Drawn, never counted. */
+  /** [cx, cy, r] per circle. */
   readonly circles?: readonly (readonly [number, number, number])[];
+  /** [x, y, text]: a label centred at a point (a Venn class letter, a number on a face). */
+  readonly labels?: readonly (readonly [number, number, string])[];
 }
 
 const finite = z.number().finite();
@@ -23,11 +25,12 @@ const line = z
   .tuple([finite, finite, finite, finite])
   .refine(([x1, y1, x2, y2]) => Math.hypot(x2 - x1, y2 - y1) > 0, 'a line has length');
 const circle = z.tuple([finite, finite, finite]).refine(([, , r]) => r > 0, 'a circle has a radius');
+const label = z.tuple([finite, finite, z.string().min(1)]);
 
 export const figureSchema = z
-  .object({ lines: z.array(line), circles: z.array(circle).optional() })
+  .object({ lines: z.array(line), circles: z.array(circle).optional(), labels: z.array(label).optional() })
   .strict()
-  .refine((f) => f.lines.length + (f.circles?.length ?? 0) > 0, 'a figure draws something');
+  .refine((f) => f.lines.length + (f.circles?.length ?? 0) + (f.labels?.length ?? 0) > 0, 'a figure draws something');
 
 /** Throws, naming the field, on anything that is not a figure. */
 export function validateFigure(figure: unknown): Figure {
@@ -157,8 +160,8 @@ export const countSquares = (figure: Figure) => rectangles(figure).filter(({ w, 
 
 /** The box every line and circle sits in. */
 export function figureBounds(figure: Figure): { x: number; y: number; width: number; height: number } {
-  const xs = [...figure.lines.flatMap(([x1, , x2]) => [x1, x2]), ...(figure.circles ?? []).flatMap(([cx, , r]) => [cx - r, cx + r])];
-  const ys = [...figure.lines.flatMap(([, y1, , y2]) => [y1, y2]), ...(figure.circles ?? []).flatMap(([, cy, r]) => [cy - r, cy + r])];
+  const xs = [...figure.lines.flatMap(([x1, , x2]) => [x1, x2]), ...(figure.circles ?? []).flatMap(([cx, , r]) => [cx - r, cx + r]), ...(figure.labels ?? []).map(([x]) => x)];
+  const ys = [...figure.lines.flatMap(([, y1, , y2]) => [y1, y2]), ...(figure.circles ?? []).flatMap(([, cy, r]) => [cy - r, cy + r]), ...(figure.labels ?? []).map(([, y]) => y)];
   const [x, y] = [Math.min(...xs), Math.min(...ys)];
   return { x, y, width: Math.max(...xs) - x, height: Math.max(...ys) - y };
 }
@@ -226,3 +229,23 @@ export function countSemicircles(figure: Figure): number {
 
 /** Straight lines needed to draw the figure: collinear pieces that touch are one line. */
 export const countLines = (figure: Figure) => merge(figure.lines).length;
+
+export type CircleRelation = readonly ['apart' | 'overlap', number, number] | readonly ['inside', number, number];
+
+/**
+ * Each pair of circles, by index: apart, overlapping, or the first inside the
+ * second (['inside', inner, outer]). Touching counts as apart.
+ */
+export function circleRelations(figure: Figure): CircleRelation[] {
+  const cs = figure.circles ?? [];
+  const out: CircleRelation[] = [];
+  for (let i = 0; i < cs.length; i++) for (let j = i + 1; j < cs.length; j++) {
+    const [[x1, y1, r1], [x2, y2, r2]] = [cs[i], cs[j]];
+    const d = Math.hypot(x2 - x1, y2 - y1);
+    if (d >= r1 + r2) out.push(['apart', i, j]);
+    else if (d + r1 <= r2) out.push(['inside', i, j]);
+    else if (d + r2 <= r1) out.push(['inside', j, i]);
+    else out.push(['overlap', i, j]);
+  }
+  return out;
+}

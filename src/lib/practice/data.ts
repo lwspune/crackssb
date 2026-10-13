@@ -49,6 +49,7 @@ export async function loadChapterItems(client: SupabaseClient, reasoningType: st
     ...(payload.tables ? { tables: payload.tables } : {}),
     ...(payload.figure ? { figure: payload.figure } : {}),
     ...(payload.dice ? { dice: payload.dice } : {}),
+    ...(payload.answerPanels ? { answerPanels: payload.answerPanels } : {}),
   }));
 }
 

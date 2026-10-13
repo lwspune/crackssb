@@ -49,7 +49,7 @@ interface SourceFile {
   pages: [number, number];
   /** `text: null` when the chapter prints no direction; its questions then carry none. */
   directions: { section: string; text: string | null; passage?: string }[];
-  questions: { n: number; page: number; section: string; stem: string; options: Record<'A' | 'B' | 'C' | 'D', string>; tables?: string[][][]; figure?: unknown; dice?: unknown }[];
+  questions: { n: number; page: number; section: string; stem: string; options: Record<'A' | 'B' | 'C' | 'D', string>; tables?: string[][][]; figure?: unknown; dice?: unknown; answerPanels?: unknown }[];
 }
 
 /** One row per chapter ingested. `idPrefix` is permanent: an id, once seeded, never changes. */
@@ -119,6 +119,7 @@ for (const chapter of CHAPTERS) {
         ...(q.tables ? { tables: q.tables } : {}),
         ...(q.figure ? { figure: q.figure } : {}),
         ...(q.dice ? { dice: q.dice } : {}),
+        ...(q.answerPanels ? { answerPanels: q.answerPanels } : {}),
       },
       difficulty: UNRATED_DIFFICULTY,
       active: true,

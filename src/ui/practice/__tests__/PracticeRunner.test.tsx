@@ -212,4 +212,28 @@ describe('chapter practice', () => {
     expect(img.querySelector('[data-face="fill"]')?.getAttribute('fill')).toBe('currentColor');
     expect(screen.queryByText(dice.stem)).toBeNull();
   });
+
+  it('draws picture answers inside the option buttons, keeping each option described in words for screen readers (D29)', async () => {
+    const pictures: PracticeItem = {
+      id: 'pa1',
+      stem: 'Which is the mirror image of "ba"?',
+      options: { A: 'a b, both mirrored', B: 'b a, as printed', C: 'a circle', D: 'a die' },
+      answerPanels: {
+        A: { glyphs: [{ ch: 'a', flip: 'x' }, { ch: 'b', flip: 'x' }] },
+        B: { glyphs: [{ ch: 'b' }, { ch: 'a' }] },
+        C: { figure: { lines: [], circles: [[0, 0, 1]], labels: [[0, 0, 'P']] } },
+        D: { dice: { views: [{ top: '1', left: '2', right: '3' }] } },
+      },
+    };
+    render(<PracticeRunner items={[pictures]} answer={fakeAnswer()} doneHref="/practise/oir" />);
+    const a = screen.getByRole('button', { name: 'Option A, a b, both mirrored' });
+    const flipped = a.querySelectorAll('[data-glyph][data-flip="x"]');
+    expect(flipped).toHaveLength(2);
+    expect((flipped[0] as HTMLElement).style.transform).toBe('scaleX(-1)');
+    expect(screen.getByRole('button', { name: /^Option C/ }).querySelector('svg circle')).toBeTruthy();
+    expect(screen.getByRole('button', { name: /^Option C/ }).textContent).toContain('P');
+    expect(screen.getByRole('button', { name: /^Option D/ }).querySelector('[data-view]')).toBeTruthy();
+    expect(screen.queryByText('a b, both mirrored')).toBeNull();
+    expect(screen.getByRole('group', { name: 'Options' }).className).toMatch(/(^|\s)grid-cols-2(\s|$)/);
+  });
 });

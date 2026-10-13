@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { countCircles, countLines, countQuadrilaterals, countRectangles, countSemicircles, countSquares, countTriangles, figureBounds, validateFigure } from '../oir/figure.ts';
+import { circleRelations, countCircles, countLines, countQuadrilaterals, countRectangles, countSemicircles, countSquares, countTriangles, figureBounds, validateFigure } from '../oir/figure.ts';
 import type { Figure } from '../oir/figure.ts';
 
 /**
@@ -101,6 +101,20 @@ describe('countLines', () => {
   });
 });
 
+describe('circleRelations', () => {
+  it('reads each pair of circles as apart, overlapping, or one inside the other', () => {
+    const f = { lines: [], circles: [[0, 0, 5], [1, 0, 2], [20, 0, 3], [23, 0, 3]] as const };
+    expect(circleRelations(f)).toEqual([
+      ['inside', 1, 0],
+      ['apart', 0, 2],
+      ['apart', 0, 3],
+      ['apart', 1, 2],
+      ['apart', 1, 3],
+      ['overlap', 2, 3],
+    ]);
+  });
+});
+
 describe('figureBounds', () => {
   it('spans every line and circle', () => {
     expect(figureBounds({ lines: [[0, 0, 10, 4]], circles: [[5, 5, 6]] })).toEqual({ x: -1, y: -1, width: 12, height: 12 });
@@ -108,6 +122,11 @@ describe('figureBounds', () => {
 });
 
 describe('validateFigure', () => {
+  it('accepts text labels placed in the figure', () => {
+    expect(validateFigure({ lines: [], circles: [[0, 0, 1]], labels: [[0, 0, 'A']] }).labels).toEqual([[0, 0, 'A']]);
+    expect(() => validateFigure({ lines: [], labels: [[0, 0, '']] })).toThrow();
+  });
+
   it('accepts lines and circles of finite numbers, or circles alone', () => {
     expect(() => validateFigure({ lines: [[0, 0, 1, 1]], circles: [[0, 0, 2]] })).not.toThrow();
     expect(() => validateFigure({ lines: [], circles: [[0, 0, 2]] })).not.toThrow();

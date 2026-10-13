@@ -82,11 +82,16 @@ const Caption = ({ x, y, text }: { readonly x: number; readonly y: number; reado
 
 const SVG = { fill: 'none', stroke: 'currentColor', strokeWidth: 1.6, strokeLinejoin: 'round' as const, 'aria-hidden': true };
 
-export function DiceDrawing({ dice, label }: { readonly dice: DiceFigure; readonly label: string }) {
+/** With a label it is an image in its own right; `compact` draws it small and silent inside an answer button. */
+export function DiceDrawing({ dice, label, compact = false }: { readonly dice: DiceFigure; readonly label?: string; readonly compact?: boolean }) {
+  const viewHeight = compact ? 'h-20' : 'h-28';
   return (
-    <div role="img" aria-label={label} className="mt-4 flex flex-wrap items-end justify-center gap-4 text-foreground">
+    <div
+      {...(label ? { role: 'img', 'aria-label': label } : { 'aria-hidden': true })}
+      className={`flex flex-wrap items-end justify-center gap-4 text-foreground ${compact ? '' : 'mt-4'}`}
+    >
       {(dice.views ?? []).map((v, i) => (
-        <svg key={`v${i}`} data-view="" viewBox={`${-C - 0.12} -1.12 ${2 * C + 0.24} ${v.caption ? 2.65 : 2.24}`} className="h-28 w-auto" {...SVG}>
+        <svg key={`v${i}`} data-view="" viewBox={`${-C - 0.12} -1.12 ${2 * C + 0.24} ${v.caption ? 2.65 : 2.24}`} className={`${viewHeight} w-auto`} {...SVG}>
           <FaceMarks face={CUBE.top} label={v.top} size={1} />
           <FaceMarks face={CUBE.left} label={v.left} size={1} />
           <FaceMarks face={CUBE.right} label={v.right} size={1} />

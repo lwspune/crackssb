@@ -27,6 +27,8 @@ export interface SourceQuestion {
   readonly figure?: unknown;
   /** Dice views and nets (D29). */
   readonly dice?: unknown;
+  /** Picture answers, one per option (D29). */
+  readonly answerPanels?: unknown;
 }
 
 export interface SourceFile {
@@ -188,6 +190,7 @@ export function chapterSuite(spec: ChapterSpec): void {
         expect((item.payload as { tables?: unknown }).tables, `Q${q.n} tables`).toEqual(q.tables);
         expect((item.payload as { figure?: unknown }).figure, `Q${q.n} figure`).toEqual(q.figure);
         expect((item.payload as { dice?: unknown }).dice, `Q${q.n} dice`).toEqual(q.dice);
+        expect((item.payload as { answerPanels?: unknown }).answerPanels, `Q${q.n} answerPanels`).toEqual(q.answerPanels);
         expect(item.assessment_type, `Q${q.n}`).toBe(spec.assessmentType ?? 'oir_verbal');
         expect(item.key_basis).toBe('derived');
         expect(item.rule).toBe(k.rule);

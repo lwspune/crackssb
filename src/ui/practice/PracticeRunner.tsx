@@ -4,10 +4,12 @@ import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { OPTION_LABELS } from '@/items/bank.ts';
 import type { OptionLabel } from '@/items/bank.ts';
-import { figureBounds } from '@/items/oir/figure.ts';
 import type { Figure } from '@/items/oir/figure.ts';
 import type { DiceFigure } from '@/items/oir/dice.ts';
+import type { AnswerPanel } from '@/items/bank.ts';
+import { AnswerPanelDrawing } from './AnswerPanelDrawing.tsx';
 import { DiceDrawing } from './DiceDrawing.tsx';
+import { FigureDrawing } from './FigureDrawing.tsx';
 
 /**
  * Chapter practice (D26): one question at a time, untimed. The candidate
@@ -27,6 +29,8 @@ export interface PracticeItem {
   readonly figure?: Figure;
   /** Dice views and nets (D29), drawn in place of the stem; the stem describes them. */
   readonly dice?: DiceFigure;
+  /** Picture answers (D29), drawn in the option buttons; `options` keeps each described in words. */
+  readonly answerPanels?: Readonly<Record<OptionLabel, AnswerPanel>>;
   readonly options: Readonly<Record<OptionLabel, string>>;
 }
 
@@ -84,32 +88,6 @@ function PrintedTables({ tables }: { readonly tables: NonNullable<PracticeItem['
         </table>
       ))}
     </div>
-  );
-}
-
-/** A redrawn figure, in the text colour so it follows the theme; lines keep their width at any size. */
-function FigureDrawing({ figure, label }: { readonly figure: Figure; readonly label: string }) {
-  const b = figureBounds(figure);
-  const pad = Math.max(b.width, b.height) * 0.03;
-  return (
-    <svg
-      role="img"
-      aria-label={label}
-      viewBox={`${b.x - pad} ${b.y - pad} ${b.width + 2 * pad} ${b.height + 2 * pad}`}
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="mx-auto mt-4 block max-h-72 w-full max-w-md text-foreground"
-    >
-      {figure.lines.map(([x1, y1, x2, y2], i) => (
-        <line key={`l${i}`} x1={x1} y1={y1} x2={x2} y2={y2} vectorEffect="non-scaling-stroke" />
-      ))}
-      {(figure.circles ?? []).map(([cx, cy, r], i) => (
-        <circle key={`c${i}`} cx={cx} cy={cy} r={r} vectorEffect="non-scaling-stroke" />
-      ))}
-    </svg>
   );
 }
 
@@ -200,7 +178,7 @@ export function PracticeRunner({ items, answer, doneHref }: Props) {
   }
 
   const progress = ((index + (reveal ? 1 : 0)) / items.length) * 100;
-  const stacked = OPTION_LABELS.some((l) => item.options[l].length > HALF_WIDTH_CHARS);
+  const stacked = !item.answerPanels && OPTION_LABELS.some((l) => item.options[l].length > HALF_WIDTH_CHARS);
   const stemSize =
     isProse(item.stem)
       ? 'text-lg font-medium leading-relaxed sm:text-xl'
@@ -254,7 +232,13 @@ export function PracticeRunner({ items, answer, doneHref }: Props) {
                 <span aria-hidden="true" className={`grid size-8 shrink-0 place-items-center rounded-md text-sm font-bold ${badge}`}>
                   {label}
                 </span>
-                <span className="min-w-0 break-words text-lg font-medium tabular-nums">{item.options[label]}</span>
+                {item.answerPanels ? (
+                  <span className="flex min-w-0 flex-1 justify-center py-2">
+                    <AnswerPanelDrawing panel={item.answerPanels[label]} />
+                  </span>
+                ) : (
+                  <span className="min-w-0 break-words text-lg font-medium tabular-nums">{item.options[label]}</span>
+                )}
               </button>
             );
           })}
