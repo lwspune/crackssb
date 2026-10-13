@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { OPTION_LABELS } from '@/items/bank.ts';
 import type { OptionLabel } from '@/items/bank.ts';
+import { figureBounds } from '@/items/oir/figure.ts';
+import type { Figure } from '@/items/oir/figure.ts';
 
 /**
  * Chapter practice (D26): one question at a time, untimed. The candidate
@@ -19,6 +21,8 @@ export interface PracticeItem {
   readonly passage?: string;
   /** A number-grid question's printed tables, drawn in place of the stem. '' is a blank cell. */
   readonly tables?: readonly (readonly (readonly string[])[])[];
+  /** A redrawn figure (D29), drawn in place of the stem; the stem describes it for screen readers. */
+  readonly figure?: Figure;
   readonly options: Readonly<Record<OptionLabel, string>>;
 }
 
@@ -76,6 +80,32 @@ function PrintedTables({ tables }: { readonly tables: NonNullable<PracticeItem['
         </table>
       ))}
     </div>
+  );
+}
+
+/** A redrawn figure, in the text colour so it follows the theme; lines keep their width at any size. */
+function FigureDrawing({ figure, label }: { readonly figure: Figure; readonly label: string }) {
+  const b = figureBounds(figure);
+  const pad = Math.max(b.width, b.height) * 0.03;
+  return (
+    <svg
+      role="img"
+      aria-label={label}
+      viewBox={`${b.x - pad} ${b.y - pad} ${b.width + 2 * pad} ${b.height + 2 * pad}`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="mx-auto mt-4 block max-h-72 w-full max-w-md text-foreground"
+    >
+      {figure.lines.map(([x1, y1, x2, y2], i) => (
+        <line key={`l${i}`} x1={x1} y1={y1} x2={x2} y2={y2} vectorEffect="non-scaling-stroke" />
+      ))}
+      {(figure.circles ?? []).map(([cx, cy, r], i) => (
+        <circle key={`c${i}`} cx={cx} cy={cy} r={r} vectorEffect="non-scaling-stroke" />
+      ))}
+    </svg>
   );
 }
 
@@ -187,7 +217,13 @@ export function PracticeRunner({ items, answer, doneHref }: Props) {
         {item.direction && <p className="mt-3 text-sm text-muted-foreground">{item.direction}</p>}
         {item.passage && <p className="mt-3 whitespace-pre-line rounded-lg bg-secondary p-4 text-sm leading-relaxed text-secondary-foreground">{item.passage}</p>}
         <div ref={stemRef} tabIndex={-1} className="outline-none">
-          {item.tables ? <PrintedTables tables={item.tables} /> : <p className={`mt-2 whitespace-pre-line break-words tabular-nums ${stemSize}`}>{item.stem}</p>}
+          {item.figure ? (
+            <FigureDrawing figure={item.figure} label={item.stem} />
+          ) : item.tables ? (
+            <PrintedTables tables={item.tables} />
+          ) : (
+            <p className={`mt-2 whitespace-pre-line break-words tabular-nums ${stemSize}`}>{item.stem}</p>
+          )}
         </div>
 
         <div className={`mt-6 grid gap-3 ${stacked ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-2'}`} role="group" aria-label="Options">

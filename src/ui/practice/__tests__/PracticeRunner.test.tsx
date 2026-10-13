@@ -172,4 +172,19 @@ describe('chapter practice', () => {
     render(<PracticeRunner items={[lines]} answer={fakeAnswer()} doneHref="/practise/oir" />);
     expect(screen.getByText(/Which two signs/).className).toMatch(/whitespace-pre-line/);
   });
+
+  it('draws a redrawn figure in place of the stem, described by it for screen readers, in the text colour (D29)', () => {
+    const drawn: PracticeItem = {
+      id: 'f1',
+      stem: 'A triangle split by one line from its apex.',
+      figure: { lines: [[0, 10, 10, 10], [0, 10, 5, 0], [10, 10, 5, 0], [5, 0, 4, 10]], circles: [[5, 6, 3]] },
+      options: { A: '3', B: '4', C: '5', D: '6' },
+    };
+    render(<PracticeRunner items={[drawn]} answer={fakeAnswer()} doneHref="/practise/oir" />);
+    const img = screen.getByRole('img', { name: drawn.stem });
+    expect(img.querySelectorAll('line')).toHaveLength(4);
+    expect(img.querySelectorAll('circle')).toHaveLength(1);
+    expect(img.getAttribute('stroke')).toBe('currentColor');
+    expect(screen.queryByText(drawn.stem)).toBeNull();
+  });
 });

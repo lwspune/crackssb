@@ -23,6 +23,8 @@ export interface SourceQuestion {
   readonly renamed?: boolean;
   /** The printed tables of a number-grid question; `stem` holds the same numbers as text. */
   readonly tables?: readonly (readonly (readonly string[])[])[];
+  /** A redrawn figure (D29); `stem` describes it in words. */
+  readonly figure?: unknown;
 }
 
 export interface SourceFile {
@@ -48,6 +50,8 @@ export interface ChapterSpec {
   readonly reasoned: readonly number[];
   /** Exactly the questions whose printed direction is overridden. */
   readonly directionOverrides?: readonly number[];
+  /** Default 'oir_verbal'; a chapter of redrawn figures is 'oir_nonverbal' (D29). */
+  readonly assessmentType?: 'oir_verbal' | 'oir_nonverbal';
 }
 
 const idOf = (spec: ChapterSpec, n: number) => `${spec.idPrefix}-q${String(n).padStart(3, '0')}`;
@@ -180,6 +184,8 @@ export function chapterSuite(spec: ChapterSpec): void {
         expect(item.payload.direction, `Q${q.n}`).toBe(k.direction ?? section.text ?? undefined);
         expect((item.payload as { passage?: string }).passage, `Q${q.n} passage`).toBe(section.passage);
         expect((item.payload as { tables?: unknown }).tables, `Q${q.n} tables`).toEqual(q.tables);
+        expect((item.payload as { figure?: unknown }).figure, `Q${q.n} figure`).toEqual(q.figure);
+        expect(item.assessment_type, `Q${q.n}`).toBe(spec.assessmentType ?? 'oir_verbal');
         expect(item.key_basis).toBe('derived');
         expect(item.rule).toBe(k.rule);
         expect(item.source_ref).toBe(`ch${source.chapter} p${q.page} q${q.n}`);

@@ -48,11 +48,11 @@ interface SourceFile {
   pages: [number, number];
   /** `text: null` when the chapter prints no direction; its questions then carry none. */
   directions: { section: string; text: string | null; passage?: string }[];
-  questions: { n: number; page: number; section: string; stem: string; options: Record<'A' | 'B' | 'C' | 'D', string>; tables?: string[][][] }[];
+  questions: { n: number; page: number; section: string; stem: string; options: Record<'A' | 'B' | 'C' | 'D', string>; tables?: string[][][]; figure?: unknown }[];
 }
 
 /** One row per chapter ingested. `idPrefix` is permanent: an id, once seeded, never changes. */
-const CHAPTERS: { file: string; key: Readonly<Record<number, KeyEntry>>; reasoningType: string; idPrefix: string }[] = [
+const CHAPTERS: { file: string; key: Readonly<Record<number, KeyEntry>>; reasoningType: string; idPrefix: string; assessmentType?: 'oir_nonverbal' }[] = [
   { file: 'content/oir/agrawal-examcart/ch01-analogy.source.json', key: AGRAWAL_CH01_ANALOGY, reasoningType: 'analogy', idPrefix: 'oir-agx-ch01' },
   { file: 'content/oir/agrawal-examcart/ch02-classification.source.json', key: AGRAWAL_CH02_CLASSIFICATION, reasoningType: 'classification', idPrefix: 'oir-agx-ch02' },
   { file: 'content/oir/agrawal-examcart/ch03-coding-decoding.source.json', key: AGRAWAL_CH03_CODING_DECODING, reasoningType: 'coding', idPrefix: 'oir-agx-ch03' },
@@ -106,7 +106,7 @@ for (const chapter of CHAPTERS) {
     const direction = entry.direction ?? section.text;
     const item = {
       id: `${chapter.idPrefix}-q${String(q.n).padStart(3, '0')}`,
-      assessment_type: 'oir_verbal',
+      assessment_type: chapter.assessmentType ?? 'oir_verbal',
       payload: {
         stem: entry.stemFix ?? q.stem,
         options: q.options,
@@ -115,6 +115,7 @@ for (const chapter of CHAPTERS) {
         ...(direction ? { direction } : {}),
         ...(section.passage ? { passage: section.passage } : {}),
         ...(q.tables ? { tables: q.tables } : {}),
+        ...(q.figure ? { figure: q.figure } : {}),
       },
       difficulty: UNRATED_DIFFICULTY,
       active: true,

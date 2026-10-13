@@ -51,6 +51,14 @@ describe('validateItem', () => {
     expect(bad([[['', ''], ['', '']]])).toThrow(/tables/);
   });
 
+  it('keeps a redrawn figure on a non-verbal item, and refuses a malformed one (D29)', () => {
+    const item = { ...oir('nv1', 'counting_figures'), assessment_type: 'oir_nonverbal' as const };
+    const figure = { lines: [[0, 0, 10, 0], [10, 0, 5, 8], [5, 8, 0, 0]], circles: [[5, 3, 6]] };
+    expect((validateItem({ ...item, payload: { ...item.payload, figure } }).payload as OirPayload).figure).toEqual(figure);
+    expect(() => validateItem({ ...item, payload: { ...item.payload, figure: { lines: [] } } })).toThrow(/figure/);
+    expect(() => validateItem({ ...item, payload: { ...item.payload, figure: { lines: [[1, 1, 1, 1]] } } })).toThrow(/figure/);
+  });
+
   it('every row of the seeded WAT bank validates as a payload', () => {
     const { items: rows } = JSON.parse(readFileSync('content/wat-items.json', 'utf8')) as { items: Array<{ payload: unknown }> };
     expect(rows.length).toBe(60);

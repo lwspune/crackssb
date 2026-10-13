@@ -1,4 +1,6 @@
 import { z } from 'zod';
+import { figureSchema } from './oir/figure.ts';
+import type { Figure } from './oir/figure.ts';
 
 /**
  * The item bank — the `items` row of ARCHITECTURE.md §4, validated, and
@@ -33,6 +35,8 @@ export interface OirPayload {
    * undrawn. Shown in place of `stem`, which keeps the same numbers as text.
    */
   readonly tables?: readonly (readonly (readonly string[])[])[];
+  /** A redrawn figure (D29), shown in place of `stem`, which describes it in words. */
+  readonly figure?: Figure;
 }
 
 export interface WatPayload {
@@ -79,6 +83,7 @@ const oirPayload = z.object({
     )
     .min(1)
     .optional(),
+  figure: figureSchema.optional(),
 });
 
 const watPayload = z.object({ word: z.string().min(1), valence: z.string().optional() });
