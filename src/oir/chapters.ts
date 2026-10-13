@@ -34,6 +34,7 @@ export const OIR_CHAPTERS: readonly OirChapter[] = [
   { slug: 'venn', title: 'Venn Diagrams', reasoningType: 'venn', summary: 'Circles that show how classes relate' },
   { slug: 'syllogism', title: 'Syllogism', reasoningType: 'syllogism', summary: 'What follows from all, some and no' },
   { slug: 'cubes-dice', title: 'Cubes and Dice', reasoningType: 'cubes_dice', summary: 'Opposite faces, folded sheets, which cube fits' },
+  { slug: 'mirror-water', title: 'Mirror and Water Images', reasoningType: 'mirror_water', summary: 'Words and numbers as a mirror or water shows them' },
   { slug: 'counting-figures', title: 'Counting Figures', reasoningType: 'counting_figures', summary: 'Triangles, squares and circles in a drawing' },
 ];
 

@@ -1,0 +1,4111 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSR OIR 1-127 (phone photos of printed pages 1-127)",
+  "chapter": 25,
+  "title": "Mirror and Water Images",
+  "pages": [
+    109,
+    113
+  ],
+  "transcribed": "2026-10-13",
+  "note": "Only questions printed as text (letters, digits, arrows and triangles) are transcribed in full; drawn figures carry a one-line description and are held. A text question's options are stored twice: `answerPanels` holds each option glyph by glyph as printed, left to right, each glyph plain, flipped left to right (x), upside down (y) or turned half round (xy); `options` says the same in words for screen readers. Each glyph is written as the character of the question it stands for, with the flip that draws its printed shape. Where two flips draw the same shape for that character, the simpler is written: plain for a symmetric letter (A, O, T...), across rather than upside down for 3, B, C, D, E, K, and plain for N or S turned half round. Readings at the limit of the photos: Q12 A prints an undotted l where C prints i (the only difference between them). Q22 D's 1 shows no flag on its left, read as flipped. Q59: A, B and D print a serifed I where C prints a 1 upside down; A and B read the same glyph for glyph and differ in spacing only. Q37: the small a's left-right turn cannot be seen in the photo; it is read as flipped across in options A and D. Q27 A, B and D read the same glyph for glyph. Q24 B lies on the curve of the page. Q38: the B is read reversed in B and D and plain in A and C, at 22 times zoom. Q54 and Q58 B end in a round O that may be a zero; both look the same upside down. Q13 draws MN as a vertical mirror on the right, but its options are water images. Q58 B prints Q54's series in place of an image of SHARE. Q53 prints SEARCH in a frame shaped like an arrow, which is not transcribed. Q31 is a grid of letters and is held as a figure. Q55-57 print options (A) (a), (B) (b), (C) (d), (D) (d) under four figures a-d; they are held as figures. Q31 and Q50-60 each print their own question, kept as its direction. Q75 and Q76 follow the direction for Q61-74 in form, but no printed direction covers them.",
+  "directions": [
+    {
+      "section": "Q1-46",
+      "printed": "Direction (Q. No. 1 to 46)",
+      "text": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?"
+    },
+    {
+      "section": "Q47-49",
+      "printed": "Direction (Q. No. 47 to 49)",
+      "text": "Which of the answer figures is the exact mirror image of the given problem figure when the mirror is held at the right side ?"
+    },
+    {
+      "section": "Q61-74",
+      "printed": "Direction (Q. No. 61 to 74)",
+      "text": "In each question there is a question figure on the above and four answer figures marked (A), (B), (C) and (D) are given below. Select the answer figure which is exactly the mirror image of the question figure when the mirror is held at XY."
+    },
+    {
+      "section": "Q75-76",
+      "printed": null,
+      "text": null
+    },
+    {
+      "section": "Q31",
+      "printed": null,
+      "text": "Select the correct water image of the given figure."
+    },
+    {
+      "section": "Q50",
+      "printed": null,
+      "text": "Select the correct mirror image of the given figure when the mirror is placed at AB as shown."
+    },
+    {
+      "section": "Q51",
+      "printed": null,
+      "text": "Choose the correct mirror image of the figure (X) :"
+    },
+    {
+      "section": "Q52",
+      "printed": null,
+      "text": "Which of the following is the water image of 5374 ?"
+    },
+    {
+      "section": "Q53",
+      "printed": null,
+      "text": "What would be the water image of SEARCH ?"
+    },
+    {
+      "section": "Q54",
+      "printed": null,
+      "text": "Choose the alternative that resembles the water image of the given alpha-numeric series below:"
+    },
+    {
+      "section": "Q55",
+      "printed": null,
+      "text": "If you see the problem figure in the mirror along the dotted line, which figure out of the four figures a, b, c and d will be the mirror image of figure 'X' ?"
+    },
+    {
+      "section": "Q56",
+      "printed": null,
+      "text": "If you see the problem figure 'X' in the mirror, which figure ouf of the four figures a, b, c and d will be the mirror image of it ?"
+    },
+    {
+      "section": "Q57",
+      "printed": null,
+      "text": "If you see the problem figure in the mirror, which figure out of the four figures a, b, c and d will be the mirror image of figure 'X' ?"
+    },
+    {
+      "section": "Q58",
+      "printed": null,
+      "text": "If the given word is seen in mirror, which alternative would resemble its mirror image ?"
+    },
+    {
+      "section": "Q59",
+      "printed": null,
+      "text": "Choose the alternative that resembles the water image of the given word below :"
+    },
+    {
+      "section": "Q60",
+      "printed": null,
+      "text": "If the given alpha-numeric series is seen in mirror, which alternative would resemble its mirror image ?"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 109,
+      "section": "Q1-46",
+      "stem": "A figure question: a square with lines, a small circle, a letter P and small boxes in its corners, with the mirror line AB on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 2,
+      "page": 109,
+      "section": "Q1-46",
+      "stem": "A figure question: circles, a crossed box and small triangles in a square, with the mirror line AB on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 3,
+      "page": 109,
+      "section": "Q1-46",
+      "stem": "A figure question: a box with a pointed end holding rows of small black marks, with the mirror line AB on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 4,
+      "page": 109,
+      "section": "Q1-46",
+      "stem": "A figure question: black and white triangles and a black teardrop in a square, with the mirror line AB on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 5,
+      "page": 109,
+      "section": "Q1-46",
+      "stem": "A figure question: four curled hooks around a crossed box in a square, with the mirror line AB on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 6,
+      "page": 109,
+      "section": "Q1-46",
+      "stem": "A figure question: circles and small squares around the edges of a square, with the mirror line AB on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 7,
+      "page": 109,
+      "section": "Q1-46",
+      "stem": "A figure question: D shapes in the corners of a square around a circle, with the mirror line AB on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 8,
+      "page": 109,
+      "section": "Q1-46",
+      "stem": "A figure question: triangles in the corners of a square around circles and a crossed box, with the mirror line AB on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 9,
+      "page": 109,
+      "section": "Q1-46",
+      "stem": "A figure question: a grid of boxes with stripes and diagonals, with the mirror line AB on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 10,
+      "page": 109,
+      "section": "Q1-46",
+      "stem": "A figure question: a triangle with lines from its corners to its centre, in a square, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 11,
+      "page": 109,
+      "section": "Q1-46",
+      "stem": "hiEraRchY, with the mirror line MN on its right.",
+      "options": {
+        "A": "capital Y, small h reversed, small c reversed, capital R reversed, small a reversed, small r reversed, capital E reversed, small i, small h reversed",
+        "B": "small y reversed, small h reversed, small c reversed, capital R reversed, small a reversed, small r reversed, capital E reversed, small i, small h reversed",
+        "C": "capital Y, capital H, small c reversed, capital R reversed, small a reversed, capital R reversed, capital E reversed, small i, small h reversed",
+        "D": "capital Y, capital H, small c reversed, capital R reversed, small a reversed, small r reversed, capital E reversed, small i, small h reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "Y"
+            },
+            {
+              "ch": "h",
+              "flip": "x"
+            },
+            {
+              "ch": "c",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "r",
+              "flip": "x"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "i"
+            },
+            {
+              "ch": "h",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "y",
+              "flip": "x"
+            },
+            {
+              "ch": "h",
+              "flip": "x"
+            },
+            {
+              "ch": "c",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "r",
+              "flip": "x"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "i"
+            },
+            {
+              "ch": "h",
+              "flip": "x"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "Y"
+            },
+            {
+              "ch": "H"
+            },
+            {
+              "ch": "c",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "i"
+            },
+            {
+              "ch": "h",
+              "flip": "x"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "Y"
+            },
+            {
+              "ch": "H"
+            },
+            {
+              "ch": "c",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "r",
+              "flip": "x"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "i"
+            },
+            {
+              "ch": "h",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 12,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "fORmuLAtiOn, with the mirror line MN on its right.",
+      "options": {
+        "A": "small n reversed, capital O, small l, small t reversed, capital A, capital L reversed, small u reversed, small m reversed, capital R reversed, capital O, small f reversed",
+        "B": "small n reversed, small o, small i, small t reversed, small a reversed, capital L reversed, small u reversed, small m reversed, capital R reversed, capital O, small f reversed",
+        "C": "small n reversed, capital O, small i, small t reversed, capital A, capital L reversed, small u reversed, small m reversed, capital R reversed, capital O, small f reversed",
+        "D": "small n reversed, small o, small i, small t reversed, capital A, capital L reversed, small u reversed, small m reversed, capital R reversed, small o, small f reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "n",
+              "flip": "x"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "l"
+            },
+            {
+              "ch": "t",
+              "flip": "x"
+            },
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "L",
+              "flip": "x"
+            },
+            {
+              "ch": "u",
+              "flip": "x"
+            },
+            {
+              "ch": "m",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "f",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "n",
+              "flip": "x"
+            },
+            {
+              "ch": "o"
+            },
+            {
+              "ch": "i"
+            },
+            {
+              "ch": "t",
+              "flip": "x"
+            },
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "L",
+              "flip": "x"
+            },
+            {
+              "ch": "u",
+              "flip": "x"
+            },
+            {
+              "ch": "m",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "f",
+              "flip": "x"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "n",
+              "flip": "x"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "i"
+            },
+            {
+              "ch": "t",
+              "flip": "x"
+            },
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "L",
+              "flip": "x"
+            },
+            {
+              "ch": "u",
+              "flip": "x"
+            },
+            {
+              "ch": "m",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "f",
+              "flip": "x"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "n",
+              "flip": "x"
+            },
+            {
+              "ch": "o"
+            },
+            {
+              "ch": "i"
+            },
+            {
+              "ch": "t",
+              "flip": "x"
+            },
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "L",
+              "flip": "x"
+            },
+            {
+              "ch": "u",
+              "flip": "x"
+            },
+            {
+              "ch": "m",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "o"
+            },
+            {
+              "ch": "f",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 13,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "hmFa42, with the mirror line MN on its right.",
+      "options": {
+        "A": "small h upside down, small m upside down, capital F upside down, small a upside down, 4 upside down, 2 upside down",
+        "B": "2 reversed, 4 reversed, capital F, small a, small m, small h",
+        "C": "small h, small m, capital F, small a, 4, 2",
+        "D": "small h upside down, small m upside down, capital F upside down, small a upside down, 2 turned round, 4 turned round"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "h",
+              "flip": "y"
+            },
+            {
+              "ch": "m",
+              "flip": "y"
+            },
+            {
+              "ch": "F",
+              "flip": "y"
+            },
+            {
+              "ch": "a",
+              "flip": "y"
+            },
+            {
+              "ch": "4",
+              "flip": "y"
+            },
+            {
+              "ch": "2",
+              "flip": "y"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "2",
+              "flip": "x"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "F"
+            },
+            {
+              "ch": "a"
+            },
+            {
+              "ch": "m"
+            },
+            {
+              "ch": "h"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "h"
+            },
+            {
+              "ch": "m"
+            },
+            {
+              "ch": "F"
+            },
+            {
+              "ch": "a"
+            },
+            {
+              "ch": "4"
+            },
+            {
+              "ch": "2"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "h",
+              "flip": "y"
+            },
+            {
+              "ch": "m",
+              "flip": "y"
+            },
+            {
+              "ch": "F",
+              "flip": "y"
+            },
+            {
+              "ch": "a",
+              "flip": "y"
+            },
+            {
+              "ch": "2",
+              "flip": "xy"
+            },
+            {
+              "ch": "4",
+              "flip": "xy"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 14,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "Pardt32, with the mirror line MN on its right.",
+      "options": {
+        "A": "capital P upside down, small a upside down, small r upside down, small d, small t, 3, 2 upside down",
+        "B": "capital P upside down, small a upside down, small r upside down, small d upside down, small t upside down, 3, 2 upside down",
+        "C": "2 reversed, 3 reversed, small t reversed, small d reversed, small r turned round, small a turned round, capital P turned round",
+        "D": "2 reversed, 3, small t reversed, small d reversed, small r reversed, small a reversed, capital P"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "P",
+              "flip": "y"
+            },
+            {
+              "ch": "a",
+              "flip": "y"
+            },
+            {
+              "ch": "r",
+              "flip": "y"
+            },
+            {
+              "ch": "d"
+            },
+            {
+              "ch": "t"
+            },
+            {
+              "ch": "3"
+            },
+            {
+              "ch": "2",
+              "flip": "y"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "P",
+              "flip": "y"
+            },
+            {
+              "ch": "a",
+              "flip": "y"
+            },
+            {
+              "ch": "r",
+              "flip": "y"
+            },
+            {
+              "ch": "d",
+              "flip": "y"
+            },
+            {
+              "ch": "t",
+              "flip": "y"
+            },
+            {
+              "ch": "3"
+            },
+            {
+              "ch": "2",
+              "flip": "y"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "2",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "t",
+              "flip": "x"
+            },
+            {
+              "ch": "d",
+              "flip": "x"
+            },
+            {
+              "ch": "r",
+              "flip": "xy"
+            },
+            {
+              "ch": "a",
+              "flip": "xy"
+            },
+            {
+              "ch": "P",
+              "flip": "xy"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "2",
+              "flip": "x"
+            },
+            {
+              "ch": "3"
+            },
+            {
+              "ch": "t",
+              "flip": "x"
+            },
+            {
+              "ch": "d",
+              "flip": "x"
+            },
+            {
+              "ch": "r",
+              "flip": "x"
+            },
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "P"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 15,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "yd46A5, with the mirror line MN on its right.",
+      "options": {
+        "A": "5 reversed, capital A, 6 reversed, 4 reversed, small y, small d turned round",
+        "B": "5 turned round, capital A upside down, 6 turned round, 4 turned round, small y upside down, small d reversed",
+        "C": "5 turned round, capital A upside down, 6 reversed, 4 reversed, small d reversed, small y reversed",
+        "D": "5 reversed, capital A, 6 reversed, 4 reversed, small d reversed, small y reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "5",
+              "flip": "x"
+            },
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "6",
+              "flip": "x"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "y"
+            },
+            {
+              "ch": "d",
+              "flip": "xy"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "5",
+              "flip": "xy"
+            },
+            {
+              "ch": "A",
+              "flip": "y"
+            },
+            {
+              "ch": "6",
+              "flip": "xy"
+            },
+            {
+              "ch": "4",
+              "flip": "xy"
+            },
+            {
+              "ch": "y",
+              "flip": "y"
+            },
+            {
+              "ch": "d",
+              "flip": "x"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "5",
+              "flip": "xy"
+            },
+            {
+              "ch": "A",
+              "flip": "y"
+            },
+            {
+              "ch": "6",
+              "flip": "x"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "d",
+              "flip": "x"
+            },
+            {
+              "ch": "y",
+              "flip": "x"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "5",
+              "flip": "x"
+            },
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "6",
+              "flip": "x"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "d",
+              "flip": "x"
+            },
+            {
+              "ch": "y",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 16,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "47RaNe, with the mirror line MN on its right.",
+      "options": {
+        "A": "small e turned round, capital N, small a turned round, capital R turned round, 7 turned round, 4 turned round",
+        "B": "small e reversed, capital N reversed, small a reversed, capital R reversed, 7 turned round, 4 turned round",
+        "C": "small e turned round, capital N, small a turned round, capital R turned round, 7 reversed, 4 reversed",
+        "D": "small e, capital N reversed, small a, capital R reversed, 7 reversed, 4 reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "e",
+              "flip": "xy"
+            },
+            {
+              "ch": "N"
+            },
+            {
+              "ch": "a",
+              "flip": "xy"
+            },
+            {
+              "ch": "R",
+              "flip": "xy"
+            },
+            {
+              "ch": "7",
+              "flip": "xy"
+            },
+            {
+              "ch": "4",
+              "flip": "xy"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "e",
+              "flip": "x"
+            },
+            {
+              "ch": "N",
+              "flip": "x"
+            },
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "7",
+              "flip": "xy"
+            },
+            {
+              "ch": "4",
+              "flip": "xy"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "e",
+              "flip": "xy"
+            },
+            {
+              "ch": "N"
+            },
+            {
+              "ch": "a",
+              "flip": "xy"
+            },
+            {
+              "ch": "R",
+              "flip": "xy"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "e"
+            },
+            {
+              "ch": "N",
+              "flip": "x"
+            },
+            {
+              "ch": "a"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 17,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "A figure question: a square cut by diagonals, with a small black rectangle, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 18,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "A figure question: a square divided into four, with slanting lines and a black dot, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 19,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "A figure question: a square with a pointed notch and a small black rectangle, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 20,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "A figure question: a square with a line across its top and a diagonal ending in a dot, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 21,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "A figure question: a stepped line with a small black square and a dot, in a square, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 22,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "14693, with the mirror line MN on its right.",
+      "options": {
+        "A": "1 reversed, 4, 6 reversed, 9 reversed, 3 reversed",
+        "B": "3, 9, 6, 4 reversed, 1",
+        "C": "1, 4, 6 reversed, 9, 3",
+        "D": "3 reversed, 9 reversed, 6 reversed, 4 reversed, 1 reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "1",
+              "flip": "x"
+            },
+            {
+              "ch": "4"
+            },
+            {
+              "ch": "6",
+              "flip": "x"
+            },
+            {
+              "ch": "9",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "3"
+            },
+            {
+              "ch": "9"
+            },
+            {
+              "ch": "6"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "1"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "1"
+            },
+            {
+              "ch": "4"
+            },
+            {
+              "ch": "6",
+              "flip": "x"
+            },
+            {
+              "ch": "9"
+            },
+            {
+              "ch": "3"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "9",
+              "flip": "x"
+            },
+            {
+              "ch": "6",
+              "flip": "x"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "1",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 23,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "HOTEL, with the mirror line MN on its right.",
+      "options": {
+        "A": "capital H, capital O, capital T upside down, capital E, capital L",
+        "B": "capital H, capital O, capital T upside down, capital E reversed, capital L reversed",
+        "C": "capital L reversed, capital E reversed, capital T, capital O, capital H",
+        "D": "capital L, capital E reversed, capital T, capital O, capital H"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "H"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "T",
+              "flip": "y"
+            },
+            {
+              "ch": "E"
+            },
+            {
+              "ch": "L"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "H"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "T",
+              "flip": "y"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "L",
+              "flip": "x"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "L",
+              "flip": "x"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "T"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "H"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "L"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "T"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "H"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 24,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "BURGER, with the mirror line MN on its right.",
+      "options": {
+        "A": "capital R reversed, capital E, capital G reversed, capital R reversed, capital U, capital B reversed",
+        "B": "capital B reversed, capital U upside down, capital R turned round, capital G turned round, capital E reversed, capital R turned round",
+        "C": "capital R reversed, capital E reversed, capital G reversed, capital R reversed, capital U, capital B reversed",
+        "D": "capital B, capital G, capital E reversed, capital R reversed, capital U, capital B"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "E"
+            },
+            {
+              "ch": "G",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "U"
+            },
+            {
+              "ch": "B",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "B",
+              "flip": "x"
+            },
+            {
+              "ch": "U",
+              "flip": "y"
+            },
+            {
+              "ch": "R",
+              "flip": "xy"
+            },
+            {
+              "ch": "G",
+              "flip": "xy"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "xy"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "G",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "U"
+            },
+            {
+              "ch": "B",
+              "flip": "x"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "B"
+            },
+            {
+              "ch": "G"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "U"
+            },
+            {
+              "ch": "B"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 25,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "LION, with the mirror line MN on its right.",
+      "options": {
+        "A": "capital N reversed, capital O, capital I, capital L reversed",
+        "B": "capital N, capital O, capital I, capital L reversed",
+        "C": "capital L turned round, capital I, capital O, capital N",
+        "D": "capital L turned round, capital I, capital O, capital N reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "N",
+              "flip": "x"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "I"
+            },
+            {
+              "ch": "L",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "N"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "I"
+            },
+            {
+              "ch": "L",
+              "flip": "x"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "L",
+              "flip": "xy"
+            },
+            {
+              "ch": "I"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "N"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "L",
+              "flip": "xy"
+            },
+            {
+              "ch": "I"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "N",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 26,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "TOY, with the mirror line MN on its right.",
+      "options": {
+        "A": "capital T upside down, capital O, capital Y",
+        "B": "capital T, capital O, capital Y",
+        "C": "capital Y, capital O, capital T",
+        "D": "capital Y, capital O, capital T upside down"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "T",
+              "flip": "y"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "Y"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "T"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "Y"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "Y"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "T"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "Y"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "T",
+              "flip": "y"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 27,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "T1CXZ, with the mirror line MN on its right.",
+      "options": {
+        "A": "capital Z reversed, capital X, capital C reversed, 1 reversed, capital T",
+        "B": "capital Z reversed, capital X, capital C reversed, 1 reversed, capital T",
+        "C": "capital Z reversed, capital X, capital C reversed, 1 reversed, capital T upside down",
+        "D": "capital Z reversed, capital X, capital C reversed, 1 reversed, capital T"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "Z",
+              "flip": "x"
+            },
+            {
+              "ch": "X"
+            },
+            {
+              "ch": "C",
+              "flip": "x"
+            },
+            {
+              "ch": "1",
+              "flip": "x"
+            },
+            {
+              "ch": "T"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "Z",
+              "flip": "x"
+            },
+            {
+              "ch": "X"
+            },
+            {
+              "ch": "C",
+              "flip": "x"
+            },
+            {
+              "ch": "1",
+              "flip": "x"
+            },
+            {
+              "ch": "T"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "Z",
+              "flip": "x"
+            },
+            {
+              "ch": "X"
+            },
+            {
+              "ch": "C",
+              "flip": "x"
+            },
+            {
+              "ch": "1",
+              "flip": "x"
+            },
+            {
+              "ch": "T",
+              "flip": "y"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "Z",
+              "flip": "x"
+            },
+            {
+              "ch": "X"
+            },
+            {
+              "ch": "C",
+              "flip": "x"
+            },
+            {
+              "ch": "1",
+              "flip": "x"
+            },
+            {
+              "ch": "T"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 28,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "A figure question: two boxes in a frame, one with an arrow and one with a diagonal, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 29,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "Lj3r4pa, with the mirror line MN on its right.",
+      "options": {
+        "A": "small a reversed, small p reversed, 4 reversed, small r reversed, 3 reversed, small j reversed, capital L reversed",
+        "B": "small a reversed, small p turned round, 4 reversed, small r, 3 reversed, small j reversed, capital L reversed",
+        "C": "small a reversed, small p reversed, 4, small r reversed, 3, small j reversed, capital L reversed",
+        "D": "small p, small a reversed, 4 reversed, small r reversed, 3 reversed, small j reversed, capital L reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "p",
+              "flip": "x"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "r",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "j",
+              "flip": "x"
+            },
+            {
+              "ch": "L",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "p",
+              "flip": "xy"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "r"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "j",
+              "flip": "x"
+            },
+            {
+              "ch": "L",
+              "flip": "x"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "p",
+              "flip": "x"
+            },
+            {
+              "ch": "4"
+            },
+            {
+              "ch": "r",
+              "flip": "x"
+            },
+            {
+              "ch": "3"
+            },
+            {
+              "ch": "j",
+              "flip": "x"
+            },
+            {
+              "ch": "L",
+              "flip": "x"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "p"
+            },
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "r",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "j",
+              "flip": "x"
+            },
+            {
+              "ch": "L",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 30,
+      "page": 110,
+      "section": "Q1-46",
+      "stem": "Dh57erk, with the mirror line MN on its right.",
+      "options": {
+        "A": "small k reversed, small r turned round, small e reversed, 7 reversed, 5 reversed, small h reversed, capital D reversed",
+        "B": "small k reversed, small r reversed, small e reversed, 7 reversed, 5 reversed, small h turned round, capital D reversed",
+        "C": "small k reversed, small r reversed, small e reversed, 7 reversed, 5 reversed, small h reversed, capital D reversed",
+        "D": "small k reversed, small r reversed, small e reversed, 7, 5, small h reversed, capital D reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "k",
+              "flip": "x"
+            },
+            {
+              "ch": "r",
+              "flip": "xy"
+            },
+            {
+              "ch": "e",
+              "flip": "x"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            },
+            {
+              "ch": "5",
+              "flip": "x"
+            },
+            {
+              "ch": "h",
+              "flip": "x"
+            },
+            {
+              "ch": "D",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "k",
+              "flip": "x"
+            },
+            {
+              "ch": "r",
+              "flip": "x"
+            },
+            {
+              "ch": "e",
+              "flip": "x"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            },
+            {
+              "ch": "5",
+              "flip": "x"
+            },
+            {
+              "ch": "h",
+              "flip": "xy"
+            },
+            {
+              "ch": "D",
+              "flip": "x"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "k",
+              "flip": "x"
+            },
+            {
+              "ch": "r",
+              "flip": "x"
+            },
+            {
+              "ch": "e",
+              "flip": "x"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            },
+            {
+              "ch": "5",
+              "flip": "x"
+            },
+            {
+              "ch": "h",
+              "flip": "x"
+            },
+            {
+              "ch": "D",
+              "flip": "x"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "k",
+              "flip": "x"
+            },
+            {
+              "ch": "r",
+              "flip": "x"
+            },
+            {
+              "ch": "e",
+              "flip": "x"
+            },
+            {
+              "ch": "7"
+            },
+            {
+              "ch": "5"
+            },
+            {
+              "ch": "h",
+              "flip": "x"
+            },
+            {
+              "ch": "D",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 31,
+      "page": 110,
+      "section": "Q31",
+      "stem": "A figure question: the letters G, J, D, Y, T and R in a box of three rows and two columns.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 32,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "L27Acf, with the mirror line MN on its right.",
+      "options": {
+        "A": "small f reversed, small c reversed, capital A, 2, 7, capital L reversed",
+        "B": "small f reversed, small c reversed, capital A upside down, 7 reversed, 2 reversed, capital L reversed",
+        "C": "small f turned round, small c turned round, capital A, 7 turned round, 2 turned round, capital L turned round",
+        "D": "small f reversed, small c reversed, capital A, 7 reversed, 2 reversed, capital L reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "f",
+              "flip": "x"
+            },
+            {
+              "ch": "c",
+              "flip": "x"
+            },
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "2"
+            },
+            {
+              "ch": "7"
+            },
+            {
+              "ch": "L",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "f",
+              "flip": "x"
+            },
+            {
+              "ch": "c",
+              "flip": "x"
+            },
+            {
+              "ch": "A",
+              "flip": "y"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            },
+            {
+              "ch": "2",
+              "flip": "x"
+            },
+            {
+              "ch": "L",
+              "flip": "x"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "f",
+              "flip": "xy"
+            },
+            {
+              "ch": "c",
+              "flip": "xy"
+            },
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "7",
+              "flip": "xy"
+            },
+            {
+              "ch": "2",
+              "flip": "xy"
+            },
+            {
+              "ch": "L",
+              "flip": "xy"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "f",
+              "flip": "x"
+            },
+            {
+              "ch": "c",
+              "flip": "x"
+            },
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            },
+            {
+              "ch": "2",
+              "flip": "x"
+            },
+            {
+              "ch": "L",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 33,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "RkgEyw, with the mirror line MN on its right.",
+      "options": {
+        "A": "small w, small y reversed, capital E reversed, small g reversed, small k reversed, capital R reversed",
+        "B": "small w upside down, small y turned round, capital E reversed, small g turned round, small k turned round, capital R turned round",
+        "C": "small w upside down, small y reversed, capital E, small g reversed, small k reversed, capital R reversed",
+        "D": "small y, small w, capital E reversed, small g reversed, small k reversed, capital R"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "w"
+            },
+            {
+              "ch": "y",
+              "flip": "x"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "g",
+              "flip": "x"
+            },
+            {
+              "ch": "k",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "w",
+              "flip": "y"
+            },
+            {
+              "ch": "y",
+              "flip": "xy"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "g",
+              "flip": "xy"
+            },
+            {
+              "ch": "k",
+              "flip": "xy"
+            },
+            {
+              "ch": "R",
+              "flip": "xy"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "w",
+              "flip": "y"
+            },
+            {
+              "ch": "y",
+              "flip": "x"
+            },
+            {
+              "ch": "E"
+            },
+            {
+              "ch": "g",
+              "flip": "x"
+            },
+            {
+              "ch": "k",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "y"
+            },
+            {
+              "ch": "w"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "g",
+              "flip": "x"
+            },
+            {
+              "ch": "k",
+              "flip": "x"
+            },
+            {
+              "ch": "R"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 34,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "A figure question: a stick-figure robot in a square, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 35,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "7GJ3de, with the mirror line MN on its right.",
+      "options": {
+        "A": "small e reversed, small d reversed, 3 reversed, capital J reversed, capital G reversed, 7 reversed",
+        "B": "small e reversed, small d, 3 reversed, capital J reversed, capital G reversed, 7 reversed",
+        "C": "small e reversed, small d reversed, 3, capital J reversed, capital G turned round, 7 reversed",
+        "D": "small e reversed, small d reversed, 3 reversed, capital J reversed, capital G reversed, 7 reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "e",
+              "flip": "x"
+            },
+            {
+              "ch": "d",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "J",
+              "flip": "x"
+            },
+            {
+              "ch": "G",
+              "flip": "x"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "e",
+              "flip": "x"
+            },
+            {
+              "ch": "d"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "J",
+              "flip": "x"
+            },
+            {
+              "ch": "G",
+              "flip": "x"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "e",
+              "flip": "x"
+            },
+            {
+              "ch": "d",
+              "flip": "x"
+            },
+            {
+              "ch": "3"
+            },
+            {
+              "ch": "J",
+              "flip": "x"
+            },
+            {
+              "ch": "G",
+              "flip": "xy"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "e",
+              "flip": "x"
+            },
+            {
+              "ch": "d",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "J",
+              "flip": "x"
+            },
+            {
+              "ch": "G",
+              "flip": "x"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 36,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "Jawpe3s, with the mirror line MN on its right.",
+      "options": {
+        "A": "small s reversed, 3 reversed, small p, small e, small a, small w, capital J reversed",
+        "B": "small s, 3, small e reversed, small p turned round, small w, small a turned round, capital J turned round",
+        "C": "small s reversed, 3, small e reversed, small p reversed, small w upside down, small a reversed, capital J reversed",
+        "D": "small s reversed, 3 reversed, small e reversed, small p reversed, small w, small a reversed, capital J"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "s",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "p"
+            },
+            {
+              "ch": "e"
+            },
+            {
+              "ch": "a"
+            },
+            {
+              "ch": "w"
+            },
+            {
+              "ch": "J",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "s"
+            },
+            {
+              "ch": "3"
+            },
+            {
+              "ch": "e",
+              "flip": "x"
+            },
+            {
+              "ch": "p",
+              "flip": "xy"
+            },
+            {
+              "ch": "w"
+            },
+            {
+              "ch": "a",
+              "flip": "xy"
+            },
+            {
+              "ch": "J",
+              "flip": "xy"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "s",
+              "flip": "x"
+            },
+            {
+              "ch": "3"
+            },
+            {
+              "ch": "e",
+              "flip": "x"
+            },
+            {
+              "ch": "p",
+              "flip": "x"
+            },
+            {
+              "ch": "w",
+              "flip": "y"
+            },
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "J",
+              "flip": "x"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "s",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "e",
+              "flip": "x"
+            },
+            {
+              "ch": "p",
+              "flip": "x"
+            },
+            {
+              "ch": "w"
+            },
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "J"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 37,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "Rp37aw, with the mirror line MN on its right.",
+      "options": {
+        "A": "small w, small a reversed, 7 reversed, 3 reversed, small p reversed, capital R reversed",
+        "B": "small w upside down, small a upside down, 3, 7 upside down, small p turned round, capital R turned round",
+        "C": "small w upside down, small a upside down, 7 reversed, 3 reversed, small p reversed, capital R",
+        "D": "small w, small a reversed, 3, 7, small p reversed, capital R reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "w"
+            },
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "p",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "w",
+              "flip": "y"
+            },
+            {
+              "ch": "a",
+              "flip": "y"
+            },
+            {
+              "ch": "3"
+            },
+            {
+              "ch": "7",
+              "flip": "y"
+            },
+            {
+              "ch": "p",
+              "flip": "xy"
+            },
+            {
+              "ch": "R",
+              "flip": "xy"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "w",
+              "flip": "y"
+            },
+            {
+              "ch": "a",
+              "flip": "y"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "p",
+              "flip": "x"
+            },
+            {
+              "ch": "R"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "w"
+            },
+            {
+              "ch": "a",
+              "flip": "x"
+            },
+            {
+              "ch": "3"
+            },
+            {
+              "ch": "7"
+            },
+            {
+              "ch": "p",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 38,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "GwB74A, with the mirror line MN on its right.",
+      "options": {
+        "A": "capital A, 4 reversed, capital B, 7, small w, capital G reversed",
+        "B": "capital A, 4 reversed, 7 reversed, capital B reversed, small w, capital G reversed",
+        "C": "capital A upside down, 4 reversed, capital B, 7 upside down, small w, capital G reversed",
+        "D": "capital A upside down, 4 reversed, 7 reversed, capital B reversed, small w, capital G reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "B"
+            },
+            {
+              "ch": "7"
+            },
+            {
+              "ch": "w"
+            },
+            {
+              "ch": "G",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            },
+            {
+              "ch": "B",
+              "flip": "x"
+            },
+            {
+              "ch": "w"
+            },
+            {
+              "ch": "G",
+              "flip": "x"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "A",
+              "flip": "y"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "B"
+            },
+            {
+              "ch": "7",
+              "flip": "y"
+            },
+            {
+              "ch": "w"
+            },
+            {
+              "ch": "G",
+              "flip": "x"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "A",
+              "flip": "y"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            },
+            {
+              "ch": "B",
+              "flip": "x"
+            },
+            {
+              "ch": "w"
+            },
+            {
+              "ch": "G",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 39,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "A figure question: a curled spring shape in a square, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 40,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "A figure question: a cylinder holding a zigzag and two arrows, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 41,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "A figure question: a square with an arrow, a triangle and small characters at its corners, with the mirror line MN below it.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 42,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "A figure question: a triangle in a small box with hooks, in a square, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 43,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "A figure question: arrows pointing to the letters P, Z, D and S in a box, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 44,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "A figure question: a looped line with a zigzag and the letters P and N, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 45,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "A figure question: a partly shaded triangle in a hexagon in a square, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 46,
+      "page": 111,
+      "section": "Q1-46",
+      "stem": "A figure question: a curved arrow in a square, with the mirror line MN on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 47,
+      "page": 111,
+      "section": "Q47-49",
+      "stem": "A figure question: four pairs of black and white triangles in a square.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 48,
+      "page": 111,
+      "section": "Q47-49",
+      "stem": "A figure question: pentagons, bars and dots, some black and some white, in a square.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 49,
+      "page": 111,
+      "section": "Q47-49",
+      "stem": "A figure question: four block arrows, black and white, in a square.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 50,
+      "page": 112,
+      "section": "Q50",
+      "stem": "A figure question: a triangle with an arrow, a pentagon, a star and a diamond with a dot, in a square, with the mirror AB on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 51,
+      "page": 112,
+      "section": "Q51",
+      "stem": "A figure question: two lines meeting at a point, one ending in an arrowhead, in a square (X).",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 52,
+      "page": 112,
+      "section": "Q52",
+      "stem": "5374, seen in water below it.",
+      "options": {
+        "A": "5 upside down, 3 reversed, 7, 4",
+        "B": "4 reversed, 7 reversed, 3 reversed, 5 reversed",
+        "C": "5 upside down, 3, 7 upside down, 4 upside down",
+        "D": "5 turned round, 3 reversed, 7 turned round, 4 turned round"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "5",
+              "flip": "y"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "7"
+            },
+            {
+              "ch": "4"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "7",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "5",
+              "flip": "x"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "5",
+              "flip": "y"
+            },
+            {
+              "ch": "3"
+            },
+            {
+              "ch": "7",
+              "flip": "y"
+            },
+            {
+              "ch": "4",
+              "flip": "y"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "5",
+              "flip": "xy"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "7",
+              "flip": "xy"
+            },
+            {
+              "ch": "4",
+              "flip": "xy"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 53,
+      "page": 112,
+      "section": "Q53",
+      "stem": "SEARCH, printed in a frame shaped like an arrow pointing right, seen in water below it.",
+      "options": {
+        "A": "capital S, capital E, capital A, capital R upside down, capital C, capital H",
+        "B": "capital S reversed, capital E, capital A upside down, capital R, capital C, capital H",
+        "C": "capital H, capital C reversed, capital R turned round, capital A upside down, capital E reversed, capital S",
+        "D": "capital H, capital C, capital R turned round, capital A upside down, capital E reversed, capital S"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "S"
+            },
+            {
+              "ch": "E"
+            },
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "R",
+              "flip": "y"
+            },
+            {
+              "ch": "C"
+            },
+            {
+              "ch": "H"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "S",
+              "flip": "x"
+            },
+            {
+              "ch": "E"
+            },
+            {
+              "ch": "A",
+              "flip": "y"
+            },
+            {
+              "ch": "R"
+            },
+            {
+              "ch": "C"
+            },
+            {
+              "ch": "H"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "H"
+            },
+            {
+              "ch": "C",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "xy"
+            },
+            {
+              "ch": "A",
+              "flip": "y"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "S"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "H"
+            },
+            {
+              "ch": "C"
+            },
+            {
+              "ch": "R",
+              "flip": "xy"
+            },
+            {
+              "ch": "A",
+              "flip": "y"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "S"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 54,
+      "page": 112,
+      "section": "Q54",
+      "stem": "HR2642O, seen in water below it.",
+      "options": {
+        "A": "capital O, 2 reversed, 6 reversed, 4 reversed, 2 reversed, capital R reversed, capital H",
+        "B": "capital H, capital R turned round, 2 upside down, 6 upside down, 4 upside down, 2 upside down, capital O",
+        "C": "capital O, 2 reversed, 4 reversed, 6 upside down, 2 reversed, capital R reversed, capital H",
+        "D": "capital H, capital R upside down, 2 upside down, 6 upside down, 4 upside down, 2 upside down, capital O"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "2",
+              "flip": "x"
+            },
+            {
+              "ch": "6",
+              "flip": "x"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "2",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "H"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "H"
+            },
+            {
+              "ch": "R",
+              "flip": "xy"
+            },
+            {
+              "ch": "2",
+              "flip": "y"
+            },
+            {
+              "ch": "6",
+              "flip": "y"
+            },
+            {
+              "ch": "4",
+              "flip": "y"
+            },
+            {
+              "ch": "2",
+              "flip": "y"
+            },
+            {
+              "ch": "O"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "2",
+              "flip": "x"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "6",
+              "flip": "y"
+            },
+            {
+              "ch": "2",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "H"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "H"
+            },
+            {
+              "ch": "R",
+              "flip": "y"
+            },
+            {
+              "ch": "2",
+              "flip": "y"
+            },
+            {
+              "ch": "6",
+              "flip": "y"
+            },
+            {
+              "ch": "4",
+              "flip": "y"
+            },
+            {
+              "ch": "2",
+              "flip": "y"
+            },
+            {
+              "ch": "O"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 55,
+      "page": 112,
+      "section": "Q55",
+      "stem": "A figure question: a figure X of boxes and arrows, with a dotted mirror line on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 56,
+      "page": 112,
+      "section": "Q56",
+      "stem": "A figure question: a figure X: a bent bar and a small circle in a square.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 57,
+      "page": 112,
+      "section": "Q57",
+      "stem": "A figure question: a figure X: crossed lines with dots and small triangles in a square.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 58,
+      "page": 112,
+      "section": "Q58",
+      "stem": "SHARE, seen in a mirror.",
+      "options": {
+        "A": "capital E reversed, capital R reversed, capital A, capital H, capital S reversed",
+        "B": "capital H, capital R, 2 upside down, 6 upside down, 4 upside down, 2, capital O",
+        "C": "capital E reversed, capital R reversed, capital H, capital A, capital S reversed",
+        "D": "capital E reversed, capital S reversed, capital A, capital H, capital S reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "H"
+            },
+            {
+              "ch": "S",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "H"
+            },
+            {
+              "ch": "R"
+            },
+            {
+              "ch": "2",
+              "flip": "y"
+            },
+            {
+              "ch": "6",
+              "flip": "y"
+            },
+            {
+              "ch": "4",
+              "flip": "y"
+            },
+            {
+              "ch": "2"
+            },
+            {
+              "ch": "O"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "H"
+            },
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "S",
+              "flip": "x"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "S",
+              "flip": "x"
+            },
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "H"
+            },
+            {
+              "ch": "S",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 59,
+      "page": 112,
+      "section": "Q59",
+      "stem": "A1M3b, seen in water below it.",
+      "options": {
+        "A": "capital A upside down, capital I, capital M upside down, 3, small b upside down",
+        "B": "capital A upside down, capital I, capital M upside down, 3, small b upside down; printed with wider spaces between the characters",
+        "C": "capital A upside down, 1 upside down, capital M upside down, 3, small b upside down",
+        "D": "capital A upside down, capital I, capital M upside down, 3 reversed, small b upside down"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "A",
+              "flip": "y"
+            },
+            {
+              "ch": "I"
+            },
+            {
+              "ch": "M",
+              "flip": "y"
+            },
+            {
+              "ch": "3"
+            },
+            {
+              "ch": "b",
+              "flip": "y"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "A",
+              "flip": "y"
+            },
+            {
+              "ch": "I"
+            },
+            {
+              "ch": "M",
+              "flip": "y"
+            },
+            {
+              "ch": "3"
+            },
+            {
+              "ch": "b",
+              "flip": "y"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "A",
+              "flip": "y"
+            },
+            {
+              "ch": "1",
+              "flip": "y"
+            },
+            {
+              "ch": "M",
+              "flip": "y"
+            },
+            {
+              "ch": "3"
+            },
+            {
+              "ch": "b",
+              "flip": "y"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "A",
+              "flip": "y"
+            },
+            {
+              "ch": "I"
+            },
+            {
+              "ch": "M",
+              "flip": "y"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "b",
+              "flip": "y"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 60,
+      "page": 112,
+      "section": "Q60",
+      "stem": "ANS43Q12, seen in a mirror.",
+      "options": {
+        "A": "capital A, capital N reversed, capital S reversed, 4 reversed, 3 reversed, capital Q reversed, 1 reversed, 3 reversed",
+        "B": "2 reversed, 1 reversed, capital Q reversed, 3 reversed, 4 reversed, capital S reversed, capital N reversed, capital A",
+        "C": "capital S reversed, capital N reversed, capital A, 3 reversed, 4 reversed, capital Q reversed, capital S reversed, 3 reversed",
+        "D": "1 reversed, 2 reversed, capital W, 4 reversed, 3 reversed, capital A, capital N reversed, capital S reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "N",
+              "flip": "x"
+            },
+            {
+              "ch": "S",
+              "flip": "x"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "Q",
+              "flip": "x"
+            },
+            {
+              "ch": "1",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "2",
+              "flip": "x"
+            },
+            {
+              "ch": "1",
+              "flip": "x"
+            },
+            {
+              "ch": "Q",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "S",
+              "flip": "x"
+            },
+            {
+              "ch": "N",
+              "flip": "x"
+            },
+            {
+              "ch": "A"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "S",
+              "flip": "x"
+            },
+            {
+              "ch": "N",
+              "flip": "x"
+            },
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "Q",
+              "flip": "x"
+            },
+            {
+              "ch": "S",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "1",
+              "flip": "x"
+            },
+            {
+              "ch": "2",
+              "flip": "x"
+            },
+            {
+              "ch": "W"
+            },
+            {
+              "ch": "4",
+              "flip": "x"
+            },
+            {
+              "ch": "3",
+              "flip": "x"
+            },
+            {
+              "ch": "A"
+            },
+            {
+              "ch": "N",
+              "flip": "x"
+            },
+            {
+              "ch": "S",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 61,
+      "page": 112,
+      "section": "Q61-74",
+      "stem": "A figure question: a black triangle and an arrow over a tray shape, in a square, with the mirror XY on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 62,
+      "page": 112,
+      "section": "Q61-74",
+      "stem": "A figure question: an hourglass shape around a circle, in a square, with the mirror XY on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 63,
+      "page": 112,
+      "section": "Q61-74",
+      "stem": "A figure question: a U shape with small squares on its arms, in a square, with the mirror XY on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 64,
+      "page": 112,
+      "section": "Q61-74",
+      "stem": "TOM in a box, with the mirror XY on its right.",
+      "options": {
+        "A": "capital M, capital O, capital T",
+        "B": "capital M upside down, capital O, capital T upside down",
+        "C": "capital M, capital O, capital T upside down",
+        "D": "capital M upside down, capital O, capital T"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "M"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "T"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "M",
+              "flip": "y"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "T",
+              "flip": "y"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "M"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "T",
+              "flip": "y"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "M",
+              "flip": "y"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "T"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 65,
+      "page": 112,
+      "section": "Q61-74",
+      "stem": "A figure question: two overlapping squares, in a square, with the mirror XY on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 66,
+      "page": 112,
+      "section": "Q61-74",
+      "stem": "A figure question: a kite with a cross and a black triangle, in a square, with the mirror XY on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 67,
+      "page": 113,
+      "section": "Q61-74",
+      "stem": "A figure question: a curve like a question mark, in a square, with the mirror XY on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 68,
+      "page": 113,
+      "section": "Q61-74",
+      "stem": "A figure question: a capital P drawn in outline, in a square, with the mirror XY on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 69,
+      "page": 113,
+      "section": "Q61-74",
+      "stem": "A figure question: a slanting tube with an arrow tip, in a square, with the mirror XY on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 70,
+      "page": 113,
+      "section": "Q61-74",
+      "stem": "A figure question: arrows and a bracket shape in a box, with the mirror XY on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 71,
+      "page": 113,
+      "section": "Q61-74",
+      "stem": "CROP in a box, with the mirror XY on its right.",
+      "options": {
+        "A": "capital P, capital O, capital R, capital C",
+        "B": "capital P reversed, capital O, capital R reversed, capital C reversed",
+        "C": "capital P reversed, capital R reversed, capital C, capital O",
+        "D": "capital C reversed, capital R reversed, capital O, capital P reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "P"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "R"
+            },
+            {
+              "ch": "C"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "P",
+              "flip": "x"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "C",
+              "flip": "x"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "P",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "C"
+            },
+            {
+              "ch": "O"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "C",
+              "flip": "x"
+            },
+            {
+              "ch": "R",
+              "flip": "x"
+            },
+            {
+              "ch": "O"
+            },
+            {
+              "ch": "P",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 72,
+      "page": 113,
+      "section": "Q61-74",
+      "stem": "A figure question: a square with diagonals and small black corner marks, with the mirror XY on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 73,
+      "page": 113,
+      "section": "Q61-74",
+      "stem": "BEND in a box, with the mirror XY on its right.",
+      "options": {
+        "A": "capital D reversed, capital N reversed, capital E reversed, capital B reversed",
+        "B": "capital D reversed, capital N, capital E, capital B reversed",
+        "C": "capital D, capital N reversed, capital E, capital B",
+        "D": "capital B reversed, capital N, capital E reversed, capital D reversed"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "D",
+              "flip": "x"
+            },
+            {
+              "ch": "N",
+              "flip": "x"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "B",
+              "flip": "x"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "D",
+              "flip": "x"
+            },
+            {
+              "ch": "N"
+            },
+            {
+              "ch": "E"
+            },
+            {
+              "ch": "B",
+              "flip": "x"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "D"
+            },
+            {
+              "ch": "N",
+              "flip": "x"
+            },
+            {
+              "ch": "E"
+            },
+            {
+              "ch": "B"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "B",
+              "flip": "x"
+            },
+            {
+              "ch": "N"
+            },
+            {
+              "ch": "E",
+              "flip": "x"
+            },
+            {
+              "ch": "D",
+              "flip": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "n": 74,
+      "page": 113,
+      "section": "Q61-74",
+      "stem": "A figure question: a circle crossed by a bar holding a triangle and a small square, with the mirror XY on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 75,
+      "page": 113,
+      "section": "Q75-76",
+      "stem": "A figure question: a square divided into four, with a circle, a cross and a shaded strip, with the mirror XY on its right.",
+      "options": {
+        "A": "Figure A",
+        "B": "Figure B",
+        "C": "Figure C",
+        "D": "Figure D"
+      }
+    },
+    {
+      "n": 76,
+      "page": 113,
+      "section": "Q75-76",
+      "stem": "↑↓△▽ in a box, with the mirror XY on its right.",
+      "options": {
+        "A": "up arrow, down arrow, triangle pointing down, triangle pointing up",
+        "B": "triangle pointing up, triangle pointing down, down arrow, up arrow",
+        "C": "triangle pointing up, triangle pointing down, up arrow, down arrow",
+        "D": "triangle pointing down, triangle pointing up, down arrow, up arrow"
+      },
+      "answerPanels": {
+        "A": {
+          "glyphs": [
+            {
+              "ch": "↑"
+            },
+            {
+              "ch": "↓"
+            },
+            {
+              "ch": "▽"
+            },
+            {
+              "ch": "△"
+            }
+          ]
+        },
+        "B": {
+          "glyphs": [
+            {
+              "ch": "△"
+            },
+            {
+              "ch": "▽"
+            },
+            {
+              "ch": "↓"
+            },
+            {
+              "ch": "↑"
+            }
+          ]
+        },
+        "C": {
+          "glyphs": [
+            {
+              "ch": "△"
+            },
+            {
+              "ch": "▽"
+            },
+            {
+              "ch": "↑"
+            },
+            {
+              "ch": "↓"
+            }
+          ]
+        },
+        "D": {
+          "glyphs": [
+            {
+              "ch": "▽"
+            },
+            {
+              "ch": "△"
+            },
+            {
+              "ch": "↓"
+            },
+            {
+              "ch": "↑"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

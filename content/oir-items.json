@@ -183,6 +183,16 @@
     },
     {
       "source": "agrawal-examcart-oir",
+      "chapter": 25,
+      "title": "Mirror and Water Images",
+      "pages": [
+        109,
+        113
+      ],
+      "file": "content/oir/agrawal-examcart/ch25-mirror-water.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
       "chapter": 28,
       "title": "Counting Figures",
       "pages": [
@@ -192,11 +202,11 @@
       "file": "content/oir/agrawal-examcart/ch28-counting-figures.source.json"
     }
   ],
-  "itemCount": 1633,
-  "heldCount": 123,
+  "itemCount": 1656,
+  "heldCount": 176,
   "confidence": {
-    "high": 1529,
-    "medium": 104
+    "high": 1547,
+    "medium": 109
   },
   "held": [
     {
@@ -800,6 +810,274 @@
       "source": "agrawal-examcart-oir",
       "source_ref": "ch18 p74 q76",
       "reason": "One face is cut diagonally into black and white halves, and the solver does not track which way a mark turns on its face."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p109 q1",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p109 q2",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p109 q3",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p109 q4",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p109 q5",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p109 q6",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p109 q7",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p109 q8",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p109 q9",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p109 q10",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q13",
+      "reason": "MN is drawn as a mirror on the right, but no option is the mirror image: A is the water image (each character upside down, order kept). The print seems to mix a water-image question with a mirror line.",
+      "lean": "A"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q14",
+      "reason": "No option is the mirror image: A keeps the order, B is the water image, C turns P, a and r half round, D leaves the 3 and the P unturned."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q16",
+      "reason": "No option is the mirror image: A and C turn letters half round, B turns the 4 and 7 upside down, D leaves the e and a unturned."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q17",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q18",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q19",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q20",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q21",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q27",
+      "reason": "Options A, B and D read the same glyph for glyph in the photo (each the mirror image); whatever tells them apart is below its resolution."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q28",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q31",
+      "reason": "A grid of six letters in three rows and two columns: a figure, not one line of text, so it is not transcribed glyph by glyph."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q34",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q35",
+      "reason": "Options A and D read the same glyph for glyph and both are the mirror image; whatever tells them apart is below the resolution of the photo."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q36",
+      "reason": "No option is the mirror image: D comes closest but leaves the J unturned; A misorders the letters, B and C leave the 3 unturned.",
+      "lean": "D"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q39",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q40",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q41",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q42",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q43",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q44",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q45",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q46",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q47",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q48",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q49",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q50",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q51",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q53",
+      "reason": "No option is the water image: B comes closest but leaves the R upright; A leaves S and A upright; C and D are turned half round. The frame shaped like an arrow is not transcribed.",
+      "lean": "B"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q55",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q56",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q57",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q61",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q62",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q63",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q65",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q66",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p113 q67",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p113 q68",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p113 q69",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p113 q70",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p113 q72",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p113 q74",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p113 q75",
+      "reason": "A drawn figure, not text: it is not redrawn yet, so no key can be computed from it."
     },
     {
       "source": "agrawal-examcart-oir",
@@ -45487,6 +45765,2880 @@
       "source_ref": "ch18 p74 q80",
       "key_basis": "derived",
       "rule": "125 cubes make a 5 × 5 × 5 block; the unpainted ones are the 3 × 3 × 3 inside: 27.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q011",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "hiEraRchY, with the mirror line MN on its right.",
+        "options": {
+          "A": "capital Y, small h reversed, small c reversed, capital R reversed, small a reversed, small r reversed, capital E reversed, small i, small h reversed",
+          "B": "small y reversed, small h reversed, small c reversed, capital R reversed, small a reversed, small r reversed, capital E reversed, small i, small h reversed",
+          "C": "capital Y, capital H, small c reversed, capital R reversed, small a reversed, capital R reversed, capital E reversed, small i, small h reversed",
+          "D": "capital Y, capital H, small c reversed, capital R reversed, small a reversed, small r reversed, capital E reversed, small i, small h reversed"
+        },
+        "key": "A",
+        "reasoningType": "mirror_water",
+        "direction": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "Y"
+              },
+              {
+                "ch": "h",
+                "flip": "x"
+              },
+              {
+                "ch": "c",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "a",
+                "flip": "x"
+              },
+              {
+                "ch": "r",
+                "flip": "x"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "i"
+              },
+              {
+                "ch": "h",
+                "flip": "x"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "y",
+                "flip": "x"
+              },
+              {
+                "ch": "h",
+                "flip": "x"
+              },
+              {
+                "ch": "c",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "a",
+                "flip": "x"
+              },
+              {
+                "ch": "r",
+                "flip": "x"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "i"
+              },
+              {
+                "ch": "h",
+                "flip": "x"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "Y"
+              },
+              {
+                "ch": "H"
+              },
+              {
+                "ch": "c",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "a",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "i"
+              },
+              {
+                "ch": "h",
+                "flip": "x"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "Y"
+              },
+              {
+                "ch": "H"
+              },
+              {
+                "ch": "c",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "a",
+                "flip": "x"
+              },
+              {
+                "ch": "r",
+                "flip": "x"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "i"
+              },
+              {
+                "ch": "h",
+                "flip": "x"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p109 q11",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. B prints a small y for the Y; C and D print a capital H for the h, and C a capital R for the r.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q012",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "fORmuLAtiOn, with the mirror line MN on its right.",
+        "options": {
+          "A": "small n reversed, capital O, small l, small t reversed, capital A, capital L reversed, small u reversed, small m reversed, capital R reversed, capital O, small f reversed",
+          "B": "small n reversed, small o, small i, small t reversed, small a reversed, capital L reversed, small u reversed, small m reversed, capital R reversed, capital O, small f reversed",
+          "C": "small n reversed, capital O, small i, small t reversed, capital A, capital L reversed, small u reversed, small m reversed, capital R reversed, capital O, small f reversed",
+          "D": "small n reversed, small o, small i, small t reversed, capital A, capital L reversed, small u reversed, small m reversed, capital R reversed, small o, small f reversed"
+        },
+        "key": "C",
+        "reasoningType": "mirror_water",
+        "direction": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "n",
+                "flip": "x"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "l"
+              },
+              {
+                "ch": "t",
+                "flip": "x"
+              },
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "L",
+                "flip": "x"
+              },
+              {
+                "ch": "u",
+                "flip": "x"
+              },
+              {
+                "ch": "m",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "f",
+                "flip": "x"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "n",
+                "flip": "x"
+              },
+              {
+                "ch": "o"
+              },
+              {
+                "ch": "i"
+              },
+              {
+                "ch": "t",
+                "flip": "x"
+              },
+              {
+                "ch": "a",
+                "flip": "x"
+              },
+              {
+                "ch": "L",
+                "flip": "x"
+              },
+              {
+                "ch": "u",
+                "flip": "x"
+              },
+              {
+                "ch": "m",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "f",
+                "flip": "x"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "n",
+                "flip": "x"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "i"
+              },
+              {
+                "ch": "t",
+                "flip": "x"
+              },
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "L",
+                "flip": "x"
+              },
+              {
+                "ch": "u",
+                "flip": "x"
+              },
+              {
+                "ch": "m",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "f",
+                "flip": "x"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "n",
+                "flip": "x"
+              },
+              {
+                "ch": "o"
+              },
+              {
+                "ch": "i"
+              },
+              {
+                "ch": "t",
+                "flip": "x"
+              },
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "L",
+                "flip": "x"
+              },
+              {
+                "ch": "u",
+                "flip": "x"
+              },
+              {
+                "ch": "m",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "o"
+              },
+              {
+                "ch": "f",
+                "flip": "x"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q12",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. A prints an l where the word has i; B prints small o and a; D small o for both Os.",
+      "confidence": "medium",
+      "note": "A and C differ only in one letter: A's reads as an undotted l, C's as a dotted i, at the limit of the photo."
+    },
+    {
+      "id": "oir-agx-ch25-q015",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "yd46A5, with the mirror line MN on its right.",
+        "options": {
+          "A": "5 reversed, capital A, 6 reversed, 4 reversed, small y, small d turned round",
+          "B": "5 turned round, capital A upside down, 6 turned round, 4 turned round, small y upside down, small d reversed",
+          "C": "5 turned round, capital A upside down, 6 reversed, 4 reversed, small d reversed, small y reversed",
+          "D": "5 reversed, capital A, 6 reversed, 4 reversed, small d reversed, small y reversed"
+        },
+        "key": "D",
+        "reasoningType": "mirror_water",
+        "direction": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "5",
+                "flip": "x"
+              },
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "6",
+                "flip": "x"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "y"
+              },
+              {
+                "ch": "d",
+                "flip": "xy"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "5",
+                "flip": "xy"
+              },
+              {
+                "ch": "A",
+                "flip": "y"
+              },
+              {
+                "ch": "6",
+                "flip": "xy"
+              },
+              {
+                "ch": "4",
+                "flip": "xy"
+              },
+              {
+                "ch": "y",
+                "flip": "y"
+              },
+              {
+                "ch": "d",
+                "flip": "x"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "5",
+                "flip": "xy"
+              },
+              {
+                "ch": "A",
+                "flip": "y"
+              },
+              {
+                "ch": "6",
+                "flip": "x"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "d",
+                "flip": "x"
+              },
+              {
+                "ch": "y",
+                "flip": "x"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "5",
+                "flip": "x"
+              },
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "6",
+                "flip": "x"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "d",
+                "flip": "x"
+              },
+              {
+                "ch": "y",
+                "flip": "x"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q15",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. A turns the d half round and leaves the y; B is upside down throughout; C turns the 5 and the A upside down.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q022",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "14693, with the mirror line MN on its right.",
+        "options": {
+          "A": "1 reversed, 4, 6 reversed, 9 reversed, 3 reversed",
+          "B": "3, 9, 6, 4 reversed, 1",
+          "C": "1, 4, 6 reversed, 9, 3",
+          "D": "3 reversed, 9 reversed, 6 reversed, 4 reversed, 1 reversed"
+        },
+        "key": "D",
+        "reasoningType": "mirror_water",
+        "direction": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "1",
+                "flip": "x"
+              },
+              {
+                "ch": "4"
+              },
+              {
+                "ch": "6",
+                "flip": "x"
+              },
+              {
+                "ch": "9",
+                "flip": "x"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "3"
+              },
+              {
+                "ch": "9"
+              },
+              {
+                "ch": "6"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "1"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "1"
+              },
+              {
+                "ch": "4"
+              },
+              {
+                "ch": "6",
+                "flip": "x"
+              },
+              {
+                "ch": "9"
+              },
+              {
+                "ch": "3"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "3",
+                "flip": "x"
+              },
+              {
+                "ch": "9",
+                "flip": "x"
+              },
+              {
+                "ch": "6",
+                "flip": "x"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "1",
+                "flip": "x"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q22",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. A and C keep the order; B leaves the 3, 9, 6 and 1 unturned.",
+      "confidence": "medium",
+      "note": "D's 1 shows no flag on its left, read as turned; the flag is at the limit of the photo."
+    },
+    {
+      "id": "oir-agx-ch25-q023",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "HOTEL, with the mirror line MN on its right.",
+        "options": {
+          "A": "capital H, capital O, capital T upside down, capital E, capital L",
+          "B": "capital H, capital O, capital T upside down, capital E reversed, capital L reversed",
+          "C": "capital L reversed, capital E reversed, capital T, capital O, capital H",
+          "D": "capital L, capital E reversed, capital T, capital O, capital H"
+        },
+        "key": "C",
+        "reasoningType": "mirror_water",
+        "direction": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "H"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "T",
+                "flip": "y"
+              },
+              {
+                "ch": "E"
+              },
+              {
+                "ch": "L"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "H"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "T",
+                "flip": "y"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "L",
+                "flip": "x"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "L",
+                "flip": "x"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "T"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "H"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "L"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "T"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "H"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q23",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. A and B keep the order; D leaves the L unturned.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q024",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "BURGER, with the mirror line MN on its right.",
+        "options": {
+          "A": "capital R reversed, capital E, capital G reversed, capital R reversed, capital U, capital B reversed",
+          "B": "capital B reversed, capital U upside down, capital R turned round, capital G turned round, capital E reversed, capital R turned round",
+          "C": "capital R reversed, capital E reversed, capital G reversed, capital R reversed, capital U, capital B reversed",
+          "D": "capital B, capital G, capital E reversed, capital R reversed, capital U, capital B"
+        },
+        "key": "C",
+        "reasoningType": "mirror_water",
+        "direction": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "E"
+              },
+              {
+                "ch": "G",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "U"
+              },
+              {
+                "ch": "B",
+                "flip": "x"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "B",
+                "flip": "x"
+              },
+              {
+                "ch": "U",
+                "flip": "y"
+              },
+              {
+                "ch": "R",
+                "flip": "xy"
+              },
+              {
+                "ch": "G",
+                "flip": "xy"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "xy"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "G",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "U"
+              },
+              {
+                "ch": "B",
+                "flip": "x"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "B"
+              },
+              {
+                "ch": "G"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "U"
+              },
+              {
+                "ch": "B"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q24",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. A leaves the E unturned; B keeps the order, turned half round; D swaps letters and leaves the Bs unturned.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q025",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "LION, with the mirror line MN on its right.",
+        "options": {
+          "A": "capital N reversed, capital O, capital I, capital L reversed",
+          "B": "capital N, capital O, capital I, capital L reversed",
+          "C": "capital L turned round, capital I, capital O, capital N",
+          "D": "capital L turned round, capital I, capital O, capital N reversed"
+        },
+        "key": "A",
+        "reasoningType": "mirror_water",
+        "direction": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "N",
+                "flip": "x"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "I"
+              },
+              {
+                "ch": "L",
+                "flip": "x"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "N"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "I"
+              },
+              {
+                "ch": "L",
+                "flip": "x"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "L",
+                "flip": "xy"
+              },
+              {
+                "ch": "I"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "N"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "L",
+                "flip": "xy"
+              },
+              {
+                "ch": "I"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "N",
+                "flip": "x"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q25",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. B leaves the N unturned; C and D keep the order with the L turned half round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q026",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "TOY, with the mirror line MN on its right.",
+        "options": {
+          "A": "capital T upside down, capital O, capital Y",
+          "B": "capital T, capital O, capital Y",
+          "C": "capital Y, capital O, capital T",
+          "D": "capital Y, capital O, capital T upside down"
+        },
+        "key": "C",
+        "reasoningType": "mirror_water",
+        "direction": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "T",
+                "flip": "y"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "Y"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "T"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "Y"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "Y"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "T"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "Y"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "T",
+                "flip": "y"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q26",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. T, O and Y look the same in a mirror, so only the order changes. A and D turn the T upside down; B keeps the order.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q029",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Lj3r4pa, with the mirror line MN on its right.",
+        "options": {
+          "A": "small a reversed, small p reversed, 4 reversed, small r reversed, 3 reversed, small j reversed, capital L reversed",
+          "B": "small a reversed, small p turned round, 4 reversed, small r, 3 reversed, small j reversed, capital L reversed",
+          "C": "small a reversed, small p reversed, 4, small r reversed, 3, small j reversed, capital L reversed",
+          "D": "small p, small a reversed, 4 reversed, small r reversed, 3 reversed, small j reversed, capital L reversed"
+        },
+        "key": "A",
+        "reasoningType": "mirror_water",
+        "direction": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "a",
+                "flip": "x"
+              },
+              {
+                "ch": "p",
+                "flip": "x"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "r",
+                "flip": "x"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              },
+              {
+                "ch": "j",
+                "flip": "x"
+              },
+              {
+                "ch": "L",
+                "flip": "x"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "a",
+                "flip": "x"
+              },
+              {
+                "ch": "p",
+                "flip": "xy"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "r"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              },
+              {
+                "ch": "j",
+                "flip": "x"
+              },
+              {
+                "ch": "L",
+                "flip": "x"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "a",
+                "flip": "x"
+              },
+              {
+                "ch": "p",
+                "flip": "x"
+              },
+              {
+                "ch": "4"
+              },
+              {
+                "ch": "r",
+                "flip": "x"
+              },
+              {
+                "ch": "3"
+              },
+              {
+                "ch": "j",
+                "flip": "x"
+              },
+              {
+                "ch": "L",
+                "flip": "x"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "p"
+              },
+              {
+                "ch": "a",
+                "flip": "x"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "r",
+                "flip": "x"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              },
+              {
+                "ch": "j",
+                "flip": "x"
+              },
+              {
+                "ch": "L",
+                "flip": "x"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q29",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. B turns the p half round and leaves the r; C leaves the 4 and 3 unturned; D swaps the p and a.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q030",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Dh57erk, with the mirror line MN on its right.",
+        "options": {
+          "A": "small k reversed, small r turned round, small e reversed, 7 reversed, 5 reversed, small h reversed, capital D reversed",
+          "B": "small k reversed, small r reversed, small e reversed, 7 reversed, 5 reversed, small h turned round, capital D reversed",
+          "C": "small k reversed, small r reversed, small e reversed, 7 reversed, 5 reversed, small h reversed, capital D reversed",
+          "D": "small k reversed, small r reversed, small e reversed, 7, 5, small h reversed, capital D reversed"
+        },
+        "key": "C",
+        "reasoningType": "mirror_water",
+        "direction": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "k",
+                "flip": "x"
+              },
+              {
+                "ch": "r",
+                "flip": "xy"
+              },
+              {
+                "ch": "e",
+                "flip": "x"
+              },
+              {
+                "ch": "7",
+                "flip": "x"
+              },
+              {
+                "ch": "5",
+                "flip": "x"
+              },
+              {
+                "ch": "h",
+                "flip": "x"
+              },
+              {
+                "ch": "D",
+                "flip": "x"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "k",
+                "flip": "x"
+              },
+              {
+                "ch": "r",
+                "flip": "x"
+              },
+              {
+                "ch": "e",
+                "flip": "x"
+              },
+              {
+                "ch": "7",
+                "flip": "x"
+              },
+              {
+                "ch": "5",
+                "flip": "x"
+              },
+              {
+                "ch": "h",
+                "flip": "xy"
+              },
+              {
+                "ch": "D",
+                "flip": "x"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "k",
+                "flip": "x"
+              },
+              {
+                "ch": "r",
+                "flip": "x"
+              },
+              {
+                "ch": "e",
+                "flip": "x"
+              },
+              {
+                "ch": "7",
+                "flip": "x"
+              },
+              {
+                "ch": "5",
+                "flip": "x"
+              },
+              {
+                "ch": "h",
+                "flip": "x"
+              },
+              {
+                "ch": "D",
+                "flip": "x"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "k",
+                "flip": "x"
+              },
+              {
+                "ch": "r",
+                "flip": "x"
+              },
+              {
+                "ch": "e",
+                "flip": "x"
+              },
+              {
+                "ch": "7"
+              },
+              {
+                "ch": "5"
+              },
+              {
+                "ch": "h",
+                "flip": "x"
+              },
+              {
+                "ch": "D",
+                "flip": "x"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p110 q30",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. A turns the r half round; B turns the h half round; D leaves the 7 and 5 unturned.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q032",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "L27Acf, with the mirror line MN on its right.",
+        "options": {
+          "A": "small f reversed, small c reversed, capital A, 2, 7, capital L reversed",
+          "B": "small f reversed, small c reversed, capital A upside down, 7 reversed, 2 reversed, capital L reversed",
+          "C": "small f turned round, small c turned round, capital A, 7 turned round, 2 turned round, capital L turned round",
+          "D": "small f reversed, small c reversed, capital A, 7 reversed, 2 reversed, capital L reversed"
+        },
+        "key": "D",
+        "reasoningType": "mirror_water",
+        "direction": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "f",
+                "flip": "x"
+              },
+              {
+                "ch": "c",
+                "flip": "x"
+              },
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "2"
+              },
+              {
+                "ch": "7"
+              },
+              {
+                "ch": "L",
+                "flip": "x"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "f",
+                "flip": "x"
+              },
+              {
+                "ch": "c",
+                "flip": "x"
+              },
+              {
+                "ch": "A",
+                "flip": "y"
+              },
+              {
+                "ch": "7",
+                "flip": "x"
+              },
+              {
+                "ch": "2",
+                "flip": "x"
+              },
+              {
+                "ch": "L",
+                "flip": "x"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "f",
+                "flip": "xy"
+              },
+              {
+                "ch": "c",
+                "flip": "xy"
+              },
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "7",
+                "flip": "xy"
+              },
+              {
+                "ch": "2",
+                "flip": "xy"
+              },
+              {
+                "ch": "L",
+                "flip": "xy"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "f",
+                "flip": "x"
+              },
+              {
+                "ch": "c",
+                "flip": "x"
+              },
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "7",
+                "flip": "x"
+              },
+              {
+                "ch": "2",
+                "flip": "x"
+              },
+              {
+                "ch": "L",
+                "flip": "x"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q32",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. A leaves the 2 and 7 unturned and in order; B turns the A upside down; C turns most characters half round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q033",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "RkgEyw, with the mirror line MN on its right.",
+        "options": {
+          "A": "small w, small y reversed, capital E reversed, small g reversed, small k reversed, capital R reversed",
+          "B": "small w upside down, small y turned round, capital E reversed, small g turned round, small k turned round, capital R turned round",
+          "C": "small w upside down, small y reversed, capital E, small g reversed, small k reversed, capital R reversed",
+          "D": "small y, small w, capital E reversed, small g reversed, small k reversed, capital R"
+        },
+        "key": "A",
+        "reasoningType": "mirror_water",
+        "direction": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "w"
+              },
+              {
+                "ch": "y",
+                "flip": "x"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "g",
+                "flip": "x"
+              },
+              {
+                "ch": "k",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "w",
+                "flip": "y"
+              },
+              {
+                "ch": "y",
+                "flip": "xy"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "g",
+                "flip": "xy"
+              },
+              {
+                "ch": "k",
+                "flip": "xy"
+              },
+              {
+                "ch": "R",
+                "flip": "xy"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "w",
+                "flip": "y"
+              },
+              {
+                "ch": "y",
+                "flip": "x"
+              },
+              {
+                "ch": "E"
+              },
+              {
+                "ch": "g",
+                "flip": "x"
+              },
+              {
+                "ch": "k",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "y"
+              },
+              {
+                "ch": "w"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "g",
+                "flip": "x"
+              },
+              {
+                "ch": "k",
+                "flip": "x"
+              },
+              {
+                "ch": "R"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q33",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. B is turned half round; C leaves the E unturned and turns the w upside down; D swaps y and w and leaves the R unturned.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q037",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "Rp37aw, with the mirror line MN on its right.",
+        "options": {
+          "A": "small w, small a reversed, 7 reversed, 3 reversed, small p reversed, capital R reversed",
+          "B": "small w upside down, small a upside down, 3, 7 upside down, small p turned round, capital R turned round",
+          "C": "small w upside down, small a upside down, 7 reversed, 3 reversed, small p reversed, capital R",
+          "D": "small w, small a reversed, 3, 7, small p reversed, capital R reversed"
+        },
+        "key": "A",
+        "reasoningType": "mirror_water",
+        "direction": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "w"
+              },
+              {
+                "ch": "a",
+                "flip": "x"
+              },
+              {
+                "ch": "7",
+                "flip": "x"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              },
+              {
+                "ch": "p",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "w",
+                "flip": "y"
+              },
+              {
+                "ch": "a",
+                "flip": "y"
+              },
+              {
+                "ch": "3"
+              },
+              {
+                "ch": "7",
+                "flip": "y"
+              },
+              {
+                "ch": "p",
+                "flip": "xy"
+              },
+              {
+                "ch": "R",
+                "flip": "xy"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "w",
+                "flip": "y"
+              },
+              {
+                "ch": "a",
+                "flip": "y"
+              },
+              {
+                "ch": "7",
+                "flip": "x"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              },
+              {
+                "ch": "p",
+                "flip": "x"
+              },
+              {
+                "ch": "R"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "w"
+              },
+              {
+                "ch": "a",
+                "flip": "x"
+              },
+              {
+                "ch": "3"
+              },
+              {
+                "ch": "7"
+              },
+              {
+                "ch": "p",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q37",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. B and C turn the w and a upside down; D leaves the 3 and 7 unturned and in order.",
+      "confidence": "medium",
+      "note": "The small a's left-right turn cannot be seen in the photo; it is read as turned across in A, the option that turns every other character."
+    },
+    {
+      "id": "oir-agx-ch25-q038",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "GwB74A, with the mirror line MN on its right.",
+        "options": {
+          "A": "capital A, 4 reversed, capital B, 7, small w, capital G reversed",
+          "B": "capital A, 4 reversed, 7 reversed, capital B reversed, small w, capital G reversed",
+          "C": "capital A upside down, 4 reversed, capital B, 7 upside down, small w, capital G reversed",
+          "D": "capital A upside down, 4 reversed, 7 reversed, capital B reversed, small w, capital G reversed"
+        },
+        "key": "B",
+        "reasoningType": "mirror_water",
+        "direction": "If a mirror is placed on the line AB and MN then out of the option figures which figure will be the right image of the question figure?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "B"
+              },
+              {
+                "ch": "7"
+              },
+              {
+                "ch": "w"
+              },
+              {
+                "ch": "G",
+                "flip": "x"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "7",
+                "flip": "x"
+              },
+              {
+                "ch": "B",
+                "flip": "x"
+              },
+              {
+                "ch": "w"
+              },
+              {
+                "ch": "G",
+                "flip": "x"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "A",
+                "flip": "y"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "B"
+              },
+              {
+                "ch": "7",
+                "flip": "y"
+              },
+              {
+                "ch": "w"
+              },
+              {
+                "ch": "G",
+                "flip": "x"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "A",
+                "flip": "y"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "7",
+                "flip": "x"
+              },
+              {
+                "ch": "B",
+                "flip": "x"
+              },
+              {
+                "ch": "w"
+              },
+              {
+                "ch": "G",
+                "flip": "x"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p111 q38",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. A keeps B before 7 and leaves the 7 unturned; C and D turn the A upside down.",
+      "confidence": "medium",
+      "note": "First read with a plain B in every option, which matched none; at 22 times zoom B's B shows its stem on the right (turned) and A's on the left. Read at the limit of the photo."
+    },
+    {
+      "id": "oir-agx-ch25-q052",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "5374, seen in water below it.",
+        "options": {
+          "A": "5 upside down, 3 reversed, 7, 4",
+          "B": "4 reversed, 7 reversed, 3 reversed, 5 reversed",
+          "C": "5 upside down, 3, 7 upside down, 4 upside down",
+          "D": "5 turned round, 3 reversed, 7 turned round, 4 turned round"
+        },
+        "key": "C",
+        "reasoningType": "mirror_water",
+        "direction": "Which of the following is the water image of 5374 ?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "5",
+                "flip": "y"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              },
+              {
+                "ch": "7"
+              },
+              {
+                "ch": "4"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "7",
+                "flip": "x"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              },
+              {
+                "ch": "5",
+                "flip": "x"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "5",
+                "flip": "y"
+              },
+              {
+                "ch": "3"
+              },
+              {
+                "ch": "7",
+                "flip": "y"
+              },
+              {
+                "ch": "4",
+                "flip": "y"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "5",
+                "flip": "xy"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              },
+              {
+                "ch": "7",
+                "flip": "xy"
+              },
+              {
+                "ch": "4",
+                "flip": "xy"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q52",
+      "key_basis": "derived",
+      "rule": "In water the order stays and each character turns upside down. A turns only the 5 and 3; B is the mirror image; D is turned half round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q054",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "HR2642O, seen in water below it.",
+        "options": {
+          "A": "capital O, 2 reversed, 6 reversed, 4 reversed, 2 reversed, capital R reversed, capital H",
+          "B": "capital H, capital R turned round, 2 upside down, 6 upside down, 4 upside down, 2 upside down, capital O",
+          "C": "capital O, 2 reversed, 4 reversed, 6 upside down, 2 reversed, capital R reversed, capital H",
+          "D": "capital H, capital R upside down, 2 upside down, 6 upside down, 4 upside down, 2 upside down, capital O"
+        },
+        "key": "D",
+        "reasoningType": "mirror_water",
+        "direction": "Choose the alternative that resembles the water image of the given alpha-numeric series below:",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "2",
+                "flip": "x"
+              },
+              {
+                "ch": "6",
+                "flip": "x"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "2",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "H"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "H"
+              },
+              {
+                "ch": "R",
+                "flip": "xy"
+              },
+              {
+                "ch": "2",
+                "flip": "y"
+              },
+              {
+                "ch": "6",
+                "flip": "y"
+              },
+              {
+                "ch": "4",
+                "flip": "y"
+              },
+              {
+                "ch": "2",
+                "flip": "y"
+              },
+              {
+                "ch": "O"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "2",
+                "flip": "x"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "6",
+                "flip": "y"
+              },
+              {
+                "ch": "2",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "H"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "H"
+              },
+              {
+                "ch": "R",
+                "flip": "y"
+              },
+              {
+                "ch": "2",
+                "flip": "y"
+              },
+              {
+                "ch": "6",
+                "flip": "y"
+              },
+              {
+                "ch": "4",
+                "flip": "y"
+              },
+              {
+                "ch": "2",
+                "flip": "y"
+              },
+              {
+                "ch": "O"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q54",
+      "key_basis": "derived",
+      "rule": "In water the order stays and each character turns upside down. A and C are mirror images; B turns the R half round instead of upside down.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q058",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "SHARE, seen in a mirror.",
+        "options": {
+          "A": "capital E reversed, capital R reversed, capital A, capital H, capital S reversed",
+          "B": "capital H, capital R, 2 upside down, 6 upside down, 4 upside down, 2, capital O",
+          "C": "capital E reversed, capital R reversed, capital H, capital A, capital S reversed",
+          "D": "capital E reversed, capital S reversed, capital A, capital H, capital S reversed"
+        },
+        "key": "A",
+        "reasoningType": "mirror_water",
+        "direction": "If the given word is seen in mirror, which alternative would resemble its mirror image ?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "H"
+              },
+              {
+                "ch": "S",
+                "flip": "x"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "H"
+              },
+              {
+                "ch": "R"
+              },
+              {
+                "ch": "2",
+                "flip": "y"
+              },
+              {
+                "ch": "6",
+                "flip": "y"
+              },
+              {
+                "ch": "4",
+                "flip": "y"
+              },
+              {
+                "ch": "2"
+              },
+              {
+                "ch": "O"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "H"
+              },
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "S",
+                "flip": "x"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "S",
+                "flip": "x"
+              },
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "H"
+              },
+              {
+                "ch": "S",
+                "flip": "x"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q58",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. B prints another series (HR2642O); C swaps H and A; D prints S for the R.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q059",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "A1M3b, seen in water below it.",
+        "options": {
+          "A": "capital A upside down, capital I, capital M upside down, 3, small b upside down",
+          "B": "capital A upside down, capital I, capital M upside down, 3, small b upside down; printed with wider spaces between the characters",
+          "C": "capital A upside down, 1 upside down, capital M upside down, 3, small b upside down",
+          "D": "capital A upside down, capital I, capital M upside down, 3 reversed, small b upside down"
+        },
+        "key": "C",
+        "reasoningType": "mirror_water",
+        "direction": "Choose the alternative that resembles the water image of the given word below :",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "A",
+                "flip": "y"
+              },
+              {
+                "ch": "I"
+              },
+              {
+                "ch": "M",
+                "flip": "y"
+              },
+              {
+                "ch": "3"
+              },
+              {
+                "ch": "b",
+                "flip": "y"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "A",
+                "flip": "y"
+              },
+              {
+                "ch": "I"
+              },
+              {
+                "ch": "M",
+                "flip": "y"
+              },
+              {
+                "ch": "3"
+              },
+              {
+                "ch": "b",
+                "flip": "y"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "A",
+                "flip": "y"
+              },
+              {
+                "ch": "1",
+                "flip": "y"
+              },
+              {
+                "ch": "M",
+                "flip": "y"
+              },
+              {
+                "ch": "3"
+              },
+              {
+                "ch": "b",
+                "flip": "y"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "A",
+                "flip": "y"
+              },
+              {
+                "ch": "I"
+              },
+              {
+                "ch": "M",
+                "flip": "y"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              },
+              {
+                "ch": "b",
+                "flip": "y"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q59",
+      "key_basis": "derived",
+      "rule": "In water the order stays and each character turns upside down. A, B and D print an I for the 1; D also reverses the 3.",
+      "confidence": "medium",
+      "note": "C's second character shows the 1's flag turned down; A, B and D print a serifed I. Read at the limit of the photo."
+    },
+    {
+      "id": "oir-agx-ch25-q060",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "ANS43Q12, seen in a mirror.",
+        "options": {
+          "A": "capital A, capital N reversed, capital S reversed, 4 reversed, 3 reversed, capital Q reversed, 1 reversed, 3 reversed",
+          "B": "2 reversed, 1 reversed, capital Q reversed, 3 reversed, 4 reversed, capital S reversed, capital N reversed, capital A",
+          "C": "capital S reversed, capital N reversed, capital A, 3 reversed, 4 reversed, capital Q reversed, capital S reversed, 3 reversed",
+          "D": "1 reversed, 2 reversed, capital W, 4 reversed, 3 reversed, capital A, capital N reversed, capital S reversed"
+        },
+        "key": "B",
+        "reasoningType": "mirror_water",
+        "direction": "If the given alpha-numeric series is seen in mirror, which alternative would resemble its mirror image ?",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "N",
+                "flip": "x"
+              },
+              {
+                "ch": "S",
+                "flip": "x"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              },
+              {
+                "ch": "Q",
+                "flip": "x"
+              },
+              {
+                "ch": "1",
+                "flip": "x"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "2",
+                "flip": "x"
+              },
+              {
+                "ch": "1",
+                "flip": "x"
+              },
+              {
+                "ch": "Q",
+                "flip": "x"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "S",
+                "flip": "x"
+              },
+              {
+                "ch": "N",
+                "flip": "x"
+              },
+              {
+                "ch": "A"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "S",
+                "flip": "x"
+              },
+              {
+                "ch": "N",
+                "flip": "x"
+              },
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "Q",
+                "flip": "x"
+              },
+              {
+                "ch": "S",
+                "flip": "x"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "1",
+                "flip": "x"
+              },
+              {
+                "ch": "2",
+                "flip": "x"
+              },
+              {
+                "ch": "W"
+              },
+              {
+                "ch": "4",
+                "flip": "x"
+              },
+              {
+                "ch": "3",
+                "flip": "x"
+              },
+              {
+                "ch": "A"
+              },
+              {
+                "ch": "N",
+                "flip": "x"
+              },
+              {
+                "ch": "S",
+                "flip": "x"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q60",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. A keeps the order and ends in 3; C and D print other characters (S, 3, W) in the series.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q064",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "TOM in a box, with the mirror XY on its right.",
+        "options": {
+          "A": "capital M, capital O, capital T",
+          "B": "capital M upside down, capital O, capital T upside down",
+          "C": "capital M, capital O, capital T upside down",
+          "D": "capital M upside down, capital O, capital T"
+        },
+        "key": "A",
+        "reasoningType": "mirror_water",
+        "direction": "In each question there is a question figure on the above and four answer figures marked (A), (B), (C) and (D) are given below. Select the answer figure which is exactly the mirror image of the question figure when the mirror is held at XY.",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "M"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "T"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "M",
+                "flip": "y"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "T",
+                "flip": "y"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "M"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "T",
+                "flip": "y"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "M",
+                "flip": "y"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "T"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p112 q64",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. T, O and M look the same in a mirror, so only the order changes: MOT. B is the water image; C turns the T upside down, D the M.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q071",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "CROP in a box, with the mirror XY on its right.",
+        "options": {
+          "A": "capital P, capital O, capital R, capital C",
+          "B": "capital P reversed, capital O, capital R reversed, capital C reversed",
+          "C": "capital P reversed, capital R reversed, capital C, capital O",
+          "D": "capital C reversed, capital R reversed, capital O, capital P reversed"
+        },
+        "key": "B",
+        "reasoningType": "mirror_water",
+        "direction": "In each question there is a question figure on the above and four answer figures marked (A), (B), (C) and (D) are given below. Select the answer figure which is exactly the mirror image of the question figure when the mirror is held at XY.",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "P"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "R"
+              },
+              {
+                "ch": "C"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "P",
+                "flip": "x"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "C",
+                "flip": "x"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "P",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "C"
+              },
+              {
+                "ch": "O"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "C",
+                "flip": "x"
+              },
+              {
+                "ch": "R",
+                "flip": "x"
+              },
+              {
+                "ch": "O"
+              },
+              {
+                "ch": "P",
+                "flip": "x"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p113 q71",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. A reverses the order without turning the letters; C misorders them; D turns the letters back to front but leaves the order.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q073",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "BEND in a box, with the mirror XY on its right.",
+        "options": {
+          "A": "capital D reversed, capital N reversed, capital E reversed, capital B reversed",
+          "B": "capital D reversed, capital N, capital E, capital B reversed",
+          "C": "capital D, capital N reversed, capital E, capital B",
+          "D": "capital B reversed, capital N, capital E reversed, capital D reversed"
+        },
+        "key": "A",
+        "reasoningType": "mirror_water",
+        "direction": "In each question there is a question figure on the above and four answer figures marked (A), (B), (C) and (D) are given below. Select the answer figure which is exactly the mirror image of the question figure when the mirror is held at XY.",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "D",
+                "flip": "x"
+              },
+              {
+                "ch": "N",
+                "flip": "x"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "B",
+                "flip": "x"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "D",
+                "flip": "x"
+              },
+              {
+                "ch": "N"
+              },
+              {
+                "ch": "E"
+              },
+              {
+                "ch": "B",
+                "flip": "x"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "D"
+              },
+              {
+                "ch": "N",
+                "flip": "x"
+              },
+              {
+                "ch": "E"
+              },
+              {
+                "ch": "B"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "B",
+                "flip": "x"
+              },
+              {
+                "ch": "N"
+              },
+              {
+                "ch": "E",
+                "flip": "x"
+              },
+              {
+                "ch": "D",
+                "flip": "x"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p113 q73",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. B leaves N and E unturned; C turns only the N; D swaps the B and D.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch25-q076",
+      "assessment_type": "oir_nonverbal",
+      "payload": {
+        "stem": "↑↓△▽ in a box, with the mirror XY on its right.",
+        "options": {
+          "A": "up arrow, down arrow, triangle pointing down, triangle pointing up",
+          "B": "triangle pointing up, triangle pointing down, down arrow, up arrow",
+          "C": "triangle pointing up, triangle pointing down, up arrow, down arrow",
+          "D": "triangle pointing down, triangle pointing up, down arrow, up arrow"
+        },
+        "key": "D",
+        "reasoningType": "mirror_water",
+        "answerPanels": {
+          "A": {
+            "glyphs": [
+              {
+                "ch": "↑"
+              },
+              {
+                "ch": "↓"
+              },
+              {
+                "ch": "▽"
+              },
+              {
+                "ch": "△"
+              }
+            ]
+          },
+          "B": {
+            "glyphs": [
+              {
+                "ch": "△"
+              },
+              {
+                "ch": "▽"
+              },
+              {
+                "ch": "↓"
+              },
+              {
+                "ch": "↑"
+              }
+            ]
+          },
+          "C": {
+            "glyphs": [
+              {
+                "ch": "△"
+              },
+              {
+                "ch": "▽"
+              },
+              {
+                "ch": "↑"
+              },
+              {
+                "ch": "↓"
+              }
+            ]
+          },
+          "D": {
+            "glyphs": [
+              {
+                "ch": "▽"
+              },
+              {
+                "ch": "△"
+              },
+              {
+                "ch": "↓"
+              },
+              {
+                "ch": "↑"
+              }
+            ]
+          }
+        }
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch25 p113 q76",
+      "key_basis": "derived",
+      "rule": "In a mirror the order reverses and each character turns left to right. Arrows and triangles pointing up or down look the same reversed, so only the order turns round: ▽△↓↑.",
       "confidence": "high"
     },
     {
