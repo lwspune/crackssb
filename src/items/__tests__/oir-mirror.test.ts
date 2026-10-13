@@ -30,4 +30,15 @@ describe('sameGlyphs', () => {
     expect(sameGlyphs([{ ch: 'a' }], [{ ch: 'a' }, { ch: 'b' }])).toBe(false);
     expect(sameGlyphs([{ ch: 'a' }], [{ ch: 'e' }])).toBe(false);
   });
+
+  it('knows arrows and triangles pointing up or down look the same reversed', () => {
+    expect(sameGlyphs([{ ch: '↑', flip: 'x' }, { ch: '▽', flip: 'x' }], [{ ch: '↑' }, { ch: '▽' }])).toBe(true);
+    expect(sameGlyphs([{ ch: '↑', flip: 'y' }], [{ ch: '↑' }])).toBe(false);
+  });
+
+  it('knows N, S and Z look the same turned half round, so upside down is the same as reversed', () => {
+    expect(sameGlyphs([{ ch: 'N', flip: 'xy' }], [{ ch: 'N' }])).toBe(true);
+    expect(sameGlyphs([{ ch: 'S', flip: 'y' }], [{ ch: 'S', flip: 'x' }])).toBe(true);
+    expect(sameGlyphs([{ ch: 'Z', flip: 'y' }], [{ ch: 'Z' }])).toBe(false);
+  });
 });

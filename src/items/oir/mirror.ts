@@ -21,8 +21,10 @@ export function imageOf(text: string, where: 'mirror' | 'water'): Glyph[] {
 }
 
 /** Letters and digits that look the same flipped left to right, and upside down (as printed in the book's sans-serif). */
-const SAME_ACROSS = new Set([...'AHIMOTUVWXYilovwx08 ']);
+const SAME_ACROSS = new Set([...'AHIMOTUVWXYilovwx08 ↑↓△▽']);
 const SAME_UPSIDE_DOWN = new Set([...'BCDEHIKOXclox038 ']);
+/** Letters that look the same turned half round: for them upside down is the same as reversed. */
+const SAME_HALF_TURN = new Set([...'NSZsz']);
 
 /** The flip that is left once flips a glyph's symmetry hides are removed. */
 function visible(g: Glyph): string {
@@ -30,6 +32,10 @@ function visible(g: Glyph): string {
   let y = g.flip === 'y' || g.flip === 'xy';
   if (SAME_ACROSS.has(g.ch)) x = false;
   if (SAME_UPSIDE_DOWN.has(g.ch)) y = false;
+  if (SAME_HALF_TURN.has(g.ch)) {
+    if (x && y) x = y = false;
+    else if (y) [x, y] = [true, false];
+  }
   return `${g.ch}|${x ? 'x' : ''}${y ? 'y' : ''}`;
 }
 
