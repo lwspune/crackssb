@@ -80,6 +80,14 @@ describe('matchMarks', () => {
     expect(matchMarks([hole(2, 3, 'circle', [1, 0])], [hole(2, 3, 'circle', [0, 1])], 1)).toBe(true);
   });
 
+  it('turns a punched shape with its corners: a shape that is not symmetric is told from its mirror', () => {
+    // An L of three points: reflected across a vertical fold it becomes a backwards L.
+    const L: Mark = { shape: 'tab', at: [2, 2], poly: [[2, 2], [2, 4], [3, 4]] };
+    const [, back] = unfold([L], [[[6, 0], [6, 12]]]);
+    expect(matchMarks([back], [{ shape: 'tab', at: [10, 2], poly: [[10, 2], [10, 4], [9, 4]] }], 0.3)).toBe(true);
+    expect(matchMarks([back], [{ shape: 'tab', at: [10, 2], poly: [[10, 2], [10, 4], [11, 4]] }], 0.3)).toBe(false);
+  });
+
   it('compares cut polygons by their corners', () => {
     const cut: Mark = { shape: 'cut', at: [0, 0], poly: [[0, 4], [2, 6], [0, 8]] };
     const same: Mark = { shape: 'cut', at: [0, 0], poly: [[0, 8.2], [0, 4], [2.1, 6]] };
