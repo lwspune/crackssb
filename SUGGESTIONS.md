@@ -270,6 +270,12 @@ risk low, one class to revert · cost none. Recommendation: do. Confirmed and sh
 The direction covers Q1-97, but photo Page68 ends at Q94's first statement and Page69 opens Chapter 18. A photo of the
 missing page (or the scan) adds four questions.
 
+### Non-verbal chapters: redraw where the answer can be computed (D29)
+Chapter 28 is done (42 of 50). Next, redrawn and checked by code: 25 mirror/water images, 18 cubes and dice, 20 group cubes,
+24 paper folding (needs arcs or hole marks), 16 Venn. Cut from the photo and keyed by eye: 21 analogy, 22 classification,
+23 series, 26 pattern completion, 27 embedded figures. 19 (two-option answers) held. Chapter 28's rules say what to count
+but not how many of each size; a breakdown by size would teach more.
+
 ### Non-verbal chapters 16, 18-28 (~820 questions): figures from the photos
 A trial cut nine Counting Figures (Ch 28) figures from the phone photos at 3× (`screenshots/oir-ch12-13/FIGURE-TRIAL.png`).
 Line figures read; faint show-through from the facing page remains, and every crop box is placed by hand. Keys cannot be run as

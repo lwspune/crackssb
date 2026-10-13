@@ -662,3 +662,23 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 **Consequences.** 59 of Chapter 12's 79 questions carry tables; 17 are described. `bank.ts` validates `tables` (no empty table, no ragged row, something printed). Chapter 13 sets each equation on its own line.
 
 **Revisit if.** Non-verbal chapters arrive: they need images (`assetPath`), not tables or words.
+
+---
+
+## D29 — Figure questions are redrawn as lines and counted by code where they can be; cut from the photo only where they cannot
+
+**Date:** 2026-10-13 · **Status:** Accepted · **Extends** D24 (verbatim, keys derived) to the non-verbal chapters
+
+**Context.** The non-verbal chapters (16, 18-28, about 820 questions) are drawings, supplied as phone photos: skewed, curved, with the facing page showing through. Cut out, they read; but no key could be checked, so every one would rest on reading a picture by eye. The owner asked whether they could be redrawn, saw a five-question trial, and chose to redraw.
+
+**Decision.**
+
+1. **Redraw where the answer can be computed from the drawing.** An OIR payload may carry a `figure`: straight lines and circles (`src/items/oir/figure.ts`, validated in `bank.ts`). Counting Figures, mirror and water images, cubes and dice, paper folding and Venn diagrams fall here. The practice screen draws the figure as SVG in the text colour, so it follows the theme; `stem` describes it in words for screen readers.
+2. **The key is computed from the figure that ships.** `countTriangles`, `countSquares` and the rest read a figure as a candidate does: corners where lines meet, joined along drawn lines. A mis-drawn figure changes the count, which then matches no option and fails the chapter test. Dropping any one line from Chapter 28's figures was caught 569 times in 643.
+3. **Every redraw is checked against its photo** on an overlay sheet (the redraw laid over the photo, line for line) before it ships.
+4. **A redraw that matches its photo but counts to no option is held**, never adjusted to fit. The book's key settles it.
+5. **Cut from the photo, not redrawn,** where a drawing cannot be computed on: figure series, analogy, classification, pattern completion, embedded figures. Those keys are read by eye and checked against the book's key first.
+
+**Consequences.** Chapter 28 ships 42 of 50 (8 held: one unreadable, one with squares the photo cannot tell from rectangles, one in arcs, five that count to no option). Its items are `oir_nonverbal`. Counts tolerate stored figures being rounded to four decimals (tested).
+
+**Revisit if.** Flat scans or the book's answer key arrive (the held questions, and a second check on every count), or arcs are needed (Chapter 28 Q37, paper folding).
