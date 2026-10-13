@@ -18,6 +18,12 @@ export interface Figure {
   readonly circles?: readonly (readonly [number, number, number])[];
   /** [x, y, text]: a label centred at a point (a Venn class letter, a number on a face). */
   readonly labels?: readonly (readonly [number, number, string])[];
+  /** Dashed lines: a fold, or the outline of paper folded away. Never counted. */
+  readonly dashed?: readonly (readonly [number, number, number, number])[];
+  /** Arrows from the first point to the second: which way a sheet folds. Never counted. */
+  readonly arrows?: readonly (readonly [number, number, number, number])[];
+  /** Closed shapes, outlined or filled: a punched square or triangle, a shaded corner. Never counted. */
+  readonly polygons?: readonly { readonly points: readonly (readonly [number, number])[]; readonly fill?: boolean }[];
 }
 
 const finite = z.number().finite();
@@ -26,11 +32,19 @@ const line = z
   .refine(([x1, y1, x2, y2]) => Math.hypot(x2 - x1, y2 - y1) > 0, 'a line has length');
 const circle = z.tuple([finite, finite, finite]).refine(([, , r]) => r > 0, 'a circle has a radius');
 const label = z.tuple([finite, finite, z.string().min(1)]);
+const polygon = z.object({ points: z.array(z.tuple([finite, finite])).min(3), fill: z.boolean().optional() }).strict();
 
 export const figureSchema = z
-  .object({ lines: z.array(line), circles: z.array(circle).optional(), labels: z.array(label).optional() })
+  .object({
+    lines: z.array(line),
+    circles: z.array(circle).optional(),
+    labels: z.array(label).optional(),
+    dashed: z.array(line).optional(),
+    arrows: z.array(line).optional(),
+    polygons: z.array(polygon).optional(),
+  })
   .strict()
-  .refine((f) => f.lines.length + (f.circles?.length ?? 0) + (f.labels?.length ?? 0) > 0, 'a figure draws something');
+  .refine((f) => [f.lines, f.circles, f.labels, f.dashed, f.arrows, f.polygons].some((xs) => (xs?.length ?? 0) > 0), 'a figure draws something');
 
 /** Throws, naming the field, on anything that is not a figure. */
 export function validateFigure(figure: unknown): Figure {
@@ -160,8 +174,15 @@ export const countSquares = (figure: Figure) => rectangles(figure).filter(({ w, 
 
 /** The box every line and circle sits in. */
 export function figureBounds(figure: Figure): { x: number; y: number; width: number; height: number } {
-  const xs = [...figure.lines.flatMap(([x1, , x2]) => [x1, x2]), ...(figure.circles ?? []).flatMap(([cx, , r]) => [cx - r, cx + r]), ...(figure.labels ?? []).map(([x]) => x)];
-  const ys = [...figure.lines.flatMap(([, y1, , y2]) => [y1, y2]), ...(figure.circles ?? []).flatMap(([, cy, r]) => [cy - r, cy + r]), ...(figure.labels ?? []).map(([, y]) => y)];
+  const segs = [...figure.lines, ...(figure.dashed ?? []), ...(figure.arrows ?? [])];
+  const pts: (readonly [number, number])[] = [
+    ...segs.flatMap(([x1, y1, x2, y2]) => [[x1, y1], [x2, y2]] as const),
+    ...(figure.circles ?? []).flatMap(([cx, cy, r]) => [[cx - r, cy - r], [cx + r, cy + r]] as const),
+    ...(figure.labels ?? []).map(([x, y]) => [x, y] as const),
+    ...(figure.polygons ?? []).flatMap((p) => p.points),
+  ];
+  const xs = pts.map((p) => p[0]);
+  const ys = pts.map((p) => p[1]);
   const [x, y] = [Math.min(...xs), Math.min(...ys)];
   return { x, y, width: Math.max(...xs) - x, height: Math.max(...ys) - y };
 }
@@ -248,4 +269,9 @@ export function circleRelations(figure: Figure): CircleRelation[] {
     else out.push(['overlap', i, j]);
   }
   return out;
+}
+
+/** The straight runs of a figure, collinear pieces joined: for comparing two drawings. */
+export function straightRuns(figure: Figure): [number, number, number, number][] {
+  return merge(figure.lines).map(([a, b]) => [a[0], a[1], b[0], b[1]]);
 }

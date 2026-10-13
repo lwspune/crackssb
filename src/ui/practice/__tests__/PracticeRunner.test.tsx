@@ -253,4 +253,19 @@ describe('chapter practice', () => {
     rerender(<PracticeRunner key="s" items={[short]} answer={fakeAnswer()} doneHref="/practise/oir" />);
     expect(screen.getByRole('group', { name: 'Options' }).className).toMatch(/(^|\s)grid-cols-2(\s|$)/);
   });
+
+  it('draws folds dashed, fold arrows with a head, and punched shapes filled or outlined', () => {
+    const folded: PracticeItem = {
+      id: 'fd1',
+      stem: 'A square folded in half, and punched.',
+      figure: { lines: [[0, 0, 6, 0]], dashed: [[6, 0, 12, 0]], arrows: [[2, 2, 8, 2]], polygons: [{ points: [[1, 1], [2, 1], [1, 2]], fill: true }, { points: [[3, 3], [4, 3], [3, 4]] }] },
+      options: { A: '1', B: '2', C: '3', D: '4' },
+    };
+    render(<PracticeRunner items={[folded]} answer={fakeAnswer()} doneHref="/practise/oir" />);
+    const img = screen.getByRole('img', { name: folded.stem });
+    expect(img.querySelectorAll('line[stroke-dasharray]')).toHaveLength(1);
+    expect(img.querySelectorAll('[data-arrow]')).toHaveLength(1);
+    const shapes = img.querySelectorAll('polygon[data-shape]');
+    expect([...shapes].map((p) => p.getAttribute('fill'))).toEqual(['currentColor', 'none']);
+  });
 });

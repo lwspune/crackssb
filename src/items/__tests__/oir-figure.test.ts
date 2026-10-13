@@ -122,6 +122,12 @@ describe('figureBounds', () => {
 });
 
 describe('validateFigure', () => {
+  it('accepts dashed lines, arrows and shapes, filled or not', () => {
+    const f = validateFigure({ lines: [], dashed: [[0, 0, 1, 0]], arrows: [[0, 0, 0, 1]], polygons: [{ points: [[0, 0], [1, 0], [0, 1]], fill: true }] });
+    expect(f.polygons![0].fill).toBe(true);
+    expect(() => validateFigure({ lines: [], polygons: [{ points: [[0, 0], [1, 0]] }] })).toThrow();
+  });
+
   it('accepts text labels placed in the figure', () => {
     expect(validateFigure({ lines: [], circles: [[0, 0, 1]], labels: [[0, 0, 'A']] }).labels).toEqual([[0, 0, 'A']]);
     expect(() => validateFigure({ lines: [], labels: [[0, 0, '']] })).toThrow();
