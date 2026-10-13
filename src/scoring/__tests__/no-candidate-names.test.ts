@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { execFileSync } from 'node:child_process';
-import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 
 /**
  * D21: no candidate name in anything git would commit. Real names live only in
@@ -15,7 +15,8 @@ const hasGit = existsSync('.git');
 
 function committable(): string[] {
   const out = execFileSync('git', ['ls-files', '--cached', '--others', '--exclude-standard'], { encoding: 'utf8' });
-  return out.split('\n').filter((f) => f && existsSync(f));
+  // A nested git worktree (an agent's checkout) is listed as a directory: its files are not this repo's to commit.
+  return out.split('\n').filter((f) => f && existsSync(f) && statSync(f).isFile());
 }
 
 function nameParts(): string[] {
