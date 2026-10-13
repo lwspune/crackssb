@@ -271,8 +271,10 @@ The direction covers Q1-97, but photo Page68 ends at Q94's first statement and P
 missing page (or the scan) adds four questions.
 
 ### Non-verbal chapters: redraw where the answer can be computed (D29)
-Chapter 28 is done (42 of 50). Next, redrawn and checked by code: 25 mirror/water images, 18 cubes and dice, 20 group cubes,
-24 paper folding (needs arcs or hole marks), 16 Venn. Cut from the photo and keyed by eye: 21 analogy, 22 classification,
+Done: 28 (42 of 50), 18 (65 of 80), 16 (44 of 50), 25 text questions (23; its 46 drawn figures wait). 16 and 25 were
+ingested by agents in their own worktrees and reviewed against the photos before merging. Next, redrawn and checked by
+code: 24 paper folding (needs arcs or hole marks), 25's figures. 20 group cubes has three options and an unchecked rule:
+with the cut-from-photo set. Cut from the photo and keyed by eye: 21 analogy, 22 classification,
 23 series, 26 pattern completion, 27 embedded figures. 19 (two-option answers) held. Chapter 28's rules say what to count
 but not how many of each size; a breakdown by size would teach more.
 
