@@ -150,13 +150,23 @@
         58
       ],
       "file": "content/oir/agrawal-examcart/ch15-arithmetic-reasoning.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "chapter": 17,
+      "title": "Syllogism",
+      "pages": [
+        62,
+        68
+      ],
+      "file": "content/oir/agrawal-examcart/ch17-syllogism.source.json"
     }
   ],
-  "itemCount": 1390,
-  "heldCount": 93,
+  "itemCount": 1482,
+  "heldCount": 94,
   "confidence": {
-    "high": 1308,
-    "medium": 82
+    "high": 1396,
+    "medium": 86
   },
   "held": [
     {
@@ -645,6 +655,12 @@
       "source": "agrawal-examcart-oir",
       "source_ref": "ch15 p56 q39",
       "reason": "The sentence drops a name: read as printed, Mohan is 3 years younger than Suresh (3, option A); read as the usual question, Aman is 3 older than Mohan and 3 younger than Suresh (6, option C). Both options are printed."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p68 q92",
+      "reason": "Iron sits inside zinc and no gold is zinc, so no iron is gold: II follows on its own and I cannot be true. No printed option says \"only II\"; the book likely means the either-or (C), which the statements do not support.",
+      "lean": "C"
     }
   ],
   "items": [
@@ -32985,6 +33001,2126 @@
       "source_ref": "ch15 p58 q90",
       "key_basis": "derived",
       "rule": "Red = yellow = 2 × green, so red is double the green.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some namkeen are pizza.\n2. No pizza is biscuit.\nConclusions :\nI. No biscuit is namkeen.\nII. No biscuit is pizza.\nIII. Some pizza are not biscuit.",
+        "options": {
+          "A": "Only conclusion III follows",
+          "B": "All conclusions follows",
+          "C": "Both conclusion II and III follows",
+          "D": "Both conclusion I and III follows"
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p62 q1",
+      "key_basis": "derived",
+      "rule": "II is statement 2 turned round; III holds because pizza exist and none is biscuit. The namkeen that are pizza are not biscuit, but others may be, so I does not follow.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q002",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All M. Tech studends are engineers\n2. All LLM students are lawyers\nConclusions :\nI. All lawyers are LLM students.\nII. All engineers are M. Tech students.",
+        "options": {
+          "A": "Neither conclusion I nor II follows",
+          "B": "Only conclusion I follows",
+          "C": "Only conculsion II follows",
+          "D": "Both conclusions (I) and (II) follows"
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p62 q2",
+      "key_basis": "derived",
+      "rule": "An \"all\" does not turn round: lawyers need not be LLM students, nor engineers M. Tech students.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All scooter are two wheeler vehicle\n2. All bicycle are two wheeler vehicle.\nConclusions :\nI. All Scooter are bicycles.\nII. All Bicycles are scooters.",
+        "options": {
+          "A": "Neither conclusion I nor II follows",
+          "B": "Only conclusion II follows.",
+          "C": "Both conclusions I and II follows",
+          "D": "Only conclusion I follows."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p62 q3",
+      "key_basis": "derived",
+      "rule": "Both are two wheelers, but that ties scooters to bicycles not at all.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All animals are dogs.\n2. All dogs are birds.\nConclusions :\nI. All animals are birds.\nII. All birds are animals.",
+        "options": {
+          "A": "Only conclusion (I) follows.",
+          "B": "Only conclusion (II) follows.",
+          "C": "Both conclusions (I) and (II) follow",
+          "D": "Neither conclusion (I) nor (II) follows"
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p62 q4",
+      "key_basis": "derived",
+      "rule": "Animals sit inside dogs, dogs inside birds: all animals are birds. The reverse does not follow.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some roads are streets.\n2. Some streets are ways.\nConclusions :\nI. Some roads are ways.\nII. Some ways are roads",
+        "options": {
+          "A": "Neither conclusion I nor II follows.",
+          "B": "Only conclusion II follows.",
+          "C": "Both conclusions I and II follow.",
+          "D": "Only conclusion I follows."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p62 q5",
+      "key_basis": "derived",
+      "rule": "Two \"some\" statements link nothing: the streets that are roads may not be the ones that are ways.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some linear equations are quadratic equation.\n2. All quadratic equations are algebraic equation.\nConclusions :\nI. All linear equations are algebraic equation.\nII. Some algebraic equations are linear equation\nIII. Some algebraic equations are quadratic equation.\nIV. All quadratic equations are linear equation.",
+        "options": {
+          "A": "Only conclusion I and II follow.",
+          "B": "Only conclusion II follows",
+          "C": "Only conclusion I follows",
+          "D": "Only conclusion II and III follow."
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p62 q6",
+      "key_basis": "derived",
+      "rule": "The linear equations that are quadratic are algebraic, so some algebraic are linear (II); quadratics exist and are all algebraic (III). I and IV claim too much.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q007",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some hills are dunes\n2. No dunes is mountain\nConclusions :\nI. Some dunes are hills\nII. Some mountain are hills\nIII. All hills are mountain",
+        "options": {
+          "A": "Only conclusion III follows.",
+          "B": "All three I, II and III follows",
+          "C": "Only conclusions I and III follows",
+          "D": "Only conclusion I follows"
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p62 q7",
+      "key_basis": "derived",
+      "rule": "I is statement 1 turned round. Nothing ties mountains to hills, and the hills that are dunes are not mountains, so III fails.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. No cat is monkey.\n2. No monkey is cow.\nConclusions :\nI. No cat is cow.\nII. Some cows are monkey.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conlusion II follows.",
+          "C": "Neither conclusion I nor conclusion II follows",
+          "D": "Both conclusions I and II follow."
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p62 q8",
+      "key_basis": "derived",
+      "rule": "Two \"no\" statements say nothing about cats and cows; II contradicts statement 2.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Only a few Bs are Qs.\n2. Only a few Qs are Vs.\nConclusions :\nI. Some Bs are Vs.\nII. All Qs can never be Vs.",
+        "options": {
+          "A": "Neither conclusion (I) nor (II) follows",
+          "B": "Both conclusions (I) and (II) follow",
+          "C": "Only conclusion (I) follows",
+          "D": "Only conclusion (II) follows"
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p62 q9",
+      "key_basis": "derived",
+      "rule": "Only a few Qs are Vs, so some Qs are not Vs: all Qs can never be Vs (II). Bs and Vs are not linked (I).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some mobile phones are video games.\n2. All video games are remote control.\nConclusions :\nI. Some mobile phones are remote control.\nII. Some remote controls are mobile phones.",
+        "options": {
+          "A": "Only conclusion I follows.",
+          "B": "Neither conclusion I nor II follows",
+          "C": "Both conclusions I and II follow.",
+          "D": "Only conclusion II follows."
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p62 q10",
+      "key_basis": "derived",
+      "rule": "The mobile phones that are video games are remote controls, so I and its turn-round II both follow.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All tigers are humans.\n2. No human is an animal.",
+        "options": {
+          "A": "All tigers are animals",
+          "B": "Some tigers are animals",
+          "C": "Some humans are tigers",
+          "D": "Some animals are humans"
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p62 q11",
+      "key_basis": "derived",
+      "rule": "No tiger is an animal (tigers are humans, no human is an animal), so A, B and D fail. Tigers exist and all are humans, so some humans are tigers.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All machines are tools.\n2. No tool is computer.\nConclusions :\nI. No machine is computer.\nII. Some computers are tools.",
+        "options": {
+          "A": "Only conclusion I follows.",
+          "B": "Both conclusions I and II follow.",
+          "C": "Neither conclusion I nor II follows.",
+          "D": "Only conclusion II follows."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p62 q12",
+      "key_basis": "derived",
+      "rule": "Machines sit inside tools and no tool is a computer: no machine is a computer. II contradicts statement 2.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All birds are sparrows.\n2. All sparrows are reptiles.\nConclusions :\nI. Some reptiles are birds.\nII. All reptiles are sparrows.\nIII. All birds are reptiles.",
+        "options": {
+          "A": "Both conclusions II and III follow.",
+          "B": "Both conclusions I and II follow.",
+          "C": "Neither conclusion I nor conclusions II and III follow.",
+          "D": "Both conclusions I and III follow."
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q13",
+      "key_basis": "derived",
+      "rule": "Birds sit inside sparrows inside reptiles: III, and so some reptiles are birds (I). II reverses an \"all\".",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All beauticians are architects.\n2. All architects are cashiers.\nConclusions :\nI. Some architects are beauticians.\nII. Some cashiers are architects.\nIII. Some cashier are beautician.",
+        "options": {
+          "A": "Only conclusions I and II follow.",
+          "B": "Only conclusions II and III follow.",
+          "C": "All conclusions follow.",
+          "D": "Only conclusions I and III follow."
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q14",
+      "key_basis": "derived",
+      "rule": "Beauticians sit inside architects inside cashiers; each \"some\" is an \"all\" turned round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. No bowler is a batter.\n2. Some bowlers are fielders.\nConclusions :\nI. No fielder is a batter.\nII. No batter is a bowler.",
+        "options": {
+          "A": "Both conclusions I and II follow.",
+          "B": "Only conclusion I follows.",
+          "C": "Only conclusion II follows.",
+          "D": "Neither conclusion I nor conclusion II follows."
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q15",
+      "key_basis": "derived",
+      "rule": "II is statement 1 turned round. Fielders that are not bowlers may be batters, so I does not follow.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All trees are plants.\n2. Some plants are vines.\nConclusions :\nI. Some plants are trees.\nII. Some trees are vines.",
+        "options": {
+          "A": "Neither I nor II alone follows.",
+          "B": "Only conclusion II follows.",
+          "C": "Both conclusions I and II follow.",
+          "D": "Only conclusion I follows."
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q16",
+      "key_basis": "derived",
+      "rule": "I turns \"all trees are plants\" round. The plants that are vines need not be trees.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All eyes are noses.\n2. Some noses are lips\nConclusions :\nI. Some noses are eyes.\nII. All lips are noses.",
+        "options": {
+          "A": "Only conclusion II follows",
+          "B": "Only conclusion I follows",
+          "C": "Both the conclusions follow",
+          "D": "Neither conclusion I nor II follows"
+        },
+        "key": "B",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q17",
+      "key_basis": "derived",
+      "rule": "I turns \"all eyes are noses\" round. Only some lips are known to be noses.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All paintings are calligraphics.\n2. All sketching are calligraphics.\nConclusions :\nI. At least some calligraphics are paintings.\nII. No sketching is a painting.",
+        "options": {
+          "A": "Either conclusion I or II follows.",
+          "B": "Neither conclusion I nor II follows.",
+          "C": "Only conclusion I follows.",
+          "D": "Only conclusion II follows."
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q18",
+      "key_basis": "derived",
+      "rule": "Paintings exist and are all calligraphics: I. Sketching and painting may overlap, so II does not follow.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some vehicles are helicopters.\n2. All helicopters are cars.\nConclusions :\nI. All vehicles are cars.\nII. Some vehicles are cars.",
+        "options": {
+          "A": "Only conclusion II follows.",
+          "B": "Neither conclusion I nor II follows.",
+          "C": "Either conclusion I or II follows.",
+          "D": "Only conclusion I follows"
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q19",
+      "key_basis": "derived",
+      "rule": "The vehicles that are helicopters are cars: II. Other vehicles need not be.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some tasks are jobs.\n2. No job is a duty.\nConclusions :\nI. All tasks can never be duties.\nII. Some tasks are duties.",
+        "options": {
+          "A": "Only conclusion I follow",
+          "B": "Neither conclusion I nor II follows",
+          "C": "Either conclusion I nor II follows",
+          "D": "Only conclusion II follows"
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q20",
+      "key_basis": "derived",
+      "rule": "The tasks that are jobs are not duties, so all tasks can never be duties (I). II is possible only.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All eyes are noses.\n2. Some noses are lips.\nConclusions :\nI. Some noses are eyes.\nII. All lips are noses.",
+        "options": {
+          "A": "Both the conclusions follow",
+          "B": "Neither conclusion I nor II follows",
+          "C": "Only conclusions I follows",
+          "D": "Only conclusions II follows"
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q21",
+      "key_basis": "derived",
+      "rule": "As Q17: I turns the first statement round; II claims too much.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some carpenters are singers.\n2. All singers are doctors.\nConclusions :\nI. No doctor is a carpenter.\nII. Some doctors are singers.\nIII. Some carpenters are doctors.",
+        "options": {
+          "A": "Only conclusion II follows",
+          "B": "Only conclusion III follows",
+          "C": "Only conclusions II and III follow",
+          "D": "All conclusions follow."
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q22",
+      "key_basis": "derived",
+      "rule": "Singers exist and are doctors (II); the carpenters who sing are doctors (III), which rules out I.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some vegetables are fruits.\n2. Potato is a vegetable.\nConclusions :\nI. Potato is a fruit.\nII. Potato is not a fruit.\nIII. All vegetables are fruits.\nIV. Some vegetables are not fruits.",
+        "options": {
+          "A": "Only conclusion I follows.",
+          "B": "Only conclusion IV follows.",
+          "C": "Only conclusion III follows.",
+          "D": "None of the conclusions follow."
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q23",
+      "key_basis": "derived",
+      "rule": "Nothing places potato among or outside the fruits, and only some vegetables are known to be fruits: none follows.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some skies are blue.\n2. Some blue are soft.\nConclusions :\nI. Some skies are soft.\nII. Some soft are sky.",
+        "options": {
+          "A": "I only",
+          "B": "II only",
+          "C": "Neither I nor II",
+          "D": "Both I and II"
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q24",
+      "key_basis": "derived",
+      "rule": "Two \"some\" statements link nothing.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All stars are blue.\n2. All blue are black.\nConclusions :\nI. Some black are stars.\nII. All black are stars.",
+        "options": {
+          "A": "I only",
+          "B": "II only",
+          "C": "Neither I nor II",
+          "D": "Both I and II"
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q25",
+      "key_basis": "derived",
+      "rule": "Stars sit inside blue inside black, so some black are stars; not all.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. No cup is plate.\n2. No plate is spoon.\nConclusions :\nI. No cup is spoon.\nII. Some spoons are cups.",
+        "options": {
+          "A": "I only",
+          "B": "II only",
+          "C": "Neither I nor II",
+          "D": "Both I and II"
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q26",
+      "key_basis": "derived",
+      "rule": "Two \"no\" statements say nothing about cups and spoons. One of the two must be true, but neither follows, and no option offers either-or.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q027",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some white are yellow.\n2. All yellow are blue.\nConclusions :\nI. Some blue are white.\nII. Some yellow are white.",
+        "options": {
+          "A": "I only",
+          "B": "II only",
+          "C": "Neither I nor II",
+          "D": "Both I and II"
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q27",
+      "key_basis": "derived",
+      "rule": "The whites that are yellow are blue (I); II turns statement 1 round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All red are pens.\n2. No pen is white.\nConclusions :\nI. No white is pen.\nII. No red is white.\nIII. All pens are red.",
+        "options": {
+          "A": "I and III only",
+          "B": "I and II only",
+          "C": "II and III only",
+          "D": "All the conclusions are true"
+        },
+        "key": "B",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p63 q28",
+      "key_basis": "derived",
+      "rule": "I turns statement 2 round; reds sit inside pens, so none is white (II). III reverses an \"all\".",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q029",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some red are blue.\n2. Some blue are plates.\nConclusions :\nI. Some red are plates.\nII. some plates are red\nIII. Some plates are blue.",
+        "options": {
+          "A": "I and II only",
+          "B": "II and III only",
+          "C": "III only",
+          "D": "None of the conclusions is correct."
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q29",
+      "key_basis": "derived",
+      "rule": "III turns statement 2 round. Reds and plates are not linked.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All cups are plates.\n2. All plates are red.\nConclusions :\nI. All cups are red.\nII. All plates are cups.\nIII. All red are plates.",
+        "options": {
+          "A": "Only I",
+          "B": "Only II",
+          "C": "Only III",
+          "D": "All the conclusions are correct."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q30",
+      "key_basis": "derived",
+      "rule": "Cups inside plates inside red: I. II and III reverse an \"all\".",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q031",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All coal are black.\n2. All black are red.\nConclusions :\nI. All coal are red.\nII. All red are coal.\nIII. No red is coal.",
+        "options": {
+          "A": "I only",
+          "B": "I and II only",
+          "C": "III only",
+          "D": "All the conclusions are true"
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q31",
+      "key_basis": "derived",
+      "rule": "Coal inside black inside red: I. II reverses it, and III contradicts it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some pens are cups.\n2. All cups are plates.\nConclusions :\nI. All pens are plates.\nII. No plate is pen.\nIII. All cups are pens.",
+        "options": {
+          "A": "I only",
+          "B": "II only",
+          "C": "III only",
+          "D": "none is correct"
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q32",
+      "key_basis": "derived",
+      "rule": "Only some pens are cups, so I claims too much; those pens are plates, so II is false; III reverses a \"some\".",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some cups are plates.\n2. No cup is pencil.\nConclusions :\nI. No plate is pencil.\nII. Some plates are pencils.\nIII. Some pencils are cups.",
+        "options": {
+          "A": "I only",
+          "B": "II only",
+          "C": "Both I and II",
+          "D": "None of the conclusions is correct."
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q33",
+      "key_basis": "derived",
+      "rule": "Plates outside the cups may or may not be pencils; III contradicts statement 2.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All plates are pens.\n2. Some pens are pencils.\nConclusions :\nI. All plates are pencils.\nII. No plate is pencil.\nIII. Some pencils are pens.",
+        "options": {
+          "A": "I only",
+          "B": "II only",
+          "C": "III only",
+          "D": "Both I and III"
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q34",
+      "key_basis": "derived",
+      "rule": "III turns statement 2 round; plates and pencils are not linked.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All ears are hands.\n2. No hand is nose.\nConclusions :\nI. No ear is nose.\nII. All nose are ear.\nIII. Some hands are noses.",
+        "options": {
+          "A": "I only",
+          "B": "II only",
+          "C": "III only",
+          "D": "None is correct."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q35",
+      "key_basis": "derived",
+      "rule": "Ears sit inside hands and no hand is a nose: I. II and III contradict that.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. No boat is a ship.\n2. Some ships are rods.\nConclusions :\nI. No boat is a rod.\nII. Some rods are ships.\nIII. Some rods are not boats.",
+        "options": {
+          "A": "Only conclusions II and III follow",
+          "B": "Only conclusion II follows.",
+          "C": "All conclusions follow.",
+          "D": "Only conclusion III follows."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q36",
+      "key_basis": "derived",
+      "rule": "II turns statement 2 round; those rods are ships, so not boats (III). Other rods may be boats.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All bottles are glasses.\n2. All glasses are jugs.\nConclusions :\nI. All bottles are jugs.\nII. All jugs are bottles.\nIII. Some glasses are bottles.",
+        "options": {
+          "A": "Only conclusions II and III follow",
+          "B": "Only conclusion I follows.",
+          "C": "Only conclusions I and II follow.",
+          "D": "Only conclusions I and III follow."
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q37",
+      "key_basis": "derived",
+      "rule": "Bottles inside glasses inside jugs: I, and III turns the first \"all\" round. II reverses one.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All vehicles are helicopters.\n2. Some cars are vehicles.\nConclusions :\nI. All cars are helicopters.\nII. Some helicopters are vehicles.\nIII. No car is helicopter.",
+        "options": {
+          "A": "Only conclusion II follows.",
+          "B": "Only conclusions I and III follow.",
+          "C": "Only conclusions II and III follow.",
+          "D": "Only conclusion III follows."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q38",
+      "key_basis": "derived",
+      "rule": "Vehicles exist and are all helicopters: II. The cars that are vehicles are helicopters, so III fails; other cars may not be, so I fails.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q039",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some scissors are spoons.\n2. All spoons are plates.\nConclusions :\nI. Some plates are spoons.\nII. Some spoons are scissors.\nIII. Some plates are scissors.",
+        "options": {
+          "A": "Only conclusion I and III follow.",
+          "B": "Only conclusions II and III follow.",
+          "C": "All conclusions follow.",
+          "D": "Only conclusions I and II follow."
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q39",
+      "key_basis": "derived",
+      "rule": "The scissors that are spoons are plates; each conclusion turns or chains that.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All books are grapes.\n2. Some grapes are fruits.\nConclusions :\nI. No grapes are books.\nII. Some grapes are books.",
+        "options": {
+          "A": "Only conclusion II follows.",
+          "B": "Only conclusion I follows.",
+          "C": "Either conclusion I or conclusion II follows",
+          "D": "Both conclusions I and II follow."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q40",
+      "key_basis": "derived",
+      "rule": "Books exist and are all grapes: II. I contradicts it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q041",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All white are pink.\n2. All green are pink.\nConclusions :\nI. Some pink are green.\nII. Some pink are white.",
+        "options": {
+          "A": "Either conclusion I or conclusion II follows",
+          "B": "Only conclusion I follows.",
+          "C": "Only conclusion II follows.",
+          "D": "Both the conclusions follow."
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q41",
+      "key_basis": "derived",
+      "rule": "Each turns an \"all\" round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All schools are pens.\n2. All books are school.\nConclusions :\nI. All books are pens.\nII. All pens are books.",
+        "options": {
+          "A": "Both conclusions I and II follow.",
+          "B": "Neither conclusion I nor II follows.",
+          "C": "Only conclusion I follows.",
+          "D": "Only conclusion II follows."
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q42",
+      "key_basis": "derived",
+      "rule": "Books inside schools inside pens: I. II reverses it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All chains are glasses.\n2. All glasses are tables.\nConclusions :\nI. Some glasses are chains.\nII. Some tables are glasses.",
+        "options": {
+          "A": "Both conclusions I and II follow.",
+          "B": "Only conclusion II follows.",
+          "C": "Only conclusion I follows.",
+          "D": "Neither conclusion I nor II follows."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p64 q43",
+      "key_basis": "derived",
+      "rule": "Each turns an \"all\" round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q044",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some fans are hammers.\n2. All hammers are fish.\nConclusions :\nI. No fans are fish.\nII. Some fans are fish.",
+        "options": {
+          "A": "Only conclusion II follows.",
+          "B": "Neither conclusion I nor II follows.",
+          "C": "Both conclusions I and II follow.",
+          "D": "Only conclusion I follows."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q44",
+      "key_basis": "derived",
+      "rule": "The fans that are hammers are fish: II. I contradicts it.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some jars are mugs.\n2. Some mugs are pots.\nConclusions :\nI. Some pots are mugs\nII. Some pots are jars",
+        "options": {
+          "A": "Neither conclusion I nor II follows.",
+          "B": "Both conclusions I and II follow.",
+          "C": "Only conclusion II follows.",
+          "D": "Conclusion only I follows."
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q45",
+      "key_basis": "derived",
+      "rule": "I turns statement 2 round; jars and pots are not linked.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All bottles are pens.\n2. Some mugs are bottles.\nConclusions :\nI. Some mugs are pens.\nII. All pens are mugs.",
+        "options": {
+          "A": "Only conclusion I follows.",
+          "B": "Both conclusion I and II do not follow.",
+          "C": "Only conclusion II follows.",
+          "D": "Both the conclusions follow."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q46",
+      "key_basis": "derived",
+      "rule": "The mugs that are bottles are pens: I. II claims too much.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some fans are swords.\n2. All swords are fish.\nConclusions :\nI. All fans are fish.\nII. All swords are fans.",
+        "options": {
+          "A": "Both conclusion I and II do not follow.",
+          "B": "Only conclusion I follows.",
+          "C": "Only conclusion II follows.",
+          "D": "Both the conclusions follow."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q47",
+      "key_basis": "derived",
+      "rule": "Only some fans are known to be fish, and only some swords to be fans.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some pillows are doors.\n2. Some doors are beds.\nConclusions :\nI. Some doors are pillows.\nII. All beds are doors.",
+        "options": {
+          "A": "Only conclusion I follows.",
+          "B": "Only conclusion II follows.",
+          "C": "Both the conclusions follow.",
+          "D": "Both conclusion I and II do not follow."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q48",
+      "key_basis": "derived",
+      "rule": "I turns statement 1 round; II claims too much.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. No J is R\n2. No R is C.\nConclusions :\nI. All J are C.\nII. Some R are J.\nIII. All C are R.",
+        "options": {
+          "A": "None of the conclusion follows",
+          "B": "Only conclusion III follows",
+          "C": "Only conclusion I follows",
+          "D": "Only conclusion II follows"
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q49",
+      "key_basis": "derived",
+      "rule": "Two \"no\" statements say nothing of J and C; II and III contradict the statements.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q050",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some Jungle are green\n2. No blue is green.\nConclusions :\nI. No green is blue.\nII. Some green are jungle.\nIII. No jungle is blue.",
+        "options": {
+          "A": "Both conclusions II and III follows",
+          "B": "Only conclusion III follows",
+          "C": "Both conclusions I and II follows",
+          "D": "Only conclusion II follows"
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q50",
+      "key_basis": "derived",
+      "rule": "I and II turn the statements round. Jungle outside green may be blue, so III does not follow.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q051",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. No mountains is deserts.\n2. Some deserts are sandy places.\n3. Some sandy places are not mountains.\nConclusions :\nI. Some deserts are not mountains.\nII. Some sandy places are mountains.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Both conclusions I and II follow",
+          "D": "Neither conclusion I nor II follows"
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q51",
+      "key_basis": "derived",
+      "rule": "Deserts exist and none is a mountain: I. Nothing makes sandy places mountains.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q052",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All bicycles are wheels.\n2. Some bicycles are vehicles.\n3. Some vehicles are not tyres.\nConclusions :\nI. Some bicycles are tyres.\nII. Some wheels are not vehicles.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Both conclusions I and II follow",
+          "D": "Neither conclusion I nor II follows"
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q52",
+      "key_basis": "derived",
+      "rule": "Nothing places bicycles among tyres, and every wheel may be a vehicle.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q053",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some phones are laptops.\n2. Some laptops are tablets.\n3. Some tables are desktops.\nConclusions :\nI. Some phones are desktops.\nII. All tablets are phones.",
+        "options": {
+          "A": "Only conclusion I follows",
+          "B": "Only conclusion II follows",
+          "C": "Neither conclusion I nor II follow",
+          "D": "Both conclusions I and II follows"
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q53",
+      "key_basis": "derived",
+      "rule": "\"Some\" statements in a chain link nothing.",
+      "confidence": "medium",
+      "note": "Statement 3 prints \"tables\", likely for \"tablets\"; either way nothing follows."
+    },
+    {
+      "id": "oir-agx-ch17-q054",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. No powder is a lipstick.\n2. All lipsticks are creams.\n3. No cream is a lotion.\nConclusions :\nI. No lipstick is a lotion.\nII. No powder is a cream.",
+        "options": {
+          "A": "Neither conclusion I nor II follows",
+          "B": "Both conclusions I and II follow",
+          "C": "Only conclusion II follows",
+          "D": "Only conclusion I follows"
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q54",
+      "key_basis": "derived",
+      "rule": "Lipsticks sit inside creams and no cream is a lotion: I. Powders outside lipsticks may be creams.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q055",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All cats are dogs.\n2. Some dogs are elephants.\n3. All elephants are camels.\nConclusions :\nI. All cats are elephants.\nII. Some cats are elephants.\nIII. Some elephants are dogs.\nIV. Some camels are dogs.",
+        "options": {
+          "A": "Conclusion III and IV follow.",
+          "B": "Only conclusion I follows.",
+          "C": "None of the conclusion follow.",
+          "D": "Only conclusion II follows."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q55",
+      "key_basis": "derived",
+      "rule": "III turns statement 2 round; those dogs are camels, so IV. Cats and elephants are not linked.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q056",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All drinks are shakes.\n2. All teas are shakes.\n3. All shakes are coffee.\nConclusions :\nI. All coffees are teas.\nII. All coffees are drinks.\nIII. Some coffees are shakes.",
+        "options": {
+          "A": "Both conclusion I and III follow.",
+          "B": "Only conclusion II follows.",
+          "C": "Only conclusion III follow.",
+          "D": "Only conclusion I and II follow."
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q56",
+      "key_basis": "derived",
+      "rule": "Shakes sit inside coffee: III. I and II reverse \"all\"s.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q057",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All masks are sanitizers.\n2. All handwashes are sanitizers.\n3. All sanitizers are medicines.\nConclusions :\nI. All handwashes are medicines.\nII. All medicines are masks.\nIII. Some medicines are handwashes.",
+        "options": {
+          "A": "Only conclusion I and II follow.",
+          "B": "All conclusion follow",
+          "C": "Only conclusion I and III follow.",
+          "D": "Only conclusion II and III follow."
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q57",
+      "key_basis": "derived",
+      "rule": "Handwashes inside sanitizers inside medicines: I, and III turns it round. II reverses an \"all\".",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q058",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All apples are bananas.\n2. All grapes are bananas.\n3. All bananas are plums.\nConclusions :\nI. All apples are plums.\nII. All grapes are plums.\nIII. Some grapes are bananas.",
+        "options": {
+          "A": "Only conclusions I and II follow.",
+          "B": "All conclusions follow",
+          "C": "Only conclusions I and III follow.",
+          "D": "Only conclusion II and III follow."
+        },
+        "key": "B",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p65 q58",
+      "key_basis": "derived",
+      "rule": "Apples and grapes sit inside bananas inside plums: I and II; III is part of statement 2.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q059",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All boxes are pans.\n2. Some boxes are jugs.\n3. Some jugs are glasses.\nConclusions :\nI. Some glasses are boxes.\nII. No glass is a box.\nIII. Some jugs are pans.",
+        "options": {
+          "A": "Only conclusion III follows.",
+          "B": "Only conclusion I follows.",
+          "C": "All three conclusion follow.",
+          "D": "Both conclusions I and II follow."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p66 q59",
+      "key_basis": "derived",
+      "rule": "The jugs that are boxes are pans: III. Glasses and boxes are not linked; one of I and II must be true, but no option offers III with either-or.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q060",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All mirrors are combs.\n2. All clips are combs.\n3. All combs are brushes.\nConclusions :\nI. All clips are brushes.\nII. All mirrors are brushes.\nIII. Some brushes are clips.",
+        "options": {
+          "A": "All conclusions follow",
+          "B": "Only conclusion I and III follows",
+          "C": "Only conclusion II and III follows",
+          "D": "Only conclusion I and II follow"
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p66 q60",
+      "key_basis": "derived",
+      "rule": "Mirrors and clips sit inside combs inside brushes; III turns I round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q061",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All flowers are leaves.\n2. All leaves are stems.\n3. Some stems are roots.\nConclusions :\nI. Some stems are leaves.\nII. Some flowers are roots.\nIII. Some leaves are flowers.",
+        "options": {
+          "A": "Only conclusion I and III follow.",
+          "B": "All conclusion follows.",
+          "C": "Only conclusion II follows.",
+          "D": "Only conclusion II and III follow."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p66 q61",
+      "key_basis": "derived",
+      "rule": "I and III turn \"all\"s round. The stems that are roots need not be flowers.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q062",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All chocolates are biscuits.\n2. All chips are biscuits.\n3. All biscuits are potatoes.\nConclusions :\nI. All chips are potatoes\nII. All potatoes are chocolates.\nIII. Some potatoes the chips.",
+        "options": {
+          "A": "Only conclusion II and III follow.",
+          "B": "Only conclusion I and III follow.",
+          "C": "Only conclusion I and II follow.",
+          "D": "All conclusion follow"
+        },
+        "key": "B",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p66 q62",
+      "key_basis": "derived",
+      "rule": "Chips inside biscuits inside potatoes: I, and III turns it round. II reverses an \"all\".",
+      "confidence": "medium",
+      "note": "III prints \"Some potatoes the chips\", read as \"are\"."
+    },
+    {
+      "id": "oir-agx-ch17-q063",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. No keys are phones.\n2. All keys are clips.\n3. Some keys are tables.\nConclusions :\nI. Some clips are not phones.\nII. Some tables are not phones.\nIII. Some clips are tables.",
+        "options": {
+          "A": "All conclusions follow",
+          "B": "Only conclusions I and III follow",
+          "C": "Only conclusions II and III follow",
+          "D": "Only conclusions III follow"
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p66 q63",
+      "key_basis": "derived",
+      "rule": "Keys are clips and not phones: I. The tables that are keys are clips (III) and not phones (II).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q064",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some beans are potatoes.\n2. All carrots are potatoes.\n3. All gourds are potatoes.\nConclusions :\nI. Some gourds are beans,\nII. Some carrots are gourds.\nIII. Some potatoes are gourds.",
+        "options": {
+          "A": "Only conclusion III follows",
+          "B": "Only conclusions I and III follow",
+          "C": "All conclusions follow",
+          "D": "Only conclusion II and III follow"
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p66 q64",
+      "key_basis": "derived",
+      "rule": "III turns statement 3 round. Gourds, carrots and beans are not linked to each other.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q065",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All boys are tomatoes.\n2. Some tomatoes are ladders.\n3. No ladder is small.\nConclusions :\nI. Some boys are not tomatoes.\nII. Some ladders are not tomatoes.\nIII. Some boys are ladders.",
+        "options": {
+          "A": "Only conclusion III follows.",
+          "B": "Only conclusion I follows.",
+          "C": "Only conclusion II follows.",
+          "D": "None of the conclusion follows."
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p66 q65",
+      "key_basis": "derived",
+      "rule": "I contradicts statement 1; every ladder may be a tomato; boys and ladders are not linked.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q066",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All pillows are bed.\n2. Some beds are cupboards.\n3. All cupboards are wood.\nConclusions :\nI. Some beds are pillows.\nII. Some cupboards are beds.\nIII. All wood are cupboards.",
+        "options": {
+          "A": "All conclusions follow.",
+          "B": "Both conclusions I and II follow.",
+          "C": "Both conclusions II and III follow.",
+          "D": "Both conclusions I and III follow."
+        },
+        "key": "B",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p66 q66",
+      "key_basis": "derived",
+      "rule": "I and II turn statements round; III reverses an \"all\".",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q067",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All cats are rats.\n2. Some rats are white.\n3. All white are milk.\nConclusions :\nI. Some rats are cats.\nII. Some white are rats.\nIII. Some milk are white.",
+        "options": {
+          "A": "All conclusion follow.",
+          "B": "Both conclusion I and III follow.",
+          "C": "Both conclusions I and II follow.",
+          "D": "Both conclusion II and III follow."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p66 q67",
+      "key_basis": "derived",
+      "rule": "Each conclusion turns a statement round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q068",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All stems are leaves.\n2. All fruits are leaves.\n3. All leaves are trunks.\nConclusions :\nI. All fruits are trunks.\nII. All trunks are stems.\nIII. Some trunks are fruits.",
+        "options": {
+          "A": "Only conclusions II and III follow",
+          "B": "Only conclusions I and III follow",
+          "C": "Only conclusions I and II follow",
+          "D": "All conclusions follow"
+        },
+        "key": "B",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p66 q68",
+      "key_basis": "derived",
+      "rule": "Fruits inside leaves inside trunks: I, and III turns it round. II reverses an \"all\".",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q069",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All tubes are pipes.\n2. All switches are pipes.\n3. All pipes are boards.\nConclusions :\nI. All switches are board.\nII. All boards are tubes.\nIII. Some boards are switches.",
+        "options": {
+          "A": "Only conclusion I and II follow.",
+          "B": "Only conclusion II and III follow.",
+          "C": "Only conclusion I and III follow.",
+          "D": "All conclusions follow."
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p66 q69",
+      "key_basis": "derived",
+      "rule": "Switches inside pipes inside boards: I and III. II reverses an \"all\".",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q070",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All waters are inks.\n2. All glues are inks.\n3. All inks are pens.\nConclusions :\nI. All glues are pens.\nII. All pens are waters.\nIII. Some pens are glues.",
+        "options": {
+          "A": "Only conclusion I and II follow.",
+          "B": "All conclusion follow.",
+          "C": "Only conclusion I and III follow.",
+          "D": "Only conclusion II and III follows."
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p66 q70",
+      "key_basis": "derived",
+      "rule": "Glues inside inks inside pens: I and III. II reverses an \"all\".",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q071",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All pencils are woods.\n2. Some woods are notes.\n3. Some diaries are woods.\nConclusions :\nI. Some notes are diaries.\nII. Some woods are pencils.\nIII. Some diaries are woods.",
+        "options": {
+          "A": "Both Conclusions II and III follow.",
+          "B": "Only Conclusion II follows.",
+          "C": "Both Conclusions I and II follow.",
+          "D": "Only Conclusion III follows."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p66 q71",
+      "key_basis": "derived",
+      "rule": "II turns statement 1 round; III repeats statement 3. Notes and diaries are not linked.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q072",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All beds are tables.\n2. All cots are tables.\n3. All tables are taps.\nConclusions :\nI. All cots are taps.\nII. Some taps are beds.\nIII. Some taps are cots.",
+        "options": {
+          "A": "Only conclusions I and II follows",
+          "B": "Only conclusions I and III follow",
+          "C": "All conclusions follow",
+          "D": "Only conclusions II and III follow"
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p66 q72",
+      "key_basis": "derived",
+      "rule": "Beds and cots sit inside tables inside taps; II and III turn that round.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q073",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some trees are fishes.\n2. All fishes are goats.\n3. No goat is a flower.\nConclusions :\nI. Some trees are goats.\nII. Some fishes are not flowers.\nIII. Some flowers are not goats.",
+        "options": {
+          "A": "All conclusion follow.",
+          "B": "Only conclusion I follows.",
+          "C": "Only conclusion II follows.",
+          "D": "Only conclusion III follows."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p67 q73",
+      "key_basis": "derived",
+      "rule": "The trees that are fishes are goats (I); fishes are goats, never flowers (II); flowers exist and none is a goat (III).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q074",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All Fields are gardens.\n2. All gardens are Parks.\n3. Some gardens are apartments.\nConclusions :\nI. Some Apartments are Parks\nII. All fields are parks",
+        "options": {
+          "A": "Only conclusion follows.",
+          "B": "Only conclusion follows.",
+          "C": "Both conclusion I and II follows.",
+          "D": "Neither conclusion Nor does conclusion follow."
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p67 q74",
+      "key_basis": "derived",
+      "rule": "The apartments that are gardens are parks (I); fields sit inside gardens inside parks (II).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q075",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All camels are fractals.\n2. No fractal is a tube.\n3. All pianos are camels.\nConclusions :\nI. Some tubes are camels.\nII. No piano is a tube.",
+        "options": {
+          "A": "Only conclusion II follows.",
+          "B": "Neither conclusion I nor II follows.",
+          "C": "Either conclusion I or II follows.",
+          "D": "Only conclusion I follows."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p67 q75",
+      "key_basis": "derived",
+      "rule": "Pianos inside camels inside fractals, none a tube: II. I contradicts that.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q076",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All bangles are coins.\n2. All coins are anklets.\n3. All anklets are lockets.\nConclusions :\nI. All lockets are bangles.\nII. Some lockets are coins.",
+        "options": {
+          "A": "Only conclusion II follows.",
+          "B": "Only conclusion I follows",
+          "C": "Neither conclusion I nor II follows",
+          "D": "Both conclusion I and II follow"
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p67 q76",
+      "key_basis": "derived",
+      "rule": "Coins sit inside lockets, so some lockets are coins. I reverses the chain.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q077",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All tables are woods.\n2. All woods are paints.\n3. No paint is a steel.\nConclusions :\n1. All steels can be woods.\n2. Some paints are steels.",
+        "options": {
+          "A": "Both conclusions 1 and 2 follow.",
+          "B": "Neither conclusion 1 nor 2 follows.",
+          "C": "Only conclusion 1 follows.",
+          "D": "Only conclusion 2 follows."
+        },
+        "key": "B",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p67 q77",
+      "key_basis": "derived",
+      "rule": "Woods are paints and no paint is steel, so no steel can be a wood (1 fails) and 2 contradicts statement 3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q078",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some watches are clocks.\n2. All clocks are black.\n3. All black are big.\nConclusions :\nI. Some watches are big.\nII. Some watches are black.",
+        "options": {
+          "A": "Both conclusions I and II follow.",
+          "B": "Only conclusion II follows.",
+          "C": "Neither conclusion I nor II Follows.",
+          "D": "Only conclusion I follows."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p67 q78",
+      "key_basis": "derived",
+      "rule": "The watches that are clocks are black, and so big: both.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q079",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some chairs are bedsheets.\n2. All cots are chairs.\n3. All pillows are bedsheets.\nConclusions :\nI. Some pillows are chairs.\nII. Some cots are bedsheets.",
+        "options": {
+          "A": "Both conclusions I and II follow.",
+          "B": "Neither conclusion I nor II follows.",
+          "C": "Only conclusion II follows.",
+          "D": "Only conclusion I follows."
+        },
+        "key": "B",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p67 q79",
+      "key_basis": "derived",
+      "rule": "The chairs that are bedsheets need not be cots or pillows: neither.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q080",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some raisins are grapes.\n2. All grapes are apples.\n3. All raisins are fruits.\nConclusions :\nI. Some fruits are apples.\nII. Some apples are raisins.",
+        "options": {
+          "A": "Only conclusion I follows.",
+          "B": "Only conclusion II follows.",
+          "C": "Neither conclusion I nor II follows.",
+          "D": "Both conclusions I and II follow."
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p67 q80",
+      "key_basis": "derived",
+      "rule": "The raisins that are grapes are apples (II) and fruits, so some fruits are apples (I).",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q081",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some trains are buses.\n2. No bus is a car.\n3. Some cars are bikes\nConclusions :\nI. Some bikes are cars.\nII. Some bikes are trains.",
+        "options": {
+          "A": "Only conclusion II follows.",
+          "B": "Only conclusion I follows.",
+          "C": "Neither conclusion I nor II follows.",
+          "D": "Both conclusion I and II follows."
+        },
+        "key": "B",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p67 q81",
+      "key_basis": "derived",
+      "rule": "I turns statement 3 round. Trains and bikes are not linked.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q082",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All doors are walls.\n2. All walls are rooms.\n3. All rooms are flats.\nConclusions :\nI. Some flats are doors.\nII. All walls are flats.",
+        "options": {
+          "A": "Only conclusion I follows.",
+          "B": "Neither conclusion I nor II follows.",
+          "C": "Only conclusion II follows.",
+          "D": "Both conclusions I and II follow."
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p67 q82",
+      "key_basis": "derived",
+      "rule": "Doors inside walls inside rooms inside flats: both.",
+      "confidence": "medium",
+      "note": "Both conclusions print as \"I.\"; the second is read as II, as the options name it."
+    },
+    {
+      "id": "oir-agx-ch17-q083",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All notebooks are pink.\n2. All pink are shirts.\n3. Some shirts are trousers.\nConclusions :\nI. All trousers are notebooks\nII. Some trousers are pink.",
+        "options": {
+          "A": "Neither conclusion I nor II follows.",
+          "B": "Only conclusion II follows.",
+          "C": "Only conclusion I follows.",
+          "D": "Both conclusion I and II follow."
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p67 q83",
+      "key_basis": "derived",
+      "rule": "The shirts that are trousers need not be pink or notebooks.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q084",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All bottles are bags.\n2. Some bags are pencils.\n3. Some pencils are sharpeners.\nConclusions :\nI. Some sharpeners are bottles.\nII. Some bottles are pencils.",
+        "options": {
+          "A": "Both conclusions I and II follow",
+          "B": "Only conclusion II follow",
+          "C": "Neither conclusion I nor II follow",
+          "D": "Only conlcusion I follow"
+        },
+        "key": "C",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p67 q84",
+      "key_basis": "derived",
+      "rule": "The bags that are pencils need not be bottles: neither.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q085",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some bed are chairs.\n2. All chairs are tables.\n3. All tables are towels.\nConclusions :\nI. Some towels are bed.\nII. Some table are bed.",
+        "options": {
+          "A": "Only conclusion (I) follows.",
+          "B": "Both conclusions (I) and (II) follows",
+          "C": "Only conclusion (II) follows",
+          "D": "Neither conclusion (I) nor (II) follows"
+        },
+        "key": "B",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p67 q85",
+      "key_basis": "derived",
+      "rule": "The beds that are chairs are tables and so towels: both.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q086",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some goats are tires.\n2. All roads are tires.\n3. Some cars are roads.\nConclusions :\nI. Some cars are tires.\nII. All goats are cars",
+        "options": {
+          "A": "Conclusion I or II is true",
+          "B": "Neither conclusion I nor II is true",
+          "C": "Only conclusion II is true",
+          "D": "Only conclusion I is true."
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p67 q86",
+      "key_basis": "derived",
+      "rule": "The cars that are roads are tires: I. II claims too much.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q087",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. Some lawyers are doctors.\n2. Some doctors are players.\n3. All players are engineers.\nConclusions :\nI. Some players are doctors.\nII. Some engineers are lawyers.\nIII. All lawyers are engineers.\nIV. Some engineers are doctors.",
+        "options": {
+          "A": "Both conclusions I and II follow.",
+          "B": "Both conclusions I and IV follow.",
+          "C": "Both conclusions I and III follow.",
+          "D": "Both conclusions II and IV follow."
+        },
+        "key": "B",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p68 q87",
+      "key_basis": "derived",
+      "rule": "I turns statement 2 round; those doctors are players and so engineers (IV). Lawyers and engineers are not linked.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q088",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All children study in class V.\n2. Some children go to coaching.\n3. Some children are brilliant.\nConclusions :\nI. All children who go to coaching are brilliant.\nII. Children who go to coaching also study in class V.\nIII. All children who study in class V are not brilliant.",
+        "options": {
+          "A": "Both conclusions I and II follow.",
+          "B": "Both conclusions II and III follow.",
+          "C": "Only III follows.",
+          "D": "Only II follows."
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p68 q88",
+      "key_basis": "derived",
+      "rule": "Every child studies in class V, so the children at coaching do (II). Only some children are brilliant (I fails), and some are, so III fails.",
+      "confidence": "medium",
+      "note": "\"Children who go to coaching\" is read as a class within the children, and \"all children who study in class V are not brilliant\" as \"no child is brilliant\"."
+    },
+    {
+      "id": "oir-agx-ch17-q089",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. No K is L.\n2. Some L are M.\n3. All M are G.\nConclusions :\nI. Some G are L.\nII. Some M are L.\nIII. No L is K.",
+        "options": {
+          "A": "Only conclusion I follows.",
+          "B": "All conclusions I, II and III follow.",
+          "C": "None conclusion follows.",
+          "D": "Both conclusions II and III follow."
+        },
+        "key": "B",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p68 q89",
+      "key_basis": "derived",
+      "rule": "II and III turn statements round; the Ls that are M are G, so I.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q090",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All tables are chairs.\n2. Some chairs are foldables.\n3. All foldables are beds.\nConclusions :\nI. All beds are chairs.\nII. All tables are foldables.",
+        "options": {
+          "A": "Only conclusion II follows",
+          "B": "Neither conclusion I nor II follows",
+          "C": "Both conclusions I and II follows",
+          "D": "Only conclusion I follows"
+        },
+        "key": "B",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p68 q90",
+      "key_basis": "derived",
+      "rule": "The chairs that fold need not be tables, and beds need not be chairs: neither.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q091",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All capsicums are chilies.\n2. All chilies are cucumbers.\n3. All cucumbers are gourds.\nConclusions :\nI. Some cucumbers are capsicums.\nII. All gourds are capsicums.\nIII. All chilies are gourds.",
+        "options": {
+          "A": "Only conclusions I and III follow",
+          "B": "Only conclusions IIand III follow",
+          "C": "All the conclusions follow",
+          "D": "Only conclusions I and II follow"
+        },
+        "key": "A",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p68 q91",
+      "key_basis": "derived",
+      "rule": "Capsicums inside chilies inside cucumbers inside gourds: I and III. II reverses the chain.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch17-q093",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Statements :\n1. All ladders are tables\n2. Some tables are chairs\n3. All chairs are furniture\nConclusions :\nI. Some furniture are ladders\nII. All tables are furniture",
+        "options": {
+          "A": "Only conclusion II follows",
+          "B": "Both conclusion I and II follows",
+          "C": "Only conclusion I follows",
+          "D": "Neither conclusion I nor II follows"
+        },
+        "key": "D",
+        "reasoningType": "syllogism",
+        "direction": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch17 p68 q93",
+      "key_basis": "derived",
+      "rule": "The tables that are chairs need not be ladders, and other tables need not be furniture: neither.",
       "confidence": "high"
     }
   ]

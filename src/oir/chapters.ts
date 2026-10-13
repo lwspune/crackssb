@@ -31,6 +31,7 @@ export const OIR_CHAPTERS: readonly OirChapter[] = [
   { slug: 'math-operations', title: 'Mathematical Operations', reasoningType: 'mathematical_operations', summary: 'Swapped signs, coded sums, number rules' },
   { slug: 'calendar-clock', title: 'Calendar and Clock', reasoningType: 'calendar_clock', summary: 'Weekdays from dates, angles between the hands' },
   { slug: 'arithmetic', title: 'Arithmetic Reasoning', reasoningType: 'arithmetic', summary: 'Ages, speeds, shares and percentages' },
+  { slug: 'syllogism', title: 'Syllogism', reasoningType: 'syllogism', summary: 'What follows from all, some and no' },
 ];
 
 export function chapterBySlug(slug: string): OirChapter | undefined {

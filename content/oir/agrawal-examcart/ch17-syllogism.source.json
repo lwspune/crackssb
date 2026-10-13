@@ -1,0 +1,1138 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSR OIR 1-127 (phone photos of printed pages 1-127)",
+  "chapter": 17,
+  "title": "Syllogism",
+  "pages": [
+    62,
+    68
+  ],
+  "transcribed": "2026-10-13",
+  "note": "Statements and conclusions verbatim, typos included (\"studends\", \"conculsion\", \"conlusion\", \"conlcusion\", \"Statemens\", \"Some potatoes the chips\", \"Some tables are desktops\" in Q53 beside \"tablets\"). Numbering is normalised: statements 1., 2., 3. and conclusions I., II., III. (the book mixes I./1./A./(A)); Q77 keeps 1. and 2. because its options name them so. Q11 prints no conclusions: its options are the conclusions. Q74 prints options A and B without numerals, alike. Q78 prints its options in the order B, A, C, D; stored by label. Q82 prints both conclusions as \"I.\"; the second is II. The direction covers Q1-97, but the photos stop at Q94's first statement (page 69 begins Chapter 18): Q94-97 are not transcribed.",
+  "directions": [
+    {
+      "section": "Main",
+      "printed": "Direction (Q. No. 1 to 97)",
+      "text": "In the following questions below are given some statements followed by some conclusions based on those statements. Taking the given statements to be true even if they seem to be at variance from commonly known facts. Read all the conclusions and then decide which of the given conclusion(s) logically follows the given statements."
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 62,
+      "section": "Main",
+      "stem": "Statements :\n1. Some namkeen are pizza.\n2. No pizza is biscuit.\nConclusions :\nI. No biscuit is namkeen.\nII. No biscuit is pizza.\nIII. Some pizza are not biscuit.",
+      "options": {
+        "A": "Only conclusion III follows",
+        "B": "All conclusions follows",
+        "C": "Both conclusion II and III follows",
+        "D": "Both conclusion I and III follows"
+      }
+    },
+    {
+      "n": 2,
+      "page": 62,
+      "section": "Main",
+      "stem": "Statements :\n1. All M. Tech studends are engineers\n2. All LLM students are lawyers\nConclusions :\nI. All lawyers are LLM students.\nII. All engineers are M. Tech students.",
+      "options": {
+        "A": "Neither conclusion I nor II follows",
+        "B": "Only conclusion I follows",
+        "C": "Only conculsion II follows",
+        "D": "Both conclusions (I) and (II) follows"
+      }
+    },
+    {
+      "n": 3,
+      "page": 62,
+      "section": "Main",
+      "stem": "Statements :\n1. All scooter are two wheeler vehicle\n2. All bicycle are two wheeler vehicle.\nConclusions :\nI. All Scooter are bicycles.\nII. All Bicycles are scooters.",
+      "options": {
+        "A": "Neither conclusion I nor II follows",
+        "B": "Only conclusion II follows.",
+        "C": "Both conclusions I and II follows",
+        "D": "Only conclusion I follows."
+      }
+    },
+    {
+      "n": 4,
+      "page": 62,
+      "section": "Main",
+      "stem": "Statements :\n1. All animals are dogs.\n2. All dogs are birds.\nConclusions :\nI. All animals are birds.\nII. All birds are animals.",
+      "options": {
+        "A": "Only conclusion (I) follows.",
+        "B": "Only conclusion (II) follows.",
+        "C": "Both conclusions (I) and (II) follow",
+        "D": "Neither conclusion (I) nor (II) follows"
+      }
+    },
+    {
+      "n": 5,
+      "page": 62,
+      "section": "Main",
+      "stem": "Statements :\n1. Some roads are streets.\n2. Some streets are ways.\nConclusions :\nI. Some roads are ways.\nII. Some ways are roads",
+      "options": {
+        "A": "Neither conclusion I nor II follows.",
+        "B": "Only conclusion II follows.",
+        "C": "Both conclusions I and II follow.",
+        "D": "Only conclusion I follows."
+      }
+    },
+    {
+      "n": 6,
+      "page": 62,
+      "section": "Main",
+      "stem": "Statements :\n1. Some linear equations are quadratic equation.\n2. All quadratic equations are algebraic equation.\nConclusions :\nI. All linear equations are algebraic equation.\nII. Some algebraic equations are linear equation\nIII. Some algebraic equations are quadratic equation.\nIV. All quadratic equations are linear equation.",
+      "options": {
+        "A": "Only conclusion I and II follow.",
+        "B": "Only conclusion II follows",
+        "C": "Only conclusion I follows",
+        "D": "Only conclusion II and III follow."
+      }
+    },
+    {
+      "n": 7,
+      "page": 62,
+      "section": "Main",
+      "stem": "Statements :\n1. Some hills are dunes\n2. No dunes is mountain\nConclusions :\nI. Some dunes are hills\nII. Some mountain are hills\nIII. All hills are mountain",
+      "options": {
+        "A": "Only conclusion III follows.",
+        "B": "All three I, II and III follows",
+        "C": "Only conclusions I and III follows",
+        "D": "Only conclusion I follows"
+      }
+    },
+    {
+      "n": 8,
+      "page": 62,
+      "section": "Main",
+      "stem": "Statements :\n1. No cat is monkey.\n2. No monkey is cow.\nConclusions :\nI. No cat is cow.\nII. Some cows are monkey.",
+      "options": {
+        "A": "Only conclusion I follows",
+        "B": "Only conlusion II follows.",
+        "C": "Neither conclusion I nor conclusion II follows",
+        "D": "Both conclusions I and II follow."
+      }
+    },
+    {
+      "n": 9,
+      "page": 62,
+      "section": "Main",
+      "stem": "Statements :\n1. Only a few Bs are Qs.\n2. Only a few Qs are Vs.\nConclusions :\nI. Some Bs are Vs.\nII. All Qs can never be Vs.",
+      "options": {
+        "A": "Neither conclusion (I) nor (II) follows",
+        "B": "Both conclusions (I) and (II) follow",
+        "C": "Only conclusion (I) follows",
+        "D": "Only conclusion (II) follows"
+      }
+    },
+    {
+      "n": 10,
+      "page": 62,
+      "section": "Main",
+      "stem": "Statements :\n1. Some mobile phones are video games.\n2. All video games are remote control.\nConclusions :\nI. Some mobile phones are remote control.\nII. Some remote controls are mobile phones.",
+      "options": {
+        "A": "Only conclusion I follows.",
+        "B": "Neither conclusion I nor II follows",
+        "C": "Both conclusions I and II follow.",
+        "D": "Only conclusion II follows."
+      }
+    },
+    {
+      "n": 11,
+      "page": 62,
+      "section": "Main",
+      "stem": "Statements :\n1. All tigers are humans.\n2. No human is an animal.",
+      "options": {
+        "A": "All tigers are animals",
+        "B": "Some tigers are animals",
+        "C": "Some humans are tigers",
+        "D": "Some animals are humans"
+      }
+    },
+    {
+      "n": 12,
+      "page": 62,
+      "section": "Main",
+      "stem": "Statements :\n1. All machines are tools.\n2. No tool is computer.\nConclusions :\nI. No machine is computer.\nII. Some computers are tools.",
+      "options": {
+        "A": "Only conclusion I follows.",
+        "B": "Both conclusions I and II follow.",
+        "C": "Neither conclusion I nor II follows.",
+        "D": "Only conclusion II follows."
+      }
+    },
+    {
+      "n": 13,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. All birds are sparrows.\n2. All sparrows are reptiles.\nConclusions :\nI. Some reptiles are birds.\nII. All reptiles are sparrows.\nIII. All birds are reptiles.",
+      "options": {
+        "A": "Both conclusions II and III follow.",
+        "B": "Both conclusions I and II follow.",
+        "C": "Neither conclusion I nor conclusions II and III follow.",
+        "D": "Both conclusions I and III follow."
+      }
+    },
+    {
+      "n": 14,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. All beauticians are architects.\n2. All architects are cashiers.\nConclusions :\nI. Some architects are beauticians.\nII. Some cashiers are architects.\nIII. Some cashier are beautician.",
+      "options": {
+        "A": "Only conclusions I and II follow.",
+        "B": "Only conclusions II and III follow.",
+        "C": "All conclusions follow.",
+        "D": "Only conclusions I and III follow."
+      }
+    },
+    {
+      "n": 15,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. No bowler is a batter.\n2. Some bowlers are fielders.\nConclusions :\nI. No fielder is a batter.\nII. No batter is a bowler.",
+      "options": {
+        "A": "Both conclusions I and II follow.",
+        "B": "Only conclusion I follows.",
+        "C": "Only conclusion II follows.",
+        "D": "Neither conclusion I nor conclusion II follows."
+      }
+    },
+    {
+      "n": 16,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. All trees are plants.\n2. Some plants are vines.\nConclusions :\nI. Some plants are trees.\nII. Some trees are vines.",
+      "options": {
+        "A": "Neither I nor II alone follows.",
+        "B": "Only conclusion II follows.",
+        "C": "Both conclusions I and II follow.",
+        "D": "Only conclusion I follows."
+      }
+    },
+    {
+      "n": 17,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. All eyes are noses.\n2. Some noses are lips\nConclusions :\nI. Some noses are eyes.\nII. All lips are noses.",
+      "options": {
+        "A": "Only conclusion II follows",
+        "B": "Only conclusion I follows",
+        "C": "Both the conclusions follow",
+        "D": "Neither conclusion I nor II follows"
+      }
+    },
+    {
+      "n": 18,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. All paintings are calligraphics.\n2. All sketching are calligraphics.\nConclusions :\nI. At least some calligraphics are paintings.\nII. No sketching is a painting.",
+      "options": {
+        "A": "Either conclusion I or II follows.",
+        "B": "Neither conclusion I nor II follows.",
+        "C": "Only conclusion I follows.",
+        "D": "Only conclusion II follows."
+      }
+    },
+    {
+      "n": 19,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. Some vehicles are helicopters.\n2. All helicopters are cars.\nConclusions :\nI. All vehicles are cars.\nII. Some vehicles are cars.",
+      "options": {
+        "A": "Only conclusion II follows.",
+        "B": "Neither conclusion I nor II follows.",
+        "C": "Either conclusion I or II follows.",
+        "D": "Only conclusion I follows"
+      }
+    },
+    {
+      "n": 20,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. Some tasks are jobs.\n2. No job is a duty.\nConclusions :\nI. All tasks can never be duties.\nII. Some tasks are duties.",
+      "options": {
+        "A": "Only conclusion I follow",
+        "B": "Neither conclusion I nor II follows",
+        "C": "Either conclusion I nor II follows",
+        "D": "Only conclusion II follows"
+      }
+    },
+    {
+      "n": 21,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. All eyes are noses.\n2. Some noses are lips.\nConclusions :\nI. Some noses are eyes.\nII. All lips are noses.",
+      "options": {
+        "A": "Both the conclusions follow",
+        "B": "Neither conclusion I nor II follows",
+        "C": "Only conclusions I follows",
+        "D": "Only conclusions II follows"
+      }
+    },
+    {
+      "n": 22,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. Some carpenters are singers.\n2. All singers are doctors.\nConclusions :\nI. No doctor is a carpenter.\nII. Some doctors are singers.\nIII. Some carpenters are doctors.",
+      "options": {
+        "A": "Only conclusion II follows",
+        "B": "Only conclusion III follows",
+        "C": "Only conclusions II and III follow",
+        "D": "All conclusions follow."
+      }
+    },
+    {
+      "n": 23,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. Some vegetables are fruits.\n2. Potato is a vegetable.\nConclusions :\nI. Potato is a fruit.\nII. Potato is not a fruit.\nIII. All vegetables are fruits.\nIV. Some vegetables are not fruits.",
+      "options": {
+        "A": "Only conclusion I follows.",
+        "B": "Only conclusion IV follows.",
+        "C": "Only conclusion III follows.",
+        "D": "None of the conclusions follow."
+      }
+    },
+    {
+      "n": 24,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. Some skies are blue.\n2. Some blue are soft.\nConclusions :\nI. Some skies are soft.\nII. Some soft are sky.",
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Neither I nor II",
+        "D": "Both I and II"
+      }
+    },
+    {
+      "n": 25,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. All stars are blue.\n2. All blue are black.\nConclusions :\nI. Some black are stars.\nII. All black are stars.",
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Neither I nor II",
+        "D": "Both I and II"
+      }
+    },
+    {
+      "n": 26,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. No cup is plate.\n2. No plate is spoon.\nConclusions :\nI. No cup is spoon.\nII. Some spoons are cups.",
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Neither I nor II",
+        "D": "Both I and II"
+      }
+    },
+    {
+      "n": 27,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. Some white are yellow.\n2. All yellow are blue.\nConclusions :\nI. Some blue are white.\nII. Some yellow are white.",
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Neither I nor II",
+        "D": "Both I and II"
+      }
+    },
+    {
+      "n": 28,
+      "page": 63,
+      "section": "Main",
+      "stem": "Statements :\n1. All red are pens.\n2. No pen is white.\nConclusions :\nI. No white is pen.\nII. No red is white.\nIII. All pens are red.",
+      "options": {
+        "A": "I and III only",
+        "B": "I and II only",
+        "C": "II and III only",
+        "D": "All the conclusions are true"
+      }
+    },
+    {
+      "n": 29,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. Some red are blue.\n2. Some blue are plates.\nConclusions :\nI. Some red are plates.\nII. some plates are red\nIII. Some plates are blue.",
+      "options": {
+        "A": "I and II only",
+        "B": "II and III only",
+        "C": "III only",
+        "D": "None of the conclusions is correct."
+      }
+    },
+    {
+      "n": 30,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. All cups are plates.\n2. All plates are red.\nConclusions :\nI. All cups are red.\nII. All plates are cups.\nIII. All red are plates.",
+      "options": {
+        "A": "Only I",
+        "B": "Only II",
+        "C": "Only III",
+        "D": "All the conclusions are correct."
+      }
+    },
+    {
+      "n": 31,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. All coal are black.\n2. All black are red.\nConclusions :\nI. All coal are red.\nII. All red are coal.\nIII. No red is coal.",
+      "options": {
+        "A": "I only",
+        "B": "I and II only",
+        "C": "III only",
+        "D": "All the conclusions are true"
+      }
+    },
+    {
+      "n": 32,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. Some pens are cups.\n2. All cups are plates.\nConclusions :\nI. All pens are plates.\nII. No plate is pen.\nIII. All cups are pens.",
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "III only",
+        "D": "none is correct"
+      }
+    },
+    {
+      "n": 33,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. Some cups are plates.\n2. No cup is pencil.\nConclusions :\nI. No plate is pencil.\nII. Some plates are pencils.\nIII. Some pencils are cups.",
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "None of the conclusions is correct."
+      }
+    },
+    {
+      "n": 34,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. All plates are pens.\n2. Some pens are pencils.\nConclusions :\nI. All plates are pencils.\nII. No plate is pencil.\nIII. Some pencils are pens.",
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "III only",
+        "D": "Both I and III"
+      }
+    },
+    {
+      "n": 35,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. All ears are hands.\n2. No hand is nose.\nConclusions :\nI. No ear is nose.\nII. All nose are ear.\nIII. Some hands are noses.",
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "III only",
+        "D": "None is correct."
+      }
+    },
+    {
+      "n": 36,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. No boat is a ship.\n2. Some ships are rods.\nConclusions :\nI. No boat is a rod.\nII. Some rods are ships.\nIII. Some rods are not boats.",
+      "options": {
+        "A": "Only conclusions II and III follow",
+        "B": "Only conclusion II follows.",
+        "C": "All conclusions follow.",
+        "D": "Only conclusion III follows."
+      }
+    },
+    {
+      "n": 37,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. All bottles are glasses.\n2. All glasses are jugs.\nConclusions :\nI. All bottles are jugs.\nII. All jugs are bottles.\nIII. Some glasses are bottles.",
+      "options": {
+        "A": "Only conclusions II and III follow",
+        "B": "Only conclusion I follows.",
+        "C": "Only conclusions I and II follow.",
+        "D": "Only conclusions I and III follow."
+      }
+    },
+    {
+      "n": 38,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. All vehicles are helicopters.\n2. Some cars are vehicles.\nConclusions :\nI. All cars are helicopters.\nII. Some helicopters are vehicles.\nIII. No car is helicopter.",
+      "options": {
+        "A": "Only conclusion II follows.",
+        "B": "Only conclusions I and III follow.",
+        "C": "Only conclusions II and III follow.",
+        "D": "Only conclusion III follows."
+      }
+    },
+    {
+      "n": 39,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. Some scissors are spoons.\n2. All spoons are plates.\nConclusions :\nI. Some plates are spoons.\nII. Some spoons are scissors.\nIII. Some plates are scissors.",
+      "options": {
+        "A": "Only conclusion I and III follow.",
+        "B": "Only conclusions II and III follow.",
+        "C": "All conclusions follow.",
+        "D": "Only conclusions I and II follow."
+      }
+    },
+    {
+      "n": 40,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. All books are grapes.\n2. Some grapes are fruits.\nConclusions :\nI. No grapes are books.\nII. Some grapes are books.",
+      "options": {
+        "A": "Only conclusion II follows.",
+        "B": "Only conclusion I follows.",
+        "C": "Either conclusion I or conclusion II follows",
+        "D": "Both conclusions I and II follow."
+      }
+    },
+    {
+      "n": 41,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. All white are pink.\n2. All green are pink.\nConclusions :\nI. Some pink are green.\nII. Some pink are white.",
+      "options": {
+        "A": "Either conclusion I or conclusion II follows",
+        "B": "Only conclusion I follows.",
+        "C": "Only conclusion II follows.",
+        "D": "Both the conclusions follow."
+      }
+    },
+    {
+      "n": 42,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. All schools are pens.\n2. All books are school.\nConclusions :\nI. All books are pens.\nII. All pens are books.",
+      "options": {
+        "A": "Both conclusions I and II follow.",
+        "B": "Neither conclusion I nor II follows.",
+        "C": "Only conclusion I follows.",
+        "D": "Only conclusion II follows."
+      }
+    },
+    {
+      "n": 43,
+      "page": 64,
+      "section": "Main",
+      "stem": "Statements :\n1. All chains are glasses.\n2. All glasses are tables.\nConclusions :\nI. Some glasses are chains.\nII. Some tables are glasses.",
+      "options": {
+        "A": "Both conclusions I and II follow.",
+        "B": "Only conclusion II follows.",
+        "C": "Only conclusion I follows.",
+        "D": "Neither conclusion I nor II follows."
+      }
+    },
+    {
+      "n": 44,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. Some fans are hammers.\n2. All hammers are fish.\nConclusions :\nI. No fans are fish.\nII. Some fans are fish.",
+      "options": {
+        "A": "Only conclusion II follows.",
+        "B": "Neither conclusion I nor II follows.",
+        "C": "Both conclusions I and II follow.",
+        "D": "Only conclusion I follows."
+      }
+    },
+    {
+      "n": 45,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. Some jars are mugs.\n2. Some mugs are pots.\nConclusions :\nI. Some pots are mugs\nII. Some pots are jars",
+      "options": {
+        "A": "Neither conclusion I nor II follows.",
+        "B": "Both conclusions I and II follow.",
+        "C": "Only conclusion II follows.",
+        "D": "Conclusion only I follows."
+      }
+    },
+    {
+      "n": 46,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. All bottles are pens.\n2. Some mugs are bottles.\nConclusions :\nI. Some mugs are pens.\nII. All pens are mugs.",
+      "options": {
+        "A": "Only conclusion I follows.",
+        "B": "Both conclusion I and II do not follow.",
+        "C": "Only conclusion II follows.",
+        "D": "Both the conclusions follow."
+      }
+    },
+    {
+      "n": 47,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. Some fans are swords.\n2. All swords are fish.\nConclusions :\nI. All fans are fish.\nII. All swords are fans.",
+      "options": {
+        "A": "Both conclusion I and II do not follow.",
+        "B": "Only conclusion I follows.",
+        "C": "Only conclusion II follows.",
+        "D": "Both the conclusions follow."
+      }
+    },
+    {
+      "n": 48,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. Some pillows are doors.\n2. Some doors are beds.\nConclusions :\nI. Some doors are pillows.\nII. All beds are doors.",
+      "options": {
+        "A": "Only conclusion I follows.",
+        "B": "Only conclusion II follows.",
+        "C": "Both the conclusions follow.",
+        "D": "Both conclusion I and II do not follow."
+      }
+    },
+    {
+      "n": 49,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. No J is R\n2. No R is C.\nConclusions :\nI. All J are C.\nII. Some R are J.\nIII. All C are R.",
+      "options": {
+        "A": "None of the conclusion follows",
+        "B": "Only conclusion III follows",
+        "C": "Only conclusion I follows",
+        "D": "Only conclusion II follows"
+      }
+    },
+    {
+      "n": 50,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. Some Jungle are green\n2. No blue is green.\nConclusions :\nI. No green is blue.\nII. Some green are jungle.\nIII. No jungle is blue.",
+      "options": {
+        "A": "Both conclusions II and III follows",
+        "B": "Only conclusion III follows",
+        "C": "Both conclusions I and II follows",
+        "D": "Only conclusion II follows"
+      }
+    },
+    {
+      "n": 51,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. No mountains is deserts.\n2. Some deserts are sandy places.\n3. Some sandy places are not mountains.\nConclusions :\nI. Some deserts are not mountains.\nII. Some sandy places are mountains.",
+      "options": {
+        "A": "Only conclusion I follows",
+        "B": "Only conclusion II follows",
+        "C": "Both conclusions I and II follow",
+        "D": "Neither conclusion I nor II follows"
+      }
+    },
+    {
+      "n": 52,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. All bicycles are wheels.\n2. Some bicycles are vehicles.\n3. Some vehicles are not tyres.\nConclusions :\nI. Some bicycles are tyres.\nII. Some wheels are not vehicles.",
+      "options": {
+        "A": "Only conclusion I follows",
+        "B": "Only conclusion II follows",
+        "C": "Both conclusions I and II follow",
+        "D": "Neither conclusion I nor II follows"
+      }
+    },
+    {
+      "n": 53,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. Some phones are laptops.\n2. Some laptops are tablets.\n3. Some tables are desktops.\nConclusions :\nI. Some phones are desktops.\nII. All tablets are phones.",
+      "options": {
+        "A": "Only conclusion I follows",
+        "B": "Only conclusion II follows",
+        "C": "Neither conclusion I nor II follow",
+        "D": "Both conclusions I and II follows"
+      }
+    },
+    {
+      "n": 54,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. No powder is a lipstick.\n2. All lipsticks are creams.\n3. No cream is a lotion.\nConclusions :\nI. No lipstick is a lotion.\nII. No powder is a cream.",
+      "options": {
+        "A": "Neither conclusion I nor II follows",
+        "B": "Both conclusions I and II follow",
+        "C": "Only conclusion II follows",
+        "D": "Only conclusion I follows"
+      }
+    },
+    {
+      "n": 55,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. All cats are dogs.\n2. Some dogs are elephants.\n3. All elephants are camels.\nConclusions :\nI. All cats are elephants.\nII. Some cats are elephants.\nIII. Some elephants are dogs.\nIV. Some camels are dogs.",
+      "options": {
+        "A": "Conclusion III and IV follow.",
+        "B": "Only conclusion I follows.",
+        "C": "None of the conclusion follow.",
+        "D": "Only conclusion II follows."
+      }
+    },
+    {
+      "n": 56,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. All drinks are shakes.\n2. All teas are shakes.\n3. All shakes are coffee.\nConclusions :\nI. All coffees are teas.\nII. All coffees are drinks.\nIII. Some coffees are shakes.",
+      "options": {
+        "A": "Both conclusion I and III follow.",
+        "B": "Only conclusion II follows.",
+        "C": "Only conclusion III follow.",
+        "D": "Only conclusion I and II follow."
+      }
+    },
+    {
+      "n": 57,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. All masks are sanitizers.\n2. All handwashes are sanitizers.\n3. All sanitizers are medicines.\nConclusions :\nI. All handwashes are medicines.\nII. All medicines are masks.\nIII. Some medicines are handwashes.",
+      "options": {
+        "A": "Only conclusion I and II follow.",
+        "B": "All conclusion follow",
+        "C": "Only conclusion I and III follow.",
+        "D": "Only conclusion II and III follow."
+      }
+    },
+    {
+      "n": 58,
+      "page": 65,
+      "section": "Main",
+      "stem": "Statements :\n1. All apples are bananas.\n2. All grapes are bananas.\n3. All bananas are plums.\nConclusions :\nI. All apples are plums.\nII. All grapes are plums.\nIII. Some grapes are bananas.",
+      "options": {
+        "A": "Only conclusions I and II follow.",
+        "B": "All conclusions follow",
+        "C": "Only conclusions I and III follow.",
+        "D": "Only conclusion II and III follow."
+      }
+    },
+    {
+      "n": 59,
+      "page": 66,
+      "section": "Main",
+      "stem": "Statements :\n1. All boxes are pans.\n2. Some boxes are jugs.\n3. Some jugs are glasses.\nConclusions :\nI. Some glasses are boxes.\nII. No glass is a box.\nIII. Some jugs are pans.",
+      "options": {
+        "A": "Only conclusion III follows.",
+        "B": "Only conclusion I follows.",
+        "C": "All three conclusion follow.",
+        "D": "Both conclusions I and II follow."
+      }
+    },
+    {
+      "n": 60,
+      "page": 66,
+      "section": "Main",
+      "stem": "Statements :\n1. All mirrors are combs.\n2. All clips are combs.\n3. All combs are brushes.\nConclusions :\nI. All clips are brushes.\nII. All mirrors are brushes.\nIII. Some brushes are clips.",
+      "options": {
+        "A": "All conclusions follow",
+        "B": "Only conclusion I and III follows",
+        "C": "Only conclusion II and III follows",
+        "D": "Only conclusion I and II follow"
+      }
+    },
+    {
+      "n": 61,
+      "page": 66,
+      "section": "Main",
+      "stem": "Statements :\n1. All flowers are leaves.\n2. All leaves are stems.\n3. Some stems are roots.\nConclusions :\nI. Some stems are leaves.\nII. Some flowers are roots.\nIII. Some leaves are flowers.",
+      "options": {
+        "A": "Only conclusion I and III follow.",
+        "B": "All conclusion follows.",
+        "C": "Only conclusion II follows.",
+        "D": "Only conclusion II and III follow."
+      }
+    },
+    {
+      "n": 62,
+      "page": 66,
+      "section": "Main",
+      "stem": "Statements :\n1. All chocolates are biscuits.\n2. All chips are biscuits.\n3. All biscuits are potatoes.\nConclusions :\nI. All chips are potatoes\nII. All potatoes are chocolates.\nIII. Some potatoes the chips.",
+      "options": {
+        "A": "Only conclusion II and III follow.",
+        "B": "Only conclusion I and III follow.",
+        "C": "Only conclusion I and II follow.",
+        "D": "All conclusion follow"
+      }
+    },
+    {
+      "n": 63,
+      "page": 66,
+      "section": "Main",
+      "stem": "Statements :\n1. No keys are phones.\n2. All keys are clips.\n3. Some keys are tables.\nConclusions :\nI. Some clips are not phones.\nII. Some tables are not phones.\nIII. Some clips are tables.",
+      "options": {
+        "A": "All conclusions follow",
+        "B": "Only conclusions I and III follow",
+        "C": "Only conclusions II and III follow",
+        "D": "Only conclusions III follow"
+      }
+    },
+    {
+      "n": 64,
+      "page": 66,
+      "section": "Main",
+      "stem": "Statements :\n1. Some beans are potatoes.\n2. All carrots are potatoes.\n3. All gourds are potatoes.\nConclusions :\nI. Some gourds are beans,\nII. Some carrots are gourds.\nIII. Some potatoes are gourds.",
+      "options": {
+        "A": "Only conclusion III follows",
+        "B": "Only conclusions I and III follow",
+        "C": "All conclusions follow",
+        "D": "Only conclusion II and III follow"
+      }
+    },
+    {
+      "n": 65,
+      "page": 66,
+      "section": "Main",
+      "stem": "Statements :\n1. All boys are tomatoes.\n2. Some tomatoes are ladders.\n3. No ladder is small.\nConclusions :\nI. Some boys are not tomatoes.\nII. Some ladders are not tomatoes.\nIII. Some boys are ladders.",
+      "options": {
+        "A": "Only conclusion III follows.",
+        "B": "Only conclusion I follows.",
+        "C": "Only conclusion II follows.",
+        "D": "None of the conclusion follows."
+      }
+    },
+    {
+      "n": 66,
+      "page": 66,
+      "section": "Main",
+      "stem": "Statements :\n1. All pillows are bed.\n2. Some beds are cupboards.\n3. All cupboards are wood.\nConclusions :\nI. Some beds are pillows.\nII. Some cupboards are beds.\nIII. All wood are cupboards.",
+      "options": {
+        "A": "All conclusions follow.",
+        "B": "Both conclusions I and II follow.",
+        "C": "Both conclusions II and III follow.",
+        "D": "Both conclusions I and III follow."
+      }
+    },
+    {
+      "n": 67,
+      "page": 66,
+      "section": "Main",
+      "stem": "Statements :\n1. All cats are rats.\n2. Some rats are white.\n3. All white are milk.\nConclusions :\nI. Some rats are cats.\nII. Some white are rats.\nIII. Some milk are white.",
+      "options": {
+        "A": "All conclusion follow.",
+        "B": "Both conclusion I and III follow.",
+        "C": "Both conclusions I and II follow.",
+        "D": "Both conclusion II and III follow."
+      }
+    },
+    {
+      "n": 68,
+      "page": 66,
+      "section": "Main",
+      "stem": "Statements :\n1. All stems are leaves.\n2. All fruits are leaves.\n3. All leaves are trunks.\nConclusions :\nI. All fruits are trunks.\nII. All trunks are stems.\nIII. Some trunks are fruits.",
+      "options": {
+        "A": "Only conclusions II and III follow",
+        "B": "Only conclusions I and III follow",
+        "C": "Only conclusions I and II follow",
+        "D": "All conclusions follow"
+      }
+    },
+    {
+      "n": 69,
+      "page": 66,
+      "section": "Main",
+      "stem": "Statements :\n1. All tubes are pipes.\n2. All switches are pipes.\n3. All pipes are boards.\nConclusions :\nI. All switches are board.\nII. All boards are tubes.\nIII. Some boards are switches.",
+      "options": {
+        "A": "Only conclusion I and II follow.",
+        "B": "Only conclusion II and III follow.",
+        "C": "Only conclusion I and III follow.",
+        "D": "All conclusions follow."
+      }
+    },
+    {
+      "n": 70,
+      "page": 66,
+      "section": "Main",
+      "stem": "Statements :\n1. All waters are inks.\n2. All glues are inks.\n3. All inks are pens.\nConclusions :\nI. All glues are pens.\nII. All pens are waters.\nIII. Some pens are glues.",
+      "options": {
+        "A": "Only conclusion I and II follow.",
+        "B": "All conclusion follow.",
+        "C": "Only conclusion I and III follow.",
+        "D": "Only conclusion II and III follows."
+      }
+    },
+    {
+      "n": 71,
+      "page": 66,
+      "section": "Main",
+      "stem": "Statements :\n1. All pencils are woods.\n2. Some woods are notes.\n3. Some diaries are woods.\nConclusions :\nI. Some notes are diaries.\nII. Some woods are pencils.\nIII. Some diaries are woods.",
+      "options": {
+        "A": "Both Conclusions II and III follow.",
+        "B": "Only Conclusion II follows.",
+        "C": "Both Conclusions I and II follow.",
+        "D": "Only Conclusion III follows."
+      }
+    },
+    {
+      "n": 72,
+      "page": 66,
+      "section": "Main",
+      "stem": "Statements :\n1. All beds are tables.\n2. All cots are tables.\n3. All tables are taps.\nConclusions :\nI. All cots are taps.\nII. Some taps are beds.\nIII. Some taps are cots.",
+      "options": {
+        "A": "Only conclusions I and II follows",
+        "B": "Only conclusions I and III follow",
+        "C": "All conclusions follow",
+        "D": "Only conclusions II and III follow"
+      }
+    },
+    {
+      "n": 73,
+      "page": 67,
+      "section": "Main",
+      "stem": "Statements :\n1. Some trees are fishes.\n2. All fishes are goats.\n3. No goat is a flower.\nConclusions :\nI. Some trees are goats.\nII. Some fishes are not flowers.\nIII. Some flowers are not goats.",
+      "options": {
+        "A": "All conclusion follow.",
+        "B": "Only conclusion I follows.",
+        "C": "Only conclusion II follows.",
+        "D": "Only conclusion III follows."
+      }
+    },
+    {
+      "n": 74,
+      "page": 67,
+      "section": "Main",
+      "stem": "Statements :\n1. All Fields are gardens.\n2. All gardens are Parks.\n3. Some gardens are apartments.\nConclusions :\nI. Some Apartments are Parks\nII. All fields are parks",
+      "options": {
+        "A": "Only conclusion follows.",
+        "B": "Only conclusion follows.",
+        "C": "Both conclusion I and II follows.",
+        "D": "Neither conclusion Nor does conclusion follow."
+      }
+    },
+    {
+      "n": 75,
+      "page": 67,
+      "section": "Main",
+      "stem": "Statements :\n1. All camels are fractals.\n2. No fractal is a tube.\n3. All pianos are camels.\nConclusions :\nI. Some tubes are camels.\nII. No piano is a tube.",
+      "options": {
+        "A": "Only conclusion II follows.",
+        "B": "Neither conclusion I nor II follows.",
+        "C": "Either conclusion I or II follows.",
+        "D": "Only conclusion I follows."
+      }
+    },
+    {
+      "n": 76,
+      "page": 67,
+      "section": "Main",
+      "stem": "Statements :\n1. All bangles are coins.\n2. All coins are anklets.\n3. All anklets are lockets.\nConclusions :\nI. All lockets are bangles.\nII. Some lockets are coins.",
+      "options": {
+        "A": "Only conclusion II follows.",
+        "B": "Only conclusion I follows",
+        "C": "Neither conclusion I nor II follows",
+        "D": "Both conclusion I and II follow"
+      }
+    },
+    {
+      "n": 77,
+      "page": 67,
+      "section": "Main",
+      "stem": "Statements :\n1. All tables are woods.\n2. All woods are paints.\n3. No paint is a steel.\nConclusions :\n1. All steels can be woods.\n2. Some paints are steels.",
+      "options": {
+        "A": "Both conclusions 1 and 2 follow.",
+        "B": "Neither conclusion 1 nor 2 follows.",
+        "C": "Only conclusion 1 follows.",
+        "D": "Only conclusion 2 follows."
+      }
+    },
+    {
+      "n": 78,
+      "page": 67,
+      "section": "Main",
+      "stem": "Statements :\n1. Some watches are clocks.\n2. All clocks are black.\n3. All black are big.\nConclusions :\nI. Some watches are big.\nII. Some watches are black.",
+      "options": {
+        "A": "Both conclusions I and II follow.",
+        "B": "Only conclusion II follows.",
+        "C": "Neither conclusion I nor II Follows.",
+        "D": "Only conclusion I follows."
+      }
+    },
+    {
+      "n": 79,
+      "page": 67,
+      "section": "Main",
+      "stem": "Statements :\n1. Some chairs are bedsheets.\n2. All cots are chairs.\n3. All pillows are bedsheets.\nConclusions :\nI. Some pillows are chairs.\nII. Some cots are bedsheets.",
+      "options": {
+        "A": "Both conclusions I and II follow.",
+        "B": "Neither conclusion I nor II follows.",
+        "C": "Only conclusion II follows.",
+        "D": "Only conclusion I follows."
+      }
+    },
+    {
+      "n": 80,
+      "page": 67,
+      "section": "Main",
+      "stem": "Statements :\n1. Some raisins are grapes.\n2. All grapes are apples.\n3. All raisins are fruits.\nConclusions :\nI. Some fruits are apples.\nII. Some apples are raisins.",
+      "options": {
+        "A": "Only conclusion I follows.",
+        "B": "Only conclusion II follows.",
+        "C": "Neither conclusion I nor II follows.",
+        "D": "Both conclusions I and II follow."
+      }
+    },
+    {
+      "n": 81,
+      "page": 67,
+      "section": "Main",
+      "stem": "Statements :\n1. Some trains are buses.\n2. No bus is a car.\n3. Some cars are bikes\nConclusions :\nI. Some bikes are cars.\nII. Some bikes are trains.",
+      "options": {
+        "A": "Only conclusion II follows.",
+        "B": "Only conclusion I follows.",
+        "C": "Neither conclusion I nor II follows.",
+        "D": "Both conclusion I and II follows."
+      }
+    },
+    {
+      "n": 82,
+      "page": 67,
+      "section": "Main",
+      "stem": "Statements :\n1. All doors are walls.\n2. All walls are rooms.\n3. All rooms are flats.\nConclusions :\nI. Some flats are doors.\nII. All walls are flats.",
+      "options": {
+        "A": "Only conclusion I follows.",
+        "B": "Neither conclusion I nor II follows.",
+        "C": "Only conclusion II follows.",
+        "D": "Both conclusions I and II follow."
+      }
+    },
+    {
+      "n": 83,
+      "page": 67,
+      "section": "Main",
+      "stem": "Statements :\n1. All notebooks are pink.\n2. All pink are shirts.\n3. Some shirts are trousers.\nConclusions :\nI. All trousers are notebooks\nII. Some trousers are pink.",
+      "options": {
+        "A": "Neither conclusion I nor II follows.",
+        "B": "Only conclusion II follows.",
+        "C": "Only conclusion I follows.",
+        "D": "Both conclusion I and II follow."
+      }
+    },
+    {
+      "n": 84,
+      "page": 67,
+      "section": "Main",
+      "stem": "Statements :\n1. All bottles are bags.\n2. Some bags are pencils.\n3. Some pencils are sharpeners.\nConclusions :\nI. Some sharpeners are bottles.\nII. Some bottles are pencils.",
+      "options": {
+        "A": "Both conclusions I and II follow",
+        "B": "Only conclusion II follow",
+        "C": "Neither conclusion I nor II follow",
+        "D": "Only conlcusion I follow"
+      }
+    },
+    {
+      "n": 85,
+      "page": 67,
+      "section": "Main",
+      "stem": "Statements :\n1. Some bed are chairs.\n2. All chairs are tables.\n3. All tables are towels.\nConclusions :\nI. Some towels are bed.\nII. Some table are bed.",
+      "options": {
+        "A": "Only conclusion (I) follows.",
+        "B": "Both conclusions (I) and (II) follows",
+        "C": "Only conclusion (II) follows",
+        "D": "Neither conclusion (I) nor (II) follows"
+      }
+    },
+    {
+      "n": 86,
+      "page": 67,
+      "section": "Main",
+      "stem": "Statements :\n1. Some goats are tires.\n2. All roads are tires.\n3. Some cars are roads.\nConclusions :\nI. Some cars are tires.\nII. All goats are cars",
+      "options": {
+        "A": "Conclusion I or II is true",
+        "B": "Neither conclusion I nor II is true",
+        "C": "Only conclusion II is true",
+        "D": "Only conclusion I is true."
+      }
+    },
+    {
+      "n": 87,
+      "page": 68,
+      "section": "Main",
+      "stem": "Statements :\n1. Some lawyers are doctors.\n2. Some doctors are players.\n3. All players are engineers.\nConclusions :\nI. Some players are doctors.\nII. Some engineers are lawyers.\nIII. All lawyers are engineers.\nIV. Some engineers are doctors.",
+      "options": {
+        "A": "Both conclusions I and II follow.",
+        "B": "Both conclusions I and IV follow.",
+        "C": "Both conclusions I and III follow.",
+        "D": "Both conclusions II and IV follow."
+      }
+    },
+    {
+      "n": 88,
+      "page": 68,
+      "section": "Main",
+      "stem": "Statements :\n1. All children study in class V.\n2. Some children go to coaching.\n3. Some children are brilliant.\nConclusions :\nI. All children who go to coaching are brilliant.\nII. Children who go to coaching also study in class V.\nIII. All children who study in class V are not brilliant.",
+      "options": {
+        "A": "Both conclusions I and II follow.",
+        "B": "Both conclusions II and III follow.",
+        "C": "Only III follows.",
+        "D": "Only II follows."
+      }
+    },
+    {
+      "n": 89,
+      "page": 68,
+      "section": "Main",
+      "stem": "Statements :\n1. No K is L.\n2. Some L are M.\n3. All M are G.\nConclusions :\nI. Some G are L.\nII. Some M are L.\nIII. No L is K.",
+      "options": {
+        "A": "Only conclusion I follows.",
+        "B": "All conclusions I, II and III follow.",
+        "C": "None conclusion follows.",
+        "D": "Both conclusions II and III follow."
+      }
+    },
+    {
+      "n": 90,
+      "page": 68,
+      "section": "Main",
+      "stem": "Statements :\n1. All tables are chairs.\n2. Some chairs are foldables.\n3. All foldables are beds.\nConclusions :\nI. All beds are chairs.\nII. All tables are foldables.",
+      "options": {
+        "A": "Only conclusion II follows",
+        "B": "Neither conclusion I nor II follows",
+        "C": "Both conclusions I and II follows",
+        "D": "Only conclusion I follows"
+      }
+    },
+    {
+      "n": 91,
+      "page": 68,
+      "section": "Main",
+      "stem": "Statements :\n1. All capsicums are chilies.\n2. All chilies are cucumbers.\n3. All cucumbers are gourds.\nConclusions :\nI. Some cucumbers are capsicums.\nII. All gourds are capsicums.\nIII. All chilies are gourds.",
+      "options": {
+        "A": "Only conclusions I and III follow",
+        "B": "Only conclusions IIand III follow",
+        "C": "All the conclusions follow",
+        "D": "Only conclusions I and II follow"
+      }
+    },
+    {
+      "n": 92,
+      "page": 68,
+      "section": "Main",
+      "stem": "Statements :\n1. All Iron is Zinc\n2. Some Copper is gold\n3. No Gold is Zinc\nConclusions :\nI. Some Iron can be Gold\nII. No Iron is Gold\nIII. Some Copper is Zinc",
+      "options": {
+        "A": "Only Conclusions (I) and (II) follow",
+        "B": "Only Conclusion (III) follows",
+        "C": "Either Conclusion (I) or (II) follow",
+        "D": "Only Conclusion (I) follows"
+      }
+    },
+    {
+      "n": 93,
+      "page": 68,
+      "section": "Main",
+      "stem": "Statements :\n1. All ladders are tables\n2. Some tables are chairs\n3. All chairs are furniture\nConclusions :\nI. Some furniture are ladders\nII. All tables are furniture",
+      "options": {
+        "A": "Only conclusion II follows",
+        "B": "Both conclusion I and II follows",
+        "C": "Only conclusion I follows",
+        "D": "Neither conclusion I nor II follows"
+      }
+    }
+  ]
+}
