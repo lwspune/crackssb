@@ -49,11 +49,15 @@ function reflectMark(m: Mark, line: FoldLine): Mark {
   };
 }
 
+/** The same mark twice over: one that sits on a fold comes back onto itself. */
+const duplicate = (m: Mark, r: Mark) => m.shape === r.shape && (m.poly && r.poly ? samePolyExact(m.poly, r.poly) : !m.poly && !r.poly && near(m.at, r.at, 1e-6));
+const samePolyExact = (a: readonly Pt[], b: readonly Pt[]) => a.length === b.length && a.every((p) => b.some((q) => near(p, q, 1e-6)));
+
 /** Every mark once the paper is opened out. `folds` are in the order they were made. */
 export function unfold(punched: readonly Mark[], folds: readonly FoldLine[]): Mark[] {
   let marks = [...punched];
   for (const line of [...folds].reverse()) {
-    const mirrored = marks.map((m) => reflectMark(m, line)).filter((r) => !marks.some((m) => m.shape === r.shape && near(m.at, r.at, 1e-6)));
+    const mirrored = marks.map((m) => reflectMark(m, line)).filter((r) => !marks.some((m) => duplicate(m, r)));
     marks = [...marks, ...mirrored];
   }
   return marks;
@@ -114,7 +118,7 @@ export function unfoldPaper(paper: readonly Pt[], folds: readonly Fold[], punche
   for (let k = folds.length - 1; k >= 0; k--) {
     const mirrored = marks
       .map((m) => reflectMark(m, folds[k].line))
-      .filter((r) => within(r.at, before[k]) && !marks.some((m) => m.shape === r.shape && near(m.at, r.at, 1e-6)));
+      .filter((r) => within(r.at, before[k]) && !marks.some((m) => duplicate(m, r)));
     marks = [...marks, ...mirrored];
   }
   return marks;
@@ -194,4 +198,43 @@ export function sameFigure(a: Figure, b: Figure, tol: number): boolean {
     oneForOne(x.polygons, y.polygons, (g, h) => g.fill === h.fill && samePoly(g.points, h.points, tol)) &&
     oneForOne(x.labels, y.labels, ([p, t], [q, u]) => t === u && near(p, q, tol))
   );
+}
+
+/** Does point p lie on the segment a-b, short of its ends? */
+const between = (p: Pt, a: Pt, b: Pt) => {
+  const cross = (b[0] - a[0]) * (p[1] - a[1]) - (b[1] - a[1]) * (p[0] - a[0]);
+  const len = Math.hypot(b[0] - a[0], b[1] - a[1]);
+  const t = ((p[0] - a[0]) * (b[0] - a[0]) + (p[1] - a[1]) * (b[1] - a[1])) / (len * len);
+  return Math.abs(cross) / len < 1e-6 && t > 1e-6 && t < 1 - 1e-6;
+};
+
+/**
+ * Cut pieces that meet along an edge (a V cut on a fold and its mirror) are
+ * one hole once the paper is open: their corners are joined, and a corner
+ * left lying along a straight side is dropped. Other marks pass through.
+ */
+export function mergeCuts(marks: readonly Mark[]): Mark[] {
+  const cuts = marks.filter((m) => m.poly);
+  const rest = marks.filter((m) => !m.poly);
+  const groups: Pt[][] = cuts.map((c) => [...c.poly!]);
+  const shared = (a: readonly Pt[], b: readonly Pt[]) => a.filter((p) => b.some((q) => near(p, q, 1e-6))).length >= 2;
+  for (let changed = true; changed; ) {
+    changed = false;
+    for (let i = 0; i < groups.length && !changed; i++) {
+      for (let j = i + 1; j < groups.length; j++) {
+        if (!shared(groups[i], groups[j])) continue;
+        groups[i] = [...groups[i], ...groups[j].filter((q) => !groups[i].some((p) => near(p, q, 1e-6)))];
+        groups.splice(j, 1);
+        changed = true;
+        break;
+      }
+    }
+  }
+  const merged = groups.map((g) => {
+    const corners = g.filter((p) => !g.some((a) => g.some((b) => a !== b && a !== p && b !== p && between(p, a, b))));
+    const cx = corners.reduce((s, p) => s + p[0], 0) / corners.length;
+    const cy = corners.reduce((s, p) => s + p[1], 0) / corners.length;
+    return { shape: 'cut', at: [cx, cy] as const, poly: corners };
+  });
+  return [...rest, ...merged];
 }

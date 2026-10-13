@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { matchMarks, reflectFigure, sameFigure, unfold, unfoldPaper } from '../oir/fold.ts';
+import { matchMarks, mergeCuts, reflectFigure, sameFigure, unfold, unfoldPaper } from '../oir/fold.ts';
 import type { Mark } from '../oir/fold.ts';
 
 /**
@@ -59,6 +59,26 @@ describe('unfoldPaper', () => {
   it('agrees with unfold when every fold is in half', () => {
     const half = [{ line: [[6, 0], [6, 12]] as const, keep: [9, 6] as const }];
     expect(unfoldPaper(SQUARE, half, [hole(8, 3)]).map((m) => m.at)).toEqual(unfold([hole(8, 3)], [[[6, 0], [6, 12]]]).map((m) => m.at));
+  });
+});
+
+describe('mergeCuts', () => {
+  it('joins a V cut on a fold with its mirror into one diamond', () => {
+    const v: Mark = { shape: 'cut', at: [3, 6], poly: [[1, 6], [3, 4], [5, 6]] };
+    const opened = mergeCuts(unfold([v], [[[0, 6], [12, 6]]]));
+    expect(opened).toHaveLength(1);
+    expect(matchMarks(opened, [{ shape: 'cut', at: [3, 6], poly: [[3, 4], [5, 6], [3, 8], [1, 6]] }], 0.2)).toBe(true);
+  });
+
+  it('drops a corner that only lies along a straight edge: a clipped corner opens into a V notch', () => {
+    const corner: Mark = { shape: 'cut', at: [5.8, 0.2], poly: [[5.5, 0], [6, 0], [6, 1]] };
+    const opened = mergeCuts(unfold([corner], [[[6, 0], [6, 12]]]));
+    expect(matchMarks(opened, [{ shape: 'cut', at: [6, 0], poly: [[5.5, 0], [6, 1], [6.5, 0]] }], 0.2)).toBe(true);
+  });
+
+  it('leaves cuts that do not touch apart, and other marks alone', () => {
+    const marks: Mark[] = [{ shape: 'cut', at: [1, 1], poly: [[0, 0], [2, 0], [1, 1]] }, { shape: 'cut', at: [8, 8], poly: [[7, 7], [9, 7], [8, 8]] }, { shape: 'circle', at: [4, 4] }];
+    expect(mergeCuts(marks)).toHaveLength(3);
   });
 });
 
