@@ -266,6 +266,10 @@ I/II. Today they run together on one line ("1. Decant 2. Decamp 3. Decade"). 360
 blast radius the practice screen only (sheets and runner do not render OIR stems) · it does apply: every break is a printed line ·
 risk low, one class to revert · cost none. Recommendation: do. Confirmed and shipped with D28.
 
+### Chapter 17 Q94-97 are missing from the photos
+The direction covers Q1-97, but photo Page68 ends at Q94's first statement and Page69 opens Chapter 18. A photo of the
+missing page (or the scan) adds four questions.
+
 ### Non-verbal chapters 16, 18-28 (~820 questions): figures from the photos
 A trial cut nine Counting Figures (Ch 28) figures from the phone photos at 3× (`screenshots/oir-ch12-13/FIGURE-TRIAL.png`).
 Line figures read; faint show-through from the facing page remains, and every crop box is placed by hand. Keys cannot be run as
