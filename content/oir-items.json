@@ -113,6 +113,16 @@
     },
     {
       "source": "agrawal-examcart-oir",
+      "chapter": 12,
+      "title": "Find the Missing Term",
+      "pages": [
+        45,
+        48
+      ],
+      "file": "content/oir/agrawal-examcart/ch12-missing-term.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
       "chapter": 13,
       "title": "Mathematical Oprations",
       "pages": [
@@ -122,11 +132,11 @@
       "file": "content/oir/agrawal-examcart/ch13-mathematical-operations.source.json"
     }
   ],
-  "itemCount": 1180,
-  "heldCount": 84,
+  "itemCount": 1255,
+  "heldCount": 88,
   "confidence": {
-    "high": 1114,
-    "medium": 66
+    "high": 1179,
+    "medium": 76
   },
   "held": [
     {
@@ -560,6 +570,26 @@
       "source": "agrawal-examcart-oir",
       "source_ref": "ch11 p44 q123",
       "reason": "The print shows four blanks but every option has five letters, and no option completes a pattern either way."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q7",
+      "reason": "No rule found that fits the complete rows and columns of the grid and lands on one option; waiting for the book key."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q31",
+      "reason": "No rule found that fits the complete rows and columns of the grid and lands on one option; waiting for the book key."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q39",
+      "reason": "The second column is cubes (8, 27, 1), but no rule found ties it to the rest of the grid, and the options hold three other cubes; waiting for the book key."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q54",
+      "reason": "The three circles print their numbers and letters too small for the photo to show; the question cannot be read."
     },
     {
       "source": "agrawal-examcart-oir",
@@ -24396,6 +24426,3050 @@
       "source_ref": "ch11 p44 q125",
       "key_basis": "derived",
       "rule": "\"LML\" repeated.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "13 26 39 / 30 42 ? / 17 16 15",
+        "options": {
+          "A": "40",
+          "B": "54",
+          "C": "45",
+          "D": "60"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "13",
+              "26",
+              "39"
+            ],
+            [
+              "30",
+              "42",
+              "?"
+            ],
+            [
+              "17",
+              "16",
+              "15"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q1",
+      "key_basis": "derived",
+      "rule": "Each column adds up to 24 more than the one before: 60, 84, so 108. 108 − 39 − 15 = 54.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q002",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "81 33 56 / 3 6 4 / 54 11 ?",
+        "options": {
+          "A": "27",
+          "B": "28",
+          "C": "9",
+          "D": "14"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "81",
+              "33",
+              "56"
+            ],
+            [
+              "3",
+              "6",
+              "4"
+            ],
+            [
+              "54",
+              "11",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q2",
+      "key_basis": "derived",
+      "rule": "Bottom = 2 × top ÷ middle: 2 × 81 ÷ 3 = 54, 2 × 33 ÷ 6 = 11, so 2 × 56 ÷ 4 = 28.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "7 343 3 / 5 ? 4 / 2 256 8",
+        "options": {
+          "A": "625",
+          "B": "225",
+          "C": "250",
+          "D": "525"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "7",
+              "343",
+              "3"
+            ],
+            [
+              "5",
+              "?",
+              "4"
+            ],
+            [
+              "2",
+              "256",
+              "8"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q3",
+      "key_basis": "derived",
+      "rule": "Middle = left to the power of right: 7³ = 343, 2⁸ = 256, so 5⁴ = 625.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "16 295 19 / 9 144 17 / 26 ? 16",
+        "options": {
+          "A": "395",
+          "B": "406",
+          "C": "398",
+          "D": "407"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "16",
+              "295",
+              "19"
+            ],
+            [
+              "9",
+              "144",
+              "17"
+            ],
+            [
+              "26",
+              "?",
+              "16"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q4",
+      "key_basis": "derived",
+      "rule": "Middle = left × right − 9: 304 − 9 = 295, 153 − 9 = 144, so 416 − 9 = 407.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "6 15 48 / 7 17 55 / 13 29 ?",
+        "options": {
+          "A": "78",
+          "B": "87",
+          "C": "79",
+          "D": "97"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "6",
+              "15",
+              "48"
+            ],
+            [
+              "7",
+              "17",
+              "55"
+            ],
+            [
+              "13",
+              "29",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q5",
+      "key_basis": "derived",
+      "rule": "Right = 3 × left + 2 × middle: 18 + 30 = 48, 21 + 34 = 55, so 39 + 58 = 97.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "26 18 13 / 50 21 46 / 626 ? 123",
+        "options": {
+          "A": "303",
+          "B": "313",
+          "C": "246",
+          "D": "324"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "26",
+              "18",
+              "13"
+            ],
+            [
+              "50",
+              "21",
+              "46"
+            ],
+            [
+              "626",
+              "?",
+              "123"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q6",
+      "key_basis": "derived",
+      "rule": "Bottom = top² − middle: 676 − 50 = 626, 169 − 46 = 123, so 324 − 21 = 303.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "11 9 7 / 8 12 14 / 440 540 ?",
+        "options": {
+          "A": "710",
+          "B": "640",
+          "C": "560",
+          "D": "490"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "11",
+              "9",
+              "7"
+            ],
+            [
+              "8",
+              "12",
+              "14"
+            ],
+            [
+              "440",
+              "540",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q8",
+      "key_basis": "derived",
+      "rule": "Bottom = 5 × top × middle: 5 × 11 × 8 = 440, 5 × 9 × 12 = 540, so 5 × 7 × 14 = 490.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "49 8 73 / 11 6 29 / ? 12 58",
+        "options": {
+          "A": "24",
+          "B": "16",
+          "C": "6",
+          "D": "22"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "49",
+              "8",
+              "73"
+            ],
+            [
+              "11",
+              "6",
+              "29"
+            ],
+            [
+              "?",
+              "12",
+              "58"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q9",
+      "key_basis": "derived",
+      "rule": "Right = left + 3 × middle: 49 + 24 = 73, 11 + 18 = 29, so ? + 36 = 58 gives 22.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "3 13 4 / 4 27 11 / 6 ? 31",
+        "options": {
+          "A": "76",
+          "B": "67",
+          "C": "56",
+          "D": "65"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "3",
+              "13",
+              "4"
+            ],
+            [
+              "4",
+              "27",
+              "11"
+            ],
+            [
+              "6",
+              "?",
+              "31"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q10",
+      "key_basis": "derived",
+      "rule": "Middle = left² + right: 9 + 4 = 13, 16 + 11 = 27, so 36 + 31 = 67.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "14 12 15 / 11 17 16 / 180 234 ?",
+        "options": {
+          "A": "298",
+          "B": "369",
+          "C": "425",
+          "D": "272"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "14",
+              "12",
+              "15"
+            ],
+            [
+              "11",
+              "17",
+              "16"
+            ],
+            [
+              "180",
+              "234",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q11",
+      "key_basis": "derived",
+      "rule": "Bottom = (top + 1) × (middle + 1): 15 × 12 = 180, 13 × 18 = 234, so 16 × 17 = 272.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "26 19 12 / 32 ? 16 / 23 20 17",
+        "options": {
+          "A": "24",
+          "B": "28",
+          "C": "32",
+          "D": "15"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "26",
+              "19",
+              "12"
+            ],
+            [
+              "32",
+              "?",
+              "16"
+            ],
+            [
+              "23",
+              "20",
+              "17"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q12",
+      "key_basis": "derived",
+      "rule": "The middle of each row is the average of its ends: 19, 20, so (32 + 16) ÷ 2 = 24.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Three trees, each a top number over two below:\n27 over 3 and 6\n11 over 5 and 6\n20 over 4 and ?",
+        "options": {
+          "A": "24",
+          "B": "8",
+          "C": "6",
+          "D": "36"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q13",
+      "key_basis": "derived",
+      "rule": "Top = right² − left²: 36 − 9 = 27, 36 − 25 = 11, so ?² − 16 = 20 gives 6.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "5 6 7 8 9 / 115 206 ? 502 719",
+        "options": {
+          "A": "337",
+          "B": "347",
+          "C": "343",
+          "D": "333"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "5",
+              "6",
+              "7",
+              "8",
+              "9"
+            ],
+            [
+              "115",
+              "206",
+              "?",
+              "502",
+              "719"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q14",
+      "key_basis": "derived",
+      "rule": "Each number cubed, less 10: 125 − 10 = 115, 216 − 10 = 206, so 343 − 10 = 333.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "11 9 11 / 7 8 ? / 324 289 441",
+        "options": {
+          "A": "10",
+          "B": "11",
+          "C": "12",
+          "D": "9"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "11",
+              "9",
+              "11"
+            ],
+            [
+              "7",
+              "8",
+              "?"
+            ],
+            [
+              "324",
+              "289",
+              "441"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q15",
+      "key_basis": "derived",
+      "rule": "Bottom = (top + middle)²: 18² = 324, 17² = 289, so (11 + ?)² = 441 gives 10.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "15 14 220 / 20 18 290 / 11 40 ?",
+        "options": {
+          "A": "320",
+          "B": "390",
+          "C": "340",
+          "D": "310"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "15",
+              "14",
+              "220"
+            ],
+            [
+              "20",
+              "18",
+              "290"
+            ],
+            [
+              "11",
+              "40",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q16",
+      "key_basis": "derived",
+      "rule": "Right = 10 × left + 5 × middle: 150 + 70 = 220, 200 + 90 = 290, so 110 + 200 = 310.",
+      "confidence": "medium",
+      "note": "The first row prints 14 and 220 apart from 15, on the same line; read as one row."
+    },
+    {
+      "id": "oir-agx-ch12-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "5 3 7 / 6 15 12 / 9 2 3 / ? 20 22",
+        "options": {
+          "A": "26",
+          "B": "18",
+          "C": "24",
+          "D": "20"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "5",
+              "3",
+              "7"
+            ],
+            [
+              "6",
+              "15",
+              "12"
+            ],
+            [
+              "9",
+              "2",
+              "3"
+            ],
+            [
+              "?",
+              "20",
+              "22"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q17",
+      "key_basis": "derived",
+      "rule": "The bottom row adds up each column: 3 + 15 + 2 = 20, 7 + 12 + 3 = 22, so 5 + 6 + 9 = 20.",
+      "confidence": "medium",
+      "note": "The first row prints 3 and 7 apart from 5, on the same line; read as one row."
+    },
+    {
+      "id": "oir-agx-ch12-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Three figures, each two numbers joined to a middle one, joined to one at the foot:\n27 and 9, then 2, then 1\n35 and 7, then 3, then 2\n36 and 4, then 4, then ?",
+        "options": {
+          "A": "3",
+          "B": "4",
+          "C": "5",
+          "D": "62"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q18",
+      "key_basis": "derived",
+      "rule": "Top left ÷ top right − middle = foot: 3 − 2 = 1, 5 − 3 = 2, so 9 − 4 = 5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "125 25 10 / 216 49 13 / 27 121 ?",
+        "options": {
+          "A": "16",
+          "B": "8",
+          "C": "12",
+          "D": "14"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "125",
+              "25",
+              "10"
+            ],
+            [
+              "216",
+              "49",
+              "13"
+            ],
+            [
+              "27",
+              "121",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q19",
+      "key_basis": "derived",
+      "rule": "Cube root of the first + square root of the second: 5 + 5 = 10, 6 + 7 = 13, so 3 + 11 = 14.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "18 21 12 / 7 15 11 / 175 540 ?",
+        "options": {
+          "A": "273",
+          "B": "150",
+          "C": "253",
+          "D": "303"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "18",
+              "21",
+              "12"
+            ],
+            [
+              "7",
+              "15",
+              "11"
+            ],
+            [
+              "175",
+              "540",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p45 q20",
+      "key_basis": "derived",
+      "rule": "Bottom = (top + middle) × middle: 25 × 7 = 175, 36 × 15 = 540, so 23 × 11 = 253.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "(15, 1, 7, 32) (20, 2, 7, 47) (13, 3, 7, 50) (?, 4, 7, 48)",
+        "options": {
+          "A": "1",
+          "B": "8",
+          "C": "5",
+          "D": "3"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q21",
+      "key_basis": "derived",
+      "rule": "Last = first + third + 10 × second: 15 + 7 + 10 = 32, 20 + 7 + 20 = 47, 13 + 7 + 30 = 50, so ? + 7 + 40 = 48 gives 1.",
+      "confidence": "medium",
+      "note": "The photo prints 7 and ? alike. Read with the 7 that every bracket shares; read the other way round, (7, 4, ?, 48), the gap is 1 too."
+    },
+    {
+      "id": "oir-agx-ch12-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "4 6 3 / 9 5 2 / 6 8 7 / ? 19 12",
+        "options": {
+          "A": "19",
+          "B": "17",
+          "C": "15",
+          "D": "20"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "4",
+              "6",
+              "3"
+            ],
+            [
+              "9",
+              "5",
+              "2"
+            ],
+            [
+              "6",
+              "8",
+              "7"
+            ],
+            [
+              "?",
+              "19",
+              "12"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q22",
+      "key_basis": "derived",
+      "rule": "The bottom row adds up each column: 6 + 5 + 8 = 19, 3 + 2 + 7 = 12, so 4 + 9 + 6 = 19.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "3 6 4 18 / 2 5 8 21 / 3 1 7 ?",
+        "options": {
+          "A": "20",
+          "B": "21",
+          "C": "22",
+          "D": "24"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "3",
+              "6",
+              "4",
+              "18"
+            ],
+            [
+              "2",
+              "5",
+              "8",
+              "21"
+            ],
+            [
+              "3",
+              "1",
+              "7",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q23",
+      "key_basis": "derived",
+      "rule": "Last = first × third + second: 12 + 6 = 18, 16 + 5 = 21, so 21 + 1 = 22.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "7 18 21 / 20 15 50 / ? 42 98",
+        "options": {
+          "A": "14",
+          "B": "18",
+          "C": "16",
+          "D": "12"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "7",
+              "18",
+              "21"
+            ],
+            [
+              "20",
+              "15",
+              "50"
+            ],
+            [
+              "?",
+              "42",
+              "98"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q24",
+      "key_basis": "derived",
+      "rule": "Right = left × middle ÷ 6: 7 × 18 ÷ 6 = 21, 20 × 15 ÷ 6 = 50, so ? × 42 ÷ 6 = 98 gives 14.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "8 9 73 / 11 25 ? / 7 14 63",
+        "options": {
+          "A": "132",
+          "B": "136",
+          "C": "146",
+          "D": "106"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "8",
+              "9",
+              "73"
+            ],
+            [
+              "11",
+              "25",
+              "?"
+            ],
+            [
+              "7",
+              "14",
+              "63"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q25",
+      "key_basis": "derived",
+      "rule": "Right = left² + middle: 64 + 9 = 73, 49 + 14 = 63, so 121 + 25 = 146.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "11 14 180 / 17 18 342 / 23 20 ?",
+        "options": {
+          "A": "504",
+          "B": "444",
+          "C": "369",
+          "D": "568"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "11",
+              "14",
+              "180"
+            ],
+            [
+              "17",
+              "18",
+              "342"
+            ],
+            [
+              "23",
+              "20",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q26",
+      "key_basis": "derived",
+      "rule": "Right = (left + 1) × (middle + 1): 12 × 15 = 180, 18 × 19 = 342, so 24 × 21 = 504.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q027",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "40 57 285 / 35 32 140 / ? 40 175",
+        "options": {
+          "A": "39",
+          "B": "38",
+          "C": "36",
+          "D": "35"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "40",
+              "57",
+              "285"
+            ],
+            [
+              "35",
+              "32",
+              "140"
+            ],
+            [
+              "?",
+              "40",
+              "175"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q27",
+      "key_basis": "derived",
+      "rule": "Right = left × middle ÷ 8: 40 × 57 ÷ 8 = 285, 35 × 32 ÷ 8 = 140, so ? × 40 ÷ 8 = 175 gives 35.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "16 27 7 / 25 8 7 / 121 ? 12",
+        "options": {
+          "A": "16",
+          "B": "4",
+          "C": "1",
+          "D": "7"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "16",
+              "27",
+              "7"
+            ],
+            [
+              "25",
+              "8",
+              "7"
+            ],
+            [
+              "121",
+              "?",
+              "12"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q28",
+      "key_basis": "derived",
+      "rule": "Square root of the left + cube root of the middle: 4 + 3 = 7, 5 + 2 = 7, so 11 + ∛? = 12 gives 1.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q029",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "First row : 58, −28, −90\nSecond row : −17, 21, −12\nThird row : −8, −7, ?",
+        "options": {
+          "A": "38",
+          "B": "45",
+          "C": "−40",
+          "D": "−35"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q29",
+      "key_basis": "derived",
+      "rule": "Third = −3 × (first + second): −3 × 30 = −90, −3 × 4 = −12, so −3 × −15 = 45.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "14 22 5 / 18 42 11 / 22 35 ?",
+        "options": {
+          "A": "8",
+          "B": "7",
+          "C": "9",
+          "D": "12"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "14",
+              "22",
+              "5"
+            ],
+            [
+              "18",
+              "42",
+              "11"
+            ],
+            [
+              "22",
+              "35",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q30",
+      "key_basis": "derived",
+      "rule": "The digits of the first two numbers add up to 4 more than the third: 9 − 4 = 5, 15 − 4 = 11, so 12 − 4 = 8.",
+      "confidence": "medium",
+      "note": "An unusual rule, but the only one found that fits both complete rows. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch12-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "16 8 13 / 17 12 23 / 21 15 19 / 162 105 ?",
+        "options": {
+          "A": "135",
+          "B": "187",
+          "C": "165",
+          "D": "137"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "16",
+              "8",
+              "13"
+            ],
+            [
+              "17",
+              "12",
+              "23"
+            ],
+            [
+              "21",
+              "15",
+              "19"
+            ],
+            [
+              "162",
+              "105",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q32",
+      "key_basis": "derived",
+      "rule": "The bottom row is 3 × the sum of each column: 3 × 54 = 162, 3 × 35 = 105, so 3 × 55 = 165.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "8 12 10 / 11 16 24 / 14 22 ? / 99 150 168",
+        "options": {
+          "A": "18",
+          "B": "20",
+          "C": "28",
+          "D": "22"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "8",
+              "12",
+              "10"
+            ],
+            [
+              "11",
+              "16",
+              "24"
+            ],
+            [
+              "14",
+              "22",
+              "?"
+            ],
+            [
+              "99",
+              "150",
+              "168"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q33",
+      "key_basis": "derived",
+      "rule": "The bottom row is 3 × the sum of each column: 3 × 33 = 99, 3 × 50 = 150, so 3 × (10 + 24 + ?) = 168 gives 22.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "3 / 25 2 // 4 / 81 ? // 9 / 121 2",
+        "options": {
+          "A": "7",
+          "B": "5",
+          "C": "9",
+          "D": "6"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "3",
+              ""
+            ],
+            [
+              "25",
+              "2"
+            ]
+          ],
+          [
+            [
+              "4",
+              ""
+            ],
+            [
+              "81",
+              "?"
+            ]
+          ],
+          [
+            [
+              "9",
+              ""
+            ],
+            [
+              "121",
+              "2"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q34",
+      "key_basis": "derived",
+      "rule": "(Top + lower right)² = lower left: (3 + 2)² = 25, (9 + 2)² = 121, so (4 + ?)² = 81 gives 5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "4 7 / 344 65 // 9 2 / 9 730 // 5 8 / ? 126",
+        "options": {
+          "A": "121",
+          "B": "113",
+          "C": "513",
+          "D": "41"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "4",
+              "7"
+            ],
+            [
+              "344",
+              "65"
+            ]
+          ],
+          [
+            [
+              "9",
+              "2"
+            ],
+            [
+              "9",
+              "730"
+            ]
+          ],
+          [
+            [
+              "5",
+              "8"
+            ],
+            [
+              "?",
+              "126"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q35",
+      "key_basis": "derived",
+      "rule": "Each upper number cubed, plus 1, sits diagonally below it: 4³ + 1 = 65, 7³ + 1 = 344, 9³ + 1 = 730, 2³ + 1 = 9, 5³ + 1 = 126. So 8³ + 1 = 513.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "7 5 36 / 9 1 25 / 12 4 ?",
+        "options": {
+          "A": "64",
+          "B": "16",
+          "C": "8",
+          "D": "4"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "7",
+              "5",
+              "36"
+            ],
+            [
+              "9",
+              "1",
+              "25"
+            ],
+            [
+              "12",
+              "4",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q36",
+      "key_basis": "derived",
+      "rule": "Right = (left + middle)² ÷ 4: 144 ÷ 4 = 36, 100 ÷ 4 = 25, so 256 ÷ 4 = 64.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "9 10 13 14 / 7 16 25 15 / 12 12 22 ? / 274 500 1278 1321",
+        "options": {
+          "A": "20",
+          "B": "32",
+          "C": "30",
+          "D": "28"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "9",
+              "10",
+              "13",
+              "14"
+            ],
+            [
+              "7",
+              "16",
+              "25",
+              "15"
+            ],
+            [
+              "12",
+              "12",
+              "22",
+              "?"
+            ],
+            [
+              "274",
+              "500",
+              "1278",
+              "1321"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q37",
+      "key_basis": "derived",
+      "rule": "The bottom row is the sum of the squares above: 81 + 49 + 144 = 274, 500, 1278, so 196 + 225 + ?² = 1321 gives 30.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "84 73 65 54 / 129 105 96 72 / 145 ? 79 28",
+        "options": {
+          "A": "96",
+          "B": "94",
+          "C": "102",
+          "D": "98"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "84",
+              "73",
+              "65",
+              "54"
+            ],
+            [
+              "129",
+              "105",
+              "96",
+              "72"
+            ],
+            [
+              "145",
+              "?",
+              "79",
+              "28"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q38",
+      "key_basis": "derived",
+      "rule": "In each row the first two differ as much as the last two: 84 − 73 = 65 − 54, 129 − 105 = 96 − 72, so 145 − ? = 79 − 28 gives 94.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "12 16 / 13 2496 // 21 26 / 18 9828 // 15 11 / 20 ?",
+        "options": {
+          "A": "3300",
+          "B": "4320",
+          "C": "2700",
+          "D": "6920"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "12",
+              "16"
+            ],
+            [
+              "13",
+              "2496"
+            ]
+          ],
+          [
+            [
+              "21",
+              "26"
+            ],
+            [
+              "18",
+              "9828"
+            ]
+          ],
+          [
+            [
+              "15",
+              "11"
+            ],
+            [
+              "20",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q40",
+      "key_basis": "derived",
+      "rule": "The product of the other three: 12 × 16 × 13 = 2496, 21 × 26 × 18 = 9828, so 15 × 11 × 20 = 3300.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q041",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "10 4 / 8 120 // 6 25 / 16 246 // 15 40 / 12 ?",
+        "options": {
+          "A": "860",
+          "B": "420",
+          "C": "780",
+          "D": "360"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "10",
+              "4"
+            ],
+            [
+              "8",
+              "120"
+            ]
+          ],
+          [
+            [
+              "6",
+              "25"
+            ],
+            [
+              "16",
+              "246"
+            ]
+          ],
+          [
+            [
+              "15",
+              "40"
+            ],
+            [
+              "12",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q41",
+      "key_basis": "derived",
+      "rule": "Top left × (top right + bottom left): 10 × 12 = 120, 6 × 41 = 246, so 15 × 52 = 780.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "12 / 11 155 8 / 14 // 13 / 9 233 12 / 17 // 16 / 12 ? 15 / 20",
+        "options": {
+          "A": "397",
+          "B": "287",
+          "C": "256",
+          "D": "307"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "",
+              "12",
+              ""
+            ],
+            [
+              "11",
+              "155",
+              "8"
+            ],
+            [
+              "",
+              "14",
+              ""
+            ]
+          ],
+          [
+            [
+              "",
+              "13",
+              ""
+            ],
+            [
+              "9",
+              "233",
+              "12"
+            ],
+            [
+              "",
+              "17",
+              ""
+            ]
+          ],
+          [
+            [
+              "",
+              "16",
+              ""
+            ],
+            [
+              "12",
+              "?",
+              "15"
+            ],
+            [
+              "",
+              "20",
+              ""
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q42",
+      "key_basis": "derived",
+      "rule": "Centre = top² + bottom² − left² − right²: 144 + 196 − 121 − 64 = 155, 169 + 289 − 81 − 144 = 233, so 256 + 400 − 144 − 225 = 287.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "7 / 3 147 5 / 8 // 6 / 9 247 11 / 3 // 4 / 12 ? 2 / 5",
+        "options": {
+          "A": "148",
+          "B": "189",
+          "C": "255",
+          "D": "163"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "",
+              "7",
+              ""
+            ],
+            [
+              "3",
+              "147",
+              "5"
+            ],
+            [
+              "",
+              "8",
+              ""
+            ]
+          ],
+          [
+            [
+              "",
+              "6",
+              ""
+            ],
+            [
+              "9",
+              "247",
+              "11"
+            ],
+            [
+              "",
+              "3",
+              ""
+            ]
+          ],
+          [
+            [
+              "",
+              "4",
+              ""
+            ],
+            [
+              "12",
+              "?",
+              "2"
+            ],
+            [
+              "",
+              "5",
+              ""
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q43",
+      "key_basis": "derived",
+      "rule": "Centre = the sum of the four squares: 49 + 9 + 25 + 64 = 147, 247, so 16 + 144 + 4 + 25 = 189.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q044",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Three trees, each a pair over one number over another:\n93 and 27, then 63, then 3\n79 and 38, then 37, then 4\n67 and 16, then 42, then ?",
+        "options": {
+          "A": "5",
+          "B": "6",
+          "C": "8",
+          "D": "9"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q44",
+      "key_basis": "derived",
+      "rule": "The pair's difference, less the middle number, gives the foot: 66 − 63 = 3, 41 − 37 = 4, so 51 − 42 = 9.",
+      "confidence": "medium",
+      "note": "Fits both complete trees, but an unusual rule. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch12-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "11 20 1 100 / 8 3 5 56 / 7 5 16 x",
+        "options": {
+          "A": "28",
+          "B": "27",
+          "C": "21",
+          "D": "29"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "11",
+              "20",
+              "1",
+              "100"
+            ],
+            [
+              "8",
+              "3",
+              "5",
+              "56"
+            ],
+            [
+              "7",
+              "5",
+              "16",
+              "x"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q45",
+      "key_basis": "derived",
+      "rule": "Last = first² − second − third: 121 − 21 = 100, 64 − 8 = 56, so 49 − 21 = 28.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "4 5 6 / 2 3 7 / 1 8 3 / 21 98 ?",
+        "options": {
+          "A": "89",
+          "B": "94",
+          "C": "124",
+          "D": "49"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "4",
+              "5",
+              "6"
+            ],
+            [
+              "2",
+              "3",
+              "7"
+            ],
+            [
+              "1",
+              "8",
+              "3"
+            ],
+            [
+              "21",
+              "98",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p46 q46",
+      "key_basis": "derived",
+      "rule": "The bottom row is the sum of the squares above: 16 + 4 + 1 = 21, 25 + 9 + 64 = 98, so 36 + 49 + 9 = 94.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "3 9 8 / 6 7 3 / 4 2 7 / 14 61 ?",
+        "options": {
+          "A": "10",
+          "B": "18",
+          "C": "17",
+          "D": "12"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "3",
+              "9",
+              "8"
+            ],
+            [
+              "6",
+              "7",
+              "3"
+            ],
+            [
+              "4",
+              "2",
+              "7"
+            ],
+            [
+              "14",
+              "61",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q47",
+      "key_basis": "derived",
+      "rule": "Bottom = first × second − third, down each column: 18 − 4 = 14, 63 − 2 = 61, so 24 − 7 = 17.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Three V shapes, two numbers at the top meeting in one below:\n3 and 4 meet in 6\n6 and 5 meet in 15\n7 and 2 meet in ?",
+        "options": {
+          "A": "8",
+          "B": "7",
+          "C": "9",
+          "D": "14"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q48",
+      "key_basis": "derived",
+      "rule": "Half the product of the two at the top: 6, 15, so 7 × 2 ÷ 2 = 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A star: 7 in the centre, joined to six numbers around it. Clockwise from the top: 2, 3, ?, 5, 4, 1",
+        "options": {
+          "A": "8",
+          "B": "3",
+          "C": "4",
+          "D": "6"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q49",
+      "key_basis": "derived",
+      "rule": "Opposite numbers add up to the centre, 7: 2 + 5, 3 + 4, so 1 + 6.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q050",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "AZ BY / ? CX",
+        "options": {
+          "A": "DW",
+          "B": "DK",
+          "C": "DE",
+          "D": "DL"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "AZ",
+              "BY"
+            ],
+            [
+              "?",
+              "CX"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q50",
+      "key_basis": "derived",
+      "rule": "Each pair is a letter and its mirror from the other end of the alphabet: AZ, BY, CX, so DW.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q051",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Three Y shapes, two numbers at the top and one at the foot:\n10 and 15, foot 7\n39 and 45, foot 9\n49 and 56, foot ?",
+        "options": {
+          "A": "28",
+          "B": "21",
+          "C": "11",
+          "D": "38"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q51",
+      "key_basis": "derived",
+      "rule": "Twice the difference of the two at the top, less 3: 2 × 5 − 3 = 7, 2 × 6 − 3 = 9, so 2 × 7 − 3 = 11.",
+      "confidence": "medium",
+      "note": "Two figures fix little; this is the simplest rule found that fits both. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch12-q052",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "E M H / N O A / I ? D",
+        "options": {
+          "A": "N",
+          "B": "O",
+          "C": "P",
+          "D": "M"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "E",
+              "M",
+              "H"
+            ],
+            [
+              "N",
+              "O",
+              "A"
+            ],
+            [
+              "I",
+              "?",
+              "D"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q52",
+      "key_basis": "derived",
+      "rule": "By alphabet position, the middle of each row is the sum of its ends: E5 + H8 = M13, N14 + A1 = O15, so I9 + D4 = M13.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q053",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A chain of links, read along it: 16, 2, 15, 4, 13, 7, 10, 11, 6, ?",
+        "options": {
+          "A": "15",
+          "B": "16",
+          "C": "17",
+          "D": "18"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q53",
+      "key_basis": "derived",
+      "rule": "Two series alternate along the chain: 16, 15, 13, 10, 6 (less 1, 2, 3, 4) and 2, 4, 7, 11, 16 (more 2, 3, 4, 5).",
+      "confidence": "medium",
+      "note": "The chain prints its numbers turned along the curve; the link read as 6 shows as an upside-down 9."
+    },
+    {
+      "id": "oir-agx-ch12-q055",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "2 5 7 8 ? 1 / 2 20 42 56 72 0",
+        "options": {
+          "A": "5",
+          "B": "0",
+          "C": "7",
+          "D": "9"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "2",
+              "5",
+              "7",
+              "8",
+              "?",
+              "1"
+            ],
+            [
+              "2",
+              "20",
+              "42",
+              "56",
+              "72",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q55",
+      "key_basis": "derived",
+      "rule": "Each lower number is the one above times one less: 2 × 1, 5 × 4, 7 × 6, 8 × 7, 1 × 0. So ? × (? − 1) = 72 gives 9.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q056",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "15 10 5 / 10 8 12 / 7 3 ?",
+        "options": {
+          "A": "10",
+          "B": "15",
+          "C": "20",
+          "D": "12"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "15",
+              "10",
+              "5"
+            ],
+            [
+              "10",
+              "8",
+              "12"
+            ],
+            [
+              "7",
+              "3",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q56",
+      "key_basis": "derived",
+      "rule": "Each row adds up to 30: 15 + 10 + 5, 10 + 8 + 12, so 7 + 3 + 20.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q057",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Three triangles, a number on each side and one inside:\nsides 6 and 4, base 5, inside 29\nsides 8 and 6, base 7, inside 55\nsides 5 and 3, base 4, inside ?",
+        "options": {
+          "A": "19",
+          "B": "20",
+          "C": "21",
+          "D": "5"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q57",
+      "key_basis": "derived",
+      "rule": "Inside = one side × the other + base: 24 + 5 = 29, 48 + 7 = 55, so 15 + 4 = 19.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q058",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "8 3 4 / 7 6 1 / 2 4 ? / 13 5 4",
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "8",
+              "3",
+              "4"
+            ],
+            [
+              "7",
+              "6",
+              "1"
+            ],
+            [
+              "2",
+              "4",
+              "?"
+            ],
+            [
+              "13",
+              "5",
+              "4"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q58",
+      "key_basis": "derived",
+      "rule": "Down each column, first + second − third = bottom: 8 + 7 − 2 = 13, 3 + 6 − 4 = 5, so 4 + 1 − ? = 4 gives 1.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q059",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "3 6 8 / 5 8 4 / 4 7 ?",
+        "options": {
+          "A": "6",
+          "B": "7",
+          "C": "8",
+          "D": "9"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "3",
+              "6",
+              "8"
+            ],
+            [
+              "5",
+              "8",
+              "4"
+            ],
+            [
+              "4",
+              "7",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q59",
+      "key_basis": "derived",
+      "rule": "Each row adds up to 17: 3 + 6 + 8, 5 + 8 + 4, so 4 + 7 + 6.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q060",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A circle cut into six, clockwise from the top left: F, C, ?, I, L, A",
+        "options": {
+          "A": "M",
+          "B": "N",
+          "C": "O",
+          "D": "P"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q60",
+      "key_basis": "derived",
+      "rule": "Opposite letters add up to 15 by alphabet position: F6 + I9, C3 + L12, so A1 + N14.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q061",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Two squares, a number at each corner, clockwise from the top left:\n4, 8, 32, 256\n5, 15, 135, ?",
+        "options": {
+          "A": "3800",
+          "B": "3645",
+          "C": "3435",
+          "D": "3400"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q61",
+      "key_basis": "derived",
+      "rule": "Clockwise round each square the multipliers are k, k², k³: 4 × 2 = 8, × 4 = 32, × 8 = 256. In the second k is 3: 5 × 3 = 15, × 9 = 135, so × 27 = 3645.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q062",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Three circles, a number inside and one on each side (top, left, right, bottom):\ninside 6: 3, 8, 6, 4\ninside 5: 5, 5, 7, 1\ninside ?: 0, 6, 4, 5",
+        "options": {
+          "A": "7",
+          "B": "6",
+          "C": "4",
+          "D": "5"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q62",
+      "key_basis": "derived",
+      "rule": "Inside = top + bottom − 1: 3 + 4 − 1 = 6, 5 + 1 − 1 = 5, so 0 + 5 − 1 = 4.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q063",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "5 40 7 / 11 77 6 / 3 ? 9",
+        "options": {
+          "A": "29",
+          "B": "43",
+          "C": "52",
+          "D": "30"
+        },
+        "key": "D",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "5",
+              "40",
+              "7"
+            ],
+            [
+              "11",
+              "77",
+              "6"
+            ],
+            [
+              "3",
+              "?",
+              "9"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q63",
+      "key_basis": "derived",
+      "rule": "Middle = left × (right + 1): 5 × 8 = 40, 11 × 7 = 77, so 3 × 10 = 30.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q064",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Three Y shapes, two numbers at the top and one at the foot:\n3 and 4, foot 14\n5 and 6, foot 32\n8 and 9, foot ?",
+        "options": {
+          "A": "28",
+          "B": "42",
+          "C": "74",
+          "D": "72"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q64",
+      "key_basis": "derived",
+      "rule": "The product of the two at the top, plus 2: 14, 32, so 72 + 2 = 74.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q065",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Four trees, each a top number over a middle one over two at the foot:\n2 over 6 over 4 and 3\n3 over 14 over 7 and 6\n4 over ? over 5 and 8\n6 over 12 over 9 and 8",
+        "options": {
+          "A": "12",
+          "B": "10",
+          "C": "8",
+          "D": "15"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q65",
+      "key_basis": "derived",
+      "rule": "Middle = the two at the foot multiplied, divided by the top: 12 ÷ 2 = 6, 42 ÷ 3 = 14, 72 ÷ 6 = 12, so 40 ÷ 4 = 10.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q066",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "49 / 3 ? 4 / 9 25 16 / 36",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "5",
+          "D": "4"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "",
+              "49",
+              ""
+            ],
+            [
+              "3",
+              "?",
+              "4"
+            ],
+            [
+              "9",
+              "25",
+              "16"
+            ],
+            [
+              "",
+              "36",
+              ""
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q66",
+      "key_basis": "derived",
+      "rule": "The row below squares the row with the gap: 3² = 9, 4² = 16, so ?² = 25 gives 5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q067",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A circle cut into six, clockwise from the top left: 143, 3, 15, 35, ?, 99",
+        "options": {
+          "A": "56",
+          "B": "60",
+          "C": "63",
+          "D": "65"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q67",
+      "key_basis": "derived",
+      "rule": "Clockwise from 3, products of odd numbers in turn: 1 × 3, 3 × 5, 5 × 7, 7 × 9 = 63, 9 × 11, 11 × 13.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q068",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Three triangles, each a number in the top part and two in the lower part:\ntop 30, below 8 and 34\ntop 12, below 5 and 13\ntop ?, below 7 and 30",
+        "options": {
+          "A": "11",
+          "B": "27",
+          "C": "19",
+          "D": "22"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p47 q68",
+      "key_basis": "derived",
+      "rule": "Top = the larger lower number − the smaller + 4: 34 − 8 + 4 = 30, 13 − 5 + 4 = 12, so 30 − 7 + 4 = 27.",
+      "confidence": "medium",
+      "note": "Two figures fix little; this is the simplest rule found that fits both. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch12-q069",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "25 144 60 / 81 225 135 / 49 289 ?",
+        "options": {
+          "A": "119",
+          "B": "105",
+          "C": "120",
+          "D": "135"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "25",
+              "144",
+              "60"
+            ],
+            [
+              "81",
+              "225",
+              "135"
+            ],
+            [
+              "49",
+              "289",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p48 q69",
+      "key_basis": "derived",
+      "rule": "Right = √left × √middle: 5 × 12 = 60, 9 × 15 = 135, so 7 × 17 = 119.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q070",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A2 C4 E6 / G3 I5 ? / M5 O9 Q14",
+        "options": {
+          "A": "J15",
+          "B": "K8",
+          "C": "K15",
+          "D": "L10"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "A2",
+              "C4",
+              "E6"
+            ],
+            [
+              "G3",
+              "I5",
+              "?"
+            ],
+            [
+              "M5",
+              "O9",
+              "Q14"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p48 q70",
+      "key_basis": "derived",
+      "rule": "The letters skip one (A C E G I K M O Q); in each row the third number is the sum of the first two: 2 + 4 = 6, 5 + 9 = 14, so 3 + 5 = 8. K8.",
+      "confidence": "medium",
+      "note": "The middle cell reads I5 or 15 in the photo; I5 fits the run of letters."
+    },
+    {
+      "id": "oir-agx-ch12-q071",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "0 3 8 / 15 24 35 / 48 ? 80",
+        "options": {
+          "A": "64",
+          "B": "63",
+          "C": "66",
+          "D": "84"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "0",
+              "3",
+              "8"
+            ],
+            [
+              "15",
+              "24",
+              "35"
+            ],
+            [
+              "48",
+              "?",
+              "80"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p48 q71",
+      "key_basis": "derived",
+      "rule": "One less than the squares 1 to 9: 0, 3, 8, 15, 24, 35, 48, 63, 80.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q072",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "C / A / R / B A ? C H",
+        "options": {
+          "A": "T",
+          "B": "K",
+          "C": "V",
+          "D": "L"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "",
+              "",
+              "C",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "A",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "R",
+              "",
+              ""
+            ],
+            [
+              "B",
+              "A",
+              "?",
+              "C",
+              "H"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p48 q72",
+      "key_basis": "derived",
+      "rule": "Down, CAR?; across, BA?CH. T makes CART and BATCH; K, V and L make no word across.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q073",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "A circle with letters around it, clockwise from the top left: L, ?, N, ?, A, ?, R, I",
+        "options": {
+          "A": "SAA",
+          "B": "APR",
+          "C": "SAK",
+          "D": "PLC"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p48 q73",
+      "key_basis": "derived",
+      "rule": "Read clockwise from the bottom gap, the circle spells SRI LANKA: S at the bottom, A at the top, K on the right.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q074",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "4 / 4 10 9 / 16 // 1 / 2 ? 8 / 9 // 5 / 16 13 9 / 5",
+        "options": {
+          "A": "12",
+          "B": "6",
+          "C": "5",
+          "D": "7"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "",
+              "4",
+              ""
+            ],
+            [
+              "4",
+              "10",
+              "9"
+            ],
+            [
+              "",
+              "16",
+              ""
+            ]
+          ],
+          [
+            [
+              "",
+              "1",
+              ""
+            ],
+            [
+              "2",
+              "?",
+              "8"
+            ],
+            [
+              "",
+              "9",
+              ""
+            ]
+          ],
+          [
+            [
+              "",
+              "5",
+              ""
+            ],
+            [
+              "16",
+              "13",
+              "9"
+            ],
+            [
+              "",
+              "5",
+              ""
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p48 q74",
+      "key_basis": "derived",
+      "rule": "Centre = √(top × bottom + left × right): √(64 + 36) = 10, √(25 + 144) = 13, so √(9 + 16) = 5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q075",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Three triangles, each cut into a top part and two lower parts:\ntop 25, below 7 and 24\ntop 5, below 3 and 4\ntop ?, below 9 and 40",
+        "options": {
+          "A": "36",
+          "B": "41",
+          "C": "35",
+          "D": "45"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?)."
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p48 q75",
+      "key_basis": "derived",
+      "rule": "Top² = the sum of the squares below: 25² = 7² + 24², 5² = 3² + 4², so √(81 + 1600) = 41.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q076",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "8 3 21 / 6 5 25 / 12 2 ?",
+        "options": {
+          "A": "20",
+          "B": "22",
+          "C": "25",
+          "D": "21"
+        },
+        "key": "B",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "8",
+              "3",
+              "21"
+            ],
+            [
+              "6",
+              "5",
+              "25"
+            ],
+            [
+              "12",
+              "2",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p48 q76",
+      "key_basis": "derived",
+      "rule": "Right = middle × (left − 1): 3 × 7 = 21, 5 × 5 = 25, so 2 × 11 = 22.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q077",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "6 5 / 126 ?",
+        "options": {
+          "A": "217",
+          "B": "216",
+          "C": "225",
+          "D": "218"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "6",
+              "5"
+            ],
+            [
+              "126",
+              "?"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p48 q77",
+      "key_basis": "derived",
+      "rule": "Each number cubed, plus 1, sits diagonally below it: 5³ + 1 = 126, so 6³ + 1 = 217.",
+      "confidence": "medium",
+      "note": "One example fixes little; the same diagonal cube rule runs Q35. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch12-q078",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "18 / 9 38 6 / 17 // 12 / 8 29 3 / 12 // 13 / 11 ? 9 / 8",
+        "options": {
+          "A": "25",
+          "B": "28",
+          "C": "23",
+          "D": "20"
+        },
+        "key": "C",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "",
+              "18",
+              ""
+            ],
+            [
+              "9",
+              "38",
+              "6"
+            ],
+            [
+              "",
+              "17",
+              ""
+            ]
+          ],
+          [
+            [
+              "",
+              "12",
+              ""
+            ],
+            [
+              "8",
+              "29",
+              "3"
+            ],
+            [
+              "",
+              "12",
+              ""
+            ]
+          ],
+          [
+            [
+              "",
+              "13",
+              ""
+            ],
+            [
+              "11",
+              "?",
+              "9"
+            ],
+            [
+              "",
+              "8",
+              ""
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p48 q78",
+      "key_basis": "derived",
+      "rule": "Centre = top + bottom + left − right: 18 + 17 + 9 − 6 = 38, 12 + 12 + 8 − 3 = 29, so 13 + 8 + 11 − 9 = 23.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch12-q079",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "13 4 165 / 3 2 7 / ? 11 14",
+        "options": {
+          "A": "5",
+          "B": "1",
+          "C": "3",
+          "D": "2"
+        },
+        "key": "A",
+        "reasoningType": "missing_term",
+        "direction": "Study the given pattern carefully and select the number which can replace the question mark (?).",
+        "tables": [
+          [
+            [
+              "13",
+              "4",
+              "165"
+            ],
+            [
+              "3",
+              "2",
+              "7"
+            ],
+            [
+              "?",
+              "11",
+              "14"
+            ]
+          ]
+        ]
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch12 p48 q79",
+      "key_basis": "derived",
+      "rule": "Right = left² − middle: 169 − 4 = 165, 9 − 2 = 7, so ?² − 11 = 14 gives 5.",
       "confidence": "high"
     },
     {
