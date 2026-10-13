@@ -12,7 +12,7 @@ import { z } from 'zod';
  */
 
 export interface Figure {
-  /** [x1, y1, x2, y2] per straight line. */
+  /** [x1, y1, x2, y2] per straight line. A figure of circles alone has none. */
   readonly lines: readonly (readonly [number, number, number, number])[];
   /** [cx, cy, r] per circle. Drawn, never counted. */
   readonly circles?: readonly (readonly [number, number, number])[];
@@ -24,7 +24,10 @@ const line = z
   .refine(([x1, y1, x2, y2]) => Math.hypot(x2 - x1, y2 - y1) > 0, 'a line has length');
 const circle = z.tuple([finite, finite, finite]).refine(([, , r]) => r > 0, 'a circle has a radius');
 
-export const figureSchema = z.object({ lines: z.array(line).min(1), circles: z.array(circle).optional() }).strict();
+export const figureSchema = z
+  .object({ lines: z.array(line), circles: z.array(circle).optional() })
+  .strict()
+  .refine((f) => f.lines.length + (f.circles?.length ?? 0) > 0, 'a figure draws something');
 
 /** Throws, naming the field, on anything that is not a figure. */
 export function validateFigure(figure: unknown): Figure {
@@ -80,6 +83,8 @@ function meet([a, b]: Seg, [c, d]: Seg): Pt | null {
 interface Graph {
   readonly points: readonly Pt[];
   readonly joined: (i: number, j: number) => boolean;
+  /** True when three corners lie on one line, to within a thousandth of the figure's size: stored figures are rounded. */
+  readonly flat: (a: Pt, b: Pt, c: Pt) => boolean;
 }
 
 function graph(figure: Figure): Graph {
@@ -98,19 +103,25 @@ function graph(figure: Figure): Graph {
   }
   const lineOf = points.map((p) => segs.flatMap((s, k) => (onSeg(p, s) ? [k] : [])));
   const joined = (i: number, j: number) => i !== j && lineOf[i].some((k) => lineOf[j].includes(k));
-  return { points, joined };
+  const xs = points.map((p) => p[0]), ys = points.map((p) => p[1]);
+  const size = Math.hypot(Math.max(...xs) - Math.min(...xs), Math.max(...ys) - Math.min(...ys));
+  const flat = (a: Pt, b: Pt, c: Pt) => {
+    const longest = Math.max(Math.hypot(b[0] - a[0], b[1] - a[1]), Math.hypot(c[0] - b[0], c[1] - b[1]), Math.hypot(a[0] - c[0], a[1] - c[1]));
+    return Math.abs(area2(a, b, c)) <= 1e-3 * size * longest;
+  };
+  return { points, joined, flat };
 }
 
 const area2 = (a: Pt, b: Pt, c: Pt) => cross2(b[0] - a[0], b[1] - a[1], c[0] - a[0], c[1] - a[1]);
 
 /** Triangles with every side along a drawn line. */
 export function countTriangles(figure: Figure): number {
-  const { points, joined } = graph(figure);
+  const { points, joined, flat } = graph(figure);
   let n = 0;
   for (let i = 0; i < points.length; i++) for (let j = i + 1; j < points.length; j++) {
     if (!joined(i, j)) continue;
     for (let k = j + 1; k < points.length; k++) {
-      if (joined(i, k) && joined(j, k) && Math.abs(area2(points[i], points[j], points[k])) > SAME) n++;
+      if (joined(i, k) && joined(j, k) && !flat(points[i], points[j], points[k])) n++;
     }
   }
   return n;
@@ -129,7 +140,7 @@ function rectangles(figure: Figure): { w: number; h: number }[] {
       const [pa, pb, pc] = [points[a], points[b], points[c]];
       const [ux, uy, vx, vy] = [pa[0] - pb[0], pa[1] - pb[1], pc[0] - pb[0], pc[1] - pb[1]];
       const [lu, lv] = [Math.hypot(ux, uy), Math.hypot(vx, vy)];
-      if (Math.abs(ux * vx + uy * vy) > SAME * lu * lv) continue;
+      if (Math.abs(ux * vx + uy * vy) > 1e-3 * lu * lv) continue;
       const d = find([pa[0] + vx, pa[1] + vy]);
       if (d < 0 || !joined(a, d) || !joined(c, d)) continue;
       const key = [a, b, c, d].sort((x, y) => x - y).join();
@@ -151,3 +162,67 @@ export function figureBounds(figure: Figure): { x: number; y: number; width: num
   const [x, y] = [Math.min(...xs), Math.min(...ys)];
   return { x, y, width: Math.max(...xs) - x, height: Math.max(...ys) - y };
 }
+
+const segIntersect = (p1: Pt, p2: Pt, p3: Pt, p4: Pt) => {
+  const d1 = area2(p3, p4, p1), d2 = area2(p3, p4, p2), d3 = area2(p1, p2, p3), d4 = area2(p1, p2, p4);
+  return d1 * d2 < -SAME && d3 * d4 < -SAME;
+};
+
+/**
+ * Four-sided figures with every side along a drawn line: four corners, joined
+ * in turn, no three in a line, and the sides not crossing each other.
+ */
+export function countQuadrilaterals(figure: Figure): number {
+  const { points, joined, flat } = graph(figure);
+  const n = points.length;
+  const seen = new Set<string>();
+  let count = 0;
+  for (let a = 0; a < n; a++) for (let b = 0; b < n; b++) {
+    if (!joined(a, b)) continue;
+    for (let c = 0; c < n; c++) {
+      if (c === a || !joined(b, c)) continue;
+      for (let d = 0; d < n; d++) {
+        if (d === a || d === b || !joined(c, d) || !joined(d, a)) continue;
+        const [pa, pb, pc, pd] = [points[a], points[b], points[c], points[d]];
+        const corners = [
+          [pd, pa, pb],
+          [pa, pb, pc],
+          [pb, pc, pd],
+          [pc, pd, pa],
+        ] as const;
+        if (corners.some(([x, y, z]) => flat(x, y, z))) continue;
+        if (segIntersect(pa, pb, pc, pd) || segIntersect(pb, pc, pd, pa)) continue;
+        // One shape, whichever corner and direction it is walked from: its corners and its two diagonals.
+        const diagonals = [[a, c], [b, d]].map((p) => [Math.min(...p), Math.max(...p)]).sort((x, y) => x[0] - y[0]);
+        const key = `${[a, b, c, d].sort((x, y) => x - y).join()}|${diagonals.join('|')}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        count++;
+      }
+    }
+  }
+  return count;
+}
+
+export const countCircles = (figure: Figure) => (figure.circles ?? []).length;
+
+/** Two semicircles for every drawn line that runs right across a circle through its centre. */
+export function countSemicircles(figure: Figure): number {
+  const segs = merge(figure.lines);
+  let n = 0;
+  for (const [cx, cy, r] of figure.circles ?? []) {
+    for (const s of segs) {
+      if (!onLine([cx, cy], s)) continue;
+      const [a, b] = s;
+      const len = Math.hypot(b[0] - a[0], b[1] - a[1]);
+      const [ux, uy] = [(b[0] - a[0]) / len, (b[1] - a[1]) / len];
+      const across = (p: Pt) => (p[0] - cx) * ux + (p[1] - cy) * uy;
+      const [lo, hi] = [Math.min(across(a), across(b)), Math.max(across(a), across(b))];
+      if (lo <= -r + SAME * r * 10 && hi >= r - SAME * r * 10) n += 2;
+    }
+  }
+  return n;
+}
+
+/** Straight lines needed to draw the figure: collinear pieces that touch are one line. */
+export const countLines = (figure: Figure) => merge(figure.lines).length;

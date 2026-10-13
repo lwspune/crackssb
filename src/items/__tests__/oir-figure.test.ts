@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { countRectangles, countSquares, countTriangles, figureBounds, validateFigure } from '../oir/figure.ts';
+import { countCircles, countLines, countQuadrilaterals, countRectangles, countSemicircles, countSquares, countTriangles, figureBounds, validateFigure } from '../oir/figure.ts';
 import type { Figure } from '../oir/figure.ts';
 
 /**
@@ -33,6 +33,19 @@ describe('countTriangles', () => {
     expect(countTriangles({ lines: [[0, 10, 10, 10], [0, 10, 5, 0], [10, 10, 5, 0]], circles: [[5, 6, 8]] })).toBe(1);
   });
 
+  it('gives the same count when every coordinate is rounded, as a stored figure is', () => {
+    // Lines from a corner to points a third of the way along a slanting side: the crossings are irrational.
+    const a = [0, 0], b = [90, 70], c = [100, 0];
+    const at = (p: number[], q: number[], t: number) => [p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t];
+    const lines: [number, number, number, number][] = [
+      [...a, ...b], [...b, ...c], [...c, ...a],
+      [...a, ...at(b, c, 1 / 3)], [...a, ...at(b, c, 2 / 3)], [...c, ...at(a, b, 1 / 3)], [...c, ...at(a, b, 2 / 3)],
+    ] as [number, number, number, number][];
+    const exact = countTriangles({ lines });
+    const r = (x: number) => Math.round(x * 1e4) / 1e4;
+    expect(countTriangles({ lines: lines.map((l) => l.map(r) as [number, number, number, number]) })).toBe(exact);
+  });
+
   it('does not count three points on one line', () => {
     expect(countTriangles({ lines: [[0, 0, 10, 0], [5, 0, 5, 5]] })).toBe(0);
   });
@@ -56,6 +69,38 @@ describe('countSquares and countRectangles', () => {
   });
 });
 
+describe('countQuadrilaterals', () => {
+  it('counts every four-sided figure with its sides along drawn lines', () => {
+    // A rectangle split by one vertical: two cells and the whole.
+    expect(countQuadrilaterals({ lines: [...rect(0, 0, 2, 1), [1, 0, 1, 1]] })).toBe(3);
+    // A trapezium is a quadrilateral too; its diagonal makes triangles, not more quadrilaterals.
+    expect(countQuadrilaterals({ lines: [[0, 2, 4, 2], [1, 0, 3, 0], [0, 2, 1, 0], [4, 2, 3, 0], [0, 2, 3, 0]] })).toBe(1);
+  });
+
+  it('does not count a crossed four-point path, or three points in a line', () => {
+    expect(countQuadrilaterals({ lines: [...rect(0, 0, 2, 2), [0, 0, 2, 2], [2, 0, 0, 2]] })).toBe(1);
+  });
+});
+
+describe('countCircles and countSemicircles', () => {
+  it('counts the circles drawn', () => {
+    expect(countCircles({ lines: [[0, 0, 1, 0]], circles: [[0, 0, 1], [3, 0, 1]] })).toBe(2);
+  });
+
+  it('counts two semicircles for each line drawn right across a circle through its centre', () => {
+    const f = { lines: [[-1, 0, 1, 0], [0, -1, 0, 1], [-1, -1, 0.5, 1]] as const, circles: [[0, 0, 1], [5, 5, 1]] as const };
+    expect(countSemicircles(f)).toBe(4);
+    // A line through the centre that stops inside the circle cuts no semicircle.
+    expect(countSemicircles({ lines: [[-1, 0, 0.5, 0]], circles: [[0, 0, 1]] })).toBe(0);
+  });
+});
+
+describe('countLines', () => {
+  it('counts each straight run once, however it was drawn in pieces', () => {
+    expect(countLines({ lines: [[0, 0, 1, 0], [1, 0, 2, 0], [0, 0, 0, 1], [3, 0, 4, 0]] })).toBe(3);
+  });
+});
+
 describe('figureBounds', () => {
   it('spans every line and circle', () => {
     expect(figureBounds({ lines: [[0, 0, 10, 4]], circles: [[5, 5, 6]] })).toEqual({ x: -1, y: -1, width: 12, height: 12 });
@@ -63,8 +108,9 @@ describe('figureBounds', () => {
 });
 
 describe('validateFigure', () => {
-  it('accepts lines and circles of finite numbers', () => {
+  it('accepts lines and circles of finite numbers, or circles alone', () => {
     expect(() => validateFigure({ lines: [[0, 0, 1, 1]], circles: [[0, 0, 2]] })).not.toThrow();
+    expect(() => validateFigure({ lines: [], circles: [[0, 0, 2]] })).not.toThrow();
   });
 
   it('refuses no lines, a line of zero length, a bad circle, or a stray field', () => {
