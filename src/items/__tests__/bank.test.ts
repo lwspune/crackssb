@@ -59,6 +59,13 @@ describe('validateItem', () => {
     expect(() => validateItem({ ...item, payload: { ...item.payload, figure: { lines: [[1, 1, 1, 1]] } } })).toThrow(/figure/);
   });
 
+  it('keeps a dice drawing on a non-verbal item, and refuses an empty one (D29)', () => {
+    const item = { ...oir('nv2', 'cubes_dice'), assessment_type: 'oir_nonverbal' as const };
+    const dice = { views: [{ top: '1', left: '2', right: 'pips:3', caption: '(a)' }] };
+    expect((validateItem({ ...item, payload: { ...item.payload, dice } }).payload as OirPayload).dice).toEqual(dice);
+    expect(() => validateItem({ ...item, payload: { ...item.payload, dice: {} } })).toThrow(/dice/);
+  });
+
   it('every row of the seeded WAT bank validates as a payload', () => {
     const { items: rows } = JSON.parse(readFileSync('content/wat-items.json', 'utf8')) as { items: Array<{ payload: unknown }> };
     expect(rows.length).toBe(60);

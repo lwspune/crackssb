@@ -6,6 +6,8 @@ import { OPTION_LABELS } from '@/items/bank.ts';
 import type { OptionLabel } from '@/items/bank.ts';
 import { figureBounds } from '@/items/oir/figure.ts';
 import type { Figure } from '@/items/oir/figure.ts';
+import type { DiceFigure } from '@/items/oir/dice.ts';
+import { DiceDrawing } from './DiceDrawing.tsx';
 
 /**
  * Chapter practice (D26): one question at a time, untimed. The candidate
@@ -23,6 +25,8 @@ export interface PracticeItem {
   readonly tables?: readonly (readonly (readonly string[])[])[];
   /** A redrawn figure (D29), drawn in place of the stem; the stem describes it for screen readers. */
   readonly figure?: Figure;
+  /** Dice views and nets (D29), drawn in place of the stem; the stem describes them. */
+  readonly dice?: DiceFigure;
   readonly options: Readonly<Record<OptionLabel, string>>;
 }
 
@@ -217,7 +221,9 @@ export function PracticeRunner({ items, answer, doneHref }: Props) {
         {item.direction && <p className="mt-3 text-sm text-muted-foreground">{item.direction}</p>}
         {item.passage && <p className="mt-3 whitespace-pre-line rounded-lg bg-secondary p-4 text-sm leading-relaxed text-secondary-foreground">{item.passage}</p>}
         <div ref={stemRef} tabIndex={-1} className="outline-none">
-          {item.figure ? (
+          {item.dice ? (
+            <DiceDrawing dice={item.dice} label={item.stem} />
+          ) : item.figure ? (
             <FigureDrawing figure={item.figure} label={item.stem} />
           ) : item.tables ? (
             <PrintedTables tables={item.tables} />

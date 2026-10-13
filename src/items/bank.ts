@@ -1,6 +1,8 @@
 import { z } from 'zod';
 import { figureSchema } from './oir/figure.ts';
 import type { Figure } from './oir/figure.ts';
+import { diceSchema } from './oir/dice.ts';
+import type { DiceFigure } from './oir/dice.ts';
 
 /**
  * The item bank — the `items` row of ARCHITECTURE.md §4, validated, and
@@ -37,6 +39,8 @@ export interface OirPayload {
   readonly tables?: readonly (readonly (readonly string[])[])[];
   /** A redrawn figure (D29), shown in place of `stem`, which describes it in words. */
   readonly figure?: Figure;
+  /** Dice views and nets (D29), shown in place of `stem`, which describes them. */
+  readonly dice?: DiceFigure;
 }
 
 export interface WatPayload {
@@ -84,6 +88,7 @@ const oirPayload = z.object({
     .min(1)
     .optional(),
   figure: figureSchema.optional(),
+  dice: diceSchema.optional(),
 });
 
 const watPayload = z.object({ word: z.string().min(1), valence: z.string().optional() });

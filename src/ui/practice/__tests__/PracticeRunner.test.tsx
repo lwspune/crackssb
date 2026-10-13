@@ -187,4 +187,29 @@ describe('chapter practice', () => {
     expect(img.getAttribute('stroke')).toBe('currentColor');
     expect(screen.queryByText(drawn.stem)).toBeNull();
   });
+
+  it('draws dice views and nets in place of the stem, described by it, with pips as dots and captions (D29)', () => {
+    const dice: PracticeItem = {
+      id: 'd1',
+      stem: 'Two views of a die, and a net.',
+      dice: {
+        views: [
+          { top: '1', left: 'pips:3', right: 'Ear', caption: '(a)' },
+          { top: 'fill', left: '', right: 'cross', caption: '(b)' },
+        ],
+        nets: [{ cells: [{ r: 0, c: 0, face: 'A' }, { r: 0, c: 1, face: 'B' }], caption: 'Sheet' }],
+      },
+      options: { A: '1', B: '2', C: '3', D: '4' },
+    };
+    render(<PracticeRunner items={[dice]} answer={fakeAnswer()} doneHref="/practise/oir" />);
+    const img = screen.getByRole('img', { name: dice.stem });
+    expect(img.querySelectorAll('[data-view]')).toHaveLength(2);
+    expect(img.querySelectorAll('[data-pip]')).toHaveLength(3);
+    expect(img.querySelectorAll('[data-net-cell]')).toHaveLength(2);
+    expect(img.textContent).toContain('Ear');
+    expect(img.textContent).toContain('(a)');
+    expect(img.textContent).toContain('Sheet');
+    expect(img.querySelector('[data-face="fill"]')?.getAttribute('fill')).toBe('currentColor');
+    expect(screen.queryByText(dice.stem)).toBeNull();
+  });
 });
