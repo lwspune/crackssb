@@ -1,0 +1,5333 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSR OIR 1-127 (phone photos of printed pages 1-127)",
+  "chapter": 28,
+  "title": "Counting Figures",
+  "pages": [
+    125,
+    127
+  ],
+  "transcribed": "2026-10-13",
+  "note": "Figures are redrawn (D29), not cut from the photos: each is a list of straight lines and circles, checked line by line against its photo on an overlay sheet. Q1-20 are in the photo's own pixel coordinates; the rest are on an exact grid. `stem` describes the figure in words for screen readers. Q9 prints one small square shaded; it is drawn plain, as shading does not change the count. Q2 is too small in the photo to read every line, Q30's squares cannot be told from its rectangles, and Q37 is drawn in arcs: those three carry no figure. Q35-50 each print their own question, kept as its direction.",
+  "directions": [
+    {
+      "section": "Triangles",
+      "printed": "Direction (Q. No. 1 to 20)",
+      "text": "How many triangles are there in the given figure ?"
+    },
+    {
+      "section": "Squares",
+      "printed": "Direction (Q. No. 21 to 30)",
+      "text": "Find the number of squares in the given figure."
+    },
+    {
+      "section": "Rectangles",
+      "printed": "Direction (Q. No. 31 to 34)",
+      "text": "How many rectangles are there in the given figure?"
+    },
+    {
+      "section": "Q35",
+      "printed": null,
+      "text": "How many quadrilaterals are there in the given figure ?"
+    },
+    {
+      "section": "Q36",
+      "printed": null,
+      "text": "How many rectangles are there in the following figure ?"
+    },
+    {
+      "section": "Q37",
+      "printed": null,
+      "text": "In the given figure, how many semicircles are there ?"
+    },
+    {
+      "section": "Q38",
+      "printed": null,
+      "text": "In the given figure, how many semicircles are there ?"
+    },
+    {
+      "section": "Q39",
+      "printed": null,
+      "text": "How many circles are there in the given figure?"
+    },
+    {
+      "section": "Q40",
+      "printed": null,
+      "text": "How many circles are there in the following figure."
+    },
+    {
+      "section": "Q41",
+      "printed": null,
+      "text": "How many triangles are there in the figure given below ?"
+    },
+    {
+      "section": "Q42",
+      "printed": null,
+      "text": "Count the number of triangles present in the given figure."
+    },
+    {
+      "section": "Q43",
+      "printed": null,
+      "text": "Count the number of triangles in the given figure."
+    },
+    {
+      "section": "Q44",
+      "printed": null,
+      "text": "Find the number of triangles in the given figure."
+    },
+    {
+      "section": "Q45",
+      "printed": null,
+      "text": "Find the number of straight lines required to make the given figure."
+    },
+    {
+      "section": "Q46",
+      "printed": null,
+      "text": "How many triangles are there in the picture given below?"
+    },
+    {
+      "section": "Q47",
+      "printed": null,
+      "text": "How many triangles are there in the picture given below :"
+    },
+    {
+      "section": "Q48",
+      "printed": null,
+      "text": "How many triangles are there in the picture given below?"
+    },
+    {
+      "section": "Q49",
+      "printed": null,
+      "text": "How many triangles are there in the given picture?"
+    },
+    {
+      "section": "Q50",
+      "printed": null,
+      "text": "How many squares are there in the picture?"
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "A long rectangle with both diagonals and two inner verticals, and a triangle on each short side split by a line from its point to the side's middle.",
+      "options": {
+        "A": "26",
+        "B": "24",
+        "C": "8",
+        "D": "22"
+      },
+      "figure": {
+        "lines": [
+          [
+            61,
+            276,
+            215,
+            276
+          ],
+          [
+            215,
+            276,
+            215,
+            323
+          ],
+          [
+            215,
+            323,
+            61,
+            323
+          ],
+          [
+            61,
+            323,
+            61,
+            276
+          ],
+          [
+            31,
+            300,
+            61,
+            276
+          ],
+          [
+            31,
+            300,
+            61,
+            323
+          ],
+          [
+            31,
+            300,
+            61,
+            300
+          ],
+          [
+            250,
+            300,
+            215,
+            276
+          ],
+          [
+            250,
+            300,
+            215,
+            323
+          ],
+          [
+            250,
+            300,
+            215,
+            300
+          ],
+          [
+            97,
+            276,
+            97,
+            323
+          ],
+          [
+            173,
+            276,
+            173,
+            323
+          ],
+          [
+            61,
+            276,
+            215,
+            323
+          ],
+          [
+            61,
+            323,
+            215,
+            276
+          ]
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "A square leaning into a point at its foot, with a shaded half-circle on its left and small boxes inside; too small in the photo to read every line.",
+      "options": {
+        "A": "12",
+        "B": "13",
+        "C": "11",
+        "D": "10"
+      }
+    },
+    {
+      "n": 3,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "A square holding a V from its top corners to the middle of its base; from the middle of the top, lines run to the ends of two crossbars of the V.",
+      "options": {
+        "A": "21",
+        "B": "19",
+        "C": "18",
+        "D": "20"
+      },
+      "figure": {
+        "lines": [
+          [
+            31,
+            528,
+            137,
+            528
+          ],
+          [
+            137,
+            528,
+            137,
+            628
+          ],
+          [
+            137,
+            628,
+            31,
+            628
+          ],
+          [
+            31,
+            628,
+            31,
+            528
+          ],
+          [
+            31,
+            528,
+            84,
+            628
+          ],
+          [
+            137,
+            528,
+            84,
+            628
+          ],
+          [
+            84,
+            528,
+            50.08,
+            564
+          ],
+          [
+            84,
+            528,
+            117.92,
+            564
+          ],
+          [
+            50.08,
+            564,
+            117.92,
+            564
+          ],
+          [
+            84,
+            528,
+            65.98,
+            594
+          ],
+          [
+            84,
+            528,
+            102.02,
+            594
+          ],
+          [
+            65.98,
+            594,
+            102.02,
+            594
+          ]
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "A rectangle halved across and split by an off-centre vertical, with slanting lines making triangles in each part.",
+      "options": {
+        "A": "17",
+        "B": "11",
+        "C": "12",
+        "D": "10"
+      },
+      "figure": {
+        "lines": [
+          [
+            32,
+            682,
+            161,
+            682
+          ],
+          [
+            161,
+            682,
+            161,
+            774
+          ],
+          [
+            161,
+            774,
+            32,
+            774
+          ],
+          [
+            32,
+            774,
+            32,
+            682
+          ],
+          [
+            32,
+            727,
+            161,
+            727
+          ],
+          [
+            92,
+            682,
+            92,
+            774
+          ],
+          [
+            32,
+            727,
+            92,
+            682
+          ],
+          [
+            92,
+            682,
+            161,
+            727
+          ],
+          [
+            141,
+            682,
+            161,
+            727
+          ],
+          [
+            141,
+            682,
+            119,
+            727
+          ],
+          [
+            32,
+            727,
+            64,
+            774
+          ],
+          [
+            64,
+            774,
+            92,
+            727
+          ],
+          [
+            92,
+            774,
+            161,
+            727
+          ]
+        ]
+      }
+    },
+    {
+      "n": 5,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "A triangle with a line across it, and a line from the left end of that line to the bottom right corner.",
+      "options": {
+        "A": "5",
+        "B": "3",
+        "C": "6",
+        "D": "4"
+      },
+      "figure": {
+        "lines": [
+          [
+            83,
+            828,
+            33,
+            924
+          ],
+          [
+            83,
+            828,
+            133,
+            924
+          ],
+          [
+            33,
+            924,
+            133,
+            924
+          ],
+          [
+            56.4375,
+            879,
+            109.5625,
+            879
+          ],
+          [
+            56.4375,
+            879,
+            133,
+            924
+          ]
+        ]
+      }
+    },
+    {
+      "n": 6,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "Three overlapping circles over a line across the top two; triangles stand on that line in each top circle, and a triangle hangs below it, split down the middle.",
+      "options": {
+        "A": "5",
+        "B": "7",
+        "C": "8",
+        "D": "6"
+      },
+      "figure": {
+        "lines": [
+          [
+            32,
+            1014,
+            164,
+            1014
+          ],
+          [
+            32,
+            1014,
+            70,
+            976
+          ],
+          [
+            70,
+            976,
+            110,
+            1014
+          ],
+          [
+            123,
+            976,
+            84,
+            1014
+          ],
+          [
+            123,
+            976,
+            164,
+            1014
+          ],
+          [
+            32,
+            1014,
+            98,
+            1096
+          ],
+          [
+            164,
+            1014,
+            98,
+            1096
+          ],
+          [
+            98,
+            1014,
+            98,
+            1096
+          ]
+        ],
+        "circles": [
+          [
+            71,
+            1017,
+            40
+          ],
+          [
+            124,
+            1016,
+            41
+          ],
+          [
+            98,
+            1056,
+            41
+          ]
+        ]
+      }
+    },
+    {
+      "n": 7,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "A circle around a rectangle crossed by slanting lines that meet the top middle and a part-way crossbar, with two short verticals below it.",
+      "options": {
+        "A": "11",
+        "B": "10",
+        "C": "14",
+        "D": "8"
+      },
+      "figure": {
+        "lines": [
+          [
+            319,
+            253,
+            414,
+            260
+          ],
+          [
+            414,
+            260,
+            415,
+            302
+          ],
+          [
+            415,
+            302,
+            320,
+            295
+          ],
+          [
+            320,
+            295,
+            319,
+            253
+          ],
+          [
+            319,
+            253,
+            367.5,
+            298.5
+          ],
+          [
+            320,
+            295,
+            366.5,
+            256.5
+          ],
+          [
+            366.5,
+            256.5,
+            415,
+            302
+          ],
+          [
+            414,
+            260,
+            390.75,
+            279.25
+          ],
+          [
+            319.5,
+            274,
+            390.75,
+            279.25
+          ],
+          [
+            367,
+            277.5,
+            367.5,
+            298.5
+          ],
+          [
+            390.75,
+            279.25,
+            391.25,
+            300.25
+          ]
+        ],
+        "circles": [
+          [
+            367,
+            277.5,
+            54
+          ]
+        ]
+      }
+    },
+    {
+      "n": 8,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "A large square with smaller squares overlapping at three corners down its diagonal: diamonds in the first and last, a V in the middle one.",
+      "options": {
+        "A": "18",
+        "B": "15",
+        "C": "17",
+        "D": "16"
+      },
+      "figure": {
+        "lines": [
+          [
+            317,
+            390,
+            431,
+            390
+          ],
+          [
+            431,
+            390,
+            431,
+            500
+          ],
+          [
+            431,
+            500,
+            317,
+            500
+          ],
+          [
+            317,
+            500,
+            317,
+            390
+          ],
+          [
+            317,
+            390,
+            361,
+            390
+          ],
+          [
+            361,
+            390,
+            361,
+            434
+          ],
+          [
+            361,
+            434,
+            317,
+            434
+          ],
+          [
+            317,
+            434,
+            317,
+            390
+          ],
+          [
+            339,
+            390,
+            339,
+            434
+          ],
+          [
+            339,
+            390,
+            361,
+            412
+          ],
+          [
+            361,
+            412,
+            339,
+            434
+          ],
+          [
+            339,
+            434,
+            317,
+            412
+          ],
+          [
+            317,
+            412,
+            339,
+            390
+          ],
+          [
+            366,
+            427,
+            410,
+            427
+          ],
+          [
+            366,
+            427,
+            366,
+            476
+          ],
+          [
+            410,
+            427,
+            410,
+            524
+          ],
+          [
+            345,
+            451,
+            431,
+            451
+          ],
+          [
+            345,
+            451,
+            345,
+            500
+          ],
+          [
+            366,
+            451,
+            388,
+            476
+          ],
+          [
+            410,
+            451,
+            388,
+            476
+          ],
+          [
+            388,
+            451,
+            388,
+            500
+          ],
+          [
+            366,
+            476,
+            452,
+            476
+          ],
+          [
+            452,
+            476,
+            452,
+            524
+          ],
+          [
+            410,
+            524,
+            452,
+            524
+          ],
+          [
+            431,
+            476,
+            452,
+            500
+          ],
+          [
+            452,
+            500,
+            431,
+            524
+          ],
+          [
+            431,
+            524,
+            410,
+            500
+          ],
+          [
+            410,
+            500,
+            431,
+            476
+          ]
+        ]
+      }
+    },
+    {
+      "n": 9,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "A house: a triangular roof on a box, divided by verticals and crossbars, with two slanting lines at the bottom. One small square, shaded in the book, is drawn plain.",
+      "options": {
+        "A": "17",
+        "B": "16",
+        "C": "15",
+        "D": "18"
+      },
+      "figure": {
+        "lines": [
+          [
+            367,
+            581,
+            320,
+            637
+          ],
+          [
+            367,
+            581,
+            415,
+            637
+          ],
+          [
+            320,
+            637,
+            415,
+            637
+          ],
+          [
+            320,
+            637,
+            320,
+            721
+          ],
+          [
+            415,
+            637,
+            415,
+            721
+          ],
+          [
+            320,
+            721,
+            415,
+            721
+          ],
+          [
+            339,
+            614.3617,
+            339,
+            721
+          ],
+          [
+            339,
+            614.3617,
+            367,
+            614.3617
+          ],
+          [
+            367,
+            581,
+            367,
+            721
+          ],
+          [
+            320,
+            675,
+            415,
+            675
+          ],
+          [
+            390,
+            637,
+            390,
+            700
+          ],
+          [
+            390,
+            700,
+            415,
+            700
+          ],
+          [
+            339,
+            700,
+            367,
+            700
+          ],
+          [
+            367,
+            700,
+            415,
+            721
+          ],
+          [
+            339,
+            675,
+            320,
+            721
+          ]
+        ]
+      }
+    },
+    {
+      "n": 10,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "A circle around a square criss-crossed by horizontals, verticals and slanting lines.",
+      "options": {
+        "A": "13",
+        "B": "14",
+        "C": "15",
+        "D": "16"
+      },
+      "figure": {
+        "lines": [
+          [
+            338,
+            800,
+            418,
+            800
+          ],
+          [
+            418,
+            800,
+            418,
+            879
+          ],
+          [
+            418,
+            879,
+            338,
+            879
+          ],
+          [
+            338,
+            879,
+            338,
+            800
+          ],
+          [
+            338,
+            825,
+            418,
+            825
+          ],
+          [
+            361,
+            800,
+            361,
+            834
+          ],
+          [
+            361,
+            800,
+            376,
+            825
+          ],
+          [
+            376,
+            825,
+            376,
+            879
+          ],
+          [
+            361,
+            834,
+            401,
+            834
+          ],
+          [
+            401,
+            834,
+            401,
+            879
+          ],
+          [
+            338,
+            852,
+            376,
+            825
+          ],
+          [
+            338,
+            852,
+            376,
+            852
+          ],
+          [
+            376,
+            852,
+            418,
+            822
+          ],
+          [
+            338,
+            852,
+            376,
+            879
+          ],
+          [
+            376,
+            852,
+            418,
+            879
+          ],
+          [
+            401,
+            854,
+            418,
+            854
+          ]
+        ],
+        "circles": [
+          [
+            378,
+            839,
+            58
+          ]
+        ]
+      }
+    },
+    {
+      "n": 11,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "Seven small squares, each cut by a diagonal, joined by a stepped path of lines.",
+      "options": {
+        "A": "12",
+        "B": "13",
+        "C": "14",
+        "D": "15"
+      },
+      "figure": {
+        "lines": [
+          [
+            323,
+            985,
+            335,
+            985
+          ],
+          [
+            335,
+            985,
+            335,
+            997
+          ],
+          [
+            335,
+            997,
+            323,
+            997
+          ],
+          [
+            323,
+            997,
+            323,
+            985
+          ],
+          [
+            323,
+            997,
+            335,
+            985
+          ],
+          [
+            323,
+            997,
+            323,
+            1004
+          ],
+          [
+            323,
+            1004,
+            473,
+            997
+          ],
+          [
+            397,
+            977,
+            397,
+            1055
+          ],
+          [
+            397,
+            977,
+            408,
+            977
+          ],
+          [
+            408,
+            964,
+            423,
+            964
+          ],
+          [
+            423,
+            964,
+            423,
+            977
+          ],
+          [
+            423,
+            977,
+            408,
+            977
+          ],
+          [
+            408,
+            977,
+            408,
+            964
+          ],
+          [
+            408,
+            977,
+            423,
+            964
+          ],
+          [
+            423,
+            964,
+            423,
+            953
+          ],
+          [
+            423,
+            953,
+            462,
+            953
+          ],
+          [
+            442,
+            953,
+            462,
+            953
+          ],
+          [
+            462,
+            953,
+            462,
+            974
+          ],
+          [
+            462,
+            974,
+            442,
+            974
+          ],
+          [
+            442,
+            974,
+            442,
+            953
+          ],
+          [
+            442,
+            974,
+            462,
+            953
+          ],
+          [
+            419,
+            999.52,
+            419,
+            1022
+          ],
+          [
+            397,
+            1000.5467,
+            419,
+            1022
+          ],
+          [
+            323,
+            1029,
+            419,
+            1022
+          ],
+          [
+            344,
+            1027.4688,
+            344,
+            1050
+          ],
+          [
+            344,
+            1050,
+            323,
+            1050
+          ],
+          [
+            323,
+            1050,
+            323,
+            1029
+          ],
+          [
+            323,
+            1029,
+            344,
+            1050
+          ],
+          [
+            376,
+            1055,
+            397,
+            1055
+          ],
+          [
+            397,
+            1055,
+            397,
+            1074
+          ],
+          [
+            397,
+            1074,
+            376,
+            1074
+          ],
+          [
+            376,
+            1074,
+            376,
+            1055
+          ],
+          [
+            376,
+            1074,
+            397,
+            1055
+          ],
+          [
+            473,
+            997,
+            473,
+            1026
+          ],
+          [
+            473,
+            1026,
+            489,
+            1026
+          ],
+          [
+            489,
+            1026,
+            489,
+            1007
+          ],
+          [
+            489,
+            1007,
+            473,
+            1007
+          ],
+          [
+            473,
+            1007,
+            489,
+            1026
+          ]
+        ]
+      }
+    },
+    {
+      "n": 12,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "A rectangle with both diagonals between two triangles, one above and one below, each halved by a line from its point.",
+      "options": {
+        "A": "16",
+        "B": "14",
+        "C": "15",
+        "D": "12"
+      },
+      "figure": {
+        "lines": [
+          [
+            637,
+            242,
+            586,
+            290
+          ],
+          [
+            637,
+            242,
+            689,
+            290
+          ],
+          [
+            637,
+            242,
+            637,
+            290
+          ],
+          [
+            586,
+            290,
+            689,
+            290
+          ],
+          [
+            606,
+            290,
+            606,
+            342
+          ],
+          [
+            662,
+            290,
+            662,
+            342
+          ],
+          [
+            606,
+            290,
+            662,
+            342
+          ],
+          [
+            662,
+            290,
+            606,
+            342
+          ],
+          [
+            587,
+            342,
+            689,
+            342
+          ],
+          [
+            587,
+            342,
+            638,
+            390
+          ],
+          [
+            689,
+            342,
+            638,
+            390
+          ],
+          [
+            638,
+            342,
+            638,
+            390
+          ]
+        ]
+      }
+    },
+    {
+      "n": 13,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "A square holding overlapping smaller squares and rectangles, with slanting lines making triangles at the corners and edges.",
+      "options": {
+        "A": "11",
+        "B": "15",
+        "C": "13",
+        "D": "12"
+      },
+      "figure": {
+        "lines": [
+          [
+            589,
+            453,
+            710,
+            453
+          ],
+          [
+            710,
+            453,
+            710,
+            576
+          ],
+          [
+            710,
+            576,
+            589,
+            576
+          ],
+          [
+            589,
+            576,
+            589,
+            453
+          ],
+          [
+            589,
+            500,
+            636,
+            500
+          ],
+          [
+            636,
+            453,
+            636,
+            500
+          ],
+          [
+            589,
+            453,
+            636,
+            500
+          ],
+          [
+            636,
+            475,
+            658,
+            453
+          ],
+          [
+            663,
+            466,
+            710,
+            466
+          ],
+          [
+            663,
+            466,
+            663,
+            576
+          ],
+          [
+            688,
+            466,
+            710,
+            494
+          ],
+          [
+            710,
+            494,
+            688,
+            521
+          ],
+          [
+            641,
+            493,
+            687,
+            493
+          ],
+          [
+            641,
+            493,
+            641,
+            548
+          ],
+          [
+            687,
+            493,
+            687,
+            548
+          ],
+          [
+            663,
+            493,
+            688,
+            521
+          ],
+          [
+            618,
+            521,
+            710,
+            521
+          ],
+          [
+            618,
+            548,
+            687,
+            548
+          ],
+          [
+            618,
+            521,
+            618,
+            576
+          ],
+          [
+            618,
+            521,
+            589,
+            548
+          ],
+          [
+            589,
+            548,
+            618,
+            576
+          ],
+          [
+            641,
+            548,
+            663,
+            576
+          ],
+          [
+            687,
+            548,
+            663,
+            576
+          ]
+        ]
+      }
+    },
+    {
+      "n": 14,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "A rectangle in six equal parts, two rows of three, with one diagonal across the whole.",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "10"
+      },
+      "figure": {
+        "lines": [
+          [
+            584,
+            637,
+            758,
+            637
+          ],
+          [
+            758,
+            637,
+            758,
+            717
+          ],
+          [
+            758,
+            717,
+            584,
+            717
+          ],
+          [
+            584,
+            717,
+            584,
+            637
+          ],
+          [
+            642,
+            637,
+            642,
+            717
+          ],
+          [
+            700,
+            637,
+            700,
+            717
+          ],
+          [
+            584,
+            677,
+            758,
+            677
+          ],
+          [
+            584,
+            717,
+            758,
+            637
+          ]
+        ]
+      }
+    },
+    {
+      "n": 15,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "A rectangle in three parts, crossed by a zigzag from the bottom left corner to the top right corner.",
+      "options": {
+        "A": "8",
+        "B": "6",
+        "C": "7",
+        "D": "5"
+      },
+      "figure": {
+        "lines": [
+          [
+            592,
+            772,
+            758,
+            772
+          ],
+          [
+            758,
+            772,
+            758,
+            860
+          ],
+          [
+            758,
+            860,
+            592,
+            860
+          ],
+          [
+            592,
+            860,
+            592,
+            772
+          ],
+          [
+            646,
+            772,
+            646,
+            860
+          ],
+          [
+            702,
+            772,
+            702,
+            860
+          ],
+          [
+            592,
+            860,
+            646,
+            772
+          ],
+          [
+            646,
+            772,
+            702,
+            860
+          ],
+          [
+            702,
+            860,
+            758,
+            772
+          ]
+        ]
+      }
+    },
+    {
+      "n": 16,
+      "page": 125,
+      "section": "Triangles",
+      "stem": "A large square overlapped at its top left corner by a small square holding a diamond, and filled with overlapping smaller squares and slanting lines.",
+      "options": {
+        "A": "13",
+        "B": "12",
+        "C": "14",
+        "D": "11"
+      },
+      "figure": {
+        "lines": [
+          [
+            598,
+            923,
+            639,
+            923
+          ],
+          [
+            639,
+            923,
+            639,
+            967
+          ],
+          [
+            639,
+            967,
+            598,
+            967
+          ],
+          [
+            598,
+            967,
+            598,
+            923
+          ],
+          [
+            617,
+            923,
+            663,
+            966
+          ],
+          [
+            598,
+            944,
+            617,
+            923
+          ],
+          [
+            598,
+            944,
+            620,
+            967
+          ],
+          [
+            620,
+            967,
+            639,
+            943.5652
+          ],
+          [
+            620,
+            944,
+            734,
+            944
+          ],
+          [
+            620,
+            944,
+            620,
+            1062
+          ],
+          [
+            734,
+            944,
+            734,
+            1062
+          ],
+          [
+            620,
+            1062,
+            734,
+            1062
+          ],
+          [
+            663,
+            944,
+            663,
+            989
+          ],
+          [
+            620,
+            989,
+            663,
+            989
+          ],
+          [
+            663,
+            966,
+            684,
+            944
+          ],
+          [
+            691,
+            961,
+            734,
+            961
+          ],
+          [
+            691,
+            961,
+            691,
+            1062
+          ],
+          [
+            713,
+            961,
+            734,
+            984
+          ],
+          [
+            734,
+            984,
+            716,
+            1008
+          ],
+          [
+            671,
+            983,
+            716,
+            983
+          ],
+          [
+            671,
+            983,
+            671,
+            1030
+          ],
+          [
+            716,
+            983,
+            716,
+            1030
+          ],
+          [
+            649,
+            1008,
+            734,
+            1008
+          ],
+          [
+            649,
+            1008,
+            649,
+            1062
+          ],
+          [
+            649,
+            1030,
+            716,
+            1030
+          ],
+          [
+            649,
+            1030,
+            671,
+            1008
+          ],
+          [
+            620,
+            1035,
+            649,
+            1061
+          ]
+        ]
+      }
+    },
+    {
+      "n": 17,
+      "page": 126,
+      "section": "Triangles",
+      "stem": "A trapezium divided by verticals, crossbars and slanting lines that meet in the middle, with a small triangle in each bottom corner.",
+      "options": {
+        "A": "11",
+        "B": "9",
+        "C": "10",
+        "D": "12"
+      },
+      "figure": {
+        "lines": [
+          [
+            123,
+            106,
+            186,
+            106
+          ],
+          [
+            123,
+            106,
+            83,
+            202
+          ],
+          [
+            186,
+            106,
+            227,
+            205
+          ],
+          [
+            83,
+            202,
+            227,
+            205
+          ],
+          [
+            123,
+            106,
+            123,
+            202.8333
+          ],
+          [
+            123,
+            122,
+            192.6263,
+            122
+          ],
+          [
+            184.6,
+            106,
+            184.6,
+            122
+          ],
+          [
+            123,
+            122,
+            161,
+            174
+          ],
+          [
+            193,
+            122,
+            193,
+            148
+          ],
+          [
+            193,
+            148,
+            161,
+            174
+          ],
+          [
+            193,
+            148,
+            203.3939,
+            148
+          ],
+          [
+            161,
+            174,
+            123,
+            202.8333
+          ],
+          [
+            161,
+            174,
+            214.5758,
+            175
+          ],
+          [
+            203,
+            148,
+            203,
+            174.6
+          ],
+          [
+            214.5758,
+            175,
+            214.5758,
+            205
+          ],
+          [
+            94,
+            175.6,
+            94,
+            202.2292
+          ],
+          [
+            94,
+            175.6,
+            123,
+            202.8333
+          ]
+        ]
+      }
+    },
+    {
+      "n": 18,
+      "page": 126,
+      "section": "Triangles",
+      "stem": "A square and a sloping strip side by side, cut into triangles by diagonals, with a column of three boxes hanging down on the right, two of them halved by a diagonal.",
+      "options": {
+        "A": "9",
+        "B": "14",
+        "C": "12",
+        "D": "16"
+      },
+      "figure": {
+        "lines": [
+          [
+            83,
+            266,
+            118,
+            266
+          ],
+          [
+            83,
+            266,
+            83,
+            357
+          ],
+          [
+            118,
+            266,
+            118,
+            357.6364
+          ],
+          [
+            118,
+            266,
+            199,
+            321
+          ],
+          [
+            83,
+            266,
+            118,
+            318.9052
+          ],
+          [
+            83,
+            318,
+            199,
+            321
+          ],
+          [
+            118,
+            318.9052,
+            83,
+            357
+          ],
+          [
+            148,
+            286.3704,
+            148,
+            343.6667
+          ],
+          [
+            118,
+            357.6364,
+            199,
+            321
+          ],
+          [
+            83,
+            357,
+            248,
+            360
+          ],
+          [
+            199,
+            321,
+            248,
+            321
+          ],
+          [
+            248,
+            321,
+            248,
+            425
+          ],
+          [
+            199,
+            321,
+            199,
+            425
+          ],
+          [
+            199,
+            425,
+            248,
+            425
+          ],
+          [
+            199,
+            394,
+            248,
+            394
+          ],
+          [
+            199,
+            394,
+            248,
+            360
+          ],
+          [
+            199,
+            425,
+            248,
+            394
+          ]
+        ]
+      }
+    },
+    {
+      "n": 19,
+      "page": 126,
+      "section": "Triangles",
+      "stem": "A large square with smaller squares overlapping at three corners down its diagonal: a diamond in the first and last, a V in the middle one.",
+      "options": {
+        "A": "13",
+        "B": "11",
+        "C": "15",
+        "D": "14"
+      },
+      "figure": {
+        "lines": [
+          [
+            84,
+            484,
+            201,
+            486
+          ],
+          [
+            201,
+            486,
+            201,
+            587
+          ],
+          [
+            84,
+            585,
+            201,
+            587
+          ],
+          [
+            84,
+            484,
+            84,
+            585
+          ],
+          [
+            129,
+            484.7692,
+            129,
+            525
+          ],
+          [
+            84,
+            525,
+            129,
+            525
+          ],
+          [
+            106.4,
+            484.3829,
+            129,
+            505
+          ],
+          [
+            129,
+            505,
+            106.4,
+            525
+          ],
+          [
+            106.4,
+            525,
+            84,
+            504
+          ],
+          [
+            84,
+            504,
+            106.4,
+            484.3829
+          ],
+          [
+            133.6,
+            519.4,
+            178.6,
+            519.4
+          ],
+          [
+            133.6,
+            519.4,
+            133.6,
+            564
+          ],
+          [
+            112.4,
+            541.4,
+            201,
+            543
+          ],
+          [
+            112.4,
+            541.4,
+            112.4,
+            585.4855
+          ],
+          [
+            133.6,
+            541.7828,
+            156,
+            564.3508
+          ],
+          [
+            178.6,
+            542.5955,
+            156,
+            564.3508
+          ],
+          [
+            156,
+            542.1874,
+            156,
+            586.2308
+          ],
+          [
+            133.6,
+            564,
+            223,
+            565.4
+          ],
+          [
+            178.6,
+            519.4,
+            178.6,
+            609
+          ],
+          [
+            223,
+            565.4,
+            223,
+            609
+          ],
+          [
+            178.6,
+            609,
+            223,
+            609
+          ],
+          [
+            201,
+            565.0555,
+            223,
+            587
+          ],
+          [
+            223,
+            587,
+            201,
+            609
+          ],
+          [
+            201,
+            609,
+            178.6,
+            586.6171
+          ],
+          [
+            178.6,
+            586.6171,
+            201,
+            565.0555
+          ]
+        ]
+      }
+    },
+    {
+      "n": 20,
+      "page": 126,
+      "section": "Triangles",
+      "stem": "Two arms meeting in a V over a small circle; each arm runs through three arrowheads, each arrowhead a triangle split by the arm.",
+      "options": {
+        "A": "18",
+        "B": "16",
+        "C": "20",
+        "D": "15"
+      },
+      "figure": {
+        "lines": [
+          [
+            84,
+            669,
+            139.4,
+            724.3
+          ],
+          [
+            84,
+            669,
+            108.7,
+            674
+          ],
+          [
+            84,
+            669,
+            89.7,
+            694
+          ],
+          [
+            108.7,
+            674,
+            89.7,
+            694
+          ],
+          [
+            99.1159,
+            684.0886,
+            123.6,
+            689
+          ],
+          [
+            99.1159,
+            684.0886,
+            105,
+            708.6
+          ],
+          [
+            123.6,
+            689,
+            105,
+            708.6
+          ],
+          [
+            114.083,
+            699.0287,
+            138.6,
+            704
+          ],
+          [
+            114.083,
+            699.0287,
+            120,
+            723.7
+          ],
+          [
+            138.6,
+            704,
+            120,
+            723.7
+          ],
+          [
+            194.4,
+            670.7,
+            139.4,
+            724.3
+          ],
+          [
+            194.4,
+            670.7,
+            172.3,
+            675.3
+          ],
+          [
+            194.4,
+            670.7,
+            190.1,
+            695.7
+          ],
+          [
+            172.3,
+            675.3,
+            190.1,
+            695.7
+          ],
+          [
+            180.2871,
+            684.4537,
+            157.3,
+            689.6
+          ],
+          [
+            180.2871,
+            684.4537,
+            175.1,
+            710.4
+          ],
+          [
+            157.3,
+            689.6,
+            175.1,
+            710.4
+          ],
+          [
+            165.3518,
+            699.0088,
+            142,
+            704.6
+          ],
+          [
+            165.3518,
+            699.0088,
+            160.1,
+            725
+          ],
+          [
+            142,
+            704.6,
+            160.1,
+            725
+          ]
+        ],
+        "circles": [
+          [
+            139.4,
+            726,
+            10.7
+          ]
+        ]
+      }
+    },
+    {
+      "n": 21,
+      "page": 126,
+      "section": "Squares",
+      "stem": "A square cut into nine by two lines each way, crossed by both its diagonals, which run on into a small square at each corner.",
+      "options": {
+        "A": "13",
+        "B": "14",
+        "C": "17",
+        "D": "18"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            3,
+            0,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            0,
+            3
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            3
+          ],
+          [
+            2,
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3,
+            1
+          ],
+          [
+            0,
+            2,
+            3,
+            2
+          ],
+          [
+            -1,
+            -1,
+            4,
+            4
+          ],
+          [
+            -1,
+            4,
+            4,
+            -1
+          ],
+          [
+            -1,
+            -1,
+            0,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            -1
+          ],
+          [
+            3,
+            -1,
+            4,
+            -1
+          ],
+          [
+            4,
+            -1,
+            4,
+            0
+          ],
+          [
+            4,
+            0,
+            3,
+            0
+          ],
+          [
+            3,
+            0,
+            3,
+            -1
+          ],
+          [
+            -1,
+            3,
+            0,
+            3
+          ],
+          [
+            0,
+            3,
+            0,
+            4
+          ],
+          [
+            0,
+            4,
+            -1,
+            4
+          ],
+          [
+            -1,
+            4,
+            -1,
+            3
+          ],
+          [
+            3,
+            3,
+            4,
+            3
+          ],
+          [
+            4,
+            3,
+            4,
+            4
+          ],
+          [
+            4,
+            4,
+            3,
+            4
+          ],
+          [
+            3,
+            4,
+            3,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "n": 22,
+      "page": 126,
+      "section": "Squares",
+      "stem": "A square cut into nine, holding two tilted squares down its diagonal, each with a smaller tilted square inside.",
+      "options": {
+        "A": "24",
+        "B": "9",
+        "C": "12",
+        "D": "18"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            3,
+            0,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            0,
+            3
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            3
+          ],
+          [
+            2,
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1,
+            3,
+            1
+          ],
+          [
+            0,
+            2,
+            3,
+            2
+          ],
+          [
+            1,
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0.5,
+            1.5,
+            1
+          ],
+          [
+            1.5,
+            1,
+            1,
+            1.5
+          ],
+          [
+            1,
+            1.5,
+            0.5,
+            1
+          ],
+          [
+            0.5,
+            1,
+            1,
+            0.5
+          ],
+          [
+            2,
+            1,
+            3,
+            2
+          ],
+          [
+            3,
+            2,
+            2,
+            3
+          ],
+          [
+            2,
+            3,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            2,
+            1
+          ],
+          [
+            2,
+            1.5,
+            2.5,
+            2
+          ],
+          [
+            2.5,
+            2,
+            2,
+            2.5
+          ],
+          [
+            2,
+            2.5,
+            1.5,
+            2
+          ],
+          [
+            1.5,
+            2,
+            2,
+            1.5
+          ]
+        ]
+      }
+    },
+    {
+      "n": 23,
+      "page": 126,
+      "section": "Squares",
+      "stem": "A square filled with a lattice of slanting lines making tilted squares, with a small triangle flag at each corner.",
+      "options": {
+        "A": "20",
+        "B": "18",
+        "C": "12",
+        "D": "24"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            3,
+            0,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            0,
+            3
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            0,
+            3,
+            3
+          ],
+          [
+            1,
+            0,
+            3,
+            2
+          ],
+          [
+            2,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            3,
+            3,
+            0
+          ],
+          [
+            1,
+            3,
+            3,
+            1
+          ],
+          [
+            2,
+            3,
+            3,
+            2
+          ],
+          [
+            0,
+            0,
+            -0.6,
+            -0.1
+          ],
+          [
+            -0.6,
+            -0.1,
+            -0.25,
+            -0.55
+          ],
+          [
+            -0.25,
+            -0.55,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            3.6,
+            -0.1
+          ],
+          [
+            3.6,
+            -0.1,
+            3.25,
+            -0.55
+          ],
+          [
+            3.25,
+            -0.55,
+            3,
+            0
+          ],
+          [
+            0,
+            3,
+            -0.6,
+            3.1
+          ],
+          [
+            -0.6,
+            3.1,
+            -0.25,
+            3.55
+          ],
+          [
+            -0.25,
+            3.55,
+            0,
+            3
+          ],
+          [
+            3,
+            3,
+            3.6,
+            3.1
+          ],
+          [
+            3.6,
+            3.1,
+            3.25,
+            3.55
+          ],
+          [
+            3.25,
+            3.55,
+            3,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "n": 24,
+      "page": 126,
+      "section": "Squares",
+      "stem": "Two grids of squares, three columns by five rows and six columns by three rows, joined along the bottom by a row of seven squares.",
+      "options": {
+        "A": "66",
+        "B": "71",
+        "C": "76",
+        "D": "57"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            0,
+            5
+          ],
+          [
+            1,
+            0,
+            1,
+            5
+          ],
+          [
+            2,
+            0,
+            2,
+            5
+          ],
+          [
+            3,
+            0,
+            3,
+            5
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            1,
+            3,
+            1
+          ],
+          [
+            0,
+            2,
+            3,
+            2
+          ],
+          [
+            0,
+            3,
+            3,
+            3
+          ],
+          [
+            0,
+            4,
+            7,
+            4
+          ],
+          [
+            0,
+            5,
+            7,
+            5
+          ],
+          [
+            4,
+            0,
+            4,
+            5
+          ],
+          [
+            5,
+            0,
+            5,
+            5
+          ],
+          [
+            6,
+            0,
+            6,
+            5
+          ],
+          [
+            7,
+            0,
+            7,
+            3
+          ],
+          [
+            7,
+            4,
+            7,
+            5
+          ],
+          [
+            8,
+            0,
+            8,
+            3
+          ],
+          [
+            9,
+            0,
+            9,
+            3
+          ],
+          [
+            10,
+            0,
+            10,
+            3
+          ],
+          [
+            4,
+            0,
+            10,
+            0
+          ],
+          [
+            4,
+            1,
+            10,
+            1
+          ],
+          [
+            4,
+            2,
+            10,
+            2
+          ],
+          [
+            4,
+            3,
+            10,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "n": 25,
+      "page": 126,
+      "section": "Squares",
+      "stem": "Squares and tilted squares nested inside each other, five deep, crossed by a vertical and a horizontal line through the centre.",
+      "options": {
+        "A": "16",
+        "B": "17",
+        "C": "12",
+        "D": "13"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            8,
+            0,
+            8,
+            8
+          ],
+          [
+            8,
+            8,
+            0,
+            8
+          ],
+          [
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            4,
+            8
+          ],
+          [
+            0,
+            4,
+            8,
+            4
+          ],
+          [
+            4,
+            0,
+            8,
+            4
+          ],
+          [
+            8,
+            4,
+            4,
+            8
+          ],
+          [
+            4,
+            8,
+            0,
+            4
+          ],
+          [
+            0,
+            4,
+            4,
+            0
+          ],
+          [
+            2,
+            2,
+            6,
+            2
+          ],
+          [
+            6,
+            2,
+            6,
+            6
+          ],
+          [
+            6,
+            6,
+            2,
+            6
+          ],
+          [
+            2,
+            6,
+            2,
+            2
+          ],
+          [
+            4,
+            2,
+            6,
+            4
+          ],
+          [
+            6,
+            4,
+            4,
+            6
+          ],
+          [
+            4,
+            6,
+            2,
+            4
+          ],
+          [
+            2,
+            4,
+            4,
+            2
+          ],
+          [
+            3,
+            3,
+            5,
+            3
+          ],
+          [
+            5,
+            3,
+            5,
+            5
+          ],
+          [
+            5,
+            5,
+            3,
+            5
+          ],
+          [
+            3,
+            5,
+            3,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "n": 26,
+      "page": 126,
+      "section": "Squares",
+      "stem": "An irregular block of squares: a grid four wide and three deep, with squares added on the left, below, and in a column on the right.",
+      "options": {
+        "A": "29",
+        "B": "33",
+        "C": "34",
+        "D": "32"
+      },
+      "figure": {
+        "lines": [
+          [
+            2,
+            0,
+            6,
+            0
+          ],
+          [
+            2,
+            1,
+            6,
+            1
+          ],
+          [
+            0,
+            2,
+            6,
+            2
+          ],
+          [
+            0,
+            3,
+            6,
+            3
+          ],
+          [
+            0,
+            4,
+            3,
+            4
+          ],
+          [
+            4,
+            4,
+            6,
+            4
+          ],
+          [
+            2,
+            5,
+            3,
+            5
+          ],
+          [
+            4,
+            5,
+            6,
+            5
+          ],
+          [
+            0,
+            2,
+            0,
+            4
+          ],
+          [
+            1,
+            2,
+            1,
+            4
+          ],
+          [
+            2,
+            0,
+            2,
+            5
+          ],
+          [
+            3,
+            0,
+            3,
+            3
+          ],
+          [
+            3,
+            4,
+            3,
+            5
+          ],
+          [
+            4,
+            0,
+            4,
+            5
+          ],
+          [
+            5,
+            0,
+            5,
+            5
+          ],
+          [
+            6,
+            0,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "n": 27,
+      "page": 126,
+      "section": "Squares",
+      "stem": "A square in a four by four grid with some of its inner lines left out.",
+      "options": {
+        "A": "17",
+        "B": "16",
+        "C": "18",
+        "D": "15"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            4,
+            0,
+            4,
+            4
+          ],
+          [
+            4,
+            4,
+            0,
+            4
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            3
+          ],
+          [
+            2,
+            0,
+            2,
+            4
+          ],
+          [
+            3,
+            1,
+            3,
+            4
+          ],
+          [
+            0,
+            1,
+            3,
+            1
+          ],
+          [
+            0,
+            2,
+            4,
+            2
+          ],
+          [
+            1,
+            3,
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "n": 28,
+      "page": 126,
+      "section": "Squares",
+      "stem": "A square with both diagonals, a tilted square joining the middles of its sides, and a square inside that.",
+      "options": {
+        "A": "6",
+        "B": "9",
+        "C": "7",
+        "D": "4"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            4,
+            0,
+            4,
+            4
+          ],
+          [
+            4,
+            4,
+            0,
+            4
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            4,
+            4
+          ],
+          [
+            4,
+            0,
+            0,
+            4
+          ],
+          [
+            2,
+            0,
+            4,
+            2
+          ],
+          [
+            4,
+            2,
+            2,
+            4
+          ],
+          [
+            2,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            0
+          ],
+          [
+            1,
+            1,
+            3,
+            1
+          ],
+          [
+            3,
+            1,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            1,
+            3
+          ],
+          [
+            1,
+            3,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "n": 29,
+      "page": 126,
+      "section": "Squares",
+      "stem": "A staircase of squares, four, three and two high, crossed by slanting lines.",
+      "options": {
+        "A": "10",
+        "B": "11",
+        "C": "12",
+        "D": "14"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            0,
+            1,
+            4
+          ],
+          [
+            2,
+            1,
+            2,
+            4
+          ],
+          [
+            3,
+            2,
+            3,
+            4
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            3,
+            2
+          ],
+          [
+            0,
+            3,
+            3,
+            3
+          ],
+          [
+            0,
+            4,
+            3,
+            4
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            3,
+            4
+          ],
+          [
+            2,
+            1,
+            0,
+            3
+          ],
+          [
+            0,
+            3,
+            1,
+            4
+          ],
+          [
+            1,
+            4,
+            3,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "n": 30,
+      "page": 126,
+      "section": "Squares",
+      "stem": "Seven overlapping squares and rectangles of different sizes, with a circle among them.",
+      "options": {
+        "A": "9",
+        "B": "16",
+        "C": "5",
+        "D": "7"
+      }
+    },
+    {
+      "n": 31,
+      "page": 126,
+      "section": "Rectangles",
+      "stem": "A house: a rectangle with a roof, a line across it, and a V from its top corners to the middle of its base.",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "2",
+        "D": "5"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            88,
+            0
+          ],
+          [
+            88,
+            0,
+            88,
+            74
+          ],
+          [
+            88,
+            74,
+            0,
+            74
+          ],
+          [
+            0,
+            74,
+            0,
+            0
+          ],
+          [
+            0,
+            36,
+            88,
+            36
+          ],
+          [
+            0,
+            0,
+            41,
+            -23
+          ],
+          [
+            41,
+            -23,
+            88,
+            0
+          ],
+          [
+            0,
+            0,
+            48,
+            74
+          ],
+          [
+            88,
+            0,
+            48,
+            74
+          ]
+        ]
+      }
+    },
+    {
+      "n": 32,
+      "page": 126,
+      "section": "Rectangles",
+      "stem": "A low rectangle, a wide rectangle beside it, and a tall thin rectangle standing through the wide one.",
+      "options": {
+        "A": "8",
+        "B": "10",
+        "C": "12",
+        "D": "9"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            75,
+            50,
+            75
+          ],
+          [
+            50,
+            75,
+            50,
+            95
+          ],
+          [
+            50,
+            95,
+            0,
+            95
+          ],
+          [
+            0,
+            95,
+            0,
+            75
+          ],
+          [
+            50,
+            43,
+            158,
+            43
+          ],
+          [
+            158,
+            43,
+            158,
+            95
+          ],
+          [
+            158,
+            95,
+            50,
+            95
+          ],
+          [
+            50,
+            95,
+            50,
+            43
+          ],
+          [
+            66,
+            0,
+            86,
+            0
+          ],
+          [
+            86,
+            0,
+            86,
+            95
+          ],
+          [
+            86,
+            95,
+            66,
+            95
+          ],
+          [
+            66,
+            95,
+            66,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "n": 33,
+      "page": 126,
+      "section": "Rectangles",
+      "stem": "A rectangle with a smaller rectangle overlapping each of its corners.",
+      "options": {
+        "A": "10",
+        "B": "9",
+        "C": "5",
+        "D": "7"
+      },
+      "figure": {
+        "lines": [
+          [
+            23,
+            13,
+            93,
+            13
+          ],
+          [
+            93,
+            13,
+            93,
+            75
+          ],
+          [
+            93,
+            75,
+            23,
+            75
+          ],
+          [
+            23,
+            75,
+            23,
+            13
+          ],
+          [
+            0,
+            0,
+            46,
+            0
+          ],
+          [
+            46,
+            0,
+            46,
+            29
+          ],
+          [
+            46,
+            29,
+            0,
+            29
+          ],
+          [
+            0,
+            29,
+            0,
+            0
+          ],
+          [
+            65,
+            3,
+            117,
+            3
+          ],
+          [
+            117,
+            3,
+            117,
+            26
+          ],
+          [
+            117,
+            26,
+            65,
+            26
+          ],
+          [
+            65,
+            26,
+            65,
+            3
+          ],
+          [
+            0,
+            60,
+            39,
+            60
+          ],
+          [
+            39,
+            60,
+            39,
+            84
+          ],
+          [
+            39,
+            84,
+            0,
+            84
+          ],
+          [
+            0,
+            84,
+            0,
+            60
+          ],
+          [
+            65,
+            61,
+            116,
+            61
+          ],
+          [
+            116,
+            61,
+            116,
+            85
+          ],
+          [
+            116,
+            85,
+            65,
+            85
+          ],
+          [
+            65,
+            85,
+            65,
+            61
+          ]
+        ]
+      }
+    },
+    {
+      "n": 34,
+      "page": 126,
+      "section": "Rectangles",
+      "stem": "A tall rectangle crossed by a short bar near its top and standing on a long base rectangle.",
+      "options": {
+        "A": "15",
+        "B": "16",
+        "C": "17",
+        "D": "more than 17"
+      },
+      "figure": {
+        "lines": [
+          [
+            59,
+            0,
+            101,
+            0
+          ],
+          [
+            101,
+            0,
+            101,
+            112
+          ],
+          [
+            101,
+            112,
+            59,
+            112
+          ],
+          [
+            59,
+            112,
+            59,
+            0
+          ],
+          [
+            39,
+            29,
+            121,
+            29
+          ],
+          [
+            121,
+            29,
+            121,
+            48
+          ],
+          [
+            121,
+            48,
+            39,
+            48
+          ],
+          [
+            39,
+            48,
+            39,
+            29
+          ],
+          [
+            0,
+            88,
+            160,
+            88
+          ],
+          [
+            160,
+            88,
+            160,
+            112
+          ],
+          [
+            160,
+            112,
+            0,
+            112
+          ],
+          [
+            0,
+            112,
+            0,
+            88
+          ]
+        ]
+      }
+    },
+    {
+      "n": 35,
+      "page": 127,
+      "section": "Q35",
+      "stem": "A wide rectangle cut by a line across, beside a tall strip on the right with two slanting lines meeting at its left side.",
+      "options": {
+        "A": "12",
+        "B": "11",
+        "C": "7",
+        "D": "10"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            216,
+            0
+          ],
+          [
+            0,
+            58,
+            216,
+            58
+          ],
+          [
+            0,
+            117,
+            155,
+            117
+          ],
+          [
+            155,
+            169,
+            216,
+            169
+          ],
+          [
+            0,
+            0,
+            0,
+            117
+          ],
+          [
+            155,
+            0,
+            155,
+            169
+          ],
+          [
+            216,
+            0,
+            216,
+            169
+          ],
+          [
+            216,
+            58,
+            155,
+            117
+          ],
+          [
+            155,
+            117,
+            216,
+            169
+          ]
+        ]
+      }
+    },
+    {
+      "n": 36,
+      "page": 127,
+      "section": "Q36",
+      "stem": "Two rectangles side by side joined by a bar overlapping both, with an arrow pointing out of each, its shaft a small rectangle.",
+      "options": {
+        "A": "7",
+        "B": "12",
+        "C": "11",
+        "D": "8"
+      },
+      "figure": {
+        "lines": [
+          [
+            27,
+            0,
+            112,
+            0
+          ],
+          [
+            112,
+            0,
+            112,
+            76
+          ],
+          [
+            112,
+            76,
+            27,
+            76
+          ],
+          [
+            27,
+            76,
+            27,
+            0
+          ],
+          [
+            136,
+            0,
+            196,
+            0
+          ],
+          [
+            196,
+            0,
+            196,
+            76
+          ],
+          [
+            196,
+            76,
+            136,
+            76
+          ],
+          [
+            136,
+            76,
+            136,
+            0
+          ],
+          [
+            75,
+            19,
+            153,
+            19
+          ],
+          [
+            153,
+            19,
+            153,
+            48
+          ],
+          [
+            153,
+            48,
+            75,
+            48
+          ],
+          [
+            75,
+            48,
+            75,
+            19
+          ],
+          [
+            22,
+            33,
+            43,
+            33
+          ],
+          [
+            43,
+            33,
+            43,
+            45
+          ],
+          [
+            43,
+            45,
+            22,
+            45
+          ],
+          [
+            22,
+            45,
+            22,
+            33
+          ],
+          [
+            22,
+            29,
+            22,
+            50
+          ],
+          [
+            22,
+            29,
+            0,
+            39
+          ],
+          [
+            0,
+            39,
+            22,
+            50
+          ],
+          [
+            176,
+            33,
+            204,
+            33
+          ],
+          [
+            204,
+            33,
+            204,
+            45
+          ],
+          [
+            204,
+            45,
+            176,
+            45
+          ],
+          [
+            176,
+            45,
+            176,
+            33
+          ],
+          [
+            204,
+            28,
+            204,
+            50
+          ],
+          [
+            204,
+            28,
+            227,
+            39
+          ],
+          [
+            227,
+            39,
+            204,
+            50
+          ]
+        ]
+      }
+    },
+    {
+      "n": 37,
+      "page": 127,
+      "section": "Q37",
+      "stem": "A square holding a quarter circle and smaller arcs, with half-circles on its outside edges.",
+      "options": {
+        "A": "7",
+        "B": "4",
+        "C": "5",
+        "D": "6"
+      }
+    },
+    {
+      "n": 38,
+      "page": 127,
+      "section": "Q38",
+      "stem": "A square holding a large circle, a rectangle, a tilted square and a small circle, all centred, with a vertical and a horizontal line through the centre.",
+      "options": {
+        "A": "10",
+        "B": "8",
+        "C": "12",
+        "D": "9"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            165,
+            0
+          ],
+          [
+            165,
+            0,
+            165,
+            165
+          ],
+          [
+            165,
+            165,
+            0,
+            165
+          ],
+          [
+            0,
+            165,
+            0,
+            0
+          ],
+          [
+            83,
+            0,
+            83,
+            165
+          ],
+          [
+            0,
+            78,
+            165,
+            78
+          ],
+          [
+            20,
+            31,
+            146,
+            31
+          ],
+          [
+            146,
+            31,
+            146,
+            125
+          ],
+          [
+            146,
+            125,
+            20,
+            125
+          ],
+          [
+            20,
+            125,
+            20,
+            31
+          ],
+          [
+            22,
+            78,
+            83,
+            33
+          ],
+          [
+            83,
+            33,
+            145,
+            78
+          ],
+          [
+            145,
+            78,
+            83,
+            122
+          ],
+          [
+            83,
+            122,
+            22,
+            78
+          ]
+        ],
+        "circles": [
+          [
+            83,
+            78,
+            78
+          ],
+          [
+            83,
+            78,
+            38
+          ]
+        ]
+      }
+    },
+    {
+      "n": 39,
+      "page": 127,
+      "section": "Q39",
+      "stem": "Ten circles: a small circle in the middle inside a larger one, ringed by eight overlapping circles.",
+      "options": {
+        "A": "11",
+        "B": "9",
+        "C": "12",
+        "D": "10"
+      },
+      "figure": {
+        "lines": [],
+        "circles": [
+          [
+            183,
+            1259,
+            18
+          ],
+          [
+            183,
+            1259,
+            36
+          ],
+          [
+            183,
+            1183,
+            34
+          ],
+          [
+            259,
+            1259,
+            34
+          ],
+          [
+            183,
+            1335,
+            34
+          ],
+          [
+            107,
+            1259,
+            34
+          ],
+          [
+            216.9411,
+            1225.0589,
+            34
+          ],
+          [
+            216.9411,
+            1292.9411,
+            34
+          ],
+          [
+            149.0589,
+            1292.9411,
+            34
+          ],
+          [
+            149.0589,
+            1225.0589,
+            34
+          ]
+        ]
+      }
+    },
+    {
+      "n": 40,
+      "page": 127,
+      "section": "Q40",
+      "stem": "Thirteen circles: a flower of seven overlapping circles with six more around it.",
+      "options": {
+        "A": "12",
+        "B": "13",
+        "C": "14",
+        "D": "11"
+      },
+      "figure": {
+        "lines": [],
+        "circles": [
+          [
+            513,
+            285,
+            32
+          ],
+          [
+            513,
+            253,
+            32
+          ],
+          [
+            540.7128,
+            269,
+            32
+          ],
+          [
+            540.7128,
+            301,
+            32
+          ],
+          [
+            513,
+            317,
+            32
+          ],
+          [
+            485.2872,
+            301,
+            32
+          ],
+          [
+            485.2872,
+            269,
+            32
+          ],
+          [
+            545,
+            229.5744,
+            33
+          ],
+          [
+            577,
+            285,
+            33
+          ],
+          [
+            545,
+            340.4256,
+            33
+          ],
+          [
+            481,
+            340.4256,
+            33
+          ],
+          [
+            449,
+            285,
+            33
+          ],
+          [
+            481,
+            229.5744,
+            33
+          ]
+        ]
+      }
+    },
+    {
+      "n": 41,
+      "page": 127,
+      "section": "Q41",
+      "stem": "A square with a tilted square joining the middles of its sides, and a vertical and a horizontal line through the centre.",
+      "options": {
+        "A": "4",
+        "B": "12",
+        "C": "16",
+        "D": "10"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "n": 42,
+      "page": 127,
+      "section": "Q42",
+      "stem": "A hexagon cut in half across its middle and into four by verticals, each part halved by a slanting line.",
+      "options": {
+        "A": "16",
+        "B": "17",
+        "C": "18",
+        "D": "19"
+      },
+      "figure": {
+        "lines": [
+          [
+            -0.78,
+            1,
+            0,
+            0
+          ],
+          [
+            -0.78,
+            1,
+            0,
+            2
+          ],
+          [
+            2.85,
+            1,
+            2,
+            0
+          ],
+          [
+            2.85,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            2,
+            2
+          ],
+          [
+            -0.78,
+            1,
+            2.85,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            1,
+            2
+          ],
+          [
+            2,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            2
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "n": 43,
+      "page": 127,
+      "section": "Q43",
+      "stem": "Two squares side by side, each with both diagonals, with a triangle standing on each top side and hanging from each bottom side.",
+      "options": {
+        "A": "12",
+        "B": "16",
+        "C": "22",
+        "D": "24"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            4,
+            0
+          ],
+          [
+            4,
+            0,
+            4,
+            2
+          ],
+          [
+            4,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            4,
+            2
+          ],
+          [
+            4,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            3,
+            -1
+          ],
+          [
+            3,
+            -1,
+            4,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            3
+          ],
+          [
+            1,
+            3,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "n": 44,
+      "page": 127,
+      "section": "Q44",
+      "stem": "A square filled with a lattice of slanting lines through the thirds of its sides.",
+      "options": {
+        "A": "28",
+        "B": "32",
+        "C": "36",
+        "D": "40"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            3,
+            0,
+            3,
+            3
+          ],
+          [
+            3,
+            3,
+            0,
+            3
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            0,
+            0,
+            3,
+            3
+          ],
+          [
+            1,
+            0,
+            3,
+            2
+          ],
+          [
+            2,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            2,
+            2,
+            0
+          ],
+          [
+            0,
+            3,
+            3,
+            0
+          ],
+          [
+            1,
+            3,
+            3,
+            1
+          ],
+          [
+            2,
+            3,
+            3,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "n": 45,
+      "page": 127,
+      "section": "Q45",
+      "stem": "A square cut by three verticals and one horizontal, with both its diagonals and a tilted square joining the middles of its sides.",
+      "options": {
+        "A": "11",
+        "B": "14",
+        "C": "16",
+        "D": "17"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            4,
+            0,
+            4,
+            4
+          ],
+          [
+            4,
+            4,
+            0,
+            4
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            4
+          ],
+          [
+            2,
+            0,
+            2,
+            4
+          ],
+          [
+            3,
+            0,
+            3,
+            4
+          ],
+          [
+            0,
+            2,
+            4,
+            2
+          ],
+          [
+            0,
+            0,
+            4,
+            4
+          ],
+          [
+            4,
+            0,
+            0,
+            4
+          ],
+          [
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            4
+          ],
+          [
+            2,
+            0,
+            4,
+            2
+          ],
+          [
+            4,
+            2,
+            2,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "n": 46,
+      "page": 127,
+      "section": "Q46",
+      "stem": "A strip of three squares, each crossed by both its diagonals.",
+      "options": {
+        "A": "12",
+        "B": "18",
+        "C": "24",
+        "D": "None of these"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            3,
+            0,
+            3,
+            1
+          ],
+          [
+            3,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            2,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1,
+            1
+          ],
+          [
+            2,
+            0,
+            3,
+            1
+          ],
+          [
+            3,
+            0,
+            2,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "n": 47,
+      "page": 127,
+      "section": "Q47",
+      "stem": "A rectangle with both diagonals.",
+      "options": {
+        "A": "1",
+        "B": "6",
+        "C": "8",
+        "D": "None of these"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            4,
+            0,
+            4,
+            2.4
+          ],
+          [
+            4,
+            2.4,
+            0,
+            2.4
+          ],
+          [
+            0,
+            2.4,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            4,
+            2.4
+          ],
+          [
+            4,
+            0,
+            0,
+            2.4
+          ]
+        ]
+      }
+    },
+    {
+      "n": 48,
+      "page": 127,
+      "section": "Q48",
+      "stem": "A rectangle with both diagonals and a vertical and a horizontal line through its centre.",
+      "options": {
+        "A": "12",
+        "B": "16",
+        "C": "18",
+        "D": "None of these"
+      },
+      "figure": {
+        "lines": [
+          [
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            4,
+            0,
+            4,
+            3
+          ],
+          [
+            4,
+            3,
+            0,
+            3
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            4,
+            3
+          ],
+          [
+            4,
+            0,
+            0,
+            3
+          ],
+          [
+            2,
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            1.5,
+            4,
+            1.5
+          ]
+        ]
+      }
+    },
+    {
+      "n": 49,
+      "page": 127,
+      "section": "Q49",
+      "stem": "A triangle with a line across its middle and an upside-down triangle from that line's ends to the middle of the base.",
+      "options": {
+        "A": "4",
+        "B": "2",
+        "C": "3",
+        "D": "5"
+      },
+      "figure": {
+        "lines": [
+          [
+            2,
+            0,
+            0,
+            2
+          ],
+          [
+            2,
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            2,
+            4,
+            2
+          ],
+          [
+            1,
+            1,
+            3,
+            1
+          ],
+          [
+            1,
+            1,
+            2,
+            2
+          ],
+          [
+            3,
+            1,
+            2,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "n": 50,
+      "page": 127,
+      "section": "Q50",
+      "stem": "A pyramid of squares: one on top, two in the middle, four at the bottom.",
+      "options": {
+        "A": "7",
+        "B": "5",
+        "C": "4",
+        "D": "8"
+      },
+      "figure": {
+        "lines": [
+          [
+            1.5,
+            0,
+            2.5,
+            0
+          ],
+          [
+            2.5,
+            0,
+            2.5,
+            1
+          ],
+          [
+            2.5,
+            1,
+            1.5,
+            1
+          ],
+          [
+            1.5,
+            1,
+            1.5,
+            0
+          ],
+          [
+            1,
+            1,
+            3,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            3
+          ],
+          [
+            2,
+            1,
+            2,
+            3
+          ],
+          [
+            3,
+            1,
+            3,
+            3
+          ],
+          [
+            0,
+            2,
+            4,
+            2
+          ],
+          [
+            4,
+            2,
+            4,
+            3
+          ],
+          [
+            4,
+            3,
+            0,
+            3
+          ],
+          [
+            0,
+            3,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            1,
+            2
+          ]
+        ]
+      }
+    }
+  ]
+}

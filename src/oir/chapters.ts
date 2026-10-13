@@ -32,6 +32,7 @@ export const OIR_CHAPTERS: readonly OirChapter[] = [
   { slug: 'calendar-clock', title: 'Calendar and Clock', reasoningType: 'calendar_clock', summary: 'Weekdays from dates, angles between the hands' },
   { slug: 'arithmetic', title: 'Arithmetic Reasoning', reasoningType: 'arithmetic', summary: 'Ages, speeds, shares and percentages' },
   { slug: 'syllogism', title: 'Syllogism', reasoningType: 'syllogism', summary: 'What follows from all, some and no' },
+  { slug: 'counting-figures', title: 'Counting Figures', reasoningType: 'counting_figures', summary: 'Triangles, squares and circles in a drawing' },
 ];
 
 export function chapterBySlug(slug: string): OirChapter | undefined {

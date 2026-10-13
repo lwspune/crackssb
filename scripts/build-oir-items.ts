@@ -34,6 +34,7 @@ import { AGRAWAL_CH11_SERIES } from '../src/items/oir/agrawal-ch11-series.ts';
 import { AGRAWAL_CH12_MISSING_TERM } from '../src/items/oir/agrawal-ch12-missing-term.ts';
 import { AGRAWAL_CH15_ARITHMETIC_REASONING } from '../src/items/oir/agrawal-ch15-arithmetic-reasoning.ts';
 import { AGRAWAL_CH17_SYLLOGISM } from '../src/items/oir/agrawal-ch17-syllogism.ts';
+import { AGRAWAL_CH28_COUNTING_FIGURES } from '../src/items/oir/agrawal-ch28-counting-figures.ts';
 import { AGRAWAL_CH14_CALENDAR_CLOCK } from '../src/items/oir/agrawal-ch14-calendar-clock.ts';
 import { AGRAWAL_CH13_MATHEMATICAL_OPERATIONS } from '../src/items/oir/agrawal-ch13-mathematical-operations.ts';
 import { isHeld } from '../src/items/oir/key.ts';
@@ -69,6 +70,7 @@ const CHAPTERS: { file: string; key: Readonly<Record<number, KeyEntry>>; reasoni
   { file: 'content/oir/agrawal-examcart/ch14-calendar-clock.source.json', key: AGRAWAL_CH14_CALENDAR_CLOCK, reasoningType: 'calendar_clock', idPrefix: 'oir-agx-ch14' },
   { file: 'content/oir/agrawal-examcart/ch15-arithmetic-reasoning.source.json', key: AGRAWAL_CH15_ARITHMETIC_REASONING, reasoningType: 'arithmetic', idPrefix: 'oir-agx-ch15' },
   { file: 'content/oir/agrawal-examcart/ch17-syllogism.source.json', key: AGRAWAL_CH17_SYLLOGISM, reasoningType: 'syllogism', idPrefix: 'oir-agx-ch17' },
+  { file: 'content/oir/agrawal-examcart/ch28-counting-figures.source.json', key: AGRAWAL_CH28_COUNTING_FIGURES, reasoningType: 'counting_figures', idPrefix: 'oir-agx-ch28', assessmentType: 'oir_nonverbal' },
 ];
 
 /** No measurement exists yet; 3 is the declared "unrated" midpoint until item stats say otherwise (D19). */
