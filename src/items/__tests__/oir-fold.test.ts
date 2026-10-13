@@ -56,6 +56,11 @@ describe('unfoldPaper', () => {
     expect(out.map((m) => m.at).sort()).toEqual([[2, 2], [2, 4], [4, 2], [4, 4], [10, 10]].sort());
   });
 
+  it('places a cut by its middle, so a notch on the edge comes back even when its corner would land off the sheet', () => {
+    const notch: Mark = { shape: 'cut', at: [0, 5], poly: [[0, 5], [1.5, 5], [1.5, 6.5], [0, 6.5]] };
+    expect(unfoldPaper(SQUARE, [{ line: [[6.03, 0], [6.03, 12]], keep: [3, 6] }], [notch])).toHaveLength(2);
+  });
+
   it('agrees with unfold when every fold is in half', () => {
     const half = [{ line: [[6, 0], [6, 12]] as const, keep: [9, 6] as const }];
     expect(unfoldPaper(SQUARE, half, [hole(8, 3)]).map((m) => m.at)).toEqual(unfold([hole(8, 3)], [[[6, 0], [6, 12]]]).map((m) => m.at));

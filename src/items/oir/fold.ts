@@ -63,6 +63,9 @@ export function unfold(punched: readonly Mark[], folds: readonly FoldLine[]): Ma
   return marks;
 }
 
+/** Where a mark sits: a cut by the middle of its corners. */
+const middle = (m: Mark): Pt => (m.poly ? [m.poly.reduce((s, p) => s + p[0], 0) / m.poly.length, m.poly.reduce((s, p) => s + p[1], 0) / m.poly.length] : m.at);
+
 /** A fold: the line it folds along, and a point on the side that stays put. */
 export interface Fold {
   readonly line: FoldLine;
@@ -118,7 +121,7 @@ export function unfoldPaper(paper: readonly Pt[], folds: readonly Fold[], punche
   for (let k = folds.length - 1; k >= 0; k--) {
     const mirrored = marks
       .map((m) => reflectMark(m, folds[k].line))
-      .filter((r) => within(r.at, before[k]) && !marks.some((m) => duplicate(m, r)));
+      .filter((r) => within(middle(r), before[k]) && !marks.some((m) => duplicate(m, r)));
     marks = [...marks, ...mirrored];
   }
   return marks;
