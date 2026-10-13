@@ -217,7 +217,16 @@ export function mergeCuts(marks: readonly Mark[]): Mark[] {
   const cuts = marks.filter((m) => m.poly);
   const rest = marks.filter((m) => !m.poly);
   const groups: Pt[][] = cuts.map((c) => [...c.poly!]);
-  const shared = (a: readonly Pt[], b: readonly Pt[]) => a.filter((p) => b.some((q) => near(p, q, 1e-6))).length >= 2;
+  const common = (a: readonly Pt[], b: readonly Pt[]) => a.filter((p) => b.some((q) => near(p, q, 1e-6)));
+  // Two outlines share an edge; or two slits (two-point cuts) meet end to end in one straight line.
+  const shared = (a: readonly Pt[], b: readonly Pt[]) => {
+    const c = common(a, b);
+    if (c.length >= 2) return true;
+    if (c.length !== 1 || a.length !== 2 || b.length !== 2) return false;
+    const [p] = c;
+    const [x, y] = [a.find((q) => !near(q, p, 1e-6))!, b.find((q) => !near(q, p, 1e-6))!];
+    return between(p, x, y);
+  };
   for (let changed = true; changed; ) {
     changed = false;
     for (let i = 0; i < groups.length && !changed; i++) {

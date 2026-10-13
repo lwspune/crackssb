@@ -76,6 +76,13 @@ describe('mergeCuts', () => {
     expect(matchMarks(opened, [{ shape: 'cut', at: [6, 0], poly: [[5.5, 0], [6, 1], [6.5, 0]] }], 0.2)).toBe(true);
   });
 
+  it('joins a slit that runs up to a fold with its mirror into one longer slit', () => {
+    const slit: Mark = { shape: 'cut', at: [3, 4], poly: [[3, 2], [3, 6]] };
+    const opened = mergeCuts(unfold([slit], [[[0, 6], [12, 6]]]));
+    expect(opened).toHaveLength(1);
+    expect(matchMarks(opened, [{ shape: 'cut', at: [3, 6], poly: [[3, 2], [3, 10]] }], 0.2)).toBe(true);
+  });
+
   it('leaves cuts that do not touch apart, and other marks alone', () => {
     const marks: Mark[] = [{ shape: 'cut', at: [1, 1], poly: [[0, 0], [2, 0], [1, 1]] }, { shape: 'cut', at: [8, 8], poly: [[7, 7], [9, 7], [8, 8]] }, { shape: 'circle', at: [4, 4] }];
     expect(mergeCuts(marks)).toHaveLength(3);
