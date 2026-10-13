@@ -39,3 +39,6 @@ next-env.d.ts
 
 # Before/after screenshot sheets (Definition of Done) — local review only
 screenshots/
+
+# Agents' git worktrees (Claude Code)
+.claude/worktrees/

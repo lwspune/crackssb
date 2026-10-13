@@ -682,3 +682,5 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 **Consequences.** Chapter 28 ships 42 of 50 (8 held: one unreadable, one with squares the photo cannot tell from rectangles, one in arcs, five that count to no option). Its items are `oir_nonverbal`. Counts tolerate stored figures being rounded to four decimals (tested).
 
 **Revisit if.** Flat scans or the book's answer key arrive (the held questions, and a second check on every count), or arcs are needed (Chapter 28 Q37, paper folding).
+
+**Addendum 2026-10-13 (Chapter 18, picture answers).** Dice are drawn as views (top, and the faces left and right of a corner) and nets (`dice.ts`); the solver keeps only real cubes that show every view the right way round. Some printed dice cannot all be shown by one real cube (a view in mirror image of another); there the exam's method is keyed (a face's opposite is the one never seen beside it) and marked medium. Marks whose turn on the face decides the answer (half-shaded faces, arrows) are held. Options that are drawings ship as `answerPanels`, one drawing per option inside its button, the option text describing it in words.
