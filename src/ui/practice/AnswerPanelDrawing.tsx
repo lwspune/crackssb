@@ -25,5 +25,5 @@ export function AnswerPanelDrawing({ panel }: { readonly panel: AnswerPanel }) {
     );
   }
   if (panel.dice) return <DiceDrawing dice={panel.dice} compact />;
-  return <FigureDrawing figure={panel.figure!} className="block h-20 w-full max-w-40" />;
+  return <FigureDrawing figure={panel.figure!} className="block h-24 w-full max-w-44" />;
 }
