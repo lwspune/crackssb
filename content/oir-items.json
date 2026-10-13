@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12",
+  "generated": "2026-10-13",
   "sources": [
     {
       "source": "agrawal-examcart-oir",
@@ -110,13 +110,23 @@
         44
       ],
       "file": "content/oir/agrawal-examcart/ch11-series.source.json"
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "chapter": 13,
+      "title": "Mathematical Oprations",
+      "pages": [
+        49,
+        52
+      ],
+      "file": "content/oir/agrawal-examcart/ch13-mathematical-operations.source.json"
     }
   ],
-  "itemCount": 1068,
-  "heldCount": 82,
+  "itemCount": 1180,
+  "heldCount": 84,
   "confidence": {
-    "high": 1031,
-    "medium": 37
+    "high": 1114,
+    "medium": 66
   },
   "held": [
     {
@@ -550,6 +560,16 @@
       "source": "agrawal-examcart-oir",
       "source_ref": "ch11 p44 q123",
       "reason": "The print shows four blanks but every option has five letters, and no option completes a pattern either way."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q44",
+      "reason": "The examples fit a $ b = −(a ÷ b) (−10, −10, −5), which makes 10 $ 22 = −5/11, not an option; no other rule found fits all three examples and lands on an option."
+    },
+    {
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q68",
+      "reason": "The question prints the legend and \"then ?\" but no equation to work out, so no option can be chosen."
     }
   ],
   "items": [
@@ -24377,6 +24397,2500 @@
       "key_basis": "derived",
       "rule": "\"LML\" repeated.",
       "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q001",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "After interchanging the given two signs what will be the values of equation (I) and (II) respectively?\n× and ÷\nI. 18 ÷ 3 − 4 × 2 + 7\nII. 18 × 3 ÷ 6 − 8 + 4",
+        "options": {
+          "A": "16 and 30",
+          "B": "59 and 32",
+          "C": "9 and 7",
+          "D": "40 and 80"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q1",
+      "key_basis": "derived",
+      "rule": "Swapped: 18 × 3 − 4 ÷ 2 + 7 = 59 and 18 ÷ 3 × 6 − 8 + 4 = 32.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q002",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "By interchanging the given two signs which of the following equation will be correct?\n÷ and ×",
+        "options": {
+          "A": "23 − 20 + 35 ÷ 2 × 10 = 10",
+          "B": "9 × 3 + 8 ÷ 4 − 7 = 30",
+          "C": "32 + 3 − 12 ÷ 18 × 9 = 10",
+          "D": "11 ÷ 12 × 6 + 8 − 10 = 25"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q2",
+      "key_basis": "derived",
+      "rule": "Swapped, A reads 23 − 20 + 35 × 2 ÷ 10 = 3 + 7 = 10. The others come to 28, 11 and 20.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q003",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two signs should be interchanged to make the given equation correct?\n26 + 2 ÷ 4 − 8 × 25 = 30",
+        "options": {
+          "A": "× and ÷",
+          "B": "× and −",
+          "C": "+ and ÷",
+          "D": "× and +"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q3",
+      "key_basis": "derived",
+      "rule": "26 × 2 ÷ 4 − 8 + 25 = 13 − 8 + 25 = 30.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q004",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "By interchanging the given two signs which of the following equation will be correct?\n× and ÷\nI. 5 + 6 × 2 − 4 ÷ 1 = 10\nII. 9 × 3 − 4 ÷ 2 + 5 = 4",
+        "options": {
+          "A": "Neither I nor II",
+          "B": "Both I and II",
+          "C": "Only II",
+          "D": "Only I"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q4",
+      "key_basis": "derived",
+      "rule": "Swapped, I is 5 + 6 ÷ 2 − 4 × 1 = 4, not 10, and II is 9 ÷ 3 − 4 × 2 + 5 = 0, not 4. Neither holds.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q005",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two signs should be interchanged to make the given equation correct?\n5 − 2 ÷ 4 + 9 × 3 = 0",
+        "options": {
+          "A": "− and ÷",
+          "B": "× and ÷",
+          "C": "= and ×",
+          "D": "+ and −"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q5",
+      "key_basis": "derived",
+      "rule": "5 − 2 × 4 + 9 ÷ 3 = 5 − 8 + 3 = 0.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q006",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two signs should be interchanged to make the given equation correct?\n12 + 6 × 2 − 24 ÷ 8 = 3",
+        "options": {
+          "A": "× and −",
+          "B": "− and =",
+          "C": "÷ and −",
+          "D": "+ and −"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q6",
+      "key_basis": "derived",
+      "rule": "12 − 6 × 2 + 24 ÷ 8 = 12 − 12 + 3 = 3.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q007",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "After interchanging the given two signs what will be the values of expression (I) and (II) respectively?\n× and ÷\nI. 8 + 4 − 6 × 3 ÷ 5\nII. 20 + 15 × 30 ÷ 10",
+        "options": {
+          "A": "2 and 30",
+          "B": "18 and 14",
+          "C": "6 and 17",
+          "D": "2 and 25"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q7",
+      "key_basis": "derived",
+      "rule": "Swapped: 8 + 4 − 6 ÷ 3 × 5 = 2 and 20 + 15 ÷ 30 × 10 = 25.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q008",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "After interchanging the given two signs what will be the values of equation (I) and (II) respectively?\n× and ÷\nI. 7 + 8 ÷ 2 × 4 − 6\nII. 16 × 4 + 13 ÷ 2 − 3",
+        "options": {
+          "A": "6 and 15",
+          "B": "5 and 6",
+          "C": "8 and 9",
+          "D": "5 and 27"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q8",
+      "key_basis": "derived",
+      "rule": "Swapped: 7 + 8 × 2 ÷ 4 − 6 = 5 and 16 ÷ 4 + 13 × 2 − 3 = 27.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q009",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two symbols, from the given options, should be interchanged to make the given equation correct ?\n(9 ÷ 3 + 169 × 13) ÷ 5 − 10 + 16 = 206",
+        "options": {
+          "A": "+ and −",
+          "B": "× and −",
+          "C": "÷ and ×",
+          "D": "+ and ×"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q9",
+      "key_basis": "derived",
+      "rule": "(9 × 3 + 169 ÷ 13) × 5 − 10 + 16 = 40 × 5 + 6 = 206.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q010",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two signs should be interchanged to make the below equation mathematically correct ?\n40 + 14 ÷ 35 − 30 × 15 = 1",
+        "options": {
+          "A": "+ and ÷",
+          "B": "+ and ×",
+          "C": "+ and −",
+          "D": "− and +"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q10",
+      "key_basis": "derived",
+      "rule": "40 × 14 ÷ 35 − 30 + 15 = 16 − 30 + 15 = 1.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q011",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the mathematical signs should be interchanged in the below equation to make it mathematically correct ?\n360 × 9 − 320 + 72 ÷ 5 = 80",
+        "options": {
+          "A": "+ and ÷",
+          "B": "+ and ×",
+          "C": "− and ÷",
+          "D": "× and ÷"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q11",
+      "key_basis": "derived",
+      "rule": "360 ÷ 9 − 320 + 72 × 5 = 40 − 320 + 360 = 80.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q012",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two signs should be interchanged to make the below equation mathematically correct ?\n25 × 5 ÷ 6 + 20 = 62 − 12",
+        "options": {
+          "A": "+ and ÷",
+          "B": "÷ and ×",
+          "C": "+ and −",
+          "D": "+ and ×"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q12",
+      "key_basis": "derived",
+      "rule": "25 ÷ 5 × 6 + 20 = 50 = 62 − 12.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q013",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If '#' means '+', '@' means '×', '&' means '/' and '$' means '−' then 200 & 5 @ 3 $ 20 # 5 = ?",
+        "options": {
+          "A": "105",
+          "B": "100",
+          "C": "85",
+          "D": "120"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q13",
+      "key_basis": "derived",
+      "rule": "200 ÷ 5 × 3 − 20 + 5 = 120 − 20 + 5 = 105.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q014",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 'A' stands for 'addition', B stands for 'division', C stands for 'subtraction' and D stands for 'multiplication, then what is the value of the following equation?\n4 D (3 A 1) C 5 A (6 B 2) C 7",
+        "options": {
+          "A": "12",
+          "B": "7",
+          "C": "17",
+          "D": "5"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q14",
+      "key_basis": "derived",
+      "rule": "4 × (3 + 1) − 5 + (6 ÷ 2) − 7 = 16 − 5 + 3 − 7 = 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q015",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 'P' means '÷', 'Q' means '+', 'R' means '×' and 'S' means '−' then\n54 R 11 P 99 Q 23 S 14 = ?",
+        "options": {
+          "A": "35",
+          "B": "15",
+          "C": "44",
+          "D": "57"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q15",
+      "key_basis": "derived",
+      "rule": "54 × 11 ÷ 99 + 23 − 14 = 6 + 23 − 14 = 15.",
+      "confidence": "medium",
+      "note": "P means ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q016",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If '×' means '−', '−' means '×', '+' means '÷' and '÷' means '+' then\n(15 − 10) ÷ (130 + 10) × 50 = ?",
+        "options": {
+          "A": "1800",
+          "B": "113",
+          "C": "2000",
+          "D": "123"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q16",
+      "key_basis": "derived",
+      "rule": "(15 × 10) + (130 ÷ 10) − 50 = 150 + 13 − 50 = 113.",
+      "confidence": "medium",
+      "note": "The legend prints \"'+' means '÷'\" twice; the second is read as ÷ means +, and the sign between the brackets as ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q017",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If '÷' means '−', '−' means '×', '×' means '+' and '+' means '÷', then\n20 × 60 ÷ 40 − 20 + 10 = ?",
+        "options": {
+          "A": "80",
+          "B": "60",
+          "C": "40",
+          "D": "0"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q17",
+      "key_basis": "derived",
+      "rule": "20 + 60 − 40 × 20 ÷ 10 = 80 − 80 = 0.",
+      "confidence": "medium",
+      "note": "The legend's first sign is ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q018",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What will come in the place of the question mark (?) in the following equation, if '+' and '−' are interchanged and '×' and '÷' are interchanged ?\n(14 ÷ 2) − (16 × 4) + 12 = ?",
+        "options": {
+          "A": "25",
+          "B": "32",
+          "C": "16",
+          "D": "20"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q18",
+      "key_basis": "derived",
+      "rule": "(14 × 2) + (16 ÷ 4) − 12 = 28 + 4 − 12 = 20.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q019",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Select the correct combination of mathematical signs to sequentially replace * signs and to balance the given equation.\n7 * 5 * (16 * 8 * 9) * 20",
+        "options": {
+          "A": "÷, −, ×, +, =",
+          "B": "−, +, ×, ÷, =",
+          "C": "−, +, ÷, ×, =",
+          "D": "+, ×, ÷, −, ="
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q19",
+      "key_basis": "derived",
+      "rule": "7 − 5 + (16 ÷ 8 × 9) = 2 + 18 = 20.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q020",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What will come in the place of '?' in the following equation, if '+' and '−' are interchanged and also '×' and '÷' are interchanged ?\n143 − 42 × 7 ÷ 8 + 21 = ?",
+        "options": {
+          "A": "181",
+          "B": "176",
+          "C": "159",
+          "D": "170"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q20",
+      "key_basis": "derived",
+      "rule": "143 + 42 ÷ 7 × 8 − 21 = 143 + 48 − 21 = 170.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q021",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What will come in place of the question mark (?) in the following equation if '+' means '×', '−' means '÷', '×' means '+' and '÷' means '−' ?\n(18 + 10 × 20) − 8 ÷ 6 = ?",
+        "options": {
+          "A": "19",
+          "B": "20",
+          "C": "22",
+          "D": "18"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p49 q21",
+      "key_basis": "derived",
+      "rule": "(18 × 10 + 20) ÷ 8 − 6 = 200 ÷ 8 − 6 = 19.",
+      "confidence": "medium",
+      "note": "The legend reads − means ÷ and ÷ means −. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q022",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 'A' stands for '÷', 'B' stands for '×', 'C' stands for '+' and 'D' stands for '−', what will come in place of the question mark (?) in the following equation ?\n36 B 17 D 59 C 224A 7 = ?",
+        "options": {
+          "A": "855",
+          "B": "585",
+          "C": "685",
+          "D": "558"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q22",
+      "key_basis": "derived",
+      "rule": "36 × 17 − 59 + 224 ÷ 7 = 612 − 59 + 32 = 585.",
+      "confidence": "medium",
+      "note": "A stands for ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q023",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two signs should be interchanged to make the following equation correct?\n3 − 6 × 18 + 4 ÷ 2 = 2",
+        "options": {
+          "A": "× and −",
+          "B": "× and ÷",
+          "C": "− and ÷",
+          "D": "× and +"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q23",
+      "key_basis": "derived",
+      "rule": "3 × 6 − 18 + 4 ÷ 2 = 18 − 18 + 2 = 2.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q024",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two signs should be interchanged with each other to satisfy the given equation?\n36 − 14 × 63 ÷ 9 + 11 = 99",
+        "options": {
+          "A": "+ and −",
+          "B": "× and +",
+          "C": "× and ÷",
+          "D": "× and −"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q24",
+      "key_basis": "derived",
+      "rule": "36 − 14 + 63 ÷ 9 × 11 = 22 + 77 = 99.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q025",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two signs should be interchanged to make the given equation balanced?\n18 + 16 − 246 ÷ 6 × 98 = 345",
+        "options": {
+          "A": "÷ and −",
+          "B": "× and ÷",
+          "C": "+ and −",
+          "D": "+ and ×"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q25",
+      "key_basis": "derived",
+      "rule": "18 × 16 − 246 ÷ 6 + 98 = 288 − 41 + 98 = 345.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q026",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two numbers should be interchanged to make the following equation correct?\n176 − 16 + 33 × 6 ÷ 200 = 9",
+        "options": {
+          "A": "÷ and ×",
+          "B": "− and ÷",
+          "C": "+ and ×",
+          "D": "+ and ÷"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q26",
+      "key_basis": "derived",
+      "rule": "176 ÷ 16 + 33 × 6 − 200 = 11 + 198 − 200 = 9.",
+      "confidence": "high",
+      "note": "The book asks which two \"numbers\" should be interchanged; its options are signs, and the question is answered as signs."
+    },
+    {
+      "id": "oir-agx-ch13-q027",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two signs should be interchanged to make the following equation correct?\n570 × 8 − 240 + 75 ÷ 15 = 79",
+        "options": {
+          "A": "+ and −",
+          "B": "÷ and −",
+          "C": "× and ÷",
+          "D": "+ and ×"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q27",
+      "key_basis": "derived",
+      "rule": "570 × 8 ÷ 240 + 75 − 15 = 19 + 60 = 79.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q028",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two signs should be interchanged to make the following equation correct?\n42 ÷ 23 + 870 × 3 − 5 = 541",
+        "options": {
+          "A": "+ and −",
+          "B": "÷ and −",
+          "C": "× and ÷",
+          "D": "+ and ×"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q28",
+      "key_basis": "derived",
+      "rule": "42 − 23 + 870 × 3 ÷ 5 = 19 + 522 = 541.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q029",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two signs should be interchanged to make the following equation correct?\n625 × 5 + 93 − 22 ÷ 8 = 42",
+        "options": {
+          "A": "× and −",
+          "B": "× and ÷",
+          "C": "÷ and +",
+          "D": "+ and −"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q29",
+      "key_basis": "derived",
+      "rule": "625 ÷ 5 + 93 − 22 × 8 = 125 + 93 − 176 = 42.",
+      "confidence": "medium",
+      "note": "The last sign of the equation is ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q030",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two sings should be interchanged to make the given equation correct ?\n36 × 4 ÷ 2 + 20 − 54 = 22",
+        "options": {
+          "A": "+ and ×",
+          "B": "− and +",
+          "C": "× and −",
+          "D": "÷ and −"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q30",
+      "key_basis": "derived",
+      "rule": "36 + 4 ÷ 2 × 20 − 54 = 36 + 40 − 54 = 22.",
+      "confidence": "medium",
+      "note": "The second sign of the equation is ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q031",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which two symbols from amongst the given options should be interchanged to make the given equation correct ?\n(35 − 2) × 3 = (56 × 8 ÷ 3 + 100) × 11",
+        "options": {
+          "A": "× and −",
+          "B": "÷ and +",
+          "C": "+ and −",
+          "D": "× and ÷"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q31",
+      "key_basis": "derived",
+      "rule": "(35 − 2) ÷ 3 = 11 and (56 ÷ 8 × 3 + 100) ÷ 11 = 121 ÷ 11 = 11.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q032",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following interchanged of signs would make the given equation correct ?\n87 − 3 + 39 ÷ 67 × 3 = −133",
+        "options": {
+          "A": "× and +",
+          "B": "− and +",
+          "C": "÷ and −",
+          "D": "× and −"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q32",
+      "key_basis": "derived",
+      "rule": "87 ÷ 3 + 39 − 67 × 3 = 29 + 39 − 201 = −133.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q033",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 85 × 5 − 3 = 20 and 18 × 2 + 1 = 10, then 100 × 20 + 5 = ?",
+        "options": {
+          "A": "15",
+          "B": "20",
+          "C": "10",
+          "D": "13"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q33",
+      "key_basis": "derived",
+      "rule": "× means ÷ and − means +: 85 ÷ 5 + 3 = 20 and 18 ÷ 2 + 1 = 10. So 100 ÷ 20 + 5 = 10.",
+      "confidence": "medium",
+      "note": "The examples fix × as ÷ and − as +, and + stays +. Unusual for a legend to send two signs to one."
+    },
+    {
+      "id": "oir-agx-ch13-q034",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 14 # 13 = 9 and 27 # 36 = 18 then 46 # 31 = ?",
+        "options": {
+          "A": "11",
+          "B": "14",
+          "C": "17",
+          "D": "18"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q34",
+      "key_basis": "derived",
+      "rule": "The sum of all four digits: 1 + 4 + 1 + 3 = 9, 2 + 7 + 3 + 6 = 18. So 4 + 6 + 3 + 1 = 14.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q035",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 11 @ 13 @ 7 = 13711 and 4 @ 14 @ 6 = 1464 then 12 @ 6 @ 13 = ?",
+        "options": {
+          "A": "63121",
+          "B": "61213",
+          "C": "61312",
+          "D": "13126"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q35",
+      "key_basis": "derived",
+      "rule": "Write the middle number, then the last, then the first: 13|7|11, 14|6|4. So 6|13|12 = 61312.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q036",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 14L7A2 = 49 and 18 L 4 A 2 = 36, then 15L 5A 3 = ?",
+        "options": {
+          "A": "25",
+          "B": "81",
+          "C": "16",
+          "D": "9"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q36",
+      "key_basis": "derived",
+      "rule": "L means × and A means ÷: 14 × 7 ÷ 2 = 49, 18 × 4 ÷ 2 = 36. So 15 × 5 ÷ 3 = 25.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q037",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 53 × 61 × 9 = 123 and 34 × 43 × 24 = 101, then 41 × 16 × 71 = ?",
+        "options": {
+          "A": "128",
+          "B": "130",
+          "C": "134",
+          "D": "138"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q37",
+      "key_basis": "derived",
+      "rule": "× means +: 53 + 61 + 9 = 123, 34 + 43 + 24 = 101. So 41 + 16 + 71 = 128.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q038",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 14 # 3 @ 4 = 46 and 19 # 4 @ 3 = 79, then 21 # 4 @ 1 = ?",
+        "options": {
+          "A": "25",
+          "B": "92",
+          "C": "85",
+          "D": "97"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q38",
+      "key_basis": "derived",
+      "rule": "# means × and @ means +: 14 × 3 + 4 = 46, 19 × 4 + 3 = 79. So 21 × 4 + 1 = 85.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q039",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 19 + 4# 5 = 39 and 21 # 5 + 6 = 111, then 11+15# 5 = ?",
+        "options": {
+          "A": "76",
+          "B": "70",
+          "C": "62",
+          "D": "86"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q39",
+      "key_basis": "derived",
+      "rule": "# means ×: 19 + 4 × 5 = 39, 21 × 5 + 6 = 111. So 11 + 15 × 5 = 86.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q040",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 13 L 4 A 7 = 41 and 14 A 3 L 12 = 54, then 12 L 3A 9 = ?",
+        "options": {
+          "A": "84",
+          "B": "39",
+          "C": "42",
+          "D": "56"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q40",
+      "key_basis": "derived",
+      "rule": "L means + and A means ×: 13 + 4 × 7 = 41, 14 × 3 + 12 = 54. So 12 + 3 × 9 = 39.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q041",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 12 @ 2 = 145 and 15 @ 2 = 226, then 24 @ 2 = ?",
+        "options": {
+          "A": "676",
+          "B": "577",
+          "C": "575",
+          "D": "576"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q41",
+      "key_basis": "derived",
+      "rule": "The square plus one: 12² + 1 = 145, 15² + 1 = 226. So 24² + 1 = 577.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q042",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 27 A 11 A 8 = 8 and 48 A 37 A 2 = 9, then 56 A 5 A 3 = ?",
+        "options": {
+          "A": "46",
+          "B": "48",
+          "C": "47",
+          "D": "45"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q42",
+      "key_basis": "derived",
+      "rule": "A means −: 27 − 11 − 8 = 8, 48 − 37 − 2 = 9. So 56 − 5 − 3 = 48.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q043",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 13 @ 2 # 5 = 10 and 43 # 9 @ 16 = 50, then 8 @ 6 # 3 = ?",
+        "options": {
+          "A": "8",
+          "B": "10",
+          "C": "7",
+          "D": "11"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q43",
+      "key_basis": "derived",
+      "rule": "@ means + and # means −: 13 + 2 − 5 = 10, 43 − 9 + 16 = 50. So 8 + 6 − 3 = 11.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q045",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 5#5 = − 25, −4#−3 = −12 and 3#−3 = 9 then find the value of 4#5.",
+        "options": {
+          "A": "49",
+          "B": "− 56",
+          "C": "− 17",
+          "D": "− 20"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q45",
+      "key_basis": "derived",
+      "rule": "The product, sign flipped: −(5 × 5) = −25, −(−4 × −3) = −12, −(3 × −3) = 9. So −(4 × 5) = −20.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q046",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 11*8 = 6, 19*7 = 24 and 14*6 = 16 then find the value of 12*9.",
+        "options": {
+          "A": "18",
+          "B": "12",
+          "C": "8",
+          "D": "6"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q46",
+      "key_basis": "derived",
+      "rule": "Twice the difference: 2 × (11 − 8) = 6, 2 × 12 = 24, 2 × 8 = 16. So 2 × (12 − 9) = 6.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q047",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 7%8 = 30, 4%3 = 14 and 4%9 = 26 then find the value of 1%8 = ?",
+        "options": {
+          "A": "29",
+          "B": "10",
+          "C": "18",
+          "D": "22"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q47",
+      "key_basis": "derived",
+      "rule": "Twice the sum: 2 × (7 + 8) = 30, 2 × 7 = 14, 2 × 13 = 26. So 2 × (1 + 8) = 18.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q048",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If −2@−4 = −8, −1@−8 = −8 and −1@6 = 6 then find the value of −1@7.",
+        "options": {
+          "A": "95",
+          "B": "−88",
+          "C": "82",
+          "D": "7"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q48",
+      "key_basis": "derived",
+      "rule": "The product, sign flipped: −(−2 × −4) = −8, −(−1 × −8) = −8, −(−1 × 6) = 6. So −(−1 × 7) = 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q049",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 21 (49) 14 and 159 (169) 146, then what is the value of 'A' in 56 (A) 44?",
+        "options": {
+          "A": "144",
+          "B": "121",
+          "C": "225",
+          "D": "256"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q49",
+      "key_basis": "derived",
+      "rule": "The square of the difference: (21 − 14)² = 49, (159 − 146)² = 169. So (56 − 44)² = 144.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q050",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 2³ # 4³ @ 3³ = 45 and 3³ # 5³ @ 4³ = 88 then 4³ # 2³ @ 1³ = ?",
+        "options": {
+          "A": "48",
+          "B": "71",
+          "C": "56",
+          "D": "65"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q50",
+      "key_basis": "derived",
+      "rule": "# means + and @ means −: 8 + 64 − 27 = 45, 27 + 125 − 64 = 88. So 64 + 8 − 1 = 71.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q051",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 11 # 2 @ 6 = 78 and 15 # 4 @ 8 = 152, then 17 # 6 @ 7 = ?",
+        "options": {
+          "A": "161",
+          "B": "143",
+          "C": "221",
+          "D": "157"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q51",
+      "key_basis": "derived",
+      "rule": "(11 + 2) × 6 = 78, (15 + 4) × 8 = 152. So (17 + 6) × 7 = 161.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q052",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 2 = 0, 5 = 1 and 8 = 4, then 11 = ?",
+        "options": {
+          "A": "8",
+          "B": "9",
+          "C": "10",
+          "D": "6"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q52",
+      "key_basis": "derived",
+      "rule": "2, 5, 8, 11 are the 1st to 4th terms; they give the squares 0, 1, 4, so 11 gives 9.",
+      "confidence": "medium",
+      "note": "Three examples with no arithmetic between each number and its value other than its place in the run. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q053",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 34 × 15 = 495 and 43 × 12 = 504, then 98 × 17 = ?",
+        "options": {
+          "A": "1649",
+          "B": "1683",
+          "C": "1763",
+          "D": "1751"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q53",
+      "key_basis": "derived",
+      "rule": "One less than the first, times the second: 33 × 15 = 495, 42 × 12 = 504. So 97 × 17 = 1649.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q054",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 26 (52) 8 and 48 (192) 16, then what is the value of 'A' in A (175) 14?",
+        "options": {
+          "A": "50",
+          "B": "25",
+          "C": "35",
+          "D": "40"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q54",
+      "key_basis": "derived",
+      "rule": "A quarter of the product: 26 × 8 ÷ 4 = 52, 48 × 16 ÷ 4 = 192. A × 14 ÷ 4 = 175 gives A = 50.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q055",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 8*9 = 217 and 6*10 = 196, then 11*7 = ?",
+        "options": {
+          "A": "186",
+          "B": "247",
+          "C": "242",
+          "D": "172"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q55",
+      "key_basis": "derived",
+      "rule": "a² + b² + ab: 64 + 81 + 72 = 217, 36 + 100 + 60 = 196. So 121 + 49 + 77 = 247.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q056",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 6 # 8 = 10 and 5 # 12 = 13, then 9 # 40 = ?",
+        "options": {
+          "A": "47",
+          "B": "63",
+          "C": "41",
+          "D": "53"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q56",
+      "key_basis": "derived",
+      "rule": "The hypotenuse: √(36 + 64) = 10, √(25 + 144) = 13. So √(81 + 1600) = 41.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q057",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 7 (110) 4 and 19 (930) 12, then what is the value of 'A' in 16 (A), 9?",
+        "options": {
+          "A": "580",
+          "B": "600",
+          "C": "640",
+          "D": "700"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q57",
+      "key_basis": "derived",
+      "rule": "The sum times one less: 11 × 10 = 110, 31 × 30 = 930. So 25 × 24 = 600.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q058",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 15 (196) 29 and 16 (100) 6, then what is the value of 'A' in 31(A) 48?",
+        "options": {
+          "A": "361",
+          "B": "256",
+          "C": "324",
+          "D": "289"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p50 q58",
+      "key_basis": "derived",
+      "rule": "The square of the difference: 14² = 196, 10² = 100. So 17² = 289.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q059",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 7² A7B 9 = 16 and 5² A5 B 7 = 12, then 9² A3 B 8 = ?",
+        "options": {
+          "A": "17",
+          "B": "92",
+          "C": "86",
+          "D": "35"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q59",
+      "key_basis": "derived",
+      "rule": "A means ÷ and B means +: 49 ÷ 7 + 9 = 16, 25 ÷ 5 + 7 = 12. So 81 ÷ 3 + 8 = 35.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q060",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 6A7B3 = 60 and 11A9B6 = 165, then 10A11B5 = ?",
+        "options": {
+          "A": "105",
+          "B": "160",
+          "C": "165",
+          "D": "180"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q60",
+      "key_basis": "derived",
+      "rule": "The first times the sum of the others: 6 × (7 + 3) = 60, 11 × (9 + 6) = 165. So 10 × (11 + 5) = 160.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q061",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 436 = 3, 783 = 8 and 654 is 5, then 896 = ?",
+        "options": {
+          "A": "5",
+          "B": "9",
+          "C": "4",
+          "D": "6"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q61",
+      "key_basis": "derived",
+      "rule": "The middle digit: 436 → 3, 783 → 8, 654 → 5. So 896 → 9.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q062",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 32+ 21 2809 and 27 + 15 = 1764, then 31 + 13 = ?",
+        "options": {
+          "A": "1444",
+          "B": "2116",
+          "C": "1936",
+          "D": "2304"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q62",
+      "key_basis": "derived",
+      "rule": "The square of the sum: 53² = 2809, 42² = 1764. So 44² = 1936.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q063",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 17* 36 = 17 and 41*56 = 16, then 41*32 = ?",
+        "options": {
+          "A": "6",
+          "B": "12",
+          "C": "10",
+          "D": "8"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q63",
+      "key_basis": "derived",
+      "rule": "The sum of all four digits: 1 + 7 + 3 + 6 = 17, 4 + 1 + 5 + 6 = 16. So 4 + 1 + 3 + 2 = 10.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q064",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 14 $ 8 = 91 and 18 $ 4 = 51, then 21 $ 9 = ?",
+        "options": {
+          "A": "160",
+          "B": "155",
+          "C": "151",
+          "D": "168"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q64",
+      "key_basis": "derived",
+      "rule": "One less of each, multiplied: 13 × 7 = 91, 17 × 3 = 51. So 20 × 8 = 160.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q065",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 43 P 16 M 19 = 46 and 11 M 13 P 12 = 12 then 16 P 18 M 24 = ?",
+        "options": {
+          "A": "32",
+          "B": "22",
+          "C": "30",
+          "D": "24"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q65",
+      "key_basis": "derived",
+      "rule": "P means − and M means +: 43 − 16 + 19 = 46, 11 + 13 − 12 = 12. So 16 − 18 + 24 = 22.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q066",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 24 N 16 A 4 = 12 and 14 A 18 N 12 = 20, then 48 N 16 A 15 = ?",
+        "options": {
+          "A": "47",
+          "B": "59",
+          "C": "43",
+          "D": "51"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q66",
+      "key_basis": "derived",
+      "rule": "N means − and A means +: 24 − 16 + 4 = 12, 14 + 18 − 12 = 20. So 48 − 16 + 15 = 47.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q067",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 'P' means '+', 'Q' means '÷', 'R' means '−' and 'S' means '×', then which of the following equation is true ?",
+        "options": {
+          "A": "16S8Q4P19R23 = 27",
+          "B": "11P16Q23S112R14 = 71",
+          "C": "13Q182S42P16R4 = 15",
+          "D": "16P19Q57S12R11 = 7"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q67",
+      "key_basis": "derived",
+      "rule": "C reads 13 ÷ 182 × 42 + 16 − 4 = 3 + 12 = 15. The others come to 28, about 75 and 9.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q069",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If '+' means' divided by, '÷' means 'multiplied', '×' means 'minus' and '−' means 'plus' then which of the following is correct?",
+        "options": {
+          "A": "36 × 12 + 14 ÷ 10 − 4 = 32",
+          "B": "36 + 12 ÷ 14 × 10 − 4 = 36",
+          "C": "36 ÷ 12 − 14 + 10 × 4 = 400",
+          "D": "36 ÷ 12 × 14 + 10 − 4 = 440"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q69",
+      "key_basis": "derived",
+      "rule": "B reads 36 ÷ 12 × 14 − 10 + 4 = 42 − 6 = 36. The others do not hold.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q070",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged, will correctly solve he given mathematical equation ?\n12 ÷ 4 × 16 + 2 − 7 = 43",
+        "options": {
+          "A": "2 and 7, + and −",
+          "B": "7 and 16, − and ×",
+          "C": "4 and 7, × and ÷",
+          "D": "7 and 12, + and −"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q70",
+      "key_basis": "derived",
+      "rule": "12 ÷ 4 × 16 − 7 + 2 = 48 − 5 = 43.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q071",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pairs of signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n25 + 5 − 210 ÷ 15 × 5 = 116",
+        "options": {
+          "A": "+ and −",
+          "B": "÷ and +",
+          "C": "÷ and ×",
+          "D": "+ and ×"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q71",
+      "key_basis": "derived",
+      "rule": "25 × 5 − 210 ÷ 15 + 5 = 125 − 14 + 5 = 116.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q072",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n36 ÷ 4 × 12 + 14 − 7 = 5",
+        "options": {
+          "A": "7 and 36, − and ×",
+          "B": "12 and 7, + and −",
+          "C": "14 and 7, × and ÷",
+          "D": "36 and 12, + and −"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q72",
+      "key_basis": "derived",
+      "rule": "36 × 4 ÷ 12 + 7 − 14 = 12 − 7 = 5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q073",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pairs of signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n20 + 5 − 25 ÷ 5 × 5 = 100",
+        "options": {
+          "A": "+ and ×",
+          "B": "÷ and ×",
+          "C": "+ and −",
+          "D": "÷ and +"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q73",
+      "key_basis": "derived",
+      "rule": "20 × 5 − 25 ÷ 5 + 5 = 100 − 5 + 5 = 100.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q074",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n228 ÷ 12 × 14 + 38 − 57 = 129",
+        "options": {
+          "A": "12 and 38, + and −",
+          "B": "12 and 38, × and ÷",
+          "C": "57 and 38, + and ÷",
+          "D": "14 and 38, × and ÷"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q74",
+      "key_basis": "derived",
+      "rule": "228 ÷ 38 × 14 − 12 + 57 = 84 + 45 = 129.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q075",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pairs of signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n15 + 5 − 80 ÷ 20 × 5 = 76",
+        "options": {
+          "A": "÷ and ×",
+          "B": "÷ and +",
+          "C": "+ and −",
+          "D": "+ and ×"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q75",
+      "key_basis": "derived",
+      "rule": "15 × 5 − 80 ÷ 20 + 5 = 75 − 4 + 5 = 76.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q076",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pairs of numbers and signs,when their positions are interchanged, will correctly solve the given mathematical equation ?\n20 ÷ 4 × 10 + 28 − 14 = −6",
+        "options": {
+          "A": "14 and 20, − and ×.",
+          "B": "20 and 10, + and −",
+          "C": "14 and 28, × and +",
+          "D": "4 and 10, + and −"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q76",
+      "key_basis": "derived",
+      "rule": "20 ÷ 10 × 4 − 28 + 14 = 8 − 14 = −6.",
+      "confidence": "medium",
+      "note": "The first sign of the equation is ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q077",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pairs of signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n15 + 10 − 25 ÷ 6 × 5 = −5",
+        "options": {
+          "A": "+ and ×",
+          "B": "÷ and ×",
+          "C": "+ and −",
+          "D": "+ and −"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q77",
+      "key_basis": "derived",
+      "rule": "15 + 10 − 25 × 6 ÷ 5 = 25 − 30 = −5.",
+      "confidence": "medium",
+      "note": "The fourth sign of the equation is ÷, and options C and D print alike. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q078",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n469 ÷ 67 × 192 − 238 + 12 = 130",
+        "options": {
+          "A": "192 and 238, + and ÷",
+          "B": "12 and 192, + and −",
+          "C": "12 and 192, + and ÷",
+          "D": "12 and 238 × and ÷"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q78",
+      "key_basis": "derived",
+      "rule": "469 ÷ 67 × 12 + 238 − 192 = 84 + 46 = 130.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q079",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "What will be the value of the following equation if '÷' means 'addition', '+' means 'subtraction', '−' means 'multiplication' and '×' means 'division' ?\n28 × 4 − 9 + 11 ÷ 2 = ?",
+        "options": {
+          "A": "56",
+          "B": "58",
+          "C": "54",
+          "D": "52"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q79",
+      "key_basis": "derived",
+      "rule": "28 ÷ 4 × 9 − 11 + 2 = 63 − 9 = 54.",
+      "confidence": "medium",
+      "note": "The legend's first sign is ÷ (\"'÷' means 'addition'\"). In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q080",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged will correctly solve the given mathematical equation ?\n515 + 832 − 48 × 32 ÷ 8 = 1755",
+        "options": {
+          "A": "32 and 48, + and −",
+          "B": "832 and 48, − and ×",
+          "C": "32 and 48, −and ÷",
+          "D": "515 and 48, + and ÷"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q80",
+      "key_basis": "derived",
+      "rule": "515 + 832 ÷ 32 × 48 − 8 = 515 + 1248 − 8 = 1755.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q081",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n137 + 548 ÷ 274 × 18 − 228 = 430",
+        "options": {
+          "A": "548 and 137, + and ÷",
+          "B": "137 and 274, + and ÷",
+          "C": "137 and 274, + and −",
+          "D": "18 and 548, × and ÷"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q81",
+      "key_basis": "derived",
+      "rule": "274 − 548 ÷ 137 × 18 + 228 = 274 − 72 + 228 = 430.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q082",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following paris of numbers and signs, when their positions are interchanged will correctly solve the given mathematical equition ?\n448 + 151 − 28 ÷ 14 × 15 = 75",
+        "options": {
+          "A": "28 and 15, × and +",
+          "B": "28 and 448, × and ÷",
+          "C": "151 and 28, + and ÷",
+          "D": "448 and 151, + and ÷"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q82",
+      "key_basis": "derived",
+      "rule": "448 ÷ 28 − 151 + 14 × 15 = 16 − 151 + 210 = 75.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q083",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n38 × 18 ÷ 64 − 418 + 26 = 521",
+        "options": {
+          "A": "26 and 18, + and ÷",
+          "B": "26 and 38, + and −",
+          "C": "26 and 38, + and ÷",
+          "D": "418 and 64, × and ÷"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p51 q83",
+      "key_basis": "derived",
+      "rule": "26 × 18 + 64 − 418 ÷ 38 = 468 + 64 − 11 = 521.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q084",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged will correctly solve the given mathematical equation ?\n20 + 696 × 144 ÷ 58 − 864 = 884",
+        "options": {
+          "A": "58 and 864, × and ÷",
+          "B": "58 and 696, + and ÷",
+          "C": "144 and 58, × and ÷",
+          "D": "696 and 20, + and −"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q84",
+      "key_basis": "derived",
+      "rule": "20 + 696 ÷ 58 × 144 − 864 = 20 + 1728 − 864 = 884.",
+      "confidence": "medium",
+      "note": "The third sign of the equation is ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q085",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Choose the option that can appropriately replace the '?'\n3³ + 4³ + 5³ ? 6³",
+        "options": {
+          "A": "<",
+          "B": ">",
+          "C": "<>",
+          "D": "="
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q85",
+      "key_basis": "derived",
+      "rule": "27 + 64 + 125 = 216 = 6³.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q086",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If A * B = (A + B) (A − B), then (12 * 7) * (11 * 8) = ?",
+        "options": {
+          "A": "5876",
+          "B": "5776",
+          "C": "4376",
+          "D": "3989"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q86",
+      "key_basis": "derived",
+      "rule": "A * B = A² − B²: 12 * 7 = 95, 11 * 8 = 57, and 95 * 57 = 9025 − 3249 = 5776.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q087",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If A * B * B * C = A² + B² + C² + 2(AB + BC + CA) then (3 * 4 * 7) = ?",
+        "options": {
+          "A": "224",
+          "B": "196",
+          "C": "138",
+          "D": "216"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q87",
+      "key_basis": "derived",
+      "rule": "The right side is (A + B + C)², so (3 + 4 + 7)² = 196.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q088",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If the given interchanges are made in signs and numbers, which one of the four equations would be correct ?\nGiven interchanges : Signs '+' and '−'; numbers 5 and 8.",
+        "options": {
+          "A": "82 − 35 + 55 = 2",
+          "B": "82 − 35 + 55 = 102",
+          "C": "85 − 38 + 85 = 132",
+          "D": "52 − 35 + 55 = 72"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q88",
+      "key_basis": "derived",
+      "rule": "Swapping the signs and the digits 5 and 8, A reads 52 + 38 − 88 = 2. The others come to 2, 35 and 32 against 102, 132 and 72.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q089",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which of the following Pairs of numbers and signs should be interchanged to make the given mathematical equation correct ?\n6 ÷ 3 × 2 + 4 − 7 = 26.5",
+        "options": {
+          "A": "6 and 2, + and −",
+          "B": "4 and 7, × and ÷",
+          "C": "3 and 7, + and −",
+          "D": "3 and 6, − and ×"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q89",
+      "key_basis": "derived",
+      "rule": "3 ÷ 6 − 2 + 4 × 7 = 0.5 − 2 + 28 = 26.5.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q090",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 5 * 3 = 16, 7 * 3 = 40, then 9 * 3 = ?",
+        "options": {
+          "A": "70",
+          "B": "72",
+          "C": "75",
+          "D": "80"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q90",
+      "key_basis": "derived",
+      "rule": "a² − b²: 25 − 9 = 16, 49 − 9 = 40. So 81 − 9 = 72.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q091",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If P = 6, J = 4, L = 8, M = 24, then M × J ÷ L + J = ?",
+        "options": {
+          "A": "8",
+          "B": "16",
+          "C": "52",
+          "D": "0"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q91",
+      "key_basis": "derived",
+      "rule": "24 × 4 ÷ 8 + 4 = 12 + 4 = 16.",
+      "confidence": "medium",
+      "note": "The second sign is ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q092",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 782 = 25 and 671 = 22, then 484 = ?",
+        "options": {
+          "A": "24",
+          "B": "23",
+          "C": "17",
+          "D": "29"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q92",
+      "key_basis": "derived",
+      "rule": "The digit sum plus 8: 17 + 8 = 25, 14 + 8 = 22. So 16 + 8 = 24.",
+      "confidence": "medium",
+      "note": "A constant added to the digit sum fits both examples but is an unusual rule. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q093",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 782 = 20, 474 = 18, then 885 = ?",
+        "options": {
+          "A": "19",
+          "B": "24",
+          "C": "21",
+          "D": "None of these"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q93",
+      "key_basis": "derived",
+      "rule": "The digit sum plus 3: 17 + 3 = 20, 15 + 3 = 18. So 21 + 3 = 24.",
+      "confidence": "medium",
+      "note": "A constant added to the digit sum fits both examples but is an unusual rule. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q094",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 5566 = 22, 1753 = 16, 3624 = 15, then 7254 = ?",
+        "options": {
+          "A": "15",
+          "B": "16",
+          "C": "17",
+          "D": "18"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q94",
+      "key_basis": "derived",
+      "rule": "The digit sum: 22, 16, 15. So 7 + 2 + 5 + 4 = 18.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q095",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If '+' means '×', '−' means '÷', '×' means '+', '÷' means '−', then\n(18 + 10 × 20) − 8 ÷ 6 = ?",
+        "options": {
+          "A": "35",
+          "B": "19",
+          "C": "26",
+          "D": "2"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q95",
+      "key_basis": "derived",
+      "rule": "(18 × 10 + 20) ÷ 8 − 6 = 25 − 6 = 19.",
+      "confidence": "medium",
+      "note": "The legend reads − means ÷ and ÷ means −, as in Q21. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q096",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 532 + 781 = 26 and 862 + 920 = 27, what is the value of 796 + 354 = ?",
+        "options": {
+          "A": "31",
+          "B": "34",
+          "C": "30",
+          "D": "26"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q96",
+      "key_basis": "derived",
+      "rule": "The sum of all six digits: 26 and 27. So 7 + 9 + 6 + 3 + 5 + 4 = 34.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q097",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Some equations are solved on the basis of a certain system. On the same basis, find out the correct answer for the unsolved question ?\nIf 8 × 5 = 04, 8 × 2 = 61, then 8 × 10 =?",
+        "options": {
+          "A": "80",
+          "B": "0",
+          "C": "08",
+          "D": "None of these"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q97",
+      "key_basis": "derived",
+      "rule": "The product written backwards: 40 → 04, 16 → 61. So 80 → 08.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q098",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 35 × 16 = 90, 46 × 22 = 96, 29 × 48 = 578, then 17 × 24 = ?",
+        "options": {
+          "A": "56",
+          "B": "286",
+          "C": "48",
+          "D": "64"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q98",
+      "key_basis": "derived",
+      "rule": "The product of all four digits: 3 × 5 × 1 × 6 = 90, 4 × 6 × 2 × 2 = 96. So 1 × 7 × 2 × 4 = 56.",
+      "confidence": "medium",
+      "note": "The third example prints 578; the rule gives 2 × 9 × 4 × 8 = 576, read as a misprint. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q099",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "Which sequence of mathematical symbols can replace * in the given equation to balance the equation ?\n7 * 7 * 2 * 1 = 12",
+        "options": {
+          "A": "× ÷ −",
+          "B": "+ − ×",
+          "C": "÷ + −",
+          "D": "× − ×"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q99",
+      "key_basis": "derived",
+      "rule": "7 + 7 − 2 × 1 = 12.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q100",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 'A' means '÷', B means '−', C means '×' and 'D' means '+', then find the value of the following equation.\n16 D 64 A 4 B 4 C 3 = ?",
+        "options": {
+          "A": "20",
+          "B": "15",
+          "C": "9",
+          "D": "17"
+        },
+        "key": "A",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q100",
+      "key_basis": "derived",
+      "rule": "16 + 64 ÷ 4 − 4 × 3 = 16 + 16 − 12 = 20.",
+      "confidence": "medium",
+      "note": "A means ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q101",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If '+' means \"Minus\", '−' means \"Multiply\", '×' means \"Add\", then what is the value od 10 × 5 + 3 − 2 :",
+        "options": {
+          "A": "24",
+          "B": "52",
+          "C": "9",
+          "D": "10"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q101",
+      "key_basis": "derived",
+      "rule": "10 + 5 − 3 × 2 = 9.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q102",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 'A' means add, 'B' means subtract, 'C' means multiply and 'D' means divide, then what would be the answer of the equation ?\n15 D 5 C 2 A 3 =",
+        "options": {
+          "A": "13",
+          "B": "11",
+          "C": "03",
+          "D": "09"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q102",
+      "key_basis": "derived",
+      "rule": "15 ÷ 5 × 2 + 3 = 9, printed 09.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q103",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If '+' means '÷', '÷' means '−', '−' means '×' and '×' means '+', then what would be the answer of the equation ?\n12 + 6 ÷ 3 − 2 × 8 =",
+        "options": {
+          "A": "−2",
+          "B": "2",
+          "C": "4",
+          "D": "8"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q103",
+      "key_basis": "derived",
+      "rule": "12 ÷ 6 − 3 × 2 + 8 = 2 − 6 + 8 = 4.",
+      "confidence": "medium",
+      "note": "The legend prints \"'+' means '+', '+' means '–'\"; read as + means ÷ and ÷ means −, with ÷ in the equation. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q104",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If '+' means '×', '×' means '+', '÷' means '−' and '−' means '+' then what would be the answer of the equation ?\n16 × 3 + 5 − 2 ÷ 4 = ?",
+        "options": {
+          "A": "9",
+          "B": "10",
+          "C": "19",
+          "D": "None of these"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q104",
+      "key_basis": "derived",
+      "rule": "16 + 3 × 5 + 2 − 4 = 29, not among the numbers: None of these.",
+      "confidence": "medium",
+      "note": "The last sign of the equation is ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q105",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If '+' means '÷', '×' means '−', '÷' means '+' and '−' means '×', then what would be the answer of the equation ?\n16 ÷ 8 × 6 − 2 + 12 = ?",
+        "options": {
+          "A": "22",
+          "B": "24",
+          "C": "23",
+          "D": "20"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q105",
+      "key_basis": "derived",
+      "rule": "16 + 8 − 6 × 2 ÷ 12 = 24 − 1 = 23.",
+      "confidence": "medium",
+      "note": "The legend reads + means ÷ and ÷ means +, and the equation's first sign is ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q106",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If '+' means '−', '−' means '×', '×' means '÷' and '÷' means '+', then what would be the answer of the equation ?\n15 × 5 ÷ 10 + 5 − 3 = ?",
+        "options": {
+          "A": "9.5",
+          "B": "0",
+          "C": "−2",
+          "D": "24"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q106",
+      "key_basis": "derived",
+      "rule": "15 ÷ 5 + 10 − 5 × 3 = 3 + 10 − 15 = −2.",
+      "confidence": "medium",
+      "note": "The legend reads × means ÷ and ÷ means +, and the equation's second sign is ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q107",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If + means ÷, ÷ means −, − means × and × means + then 12 + 6 ÷ 3 − 2 × 8 = ?",
+        "options": {
+          "A": "−2",
+          "B": "4",
+          "C": "2",
+          "D": "8"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q107",
+      "key_basis": "derived",
+      "rule": "12 ÷ 6 − 3 × 2 + 8 = 2 − 6 + 8 = 4.",
+      "confidence": "medium",
+      "note": "The legend prints \"+ means +, + means −\"; read as + means ÷ and ÷ means −, as in Q103. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q108",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If + means ÷, × means −, − means × & ÷ means +, then 38 + 19 − 16 × 17 ÷ 3 = ?",
+        "options": {
+          "A": "16",
+          "B": "19",
+          "C": "18",
+          "D": "12"
+        },
+        "key": "C",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q108",
+      "key_basis": "derived",
+      "rule": "38 ÷ 19 × 16 − 17 + 3 = 32 − 14 = 18.",
+      "confidence": "medium",
+      "note": "The legend reads + means ÷ and ÷ means +, and the equation's last sign is ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q109",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If '+' stands for '−', '−' stands for '×', '×' stands for '÷' and '÷' stands for '+'. Then, what is the value of 56 × 7 ÷ 13 − 11 + 15 − 8 ÷ 2 − 7?",
+        "options": {
+          "A": "30",
+          "B": "60",
+          "C": "95",
+          "D": "45"
+        },
+        "key": "D",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q109",
+      "key_basis": "derived",
+      "rule": "56 ÷ 7 + 13 × 11 − 15 × 8 + 2 × 7 = 8 + 143 − 120 + 14 = 45.",
+      "confidence": "medium",
+      "note": "The legend reads × stands for ÷ and ÷ stands for +, and the equation has two ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q110",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If a denotes × b denotes ÷, c denotes + and d denotes −, then 8 a 3 c 24 b 12 d 19 = ?",
+        "options": {
+          "A": "17",
+          "B": "7",
+          "C": "14",
+          "D": "8"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q110",
+      "key_basis": "derived",
+      "rule": "8 × 3 + 24 ÷ 12 − 19 = 24 + 2 − 19 = 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q111",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If P denotes +, Q denotes −, R denotes '÷', and S denotes ×, then : 15S24R1Q5P8 = ?",
+        "options": {
+          "A": "115",
+          "B": "363",
+          "C": "55",
+          "D": "45"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q111",
+      "key_basis": "derived",
+      "rule": "15 × 24 ÷ 1 − 5 + 8 = 363.",
+      "confidence": "medium",
+      "note": "R denotes ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q112",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If 6+3=18, 12-2=6, 8 ÷ 2 = 10, then 8-2 ÷ 3 is :",
+        "options": {
+          "A": "6",
+          "B": "7",
+          "C": "8",
+          "D": "9"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q112",
+      "key_basis": "derived",
+      "rule": "+ means ×, − means ÷, ÷ means +: 6 × 3 = 18, 12 ÷ 2 = 6, 8 + 2 = 10. So 8 ÷ 2 + 3 = 7.",
+      "confidence": "high"
+    },
+    {
+      "id": "oir-agx-ch13-q113",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If + means ÷ , ÷ means −, − means ×, × means +, then 12 + 6/3 − 2 × 8 = ?",
+        "options": {
+          "A": "2",
+          "B": "4",
+          "C": "8",
+          "D": "5"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q113",
+      "key_basis": "derived",
+      "rule": "12 ÷ 6 − 3 × 2 + 8 = 2 − 6 + 8 = 4.",
+      "confidence": "medium",
+      "note": "The legend reads + means ÷ and ÷ means −, and the book writes 6/3 for 6 ÷ 3. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
+    },
+    {
+      "id": "oir-agx-ch13-q114",
+      "assessment_type": "oir_verbal",
+      "payload": {
+        "stem": "If '+' stands for '×', '×' stands for '+', '÷' stands for '−' then what is the value of 7 + 21 × 81 ÷ 9 − 3 × 14",
+        "options": {
+          "A": "210",
+          "B": "230",
+          "C": "270",
+          "D": "280"
+        },
+        "key": "B",
+        "reasoningType": "mathematical_operations"
+      },
+      "difficulty": 3,
+      "active": true,
+      "source": "agrawal-examcart-oir",
+      "source_ref": "ch13 p52 q114",
+      "key_basis": "derived",
+      "rule": "7 × 21 + 81 − 9 − 3 + 14 = 147 + 81 − 9 − 3 + 14 = 230.",
+      "confidence": "medium",
+      "note": "The legend's third sign is ÷ (\"'÷' stands for '−'\"), and the equation's third sign is ÷. In the photo this ÷ prints like + (its dots too faint to see); only the ÷ reading gives an answer among the options, so it is transcribed that way. Check against the book key."
     }
   ]
 }

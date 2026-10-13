@@ -31,6 +31,7 @@ import { AGRAWAL_CH08_DIRECTIONS } from '../src/items/oir/agrawal-ch08-direction
 import { AGRAWAL_CH09_RANKING } from '../src/items/oir/agrawal-ch09-ranking.ts';
 import { AGRAWAL_CH10_SEATING } from '../src/items/oir/agrawal-ch10-seating.ts';
 import { AGRAWAL_CH11_SERIES } from '../src/items/oir/agrawal-ch11-series.ts';
+import { AGRAWAL_CH13_MATHEMATICAL_OPERATIONS } from '../src/items/oir/agrawal-ch13-mathematical-operations.ts';
 import { isHeld } from '../src/items/oir/key.ts';
 import type { KeyEntry } from '../src/items/oir/key.ts';
 
@@ -59,6 +60,7 @@ const CHAPTERS: { file: string; key: Readonly<Record<number, KeyEntry>>; reasoni
   { file: 'content/oir/agrawal-examcart/ch09-ranking.source.json', key: AGRAWAL_CH09_RANKING, reasoningType: 'ranking', idPrefix: 'oir-agx-ch09' },
   { file: 'content/oir/agrawal-examcart/ch10-seating.source.json', key: AGRAWAL_CH10_SEATING, reasoningType: 'seating', idPrefix: 'oir-agx-ch10' },
   { file: 'content/oir/agrawal-examcart/ch11-series.source.json', key: AGRAWAL_CH11_SERIES, reasoningType: 'series', idPrefix: 'oir-agx-ch11' },
+  { file: 'content/oir/agrawal-examcart/ch13-mathematical-operations.source.json', key: AGRAWAL_CH13_MATHEMATICAL_OPERATIONS, reasoningType: 'mathematical_operations', idPrefix: 'oir-agx-ch13' },
 ];
 
 /** No measurement exists yet; 3 is the declared "unrated" midpoint until item stats say otherwise (D19). */

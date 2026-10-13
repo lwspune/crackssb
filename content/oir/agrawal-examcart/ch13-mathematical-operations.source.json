@@ -1,0 +1,1390 @@
+{
+  "source": "agrawal-examcart-oir",
+  "book": "Agrawal ExamCart, SSB OIR, Reasoning section",
+  "scans": "SSR OIR 1-127 (phone photos of printed pages 1-127)",
+  "chapter": 13,
+  "title": "Mathematical Oprations",
+  "pages": [
+    49,
+    52
+  ],
+  "transcribed": "2026-10-13",
+  "note": "Verbatim, typos included (\"Oprations\", \"sings\", \"paris\", \"equition\", \"value od\", \"solve he\"; Q26 asks for \"two numbers\" and offers signs). Never edited: corrections live in src/items/oir/. The minus prints as a dash and is transcribed as −; an equation the book sets on its own line follows a line break. In the photos ÷ often prints like + (its dots too faint to see), mostly on page 52 and in the legends: where only one reading gives an answer among the options, that reading is transcribed and the key lists the question as read that way (medium). Q68 prints no equation. Q77 prints options C and D alike.",
+  "directions": [
+    {
+      "section": "Main",
+      "printed": null,
+      "text": null
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "page": 49,
+      "section": "Main",
+      "stem": "After interchanging the given two signs what will be the values of equation (I) and (II) respectively?\n× and ÷\nI. 18 ÷ 3 − 4 × 2 + 7\nII. 18 × 3 ÷ 6 − 8 + 4",
+      "options": {
+        "A": "16 and 30",
+        "B": "59 and 32",
+        "C": "9 and 7",
+        "D": "40 and 80"
+      }
+    },
+    {
+      "n": 2,
+      "page": 49,
+      "section": "Main",
+      "stem": "By interchanging the given two signs which of the following equation will be correct?\n÷ and ×",
+      "options": {
+        "A": "23 − 20 + 35 ÷ 2 × 10 = 10",
+        "B": "9 × 3 + 8 ÷ 4 − 7 = 30",
+        "C": "32 + 3 − 12 ÷ 18 × 9 = 10",
+        "D": "11 ÷ 12 × 6 + 8 − 10 = 25"
+      }
+    },
+    {
+      "n": 3,
+      "page": 49,
+      "section": "Main",
+      "stem": "Which two signs should be interchanged to make the given equation correct?\n26 + 2 ÷ 4 − 8 × 25 = 30",
+      "options": {
+        "A": "× and ÷",
+        "B": "× and −",
+        "C": "+ and ÷",
+        "D": "× and +"
+      }
+    },
+    {
+      "n": 4,
+      "page": 49,
+      "section": "Main",
+      "stem": "By interchanging the given two signs which of the following equation will be correct?\n× and ÷\nI. 5 + 6 × 2 − 4 ÷ 1 = 10\nII. 9 × 3 − 4 ÷ 2 + 5 = 4",
+      "options": {
+        "A": "Neither I nor II",
+        "B": "Both I and II",
+        "C": "Only II",
+        "D": "Only I"
+      }
+    },
+    {
+      "n": 5,
+      "page": 49,
+      "section": "Main",
+      "stem": "Which two signs should be interchanged to make the given equation correct?\n5 − 2 ÷ 4 + 9 × 3 = 0",
+      "options": {
+        "A": "− and ÷",
+        "B": "× and ÷",
+        "C": "= and ×",
+        "D": "+ and −"
+      }
+    },
+    {
+      "n": 6,
+      "page": 49,
+      "section": "Main",
+      "stem": "Which two signs should be interchanged to make the given equation correct?\n12 + 6 × 2 − 24 ÷ 8 = 3",
+      "options": {
+        "A": "× and −",
+        "B": "− and =",
+        "C": "÷ and −",
+        "D": "+ and −"
+      }
+    },
+    {
+      "n": 7,
+      "page": 49,
+      "section": "Main",
+      "stem": "After interchanging the given two signs what will be the values of expression (I) and (II) respectively?\n× and ÷\nI. 8 + 4 − 6 × 3 ÷ 5\nII. 20 + 15 × 30 ÷ 10",
+      "options": {
+        "A": "2 and 30",
+        "B": "18 and 14",
+        "C": "6 and 17",
+        "D": "2 and 25"
+      }
+    },
+    {
+      "n": 8,
+      "page": 49,
+      "section": "Main",
+      "stem": "After interchanging the given two signs what will be the values of equation (I) and (II) respectively?\n× and ÷\nI. 7 + 8 ÷ 2 × 4 − 6\nII. 16 × 4 + 13 ÷ 2 − 3",
+      "options": {
+        "A": "6 and 15",
+        "B": "5 and 6",
+        "C": "8 and 9",
+        "D": "5 and 27"
+      }
+    },
+    {
+      "n": 9,
+      "page": 49,
+      "section": "Main",
+      "stem": "Which two symbols, from the given options, should be interchanged to make the given equation correct ?\n(9 ÷ 3 + 169 × 13) ÷ 5 − 10 + 16 = 206",
+      "options": {
+        "A": "+ and −",
+        "B": "× and −",
+        "C": "÷ and ×",
+        "D": "+ and ×"
+      }
+    },
+    {
+      "n": 10,
+      "page": 49,
+      "section": "Main",
+      "stem": "Which two signs should be interchanged to make the below equation mathematically correct ?\n40 + 14 ÷ 35 − 30 × 15 = 1",
+      "options": {
+        "A": "+ and ÷",
+        "B": "+ and ×",
+        "C": "+ and −",
+        "D": "− and +"
+      }
+    },
+    {
+      "n": 11,
+      "page": 49,
+      "section": "Main",
+      "stem": "Which of the mathematical signs should be interchanged in the below equation to make it mathematically correct ?\n360 × 9 − 320 + 72 ÷ 5 = 80",
+      "options": {
+        "A": "+ and ÷",
+        "B": "+ and ×",
+        "C": "− and ÷",
+        "D": "× and ÷"
+      }
+    },
+    {
+      "n": 12,
+      "page": 49,
+      "section": "Main",
+      "stem": "Which two signs should be interchanged to make the below equation mathematically correct ?\n25 × 5 ÷ 6 + 20 = 62 − 12",
+      "options": {
+        "A": "+ and ÷",
+        "B": "÷ and ×",
+        "C": "+ and −",
+        "D": "+ and ×"
+      }
+    },
+    {
+      "n": 13,
+      "page": 49,
+      "section": "Main",
+      "stem": "If '#' means '+', '@' means '×', '&' means '/' and '$' means '−' then 200 & 5 @ 3 $ 20 # 5 = ?",
+      "options": {
+        "A": "105",
+        "B": "100",
+        "C": "85",
+        "D": "120"
+      }
+    },
+    {
+      "n": 14,
+      "page": 49,
+      "section": "Main",
+      "stem": "If 'A' stands for 'addition', B stands for 'division', C stands for 'subtraction' and D stands for 'multiplication, then what is the value of the following equation?\n4 D (3 A 1) C 5 A (6 B 2) C 7",
+      "options": {
+        "A": "12",
+        "B": "7",
+        "C": "17",
+        "D": "5"
+      }
+    },
+    {
+      "n": 15,
+      "page": 49,
+      "section": "Main",
+      "stem": "If 'P' means '÷', 'Q' means '+', 'R' means '×' and 'S' means '−' then\n54 R 11 P 99 Q 23 S 14 = ?",
+      "options": {
+        "A": "35",
+        "B": "15",
+        "C": "44",
+        "D": "57"
+      }
+    },
+    {
+      "n": 16,
+      "page": 49,
+      "section": "Main",
+      "stem": "If '×' means '−', '−' means '×', '+' means '÷' and '÷' means '+' then\n(15 − 10) ÷ (130 + 10) × 50 = ?",
+      "options": {
+        "A": "1800",
+        "B": "113",
+        "C": "2000",
+        "D": "123"
+      }
+    },
+    {
+      "n": 17,
+      "page": 49,
+      "section": "Main",
+      "stem": "If '÷' means '−', '−' means '×', '×' means '+' and '+' means '÷', then\n20 × 60 ÷ 40 − 20 + 10 = ?",
+      "options": {
+        "A": "80",
+        "B": "60",
+        "C": "40",
+        "D": "0"
+      }
+    },
+    {
+      "n": 18,
+      "page": 49,
+      "section": "Main",
+      "stem": "What will come in the place of the question mark (?) in the following equation, if '+' and '−' are interchanged and '×' and '÷' are interchanged ?\n(14 ÷ 2) − (16 × 4) + 12 = ?",
+      "options": {
+        "A": "25",
+        "B": "32",
+        "C": "16",
+        "D": "20"
+      }
+    },
+    {
+      "n": 19,
+      "page": 49,
+      "section": "Main",
+      "stem": "Select the correct combination of mathematical signs to sequentially replace * signs and to balance the given equation.\n7 * 5 * (16 * 8 * 9) * 20",
+      "options": {
+        "A": "÷, −, ×, +, =",
+        "B": "−, +, ×, ÷, =",
+        "C": "−, +, ÷, ×, =",
+        "D": "+, ×, ÷, −, ="
+      }
+    },
+    {
+      "n": 20,
+      "page": 49,
+      "section": "Main",
+      "stem": "What will come in the place of '?' in the following equation, if '+' and '−' are interchanged and also '×' and '÷' are interchanged ?\n143 − 42 × 7 ÷ 8 + 21 = ?",
+      "options": {
+        "A": "181",
+        "B": "176",
+        "C": "159",
+        "D": "170"
+      }
+    },
+    {
+      "n": 21,
+      "page": 49,
+      "section": "Main",
+      "stem": "What will come in place of the question mark (?) in the following equation if '+' means '×', '−' means '÷', '×' means '+' and '÷' means '−' ?\n(18 + 10 × 20) − 8 ÷ 6 = ?",
+      "options": {
+        "A": "19",
+        "B": "20",
+        "C": "22",
+        "D": "18"
+      }
+    },
+    {
+      "n": 22,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 'A' stands for '÷', 'B' stands for '×', 'C' stands for '+' and 'D' stands for '−', what will come in place of the question mark (?) in the following equation ?\n36 B 17 D 59 C 224A 7 = ?",
+      "options": {
+        "A": "855",
+        "B": "585",
+        "C": "685",
+        "D": "558"
+      }
+    },
+    {
+      "n": 23,
+      "page": 50,
+      "section": "Main",
+      "stem": "Which two signs should be interchanged to make the following equation correct?\n3 − 6 × 18 + 4 ÷ 2 = 2",
+      "options": {
+        "A": "× and −",
+        "B": "× and ÷",
+        "C": "− and ÷",
+        "D": "× and +"
+      }
+    },
+    {
+      "n": 24,
+      "page": 50,
+      "section": "Main",
+      "stem": "Which two signs should be interchanged with each other to satisfy the given equation?\n36 − 14 × 63 ÷ 9 + 11 = 99",
+      "options": {
+        "A": "+ and −",
+        "B": "× and +",
+        "C": "× and ÷",
+        "D": "× and −"
+      }
+    },
+    {
+      "n": 25,
+      "page": 50,
+      "section": "Main",
+      "stem": "Which two signs should be interchanged to make the given equation balanced?\n18 + 16 − 246 ÷ 6 × 98 = 345",
+      "options": {
+        "A": "÷ and −",
+        "B": "× and ÷",
+        "C": "+ and −",
+        "D": "+ and ×"
+      }
+    },
+    {
+      "n": 26,
+      "page": 50,
+      "section": "Main",
+      "stem": "Which two numbers should be interchanged to make the following equation correct?\n176 − 16 + 33 × 6 ÷ 200 = 9",
+      "options": {
+        "A": "÷ and ×",
+        "B": "− and ÷",
+        "C": "+ and ×",
+        "D": "+ and ÷"
+      }
+    },
+    {
+      "n": 27,
+      "page": 50,
+      "section": "Main",
+      "stem": "Which two signs should be interchanged to make the following equation correct?\n570 × 8 − 240 + 75 ÷ 15 = 79",
+      "options": {
+        "A": "+ and −",
+        "B": "÷ and −",
+        "C": "× and ÷",
+        "D": "+ and ×"
+      }
+    },
+    {
+      "n": 28,
+      "page": 50,
+      "section": "Main",
+      "stem": "Which two signs should be interchanged to make the following equation correct?\n42 ÷ 23 + 870 × 3 − 5 = 541",
+      "options": {
+        "A": "+ and −",
+        "B": "÷ and −",
+        "C": "× and ÷",
+        "D": "+ and ×"
+      }
+    },
+    {
+      "n": 29,
+      "page": 50,
+      "section": "Main",
+      "stem": "Which two signs should be interchanged to make the following equation correct?\n625 × 5 + 93 − 22 ÷ 8 = 42",
+      "options": {
+        "A": "× and −",
+        "B": "× and ÷",
+        "C": "÷ and +",
+        "D": "+ and −"
+      }
+    },
+    {
+      "n": 30,
+      "page": 50,
+      "section": "Main",
+      "stem": "Which two sings should be interchanged to make the given equation correct ?\n36 × 4 ÷ 2 + 20 − 54 = 22",
+      "options": {
+        "A": "+ and ×",
+        "B": "− and +",
+        "C": "× and −",
+        "D": "÷ and −"
+      }
+    },
+    {
+      "n": 31,
+      "page": 50,
+      "section": "Main",
+      "stem": "Which two symbols from amongst the given options should be interchanged to make the given equation correct ?\n(35 − 2) × 3 = (56 × 8 ÷ 3 + 100) × 11",
+      "options": {
+        "A": "× and −",
+        "B": "÷ and +",
+        "C": "+ and −",
+        "D": "× and ÷"
+      }
+    },
+    {
+      "n": 32,
+      "page": 50,
+      "section": "Main",
+      "stem": "Which of the following interchanged of signs would make the given equation correct ?\n87 − 3 + 39 ÷ 67 × 3 = −133",
+      "options": {
+        "A": "× and +",
+        "B": "− and +",
+        "C": "÷ and −",
+        "D": "× and −"
+      }
+    },
+    {
+      "n": 33,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 85 × 5 − 3 = 20 and 18 × 2 + 1 = 10, then 100 × 20 + 5 = ?",
+      "options": {
+        "A": "15",
+        "B": "20",
+        "C": "10",
+        "D": "13"
+      }
+    },
+    {
+      "n": 34,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 14 # 13 = 9 and 27 # 36 = 18 then 46 # 31 = ?",
+      "options": {
+        "A": "11",
+        "B": "14",
+        "C": "17",
+        "D": "18"
+      }
+    },
+    {
+      "n": 35,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 11 @ 13 @ 7 = 13711 and 4 @ 14 @ 6 = 1464 then 12 @ 6 @ 13 = ?",
+      "options": {
+        "A": "63121",
+        "B": "61213",
+        "C": "61312",
+        "D": "13126"
+      }
+    },
+    {
+      "n": 36,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 14L7A2 = 49 and 18 L 4 A 2 = 36, then 15L 5A 3 = ?",
+      "options": {
+        "A": "25",
+        "B": "81",
+        "C": "16",
+        "D": "9"
+      }
+    },
+    {
+      "n": 37,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 53 × 61 × 9 = 123 and 34 × 43 × 24 = 101, then 41 × 16 × 71 = ?",
+      "options": {
+        "A": "128",
+        "B": "130",
+        "C": "134",
+        "D": "138"
+      }
+    },
+    {
+      "n": 38,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 14 # 3 @ 4 = 46 and 19 # 4 @ 3 = 79, then 21 # 4 @ 1 = ?",
+      "options": {
+        "A": "25",
+        "B": "92",
+        "C": "85",
+        "D": "97"
+      }
+    },
+    {
+      "n": 39,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 19 + 4# 5 = 39 and 21 # 5 + 6 = 111, then 11+15# 5 = ?",
+      "options": {
+        "A": "76",
+        "B": "70",
+        "C": "62",
+        "D": "86"
+      }
+    },
+    {
+      "n": 40,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 13 L 4 A 7 = 41 and 14 A 3 L 12 = 54, then 12 L 3A 9 = ?",
+      "options": {
+        "A": "84",
+        "B": "39",
+        "C": "42",
+        "D": "56"
+      }
+    },
+    {
+      "n": 41,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 12 @ 2 = 145 and 15 @ 2 = 226, then 24 @ 2 = ?",
+      "options": {
+        "A": "676",
+        "B": "577",
+        "C": "575",
+        "D": "576"
+      }
+    },
+    {
+      "n": 42,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 27 A 11 A 8 = 8 and 48 A 37 A 2 = 9, then 56 A 5 A 3 = ?",
+      "options": {
+        "A": "46",
+        "B": "48",
+        "C": "47",
+        "D": "45"
+      }
+    },
+    {
+      "n": 43,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 13 @ 2 # 5 = 10 and 43 # 9 @ 16 = 50, then 8 @ 6 # 3 = ?",
+      "options": {
+        "A": "8",
+        "B": "10",
+        "C": "7",
+        "D": "11"
+      }
+    },
+    {
+      "n": 44,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 70$7 = − 10, 50$5 = −10 and 40$8 = −5, then find the value of 10$22.",
+      "options": {
+        "A": "50",
+        "B": "−10",
+        "C": "16",
+        "D": "−5"
+      }
+    },
+    {
+      "n": 45,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 5#5 = − 25, −4#−3 = −12 and 3#−3 = 9 then find the value of 4#5.",
+      "options": {
+        "A": "49",
+        "B": "− 56",
+        "C": "− 17",
+        "D": "− 20"
+      }
+    },
+    {
+      "n": 46,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 11*8 = 6, 19*7 = 24 and 14*6 = 16 then find the value of 12*9.",
+      "options": {
+        "A": "18",
+        "B": "12",
+        "C": "8",
+        "D": "6"
+      }
+    },
+    {
+      "n": 47,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 7%8 = 30, 4%3 = 14 and 4%9 = 26 then find the value of 1%8 = ?",
+      "options": {
+        "A": "29",
+        "B": "10",
+        "C": "18",
+        "D": "22"
+      }
+    },
+    {
+      "n": 48,
+      "page": 50,
+      "section": "Main",
+      "stem": "If −2@−4 = −8, −1@−8 = −8 and −1@6 = 6 then find the value of −1@7.",
+      "options": {
+        "A": "95",
+        "B": "−88",
+        "C": "82",
+        "D": "7"
+      }
+    },
+    {
+      "n": 49,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 21 (49) 14 and 159 (169) 146, then what is the value of 'A' in 56 (A) 44?",
+      "options": {
+        "A": "144",
+        "B": "121",
+        "C": "225",
+        "D": "256"
+      }
+    },
+    {
+      "n": 50,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 2³ # 4³ @ 3³ = 45 and 3³ # 5³ @ 4³ = 88 then 4³ # 2³ @ 1³ = ?",
+      "options": {
+        "A": "48",
+        "B": "71",
+        "C": "56",
+        "D": "65"
+      }
+    },
+    {
+      "n": 51,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 11 # 2 @ 6 = 78 and 15 # 4 @ 8 = 152, then 17 # 6 @ 7 = ?",
+      "options": {
+        "A": "161",
+        "B": "143",
+        "C": "221",
+        "D": "157"
+      }
+    },
+    {
+      "n": 52,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 2 = 0, 5 = 1 and 8 = 4, then 11 = ?",
+      "options": {
+        "A": "8",
+        "B": "9",
+        "C": "10",
+        "D": "6"
+      }
+    },
+    {
+      "n": 53,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 34 × 15 = 495 and 43 × 12 = 504, then 98 × 17 = ?",
+      "options": {
+        "A": "1649",
+        "B": "1683",
+        "C": "1763",
+        "D": "1751"
+      }
+    },
+    {
+      "n": 54,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 26 (52) 8 and 48 (192) 16, then what is the value of 'A' in A (175) 14?",
+      "options": {
+        "A": "50",
+        "B": "25",
+        "C": "35",
+        "D": "40"
+      }
+    },
+    {
+      "n": 55,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 8*9 = 217 and 6*10 = 196, then 11*7 = ?",
+      "options": {
+        "A": "186",
+        "B": "247",
+        "C": "242",
+        "D": "172"
+      }
+    },
+    {
+      "n": 56,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 6 # 8 = 10 and 5 # 12 = 13, then 9 # 40 = ?",
+      "options": {
+        "A": "47",
+        "B": "63",
+        "C": "41",
+        "D": "53"
+      }
+    },
+    {
+      "n": 57,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 7 (110) 4 and 19 (930) 12, then what is the value of 'A' in 16 (A), 9?",
+      "options": {
+        "A": "580",
+        "B": "600",
+        "C": "640",
+        "D": "700"
+      }
+    },
+    {
+      "n": 58,
+      "page": 50,
+      "section": "Main",
+      "stem": "If 15 (196) 29 and 16 (100) 6, then what is the value of 'A' in 31(A) 48?",
+      "options": {
+        "A": "361",
+        "B": "256",
+        "C": "324",
+        "D": "289"
+      }
+    },
+    {
+      "n": 59,
+      "page": 51,
+      "section": "Main",
+      "stem": "If 7² A7B 9 = 16 and 5² A5 B 7 = 12, then 9² A3 B 8 = ?",
+      "options": {
+        "A": "17",
+        "B": "92",
+        "C": "86",
+        "D": "35"
+      }
+    },
+    {
+      "n": 60,
+      "page": 51,
+      "section": "Main",
+      "stem": "If 6A7B3 = 60 and 11A9B6 = 165, then 10A11B5 = ?",
+      "options": {
+        "A": "105",
+        "B": "160",
+        "C": "165",
+        "D": "180"
+      }
+    },
+    {
+      "n": 61,
+      "page": 51,
+      "section": "Main",
+      "stem": "If 436 = 3, 783 = 8 and 654 is 5, then 896 = ?",
+      "options": {
+        "A": "5",
+        "B": "9",
+        "C": "4",
+        "D": "6"
+      }
+    },
+    {
+      "n": 62,
+      "page": 51,
+      "section": "Main",
+      "stem": "If 32+ 21 2809 and 27 + 15 = 1764, then 31 + 13 = ?",
+      "options": {
+        "A": "1444",
+        "B": "2116",
+        "C": "1936",
+        "D": "2304"
+      }
+    },
+    {
+      "n": 63,
+      "page": 51,
+      "section": "Main",
+      "stem": "If 17* 36 = 17 and 41*56 = 16, then 41*32 = ?",
+      "options": {
+        "A": "6",
+        "B": "12",
+        "C": "10",
+        "D": "8"
+      }
+    },
+    {
+      "n": 64,
+      "page": 51,
+      "section": "Main",
+      "stem": "If 14 $ 8 = 91 and 18 $ 4 = 51, then 21 $ 9 = ?",
+      "options": {
+        "A": "160",
+        "B": "155",
+        "C": "151",
+        "D": "168"
+      }
+    },
+    {
+      "n": 65,
+      "page": 51,
+      "section": "Main",
+      "stem": "If 43 P 16 M 19 = 46 and 11 M 13 P 12 = 12 then 16 P 18 M 24 = ?",
+      "options": {
+        "A": "32",
+        "B": "22",
+        "C": "30",
+        "D": "24"
+      }
+    },
+    {
+      "n": 66,
+      "page": 51,
+      "section": "Main",
+      "stem": "If 24 N 16 A 4 = 12 and 14 A 18 N 12 = 20, then 48 N 16 A 15 = ?",
+      "options": {
+        "A": "47",
+        "B": "59",
+        "C": "43",
+        "D": "51"
+      }
+    },
+    {
+      "n": 67,
+      "page": 51,
+      "section": "Main",
+      "stem": "If 'P' means '+', 'Q' means '÷', 'R' means '−' and 'S' means '×', then which of the following equation is true ?",
+      "options": {
+        "A": "16S8Q4P19R23 = 27",
+        "B": "11P16Q23S112R14 = 71",
+        "C": "13Q182S42P16R4 = 15",
+        "D": "16P19Q57S12R11 = 7"
+      }
+    },
+    {
+      "n": 68,
+      "page": 51,
+      "section": "Main",
+      "stem": "If 'A' means '+', 'B' means '×', 'C' means '÷' and 'D' means '−', then ?",
+      "options": {
+        "A": "57",
+        "B": "49",
+        "C": "63",
+        "D": "47"
+      }
+    },
+    {
+      "n": 69,
+      "page": 51,
+      "section": "Main",
+      "stem": "If '+' means' divided by, '÷' means 'multiplied', '×' means 'minus' and '−' means 'plus' then which of the following is correct?",
+      "options": {
+        "A": "36 × 12 + 14 ÷ 10 − 4 = 32",
+        "B": "36 + 12 ÷ 14 × 10 − 4 = 36",
+        "C": "36 ÷ 12 − 14 + 10 × 4 = 400",
+        "D": "36 ÷ 12 × 14 + 10 − 4 = 440"
+      }
+    },
+    {
+      "n": 70,
+      "page": 51,
+      "section": "Main",
+      "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged, will correctly solve he given mathematical equation ?\n12 ÷ 4 × 16 + 2 − 7 = 43",
+      "options": {
+        "A": "2 and 7, + and −",
+        "B": "7 and 16, − and ×",
+        "C": "4 and 7, × and ÷",
+        "D": "7 and 12, + and −"
+      }
+    },
+    {
+      "n": 71,
+      "page": 51,
+      "section": "Main",
+      "stem": "Which of the following pairs of signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n25 + 5 − 210 ÷ 15 × 5 = 116",
+      "options": {
+        "A": "+ and −",
+        "B": "÷ and +",
+        "C": "÷ and ×",
+        "D": "+ and ×"
+      }
+    },
+    {
+      "n": 72,
+      "page": 51,
+      "section": "Main",
+      "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n36 ÷ 4 × 12 + 14 − 7 = 5",
+      "options": {
+        "A": "7 and 36, − and ×",
+        "B": "12 and 7, + and −",
+        "C": "14 and 7, × and ÷",
+        "D": "36 and 12, + and −"
+      }
+    },
+    {
+      "n": 73,
+      "page": 51,
+      "section": "Main",
+      "stem": "Which of the following pairs of signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n20 + 5 − 25 ÷ 5 × 5 = 100",
+      "options": {
+        "A": "+ and ×",
+        "B": "÷ and ×",
+        "C": "+ and −",
+        "D": "÷ and +"
+      }
+    },
+    {
+      "n": 74,
+      "page": 51,
+      "section": "Main",
+      "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n228 ÷ 12 × 14 + 38 − 57 = 129",
+      "options": {
+        "A": "12 and 38, + and −",
+        "B": "12 and 38, × and ÷",
+        "C": "57 and 38, + and ÷",
+        "D": "14 and 38, × and ÷"
+      }
+    },
+    {
+      "n": 75,
+      "page": 51,
+      "section": "Main",
+      "stem": "Which of the following pairs of signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n15 + 5 − 80 ÷ 20 × 5 = 76",
+      "options": {
+        "A": "÷ and ×",
+        "B": "÷ and +",
+        "C": "+ and −",
+        "D": "+ and ×"
+      }
+    },
+    {
+      "n": 76,
+      "page": 51,
+      "section": "Main",
+      "stem": "Which of the following pairs of numbers and signs,when their positions are interchanged, will correctly solve the given mathematical equation ?\n20 ÷ 4 × 10 + 28 − 14 = −6",
+      "options": {
+        "A": "14 and 20, − and ×.",
+        "B": "20 and 10, + and −",
+        "C": "14 and 28, × and +",
+        "D": "4 and 10, + and −"
+      }
+    },
+    {
+      "n": 77,
+      "page": 51,
+      "section": "Main",
+      "stem": "Which of the following pairs of signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n15 + 10 − 25 ÷ 6 × 5 = −5",
+      "options": {
+        "A": "+ and ×",
+        "B": "÷ and ×",
+        "C": "+ and −",
+        "D": "+ and −"
+      }
+    },
+    {
+      "n": 78,
+      "page": 51,
+      "section": "Main",
+      "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n469 ÷ 67 × 192 − 238 + 12 = 130",
+      "options": {
+        "A": "192 and 238, + and ÷",
+        "B": "12 and 192, + and −",
+        "C": "12 and 192, + and ÷",
+        "D": "12 and 238 × and ÷"
+      }
+    },
+    {
+      "n": 79,
+      "page": 51,
+      "section": "Main",
+      "stem": "What will be the value of the following equation if '÷' means 'addition', '+' means 'subtraction', '−' means 'multiplication' and '×' means 'division' ?\n28 × 4 − 9 + 11 ÷ 2 = ?",
+      "options": {
+        "A": "56",
+        "B": "58",
+        "C": "54",
+        "D": "52"
+      }
+    },
+    {
+      "n": 80,
+      "page": 51,
+      "section": "Main",
+      "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged will correctly solve the given mathematical equation ?\n515 + 832 − 48 × 32 ÷ 8 = 1755",
+      "options": {
+        "A": "32 and 48, + and −",
+        "B": "832 and 48, − and ×",
+        "C": "32 and 48, −and ÷",
+        "D": "515 and 48, + and ÷"
+      }
+    },
+    {
+      "n": 81,
+      "page": 51,
+      "section": "Main",
+      "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n137 + 548 ÷ 274 × 18 − 228 = 430",
+      "options": {
+        "A": "548 and 137, + and ÷",
+        "B": "137 and 274, + and ÷",
+        "C": "137 and 274, + and −",
+        "D": "18 and 548, × and ÷"
+      }
+    },
+    {
+      "n": 82,
+      "page": 51,
+      "section": "Main",
+      "stem": "Which of the following paris of numbers and signs, when their positions are interchanged will correctly solve the given mathematical equition ?\n448 + 151 − 28 ÷ 14 × 15 = 75",
+      "options": {
+        "A": "28 and 15, × and +",
+        "B": "28 and 448, × and ÷",
+        "C": "151 and 28, + and ÷",
+        "D": "448 and 151, + and ÷"
+      }
+    },
+    {
+      "n": 83,
+      "page": 51,
+      "section": "Main",
+      "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged, will correctly solve the given mathematical equation ?\n38 × 18 ÷ 64 − 418 + 26 = 521",
+      "options": {
+        "A": "26 and 18, + and ÷",
+        "B": "26 and 38, + and −",
+        "C": "26 and 38, + and ÷",
+        "D": "418 and 64, × and ÷"
+      }
+    },
+    {
+      "n": 84,
+      "page": 52,
+      "section": "Main",
+      "stem": "Which of the following pairs of numbers and signs, when their positions are interchanged will correctly solve the given mathematical equation ?\n20 + 696 × 144 ÷ 58 − 864 = 884",
+      "options": {
+        "A": "58 and 864, × and ÷",
+        "B": "58 and 696, + and ÷",
+        "C": "144 and 58, × and ÷",
+        "D": "696 and 20, + and −"
+      }
+    },
+    {
+      "n": 85,
+      "page": 52,
+      "section": "Main",
+      "stem": "Choose the option that can appropriately replace the '?'\n3³ + 4³ + 5³ ? 6³",
+      "options": {
+        "A": "<",
+        "B": ">",
+        "C": "<>",
+        "D": "="
+      }
+    },
+    {
+      "n": 86,
+      "page": 52,
+      "section": "Main",
+      "stem": "If A * B = (A + B) (A − B), then (12 * 7) * (11 * 8) = ?",
+      "options": {
+        "A": "5876",
+        "B": "5776",
+        "C": "4376",
+        "D": "3989"
+      }
+    },
+    {
+      "n": 87,
+      "page": 52,
+      "section": "Main",
+      "stem": "If A * B * B * C = A² + B² + C² + 2(AB + BC + CA) then (3 * 4 * 7) = ?",
+      "options": {
+        "A": "224",
+        "B": "196",
+        "C": "138",
+        "D": "216"
+      }
+    },
+    {
+      "n": 88,
+      "page": 52,
+      "section": "Main",
+      "stem": "If the given interchanges are made in signs and numbers, which one of the four equations would be correct ?\nGiven interchanges : Signs '+' and '−'; numbers 5 and 8.",
+      "options": {
+        "A": "82 − 35 + 55 = 2",
+        "B": "82 − 35 + 55 = 102",
+        "C": "85 − 38 + 85 = 132",
+        "D": "52 − 35 + 55 = 72"
+      }
+    },
+    {
+      "n": 89,
+      "page": 52,
+      "section": "Main",
+      "stem": "Which of the following Pairs of numbers and signs should be interchanged to make the given mathematical equation correct ?\n6 ÷ 3 × 2 + 4 − 7 = 26.5",
+      "options": {
+        "A": "6 and 2, + and −",
+        "B": "4 and 7, × and ÷",
+        "C": "3 and 7, + and −",
+        "D": "3 and 6, − and ×"
+      }
+    },
+    {
+      "n": 90,
+      "page": 52,
+      "section": "Main",
+      "stem": "If 5 * 3 = 16, 7 * 3 = 40, then 9 * 3 = ?",
+      "options": {
+        "A": "70",
+        "B": "72",
+        "C": "75",
+        "D": "80"
+      }
+    },
+    {
+      "n": 91,
+      "page": 52,
+      "section": "Main",
+      "stem": "If P = 6, J = 4, L = 8, M = 24, then M × J ÷ L + J = ?",
+      "options": {
+        "A": "8",
+        "B": "16",
+        "C": "52",
+        "D": "0"
+      }
+    },
+    {
+      "n": 92,
+      "page": 52,
+      "section": "Main",
+      "stem": "If 782 = 25 and 671 = 22, then 484 = ?",
+      "options": {
+        "A": "24",
+        "B": "23",
+        "C": "17",
+        "D": "29"
+      }
+    },
+    {
+      "n": 93,
+      "page": 52,
+      "section": "Main",
+      "stem": "If 782 = 20, 474 = 18, then 885 = ?",
+      "options": {
+        "A": "19",
+        "B": "24",
+        "C": "21",
+        "D": "None of these"
+      }
+    },
+    {
+      "n": 94,
+      "page": 52,
+      "section": "Main",
+      "stem": "If 5566 = 22, 1753 = 16, 3624 = 15, then 7254 = ?",
+      "options": {
+        "A": "15",
+        "B": "16",
+        "C": "17",
+        "D": "18"
+      }
+    },
+    {
+      "n": 95,
+      "page": 52,
+      "section": "Main",
+      "stem": "If '+' means '×', '−' means '÷', '×' means '+', '÷' means '−', then\n(18 + 10 × 20) − 8 ÷ 6 = ?",
+      "options": {
+        "A": "35",
+        "B": "19",
+        "C": "26",
+        "D": "2"
+      }
+    },
+    {
+      "n": 96,
+      "page": 52,
+      "section": "Main",
+      "stem": "If 532 + 781 = 26 and 862 + 920 = 27, what is the value of 796 + 354 = ?",
+      "options": {
+        "A": "31",
+        "B": "34",
+        "C": "30",
+        "D": "26"
+      }
+    },
+    {
+      "n": 97,
+      "page": 52,
+      "section": "Main",
+      "stem": "Some equations are solved on the basis of a certain system. On the same basis, find out the correct answer for the unsolved question ?\nIf 8 × 5 = 04, 8 × 2 = 61, then 8 × 10 =?",
+      "options": {
+        "A": "80",
+        "B": "0",
+        "C": "08",
+        "D": "None of these"
+      }
+    },
+    {
+      "n": 98,
+      "page": 52,
+      "section": "Main",
+      "stem": "If 35 × 16 = 90, 46 × 22 = 96, 29 × 48 = 578, then 17 × 24 = ?",
+      "options": {
+        "A": "56",
+        "B": "286",
+        "C": "48",
+        "D": "64"
+      }
+    },
+    {
+      "n": 99,
+      "page": 52,
+      "section": "Main",
+      "stem": "Which sequence of mathematical symbols can replace * in the given equation to balance the equation ?\n7 * 7 * 2 * 1 = 12",
+      "options": {
+        "A": "× ÷ −",
+        "B": "+ − ×",
+        "C": "÷ + −",
+        "D": "× − ×"
+      }
+    },
+    {
+      "n": 100,
+      "page": 52,
+      "section": "Main",
+      "stem": "If 'A' means '÷', B means '−', C means '×' and 'D' means '+', then find the value of the following equation.\n16 D 64 A 4 B 4 C 3 = ?",
+      "options": {
+        "A": "20",
+        "B": "15",
+        "C": "9",
+        "D": "17"
+      }
+    },
+    {
+      "n": 101,
+      "page": 52,
+      "section": "Main",
+      "stem": "If '+' means \"Minus\", '−' means \"Multiply\", '×' means \"Add\", then what is the value od 10 × 5 + 3 − 2 :",
+      "options": {
+        "A": "24",
+        "B": "52",
+        "C": "9",
+        "D": "10"
+      }
+    },
+    {
+      "n": 102,
+      "page": 52,
+      "section": "Main",
+      "stem": "If 'A' means add, 'B' means subtract, 'C' means multiply and 'D' means divide, then what would be the answer of the equation ?\n15 D 5 C 2 A 3 =",
+      "options": {
+        "A": "13",
+        "B": "11",
+        "C": "03",
+        "D": "09"
+      }
+    },
+    {
+      "n": 103,
+      "page": 52,
+      "section": "Main",
+      "stem": "If '+' means '÷', '÷' means '−', '−' means '×' and '×' means '+', then what would be the answer of the equation ?\n12 + 6 ÷ 3 − 2 × 8 =",
+      "options": {
+        "A": "−2",
+        "B": "2",
+        "C": "4",
+        "D": "8"
+      }
+    },
+    {
+      "n": 104,
+      "page": 52,
+      "section": "Main",
+      "stem": "If '+' means '×', '×' means '+', '÷' means '−' and '−' means '+' then what would be the answer of the equation ?\n16 × 3 + 5 − 2 ÷ 4 = ?",
+      "options": {
+        "A": "9",
+        "B": "10",
+        "C": "19",
+        "D": "None of these"
+      }
+    },
+    {
+      "n": 105,
+      "page": 52,
+      "section": "Main",
+      "stem": "If '+' means '÷', '×' means '−', '÷' means '+' and '−' means '×', then what would be the answer of the equation ?\n16 ÷ 8 × 6 − 2 + 12 = ?",
+      "options": {
+        "A": "22",
+        "B": "24",
+        "C": "23",
+        "D": "20"
+      }
+    },
+    {
+      "n": 106,
+      "page": 52,
+      "section": "Main",
+      "stem": "If '+' means '−', '−' means '×', '×' means '÷' and '÷' means '+', then what would be the answer of the equation ?\n15 × 5 ÷ 10 + 5 − 3 = ?",
+      "options": {
+        "A": "9.5",
+        "B": "0",
+        "C": "−2",
+        "D": "24"
+      }
+    },
+    {
+      "n": 107,
+      "page": 52,
+      "section": "Main",
+      "stem": "If + means ÷, ÷ means −, − means × and × means + then 12 + 6 ÷ 3 − 2 × 8 = ?",
+      "options": {
+        "A": "−2",
+        "B": "4",
+        "C": "2",
+        "D": "8"
+      }
+    },
+    {
+      "n": 108,
+      "page": 52,
+      "section": "Main",
+      "stem": "If + means ÷, × means −, − means × & ÷ means +, then 38 + 19 − 16 × 17 ÷ 3 = ?",
+      "options": {
+        "A": "16",
+        "B": "19",
+        "C": "18",
+        "D": "12"
+      }
+    },
+    {
+      "n": 109,
+      "page": 52,
+      "section": "Main",
+      "stem": "If '+' stands for '−', '−' stands for '×', '×' stands for '÷' and '÷' stands for '+'. Then, what is the value of 56 × 7 ÷ 13 − 11 + 15 − 8 ÷ 2 − 7?",
+      "options": {
+        "A": "30",
+        "B": "60",
+        "C": "95",
+        "D": "45"
+      }
+    },
+    {
+      "n": 110,
+      "page": 52,
+      "section": "Main",
+      "stem": "If a denotes × b denotes ÷, c denotes + and d denotes −, then 8 a 3 c 24 b 12 d 19 = ?",
+      "options": {
+        "A": "17",
+        "B": "7",
+        "C": "14",
+        "D": "8"
+      }
+    },
+    {
+      "n": 111,
+      "page": 52,
+      "section": "Main",
+      "stem": "If P denotes +, Q denotes −, R denotes '÷', and S denotes ×, then : 15S24R1Q5P8 = ?",
+      "options": {
+        "A": "115",
+        "B": "363",
+        "C": "55",
+        "D": "45"
+      }
+    },
+    {
+      "n": 112,
+      "page": 52,
+      "section": "Main",
+      "stem": "If 6+3=18, 12-2=6, 8 ÷ 2 = 10, then 8-2 ÷ 3 is :",
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "8",
+        "D": "9"
+      }
+    },
+    {
+      "n": 113,
+      "page": 52,
+      "section": "Main",
+      "stem": "If + means ÷ , ÷ means −, − means ×, × means +, then 12 + 6/3 − 2 × 8 = ?",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "8",
+        "D": "5"
+      }
+    },
+    {
+      "n": 114,
+      "page": 52,
+      "section": "Main",
+      "stem": "If '+' stands for '×', '×' stands for '+', '÷' stands for '−' then what is the value of 7 + 21 × 81 ÷ 9 − 3 × 14",
+      "options": {
+        "A": "210",
+        "B": "230",
+        "C": "270",
+        "D": "280"
+      }
+    }
+  ]
+}

@@ -27,6 +27,7 @@ export const OIR_CHAPTERS: readonly OirChapter[] = [
   { slug: 'ranking', title: 'Ranking', reasoningType: 'ranking', summary: 'Places in a row, ranks in a class' },
   { slug: 'seating', title: 'Seating Arrangement', reasoningType: 'seating', summary: 'Rows, tables and who sits where' },
   { slug: 'series', title: 'Series', reasoningType: 'series', summary: 'Number and letter series' },
+  { slug: 'math-operations', title: 'Mathematical Operations', reasoningType: 'mathematical_operations', summary: 'Swapped signs, coded sums, number rules' },
 ];
 
 export function chapterBySlug(slug: string): OirChapter | undefined {
