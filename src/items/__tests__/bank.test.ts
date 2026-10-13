@@ -36,6 +36,21 @@ describe('validateItem', () => {
     expect(() => validateItem({ ...item, payload: { ...item.payload, passage: '' } })).toThrow(/passage/);
   });
 
+  it('keeps the printed tables of a number-grid question, a blank cell as an empty string', () => {
+    const item = oir('q1', 'missing_term');
+    const tables = [[['13', '26', '39'], ['30', '42', '?']], [['', '4', ''], ['4', '10', '9'], ['', '16', '']]];
+    expect((validateItem({ ...item, payload: { ...item.payload, tables } }).payload as OirPayload).tables).toEqual(tables);
+  });
+
+  it('refuses a table with no rows, a ragged row, or nothing printed in it', () => {
+    const item = oir('q1', 'missing_term');
+    const bad = (tables: unknown) => () => validateItem({ ...item, payload: { ...item.payload, tables } });
+    expect(bad([])).toThrow(/tables/);
+    expect(bad([[]])).toThrow(/tables/);
+    expect(bad([[['1', '2'], ['3']]])).toThrow(/tables/);
+    expect(bad([[['', ''], ['', '']]])).toThrow(/tables/);
+  });
+
   it('every row of the seeded WAT bank validates as a payload', () => {
     const { items: rows } = JSON.parse(readFileSync('content/wat-items.json', 'utf8')) as { items: Array<{ payload: unknown }> };
     expect(rows.length).toBe(60);

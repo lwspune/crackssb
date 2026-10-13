@@ -133,4 +133,43 @@ describe('chapter practice', () => {
     render(<PracticeRunner items={[puzzle]} answer={fakeAnswer()} doneHref="/practise/oir" />);
     expect(screen.getByText(puzzle.stem).className).not.toMatch(/text-lg/);
   });
+
+  it('draws a number-grid question as its printed tables, in place of the flattened stem', () => {
+    const grid: PracticeItem = {
+      id: 'g1',
+      stem: '13 26 39 / 30 42 ? / 17 16 15',
+      tables: [[['13', '26', '39'], ['30', '42', '?'], ['17', '16', '15']]],
+      options: { A: '40', B: '54', C: '45', D: '60' },
+    };
+    render(<PracticeRunner items={[grid]} answer={fakeAnswer()} doneHref="/practise/oir" />);
+    const table = screen.getByRole('table');
+    expect(screen.getAllByRole('row')).toHaveLength(3);
+    expect(screen.getAllByRole('cell').map((c) => c.textContent)).toEqual(['13', '26', '39', '30', '42', '?', '17', '16', '15']);
+    expect(table.querySelector('[data-missing]')?.textContent).toBe('?');
+    expect(screen.queryByText(grid.stem)).toBeNull();
+  });
+
+  it('labels each of several tables, and leaves a blank cell of a cross undrawn', () => {
+    const crosses: PracticeItem = {
+      id: 'g2',
+      stem: 'cross',
+      tables: [
+        [['', '4', ''], ['4', '10', '9'], ['', '16', '']],
+        [['', '1', ''], ['2', '?', '8'], ['', '9', '']],
+      ],
+      options: { A: '12', B: '6', C: '5', D: '7' },
+    };
+    render(<PracticeRunner items={[crosses]} answer={fakeAnswer()} doneHref="/practise/oir" />);
+    const tables = screen.getAllByRole('table');
+    expect(tables.map((t) => t.getAttribute('aria-label'))).toEqual(['Figure 1 of 2', 'Figure 2 of 2']);
+    const blanks = tables[0].querySelectorAll('td[data-blank]');
+    expect(blanks).toHaveLength(4);
+    for (const b of blanks) expect(b.className).not.toMatch(/(^|\s)border(\s|$)/);
+  });
+
+  it('keeps the line breaks of a stem that sets an equation or a figure on lines of its own', () => {
+    const lines: PracticeItem = { id: 'l1', stem: 'Which two signs should be interchanged?\n26 + 2 ÷ 4 − 8 × 25 = 30', options: { A: 'a', B: 'b', C: 'c', D: 'd' } };
+    render(<PracticeRunner items={[lines]} answer={fakeAnswer()} doneHref="/practise/oir" />);
+    expect(screen.getByText(/Which two signs/).className).toMatch(/whitespace-pre-line/);
+  });
 });

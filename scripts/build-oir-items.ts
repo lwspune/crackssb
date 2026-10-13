@@ -43,7 +43,7 @@ interface SourceFile {
   pages: [number, number];
   /** `text: null` when the chapter prints no direction; its questions then carry none. */
   directions: { section: string; text: string | null; passage?: string }[];
-  questions: { n: number; page: number; section: string; stem: string; options: Record<'A' | 'B' | 'C' | 'D', string> }[];
+  questions: { n: number; page: number; section: string; stem: string; options: Record<'A' | 'B' | 'C' | 'D', string>; tables?: string[][][] }[];
 }
 
 /** One row per chapter ingested. `idPrefix` is permanent: an id, once seeded, never changes. */
@@ -104,6 +104,7 @@ for (const chapter of CHAPTERS) {
         reasoningType: chapter.reasoningType,
         ...(direction ? { direction } : {}),
         ...(section.passage ? { passage: section.passage } : {}),
+        ...(q.tables ? { tables: q.tables } : {}),
       },
       difficulty: UNRATED_DIFFICULTY,
       active: true,

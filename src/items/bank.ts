@@ -27,6 +27,12 @@ export interface OirPayload {
   readonly direction?: string;
   /** The information a group of questions shares (a seating plan read once, asked about several times). */
   readonly passage?: string;
+  /**
+   * The printed tables of a number-grid question (a grid, a cross, several
+   * boxes side by side), each a list of rows. '' is a blank cell, left
+   * undrawn. Shown in place of `stem`, which keeps the same numbers as text.
+   */
+  readonly tables?: readonly (readonly (readonly string[])[])[];
 }
 
 export interface WatPayload {
@@ -63,6 +69,16 @@ const oirPayload = z.object({
   assetPath: z.string().min(1).optional(),
   direction: z.string().min(1).optional(),
   passage: z.string().min(1).optional(),
+  tables: z
+    .array(
+      z
+        .array(z.array(z.string()).min(1))
+        .min(1)
+        .refine((rows) => rows.every((r) => r.length === rows[0].length), 'every row of a table has the same number of cells')
+        .refine((rows) => rows.some((r) => r.some((c) => c !== '')), 'a table prints something'),
+    )
+    .min(1)
+    .optional(),
 });
 
 const watPayload = z.object({ word: z.string().min(1), valence: z.string().optional() });

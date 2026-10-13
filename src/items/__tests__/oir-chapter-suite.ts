@@ -21,6 +21,8 @@ export interface SourceQuestion {
   readonly options: Readonly<Record<OptionLabel, string>>;
   /** A book name here matched a real candidate's and was replaced (D21, D27). */
   readonly renamed?: boolean;
+  /** The printed tables of a number-grid question; `stem` holds the same numbers as text. */
+  readonly tables?: readonly (readonly (readonly string[])[])[];
 }
 
 export interface SourceFile {
@@ -109,6 +111,13 @@ export function chapterSuite(spec: ChapterSpec): void {
       if (questions.some((q) => q.renamed)) expect(source.note ?? '').toMatch(/D27/);
     });
 
+    it('gives every printed table the numbers its stem holds, in reading order', () => {
+      const words = (s: string) => s.split(/[\s/]+/).filter(Boolean);
+      for (const q of questions.filter((x) => x.tables)) {
+        expect(words(q.stem), `Q${q.n}`).toEqual(q.tables!.flat(2).filter((c) => c !== ''));
+      }
+    });
+
     it('keeps every question within the chapter pages, under a printed direction', () => {
       const [first, last] = [source.pages[0], source.pages[source.pages.length - 1]];
       for (const q of questions) {
@@ -170,6 +179,7 @@ export function chapterSuite(spec: ChapterSpec): void {
         const section = source.directions.find((d) => d.section === q.section)!;
         expect(item.payload.direction, `Q${q.n}`).toBe(k.direction ?? section.text ?? undefined);
         expect((item.payload as { passage?: string }).passage, `Q${q.n} passage`).toBe(section.passage);
+        expect((item.payload as { tables?: unknown }).tables, `Q${q.n} tables`).toEqual(q.tables);
         expect(item.key_basis).toBe('derived');
         expect(item.rule).toBe(k.rule);
         expect(item.source_ref).toBe(`ch${source.chapter} p${q.page} q${q.n}`);

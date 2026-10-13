@@ -17,6 +17,8 @@ export interface PracticeItem {
   readonly direction?: string;
   /** Information shared by a group of questions, shown after the direction and before the question. */
   readonly passage?: string;
+  /** A number-grid question's printed tables, drawn in place of the stem. '' is a blank cell. */
+  readonly tables?: readonly (readonly (readonly string[])[])[];
   readonly options: Readonly<Record<OptionLabel, string>>;
 }
 
@@ -46,6 +48,37 @@ const FULL_SIZE_TOKEN_CHARS = 12;
 const PROSE_WORDS = /\b(the|of|is|to|which|what|how|if|in|from|are|will|and)\b/gi;
 const isProse = (stem: string) => (stem.match(PROSE_WORDS) ?? []).length >= 2;
 
+/** A number-grid question as the book prints it: each table bordered cell by cell, a blank cell undrawn, the missing term marked. */
+function PrintedTables({ tables }: { readonly tables: NonNullable<PracticeItem['tables']> }) {
+  return (
+    <div className="mt-4 flex flex-wrap items-start gap-4">
+      {tables.map((rows, t) => (
+        <table key={t} aria-label={`Figure ${t + 1} of ${tables.length}`} className="border-collapse text-center text-lg font-semibold tabular-nums sm:text-xl">
+          <tbody>
+            {rows.map((row, r) => (
+              <tr key={r}>
+                {row.map((cell, c) =>
+                  cell === '' ? (
+                    <td key={c} data-blank="" className="min-w-11 px-2 py-1.5" />
+                  ) : (
+                    <td
+                      key={c}
+                      {...(cell === '?' ? { 'data-missing': '' } : {})}
+                      className={`min-w-11 border border-border px-2 py-1.5 ${cell === '?' ? 'bg-accent text-brand-accent' : ''}`}
+                    >
+                      {cell}
+                    </td>
+                  ),
+                )}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ))}
+    </div>
+  );
+}
+
 /** Keys typed into a field belong to the field. */
 function typingIn(target: EventTarget | null): boolean {
   if (!(target instanceof HTMLElement)) return false;
@@ -60,7 +93,7 @@ export function PracticeRunner({ items, answer, doneHref }: Props) {
   const [tally, setTally] = useState({ answered: 0, right: 0 });
   const [finished, setFinished] = useState(false);
   const nextRef = useRef<HTMLButtonElement>(null);
-  const stemRef = useRef<HTMLParagraphElement>(null);
+  const stemRef = useRef<HTMLDivElement>(null);
 
   const item = items[index];
   const last = index === items.length - 1;
@@ -153,9 +186,9 @@ export function PracticeRunner({ items, answer, doneHref }: Props) {
         </p>
         {item.direction && <p className="mt-3 text-sm text-muted-foreground">{item.direction}</p>}
         {item.passage && <p className="mt-3 whitespace-pre-line rounded-lg bg-secondary p-4 text-sm leading-relaxed text-secondary-foreground">{item.passage}</p>}
-        <p ref={stemRef} tabIndex={-1} className={`mt-2 break-words tabular-nums outline-none ${stemSize}`}>
-          {item.stem}
-        </p>
+        <div ref={stemRef} tabIndex={-1} className="outline-none">
+          {item.tables ? <PrintedTables tables={item.tables} /> : <p className={`mt-2 whitespace-pre-line break-words tabular-nums ${stemSize}`}>{item.stem}</p>}
+        </div>
 
         <div className={`mt-6 grid gap-3 ${stacked ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-2'}`} role="group" aria-label="Options">
           {OPTION_LABELS.map((label) => {
