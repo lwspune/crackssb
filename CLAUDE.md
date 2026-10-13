@@ -32,7 +32,7 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-2325 tests passing · npm test        lint clean · npm run lint        npm run build green
+2420 tests passing · npm test        lint clean · npm run lint        npm run build green
 74 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
@@ -44,7 +44,8 @@ build` checks app code only, via `tsconfig.build.json`.
 rule come back only after an answer (`answer_practice`), every answer kept for progress. Every verbal chapter of the book
 is seeded (1-15, 17): **1,482 verbal questions**, 94 held, keys derived (D24). Non-verbal (D29): Ch28 Counting Figures
 (42, redrawn as lines, counted by code) Ch18 Cubes and Dice (65, solved by a cube model), Ch16 Venn (44)
-and Ch25 word mirrors (23); picture answers
+Ch25 word mirrors (23) and Ch24 paper folding (58, opened
+out by code); picture answers
 show drawn options in the buttons; number grids show as tables (D28). Timed OIR
 mocks are unblocked (SUGGESTIONS.md has the plan).
 
@@ -93,7 +94,7 @@ src/scoring/
   report/findings.ts     the reader's input contract (zod) — D16 enforced on parse, one FORBIDDEN regex
 src/items/               item bank — D19, D24
   bank.ts                `items` row validated per type · assembleBooklet strips the key from what is released
-  oir/                   OIR from books (D24): syllogism.ts the Venn-region solver for Ch17; figure.ts redrawn figures + counters, dice.ts cube solver, mirror.ts mirror/water text (D29); key.ts the key-entry shape and check kinds (computed, codeSet, odd, letters…)
+  oir/                   OIR from books (D24): syllogism.ts the Venn-region solver for Ch17; figure.ts redrawn figures + counters, dice.ts cube solver, mirror.ts mirror/water text, fold.ts paper folding (D29); key.ts the key-entry shape and check kinds (computed, codeSet, odd, letters…)
                          · check.ts runnable-rule helpers (walk, solveCodes, charMap, alphabet positions…) + splitKey · seed.ts file -> rows
                          <book>-<chapter>.ts the derived key per chapter: rule in words AND as code, held questions with reasons
                          (src/items/__tests__/oir-chapter-suite.ts runs the checks every chapter must pass)
@@ -139,7 +140,7 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 2325 tests (never touches the database)
+npm test              # 2420 tests (never touches the database)
 npm run test:db       # 74 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
