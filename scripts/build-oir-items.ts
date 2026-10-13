@@ -38,6 +38,7 @@ import { AGRAWAL_CH28_COUNTING_FIGURES } from '../src/items/oir/agrawal-ch28-cou
 import { AGRAWAL_CH18_CUBES_DICE } from '../src/items/oir/agrawal-ch18-cubes-dice.ts';
 import { AGRAWAL_CH16_VENN_DIAGRAM } from '../src/items/oir/agrawal-ch16-venn-diagram.ts';
 import { AGRAWAL_CH25_MIRROR_WATER } from '../src/items/oir/agrawal-ch25-mirror-water.ts';
+import { AGRAWAL_CH24_PAPER_FOLDING } from '../src/items/oir/agrawal-ch24-paper-folding.ts';
 import { AGRAWAL_CH14_CALENDAR_CLOCK } from '../src/items/oir/agrawal-ch14-calendar-clock.ts';
 import { AGRAWAL_CH13_MATHEMATICAL_OPERATIONS } from '../src/items/oir/agrawal-ch13-mathematical-operations.ts';
 import { isHeld } from '../src/items/oir/key.ts';
@@ -75,6 +76,7 @@ const CHAPTERS: { file: string; key: Readonly<Record<number, KeyEntry>>; reasoni
   { file: 'content/oir/agrawal-examcart/ch16-venn-diagram.source.json', key: AGRAWAL_CH16_VENN_DIAGRAM, reasoningType: 'venn', idPrefix: 'oir-agx-ch16', assessmentType: 'oir_nonverbal' },
   { file: 'content/oir/agrawal-examcart/ch17-syllogism.source.json', key: AGRAWAL_CH17_SYLLOGISM, reasoningType: 'syllogism', idPrefix: 'oir-agx-ch17' },
   { file: 'content/oir/agrawal-examcart/ch18-cubes-dice.source.json', key: AGRAWAL_CH18_CUBES_DICE, reasoningType: 'cubes_dice', idPrefix: 'oir-agx-ch18', assessmentType: 'oir_nonverbal' },
+  { file: 'content/oir/agrawal-examcart/ch24-paper-folding.source.json', key: AGRAWAL_CH24_PAPER_FOLDING, reasoningType: 'paper_folding', idPrefix: 'oir-agx-ch24', assessmentType: 'oir_nonverbal' },
   { file: 'content/oir/agrawal-examcart/ch25-mirror-water.source.json', key: AGRAWAL_CH25_MIRROR_WATER, reasoningType: 'mirror_water', idPrefix: 'oir-agx-ch25', assessmentType: 'oir_nonverbal' },
   { file: 'content/oir/agrawal-examcart/ch28-counting-figures.source.json', key: AGRAWAL_CH28_COUNTING_FIGURES, reasoningType: 'counting_figures', idPrefix: 'oir-agx-ch28', assessmentType: 'oir_nonverbal' },
 ];
