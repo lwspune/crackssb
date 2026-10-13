@@ -236,4 +236,21 @@ describe('chapter practice', () => {
     expect(screen.queryByText('a b, both mirrored')).toBeNull();
     expect(screen.getByRole('group', { name: 'Options' }).className).toMatch(/(^|\s)grid-cols-2(\s|$)/);
   });
+
+  it('never wraps a row of mirrored glyphs, and stacks long ones one per row on a phone', () => {
+    const word = (w: string) => ({ glyphs: [...w].map((ch) => ({ ch, flip: 'x' as const })) });
+    const long: PracticeItem = {
+      id: 'g9',
+      stem: 'hiEraRchY',
+      options: { A: 'a', B: 'b', C: 'c', D: 'd' },
+      answerPanels: { A: word('YhcRaREih'), B: word('YhcRareih'), C: word('YHcRaREih'), D: word('YHcRareih') },
+    };
+    const { container, rerender } = render(<PracticeRunner items={[long]} answer={fakeAnswer()} doneHref="/practise/oir" />);
+    expect(screen.getByRole('group', { name: 'Options' }).className).toMatch(/(^|\s)grid-cols-1(\s|$)/);
+    expect(container.querySelector('[data-glyph]')!.parentElement!.className).toMatch(/whitespace-nowrap/);
+    expect(container.querySelector('[data-glyph]')!.parentElement!.className).not.toMatch(/flex-wrap/);
+    const short: PracticeItem = { ...long, id: 'g10', answerPanels: { A: word('TOM'), B: word('MOT'), C: word('OTM'), D: word('MTO') } };
+    rerender(<PracticeRunner key="s" items={[short]} answer={fakeAnswer()} doneHref="/practise/oir" />);
+    expect(screen.getByRole('group', { name: 'Options' }).className).toMatch(/(^|\s)grid-cols-2(\s|$)/);
+  });
 });

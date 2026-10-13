@@ -54,6 +54,8 @@ interface Reveal {
 
 /** Longer than this, an option word breaks mid-word in half a phone's width ("SITUATI ON"). */
 const HALF_WIDTH_CHARS = 8;
+/** More glyphs than this do not fit half a phone's width without wrapping, which would change the picture. */
+const GLYPHS_IN_HALF_WIDTH = 6;
 /** A single token longer than this does not fit a 320 px phone at the stem's full size. */
 const FULL_SIZE_TOKEN_CHARS = 12;
 /** Words that make a stem a sentence to read rather than a figure to look at ("S O _ _ T A S _ _" has none). */
@@ -178,7 +180,9 @@ export function PracticeRunner({ items, answer, doneHref }: Props) {
   }
 
   const progress = ((index + (reveal ? 1 : 0)) / items.length) * 100;
-  const stacked = !item.answerPanels && OPTION_LABELS.some((l) => item.options[l].length > HALF_WIDTH_CHARS);
+  const stacked = item.answerPanels
+    ? OPTION_LABELS.some((l) => (item.answerPanels![l].glyphs?.length ?? 0) > GLYPHS_IN_HALF_WIDTH)
+    : OPTION_LABELS.some((l) => item.options[l].length > HALF_WIDTH_CHARS);
   const stemSize =
     isProse(item.stem)
       ? 'text-lg font-medium leading-relaxed sm:text-xl'

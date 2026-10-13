@@ -9,7 +9,7 @@ import { FigureDrawing } from './FigureDrawing.tsx';
 export function AnswerPanelDrawing({ panel }: { readonly panel: AnswerPanel }) {
   if (panel.glyphs) {
     return (
-      <span aria-hidden="true" className="flex min-w-0 flex-wrap items-center font-mono text-xl font-semibold">
+      <span aria-hidden="true" className="flex items-center whitespace-nowrap font-mono text-xl font-semibold">
         {panel.glyphs.map((g, i) => (
           <span
             key={i}
