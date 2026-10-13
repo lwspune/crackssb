@@ -25,6 +25,8 @@ export interface Mark {
 
 /** Shapes that look the same reflected across any fold line the book uses. */
 const SYMMETRIC = new Set(['circle', 'dot', 'square', 'diamond', 'cross', 'ring']);
+/** Shapes that are a line: they lie along a direction but point neither way along it. */
+const AXIAL = new Set(['slash', 'bar']);
 
 function reflect(p: Pt, [a, b]: FoldLine): Pt {
   const [dx, dy] = [b[0] - a[0], b[1] - a[1]];
@@ -128,7 +130,8 @@ function sameMark(e: Mark, g: Mark, tol: number): boolean {
   if (!near(e.at, g.at, tol)) return false;
   if (SYMMETRIC.has(e.shape) || !e.dir || !g.dir) return true;
   const [u, v] = [unit(e.dir), unit(g.dir)];
-  return u[0] * v[0] + u[1] * v[1] > 0.9;
+  const along = u[0] * v[0] + u[1] * v[1];
+  return AXIAL.has(e.shape) ? Math.abs(along) > 0.9 : along > 0.9;
 }
 
 /** Pairs every item of `a` with its own item of `b`, trying every pairing until one works. */

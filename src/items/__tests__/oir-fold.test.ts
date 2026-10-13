@@ -76,6 +76,11 @@ describe('matchMarks', () => {
     expect(matchMarks(expected, [hole(2, 3), hole(10, 3, 'triangle', [1, 0])], 1)).toBe(false);
   });
 
+  it('treats a slash or a bar as a line: pointing either way along it is the same', () => {
+    expect(matchMarks([{ shape: 'slash', at: [2, 3], dir: [1, -1] }], [{ shape: 'slash', at: [2, 3], dir: [-1, 1] }], 1)).toBe(true);
+    expect(matchMarks([{ shape: 'slash', at: [2, 3], dir: [1, -1] }], [{ shape: 'slash', at: [2, 3], dir: [1, 1] }], 1)).toBe(false);
+  });
+
   it('ignores the way round of a symmetric mark', () => {
     expect(matchMarks([hole(2, 3, 'circle', [1, 0])], [hole(2, 3, 'circle', [0, 1])], 1)).toBe(true);
   });
