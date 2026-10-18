@@ -33,8 +33,8 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-2561 tests passing · npm test        lint clean · npm run lint        npm run build green
-148 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
+2607 tests passing · npm test        lint clean · npm run lint        npm run build green
+162 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
 **Type-checking is new.** `npm run typecheck` checks everything and currently
@@ -174,8 +174,8 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 2561 tests (never touches the database)
-npm run test:db       # 148 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
+npm test              # 2607 tests (never touches the database)
+npm run test:db       # 162 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
 npm run build         # production build (type-checks app code)
