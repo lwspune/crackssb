@@ -7,7 +7,7 @@ Each item is outside the scope of the work that surfaced it. Strike through when
 
 ## 2026-10-12
 
-### OIR timed mocks — held until more chapters are seeded (D26) — unblocked 2026-10-12: all eleven chapters are in
+### ~~OIR timed mocks~~ — done 2026-10-18 (D32): 20 fixed practice mocks, Booklet mode, results with review
 
 The owner held them: with only Series seeded, a 40-question OIR mock would be
 all series. When two or three more chapters are in, build them the Question_Bank
@@ -342,4 +342,37 @@ Remove it once nobody is using it (Authentication → Users, or `auth.admin.dele
 
 Its staff pages are fixed paths; `/staff/people/[id]` needs an id. Have it open the first row of
 `/staff/people` and audit that page too.
+
+## 2026-10-18 (OIR mocks, D32)
+
+### Public sign-up (the owner's direction for later)
+
+The owner wants to open the product to the public: anyone signs up and practises. Mocks need nothing for it
+(solo candidates, `org_id` null, already work). What it does need, for its own analysis when the time comes:
+self sign-up turned on with email confirmation (D23 says staff create every login; supersede it); **guardian
+consent for under-18s with no academy to record it** — the hardest part, likely a parent's confirmation by
+email or phone; rate limits and abuse protection on sign-up; and whether public users and academy users share
+mocks and results unchanged.
+
+### Staff view of their candidates' mock attempts
+
+Deferred by the owner. `test_result` already lets an academy's staff read an attempt; what is missing is a
+staff page listing attempts per candidate (and a `test_attempts(candidate)` for staff, scoped like
+`can_view_person`). Leave `by_staff` attempts out.
+
+### Mock item statistics (D19)
+
+Mocks now produce sittings. When item statistics land, count first attempts only, `by_staff = false`, and
+per mock — retakes and practice exposure inflate everything after the first.
+
+### Expiry was tested, not walked
+
+The browser walk covered begin, answer, flag, reload, Home's banner, one-at-a-time, submit, result, review and
+retake. Expiry (submit on time-out) is covered by `BookletRunner.test.tsx` and `mocks.db.test.ts` (a session
+moved into the past), not by waiting 20 minutes in a browser. Worth one real run before a cohort uses it.
+
+### `audit:mobile` does not visit a mock or a result
+
+Both need an id or a live attempt. They were checked by hand at 320/360/1280 px (no sideways scroll, every tap
+target at least 44 px); add them to the script.
 

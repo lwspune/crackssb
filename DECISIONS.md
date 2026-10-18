@@ -726,3 +726,25 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 **Consequences.** `manage.db.test.ts` holds the matrix and each action's effect, including "a switched-off session reads nothing". The auth server answers `user_banned` to a switched-off login **whatever password is typed**, so the sign-in form shows it the ordinary "Email or password is wrong": naming it would let anyone learn which emails have a login (found by the test, 2026-10-18). The person learns why from their academy. Shipped in three parts: managing people (A), the one-person form and message (B), Excel (C).
 
 **Revisit if.** Google sign-in arrives (people would then set their own passwords), academies want staff to change emails in place, or a second superadmin needs managing from the app.
+
+---
+
+## D32 — OIR mocks are fixed, timed practice booklets: 30 verbal + 10 non-verbal in 20 minutes
+
+**Date:** 2026-10-18 · **Status:** Accepted · **Closes** the OIR timed-mock item in SUGGESTIONS.md
+
+**Context.** The bank holds 1,482 verbal and 260 non-verbal questions, all open in untimed chapter practice (D26). Timed mocks were planned as Sprint 2's Booklet mode. The owner wants them as practice — students take them at leisure, and the product may open to the public with self sign-up later — not as a ranking.
+
+**Decision.**
+
+1. **Practice, not a ranking.** No question is held back from chapter practice; retakes are unlimited and every attempt is kept; the full review (your answer, the answer, its rule) shows the moment an attempt ends. **No percentile and no band**: with retakes and shared questions a percentile would mislead (honest claims, ARCHITECTURE.md). Results point at the weakest question types instead, each linked to its chapter.
+2. **Fixed, numbered mocks** so "Mock 3" means the same questions to everyone and progress can be compared. **Twenty**, each **30 verbal + 10 non-verbal, mixed through the booklet, in 20 minutes** (the owner's choice; 17 minutes for 40 had no source on record). Built by `npm run oirmocks` (`src/oir/mocks.ts`), **append-only**; a question is in at most one mock; each mock spreads its slots across question types (mocks 17-20 run out of Venn, and 20 of mirror images: only 31 and 38 of those have trusted keys).
+3. **Only trusted keys.** A `confidence: medium` key (129) and a question sharing a passage (10, they need their group) stay out of mocks until the book's key settles them.
+4. **The database runs it (0009, 0010).** `tests` + `test_items`; an `oir` session is always an attempt at one mock (`sessions.test_id`, a CHECK). `start_test` sets the deadline on the server, one live mock at a time, a stale one closed rather than blocking. `save_response` takes A-D (or blank) for a question in that mock. `test_result` gives keys and rules only once the attempt is over, to the candidate or their academy's staff. `my_test_attempts` lists your own attempts and counts right answers only once over — a live count would let anyone find a key by changing one answer. **Once sat, fixed:** a mock anyone has started cannot change, and no question a mock uses can be switched off.
+5. **Booklet mode** (UI.md §3.1) on the existing engine and store: the whole booklet keyless, any order, answers changeable, one server clock that never pauses, submit on expiry with what is saved, resume on any device. A question grid, flags (this device only — a note to self), A-D and arrows from the keyboard, a confirm before submitting. Dark, like every runner (D20); questions drawn by the same components as chapter practice.
+6. **OIR is one instrument, `oir`**, a mixed booklet; the separate `oir_verbal` / `oir_nonverbal` placeholders are gone from the runner. Items keep their verbal/non-verbal type.
+
+**Consequences.** `mocks.db.test.ts` is the gate (checked by letting `test_result` answer mid-attempt, and by letting `my_test_attempts` score a live attempt: exactly the guarding test failed each time). The OIR page lists the mocks with your best on each; Results lists attempts; `/results/mock/[session]` reviews one. Staff see their academy's attempts through `test_result` already; a staff page for it comes later (the owner's choice).
+
+**Revisit if.** The book's answer key arrives (medium keys can then join new mocks), figure-series / figure-analogy questions are added (the non-verbal share is narrow), the product opens to the public (then a norm across first attempts becomes possible), or 20 mocks are used up.
+

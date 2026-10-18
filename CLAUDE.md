@@ -33,8 +33,8 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-2525 tests passing · npm test        lint clean · npm run lint        npm run build green
-129 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
+2561 tests passing · npm test        lint clean · npm run lint        npm run build green
+148 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
 **Type-checking is new.** `npm run typecheck` checks everything and currently
@@ -47,8 +47,13 @@ is seeded (1-15, 17): **1,482 verbal questions**, 94 held, keys derived (D24). N
 (42, redrawn as lines, counted by code) Ch18 Cubes and Dice (65, solved by a cube model), Ch16 Venn (44)
 Ch25 mirror and water images (51: 23 as text, 28 redrawn and reflected by code) and Ch24 paper folding (58, opened
 out by code); picture answers
-show drawn options in the buttons; number grids show as tables (D28). Timed OIR
-mocks are unblocked (SUGGESTIONS.md has the plan).
+show drawn options in the buttons; number grids show as tables (D28).
+
+**OIR mocks (D32).** 20 fixed booklets, 30 verbal + 10 non-verbal in 20 minutes (`content/oir-mocks.json`,
+append-only; questions with trusted keys only, none in two mocks). Practice: unlimited retakes, review straight
+after, no percentile. `/practise/oir` lists them with your best; `/mock/[test]` is the Booklet runner (server
+clock, any order, grid, flags, resume); `/results/mock/[session]` scores and reviews. The database refuses keys
+until an attempt is over and refuses to change a mock anyone has sat (0009, 0010).
 
 **Managing people (D31).** `/staff/people/[id]`: edit name, date of birth and mobile, set a typed password (or
 generate one), record guardian consent later, switch a login off/on, remove one nobody has used (the fix for a
@@ -110,6 +115,7 @@ src/items/               item bank — D19, D24
   stats.ts               sitting-grain rows, pooled at read · p = correct/attempted · null not zero · leads
 src/oir/score.ts         score-oir — raw, per-reasoning-type, percentile+band only WITH a norm, else null
 src/oir/chapters.ts      OIR chapters = reasoning types (D26); every type in the bank must be listed (tested)
+src/oir/mocks.ts         the 20 mocks (D32): extendMocks (append-only, spread across types) · checkMocks · mock-result.ts summarise + standings
 src/oir/practice.ts      chapter progress (latest answer counts) · New / Retry wrong / All queues · boundary parse
 src/runner/              the test-taking engine — D18, UI.md §3. Pure, `now` injected, no timers
   modes.ts               seven modes, MODE_RULES, INSTRUMENT_CONFIGS (counts from thresholds.ts)
@@ -126,16 +132,18 @@ src/ui/
     Runner.tsx           the React wrapper: renders engine state, carries out its effects
     session-store.ts     SessionStore — the contract (+ the in-memory reference store the tests use)
     server-store.ts      the app's store: server start time, clock offset, batched saves, retry, "not saved" state
-    supabase-api.ts      start_session / save_response / end_session · loadLiveSession (reload, Home banner)
+    supabase-api.ts      start_session or start_test / save_response / end_session · loadLiveSession (reload, Home banner)
     content.ts           WAT words from content/wat-items.json — ships the whole deck (known gap)
     paper.ts             D22 paper mode — session code (no handwriting-confusable chars), sheet pages
-  practice/              PracticeRunner — answer, then key + rule; A–D and Enter from the keyboard (D26)
+  practice/              PracticeRunner — answer, then key + rule; A–D and Enter from the keyboard (D26) · Question.tsx, shared with mocks
+  mock/                  BookletRunner (D32) — engine + store, grid, flags, confirm, dark · MockGrid · AttemptList · MockReview
   sheet/                 AnswerSheet — the printable sheet at /sheets/[instrument]; code on every page, no name
   auth/ · staff/ · admin/  LoginForm, ChangePasswordForm · AddPeopleForm (one person by fields | many from Excel), people-rows.ts (the one
                          row check, browser and server), people-sheet.ts (template, upload → rows, logins file), PeopleTable, PersonManage, PasswordField,
                          LoginHandout + login-message.ts (the WhatsApp message, D31) · CreateAcademyForm
 src/lib/
   practice/data.ts       chapter items (keyless) and the viewer's OWN practice answers, paged past 1000 rows
+  mocks/data.ts          a mock and its questions in order (keyless) · your attempts · one attempt's result (D32)
   auth/routing.ts        layered areas per role (D25); where each role lands; safeNext (no open redirects); which paths are public
   auth/acting.ts         the staff area's academy: staff their own, superadmin the one picked (acting_org cookie, checked)
   auth/viewer.ts         the data access layer — getViewer / requireViewerAt; every page asks here
@@ -147,6 +155,7 @@ src/proxy.ts             refreshes the session; sends visitors with none to /log
 src/db/admin/            users.ts (insertAccount, user:create) · people.ts (createPeople — D23) · manage.ts (password, switch off, remove — D31)
 supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people creation · 0004 create_academy · 0005 items + item_keys (keys server-only) · 0006 staff practice (by_staff) · 0007 practice_answers + answer_practice (D26)
                          · 0008 manage people: phone, deactivated_at, can_manage_person + update_person, record_guardian_consent, set_person_role, set_person_active (D31)
+                         · 0009 OIR mocks: tests + test_items, sessions.test_id, start_test, save_response A-D, test_result, once-sat-fixed guards · 0010 my_test_attempts · 0011 its FK index (D32)
 corpus/                  candidate data — records/ is GITIGNORED
 content/                 stimulus material — WAT deck, item bank, TAT images, OIR transcriptions (oir/) + oir-items.json
 scripts/                 build + measurement entry points
@@ -155,8 +164,8 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 2525 tests (never touches the database)
-npm run test:db       # 129 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
+npm test              # 2561 tests (never touches the database)
+npm run test:db       # 148 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
 npm run build         # production build (type-checks app code)
@@ -171,6 +180,8 @@ npm run fixture       # pseudonymous count fixture (committed; tests read this)
 npm run watitems      # WAT deck -> seeded item bank
 npm run oiritems      # OIR transcriptions + derived keys -> content/oir-items.json (held questions listed, never written)
 npm run items:seed    # content/oir-items.json -> items + item_keys. DRY RUN by default; -- --apply writes. Upsert by id, never deletes
+npm run oirmocks      # content/oir-items.json -> content/oir-mocks.json. Append-only: existing mocks are never rebuilt
+npm run tests:seed    # content/oir-mocks.json -> tests + test_items. DRY RUN by default; insert-only, refuses a changed mock
                       # A listed chapter goes live on --apply, not on push: seed only after the code that draws its questions is deployed
 npm run eval                              # baselines only, no credential needed
 npm run eval -- --model claude-opus-5     # the D5 bake-off
@@ -203,7 +214,7 @@ lists every conclusion a second assessor settles.
 - **The D5 bake-off** needs an `ANTHROPIC_API_KEY` or an `ant auth login` profile.
   Everything else for it is built.
 - **Sprint 2** (ROADMAP) — OIR verbal is complete from the book (D24; all verbal chapters seeded and practisable, D26, D28; Ch17 Q94-97 fall beyond the photos);
-  the book's answer key still to come (37 medium keys are listed for it to settle first); timed mocks are now unblocked;
+  the book's answer key still to come (37 medium keys are listed for it to settle first); timed mocks are built (D32);
   non-verbal still needs figure assets.
 - **A second assessor.** Everything it unblocks is listed in the ledger (D17 above).
 
@@ -248,6 +259,6 @@ is the gate, and it was checked by loosening a policy and watching exactly its t
 
 **Accepted advisor warnings:** `start_session`, `save_response`, `end_session`,
 `can_create_person`, `create_academy`, `answer_practice`, `can_manage_person`, `update_person`,
-`record_guardian_consent`, `set_person_role`, `set_person_active` are SECURITY DEFINER and callable by signed-in users —
+`record_guardian_consent`, `set_person_role`, `set_person_active`, `start_test`, `test_result`, `my_test_attempts` are SECURITY DEFINER and callable by signed-in users —
 by design: they are the only write paths and check ownership, timing, consent and role
 themselves. Anything else the advisors raise is a finding.
