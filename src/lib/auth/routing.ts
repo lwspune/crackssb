@@ -82,3 +82,14 @@ export function parseCredentials(form: FormData): Credentials {
   if (password.length === 0 || password.length > 200) return { ok: false, error: 'Enter your password.' };
   return { ok: true, email, password };
 }
+
+/**
+ * What the sign-in form says for an auth error code. A wrong email and a wrong
+ * password read the same, so the form never reveals which emails have an
+ * account. A switched-off login (D31) reads the same too: the auth server says
+ * `user_banned` whatever password is typed, so naming it would reveal the email.
+ */
+export function signInError(code: string | undefined): string {
+  if (code === 'invalid_credentials' || code === 'user_banned') return 'Email or password is wrong.';
+  return 'Sign-in is unavailable right now. Try again in a minute.';
+}

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { areasFor, homeFor, isPublicPath, parseCredentials, pathAllowedFor, safeNext } from '../routing.ts';
+import { areasFor, homeFor, isPublicPath, parseCredentials, pathAllowedFor, safeNext, signInError } from '../routing.ts';
 import type { Role } from '../routing.ts';
 
 /** Sign-in routing: where each role lands, and what a `?next=` may point at. */
@@ -117,5 +117,20 @@ describe('parseCredentials — checked before the auth server is asked', () => {
     expect(parseCredentials(form({ email: 'a@b.co', password: '' })).ok).toBe(false);
     expect(parseCredentials(form({ email: 'a@b.co', password: 'x'.repeat(201) })).ok).toBe(false);
     expect(parseCredentials(form({ email: 'a@b.co', password: '  spaced  ' }))).toMatchObject({ password: '  spaced  ' });
+  });
+});
+
+describe('signInError — what the sign-in form says', () => {
+  it('says the same thing for a wrong email as for a wrong password', () => {
+    expect(signInError('invalid_credentials')).toBe('Email or password is wrong.');
+  });
+
+  it('reads a switched-off login as a wrong password: the auth server says user_banned whatever password is typed (D31)', () => {
+    expect(signInError('user_banned')).toBe('Email or password is wrong.');
+  });
+
+  it('calls anything else the service being unavailable', () => {
+    expect(signInError('over_request_rate_limit')).toMatch(/unavailable/i);
+    expect(signInError(undefined)).toMatch(/unavailable/i);
   });
 });

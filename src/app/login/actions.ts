@@ -2,11 +2,9 @@
 
 import { redirect } from 'next/navigation';
 import { createSupabaseServer } from '@/lib/supabase/server.ts';
-import { homeFor, parseCredentials, safeNext } from '@/lib/auth/routing.ts';
+import { homeFor, parseCredentials, safeNext, signInError } from '@/lib/auth/routing.ts';
 import type { Role } from '@/lib/auth/routing.ts';
 import type { LoginState } from '@/ui/auth/LoginForm.tsx';
-
-const WRONG = 'Email or password is wrong.';
 
 export async function signIn(_state: LoginState, form: FormData): Promise<LoginState> {
   const creds = parseCredentials(form);
@@ -15,10 +13,9 @@ export async function signIn(_state: LoginState, form: FormData): Promise<LoginS
   const supabase = await createSupabaseServer();
   const { data, error } = await supabase.auth.signInWithPassword({ email: creds.email, password: creds.password });
   if (error || !data.user) {
-    // A wrong password is expected; anything else is the auth service failing, and is logged.
-    if (error && error.code !== 'invalid_credentials') console.error('sign-in failed', { code: error.code, status: error.status });
-    // Same words either way, so the form never reveals which emails have an account.
-    return { error: error?.code === 'invalid_credentials' || !error ? WRONG : 'Sign-in is unavailable right now. Try again in a minute.' };
+    // A wrong password or a switched-off login is expected; anything else is the auth service failing, and is logged.
+    if (error && error.code !== 'invalid_credentials' && error.code !== 'user_banned') console.error('sign-in failed', { code: error.code, status: error.status });
+    return { error: signInError(error ? error.code : 'invalid_credentials') };
   }
 
   const { data: profile } = await supabase.from('profiles').select('role').eq('id', data.user.id).maybeSingle();

@@ -1,4 +1,3 @@
-import { randomInt } from 'node:crypto';
 import type { SupabaseClient } from '@supabase/supabase-js';
 
 /**
@@ -7,6 +6,7 @@ import type { SupabaseClient } from '@supabase/supabase-js';
  * Server-side only — this needs the service-role key.
  */
 
+import { generatePassword } from '../../lib/auth/password.ts';
 import { ROLES } from '../../lib/auth/routing.ts';
 import type { Role } from '../../lib/auth/routing.ts';
 
@@ -63,12 +63,7 @@ export function parseNewUser(argv: readonly string[]): Parsed {
   return { ok: true, value: { email, fullName, role, dob, org, guardianConsent } };
 }
 
-/** No 0/O/o, 1/l/I — the password is read off a screen and typed by someone else. */
-export const PASSWORD_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz23456789';
-
-export function generatePassword(length = 16): string {
-  return Array.from({ length }, () => PASSWORD_ALPHABET[randomInt(PASSWORD_ALPHABET.length)]).join('');
-}
+export { generatePassword, PASSWORD_ALPHABET } from '../../lib/auth/password.ts';
 
 export { isMinor } from '../../lib/age.ts';
 
