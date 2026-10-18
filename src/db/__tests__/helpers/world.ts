@@ -40,6 +40,8 @@ interface PersonSpec {
   readonly org: string | null;
   readonly dob: string;
   readonly guardianConsent?: boolean;
+  /** false: never signed in (its client has no session). The auth server rate-limits sign-ins, and some people are only ever targets. */
+  readonly signIn?: boolean;
 }
 
 /** An ISO date `years` before today — for building minors that stay minors whenever the suite runs. */
@@ -104,8 +106,10 @@ export async function buildWorld(specs: Readonly<Record<string, PersonSpec>>): P
       if (profileError) throw new Error(`profile ${label}: ${profileError.message}`);
 
       const client = createClient(URL, ANON, noSession);
-      const signIn = await client.auth.signInWithPassword({ email, password });
-      if (signIn.error) throw new Error(`sign-in ${label}: ${signIn.error.message}`);
+      if (spec.signIn !== false) {
+        const signIn = await client.auth.signInWithPassword({ email, password });
+        if (signIn.error) throw new Error(`sign-in ${label}: ${signIn.error.message}`);
+      }
       people[label] = { id, email, client };
     }
 
