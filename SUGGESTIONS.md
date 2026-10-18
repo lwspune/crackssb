@@ -332,7 +332,7 @@ Staff choose the first password and send it over WhatsApp, so it sits in a chat.
 password" step on first sign-in would retire it; Profile already has the form (D31 §7). Deferred: the
 owner did not ask for it, and it adds a step before a candidate's first test.
 
-### A leftover walk login fails `npm run test:db`'s leftover check
+### ~~A leftover walk login fails `npm run test:db`'s leftover check~~ — done 2026-10-18: deleted at the owner's word
 
 `walk-1791900019@test.crackssb.invalid` (an earlier browser walk, not a test run) is still in auth, so
 every database test file's afterAll check fails on it. Not removed here: another session may own it.
@@ -365,7 +365,7 @@ staff page listing attempts per candidate (and a `test_attempts(candidate)` for 
 Mocks now produce sittings. When item statistics land, count first attempts only, `by_staff = false`, and
 per mock — retakes and practice exposure inflate everything after the first.
 
-### Expiry was tested, not walked
+### ~~Expiry was tested, not walked~~ — declined 2026-10-18 by the owner: the tests are enough
 
 The browser walk covered begin, answer, flag, reload, Home's banner, one-at-a-time, submit, result, review and
 retake. Expiry (submit on time-out) is covered by `BookletRunner.test.tsx` and `mocks.db.test.ts` (a session
