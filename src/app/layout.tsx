@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter, Source_Serif_4 } from 'next/font/google';
 import type { ReactNode } from 'react';
+import { BRAND } from '@/ui/brand.ts';
 import './globals.css';
 
 // PYQVault's pair: Inter for the interface, Source Serif for reading a candidate's own words.
@@ -8,7 +9,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 const serif = Source_Serif_4({ subsets: ['latin'], variable: '--font-source-serif', display: 'swap' });
 
 export const metadata: Metadata = {
-  title: { default: 'CrackSSB — SSB preparation', template: '%s · CrackSSB' },
+  title: { default: `${BRAND.name} — ${BRAND.tagline}`, template: `%s · ${BRAND.name}` },
   description: 'Practise the SSB the way it is run: by day, against the real clock, with feedback drawn from your own words.',
 };
 

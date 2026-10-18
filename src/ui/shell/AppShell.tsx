@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import type { ReactNode } from 'react';
 import { AcademyIcon, BatchIcon, HomeIcon, Mark, OlqIcon, PeopleIcon, PractiseIcon, ProfileIcon, ResultsIcon, ReviewIcon } from '../icons.tsx';
 import { signOut } from '@/app/login/actions.ts';
+import { BRAND } from '../brand.ts';
 import type { Area } from '@/lib/auth/routing.ts';
 import { AreaSwitcher } from './AreaSwitcher.tsx';
 import { ThemeToggle } from './ThemeToggle.tsx';
@@ -55,7 +56,7 @@ function Wordmark({ href }: { href: string }) {
         <Mark width={22} height={22} className="text-navy-accent" />
       </span>
       <span className="text-lg font-bold tracking-tight">
-        Crack<span className="text-navy-accent">SSB</span>
+        {BRAND.lead}<span className="text-navy-accent">{BRAND.accent}</span>
       </span>
     </Link>
   );

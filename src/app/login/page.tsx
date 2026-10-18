@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { redirect } from 'next/navigation';
 import { getViewer } from '@/lib/auth/viewer.ts';
 import { homeFor } from '@/lib/auth/routing.ts';
+import { BRAND } from '@/ui/brand.ts';
 import { Mark } from '@/ui/icons.tsx';
 import { Contours } from '@/ui/parts.tsx';
 import { LoginForm } from '@/ui/auth/LoginForm.tsx';
@@ -29,7 +30,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Search
             <Mark width={22} height={22} className="text-navy-accent" />
           </span>
           <span className="text-lg font-bold tracking-tight">
-            Crack<span className="text-navy-accent">SSB</span>
+            {BRAND.lead}<span className="text-navy-accent">{BRAND.accent}</span>
           </span>
         </div>
         <div className="mt-10 md:mt-0">
@@ -40,7 +41,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Search
           </h2>
           <p className="mt-3 text-navy-muted">Practised by day, on the real timer.</p>
         </div>
-        <p className="mt-10 hidden text-xs text-navy-muted md:block">SSB preparation · NDA</p>
+        <p className="mt-10 hidden text-xs text-navy-muted md:block">{BRAND.tagline} · NDA</p>
       </section>
 
       <section className="flex items-center justify-center px-6 py-10 sm:px-10">

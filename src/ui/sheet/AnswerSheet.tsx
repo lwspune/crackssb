@@ -1,3 +1,4 @@
+import { BRAND } from '../brand.ts';
 import { sheetPages } from '../runner/paper.ts';
 
 /**
@@ -29,7 +30,7 @@ export function AnswerSheet({ title, short, lines, perPage, code }: Props) {
         >
           <header className="flex items-end justify-between gap-4 border-b-2 border-[#0F1D4A] pb-2">
             <div>
-              <p className="text-[9pt] font-semibold uppercase tracking-[0.14em] text-[#55657F]">CrackSSB · {short} answer sheet</p>
+              <p className="text-[9pt] font-semibold uppercase tracking-[0.14em] text-[#55657F]">{BRAND.name} · {short} answer sheet</p>
               <h1 className="text-[14pt] font-bold leading-tight">{title}</h1>
             </div>
             <div className="text-right">
