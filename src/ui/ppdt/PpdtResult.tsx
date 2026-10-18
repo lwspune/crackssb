@@ -24,12 +24,14 @@ interface Props {
   readonly sheet?: ReactNode;
   /** The narration and sending for review (D34), after the answers. */
   readonly review?: ReactNode;
+  /** A mentor marking it (D34): the answers are the candidate's, and there is no retake. */
+  readonly forStaff?: boolean;
 }
 
 const MOOD: Readonly<Record<Mood, string>> = { positive: 'positive', neutral: 'neutral', negative: 'low' };
 const MARK: Readonly<Record<string, string>> = { '+': '+', '0': '0', '-': '−', '': '—' };
 
-export function PpdtResult({ picture, note, story, paperCode, sample, sheet, review }: Props) {
+export function PpdtResult({ picture, note, story, paperCode, sample, sheet, review, forStaff = false }: Props) {
   const n = Number(picture.id.slice(-2));
   const paper = paperCode !== null;
   const checks = paper || note === null ? [] : checkAttempt(picture, note, story ?? '');
@@ -61,9 +63,10 @@ export function PpdtResult({ picture, note, story, paperCode, sample, sheet, rev
 
       {paper && (
         <section className="rounded-xl border border-dashed p-5">
-          <p className="font-semibold">Your answers are on your sheet.</p>
+          <p className="font-semibold">{forStaff ? 'The answers are on the sheet.' : 'Your answers are on your sheet.'}</p>
           <p className="mt-1 text-sm text-muted-foreground">
-            Session code <span className="font-mono font-semibold text-foreground">{paperCode}</span>. Check your count, moods and story against the picture and the reading below.
+            Session code <span className="font-mono font-semibold text-foreground">{paperCode}</span>.
+            {forStaff ? ' It is on every page of the sheet.' : ' Check your count, moods and story against the picture and the reading below.'}
           </p>
         </section>
       )}
@@ -88,7 +91,7 @@ export function PpdtResult({ picture, note, story, paperCode, sample, sheet, rev
 
           {note && (
             <section aria-labelledby="box-h" className="rounded-xl border bg-card p-5 shadow-card">
-              <h2 id="box-h" className="text-lg font-bold">Your character box</h2>
+              <h2 id="box-h" className="text-lg font-bold">{forStaff ? 'Character box' : 'Your character box'}</h2>
               <p className="mt-1 text-sm">Characters seen: <span className="font-semibold tabular-nums">{note.count ?? '—'}</span></p>
               {note.people.length > 0 && (
                 <table className="mt-3 text-sm">
@@ -117,7 +120,7 @@ export function PpdtResult({ picture, note, story, paperCode, sample, sheet, rev
           )}
 
           <section aria-labelledby="story-h" className="rounded-xl border bg-card p-5 shadow-card">
-            <h2 id="story-h" className="text-lg font-bold">Your story</h2>
+            <h2 id="story-h" className="text-lg font-bold">{forStaff ? 'Story' : 'Your story'}</h2>
             {story ? <p className="mt-3 whitespace-pre-line font-serif text-lg leading-relaxed">{story}</p> : <p className="mt-3 text-sm text-muted-foreground">No story written.</p>}
           </section>
         </>
@@ -132,14 +135,16 @@ export function PpdtResult({ picture, note, story, paperCode, sample, sheet, rev
         </section>
       )}
 
-      <div className="flex flex-wrap gap-3">
-        <Link href={`/picture/${picture.id}`} className="inline-flex min-h-12 items-center gap-2 rounded-lg bg-brand px-5 text-sm font-semibold text-brand-foreground hover:bg-brand/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
-          Try this picture again <ArrowIcon width={16} height={16} />
-        </Link>
-        <Link href="/practise/ppdt" className="inline-flex min-h-12 items-center rounded-lg border px-5 text-sm font-semibold hover:bg-secondary focus-visible:outline-2 focus-visible:outline-ring">
-          All pictures
-        </Link>
-      </div>
+      {!forStaff && (
+        <div className="flex flex-wrap gap-3">
+          <Link href={`/picture/${picture.id}`} className="inline-flex min-h-12 items-center gap-2 rounded-lg bg-brand px-5 text-sm font-semibold text-brand-foreground hover:bg-brand/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
+            Try this picture again <ArrowIcon width={16} height={16} />
+          </Link>
+          <Link href="/practise/ppdt" className="inline-flex min-h-12 items-center rounded-lg border px-5 text-sm font-semibold hover:bg-secondary focus-visible:outline-2 focus-visible:outline-ring">
+            All pictures
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

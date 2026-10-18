@@ -5,6 +5,7 @@ import { narrationOf } from '@/db/admin/narration.ts';
 import { sheetPhotos } from '@/db/admin/uploads.ts';
 import { requireViewerAt } from '@/lib/auth/viewer.ts';
 import { loadPpdtResult } from '@/lib/ppdt/data.ts';
+import { loadReview } from '@/lib/review/data.ts';
 import { createSupabaseAdmin } from '@/lib/supabase/admin.ts';
 import { createSupabaseServer } from '@/lib/supabase/server.ts';
 import { EMPTY_NOTE, parseNote } from '@/ppdt/note.ts';
@@ -13,6 +14,7 @@ import { sampleFor } from '@/ppdt/samples.ts';
 import { Page, PageHeader } from '@/ui/parts.tsx';
 import { PpdtResult } from '@/ui/ppdt/PpdtResult.tsx';
 import { NarrationClient, SendForReviewClient } from '@/ui/ppdt/ReviewClient.tsx';
+import { ReviewMarks } from '@/ui/review/ReviewMarks.tsx';
 import { SheetPhotos } from '@/ui/sheet/SheetPhotos.tsx';
 import { SheetUploadClient } from '@/ui/sheet/SheetUploadClient.tsx';
 
@@ -34,7 +36,11 @@ export default async function PpdtResultPage({ params }: { params: Promise<{ ses
   if (!picture) notFound();
   // Signed only after row level security let the viewer read the rows (src/db/admin/).
   const service = createSupabaseAdmin();
-  const [photos, narration] = await Promise.all([result.paperCode ? sheetPhotos(client, service, session) : [], narrationOf(client, service, session)]);
+  const [photos, narration, review] = await Promise.all([
+    result.paperCode ? sheetPhotos(client, service, session) : [],
+    narrationOf(client, service, session),
+    result.submittedAt ? loadReview(client, session) : null,
+  ]);
   const own = result.candidateId === viewer.id;
   // Adding to it stops once it is sent for review (0014).
   const open = own && !result.submittedAt;
@@ -54,7 +60,11 @@ export default async function PpdtResultPage({ params }: { params: Promise<{ ses
         review={
           <>
             <NarrationClient sessionId={session} narration={narration} locked={!open} />
-            {own && <SendForReviewClient sessionId={session} ready={ready} paper={result.paperCode !== null} hasNarration={narration !== null} submittedAt={result.submittedAt} />}
+            {review ? (
+              <ReviewMarks review={review} />
+            ) : (
+              own && <SendForReviewClient sessionId={session} ready={ready} paper={result.paperCode !== null} hasNarration={narration !== null} submittedAt={result.submittedAt} />
+            )}
           </>
         }
       />

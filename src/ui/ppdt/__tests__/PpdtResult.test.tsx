@@ -45,4 +45,15 @@ describe('PpdtResult', () => {
     expect(screen.getByText('ACD-EFG')).toBeTruthy();
     expect(screen.queryByRole('region', { name: /quick checks/i })).toBeNull();
   });
+
+  it('for a mentor, names the answers as the candidate’s and offers no retake', () => {
+    render(<PpdtResult forStaff picture={picture} note={note} story="Rohan found an error." paperCode={null} sample="A sample." review={<p>The form</p>} />);
+    expect(screen.getByRole('region', { name: /^character box/i })).toBeTruthy();
+    expect(screen.getByRole('region', { name: /^story/i })).toBeTruthy();
+    expect(screen.queryByRole('link', { name: /try this picture again/i })).toBeNull();
+    expect(screen.getByText('The form')).toBeTruthy();
+    cleanup();
+    render(<PpdtResult forStaff picture={picture} note={null} story={null} paperCode="ACD-EFG" sample={null} />);
+    expect(screen.getByText(/the answers are on the sheet/i)).toBeTruthy();
+  });
 });
