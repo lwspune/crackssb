@@ -1,20 +1,23 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { requireViewerAt } from '@/lib/auth/viewer.ts';
+import { loadAttempts, loadMocks } from '@/lib/mocks/data.ts';
 import { loadOirIndex, loadOwnAnswers } from '@/lib/practice/data.ts';
 import { createSupabaseServer } from '@/lib/supabase/server.ts';
 import { OIR_CHAPTERS } from '@/oir/chapters.ts';
+import { standings } from '@/oir/mock-result.ts';
 import { chapterProgress } from '@/oir/practice.ts';
 import { ArrowIcon } from '@/ui/icons.tsx';
-import { Page, PageHeader, StatusBadge } from '@/ui/parts.tsx';
+import { MockGrid } from '@/ui/mock/MockGrid.tsx';
+import { Page, PageHeader } from '@/ui/parts.tsx';
 
 export const metadata: Metadata = { title: 'OIR practice' };
 
-/** OIR chapter practice (D26): every chapter with how far the viewer has got. */
+/** OIR: timed mocks (D32) with the viewer's best on each, then chapter practice (D26) with how far they have got. */
 export default async function OirPracticePage() {
   const viewer = await requireViewerAt('/practise/oir');
   const client = await createSupabaseServer();
-  const [index, answers] = await Promise.all([loadOirIndex(client), loadOwnAnswers(client, viewer.id)]);
+  const [index, answers, mocks, attempts] = await Promise.all([loadOirIndex(client), loadOwnAnswers(client, viewer.id), loadMocks(client), loadAttempts(client)]);
 
   const chapters = OIR_CHAPTERS.map((chapter) => {
     const ids = index.filter((i) => i.reasoningType === chapter.reasoningType).map((i) => i.id);
@@ -24,8 +27,17 @@ export default async function OirPracticePage() {
   return (
     <Page>
       <Link href="/practise" className="inline-flex min-h-11 items-center text-sm font-semibold text-brand-accent hover:underline">← Practise</Link>
-      <PageHeader title="OIR practice" lede="Untimed. Answer, then see the rule." />
+      <PageHeader title="OIR practice" lede="Timed mocks, and every chapter untimed." />
 
+      {mocks.length > 0 && (
+        <section aria-labelledby="mocks-h" className="mb-10">
+          <h2 id="mocks-h" className="text-lg font-bold">Timed mocks</h2>
+          <p className="mb-4 mt-1 text-sm text-muted-foreground">40 questions · 20 minutes · answers and rules after.</p>
+          <MockGrid mocks={mocks} standing={standings(attempts)} />
+        </section>
+      )}
+
+      <h2 className="mb-4 text-lg font-bold">Chapters</h2>
       <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {chapters.map(({ chapter, progress }) => {
           const done = progress.total === 0 ? 0 : Math.round((progress.answered / progress.total) * 100);
@@ -56,11 +68,6 @@ export default async function OirPracticePage() {
           );
         })}
       </ul>
-
-      <div className="mt-8 flex flex-wrap items-center gap-3 rounded-xl border border-dashed px-4 py-3">
-        <span className="text-sm font-semibold">Timed OIR tests</span>
-        <StatusBadge availability="coming" />
-      </div>
     </Page>
   );
 }
