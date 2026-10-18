@@ -160,7 +160,7 @@ describe.skipIf(!hasDatabase)('OIR mocks', () => {
   describe('the app’s adapter (supabaseSessionApi)', () => {
     it('starts a mock through start_test and finds it again on reload, knowing which mock', async () => {
       const api = supabaseSessionApi(world.people.mentorB.client);
-      const started = await api.start('oir', 'typed', null, full);
+      const started = await api.start('oir', 'typed', null, full, null);
       expect(started).toMatchObject({ id: expect.any(String) });
       expect(await api.loadLive('oir')).toMatchObject({ testId: full, instrument: 'oir' });
       expect((await api.save((started as { id: string }).id, '0', 'Q', false)).error).toBe('bad_answer');
