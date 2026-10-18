@@ -135,5 +135,8 @@ export async function leftovers(service: SupabaseClient): Promise<string[]> {
   const { data: items, error: itemsError } = await service.from('items').select('id').like('id', `${FIXTURE_ITEM_PREFIX}%`);
   if (itemsError) throw new Error(`items: ${itemsError.message}`);
   for (const i of items ?? []) found.push(`item ${i.id}`);
+  const { data: tests, error: testsError } = await service.from('tests').select('id').like('id', `${FIXTURE_ITEM_PREFIX}%`);
+  if (testsError) throw new Error(`tests: ${testsError.message}`);
+  for (const t of tests ?? []) found.push(`test ${t.id}`);
   return found;
 }
