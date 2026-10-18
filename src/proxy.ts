@@ -43,6 +43,6 @@ export async function proxy(request: NextRequest) {
 }
 
 export const config = {
-  // Every page, not static files or images.
-  matcher: ['/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)'],
+  // Every page, not static files, images or documents (the blank PPDT sheet is public, as /sheets/ is).
+  matcher: ['/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|pdf)$).*)'],
 };
