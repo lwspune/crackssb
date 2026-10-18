@@ -111,18 +111,18 @@ export function inputPhases(config: RunnerConfig): readonly (Phase | null)[] {
 // Instruments
 // ---------------------------------------------------------------------------
 
-export type RunnerInstrument = 'oir_verbal' | 'oir_nonverbal' | 'ppdt' | 'tat' | 'wat' | 'srt' | 'sdt' | 'piq' | 'lecturette';
+export type RunnerInstrument = 'oir' | 'ppdt' | 'tat' | 'wat' | 'srt' | 'sdt' | 'piq' | 'lecturette';
 
 /**
  * Timings are the SSB's, from ARCHITECTURE.md §2. Item counts for the psych
  * instruments come from `INSTRUMENT_SPECS` so there is one source of truth.
  *
- * OIR counts and limits are defaults only — booklet assembly (Sprint 2) sets
- * the real values per assembled booklet.
+ * OIR is one mixed booklet (D32): 30 verbal + 10 non-verbal in 20 minutes,
+ * the same as instrument_timings 'oir' (0009). Each mock carries its own
+ * length and limit in `tests`; these are the defaults they are built to.
  */
 export const INSTRUMENT_CONFIGS: Readonly<Record<RunnerInstrument, RunnerConfig>> = {
-  oir_verbal: { mode: 'booklet', itemCount: 40, timeLimitSeconds: 17 * 60 },
-  oir_nonverbal: { mode: 'booklet', itemCount: 50, timeLimitSeconds: 22 * 60 },
+  oir: { mode: 'booklet', itemCount: 40, timeLimitSeconds: 20 * 60 },
 
   // Picture 30 s, one minute to note characters / mood / action, four minutes for the story.
   ppdt: {

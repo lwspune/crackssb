@@ -12,9 +12,21 @@ export interface RunnableInstrument {
   readonly facts: readonly { readonly value: string; readonly label: string }[];
   /** One line under the figures. */
   readonly instruction: string;
+  /** Where it begins, when not at /run/<instrument> — OIR mocks are chosen first (D32). */
+  readonly start?: string;
 }
 
 export const RUNNABLE: Partial<Readonly<Record<RunnerInstrument, RunnableInstrument>>> = {
+  oir: {
+    config: INSTRUMENT_CONFIGS.oir,
+    facts: [
+      { value: '40', label: 'Questions' },
+      { value: '20 min', label: 'In all' },
+      { value: 'Any', label: 'Order' },
+    ],
+    instruction: 'Answer in any order. Change an answer until you submit.',
+    start: '/practise/oir',
+  },
   wat: {
     config: INSTRUMENT_CONFIGS.wat,
     facts: [

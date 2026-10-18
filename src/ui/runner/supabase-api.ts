@@ -9,7 +9,7 @@ import type { ServerRecord, SessionApi } from './server-store.ts';
  */
 
 /** Every code the session functions raise. Anything else (a fetch that never completed) is 'network'. */
-const SERVER_CODES = /\b(not_a_candidate|dob_required|consent_required|unknown_instrument|session_live|not_your_session|session_ended|paper_session|bad_key|too_long|item_not_open|item_closed|item_sealed|not_expired|bad_ending)\b/;
+const SERVER_CODES = /\b(not_a_candidate|dob_required|consent_required|unknown_instrument|unknown_test|test_incomplete|session_live|not_your_session|session_ended|paper_session|bad_key|bad_answer|too_long|item_not_open|item_closed|item_sealed|not_expired|bad_ending)\b/;
 
 function codeOf(error: { message?: string } | null): string | null {
   if (!error) return null;
@@ -20,7 +20,7 @@ function codeOf(error: { message?: string } | null): string | null {
 export async function loadLiveSession(client: SupabaseClient, instrument: RunnerInstrument): Promise<ServerRecord | null> {
   const { data: s, error } = await client
     .from('sessions')
-    .select('id, input_mode, paper_code, started_at')
+    .select('id, input_mode, paper_code, started_at, test_id')
     .eq('assessment_type', instrument)
     .eq('status', 'live')
     .order('started_at', { ascending: false })
@@ -42,13 +42,16 @@ export async function loadLiveSession(client: SupabaseClient, instrument: Runner
     startedAtMs: Date.parse(s.started_at),
     saved,
     endedBy: null,
+    testId: s.test_id,
   };
 }
 
 export function supabaseSessionApi(client: SupabaseClient): SessionApi {
   return {
-    async start(instrument, input, code) {
-      const { data, error } = await client.rpc('start_session', { p_assessment_type: instrument, p_input_mode: input, p_paper_code: code });
+    async start(instrument, input, code, testId) {
+      const { data, error } = testId
+        ? await client.rpc('start_test', { p_test_id: testId })
+        : await client.rpc('start_session', { p_assessment_type: instrument, p_input_mode: input, p_paper_code: code });
       if (error || !data) return { error: codeOf(error) ?? 'network' };
       return { id: data.id, startedAtMs: Date.parse(data.started_at) };
     },

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SSB_DAYS, entriesForDay } from '@/ui/catalog.ts';
+import { RUNNABLE } from '@/ui/runner/registry.ts';
 import type { CatalogEntry } from '@/ui/catalog.ts';
 import { Page, PageHeader, StatusBadge } from '@/ui/parts.tsx';
 
@@ -40,7 +41,7 @@ function EntryCard({ entry }: { entry: CatalogEntry }) {
       </span>
     </>
   );
-  const href = ready ? `/run/${entry.instruments[0]}` : entry.practice?.href;
+  const href = ready ? (RUNNABLE[entry.instruments[0]]?.start ?? `/run/${entry.instruments[0]}`) : entry.practice?.href;
   return href ? (
     <Link href={href} className="lift flex h-full gap-4 rounded-xl border border-brand/30 bg-card p-4 shadow-card">
       {body}

@@ -42,6 +42,24 @@ beforeEach(() => {
 });
 afterEach(() => vi.useRealTimers());
 
+describe('mocks (D32)', () => {
+  it('starts an attempt at one mock, and remembers which', async () => {
+    const { api } = fakeApi();
+    const store = createServerStore(api, { initial: null, serverNowMs: CLIENT_NOW });
+    const record = await store.create('oir', { input: 'typed', code: null, testId: 'oir-mock-03' });
+    expect(api.start).toHaveBeenCalledWith('oir', 'typed', null, 'oir-mock-03');
+    expect(record.testId).toBe('oir-mock-03');
+  });
+
+  it('treats a refused answer letter as final, not as a network failure to retry', async () => {
+    const { api } = fakeApi({ save: vi.fn(async () => ({ error: 'bad_answer' })) });
+    const store = createServerStore(api, { initial: live({ instrument: 'oir', testId: 'oir-mock-03' }), serverNowMs: CLIENT_NOW });
+    store.persist('oir', '0', 'Z', false);
+    await vi.advanceTimersByTimeAsync(1_000);
+    expect(store.syncState()).toBe('saved');
+  });
+});
+
 describe('the clock', () => {
   it('starts from the offset between the server and this device when the page was served', () => {
     const { api } = fakeApi();
@@ -76,7 +94,7 @@ describe('starting', () => {
     const { api } = fakeApi();
     const store = createServerStore(api, { initial: null, serverNowMs: CLIENT_NOW });
     await store.create('wat', { input: 'paper', code: 'ACD-EFG' });
-    expect(api.start).toHaveBeenCalledWith('wat', 'paper', 'ACD-EFG');
+    expect(api.start).toHaveBeenCalledWith('wat', 'paper', 'ACD-EFG', null);
   });
 });
 

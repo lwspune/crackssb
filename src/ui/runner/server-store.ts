@@ -24,7 +24,8 @@ export interface ServerRecord extends SessionRecord {
 }
 
 export interface SessionApi {
-  start(instrument: RunnerInstrument, input: InputMode, code: string | null): Promise<{ id: string; startedAtMs: number } | { error: string }>;
+  /** `testId`: an OIR mock attempt (D32), started through start_test; null for every other test. */
+  start(instrument: RunnerInstrument, input: InputMode, code: string | null, testId: string | null): Promise<{ id: string; startedAtMs: number } | { error: string }>;
   /** `error` is the server's code (item_closed, …) or 'network' when the request did not complete. */
   save(id: string, key: string, text: string, final: boolean): Promise<{ error: string | null }>;
   end(id: string, endedBy: EndedBy): Promise<{ error: string | null }>;
@@ -32,7 +33,7 @@ export interface SessionApi {
 }
 
 /** Refusals that will never succeed on a retry. Anything else is treated as a transient failure. */
-const PERMANENT = /item_closed|item_sealed|item_not_open|session_ended|paper_session|bad_key|too_long|not_your_session/;
+const PERMANENT = /item_closed|item_sealed|item_not_open|session_ended|paper_session|bad_key|bad_answer|too_long|not_your_session/;
 const MAX_END_RETRIES = 5;
 
 interface Options {
@@ -124,9 +125,9 @@ export function createServerStore(api: SessionApi, options: Options): SessionSto
   return {
     load: (instrument) => records.get(instrument) ?? null,
 
-    async create(instrument, { input, code }) {
+    async create(instrument, { input, code, testId = null }) {
       const sentAt = Date.now();
-      const result = await api.start(instrument, input, code);
+      const result = await api.start(instrument, input, code, testId);
       const receivedAt = Date.now();
       if ('error' in result) {
         if (result.error === 'session_live') {
@@ -140,7 +141,7 @@ export function createServerStore(api: SessionApi, options: Options): SessionSto
       }
       // The server stamped the start between sending and receiving; the midpoint is the best estimate of when.
       offset = result.startedAtMs - (sentAt + receivedAt) / 2;
-      const record: ServerRecord = { id: result.id, instrument, input, code, startedAtMs: result.startedAtMs, saved: {}, endedBy: null };
+      const record: ServerRecord = { id: result.id, instrument, input, code, startedAtMs: result.startedAtMs, saved: {}, endedBy: null, testId };
       records.set(instrument, record);
       return record;
     },

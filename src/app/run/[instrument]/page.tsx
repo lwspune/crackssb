@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { requireViewerAt } from '@/lib/auth/viewer.ts';
 import { createSupabaseServer } from '@/lib/supabase/server.ts';
 import { loadLiveSession } from '@/ui/runner/supabase-api.ts';
@@ -31,6 +31,9 @@ export default async function RunPage({ params }: { params: Params }) {
   const { instrument } = await params;
   await requireViewerAt(`/run/${instrument}`);
   if (!runnable(instrument)) notFound();
+  // A test chosen elsewhere first (OIR mocks, D32) begins there.
+  const start = RUNNABLE[instrument]?.start;
+  if (start) redirect(start);
   const title = entryById(instrument)?.name ?? instrument;
   // A session already running (this tab reloaded, or another phone) resumes where the server's clock is.
   const { initial, serverNowMs } = await arrival(instrument);

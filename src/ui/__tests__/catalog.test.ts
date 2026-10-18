@@ -46,10 +46,11 @@ describe('the practise catalogue', () => {
     expect(copy).not.toMatch(/\b(sprint|phase \d)/i);
   });
 
-  it('opens OIR chapter practice while its timed test is still coming (D26)', () => {
+  it('opens OIR as timed mocks, chosen on the OIR page beside chapter practice (D26, D32)', () => {
     const oir = CATALOG.find((e) => e.id === 'oir');
     expect(oir?.practice).toEqual({ href: '/practise/oir', label: 'Chapter practice' });
-    expect(oir?.availability).toBe('coming');
+    expect(oir?.availability).toBe('ready');
+    expect(RUNNABLE.oir?.start).toBe('/practise/oir');
   });
 
   it('links practice only inside the practise area', () => {
