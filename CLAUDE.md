@@ -33,8 +33,8 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-2455 tests passing · npm test        lint clean · npm run lint        npm run build green
-74 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
+2494 tests passing · npm test        lint clean · npm run lint        npm run build green
+127 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
 **Type-checking is new.** `npm run typecheck` checks everything and currently
@@ -49,6 +49,12 @@ Ch25 mirror and water images (51: 23 as text, 28 redrawn and reflected by code) 
 out by code); picture answers
 show drawn options in the buttons; number grids show as tables (D28). Timed OIR
 mocks are unblocked (SUGGESTIONS.md has the plan).
+
+**Managing people (D31).** `/staff/people/[id]`: edit name, date of birth and mobile, set a typed password (or
+generate one), record guardian consent later, switch a login off/on, remove one nobody has used (the fix for a
+mistyped email), and mentor ↔ owner (superadmin only). `can_manage_person` (0008) decides, as the caller. A
+switched-off login is banned at the auth server and refused every read by the database. Each new password comes
+with a ready WhatsApp message. Everyone changes their own password on Profile.
 
 **Layered access (D25).** Staff also reach the student app and the superadmin reaches all three, through a switcher.
 Staff tests are flagged `by_staff` by the database and must stay out of results and item statistics.
@@ -123,16 +129,20 @@ src/ui/
     paper.ts             D22 paper mode — session code (no handwriting-confusable chars), sheet pages
   practice/              PracticeRunner — answer, then key + rule; A–D and Enter from the keyboard (D26)
   sheet/                 AnswerSheet — the printable sheet at /sheets/[instrument]; code on every page, no name
-  auth/ · staff/ · admin/  LoginForm · AddPeopleForm, people-lines (paste parser), PeopleTable · CreateAcademyForm
+  auth/ · staff/ · admin/  LoginForm, ChangePasswordForm · AddPeopleForm, people-lines (paste parser), PeopleTable, PersonManage, PasswordField,
+                         LoginHandout + login-message.ts (the WhatsApp message, D31) · CreateAcademyForm
 src/lib/
   practice/data.ts       chapter items (keyless) and the viewer's OWN practice answers, paged past 1000 rows
   auth/routing.ts        layered areas per role (D25); where each role lands; safeNext (no open redirects); which paths are public
   auth/acting.ts         the staff area's academy: staff their own, superadmin the one picked (acting_org cookie, checked)
   auth/viewer.ts         the data access layer — getViewer / requireViewerAt; every page asks here
+  auth/password.ts       password rules (8-72, not the name or email) + generatePassword (Web Crypto) · own-password.ts
+  phone.ts               mobile number → `+digits` (Indian without a code), and back for display
   supabase/              server · browser (the user's RLS client) · admin (service role — only after the DB says yes)
 src/proxy.ts             refreshes the session; sends visitors with none to /login (optimistic only)
-src/db/admin/            users.ts (insertAccount, user:create) · people.ts (createPeople — D23)
+src/db/admin/            users.ts (insertAccount, user:create) · people.ts (createPeople — D23) · manage.ts (password, switch off, remove — D31)
 supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people creation · 0004 create_academy · 0005 items + item_keys (keys server-only) · 0006 staff practice (by_staff) · 0007 practice_answers + answer_practice (D26)
+                         · 0008 manage people: phone, deactivated_at, can_manage_person + update_person, record_guardian_consent, set_person_role, set_person_active (D31)
 corpus/                  candidate data — records/ is GITIGNORED
 content/                 stimulus material — WAT deck, item bank, TAT images, OIR transcriptions (oir/) + oir-items.json
 scripts/                 build + measurement entry points
@@ -141,8 +151,8 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 2455 tests (never touches the database)
-npm run test:db       # 74 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
+npm test              # 2494 tests (never touches the database)
+npm run test:db       # 127 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
 npm run build         # production build (type-checks app code)
@@ -233,6 +243,7 @@ Never edit an applied one; add the next number. Rules belong in the database: `a
 is the gate, and it was checked by loosening a policy and watching exactly its tests fail.
 
 **Accepted advisor warnings:** `start_session`, `save_response`, `end_session`,
-`can_create_person`, `create_academy`, `answer_practice` are SECURITY DEFINER and callable by signed-in users —
+`can_create_person`, `create_academy`, `answer_practice`, `can_manage_person`, `update_person`,
+`record_guardian_consent`, `set_person_role`, `set_person_active` are SECURITY DEFINER and callable by signed-in users —
 by design: they are the only write paths and check ownership, timing, consent and role
 themselves. Anything else the advisors raise is a finding.

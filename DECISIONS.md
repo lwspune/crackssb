@@ -562,6 +562,8 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 
 **Revisit if.** Google sign-in arrives (accounts may then be created by the person, and staff would invite rather than create), or academies need password resets — which must be built with the same never-touch-another-academy rule.
 
+> **Partly superseded 2026-10-18 by D31:** §3 (passwords are now typed by staff, or generated on request) and §5 (one person by fields, many by Excel upload; the paste box is gone). The rest stands.
+
 ---
 
 ## D24 — OIR items come from a published book, word for word, with keys we derive until the book's key is checked
@@ -701,3 +703,26 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 4. **`cadetprep.in` is the primary address**; `www` redirects to it (308). Supabase's Site URL is `https://cadetprep.in`; the `vercel.app` addresses stay on the redirect allow-list and keep working.
 
 **Revisit if.** A logo arrives (favicon and wordmark), or the product grows past SSB and the tagline stops fitting.
+
+---
+
+## D31 — Staff manage the people they add; passwords are typed and sent over WhatsApp
+
+**Date:** 2026-10-18 · **Status:** Accepted · **Supersedes** D23 §3 and §5
+
+**Context.** Once created, nobody could be changed: no edit, no password reset, no consent after the fact, no way to switch a login off, and a mistyped email was stuck for good (`profiles.email` is unique). The owner also asked for a field-by-field form for one person, a password they type themselves, a ready WhatsApp message, and bulk upload from an Excel template. This is D23's own revisit trigger ("academies need password resets").
+
+**Decision.**
+
+1. **Who may manage whom is a database function**, `can_manage_person(target, action)` (0008), called as the signed-in user before any service-role write, mirroring D23. Superadmin: anyone but a superadmin. Academy owner: their academy's candidates and mentors. Mentor: their academy's candidates, details and password only (the owner's choice). Nobody manages themselves there, or reaches another academy.
+2. **Actions:** edit name, date of birth and phone · set a password · record guardian consent later · switch a login off and on · remove a login nobody has used · change role, mentor ↔ academy owner, **superadmin only** (the owner's choice). Each profile write is a SECURITY DEFINER function that asks `can_manage_person` itself; the table still has no UPDATE grant.
+3. **Switch off, never delete.** Deleting would take the person's tests and practice with it. A switched-off login is banned at the auth server (no sign-in) **and** refused by the database (the private RLS helpers, `can_create_person` and `can_manage_person` treat it as nobody), which covers the token it already holds. Removing is only for a login never signed in, with no sessions and no practice — the fix for a mistyped email.
+4. **Staff type passwords** (the owner's choice); "Generate" stays a button. At least 8 characters, at most 72, no spaces at the ends, not the person's name or email (`src/lib/auth/password.ts`). Still never stored or emailed by us. A password shared across one upload is allowed, with a warning on screen.
+5. **The phone is saved** (the owner's choice): optional, `+` and digits only (a CHECK; `src/lib/phone.ts` reads Indian numbers without a code). It is what lets "Send on WhatsApp" open that person's chat.
+6. **The handout is a WhatsApp message**, shown once with the password: greeting by first name, `cadetprep.in/login`, email, password, and a line when an under-18 has no consent yet. Copy button, and a `wa.me` link that opens WhatsApp with it filled in.
+7. **Everyone changes their own password** on Profile, with the current one checked first.
+8. **One person by fields, many by Excel.** A downloadable `.xlsx` template, upload `.xlsx` or `.csv`, a preview with each row's problem, then create. Read in the browser with the platform's own unzip (no package); the server re-checks every row. The paste box is dropped.
+
+**Consequences.** `manage.db.test.ts` holds the matrix and each action's effect, including "a switched-off session reads nothing". The auth server answers `user_banned` to a switched-off login **whatever password is typed**, so the sign-in form shows it the ordinary "Email or password is wrong": naming it would let anyone learn which emails have a login (found by the test, 2026-10-18). The person learns why from their academy. Shipped in three parts: managing people (A), the one-person form and message (B), Excel (C).
+
+**Revisit if.** Google sign-in arrives (people would then set their own passwords), academies want staff to change emails in place, or a second superadmin needs managing from the app.

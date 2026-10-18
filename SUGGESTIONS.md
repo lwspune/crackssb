@@ -308,3 +308,38 @@ each page.
 picked) both list and add people. Kept both: Admin is the platform view, Staff is
 "what the academy sees". If they drift, make the Admin page link into the staff
 area with the academy picked rather than keep two forms.
+
+## 2026-10-18 (managing people, D31)
+
+### A switched-off candidate's live token can still write for up to an hour
+
+Switching off bans the login (no new sign-in, no refresh) and the database refuses the person every
+read (the private RLS helpers). But `start_session`, `save_response`, `end_session` and `answer_practice`
+read the caller's profile themselves and do not check `deactivated_at`, so an access token issued before
+the switch-off can still start a test or save answers until it expires (the project's JWT expiry, 1 h by
+default). Harmless for a candidate's own data; close it by adding `AND deactivated_at IS NULL` to each
+function's caller lookup (one migration, a test per function) if switching off ever has to be instant.
+
+### Leaked-password protection is off
+
+Staff now type passwords (D31 §4), so a known-leaked one is more likely than when every password was
+generated. Supabase Auth can refuse passwords found in HaveIBeenPwned (advisor `auth_leaked_password_protection`);
+it is a paid-plan setting. Turn it on if the project moves to Pro.
+
+### Ask for a new password at first sign-in
+
+Staff choose the first password and send it over WhatsApp, so it sits in a chat. A "set your own
+password" step on first sign-in would retire it; Profile already has the form (D31 §7). Deferred: the
+owner did not ask for it, and it adds a step before a candidate's first test.
+
+### A leftover walk login fails `npm run test:db`'s leftover check
+
+`walk-1791900019@test.crackssb.invalid` (an earlier browser walk, not a test run) is still in auth, so
+every database test file's afterAll check fails on it. Not removed here: another session may own it.
+Remove it once nobody is using it (Authentication → Users, or `auth.admin.deleteUser`).
+
+### `audit:mobile` does not visit a person page
+
+Its staff pages are fixed paths; `/staff/people/[id]` needs an id. Have it open the first row of
+`/staff/people` and audit that page too.
+
