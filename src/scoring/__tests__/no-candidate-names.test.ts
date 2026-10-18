@@ -40,5 +40,6 @@ describe('privacy (D21)', () => {
       for (const [name, re] of patterns) if (re.test(bytes)) leaks.push(`${file}: ${name}`);
     }
     expect(leaks).toEqual([]);
-  });
+    // Reads every committable byte, images included (metadata can carry a name), so it grows with the repo.
+  }, 60_000);
 });
