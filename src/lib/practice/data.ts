@@ -35,12 +35,9 @@ export function loadOirIndex(client: SupabaseClient): Promise<{ id: string; reas
   );
 }
 
-/** One chapter's questions, keyless, in book order. */
-export async function loadChapterItems(client: SupabaseClient, reasoningType: string): Promise<PracticeItem[]> {
-  const rows = await allPages<{ id: string; payload: Omit<OirPayload, 'key'> }>('the chapter', (from, to) =>
-    client.from('items').select('id, payload').in('assessment_type', OIR_TYPES).eq('payload->>reasoningType', reasoningType).order('id').range(from, to),
-  );
-  return rows.map(({ id, payload }) => ({
+/** An item row as a question to show: what the screen needs, nothing more (the payload holds no key, 0005). */
+export function toPracticeItem({ id, payload }: { id: string; payload: Omit<OirPayload, 'key'> }): PracticeItem {
+  return {
     id,
     stem: payload.stem,
     options: payload.options,
@@ -50,7 +47,15 @@ export async function loadChapterItems(client: SupabaseClient, reasoningType: st
     ...(payload.figure ? { figure: payload.figure } : {}),
     ...(payload.dice ? { dice: payload.dice } : {}),
     ...(payload.answerPanels ? { answerPanels: payload.answerPanels } : {}),
-  }));
+  };
+}
+
+/** One chapter's questions, keyless, in book order. */
+export async function loadChapterItems(client: SupabaseClient, reasoningType: string): Promise<PracticeItem[]> {
+  const rows = await allPages<{ id: string; payload: Omit<OirPayload, 'key'> }>('the chapter', (from, to) =>
+    client.from('items').select('id, payload').in('assessment_type', OIR_TYPES).eq('payload->>reasoningType', reasoningType).order('id').range(from, to),
+  );
+  return rows.map(toPracticeItem);
 }
 
 /**
