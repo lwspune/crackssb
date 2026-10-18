@@ -66,7 +66,7 @@ describe.skipIf(!hasDatabase)('answer-sheet photos', () => {
     it('lets the candidate add a page to their own paper attempt once its time is over', async () => {
       const { data, error } = await begin('candA', paper, 1);
       expect(error).toBeNull();
-      expect(data).toBe(`${world.people.candA.id}/${paper}/page-1.jpg`);
+      expect(data).toMatch(new RegExp(`^${world.people.candA.id}/${paper}/page-1-[0-9a-f]{12}\\.jpg$`));
     });
 
     it('refuses a typed attempt, one still running, someone else’s, and a page out of range', async () => {
@@ -77,11 +77,13 @@ describe.skipIf(!hasDatabase)('answer-sheet photos', () => {
       for (const page of [0, 5]) expect((await begin('candA', paper, page)).error?.message, String(page)).toMatch(/bad_page/);
     });
 
-    it('treats a second photo of the same page as a retake: same path, waiting to be read again', async () => {
+    it('treats a second photo of the same page as a retake: a fresh path, waiting to be read again', async () => {
+      const first = (await begin('candA', paper, 1)).data;
       await service.from('uploads').update({ ocr_status: 'done', ocr_text: 'old' }).eq('session_id', paper).eq('page_no', 1);
-      expect((await begin('candA', paper, 1)).data).toBe(`${world.people.candA.id}/${paper}/page-1.jpg`);
-      const { data } = await service.from('uploads').select('ocr_status, ocr_text').eq('session_id', paper).eq('page_no', 1).single();
-      expect(data).toEqual({ ocr_status: 'pending', ocr_text: null });
+      const second = (await begin('candA', paper, 1)).data;
+      expect(second).not.toBe(first);
+      const { data } = await service.from('uploads').select('storage_path, ocr_status, ocr_text').eq('session_id', paper).eq('page_no', 1).single();
+      expect(data).toEqual({ storage_path: second, ocr_status: 'pending', ocr_text: null });
     });
 
     it('cannot be written around: no one inserts into uploads directly', async () => {
@@ -96,8 +98,11 @@ describe.skipIf(!hasDatabase)('answer-sheet photos', () => {
       if (issued.kind !== 'ok') throw new Error(issued.kind);
       paths.push(issued.path);
       const anon = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!, { auth: { persistSession: false } });
-      const up = await anon.storage.from(BUCKET).uploadToSignedUrl(issued.path, issued.token, JPEG, { contentType: 'image/jpeg', upsert: true });
+      const up = await anon.storage.from(BUCKET).uploadToSignedUrl(issued.path, issued.token, JPEG, { contentType: 'image/jpeg' });
       expect(up.error).toBeNull();
+      // A link is good for two hours: it must not be able to replace a photo once sent.
+      const over = await anon.storage.from(BUCKET).uploadToSignedUrl(issued.path, issued.token, JPEG, { contentType: 'image/jpeg', upsert: true });
+      expect(over.error).not.toBeNull();
 
       const own = await sheetPhotos(world.people.candA.client, service, paper);
       expect(own).toEqual([{ page: 1, url: expect.stringMatching(/^https:\/\/.+answer-sheets.+token=/) }]);

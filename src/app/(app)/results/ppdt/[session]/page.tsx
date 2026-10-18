@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound, redirect } from 'next/navigation';
+import { narrationOf } from '@/db/admin/narration.ts';
 import { sheetPhotos } from '@/db/admin/uploads.ts';
 import { requireViewerAt } from '@/lib/auth/viewer.ts';
 import { loadPpdtResult } from '@/lib/ppdt/data.ts';
@@ -11,6 +12,7 @@ import { pictureById } from '@/ppdt/pictures.ts';
 import { sampleFor } from '@/ppdt/samples.ts';
 import { Page, PageHeader } from '@/ui/parts.tsx';
 import { PpdtResult } from '@/ui/ppdt/PpdtResult.tsx';
+import { NarrationClient, SendForReviewClient } from '@/ui/ppdt/ReviewClient.tsx';
 import { SheetPhotos } from '@/ui/sheet/SheetPhotos.tsx';
 import { SheetUploadClient } from '@/ui/sheet/SheetUploadClient.tsx';
 
@@ -30,9 +32,13 @@ export default async function PpdtResultPage({ params }: { params: Promise<{ ses
   if (result.kind === 'running') redirect(`/picture/${result.itemId}`);
   const picture = pictureById(result.itemId);
   if (!picture) notFound();
-  // Signed only after row level security let the viewer read the rows (src/db/admin/uploads.ts).
-  const photos = result.paperCode ? await sheetPhotos(client, createSupabaseAdmin(), session) : [];
+  // Signed only after row level security let the viewer read the rows (src/db/admin/).
+  const service = createSupabaseAdmin();
+  const [photos, narration] = await Promise.all([result.paperCode ? sheetPhotos(client, service, session) : [], narrationOf(client, service, session)]);
   const own = result.candidateId === viewer.id;
+  // Adding to it stops once it is sent for review (0014).
+  const open = own && !result.submittedAt;
+  const ready = result.paperCode ? photos.length > 0 : Boolean(result.story?.trim());
 
   return (
     <Page>
@@ -44,7 +50,13 @@ export default async function PpdtResultPage({ params }: { params: Promise<{ ses
         story={result.story}
         paperCode={result.paperCode}
         sample={sampleFor(picture.id)}
-        sheet={own ? <SheetUploadClient sessionId={session} photos={photos} /> : <SheetPhotos photos={photos} />}
+        sheet={open ? <SheetUploadClient sessionId={session} photos={photos} /> : <SheetPhotos photos={photos} />}
+        review={
+          <>
+            <NarrationClient sessionId={session} narration={narration} locked={!open} />
+            {own && <SendForReviewClient sessionId={session} ready={ready} paper={result.paperCode !== null} hasNarration={narration !== null} submittedAt={result.submittedAt} />}
+          </>
+        }
       />
     </Page>
   );

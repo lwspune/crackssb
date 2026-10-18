@@ -22,12 +22,14 @@ interface Props {
   readonly sample: string | null;
   /** On paper: the sheet's photos, with the upload for the candidate who took it. */
   readonly sheet?: ReactNode;
+  /** The narration and sending for review (D34), after the answers. */
+  readonly review?: ReactNode;
 }
 
 const MOOD: Readonly<Record<Mood, string>> = { positive: 'positive', neutral: 'neutral', negative: 'low' };
 const MARK: Readonly<Record<string, string>> = { '+': '+', '0': '0', '-': '−', '': '—' };
 
-export function PpdtResult({ picture, note, story, paperCode, sample, sheet }: Props) {
+export function PpdtResult({ picture, note, story, paperCode, sample, sheet, review }: Props) {
   const n = Number(picture.id.slice(-2));
   const paper = paperCode !== null;
   const checks = paper || note === null ? [] : checkAttempt(picture, note, story ?? '');
@@ -120,6 +122,7 @@ export function PpdtResult({ picture, note, story, paperCode, sample, sheet }: P
           </section>
         </>
       )}
+      {review}
 
       {sample && (
         <section aria-labelledby="sample-h" className="rounded-xl border border-brand/30 bg-accent/40 p-5">

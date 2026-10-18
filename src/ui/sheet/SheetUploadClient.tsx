@@ -14,7 +14,7 @@ export function SheetUploadClient({ sessionId, photos }: { sessionId: string; ph
       photos={photos}
       request={requestSheetUpload}
       upload={async (path, token, photo) => {
-        const { error } = await createSupabaseBrowser().storage.from('answer-sheets').uploadToSignedUrl(path, token, photo, { contentType: 'image/jpeg', upsert: true });
+        const { error } = await createSupabaseBrowser().storage.from('answer-sheets').uploadToSignedUrl(path, token, photo, { contentType: 'image/jpeg' });
         return { error: error ? { message: error.message } : null };
       }}
       onDone={() => router.refresh()}

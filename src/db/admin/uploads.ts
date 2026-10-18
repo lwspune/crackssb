@@ -23,7 +23,8 @@ export type IssuedUpload = { readonly kind: 'ok'; readonly path: string; readonl
 export async function issueSheetUpload(caller: SupabaseClient, service: SupabaseClient, input: { sessionId: string; page: number }): Promise<IssuedUpload> {
   const { data: path, error } = await caller.rpc('begin_sheet_upload', { p_session_id: input.sessionId, p_page: input.page });
   if (error || typeof path !== 'string') return { kind: 'forbidden' };
-  const signed = await service.storage.from(SHEET_BUCKET).createSignedUploadUrl(path, { upsert: true });
+  // No upsert: a link is good for two hours, and must not replace a photo once sent. A retake is a fresh path (0014).
+  const signed = await service.storage.from(SHEET_BUCKET).createSignedUploadUrl(path);
   if (signed.error || !signed.data) {
     console.error('issueSheetUpload: no upload link', { message: signed.error?.message });
     return { kind: 'failed' };
