@@ -39,3 +39,18 @@ export const PICTURES: readonly PpdtPicture[] = z.object({ pictures: z.array(pic
 export function pictureById(id: string): PpdtPicture | undefined {
   return PICTURES.find((p) => p.id === id);
 }
+
+const DIFFICULTY = { clear: 2, hazy: 3, ambiguous: 4 } as const;
+
+/** The `items` rows the pictures are seeded as (npm run ppdt:seed): what a session points at and the screen shows. */
+export function pictureRows() {
+  return PICTURES.map((p) => ({
+    id: p.id,
+    assessment_type: 'ppdt' as const,
+    difficulty: DIFFICULTY[p.difficulty],
+    payload: { title: p.title, image: `/ppdt/${p.id}.jpg`, difficulty: p.difficulty },
+    active: true,
+    source: p.source.kind,
+    source_ref: p.source.kind === 'pexels' ? p.source.url : p.source.note,
+  }));
+}

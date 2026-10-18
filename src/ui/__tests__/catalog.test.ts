@@ -53,6 +53,12 @@ describe('the practise catalogue', () => {
     expect(RUNNABLE.oir?.start).toBe('/practise/oir');
   });
 
+  it('opens PPDT as ten pictures, chosen on its own page (D33)', () => {
+    const ppdt = CATALOG.find((e) => e.id === 'ppdt');
+    expect(ppdt?.availability).toBe('ready');
+    expect(RUNNABLE.ppdt?.start).toBe('/practise/ppdt');
+  });
+
   it('links practice only inside the practise area', () => {
     for (const e of CATALOG) if (e.practice) expect(e.practice.href).toMatch(/^\/practise\/[a-z-]+$/);
   });

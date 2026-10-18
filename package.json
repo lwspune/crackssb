@@ -25,7 +25,9 @@
     "items:seed": "node --experimental-strip-types scripts/seed-items.ts",
     "oirmocks": "node --experimental-strip-types scripts/build-oir-mocks.ts",
     "tests:seed": "node --experimental-strip-types scripts/seed-tests.ts",
-    "ppdtslides": "node scripts/build-ppdt-slides.mjs"
+    "ppdtslides": "node scripts/build-ppdt-slides.mjs",
+    "ppdt:seed": "node --experimental-strip-types scripts/seed-ppdt.ts",
+    "ppdtsheet": "node scripts/build-ppdt-sheet-pdf.mjs"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",

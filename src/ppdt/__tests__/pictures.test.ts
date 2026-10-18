@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { existsSync, readFileSync, statSync } from 'node:fs';
-import { PICTURES, pictureById } from '../pictures.ts';
+import { PICTURES, pictureById, pictureRows } from '../pictures.ts';
 
 /**
  * The PPDT pictures (D33): ten slides — five sketches supplied by the owner,
@@ -59,5 +59,32 @@ describe('the PPDT pictures', () => {
   it('are found by id, and nothing else is', () => {
     expect(pictureById('ppdt-03')?.difficulty).toBe('clear');
     expect(pictureById('ppdt-99')).toBeUndefined();
+  });
+});
+
+describe('pictureRows', () => {
+  it('makes one `items` row per picture: the slide to show, not the ground truth', () => {
+    const rows = pictureRows();
+    expect(rows).toHaveLength(10);
+    expect(rows[0]).toEqual({
+      id: 'ppdt-01',
+      assessment_type: 'ppdt',
+      difficulty: 2,
+      payload: { title: 'Railway platform', image: '/ppdt/ppdt-01.jpg', difficulty: 'clear' },
+      active: true,
+      source: 'owner',
+      source_ref: 'Pencil sketch supplied by the owner, 2026-10-18.',
+    });
+    expect(rows[2].source).toBe('pexels');
+    expect(rows[2].source_ref).toMatch(/^https:\/\/www\.pexels\.com\/photo\//);
+    expect(rows.map((r) => r.difficulty)).toEqual([2, 2, 2, 3, 3, 3, 4, 4, 4, 4]);
+  });
+});
+
+describe('the blank sheet as a PDF', () => {
+  it('ships, one A4 page, for students to download and print', () => {
+    const pdf = readFileSync(file('public/ppdt-sheet.pdf'));
+    expect(pdf.subarray(0, 5).toString()).toBe('%PDF-');
+    expect((pdf.toString('latin1').match(/\/Type\s*\/Page[^s]/g) ?? []).length).toBe(1);
   });
 });

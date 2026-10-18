@@ -35,7 +35,7 @@ export const SSB_DAYS: readonly { readonly day: SsbDay; readonly title: string; 
 
 export const CATALOG: readonly CatalogEntry[] = [
   { id: 'oir', name: 'Officer Intelligence Rating', short: 'OIR', day: 1, instruments: ['oir'], availability: 'ready', summary: 'Timed mocks · 40 questions · 20 min', practice: { href: '/practise/oir', label: 'Chapter practice' } },
-  { id: 'ppdt', name: 'Picture Perception & Discussion Test', short: 'PPDT', day: 1, instruments: ['ppdt'], availability: 'coming', summary: '30 s picture · 4 min story' },
+  { id: 'ppdt', name: 'Picture Perception & Discussion Test', short: 'PPDT', day: 1, instruments: ['ppdt'], availability: 'ready', summary: '10 pictures · 30 s look · 4 min story' },
 
   { id: 'tat', name: 'Thematic Apperception Test', short: 'TAT', day: 2, instruments: ['tat'], availability: 'coming', summary: '12 pictures · 4 min each' },
   { id: 'wat', name: 'Word Association Test', short: 'WAT', day: 2, instruments: ['wat'], availability: 'ready', summary: '60 words · 15 s each' },

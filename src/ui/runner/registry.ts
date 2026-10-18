@@ -27,6 +27,16 @@ export const RUNNABLE: Partial<Readonly<Record<RunnerInstrument, RunnableInstrum
     instruction: 'Answer in any order. Change an answer until you submit.',
     start: '/practise/oir',
   },
+  ppdt: {
+    config: INSTRUMENT_CONFIGS.ppdt,
+    facts: [
+      { value: '30 s', label: 'Look' },
+      { value: '1 min', label: 'Note' },
+      { value: '4 min', label: 'Write' },
+    ],
+    instruction: 'Look at the picture, note who is in it, then write a story about it.',
+    start: '/practise/ppdt',
+  },
   wat: {
     config: INSTRUMENT_CONFIGS.wat,
     facts: [

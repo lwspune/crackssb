@@ -5,6 +5,7 @@ import { entryById } from '@/ui/catalog.ts';
 import { isSessionCode } from '@/ui/runner/paper.ts';
 import { RUNNABLE } from '@/ui/runner/registry.ts';
 import { AnswerSheet } from '@/ui/sheet/AnswerSheet.tsx';
+import { PpdtSheet } from '@/ui/sheet/PpdtSheet.tsx';
 import { PrintButton } from '@/ui/sheet/PrintButton.tsx';
 
 /** Printable answer sheet for paper mode (D22). Outside the app shell: it is made to be printed. */
@@ -18,7 +19,10 @@ export default async function SheetPage({ params, searchParams }: { params: Para
   const { instrument } = await params;
   const runnable = Object.hasOwn(RUNNABLE, instrument) ? RUNNABLE[instrument as keyof typeof RUNNABLE] : undefined;
   const entry = entryById(instrument);
-  if (!runnable || !entry || runnable.config.mode !== 'forced_sequence') notFound();
+  // A line-per-word sheet for forced sequence (WAT); PPDT has its own one-page layout (D33).
+  const ppdt = instrument === 'ppdt';
+  if (!runnable || !entry || (runnable.config.mode !== 'forced_sequence' && !ppdt)) notFound();
+  const lines = 'itemCount' in runnable.config ? runnable.config.itemCount : 0;
 
   // Anything that is not a code we issued prints as an empty box, never as text.
   const raw = (await searchParams).code;
@@ -29,16 +33,22 @@ export default async function SheetPage({ params, searchParams }: { params: Para
       <div data-print-hide className="mx-auto mb-6 flex w-full max-w-[210mm] flex-wrap items-center justify-between gap-3">
         <div>
           <h1 className="text-xl font-bold tracking-tight">Answer sheet</h1>
-          <p className="text-sm text-muted-foreground">A4, {Math.ceil(runnable.config.itemCount / 30)} pages. Print before you begin.</p>
+          <p className="text-sm text-muted-foreground">
+            {ppdt ? 'A4, one page. Print a few before you begin.' : `A4, ${Math.ceil(lines / 30)} pages. Print before you begin.`}
+          </p>
         </div>
         <div className="flex items-center gap-2">
-          <Link href={`/run/${instrument}`} className="inline-flex min-h-11 items-center px-3 text-sm font-semibold text-brand-accent hover:underline">
+          <Link href={runnable.start ?? `/run/${instrument}`} className="inline-flex min-h-11 items-center px-3 text-sm font-semibold text-brand-accent hover:underline">
             Back to the test
           </Link>
           <PrintButton />
         </div>
       </div>
-      <AnswerSheet title={entry.name} short={entry.short ?? entry.name} lines={runnable.config.itemCount} perPage={30} code={code} />
+      {ppdt ? (
+        <PpdtSheet code={code} />
+      ) : (
+        <AnswerSheet title={entry.name} short={entry.short ?? entry.name} lines={lines} perPage={30} code={code} />
+      )}
     </main>
   );
 }

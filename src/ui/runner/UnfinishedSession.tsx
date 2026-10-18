@@ -5,17 +5,17 @@ import { entryById } from '../catalog.ts';
 import { ArrowIcon } from '../icons.tsx';
 
 /** The candidate's live session, and whether its clock is still running. */
-async function unfinished(): Promise<{ instrument: RunnerInstrument; running: boolean; testId: string | null } | null> {
+async function unfinished(): Promise<{ instrument: RunnerInstrument; running: boolean; testId: string | null; itemId: string | null } | null> {
   const supabase = await createSupabaseServer();
   const { data } = await supabase
     .from('sessions')
-    .select('assessment_type, expires_at, test_id')
+    .select('assessment_type, expires_at, test_id, item_id')
     .eq('status', 'live')
     .order('started_at', { ascending: false })
     .limit(1)
     .maybeSingle();
   if (!data) return null;
-  return { instrument: data.assessment_type as RunnerInstrument, running: Date.parse(data.expires_at) > Date.now(), testId: data.test_id };
+  return { instrument: data.assessment_type as RunnerInstrument, running: Date.parse(data.expires_at) > Date.now(), testId: data.test_id, itemId: data.item_id };
 }
 
 /**
@@ -27,10 +27,10 @@ async function unfinished(): Promise<{ instrument: RunnerInstrument; running: bo
 export async function UnfinishedSession() {
   const found = await unfinished();
   if (!found) return null;
-  const { instrument, running, testId } = found;
-  // An OIR mock (D32) is named and resumed by its mock, not the instrument.
-  const name = testId ? `OIR Mock ${Number(testId.slice(-2))}` : entryById(instrument)?.short ?? instrument;
-  const href = testId ? `/mock/${testId}` : `/run/${instrument}`;
+  const { instrument, running, testId, itemId } = found;
+  // An OIR mock (D32) or a PPDT picture (D33) is named and resumed by itself, not the instrument.
+  const name = testId ? `OIR Mock ${Number(testId.slice(-2))}` : itemId ? `PPDT picture ${Number(itemId.slice(-2))}` : entryById(instrument)?.short ?? instrument;
+  const href = testId ? `/mock/${testId}` : itemId ? `/picture/${itemId}` : `/run/${instrument}`;
 
   return (
     <Link
