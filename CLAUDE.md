@@ -2,7 +2,8 @@
 
 Online portal for **SSB** (Services Selection Board) preparation — the 5-day
 officer-selection process for the Indian Armed Forces. B2C candidates and B2B
-coaching academies. Launch entry type: NDA.
+coaching academies. Launch entry type: NDA. **Readers see it as CadetPrep** (D30, `src/ui/brand.ts`); the repo,
+Vercel project and package keep the name crackssb.
 
 **The four planning documents are authoritative and this file does not repeat them:**
 
@@ -11,7 +12,7 @@ coaching academies. Launch entry type: NDA.
 | [`ARCHITECTURE.md`](./ARCHITECTURE.md) | Schema, the 15-OLQ vector, edge-function contracts, the four seam rules, honest-claims policy |
 | [`ROADMAP.md`](./ROADMAP.md) | Phases, sprint order, gates, blockers, content lift |
 | [`UI.md`](./UI.md) | Roles (4 in schema, 3 experiences), the **seven runner modes** and their contracts, timing rules, per-role IA, build order |
-| [`DECISIONS.md`](./DECISIONS.md) | **D1–D29.** The long-form *why* trail. Append only; supersede rather than edit |
+| [`DECISIONS.md`](./DECISIONS.md) | **D1–D30.** The long-form *why* trail. Append only; supersede rather than edit |
 
 Read `DECISIONS.md` before changing anything in `src/scoring/` — most of what
 looks arbitrary there is a recorded decision with evidence behind it.
@@ -32,7 +33,7 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-2453 tests passing · npm test        lint clean · npm run lint        npm run build green
+2455 tests passing · npm test        lint clean · npm run lint        npm run build green
 74 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
@@ -140,7 +141,7 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 2453 tests (never touches the database)
+npm test              # 2455 tests (never touches the database)
 npm run test:db       # 74 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
@@ -206,8 +207,9 @@ and the single-candidate script — and `.mcp.json`, which holds the Supabase ac
 
 ## Vercel
 
-Live at **https://crackssbai.vercel.app** (also `crackssb-bay.vercel.app`; `crackssb.vercel.app` belongs to
-someone else). Project `crackssb` (`prj_T81bvhmqcBtWmTdJe2F6hfamFrxG`, team `team_4QOTBc7SjXa7BdolwrS61ABp`),
+Live at **https://cadetprep.in** (D30; `www` redirects to it; DNS at GoDaddy: `A @` and `CNAME www`, the values Vercel
+gives). Also `crackssbai.vercel.app` and `crackssb-bay.vercel.app`; `crackssb.vercel.app` belongs to someone else.
+The project-scoped token cannot see or create certificates (403). Project `crackssb` (`prj_T81bvhmqcBtWmTdJe2F6hfamFrxG`, team `team_4QOTBc7SjXa7BdolwrS61ABp`),
 deploys on every push to `main`. **Functions run in `bom1` (Mumbai)**, beside the database — check a response's
 `x-vercel-id` reads `bom1::bom1`. Env vars: the three Supabase keys, the service-role one marked Sensitive.
 The Vercel token is in `.mcp.json` (gitignored); it is project-scoped (it cannot list the user or teams), so pass

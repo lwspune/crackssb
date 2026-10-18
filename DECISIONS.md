@@ -684,3 +684,20 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 **Revisit if.** Flat scans or the book's answer key arrive (the held questions, and a second check on every count), or arcs are needed (Chapter 28 Q37, paper folding).
 
 **Addendum 2026-10-13 (Chapter 18, picture answers).** Dice are drawn as views (top, and the faces left and right of a corner) and nets (`dice.ts`); the solver keeps only real cubes that show every view the right way round. Some printed dice cannot all be shown by one real cube (a view in mirror image of another); there the exam's method is keyed (a face's opposite is the one never seen beside it) and marked medium. Marks whose turn on the face decides the answer (half-shaded faces, arrows) are held. Options that are drawings ship as `answerPanels`, one drawing per option inside its button, the option text describing it in words.
+
+---
+
+## D30 — The product is CadetPrep, at cadetprep.in; internal names stay crackssb
+
+**Date:** 2026-10-18 · **Status:** Accepted
+
+**Context.** The owner moved the app to their own domain, `cadetprep.in` (it had served an older site, now retired), and asked for the product to carry that name.
+
+**Decision.**
+
+1. **Readers see CadetPrep.** Tagline: "Crack SSB with confidence". The wordmark is two-tone, Cadet + **Prep** in the accent, as the old one was. Colours and fonts are unchanged (D20). No logo yet.
+2. **The name lives in one place**, `src/ui/brand.ts`. `brand.test.ts` fails if the old name is left anywhere under `src/app` or `src/ui`.
+3. **Internal names stay**: the GitHub repo, the Vercel project, the npm package and the `.invalid` test addresses. Readers never see them, and renaming them is churn with real breakage (Vercel ids, scripts, docs).
+4. **`cadetprep.in` is the primary address**; `www` redirects to it (308). Supabase's Site URL is `https://cadetprep.in`; the `vercel.app` addresses stay on the redirect allow-list and keep working.
+
+**Revisit if.** A logo arrives (favicon and wordmark), or the product grows past SSB and the tagline stops fitting.
