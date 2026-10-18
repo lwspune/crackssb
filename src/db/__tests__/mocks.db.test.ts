@@ -1,6 +1,7 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import { buildWorld, hasDatabase, leftovers, serviceClient, yearsAgo } from './helpers/world.ts';
 import type { World } from './helpers/world.ts';
+import { supabaseSessionApi } from '../../ui/runner/supabase-api.ts';
 
 /**
  * OIR mocks in the database (0009, D32). A mock is a fixed, ordered list of
@@ -134,6 +135,35 @@ describe.skipIf(!hasDatabase)('OIR mocks', () => {
       expect((await result('candA2', data.id)).error).toBeNull();
       // And a new attempt closes the stale one rather than refusing.
       expect((await start('candA2')).error).toBeNull();
+    });
+  });
+
+  describe('your attempts (my_test_attempts, 0010)', () => {
+    it('lists your own attempts with what you answered and — once over — what you got right', async () => {
+      const { data, error } = await world.people.candA.client.rpc('my_test_attempts');
+      expect(error).toBeNull();
+      expect(data).toEqual([expect.objectContaining({ session_id: session, test_id: full, over: true, answered: 2, correct: 1 })]);
+    });
+
+    it('gives no score for an attempt still running, so a live mock cannot be probed for its keys', async () => {
+      const { data } = await world.people.candA2.client.rpc('my_test_attempts');
+      const running = (data as { over: boolean; correct: number | null }[]).find((a) => !a.over);
+      expect(running).toMatchObject({ correct: null });
+    });
+
+    it('shows nobody else’s attempts, staff included', async () => {
+      const { data } = await world.people.mentorA.client.rpc('my_test_attempts');
+      for (const a of data as { session_id: string }[]) expect(a.session_id).not.toBe(session);
+    });
+  });
+
+  describe('the app’s adapter (supabaseSessionApi)', () => {
+    it('starts a mock through start_test and finds it again on reload, knowing which mock', async () => {
+      const api = supabaseSessionApi(world.people.mentorB.client);
+      const started = await api.start('oir', 'typed', null, full);
+      expect(started).toMatchObject({ id: expect.any(String) });
+      expect(await api.loadLive('oir')).toMatchObject({ testId: full, instrument: 'oir' });
+      expect((await api.save((started as { id: string }).id, '0', 'Q', false)).error).toBe('bad_answer');
     });
   });
 
