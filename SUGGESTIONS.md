@@ -296,6 +296,9 @@ A placeholder, not a measurement (D24 point 7). Replace from item statistics
 
 ### Results and item statistics must filter `by_staff`
 
+The review queue does, in SQL (`review_queue`, 0015, D34), with a test that plants a staff attempt.
+Results and the D19 stats still to come.
+
 Nothing reads sessions for results or item statistics yet, so nothing leaks today.
 When the Results page, the staff review queue or the D19 stats read lands, it must
 select `by_staff = false` — and a test should plant a staff session and watch it
@@ -384,16 +387,15 @@ The quick checks count and compare; they cannot say whether a story is good. Tha
 layer (D5, blocked on a key) or a mentor. `evaluate-ppdt` is designed (ARCHITECTURE.md): text in, a partial
 OLQ vector out. Every typed attempt is already stored for it.
 
-### Mentor review of PPDT stories
+### ~~Mentor review of PPDT stories~~ — done 2026-10-19 (D34): `/staff/review`, a seven-heading rubric, marks on the result
 
 The review queue (`/staff/review`) is still empty. A mentor marking a story against a short rubric is real
 value for academies and builds the expert-rated set the D5 bake-off needs (D7). Staff can already read their
 candidates' responses under row level security.
 
-### Sheet upload and reading
+### Sheet ~~upload~~ and reading
 
-Paper attempts keep only the code; the photo upload step is the same "coming" as WAT's (D22). When it lands,
-PPDT sheets are the best handwriting corpus we will get: time-pressured, with the character box as structured
+~~Paper attempts keep only the code~~ — upload done 2026-10-19 (D34). Reading (OCR) is still to come. PPDT sheets are the best handwriting corpus we will get: time-pressured, with the character box as structured
 ground truth.
 
 ### A canned-story check
@@ -406,7 +408,7 @@ people and action actually shown?) and against other candidates' stories would c
 One sample per picture today; two or three would show that more than one reading is strong. More pictures
 once the owner has seen the ten in use: generated (D8) or licensed, with ground truth written first.
 
-### The narration drill
+### ~~The narration drill~~ — the recording is done 2026-10-19 (D34): a minute, on the result page, heard by the mentor
 
 Solo practice for the narration round: re-read your story, then speak it within a minute against a timer,
 recorded on the phone. Needs the Speak mode (UI.md §3).
@@ -415,3 +417,29 @@ recorded on the phone. Needs the Speak mode (UI.md §3).
 
 The picture page needs a live attempt to reach the character box. They were checked by hand at 320 and 360 px
 (no sideways scroll, every control at least 44 px); add them to the script.
+
+## 2026-10-19 (sheet, narration, review, D34)
+
+### Delete photos and recordings after twelve months
+
+D34 keeps them for a year. Nothing deletes them yet: a scheduled job (pg_cron, or a Vercel cron calling a
+service-role route) that removes the stored objects of attempts older than twelve months, then their rows.
+
+### Hear the narration without a person
+
+Transcribing the narration needs a speech-to-text provider as well as the D5 key. The English_AI_Tutor
+audio pipeline is the place to start (ROADMAP Phase 2).
+
+### Takes left behind when an attempt is never sent
+
+Retakes and re-photographed pages leave their earlier files in storage until the attempt is sent, when they
+are cleared. An attempt that is never sent keeps them until the twelve-month clean-up.
+
+### WAT on paper still says "Photo upload is coming"
+
+`begin_sheet_upload` takes any paper attempt, but the WAT runner's end screen has no upload, and nothing
+reviews WAT. Wire it when WAT gets a result page.
+
+### The candidate's attempt list does not show which are marked
+
+`/practise/ppdt` lists attempts; it could show "Sent" and "Marked" beside each. The result page shows both.

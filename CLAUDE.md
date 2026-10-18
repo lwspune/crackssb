@@ -33,8 +33,8 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-2607 tests passing · npm test        lint clean · npm run lint        npm run build green
-162 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
+2643 tests passing · npm test        lint clean · npm run lint        npm run build green
+186 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
 **Type-checking is new.** `npm run typecheck` checks everything and currently
@@ -68,6 +68,14 @@ each problem marked on its row; tests read files saved by Excel 16 itself (`src/
 30 s look, 1 min character box, 4 min story, typed or on paper (`/sheets/ppdt`, `public/ppdt-sheet.pdf`);
 `/results/ppdt/[session]` shows the picture, its ground truth, quick checks (counts, not a judgement) and a
 sample story. The server takes each answer only in its own window (0012).
+
+**Mentor review (D34).** On the result page the candidate photographs a paper sheet (up to four pages), records a
+one-minute narration (browser recorder; record again until sent), and sends the attempt for review once. That fixes
+it. `/staff/review` lists what was sent (the owner also gets candidates with no academy). `/staff/review/[session]`
+marks it: story on hero, action, outcome and outlook; narration on clarity, confidence and within the minute;
+each 1-5, plus *went well* and *work on*, with no total. The marks then show on the candidate's result.
+Every take and photo goes to a fresh path that cannot be overwritten (0013-0015). Photos and recordings are kept 12
+months; the clean-up job is not built.
 
 **Layered access (D25).** Staff also reach the student app and the superadmin reaches all three, through a switcher.
 Staff tests are flagged `by_staff` by the database and must stay out of results and item statistics.
@@ -122,6 +130,7 @@ src/items/               item bank — D19, D24
 src/oir/score.ts         score-oir — raw, per-reasoning-type, percentile+band only WITH a norm, else null
 src/oir/chapters.ts      OIR chapters = reasoning types (D26); every type in the bank must be listed (tested)
 src/ppdt/                pictures.ts (manifest, validated) · note.ts (the character box) · feedback.ts (quick checks) · samples.ts · attempts.ts (D33)
+                         · rubric.ts (the review headings, readReview, draftProblems — D34)
 src/oir/mocks.ts         the 20 mocks (D32): extendMocks (append-only, spread across types) · checkMocks · mock-result.ts summarise + standings
 src/oir/practice.ts      chapter progress (latest answer counts) · New / Retry wrong / All queues · boundary parse
 src/runner/              the test-taking engine — D18, UI.md §3. Pure, `now` injected, no timers
@@ -143,9 +152,12 @@ src/ui/
     content.ts           WAT words from content/wat-items.json — ships the whole deck (known gap)
     paper.ts             D22 paper mode — session code (no handwriting-confusable chars), sheet pages
   practice/              PracticeRunner — answer, then key + rule; A–D and Enter from the keyboard (D26) · Question.tsx, shared with mocks
-  ppdt/                  PpdtRunner (D33): look, note, write · PictureGrid · PpdtResult · PpdtAttemptList
+  ppdt/                  PpdtRunner (D33): look, note, write · PictureGrid · PpdtResult (forStaff) · PpdtAttemptList
+                         · NarrationRecorder (MediaRecorder, mic injected for tests) · SendForReview · ReviewClient (D34)
+  review/                ReviewForm (the rubric) · ReviewMarks (what the candidate sees) · ReviewQueue (D34)
   mock/                  BookletRunner (D32) — engine + store, grid, flags, confirm, dark · MockGrid · AttemptList · MockReview
   sheet/                 AnswerSheet — the printable sheet at /sheets/[instrument]; code on every page, no name
+                         · SheetUpload (camera, shrunk on the phone, retake) · SheetPhotos (read-only) — D34
   auth/ · staff/ · admin/  LoginForm, ChangePasswordForm · AddPeopleForm (one person by fields | many from Excel), people-rows.ts (the one
                          row check, browser and server), people-sheet.ts (template, upload → rows, logins file), PeopleTable, PersonManage, PasswordField,
                          LoginHandout + login-message.ts (the WhatsApp message, D31) · CreateAcademyForm
@@ -153,6 +165,7 @@ src/lib/
   practice/data.ts       chapter items (keyless) and the viewer's OWN practice answers, paged past 1000 rows
   mocks/data.ts          a mock and its questions in order (keyless) · your attempts · one attempt's result (D32)
   ppdt/data.ts           the pictures · your PPDT attempts · one attempt's answers (D33)
+  review/data.ts         the queue (review_queue) · an attempt's review · who took it (D34)
   auth/routing.ts        layered areas per role (D25); where each role lands; safeNext (no open redirects); which paths are public
   auth/acting.ts         the staff area's academy: staff their own, superadmin the one picked (acting_org cookie, checked)
   auth/viewer.ts         the data access layer — getViewer / requireViewerAt; every page asks here
@@ -162,10 +175,13 @@ src/lib/
   supabase/              server · browser (the user's RLS client) · admin (service role — only after the DB says yes)
 src/proxy.ts             refreshes the session; sends visitors with none to /login (optimistic only)
 src/db/admin/            users.ts (insertAccount, user:create) · people.ts (createPeople — D23) · manage.ts (password, switch off, remove — D31)
+                         · uploads.ts (sheet photos) · narration.ts (takes, submitForReview + sweep) — the database decides first, then links are signed (D34)
 supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people creation · 0004 create_academy · 0005 items + item_keys (keys server-only) · 0006 staff practice (by_staff) · 0007 practice_answers + answer_practice (D26)
                          · 0008 manage people: phone, deactivated_at, can_manage_person + update_person, record_guardian_consent, set_person_role, set_person_active (D31)
                          · 0009 OIR mocks: tests + test_items, sessions.test_id, start_test, save_response A-D, test_result, once-sat-fixed guards · 0010 my_test_attempts · 0011 its FK index (D32)
                          · 0012 PPDT: phase lengths in instrument_timings, sessions.item_id, start_ppdt, save_response note/write windows (D33)
+                         · 0013 begin_sheet_upload · 0014 narrations + bucket, begin_narration, submit_for_review, fresh paths
+                         · 0015 evaluations.reviewer_id, one human review per attempt, review_attempt, review_queue (D34)
 corpus/                  candidate data — records/ is GITIGNORED
 content/                 stimulus material — WAT deck, item bank, TAT images, OIR transcriptions (oir/) + oir-items.json
 scripts/                 build + measurement entry points
@@ -174,8 +190,8 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 2607 tests (never touches the database)
-npm run test:db       # 162 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store — fixtures cleaned up
+npm test              # 2643 tests (never touches the database)
+npm run test:db       # 186 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store, sheet photos, narration, review — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
 npm run build         # production build (type-checks app code)
@@ -272,6 +288,7 @@ is the gate, and it was checked by loosening a policy and watching exactly its t
 
 **Accepted advisor warnings:** `start_session`, `save_response`, `end_session`,
 `can_create_person`, `create_academy`, `answer_practice`, `can_manage_person`, `update_person`,
-`record_guardian_consent`, `set_person_role`, `set_person_active`, `start_test`, `test_result`, `my_test_attempts`, `start_ppdt` are SECURITY DEFINER and callable by signed-in users —
+`record_guardian_consent`, `set_person_role`, `set_person_active`, `start_test`, `test_result`, `my_test_attempts`, `start_ppdt`,
+`begin_sheet_upload`, `begin_narration`, `submit_for_review`, `review_attempt` are SECURITY DEFINER and callable by signed-in users —
 by design: they are the only write paths and check ownership, timing, consent and role
 themselves. Anything else the advisors raise is a finding.

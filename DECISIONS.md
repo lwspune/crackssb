@@ -767,3 +767,30 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 **Consequences.** `ppdt.db.test.ts` is the gate (checked by opening the character box while the picture shows: exactly its test failed). Mentor review, the judgement layer, the narration drill, sheet upload and reading, and a canned-story check are deferred (SUGGESTIONS.md). The owner-supplied sketches carry their own provenance; their source is the owner's to answer for.
 
 **Revisit if.** The ten prove their worth (then more, generated per D8 or licensed), the D5 key arrives (judge the story), or an assessor's reading of a sample story disagrees with ours.
+
+## D34 — PPDT attempts go to a mentor: the sheet photographed, the story narrated, marked on a short rubric
+
+**Date:** 2026-10-19 · **Status:** Accepted
+
+**Context.** Candidates could sit PPDT typed or on paper (D33), but a paper sheet went nowhere: the bucket and the `uploads` table existed since 0001 (D22), with no way to write either. Nothing heard the narration, which is half of PPDT at the SSB. The judgement layer (D5) has never run, so a person has to mark the story. UI.md already planned the review queue as human `evaluations` rows (D6, D7).
+
+**Decision.**
+
+1. **The sheet, photographed** on the phone (camera, shrunk to 1600 px as JPEG), up to four pages, each with a retake. `begin_sheet_upload` (0013) decides as the candidate: their own paper attempt, its time over, page 1 to 4.
+2. **The narration, recorded** in the browser's own recorder: one minute, stopping by itself, saved the moment it stops, record again as often as wanted. Opus in WebM, or MP4 on Safari, kept in a private `narrations` bucket. `begin_narration` (0014) decides.
+3. **Sent for review once.** `submit_for_review` fixes the attempt. It needs something to review: a story typed, or a sheet photo that **actually arrived** (checked in `storage.objects`). After that, no more takes or photos.
+4. **Fresh paths, no overwrite.** A signed upload link stays good for two hours, so on a fixed path a submitted take or photo could be swapped afterwards. Every take and photo gets a new, unguessable path, and links cannot overwrite. The ones left behind are cleared on submit.
+5. **The rubric.** Story: hero, action, outcome, outlook. Narration, only when there is one: clarity, confidence, within the minute. Each is a whole mark from 1 to 5, plus *went well* and *work on*. **No total and no band** (D15): the headings are the feedback. Perception is shown by the quick checks already on the page (D33), not marked again.
+6. **One human review per attempt**, an `evaluations` row with `evaluator = 'human'` and its reviewer named. A second marking replaces the first. `review_attempt` (0015) decides as the reviewer: staff who may see the candidate, never their own attempt, never a staff member's own practice (D25).
+7. **Who reviews.** Staff review their academy's attempts. **Candidates with no academy go to the owner**, the only one who can see them. The queue goes through `review_queue`, which runs as the caller under row level security and keeps staff attempts out in SQL.
+8. **Retention: twelve months.** Photos and recordings of minors are kept for a year after the attempt, then deleted. The clean-up job is not built yet (SUGGESTIONS.md).
+
+**Consequences.** `uploads.db.test.ts`, `narration.db.test.ts` and `review.db.test.ts` are the gate. The checks:
+
+- Allowing a take after submit made exactly the lock test fail.
+- Letting staff attempts into the queue made exactly the two queue tests fail that plant one.
+- Allowing an upload while the attempt was still running made exactly its test fail.
+
+Reading the sheet (OCR) and the AI's first pass are still to come. Speech-to-text for the narration also needs a provider; the D5 key alone is not enough. Every review is a human-marked story, which is the expert-rated set D7 asks for.
+
+**Revisit if.** An academy wants its own rubric, a second assessor marks differently (D17: compute per rater), or the AI's first pass lands. When it does, the queue sorts by its confidence, as UI.md planned.
