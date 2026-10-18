@@ -87,6 +87,9 @@ export interface AccountInput {
   readonly fullName: string;
   readonly role: Role;
   readonly dob: string | null;
+  readonly phone?: string | null;
+  /** Typed by staff (D31), already checked; none, and one is generated. */
+  readonly password?: string | null;
   readonly orgId: string | null;
   /** When consent was recorded, or null. */
   readonly guardianConsentAt: string | null;
@@ -102,7 +105,7 @@ export interface AccountInput {
  * written to: the auth server refuses it and we report it.
  */
 export async function insertAccount(service: SupabaseClient, input: AccountInput): Promise<Created> {
-  const password = generatePassword();
+  const password = input.password ?? generatePassword();
   const created = await service.auth.admin.createUser({ email: input.email, password, email_confirm: true });
   if (created.error?.code === 'email_exists') throw new ExistingAccount(input.email);
   if (created.error || !created.data.user) throw new Error(`Creating the login failed: ${created.error?.message ?? 'no user returned'}`);
@@ -115,6 +118,7 @@ export async function insertAccount(service: SupabaseClient, input: AccountInput
     org_id: input.orgId,
     full_name: input.fullName,
     dob: input.dob,
+    phone: input.phone ?? null,
     guardian_consent_at: input.guardianConsentAt,
     created_by: input.createdBy,
     guardian_consent_recorded_by: input.consentRecordedBy,

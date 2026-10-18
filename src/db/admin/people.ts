@@ -1,4 +1,5 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
+import { passwordProblem } from '../../lib/auth/password.ts';
 import type { Role } from '../../lib/auth/routing.ts';
 import { ExistingAccount, insertAccount, isMinor } from './users.ts';
 
@@ -25,6 +26,10 @@ export interface PersonLine {
   readonly fullName: string;
   readonly email: string;
   readonly dob: string | null;
+  /** `+` and digits (src/lib/phone.ts), or none. */
+  readonly phone?: string | null;
+  /** Typed by staff (D31); none, and one is generated. */
+  readonly password?: string | null;
 }
 
 export interface CreatePeopleInput {
@@ -41,6 +46,7 @@ export interface CreatedPerson {
   readonly email: string;
   /** Shown once to the caller, never stored. */
   readonly password: string;
+  readonly phone: string | null;
   readonly minorWithoutConsent: boolean;
 }
 
@@ -57,6 +63,11 @@ export type CreatePeopleResult =
 export async function createPeople(caller: SupabaseClient, service: SupabaseClient, input: CreatePeopleInput): Promise<CreatePeopleResult> {
   if (input.people.length === 0) return { kind: 'invalid', error: 'Add at least one person.' };
   if (input.people.length > MAX_PEOPLE_PER_REQUEST) return { kind: 'invalid', error: `At most ${MAX_PEOPLE_PER_REQUEST} people at a time.` };
+  // Fail fast, before any login exists: a typed password is checked here too, whatever the screen did.
+  for (const p of input.people) {
+    const problem = p.password ? passwordProblem(p.password, { email: p.email, fullName: p.fullName }) : null;
+    if (problem) return { kind: 'invalid', error: `${p.email}: ${problem}` };
+  }
 
   const { data: me } = await caller.auth.getUser();
   if (!me.user) return { kind: 'forbidden' };
@@ -77,12 +88,21 @@ export async function createPeople(caller: SupabaseClient, service: SupabaseClie
         fullName: person.fullName,
         role: input.role,
         dob: person.dob,
+        phone: person.phone ?? null,
+        password: person.password ?? null,
         orgId: input.org,
         guardianConsentAt: consent ? now : null,
         createdBy: me.user.id,
         consentRecordedBy: consent ? me.user.id : null,
       });
-      created.push({ id: account.id, fullName: person.fullName, email: person.email, password: account.password, minorWithoutConsent: minor && !consent });
+      created.push({
+        id: account.id,
+        fullName: person.fullName,
+        email: person.email,
+        password: account.password,
+        phone: person.phone ?? null,
+        minorWithoutConsent: minor && !consent,
+      });
     } catch (e) {
       if (e instanceof ExistingAccount) existing.push(person.email);
       else {

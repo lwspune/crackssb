@@ -122,6 +122,37 @@ describe.skipIf(!hasDatabase)('creating people', () => {
       expect(data.users.some((u) => u.email === email('nope'))).toBe(false);
     });
 
+    it('uses a typed password and saves the mobile number (D31)', async () => {
+      const r = await createPeople(world.people.ownerA.client, world.service, {
+        org: world.orgs.a,
+        role: 'candidate',
+        people: [{ fullName: 'Typed Cadet', email: email('typed'), dob: ADULT, phone: '+919876543210', password: 'Typed@2026' }],
+        guardianConsent: false,
+      });
+      if (r.kind !== 'ok') throw new Error(r.kind);
+      made.push(r.created[0].id);
+      expect(r.created[0]).toMatchObject({ password: 'Typed@2026', phone: '+919876543210' });
+      const { data } = await world.service.from('profiles').select('phone').eq('id', r.created[0].id).single();
+      expect(data?.phone).toBe('+919876543210');
+      const fresh = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!, { auth: { persistSession: false } });
+      expect((await fresh.auth.signInWithPassword({ email: email('typed'), password: 'Typed@2026' })).error).toBeNull();
+    });
+
+    it('refuses a weak password before creating anyone in the list', async () => {
+      const r = await createPeople(world.people.ownerA.client, world.service, {
+        org: world.orgs.a,
+        role: 'candidate',
+        people: [
+          { fullName: 'Fine Cadet', email: email('fine'), dob: ADULT },
+          { fullName: 'Weak Cadet', email: email('weak'), dob: ADULT, password: 'short' },
+        ],
+        guardianConsent: false,
+      });
+      expect(r).toMatchObject({ kind: 'invalid' });
+      const { data } = await world.service.from('profiles').select('id').in('email', [email('fine'), email('weak')]);
+      expect(data).toEqual([]);
+    });
+
     it('refuses another academy', async () => {
       const r = await createPeople(world.people.mentorA.client, world.service, {
         org: world.orgs.b,
