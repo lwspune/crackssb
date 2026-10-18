@@ -376,3 +376,42 @@ moved into the past), not by waiting 20 minutes in a browser. Worth one real run
 Both need an id or a live attempt. They were checked by hand at 320/360/1280 px (no sideways scroll, every tap
 target at least 44 px); add them to the script.
 
+## 2026-10-18 (PPDT, D33)
+
+### Judge the story, not just count it
+
+The quick checks count and compare; they cannot say whether a story is good. That needs the judgement
+layer (D5, blocked on a key) or a mentor. `evaluate-ppdt` is designed (ARCHITECTURE.md): text in, a partial
+OLQ vector out. Every typed attempt is already stored for it.
+
+### Mentor review of PPDT stories
+
+The review queue (`/staff/review`) is still empty. A mentor marking a story against a short rubric is real
+value for academies and builds the expert-rated set the D5 bake-off needs (D7). Staff can already read their
+candidates' responses under row level security.
+
+### Sheet upload and reading
+
+Paper attempts keep only the code; the photo upload step is the same "coming" as WAT's (D22). When it lands,
+PPDT sheets are the best handwriting corpus we will get: time-pressured, with the character box as structured
+ground truth.
+
+### A canned-story check
+
+Candidates memorise stock stories. Checking a story against the picture's ground truth (does it mention the
+people and action actually shown?) and against other candidates' stories would catch most. Not built.
+
+### More sample stories, and more pictures
+
+One sample per picture today; two or three would show that more than one reading is strong. More pictures
+once the owner has seen the ten in use: generated (D8) or licensed, with ground truth written first.
+
+### The narration drill
+
+Solo practice for the narration round: re-read your story, then speak it within a minute against a timer,
+recorded on the phone. Needs the Speak mode (UI.md §3).
+
+### `audit:mobile` does not visit the PPDT screens
+
+The picture page needs a live attempt to reach the character box. They were checked by hand at 320 and 360 px
+(no sideways scroll, every control at least 44 px); add them to the script.

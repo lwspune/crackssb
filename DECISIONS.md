@@ -748,3 +748,22 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 
 **Revisit if.** The book's answer key arrives (medium keys can then join new mocks), figure-series / figure-analogy questions are added (the non-verbal share is narrow), the product opens to the public (then a norm across first attempts becomes possible), or 20 mocks are used up.
 
+---
+
+## D33 — PPDT starts with ten pictures: five supplied sketches, five licensed photos made hazy; feedback by counting, not judging
+
+**Date:** 2026-10-18 · **Status:** Accepted · **Supersedes** D8 for these ten pictures (D8 stands for any made later)
+
+**Context.** PPDT's written portion was planned for Sprint 4 on the Stimulus → write mode the engine already had. The owner asked for ten pictures to start, chose licensed stock photos over generating images (D8), supplied five sketches of their own, and asked for a printable sheet. The judgement layer (D5) has never run, so the story cannot yet be scored.
+
+**Decision.**
+
+1. **Ten pictures**, three clear, three hazy, four very ambiguous: five sketches **supplied by the owner** (recorded as such) and five **Pexels** photos (page, photographer and licence recorded; one photographer's name withheld because it matches a candidate's, D21). Originals in `content/ppdt/source/`; slides made by `npm run ppdtslides` in the browser's canvas — no package — grey, softened, low contrast and grain for the photos, haze rising with difficulty, a number plate blurred; sketches cropped to the drawing and softened lightly.
+2. **Ground truth per picture** (`content/ppdt/pictures.json`): people counted within a fair range, the people worth describing, the moods a fair reading allows, the action. It is the feedback, not a secret.
+3. **The test** on the engine's Stimulus → write mode: 30 s to look (the picture never shows again, not even on reload), 1 min for the character box (count, then each one's sex, age and mood +/0/−, then the action), 4 min for the story. The server keeps the three windows and takes each answer only inside its own (0012). Typed or **on paper** (D22): a code, a one-page A4 sheet at `/sheets/ppdt`, and the same sheet as a real PDF printed by the browser (`npm run ppdtsheet`).
+4. **Feedback without a model.** Quick checks — count against the range, people described in full, moods against the allowed set, action noted, story length (60–180 words for four minutes), whether the story reaches an outcome — each in one line, said to be checks and **not a judgement of the story**. Then one **sample story** per picture, held to the same checks, shown as "one way among many".
+5. **Practice, at leisure.** Any picture any time, every attempt kept; the list shows pictures by number and difficulty only, never the picture or its title.
+
+**Consequences.** `ppdt.db.test.ts` is the gate (checked by opening the character box while the picture shows: exactly its test failed). Mentor review, the judgement layer, the narration drill, sheet upload and reading, and a canned-story check are deferred (SUGGESTIONS.md). The owner-supplied sketches carry their own provenance; their source is the owner's to answer for.
+
+**Revisit if.** The ten prove their worth (then more, generated per D8 or licensed), the D5 key arrives (judge the story), or an assessor's reading of a sample story disagrees with ours.
