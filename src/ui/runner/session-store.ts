@@ -24,6 +24,8 @@ export interface SessionRecord {
   readonly endedBy: EndedBy | null;
   /** An OIR mock attempt (D32): which mock. Absent for every other test. */
   readonly testId?: string | null;
+  /** A PPDT attempt (D33): which picture. Absent for every other test. */
+  readonly itemId?: string | null;
 }
 
 /** Saved: everything has reached the store. Saving: on its way. Offline: retrying. */
@@ -32,7 +34,7 @@ export type SyncState = 'saved' | 'saving' | 'offline';
 export interface SessionStore {
   load(instrument: RunnerInstrument): SessionRecord | null;
   /** Start a session. The STORE decides the start time — in the app, the server's clock. */
-  create(instrument: RunnerInstrument, options: { input: InputMode; code: string | null; testId?: string | null }): Promise<SessionRecord>;
+  create(instrument: RunnerInstrument, options: { input: InputMode; code: string | null; testId?: string | null; itemId?: string | null }): Promise<SessionRecord>;
   /** `final` marks the seal an item gets when its window closes; a store saves those at once. */
   persist(instrument: RunnerInstrument, key: string, text: string, final: boolean): void;
   finish(instrument: RunnerInstrument, endedBy: EndedBy): void;
@@ -55,8 +57,8 @@ export function createMemoryStore(options: { now?: () => number; initial?: Sessi
 
   return {
     load: (instrument) => records.get(instrument) ?? null,
-    async create(instrument, { input, code, testId = null }) {
-      const record: SessionRecord = { instrument, input, code, startedAtMs: now(), saved: {}, endedBy: null, testId };
+    async create(instrument, { input, code, testId = null, itemId = null }) {
+      const record: SessionRecord = { instrument, input, code, startedAtMs: now(), saved: {}, endedBy: null, testId, itemId };
       records.set(instrument, record);
       return record;
     },

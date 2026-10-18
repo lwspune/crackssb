@@ -47,7 +47,7 @@ describe('mocks (D32)', () => {
     const { api } = fakeApi();
     const store = createServerStore(api, { initial: null, serverNowMs: CLIENT_NOW });
     const record = await store.create('oir', { input: 'typed', code: null, testId: 'oir-mock-03' });
-    expect(api.start).toHaveBeenCalledWith('oir', 'typed', null, 'oir-mock-03');
+    expect(api.start).toHaveBeenCalledWith('oir', 'typed', null, 'oir-mock-03', null);
     expect(record.testId).toBe('oir-mock-03');
   });
 
@@ -57,6 +57,16 @@ describe('mocks (D32)', () => {
     store.persist('oir', '0', 'Z', false);
     await vi.advanceTimersByTimeAsync(1_000);
     expect(store.syncState()).toBe('saved');
+  });
+});
+
+describe('PPDT (D33)', () => {
+  it('starts an attempt at one picture, and remembers which', async () => {
+    const { api } = fakeApi();
+    const store = createServerStore(api, { initial: null, serverNowMs: CLIENT_NOW });
+    const record = await store.create('ppdt', { input: 'paper', code: 'ACD-EFG', itemId: 'ppdt-04' });
+    expect(api.start).toHaveBeenCalledWith('ppdt', 'paper', 'ACD-EFG', null, 'ppdt-04');
+    expect(record.itemId).toBe('ppdt-04');
   });
 });
 
@@ -94,7 +104,7 @@ describe('starting', () => {
     const { api } = fakeApi();
     const store = createServerStore(api, { initial: null, serverNowMs: CLIENT_NOW });
     await store.create('wat', { input: 'paper', code: 'ACD-EFG' });
-    expect(api.start).toHaveBeenCalledWith('wat', 'paper', 'ACD-EFG', null);
+    expect(api.start).toHaveBeenCalledWith('wat', 'paper', 'ACD-EFG', null, null);
   });
 });
 

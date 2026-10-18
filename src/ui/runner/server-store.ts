@@ -24,8 +24,14 @@ export interface ServerRecord extends SessionRecord {
 }
 
 export interface SessionApi {
-  /** `testId`: an OIR mock attempt (D32), started through start_test; null for every other test. */
-  start(instrument: RunnerInstrument, input: InputMode, code: string | null, testId: string | null): Promise<{ id: string; startedAtMs: number } | { error: string }>;
+  /** `testId`: an OIR mock attempt (D32), started through start_test. `itemId`: a PPDT picture (D33), through start_ppdt. Both null for every other test. */
+  start(
+    instrument: RunnerInstrument,
+    input: InputMode,
+    code: string | null,
+    testId: string | null,
+    itemId: string | null,
+  ): Promise<{ id: string; startedAtMs: number } | { error: string }>;
   /** `error` is the server's code (item_closed, …) or 'network' when the request did not complete. */
   save(id: string, key: string, text: string, final: boolean): Promise<{ error: string | null }>;
   end(id: string, endedBy: EndedBy): Promise<{ error: string | null }>;
@@ -125,9 +131,9 @@ export function createServerStore(api: SessionApi, options: Options): SessionSto
   return {
     load: (instrument) => records.get(instrument) ?? null,
 
-    async create(instrument, { input, code, testId = null }) {
+    async create(instrument, { input, code, testId = null, itemId = null }) {
       const sentAt = Date.now();
-      const result = await api.start(instrument, input, code, testId);
+      const result = await api.start(instrument, input, code, testId, itemId);
       const receivedAt = Date.now();
       if ('error' in result) {
         if (result.error === 'session_live') {
@@ -141,7 +147,7 @@ export function createServerStore(api: SessionApi, options: Options): SessionSto
       }
       // The server stamped the start between sending and receiving; the midpoint is the best estimate of when.
       offset = result.startedAtMs - (sentAt + receivedAt) / 2;
-      const record: ServerRecord = { id: result.id, instrument, input, code, startedAtMs: result.startedAtMs, saved: {}, endedBy: null, testId };
+      const record: ServerRecord = { id: result.id, instrument, input, code, startedAtMs: result.startedAtMs, saved: {}, endedBy: null, testId, itemId };
       records.set(instrument, record);
       return record;
     },
