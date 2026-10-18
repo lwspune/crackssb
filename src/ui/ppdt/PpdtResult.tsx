@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 import { checkAttempt } from '../../ppdt/feedback.ts';
 import type { PpdtNote } from '../../ppdt/note.ts';
 import type { Mood, PpdtPicture } from '../../ppdt/pictures.ts';
@@ -19,12 +20,14 @@ interface Props {
   readonly story: string | null;
   readonly paperCode: string | null;
   readonly sample: string | null;
+  /** On paper: the sheet's photos, with the upload for the candidate who took it. */
+  readonly sheet?: ReactNode;
 }
 
 const MOOD: Readonly<Record<Mood, string>> = { positive: 'positive', neutral: 'neutral', negative: 'low' };
 const MARK: Readonly<Record<string, string>> = { '+': '+', '0': '0', '-': '−', '': '—' };
 
-export function PpdtResult({ picture, note, story, paperCode, sample }: Props) {
+export function PpdtResult({ picture, note, story, paperCode, sample, sheet }: Props) {
   const n = Number(picture.id.slice(-2));
   const paper = paperCode !== null;
   const checks = paper || note === null ? [] : checkAttempt(picture, note, story ?? '');
@@ -54,14 +57,16 @@ export function PpdtResult({ picture, note, story, paperCode, sample }: Props) {
         </section>
       </div>
 
-      {paper ? (
+      {paper && (
         <section className="rounded-xl border border-dashed p-5">
           <p className="font-semibold">Your answers are on your sheet.</p>
           <p className="mt-1 text-sm text-muted-foreground">
             Session code <span className="font-mono font-semibold text-foreground">{paperCode}</span>. Check your count, moods and story against the picture and the reading below.
           </p>
         </section>
-      ) : (
+      )}
+      {paper && sheet}
+      {paper ? null : (
         <>
           <section aria-labelledby="checks-h" className="rounded-xl border bg-card p-5 shadow-card">
             <h2 id="checks-h" className="text-lg font-bold">Quick checks</h2>

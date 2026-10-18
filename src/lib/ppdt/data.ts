@@ -58,7 +58,7 @@ export async function loadPpdtAttempts(client: SupabaseClient, viewerId: string)
 export type LoadedPpdtResult =
   | { readonly kind: 'missing' }
   | { readonly kind: 'running'; readonly itemId: string }
-  | { readonly kind: 'over'; readonly itemId: string; readonly note: string | null; readonly story: string | null; readonly paperCode: string | null };
+  | { readonly kind: 'over'; readonly itemId: string; readonly candidateId: string; readonly note: string | null; readonly story: string | null; readonly paperCode: string | null };
 
 /**
  * One PPDT attempt, for its result. Missing when there is no such attempt or
@@ -66,16 +66,16 @@ export type LoadedPpdtResult =
  * the candidate's own, but the result waits for the end, as at the SSB).
  */
 export async function loadPpdtResult(client: SupabaseClient, sessionId: string): Promise<LoadedPpdtResult> {
-  const { data: s } = await client.from('sessions').select('item_id, status, expires_at, input_mode, paper_code').eq('id', sessionId).maybeSingle();
+  const { data: s } = await client.from('sessions').select('item_id, candidate_id, status, expires_at, input_mode, paper_code').eq('id', sessionId).maybeSingle();
   if (!s?.item_id) return { kind: 'missing' };
   const over = s.status === 'ended' || Date.parse(s.expires_at) + 2000 < Date.now();
   if (!over) return { kind: 'running', itemId: s.item_id };
-  if (s.input_mode === 'paper') return { kind: 'over', itemId: s.item_id, note: null, story: null, paperCode: s.paper_code };
+  if (s.input_mode === 'paper') return { kind: 'over', itemId: s.item_id, candidateId: s.candidate_id, note: null, story: null, paperCode: s.paper_code };
   const { data: rows, error } = await client.from('responses').select('key, response_text').eq('session_id', sessionId);
   if (error) {
     console.error('loading a PPDT result failed', { code: error.code });
     throw new Error('Could not load the result');
   }
   const text = (key: string) => rows.find((r) => r.key === key)?.response_text ?? null;
-  return { kind: 'over', itemId: s.item_id, note: text('0:note'), story: text('0:write'), paperCode: null };
+  return { kind: 'over', itemId: s.item_id, candidateId: s.candidate_id, note: text('0:note'), story: text('0:write'), paperCode: null };
 }
