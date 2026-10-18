@@ -24,7 +24,8 @@
     "oiritems": "node --experimental-strip-types scripts/build-oir-items.ts",
     "items:seed": "node --experimental-strip-types scripts/seed-items.ts",
     "oirmocks": "node --experimental-strip-types scripts/build-oir-mocks.ts",
-    "tests:seed": "node --experimental-strip-types scripts/seed-tests.ts"
+    "tests:seed": "node --experimental-strip-types scripts/seed-tests.ts",
+    "ppdtslides": "node scripts/build-ppdt-slides.mjs"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",

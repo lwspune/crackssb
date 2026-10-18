@@ -1,0 +1,170 @@
+{
+  "note": "PPDT pictures (D33). The ground truth is what the feedback checks against: people counted within [min, max], moods within the accepted set. Slides are made by npm run ppdtslides from source/ with the processing below.",
+  "pictures": [
+    {
+      "id": "ppdt-01",
+      "title": "Railway platform",
+      "difficulty": "clear",
+      "people": { "min": 3, "typical": 4, "max": 5 },
+      "characters": [
+        { "sex": "F", "age": "20-35", "mood": "neutral" },
+        { "sex": "M", "age": "25-40", "mood": "neutral" },
+        { "sex": "F", "age": "35-50", "mood": "negative" },
+        { "sex": "M", "age": "18-25", "mood": "neutral" }
+      ],
+      "moods": ["neutral", "negative"],
+      "action": "A train stands at platform 1; a man on crutches makes for it while a woman watches anxiously and a young man looks at his phone. A dog lies by the luggage.",
+      "source": { "kind": "owner", "note": "Pencil sketch supplied by the owner, 2026-10-18." },
+      "processing": { "kind": "sketch", "crop": [0, 0, 768, 1024], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-02",
+      "title": "Climbers on a rock face",
+      "difficulty": "clear",
+      "people": { "min": 3, "typical": 4, "max": 5 },
+      "characters": [
+        { "sex": "M", "age": "20-35", "mood": "positive" },
+        { "sex": "M", "age": "20-35", "mood": "positive" },
+        { "sex": "M", "age": "20-35", "mood": "positive" },
+        { "sex": "M", "age": "20-35", "mood": "positive" }
+      ],
+      "moods": ["positive", "neutral"],
+      "action": "A roped team, soldiers or climbers, crosses a steep rock face carrying loads.",
+      "source": { "kind": "owner", "note": "Line drawing supplied by the owner, 2026-10-18." },
+      "processing": { "kind": "sketch", "crop": [132, 77, 963, 698], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-03",
+      "title": "Students on a lawn",
+      "difficulty": "clear",
+      "people": { "min": 3, "typical": 3, "max": 3 },
+      "characters": [
+        { "sex": "M", "age": "18-25", "mood": "positive" },
+        { "sex": "F", "age": "18-25", "mood": "positive" },
+        { "sex": "M", "age": "18-25", "mood": "positive" }
+      ],
+      "moods": ["positive", "neutral"],
+      "action": "Three students study together on a college lawn, books and a laptop between them.",
+      "source": {
+        "kind": "pexels",
+        "url": "https://www.pexels.com/photo/indian-students-doing-homework-in-campus-meadow-4622108/",
+        "photographer": "Kiran Pokuri Photography",
+        "licence": "Pexels License"
+      },
+      "processing": { "kind": "photo", "blur": 0.9, "contrast": 0.82 }
+    },
+    {
+      "id": "ppdt-04",
+      "title": "An office table",
+      "difficulty": "hazy",
+      "people": { "min": 3, "typical": 3, "max": 3 },
+      "characters": [
+        { "sex": "M", "age": "30-45", "mood": "negative" },
+        { "sex": "F", "age": "25-35", "mood": "positive" },
+        { "sex": "M", "age": "30-45", "mood": "neutral" }
+      ],
+      "moods": ["positive", "neutral", "negative"],
+      "action": "At an office table one man is up and gesturing hard while a woman smiles and another man argues from his chair.",
+      "source": { "kind": "owner", "note": "Ink illustration supplied by the owner, 2026-10-18." },
+      "processing": { "kind": "sketch", "crop": [132, 106, 928, 676], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-05",
+      "title": "A well at dawn",
+      "difficulty": "hazy",
+      "people": { "min": 4, "typical": 6, "max": 9 },
+      "characters": [],
+      "moods": ["positive", "neutral"],
+      "action": "Villagers draw water at a well at daybreak, in mist.",
+      "source": {
+        "kind": "pexels",
+        "url": "https://www.pexels.com/photo/people-getting-water-from-a-well-8814613/",
+        "photographer": "Ganta Srinivas",
+        "licence": "Pexels License"
+      },
+      "processing": { "kind": "photo", "blur": 1.8, "contrast": 0.72 }
+    },
+    {
+      "id": "ppdt-06",
+      "title": "A policeman and an old man",
+      "difficulty": "hazy",
+      "people": { "min": 2, "typical": 2, "max": 2 },
+      "characters": [
+        { "sex": "M", "age": "35-50", "mood": "positive" },
+        { "sex": "M", "age": "60-80", "mood": "negative" }
+      ],
+      "moods": ["positive", "neutral", "negative"],
+      "action": "A policeman puts a hand on the shoulder of an old man with a stick, beside a police car with its light on.",
+      "source": {
+        "kind": "pexels",
+        "url": "https://www.pexels.com/photo/a-policeman-helping-an-elderly-woman-4267618/",
+        "photographer": "112 Uttar Pradesh",
+        "licence": "Pexels License"
+      },
+      "processing": { "kind": "photo", "blur": 1.8, "contrast": 0.72, "mask": [0, 0.9, 0.2, 0.1] }
+    },
+    {
+      "id": "ppdt-07",
+      "title": "A woman at a laptop",
+      "difficulty": "ambiguous",
+      "people": { "min": 1, "typical": 1, "max": 1 },
+      "characters": [{ "sex": "F", "age": "20-30", "mood": "negative" }],
+      "moods": ["negative", "neutral"],
+      "action": "A young woman sits at a laptop, head in her hand, tired or troubled.",
+      "source": { "kind": "owner", "note": "Line drawing supplied by the owner, 2026-10-18." },
+      "processing": { "kind": "sketch", "crop": [72, 84, 903, 756], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-08",
+      "title": "A woman with a letter",
+      "difficulty": "ambiguous",
+      "people": { "min": 1, "typical": 1, "max": 1 },
+      "characters": [{ "sex": "F", "age": "25-40", "mood": "negative" }],
+      "moods": ["negative", "neutral"],
+      "action": "A woman reads a letter, hand to her mouth; a clock on the wall.",
+      "source": { "kind": "owner", "note": "Ink illustration supplied by the owner, 2026-10-18." },
+      "processing": { "kind": "sketch", "crop": [152, 566, 928, 650], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-09",
+      "title": "Two figures with pickaxes",
+      "difficulty": "ambiguous",
+      "people": { "min": 1, "typical": 2, "max": 2 },
+      "characters": [
+        { "sex": "M", "age": "20-50", "mood": "neutral" },
+        { "sex": "M", "age": "20-50", "mood": "neutral" }
+      ],
+      "moods": ["positive", "neutral", "negative"],
+      "action": "Two figures in a field raise pickaxes high: digging, or something else.",
+      "source": {
+        "kind": "pexels",
+        "url": "https://www.pexels.com/photo/two-farmers-working-on-field-4268227/",
+        "photographer": "Pexels user 2721073 (name withheld here: it matches a candidate's, D21)",
+        "licence": "Pexels License"
+      },
+      "processing": { "kind": "photo", "blur": 2.4, "contrast": 0.66 }
+    },
+    {
+      "id": "ppdt-10",
+      "title": "Lifting an old woman",
+      "difficulty": "ambiguous",
+      "people": { "min": 4, "typical": 5, "max": 6 },
+      "characters": [
+        { "sex": "F", "age": "60-80", "mood": "negative" },
+        { "sex": "M", "age": "18-30", "mood": "neutral" },
+        { "sex": "M", "age": "18-30", "mood": "neutral" },
+        { "sex": "F", "age": "30-50", "mood": "neutral" },
+        { "sex": "M", "age": "18-30", "mood": "neutral" }
+      ],
+      "moods": ["positive", "neutral", "negative"],
+      "action": "Several people lift an old woman up and out, by the arms.",
+      "source": {
+        "kind": "pexels",
+        "url": "https://www.pexels.com/photo/people-helping-elderly-woman-with-ritual-ablution-15031234/",
+        "photographer": "Krishna Soni",
+        "licence": "Pexels License"
+      },
+      "processing": { "kind": "photo", "blur": 2.4, "contrast": 0.66 }
+    }
+  ]
+}
