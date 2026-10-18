@@ -9,7 +9,7 @@ import { parsePhone } from '@/lib/phone.ts';
 import { createSupabaseAdmin } from '@/lib/supabase/admin.ts';
 import { createSupabaseServer } from '@/lib/supabase/server.ts';
 import type { ManageState, PasswordState } from '@/ui/staff/PersonManage.tsx';
-import { toIsoDate } from '@/ui/staff/people-lines.ts';
+import { toIsoDate } from '@/ui/staff/people-rows.ts';
 
 /**
  * Managing one person (D31). Each action shapes the input and the message;

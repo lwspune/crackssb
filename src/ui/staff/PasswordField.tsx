@@ -21,10 +21,16 @@ interface Props {
   autoComplete?: string;
   /** Offer "Generate" — for a password handed to someone else, not one a person picks for themselves. */
   generate?: boolean;
+  /** Told every change, for a form that needs the value. */
+  onValue?: (value: string) => void;
 }
 
-export function PasswordField({ id, name, label, who, autoComplete = 'new-password', generate = true }: Props) {
-  const [value, setValue] = useState('');
+export function PasswordField({ id, name, label, who, autoComplete = 'new-password', generate = true, onValue }: Props) {
+  const [value, setRaw] = useState('');
+  const setValue = (v: string) => {
+    setRaw(v);
+    onValue?.(v);
+  };
   const [shown, setShown] = useState(false);
   const problem = value === '' ? null : passwordProblem(value, who);
 

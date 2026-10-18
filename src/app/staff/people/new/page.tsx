@@ -22,9 +22,9 @@ export default async function AddPeoplePage() {
       <Link href="/staff/people" className="inline-flex min-h-11 items-center text-sm font-semibold text-brand-accent hover:underline">
         ← People
       </Link>
-      <PageHeader title="Add people" lede={acting ? `To ${acting.name}. Each gets a login and a password to hand out. Nothing is emailed.` : undefined} />
+      <PageHeader title="Add people" lede={acting ? `To ${acting.name}. Each login comes with a WhatsApp message to send. Nothing is emailed.` : undefined} />
       {acting ? (
-        <div className="max-w-2xl">
+        <div className="max-w-4xl">
           {/* Staff: the action ignores this and uses their own academy. */}
           <AddPeopleForm action={addPeople.bind(null, { orgId: acting.id })} roles={roles} />
         </div>
