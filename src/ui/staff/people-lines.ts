@@ -24,7 +24,8 @@ export interface ParsedLines {
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const HEADER = /^\s*name\s*[,\t]/i;
 
-function toIsoDate(raw: string): string | null {
+/** A real past date of birth, as YYYY-MM-DD or DD/MM/YYYY (or DD-MM-YYYY), to YYYY-MM-DD; else null. */
+export function toIsoDate(raw: string): string | null {
   const s = raw.trim();
   let y: string, m: string, d: string;
   const iso = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s);

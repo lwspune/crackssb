@@ -5,7 +5,7 @@ import { requireViewerAt } from '@/lib/auth/viewer.ts';
 import { createSupabaseServer } from '@/lib/supabase/server.ts';
 import { PeopleIcon } from '@/ui/icons.tsx';
 import { EmptyState, Page, PageHeader } from '@/ui/parts.tsx';
-import { PeopleTable } from '@/ui/staff/PeopleTable.tsx';
+import { PeopleTable, PERSON_COLUMNS } from '@/ui/staff/PeopleTable.tsx';
 import type { PersonRow } from '@/ui/staff/PeopleTable.tsx';
 
 export const metadata: Metadata = { title: 'People' };
@@ -29,12 +29,12 @@ export default async function PeoplePage() {
   const supabase = await createSupabaseServer();
   const { data, error } = await supabase
     .from('profiles')
-    .select('id, full_name, email, role, dob, guardian_consent_at, created_at')
+    .select(PERSON_COLUMNS)
     .eq('org_id', acting.id)
     .order('role')
     .order('full_name');
   if (error) console.error('people list failed', { code: error.code });
-  const people = (data ?? []) as PersonRow[];
+  const people = (data ?? []) as unknown as PersonRow[];
   const candidates = people.filter((p) => p.role === 'candidate').length;
 
   return (

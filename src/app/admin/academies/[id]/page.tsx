@@ -6,7 +6,7 @@ import { requireViewerAt } from '@/lib/auth/viewer.ts';
 import { createSupabaseServer } from '@/lib/supabase/server.ts';
 import { Page, PageHeader } from '@/ui/parts.tsx';
 import { AddPeopleForm } from '@/ui/staff/AddPeopleForm.tsx';
-import { PeopleTable } from '@/ui/staff/PeopleTable.tsx';
+import { PeopleTable, PERSON_COLUMNS } from '@/ui/staff/PeopleTable.tsx';
 import type { PersonRow } from '@/ui/staff/PeopleTable.tsx';
 
 export const metadata: Metadata = { title: 'Academy' };
@@ -20,7 +20,7 @@ export default async function AcademyPage({ params }: { params: Promise<{ id: st
   const supabase = await createSupabaseServer();
   const [{ data: org }, { data: people }] = await Promise.all([
     supabase.from('organisations').select('id, name, slug').eq('id', id).maybeSingle(),
-    supabase.from('profiles').select('id, full_name, email, role, dob, guardian_consent_at, created_at').eq('org_id', id).order('role').order('full_name'),
+    supabase.from('profiles').select(PERSON_COLUMNS).eq('org_id', id).order('role').order('full_name'),
   ]);
   if (!org) notFound();
 
@@ -35,7 +35,7 @@ export default async function AcademyPage({ params }: { params: Promise<{ id: st
         </section>
         <section aria-labelledby="people-h">
           <h2 id="people-h" className="mb-4 text-lg font-bold">People</h2>
-          {people && people.length > 0 ? <PeopleTable people={people as PersonRow[]} /> : <p className="text-sm text-muted-foreground">No one yet.</p>}
+          {people && people.length > 0 ? <PeopleTable people={people as unknown as PersonRow[]} /> : <p className="text-sm text-muted-foreground">No one yet.</p>}
         </section>
       </div>
     </Page>

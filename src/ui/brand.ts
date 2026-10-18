@@ -4,4 +4,6 @@ export const BRAND = {
   lead: 'Cadet',
   accent: 'Prep',
   tagline: 'Crack SSB with confidence',
+  /** The live address as people type it (D30). */
+  domain: 'cadetprep.in',
 } as const;

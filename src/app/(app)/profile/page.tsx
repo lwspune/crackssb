@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
+import { changeMyPassword } from '@/app/actions/account.ts';
 import { signOut } from '@/app/login/actions.ts';
 import { getViewer } from '@/lib/auth/viewer.ts';
+import { createSupabaseServer } from '@/lib/supabase/server.ts';
+import { ChangePasswordForm } from '@/ui/auth/ChangePasswordForm.tsx';
 import { Card, Page, PageHeader, StatusBadge } from '@/ui/parts.tsx';
 
 export const metadata: Metadata = { title: 'Profile' };
@@ -8,6 +11,7 @@ export const metadata: Metadata = { title: 'Profile' };
 /** UI.md §5.1: the PIQ is the profile; the medical self-check lives here too. */
 export default async function ProfilePage() {
   const viewer = await getViewer();
+  const { data: me } = viewer ? await (await createSupabaseServer()).from('profiles').select('email').eq('id', viewer.id).maybeSingle() : { data: null };
   return (
     <Page>
       <PageHeader title="Profile" lede="Your PIQ is your profile." />
@@ -24,6 +28,14 @@ export default async function ProfilePage() {
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">
+        {viewer && me && (
+          <Card className="rise md:row-span-2">
+            <h2 className="font-semibold">Password</h2>
+            <div className="mt-4">
+              <ChangePasswordForm action={changeMyPassword} who={{ email: me.email, fullName: viewer.fullName }} />
+            </div>
+          </Card>
+        )}
         <Card className="rise">
           <div className="flex items-start justify-between gap-3">
             <h2 className="font-semibold">Personal Information Questionnaire</h2>
