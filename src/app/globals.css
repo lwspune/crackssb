@@ -93,6 +93,8 @@
   --navy-ring: 215.6 100% 73.9%;
   --shadow-card: 0 0 0 1px rgb(255 255 255 / 0.03), 0 1px 2px rgb(0 0 0 / 0.35), 0 8px 22px -14px rgb(0 0 0 / 0.6);
   --shadow-lift: 0 0 0 1px rgb(255 255 255 / 0.05), 0 2px 6px rgb(0 0 0 / 0.4), 0 18px 40px -16px rgb(0 0 0 / 0.75);
+  /* The base border colour is resolved where it is declared; re-declared here so a .dark area inside a light page (the mock, D32) gets the dark one. */
+  --color-border: hsl(var(--border));
 }
 
 @theme inline {
