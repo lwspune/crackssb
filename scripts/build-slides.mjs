@@ -1,20 +1,28 @@
 /**
- * content/ppdt/source/<id>.jpg + content/ppdt/pictures.json -> public/ppdt/<id>.jpg (D33).
+ * content/<test>/source/<id>.<jpg|png> + content/<test>/pictures.json -> public/<test>/<id>.jpg
+ * for PPDT (D33) and TAT (D36).
  *
  *   msedge --headless=new --remote-debugging-port=9333 --user-data-dir=<tmp> about:blank
- *   npm run ppdtslides
+ *   npm run ppdtslides   |   npm run tatslides
  *
  * Each picture is made into an SSB-style slide in the browser's own canvas, so
  * there is no image package: a photo is greyed, softened and given low
  * contrast, grain and a vignette, its haze rising with difficulty, and any
  * `mask` (a number plate) blurred hard; a sketch is cropped to the drawing and
- * softened lightly. 1024 px wide, JPEG. The same source and settings make the
- * same slide. Any Chromium works over CDP (CDP_URL, default http://127.0.0.1:9333).
+ * softened lightly. A TAT drawing is cropped and its lines darkened a little:
+ * many are faint scans that wash out once enlarged. 1024 px wide, JPEG. The
+ * same source and settings make the same slide. Any Chromium works over CDP
+ * (CDP_URL, default http://127.0.0.1:9333).
  */
-import { readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 
+const TEST = process.argv[2];
+if (TEST !== 'ppdt' && TEST !== 'tat') {
+  console.error('Usage: node scripts/build-slides.mjs ppdt|tat');
+  process.exit(2);
+}
 const CDP = process.env.CDP_URL ?? 'http://127.0.0.1:9333';
-const { pictures } = JSON.parse(readFileSync('content/ppdt/pictures.json', 'utf8'));
+const { pictures } = JSON.parse(readFileSync(`content/${TEST}/pictures.json`, 'utf8'));
 
 let target;
 try {
@@ -39,14 +47,16 @@ const MAKE = `async (src, p) => {
   const img = new Image();
   img.src = src;
   await img.decode();
-  const [sx, sy, sw, sh] = p.kind === 'sketch' ? p.crop : [0, 0, img.width, img.height];
+  const [sx, sy, sw, sh] = p.kind === 'photo' ? [0, 0, img.width, img.height] : p.crop;
   const W = 1024, H = Math.round(sh * W / sw);
   const c = document.createElement('canvas'); c.width = W; c.height = H;
   const g = c.getContext('2d');
   g.fillStyle = '#fff'; g.fillRect(0, 0, W, H);
   g.filter = p.kind === 'sketch'
     ? 'grayscale(1) contrast(0.92) brightness(1.03) blur(' + p.blur + 'px)'
-    : 'grayscale(1) contrast(' + p.contrast + ') brightness(1.06) blur(' + p.blur + 'px)';
+    : p.kind === 'drawing'
+      ? 'grayscale(1) contrast(1.15) brightness(0.96) blur(' + p.blur + 'px)'
+      : 'grayscale(1) contrast(' + p.contrast + ') brightness(1.06) blur(' + p.blur + 'px)';
   g.drawImage(img, sx, sy, sw, sh, 0, 0, W, H);
   g.filter = 'none';
   if (p.kind === 'photo') {
@@ -68,15 +78,18 @@ const MAKE = `async (src, p) => {
 }`;
 
 for (const p of pictures) {
-  const src = `data:image/jpeg;base64,${readFileSync(`content/ppdt/source/${p.id}.jpg`).toString('base64')}`;
+  const ext = existsSync(`content/${TEST}/source/${p.id}.png`) ? 'png' : 'jpg';
+  const src = `data:image/${ext === 'png' ? 'png' : 'jpeg'};base64,${readFileSync(`content/${TEST}/source/${p.id}.${ext}`).toString('base64')}`;
+  // A TAT picture's processing has no kind: every one is a line drawing.
+  const processing = TEST === 'tat' ? { kind: 'drawing', ...p.processing } : p.processing;
   const r = await send('Runtime.evaluate', {
-    expression: `(${MAKE})(${JSON.stringify(src)}, ${JSON.stringify(p.processing)})`,
+    expression: `(${MAKE})(${JSON.stringify(src)}, ${JSON.stringify(processing)})`,
     awaitPromise: true,
     returnByValue: true,
   });
   if (r.exceptionDetails) throw new Error(`${p.id}: ${r.exceptionDetails.exception?.description ?? r.exceptionDetails.text}`);
   const out = Buffer.from(r.result.value, 'base64');
-  writeFileSync(`public/ppdt/${p.id}.jpg`, out);
-  console.log(`public/ppdt/${p.id}.jpg  ${Math.round(out.length / 1024)} KB  ${p.difficulty}  ${p.title}`);
+  writeFileSync(`public/${TEST}/${p.id}.jpg`, out);
+  console.log(`public/${TEST}/${p.id}.jpg  ${Math.round(out.length / 1024)} KB  ${p.difficulty}  ${p.title}`);
 }
 ws.close();

@@ -37,6 +37,16 @@ export const RUNNABLE: Partial<Readonly<Record<RunnerInstrument, RunnableInstrum
     instruction: 'Look at the picture, note who is in it, then write a story about it.',
     start: '/practise/ppdt',
   },
+  tat: {
+    config: INSTRUMENT_CONFIGS.tat,
+    facts: [
+      { value: '12', label: 'Slides' },
+      { value: '30 s', label: 'Look' },
+      { value: '4 min', label: 'Write' },
+    ],
+    instruction: 'A picture, then its story on your sheet. Twelve times; the last slide is blank.',
+    start: '/practise/tat',
+  },
   wat: {
     config: INSTRUMENT_CONFIGS.wat,
     facts: [

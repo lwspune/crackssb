@@ -5,6 +5,7 @@ import { RUNNABLE } from '../runner/registry.ts';
 import { INSTRUMENT_CONFIGS } from '../../runner/modes.ts';
 import { OLQS } from '../../scoring/judge/contract.ts';
 import { PICTURES } from '../../ppdt/pictures.ts';
+import { SETS } from '../../tat/sets.ts';
 
 /**
  * The student's map of the product (UI.md §5.1). Three rules make it honest:
@@ -59,6 +60,13 @@ describe('the practise catalogue', () => {
     expect(ppdt?.availability).toBe('ready');
     expect(ppdt?.summary).toMatch(new RegExp(`^${PICTURES.length} pictures · `));
     expect(RUNNABLE.ppdt?.start).toBe('/practise/ppdt');
+  });
+
+  it('opens TAT as its sets, chosen on its own page, eleven pictures and a blank each (D36)', () => {
+    const tat = CATALOG.find((e) => e.id === 'tat');
+    expect(tat?.availability).toBe('ready');
+    expect(tat?.summary).toMatch(new RegExp(`^${SETS[0].pictures.length} pictures and a blank · `));
+    expect(RUNNABLE.tat?.start).toBe('/practise/tat');
   });
 
   it('links practice only inside the practise area', () => {

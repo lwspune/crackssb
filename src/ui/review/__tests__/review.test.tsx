@@ -100,11 +100,19 @@ describe('ReviewQueue', () => {
   const row = (id: string, reviewedAt: string | null) => ({
     sessionId: id,
     name: `Cadet ${id}`,
-    picture: 3,
+    label: 'PPDT · Picture 3',
     input: 'typed' as const,
     submittedAt: '2026-10-18T08:00:00Z',
     hasNarration: true,
     reviewedAt,
+  });
+
+  it('names what was sent: a PPDT picture or a TAT set (D36), and says narration only for PPDT', () => {
+    render(<ReviewQueue rows={[row('a', null), { ...row('b', null), label: 'TAT set 1', input: 'paper' as const, hasNarration: null }]} />);
+    expect(screen.getByText('PPDT · Picture 3')).toBeTruthy();
+    expect(screen.getByText('TAT set 1')).toBeTruthy();
+    expect(screen.getByText('Narrated')).toBeTruthy();
+    expect(screen.queryByText('No narration')).toBeNull();
   });
 
   it('puts the waiting first, each a link to mark it', () => {

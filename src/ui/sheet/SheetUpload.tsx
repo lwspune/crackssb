@@ -7,7 +7,7 @@ import { useState } from 'react';
  * is shrunk on the phone (a sheet reads well at 1600 px and uploads fast on
  * mobile data); the server names the one path it may go to (`request`, which
  * asks the database, 0013); it goes straight to private storage (`upload`,
- * a signed link); the page refreshes to show what arrived. Up to four pages,
+ * a signed link); the page refreshes to show what arrived. Up to four pages (eight for TAT),
  * each with a retake.
  */
 
@@ -39,6 +39,8 @@ interface Props {
   readonly request: (sessionId: string, page: number) => Promise<UploadRequest>;
   readonly upload: (path: string, token: string, photo: Blob) => Promise<{ error: { message: string } | null }>;
   readonly shrink?: (file: File) => Promise<Blob>;
+  /** Pages the sheet runs to: four, eight for TAT's twelve stories (begin_sheet_upload, 0017). */
+  readonly maxPages?: number;
   /** After a page arrives: the app refreshes to show it. */
   readonly onDone: () => void;
 }
@@ -46,10 +48,10 @@ interface Props {
 const BUTTON =
   'inline-flex min-h-11 cursor-pointer items-center rounded-lg px-4 text-sm font-semibold has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-ring';
 
-export function SheetUpload({ sessionId, photos, request, upload, shrink = shrinkPhoto, onDone }: Props) {
+export function SheetUpload({ sessionId, photos, request, upload, shrink = shrinkPhoto, maxPages = MAX_PAGES, onDone }: Props) {
   const [busy, setBusy] = useState<number | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const next = photos.length < MAX_PAGES ? Math.max(0, ...photos.map((p) => p.page)) + 1 : null;
+  const next = photos.length < maxPages ? Math.max(0, ...photos.map((p) => p.page)) + 1 : null;
 
   const send = async (page: number, file: File | undefined) => {
     if (!file) return;

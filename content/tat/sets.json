@@ -1,0 +1,39 @@
+{
+  "note": "TAT sets (D36): eleven pictures each, in the order shown; the twelfth slide is always blank. Seeded as `tests` rows (npm run tat:seed). Append only: a set someone has sat cannot change (0009, 0017).",
+  "sets": [
+    {
+      "id": "tat-set-01",
+      "title": "TAT set 1",
+      "pictures": [
+        "tat-01",
+        "tat-02",
+        "tat-03",
+        "tat-04",
+        "tat-05",
+        "tat-06",
+        "tat-07",
+        "tat-08",
+        "tat-09",
+        "tat-10",
+        "tat-11"
+      ]
+    },
+    {
+      "id": "tat-set-02",
+      "title": "TAT set 2",
+      "pictures": [
+        "tat-12",
+        "tat-13",
+        "tat-14",
+        "tat-15",
+        "tat-16",
+        "tat-17",
+        "tat-18",
+        "tat-19",
+        "tat-20",
+        "tat-21",
+        "tat-22"
+      ]
+    }
+  ]
+}

@@ -1,7 +1,10 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 import { readReview } from '../../ppdt/rubric.ts';
 import type { Review } from '../../ppdt/rubric.ts';
+import { SETS } from '../../tat/sets.ts';
 import type { QueueRow } from '../../ui/review/ReviewQueue.tsx';
+
+const TAT_TITLE = new Map(SETS.map((s) => [s.id, s.title]));
 
 /**
  * Reads for mentor review (D34), as the signed-in user. The queue goes through
@@ -15,7 +18,9 @@ import type { QueueRow } from '../../ui/review/ReviewQueue.tsx';
 type QueueDbRow = {
   session_id: string;
   full_name: string;
-  item_id: string;
+  assessment_type: string;
+  item_id: string | null;
+  test_id: string | null;
   input_mode: string;
   submitted_at: string;
   has_narration: boolean;
@@ -32,10 +37,10 @@ export async function loadQueue(client: SupabaseClient, org: string | null): Pro
   return (data as QueueDbRow[]).map((r) => ({
     sessionId: r.session_id,
     name: r.full_name,
-    picture: Number(r.item_id.slice(-2)),
+    label: r.assessment_type === 'tat' ? (TAT_TITLE.get(r.test_id ?? '') ?? 'TAT') : `PPDT · Picture ${Number((r.item_id ?? '').slice(-2))}`,
     input: r.input_mode === 'paper' ? 'paper' : 'typed',
     submittedAt: r.submitted_at,
-    hasNarration: r.has_narration,
+    hasNarration: r.assessment_type === 'tat' ? null : r.has_narration,
     reviewedAt: r.reviewed_at,
   }));
 }

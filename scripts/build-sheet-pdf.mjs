@@ -1,16 +1,22 @@
 /**
- * The blank PPDT answer sheet as a real PDF (D33): public/ppdt-sheet.pdf, by
- * printing our own /sheets/ppdt page in the browser — no PDF package.
+ * A blank answer sheet as a real PDF: public/<test>-sheet.pdf for PPDT (D33)
+ * and TAT (D36), by printing our own /sheets/<test> page in the browser — no
+ * PDF package.
  *
  *   npm run build && npx next start -p 3100
  *   msedge --headless=new --remote-debugging-port=9333 --user-data-dir=<tmp> about:blank
- *   npm run ppdtsheet [-- http://localhost:3100]
+ *   npm run ppdtsheet [-- http://localhost:3100]   |   npm run tatsheet
  *
  * Re-run when the sheet's layout changes. Any Chromium works over CDP (CDP_URL).
  */
 import { writeFileSync } from 'node:fs';
 
-const BASE = process.argv[2] ?? 'http://localhost:3100';
+const TEST = process.argv[2];
+if (TEST !== 'ppdt' && TEST !== 'tat') {
+  console.error('Usage: node scripts/build-sheet-pdf.mjs ppdt|tat [base url]');
+  process.exit(2);
+}
+const BASE = process.argv[3] ?? 'http://localhost:3100';
 const CDP = process.env.CDP_URL ?? 'http://127.0.0.1:9333';
 
 let target;
@@ -33,13 +39,13 @@ const send = (method, params = {}) => new Promise((res, rej) => {
 
 await send('Page.enable');
 await send('Emulation.setEmulatedMedia', { media: 'print', features: [{ name: 'prefers-color-scheme', value: 'light' }] });
-await send('Page.navigate', { url: `${BASE}/sheets/ppdt` });
+await send('Page.navigate', { url: `${BASE}/sheets/${TEST}` });
 await new Promise((r) => setTimeout(r, 3000));
 const { data } = await send('Page.printToPDF', {
   paperWidth: 8.27, paperHeight: 11.69, marginTop: 0, marginBottom: 0, marginLeft: 0, marginRight: 0,
   printBackground: true, preferCSSPageSize: true,
 });
 const pdf = Buffer.from(data, 'base64');
-writeFileSync('public/ppdt-sheet.pdf', pdf);
+writeFileSync(`public/${TEST}-sheet.pdf`, pdf);
 ws.close();
-console.log(`public/ppdt-sheet.pdf  ${Math.round(pdf.length / 1024)} KB`);
+console.log(`public/${TEST}-sheet.pdf  ${Math.round(pdf.length / 1024)} KB`);

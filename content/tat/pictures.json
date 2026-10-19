@@ -1,0 +1,580 @@
+{
+  "note": "TAT pictures (D36). `shows` is what a careful look finds: the ground truth the result page shows and the judge reads. Slides are made by `npm run tatslides` from source/ with the processing below. Sets are in sets.json.",
+  "pictures": [
+    {
+      "id": "tat-01",
+      "title": "At the managing director’s desk",
+      "difficulty": "clear",
+      "shows": "An office with a door marked MANAGING DIRECTOR. A young man in a suit, holding a briefcase, stands at a desk. A woman seated behind it, beside a telephone, points as she speaks to him. Shelves of files behind her.",
+      "people": {
+        "min": 2,
+        "typical": 2,
+        "max": 2
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 1 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          528,
+          398
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-02",
+      "title": "A crowd and a raised fist",
+      "difficulty": "clear",
+      "shows": "A city street. A man seen from behind raises his fist before a large crowd of young men, with placards held up among them. Those in front look up at him; others look on, serious.",
+      "people": {
+        "min": 15,
+        "typical": 25,
+        "max": 40
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 2 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          478,
+          390
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-03",
+      "title": "A boy at his books",
+      "difficulty": "clear",
+      "shows": "A boy writes at a table piled with books and papers, a chair behind him and a curtained window to one side. A wall clock reads about twelve.",
+      "people": {
+        "min": 1,
+        "typical": 1,
+        "max": 1
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 4 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          530,
+          390
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-04",
+      "title": "By a sick woman’s bed",
+      "difficulty": "clear",
+      "shows": "A woman lies in bed under a quilt, looking unwell. A boy stands at the bedside, reaching towards her. On the side table: a medicine bottle, a glass and a strip of tablets. A painting of mountains hangs on the wall.",
+      "people": {
+        "min": 2,
+        "typical": 2,
+        "max": 2
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 8 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          525,
+          391
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-05",
+      "title": "A cyclist under a car",
+      "difficulty": "clear",
+      "shows": "A boy has fallen from his bicycle in front of a small car; two people sit inside it. A woman in a sari reaches towards the boy in alarm, and four others nearby throw up their hands or hurry over.",
+      "people": {
+        "min": 7,
+        "typical": 8,
+        "max": 8
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 9 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          524,
+          397
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-06",
+      "title": "Carrying a glider up a hill",
+      "difficulty": "clear",
+      "shows": "On a hillside below a high peak, a group of young people carry a large wooden glider frame up the slope, some lifting it overhead, others walking alongside. Sun, birds and trees around them.",
+      "people": {
+        "min": 6,
+        "typical": 8,
+        "max": 9
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 11 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          526,
+          395
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-07",
+      "title": "A football match",
+      "difficulty": "clear",
+      "shows": "A football match. One player is in mid-air in an overhead kick, sending the ball towards the goal; the goalkeeper throws up his hands. Other players run in, and spectators watch over a wall.",
+      "people": {
+        "min": 7,
+        "typical": 13,
+        "max": 16
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 12 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          520,
+          386
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-08",
+      "title": "On the stage",
+      "difficulty": "clear",
+      "shows": "On a stage with curtains and a microphone stand, an older man in a cap pins a badge or medal on a young man’s shirt; both smile. Three people in the audience below, one of them clapping.",
+      "people": {
+        "min": 5,
+        "typical": 5,
+        "max": 5
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 16 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          524,
+          393
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-09",
+      "title": "Across the desk",
+      "difficulty": "clear",
+      "shows": "A man holding a folder stands before a desk. Behind it, an older man in spectacles and a suit sits with papers in front of him and a globe on the desk.",
+      "people": {
+        "min": 2,
+        "typical": 2,
+        "max": 2
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 19 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          520,
+          388
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-10",
+      "title": "Running into the storm",
+      "difficulty": "clear",
+      "shows": "A stormy night: rain slants across the sky and a crescent moon shows through the clouds. A young man runs up a slope; another, lower down, points the way ahead.",
+      "people": {
+        "min": 2,
+        "typical": 2,
+        "max": 2
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://ssbcrackexams.com/ssb-interview-tat-practice-exercise-part-1/",
+        "note": "Chosen by the owner from ssbcrackexams.com (image-522, TAT practice exercise part 1), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          12,
+          12,
+          1010,
+          840
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-11",
+      "title": "In the water",
+      "difficulty": "clear",
+      "shows": "Floodwater before a row of houses. A man in the water reaches out to a woman who is struggling, her arm raised. People watch from the rooftops and from the bank.",
+      "people": {
+        "min": 10,
+        "typical": 13,
+        "max": 15
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://ssbcrackexams.com/ssb-interview-tat-practice-exercise-part-2/",
+        "note": "Chosen by the owner from ssbcrackexams.com (image-524, TAT practice exercise part 2), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          8,
+          8,
+          1250,
+          869
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-12",
+      "title": "A street at night",
+      "difficulty": "clear",
+      "shows": "A street of shops and houses. In front, an old man in a turban carries a stick and a lantern. Behind, a guard sits on a stool by a gate, and a young man with a briefcase walks away, looking back.",
+      "people": {
+        "min": 3,
+        "typical": 3,
+        "max": 3
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 3 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          530,
+          394
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-13",
+      "title": "At the post box",
+      "difficulty": "clear",
+      "shows": "Two young men stand at an old pillar post box. One points at it; the other holds a letter at the slot.",
+      "people": {
+        "min": 2,
+        "typical": 2,
+        "max": 2
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 5 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          527,
+          387
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-14",
+      "title": "A notice board and a bell",
+      "difficulty": "clear",
+      "shows": "Outside a building marked OFFICE, four schoolchildren read a notice board about an investigating officer. To one side, a man holds up a hanging bell and a hammer to strike it.",
+      "people": {
+        "min": 5,
+        "typical": 5,
+        "max": 5
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 7 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          525,
+          394
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-15",
+      "title": "A boat on the lake",
+      "difficulty": "clear",
+      "shows": "A boy rows a small boat across a lake below the hills; a girl sits facing him, talking with a hand raised. Birds and clouds overhead.",
+      "people": {
+        "min": 2,
+        "typical": 2,
+        "max": 2
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 10 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          536,
+          386
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-16",
+      "title": "A cart and a car collide",
+      "difficulty": "clear",
+      "shows": "A horse cart has run into a car; the horse is down and a man has been thrown to the ground. A man on a scooter stops, another tends the horse, the driver sits in the car, and onlookers react, one woman in alarm.",
+      "people": {
+        "min": 6,
+        "typical": 8,
+        "max": 9
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 13 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          530,
+          388
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-17",
+      "title": "A climber on a rope",
+      "difficulty": "clear",
+      "shows": "Among steep mountain peaks, a lone climber with a pack climbs a rope fixed high on the rock face.",
+      "people": {
+        "min": 1,
+        "typical": 1,
+        "max": 1
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 14 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          520,
+          391
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-18",
+      "title": "By the stream",
+      "difficulty": "clear",
+      "shows": "Four children sit together under a tree beside a stream with an arched stone bridge. A fifth child is in the water, or diving into it. The sun is low on the horizon.",
+      "people": {
+        "min": 5,
+        "typical": 5,
+        "max": 5
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 15 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          522,
+          393
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-19",
+      "title": "A figure in the forest",
+      "difficulty": "clear",
+      "shows": "In a forest clearing, a tall figure wrapped in a shawl stands among the trees. In front, two men with long sticks, one in a turban with a bag, watch it.",
+      "people": {
+        "min": 3,
+        "typical": 3,
+        "max": 3
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 17 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          527,
+          391
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-20",
+      "title": "Three men on a street",
+      "difficulty": "clear",
+      "shows": "Three men on a pavement. One, in a shirt and tie, stands with a hand on his chest. Another, in a sweater, looks in pain and is held up by a third, who speaks to the first.",
+      "people": {
+        "min": 3,
+        "typical": 3,
+        "max": 3
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 18 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          527,
+          392
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-21",
+      "title": "Before a garlanded portrait",
+      "difficulty": "clear",
+      "shows": "A young man stands in a room before a portrait of a woman hung with a garland, a shelf with offerings beneath it. A curtained window to one side.",
+      "people": {
+        "min": 1,
+        "typical": 1,
+        "max": 2
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://www.adda247.com/defence-jobs/ssb-tat-pictures/",
+        "note": "Chosen by the owner from adda247.com (picture 20 of \"SSB TAT Pictures\"), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          4,
+          4,
+          528,
+          389
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-22",
+      "title": "Caught in the orchard",
+      "difficulty": "clear",
+      "shows": "Under fruit trees by a broken brick wall, a man holds two schoolboys with satchels, one by the arm and one by the shoulder. The boys hold fruit.",
+      "people": {
+        "min": 3,
+        "typical": 3,
+        "max": 3
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://ssbcrackexams.com/ssb-interview-tat-practice-exercise-part-1/",
+        "note": "Chosen by the owner from ssbcrackexams.com (image-523, TAT practice exercise part 1), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          6,
+          6,
+          1114,
+          875
+        ],
+        "blur": 0.4
+      }
+    },
+    {
+      "id": "tat-23",
+      "title": "Wind in the trees",
+      "difficulty": "hazy",
+      "shows": "A strong wind bends a stand of trees, and a bird is blown overhead. A lone figure struggles past the trees, bent against the wind.",
+      "people": {
+        "min": 1,
+        "typical": 1,
+        "max": 1
+      },
+      "source": {
+        "kind": "owner",
+        "url": "https://ssbcrackexams.com/ssb-interview-tat-practice-exercise-part-2/",
+        "note": "Chosen by the owner from ssbcrackexams.com (image-525, TAT practice exercise part 2), 2026-10-19."
+      },
+      "processing": {
+        "crop": [
+          8,
+          8,
+          1213,
+          833
+        ],
+        "blur": 0.8
+      }
+    }
+  ]
+}

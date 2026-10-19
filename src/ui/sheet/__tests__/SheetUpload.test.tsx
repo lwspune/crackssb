@@ -34,6 +34,15 @@ describe('SheetUpload', () => {
     ...over,
   });
 
+  it('stops at four pages, or at eight for a TAT sheet (D36)', () => {
+    const four = Array.from({ length: 4 }, (_, i) => ({ page: i + 1, url: `/p${i + 1}.jpg` }));
+    const { unmount } = render(<SheetUpload {...props({ photos: four })} />);
+    expect(screen.queryByLabelText(/photograph page 5/i)).toBeNull();
+    unmount();
+    render(<SheetUpload {...props({ photos: four, maxPages: 8 })} />);
+    expect(screen.getByLabelText(/photograph page 5/i)).toBeTruthy();
+  });
+
   it('opens the camera for page 1', () => {
     render(<SheetUpload {...props()} />);
     const input = screen.getByLabelText(/photograph page 1/i) as HTMLInputElement;

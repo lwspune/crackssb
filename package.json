@@ -25,9 +25,12 @@
     "items:seed": "node --experimental-strip-types scripts/seed-items.ts",
     "oirmocks": "node --experimental-strip-types scripts/build-oir-mocks.ts",
     "tests:seed": "node --experimental-strip-types scripts/seed-tests.ts",
-    "ppdtslides": "node scripts/build-ppdt-slides.mjs",
+    "ppdtslides": "node scripts/build-slides.mjs ppdt",
+    "tatslides": "node scripts/build-slides.mjs tat",
     "ppdt:seed": "node --experimental-strip-types scripts/seed-ppdt.ts",
-    "ppdtsheet": "node scripts/build-ppdt-sheet-pdf.mjs"
+    "tat:seed": "node --experimental-strip-types scripts/seed-tat.ts",
+    "ppdtsheet": "node scripts/build-sheet-pdf.mjs ppdt",
+    "tatsheet": "node scripts/build-sheet-pdf.mjs tat"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",

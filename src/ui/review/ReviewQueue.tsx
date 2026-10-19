@@ -1,17 +1,19 @@
 import Link from 'next/link';
 
 /**
- * The review queue (D34, UI.md §5): PPDT attempts sent for review, the oldest
+ * The review queue (D34, D36, UI.md §5): PPDT and TAT attempts sent for review, the oldest
  * waiting first, then those already marked. Server-renderable.
  */
 
 export interface QueueRow {
   readonly sessionId: string;
   readonly name: string;
-  readonly picture: number;
+  /** What was sent: "PPDT · Picture 3", "TAT set 1". */
+  readonly label: string;
   readonly input: 'typed' | 'paper';
   readonly submittedAt: string;
-  readonly hasNarration: boolean;
+  /** Null where there is no narration to give (TAT). */
+  readonly hasNarration: boolean | null;
   readonly reviewedAt: string | null;
 }
 
@@ -32,9 +34,9 @@ function List({ id, title, rows, when }: { id: string; title: string; rows: read
             >
               <span className="font-semibold">{r.name}</span>
               <span className="flex flex-wrap items-center gap-x-3 text-sm text-muted-foreground">
-                <span>Picture {r.picture}</span>
+                <span>{r.label}</span>
                 <span>{r.input === 'paper' ? 'Paper' : 'Typed'}</span>
-                <span>{r.hasNarration ? 'Narrated' : 'No narration'}</span>
+                {r.hasNarration !== null && <span>{r.hasNarration ? 'Narrated' : 'No narration'}</span>}
                 <span className="tabular-nums">{when(r)}</span>
               </span>
             </Link>
