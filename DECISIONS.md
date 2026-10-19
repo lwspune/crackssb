@@ -813,3 +813,56 @@ Reading the sheet (OCR) and the AI's first pass are still to come. Speech-to-tex
 **Consequences.** Reusing the five numbers is safe only because nobody had sat them: on 2026-10-19 the database held one PPDT attempt, a staff try on picture 1. From now on a picture's number is fixed once anyone has sat it; a replacement takes a new number. The pictures are in production only after `npm run ppdt:seed -- --apply`, run once the deploy carrying the slides is live.
 
 **Revisit if.** The owner wants pictures by theme rather than by number, or the database is to refuse changing a picture someone has sat (as 0010 does for mocks).
+
+---
+
+## D36 — TAT: sets of eleven owner-chosen line drawings and a blank, on paper, marked story by story
+
+**Date:** 2026-10-19 · **Status:** Accepted · **Supersedes** D8 for these pictures
+
+**Context.** TAT was planned to come nearly free once PPDT built Stimulus → write (UI.md §3). The engine already ran twelve slides at 30 s + 4 min, the twelfth blank. Only four real slides existed (`content/tat-images/`, the graded batch's deck, framed and partly photographed), and no more were coming. The owner asked us to look online for TAT pictures, then chose them.
+
+**Decision.**
+
+1. **Twenty-three line drawings**, twenty from adda247.com and six from ssbcrackexams.com, less three left out: one shows a couple in swimwear (most candidates are minors), two carry a visible watermark. Each records its page and that the owner chose it (`content/tat/pictures.json`). Their source is the owner's to answer for, as in D33. Slides by `npm run tatslides`: cropped, lines darkened a little, as many are faint scans.
+2. **What each shows** is written as ground truth: who, where, what is happening, never what it means. The result page shows it beside each slide; the judge will read it (D5).
+3. **Two sets of eleven and a blank**, one picture spare (`content/tat/sets.json`, append-only). A set is a `tests` row like an OIR mock, so once anyone has sat it, it cannot change (0009). The blank is an `items` row too, so every set is exactly twelve slides and save_response's per-slide windows (0012) apply unchanged.
+4. **0017.** `start_tat` (typed or paper, as start_ppdt); `start_test` is OIR's only; `test_result` and `my_test_attempts` answer for OIR only, so a TAT attempt never shows as a mock. Up to eight sheet photos for TAT (twelve stories run to six pages), four otherwise. `submit_for_review` takes TAT. No narration: TAT has none at the SSB.
+5. **Mentor review, story by story.** `review_tat`: twelve entries, each a whole mark 1-5 or none (not written), with a note of up to 300 characters, at least one marked; then went well / work on. No total and no band (D15). Each mark shows beside its slide on the candidate's result. The queue lists TAT beside PPDT.
+6. **No model stories.** ROADMAP rules out ideal-answer libraries; PPDT's samples (D33) do not carry over.
+
+**Consequences.** `tat.db.test.ts` is the gate; it could not be run on 2026-10-19 (the Supabase token had expired), so 0017 is unapplied until it is. The four deck slides stay with the scoring layer (`STIMULI`), not in sets. Quick checks on a TAT story need its text, so they wait for the sheet to be read (SUGGESTIONS.md).
+
+**Revisit if.** Candidates use up two sets (then more pictures, chosen or generated per D8), the D5 key arrives (judge the stories against `shows`), or sheets can be read (then quick checks per story).
+
+---
+
+## D37 — A date of birth is optional
+
+**Date:** 2026-10-19 · **Status:** Accepted · **Amends** D23, D31
+
+**Context.** Every way into a test refused a candidate with no date of birth (`dob_required`), and staff could not add one without it. The owner asked for it to be optional, and chose what a blank one means.
+
+**Decision.** Left blank, the date of birth is simply not known, and the candidate sits tests as an adult would. A known under-18 still needs a guardian's consent first. 0016 re-creates start_session, answer_practice, start_test and start_ppdt with only that check changed, and update_person no longer refuses a blank. The script, the add-people form, the Excel rows and the person page all accept one.
+
+**Consequences.** A minor entered without a date of birth is not stopped by the consent check: that is the owner's choice, made knowing it. `dob.db.test.ts` is the gate.
+
+**Revisit if.** A guardian-consent obligation applies to the product (then a blank date of birth must mean "needs consent").
+
+---
+
+## D38 — Answers are written by hand and photographed; typing is hidden
+
+**Date:** 2026-10-19 · **Status:** Accepted · **Amends** D2, D22
+
+**Context.** D2 made typing a first-class path beside paper. The owner asked for candidates to write by hand and upload a photo instead, as at the SSB, for PPDT, TAT and WAT.
+
+**Decision.**
+
+1. **One switch, `OFFER_TYPED = false`** (`src/ui/runner/paper.ts`): every brief starts on paper with its session code and sheet, and offers no typing. The typed path stays built and tested (the tests switch it back on), so it returns by changing one line.
+2. **WAT gets a result page** (`/results/wat/[session]`): the photos (up to four pages) and the sixty words to check the sheet against. Its runner ends with "Photograph your sheet". Review of WAT, by a mentor or the AI, comes later.
+3. **Home's Next up follows the candidate:** the first ready test, in SSB day order, they have not yet taken; once all are taken, Day 1 again. It had been fixed on WAT since Sprint 1.
+
+**Consequences.** No typed text means no quick checks and nothing for the judge to read until sheets are read (OCR, D3). Typed attempts already made still show as they were. Results lists TAT and WAT too.
+
+**Revisit if.** Reading the sheets works (then the checks run on the transcript), or an academy wants typing back.

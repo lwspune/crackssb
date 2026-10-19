@@ -435,7 +435,7 @@ audio pipeline is the place to start (ROADMAP Phase 2).
 Retakes and re-photographed pages leave their earlier files in storage until the attempt is sent, when they
 are cleared. An attempt that is never sent keeps them until the twelve-month clean-up.
 
-### WAT on paper still says "Photo upload is coming"
+### ~~WAT on paper still says "Photo upload is coming"~~ — done 2026-10-19 (D38): `/results/wat/[session]` takes the photos
 
 `begin_sheet_upload` takes any paper attempt, but the WAT runner's end screen has no upload, and nothing
 reviews WAT. Wire it when WAT gets a result page.
@@ -451,3 +451,39 @@ reviews WAT. Wire it when WAT gets a result page.
 D35 reused five numbers because nobody had sat them, and says a sat number is never reused. Only prose holds
 that today: `ppdt:seed` upserts by id. A trigger like the mocks' once-sat guard (0010) would refuse a changed
 `payload` on a `ppdt` item that has a session, and `ppdt.db.test.ts` would gate it.
+
+## 2026-10-19 (TAT, optional date of birth, paper only — D36-D38)
+
+### Apply 0016 and 0017, then run the database tests
+
+The Supabase access token in `.mcp.json` was rejected on 2026-10-19, so neither migration is applied and
+`dob.db.test.ts`, `tat.db.test.ts` and the changed `manage.db.test.ts` have not run. Until 0016 is applied, a
+candidate with no date of birth (Namit Suresh, created that day) cannot start a test. Then `npm run tat:seed -- --apply`
+once the deploy carrying `public/tat/` is live.
+
+### Quick checks on a TAT story need its text
+
+Per-story checks (length against four minutes, an outcome reached, TRY/TRIED from lexical.ts, all twelve written,
+the blank answered) were written test-first and removed when TAT went paper-only (D38): with no text there is
+nothing to check. Bring them back on the transcript once sheets are read (OCR, D3).
+
+### Review WAT
+
+WAT sheets are photographed (D38) but nobody reviews them yet. The owner's word: a mentor or the AI will. Sixty
+responses need their own rubric (UI.md has none for WAT); the judge's WAT rubric (layer 3) is the starting point.
+
+### More TAT sets
+
+Two sets and one spare picture. Candidates who sit both have seen every picture. Next: more chosen pictures (as
+D36) or generated ones (D8), with `shows` written first; append to `content/tat/sets.json`.
+
+### `audit:mobile` does not visit the TAT or WAT result screens
+
+`/practise/tat`, `/results/tat/[session]` and `/results/wat/[session]` need a finished attempt to reach; add them
+with a fixture attempt.
+
+### The typed path is hidden, not gone
+
+`OFFER_TYPED = false` hides typing on every brief; the typed code and its tests stay. If the owner confirms paper
+for good, decide whether to remove it (and the PPDT quick checks, which need typed text) or keep it for an academy
+that asks.
