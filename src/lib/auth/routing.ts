@@ -65,9 +65,33 @@ export function safeNext(next: string | null, role: Role): string | null {
   return url.pathname + url.search;
 }
 
-/** Reachable without a session: the sign-in page, and the blank printable sheet (no data on it). */
+/** Reachable without a session: the sign-in page, Google's return to it, and the blank printable sheet (no data on it). */
 export function isPublicPath(pathname: string): boolean {
-  return pathname === '/login' || pathname.startsWith('/sheets/');
+  return pathname === '/login' || pathname === GOOGLE_CALLBACK || pathname.startsWith('/sheets/');
+}
+
+/** Where Google sends someone back (D42). It must also be on Supabase's redirect allow-list. */
+export const GOOGLE_CALLBACK = '/auth/callback';
+
+export type GoogleFailure = 'cancelled' | 'failed' | 'not_set_up';
+
+const GOOGLE_ERRORS: Readonly<Record<GoogleFailure, string>> = {
+  cancelled: 'Google sign-in was cancelled.',
+  failed: 'Google sign-in didn’t work. Try again.',
+  not_set_up: 'This login is not set up yet. Ask your academy.',
+};
+
+/** The sign-in page's message for `?error=`. Only a known code shows anything, so a crafted link cannot put words on the page. */
+export function googleSignInError(code: string | null): string | null {
+  return code !== null && Object.hasOwn(GOOGLE_ERRORS, code) ? GOOGLE_ERRORS[code as GoogleFailure] : null;
+}
+
+/** Google's reply, read before any code is exchanged: a refusal on Google's screen, any other error, or no code. */
+export function googleCallbackFailure(query: URLSearchParams): GoogleFailure | null {
+  const error = query.get('error');
+  if (error === 'access_denied') return 'cancelled';
+  if (error || !query.get('code')) return 'failed';
+  return null;
 }
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;

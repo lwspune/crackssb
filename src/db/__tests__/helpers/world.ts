@@ -1,6 +1,7 @@
 import { randomBytes } from 'node:crypto';
 import { createClient } from '@supabase/supabase-js';
 import type { SupabaseClient } from '@supabase/supabase-js';
+import { STAFF_MADE } from '../../admin/users.ts';
 
 /**
  * A throwaway world for the access tests: two academies, their candidates and
@@ -89,7 +90,7 @@ export async function buildWorld(specs: Readonly<Record<string, PersonSpec>>): P
     for (const [label, spec] of Object.entries(specs)) {
       const email = `${run}-${label}@${FIXTURE_DOMAIN}`.toLowerCase();
       const password = randomBytes(18).toString('base64url');
-      const created = await service.auth.admin.createUser({ email, password, email_confirm: true });
+      const created = await service.auth.admin.createUser({ email, password, email_confirm: true, app_metadata: STAFF_MADE });
       if (created.error || !created.data.user) throw new Error(`user ${label}: ${created.error?.message}`);
       const id = created.data.user.id;
       userIds.push(id);

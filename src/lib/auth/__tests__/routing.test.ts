@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { areasFor, homeFor, isPublicPath, parseCredentials, pathAllowedFor, safeNext, signInError } from '../routing.ts';
+import { areasFor, googleCallbackFailure, googleSignInError, homeFor, isPublicPath, parseCredentials, pathAllowedFor, safeNext, signInError } from '../routing.ts';
 import type { Role } from '../routing.ts';
 
 /** Sign-in routing: where each role lands, and what a `?next=` may point at. */
@@ -87,13 +87,44 @@ describe('layered access (D25): each role reaches its own area and every area be
 });
 
 describe('isPublicPath', () => {
-  it('lets the sign-in page and the printable sheet through without a session', () => {
+  it('lets the sign-in page, Google’s return and the printable sheet through without a session', () => {
     expect(isPublicPath('/login')).toBe(true);
+    expect(isPublicPath('/auth/callback')).toBe(true);
     expect(isPublicPath('/sheets/wat')).toBe(true);
   });
 
   it('guards everything else', () => {
-    for (const p of ['/', '/practise', '/run/wat', '/staff', '/admin', '/loginx']) expect(isPublicPath(p)).toBe(false);
+    for (const p of ['/', '/practise', '/run/wat', '/staff', '/admin', '/loginx', '/auth', '/auth/callbackx', '/auth/other']) expect(isPublicPath(p)).toBe(false);
+  });
+});
+
+describe('googleSignInError — what the sign-in page says when Google sends someone back', () => {
+  it('names each way it can go wrong, plainly', () => {
+    expect(googleSignInError('cancelled')).toMatch(/cancelled/i);
+    expect(googleSignInError('not_set_up')).toMatch(/not set up/i);
+    expect(googleSignInError('failed')).toMatch(/didn’t work/i);
+  });
+
+  it('says nothing without a known code, so a crafted link cannot put words on the page', () => {
+    expect(googleSignInError(null)).toBeNull();
+    expect(googleSignInError('')).toBeNull();
+    expect(googleSignInError('<script>alert(1)</script>')).toBeNull();
+    expect(googleSignInError('toString')).toBeNull();
+  });
+});
+
+describe('googleCallbackFailure — Google’s reply, read before anything is exchanged', () => {
+  const q = (s: string) => new URLSearchParams(s);
+  it('reads a refusal on Google’s screen as cancelled', () => {
+    expect(googleCallbackFailure(q('error=access_denied&error_description=x'))).toBe('cancelled');
+  });
+  it('reads any other error, or no code at all, as failed', () => {
+    expect(googleCallbackFailure(q('error=server_error'))).toBe('failed');
+    expect(googleCallbackFailure(q(''))).toBe('failed');
+    expect(googleCallbackFailure(q('code='))).toBe('failed');
+  });
+  it('passes a reply that carries a code', () => {
+    expect(googleCallbackFailure(q('code=abc&next=%2Fpractise'))).toBeNull();
   });
 });
 

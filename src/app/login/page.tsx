@@ -1,24 +1,28 @@
 import type { Metadata } from 'next';
 import { redirect } from 'next/navigation';
 import { getViewer } from '@/lib/auth/viewer.ts';
-import { homeFor } from '@/lib/auth/routing.ts';
+import { googleSignInError, homeFor } from '@/lib/auth/routing.ts';
 import { BRAND } from '@/ui/brand.ts';
 import { Mark } from '@/ui/icons.tsx';
 import { Contours } from '@/ui/parts.tsx';
+import { GoogleSignIn } from '@/ui/auth/GoogleSignIn.tsx';
 import { LoginForm } from '@/ui/auth/LoginForm.tsx';
-import { signIn } from './actions.ts';
+import { signIn, signInWithGoogle } from './actions.ts';
 
 export const metadata: Metadata = { title: 'Sign in', robots: { index: false } };
 
-type Search = Promise<{ next?: string | string[] }>;
+type Search = Promise<{ next?: string | string[]; error?: string | string[] }>;
 
 export default async function LoginPage({ searchParams }: { searchParams: Search }) {
   const viewer = await getViewer();
   if (viewer) redirect(homeFor(viewer.role));
 
   // Passed through to the action, which validates it (safeNext) before using it.
-  const raw = (await searchParams).next;
+  const search = await searchParams;
+  const raw = search.next;
   const next = typeof raw === 'string' && raw.length <= 300 ? raw : null;
+  // Only a known code shows a message (googleSignInError); anything else in the link shows nothing.
+  const googleError = googleSignInError(typeof search.error === 'string' ? search.error : null);
 
   return (
     <main className="grid min-h-dvh md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)]">
@@ -47,8 +51,19 @@ export default async function LoginPage({ searchParams }: { searchParams: Search
       <section className="flex items-center justify-center px-6 py-10 sm:px-10">
         <div className="rise w-full max-w-sm">
           <h1 className="text-3xl font-bold tracking-tight">Sign in</h1>
-          <p className="mt-2 text-sm text-muted-foreground">Your academy creates your login.</p>
-          <div className="mt-8">
+          <p className="mt-2 text-sm text-muted-foreground">New here? Continue with Google.</p>
+          <div className="mt-8 space-y-6">
+            {googleError && (
+              <p role="alert" className="rounded-lg bg-destructive/10 px-3.5 py-2.5 text-sm font-medium text-destructive">
+                {googleError}
+              </p>
+            )}
+            <GoogleSignIn action={signInWithGoogle} next={next} />
+            <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              <span aria-hidden="true" className="h-px flex-1 bg-border" />
+              Academy login
+              <span aria-hidden="true" className="h-px flex-1 bg-border" />
+            </div>
             <LoginForm action={signIn} next={next} />
           </div>
         </div>

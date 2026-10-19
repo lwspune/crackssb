@@ -1,8 +1,8 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 
 /**
- * Manual logins (Sprint 1): an operator creates each account with
- * `npm run user:create`. Public sign-up is off; Google sign-in comes later.
+ * Logins staff make: an operator with `npm run user:create`, staff in the app
+ * (D23). Students without an academy sign up with Google instead (D42).
  * Server-side only — this needs the service-role key.
  */
 
@@ -66,6 +66,13 @@ export { generatePassword, PASSWORD_ALPHABET } from '../../lib/auth/password.ts'
 
 export { isMinor } from '../../lib/age.ts';
 
+/**
+ * Marks a login as made by staff. The sign-up hook (0020) refuses every
+ * account that is neither this nor Google; only the service role can write
+ * app_metadata, so the public key cannot claim it.
+ */
+export const STAFF_MADE = { joined_via: 'staff' } as const;
+
 export interface Created {
   readonly id: string;
   readonly password: string;
@@ -105,7 +112,7 @@ export interface AccountInput {
  */
 export async function insertAccount(service: SupabaseClient, input: AccountInput): Promise<Created> {
   const password = input.password ?? generatePassword();
-  const created = await service.auth.admin.createUser({ email: input.email, password, email_confirm: true });
+  const created = await service.auth.admin.createUser({ email: input.email, password, email_confirm: true, app_metadata: STAFF_MADE });
   if (created.error?.code === 'email_exists') throw new ExistingAccount(input.email);
   if (created.error || !created.data.user) throw new Error(`Creating the login failed: ${created.error?.message ?? 'no user returned'}`);
   const id = created.data.user.id;
