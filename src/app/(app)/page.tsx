@@ -1,12 +1,24 @@
 import Link from 'next/link';
-import { SSB_DAYS, entriesForDay } from '@/ui/catalog.ts';
+import { requireViewerAt } from '@/lib/auth/viewer.ts';
+import { createSupabaseServer } from '@/lib/supabase/server.ts';
+import { SSB_DAYS, entriesForDay, nextUp } from '@/ui/catalog.ts';
 import { ArrowIcon, OlqIcon, ResultsIcon } from '@/ui/icons.tsx';
 import { Contours, EmptyState, Page } from '@/ui/parts.tsx';
 import { RUNNABLE } from '@/ui/runner/registry.ts';
 import { UnfinishedSession } from '@/ui/runner/UnfinishedSession.tsx';
 
-export default function HomePage() {
-  const wat = RUNNABLE.wat;
+/** The tests this viewer has a session for, by instrument: what "Next up" moves past (D38). */
+async function taken(viewerId: string): Promise<Set<string>> {
+  const client = await createSupabaseServer();
+  const { data, error } = await client.from('sessions').select('assessment_type').eq('candidate_id', viewerId).limit(1000);
+  if (error) console.error('loading taken tests failed', { code: error.code });
+  return new Set((data ?? []).map((r) => r.assessment_type));
+}
+
+export default async function HomePage() {
+  const viewer = await requireViewerAt('/');
+  const next = nextUp(await taken(viewer.id));
+  const runnable = next ? RUNNABLE[next.instruments[0]] : undefined;
 
   return (
     <Page>
@@ -27,27 +39,27 @@ export default function HomePage() {
             <p className="mt-4 text-navy-muted">Practised by day, on the real timer.</p>
           </div>
 
-          <div className="rounded-xl bg-white/[0.06] p-5 ring-1 ring-white/10 backdrop-blur-sm sm:p-6">
-            <p className="eyebrow text-navy-accent">Next up · Day 2</p>
-            <h2 className="mt-2 text-2xl font-semibold tracking-tight">Word Association Test</h2>
-            <p className="mt-1 text-sm text-navy-muted">First thought. No going back.</p>
-            {wat && (
+          {next && runnable && (
+            <div className="rounded-xl bg-white/[0.06] p-5 ring-1 ring-white/10 backdrop-blur-sm sm:p-6">
+              <p className="eyebrow text-navy-accent">Next up · Day {next.day}</p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight">{next.name}</h2>
+              <p className="mt-1 text-sm text-navy-muted">{next.summary}</p>
               <dl className="mt-5 grid grid-cols-3 divide-x divide-navy-border border-y border-navy-border">
-                {wat.facts.map((f) => (
+                {runnable.facts.map((f) => (
                   <div key={f.label} className="flex flex-col-reverse px-3 py-3 first:pl-0">
                     <dt className="mt-0.5 text-xs text-navy-muted">{f.label}</dt>
                     <dd className="text-3xl font-semibold tabular-nums tracking-tight">{f.value}</dd>
                   </div>
                 ))}
               </dl>
-            )}
-            <Link
-              href="/run/wat"
-              className="mt-5 flex min-h-12 items-center justify-center gap-2 rounded-lg bg-white text-base font-semibold text-navy shadow-[0_8px_24px_-8px_rgb(122_176_255/0.6)] transition hover:bg-navy-foreground"
-            >
-              Begin WAT <ArrowIcon />
-            </Link>
-          </div>
+              <Link
+                href={runnable.start ?? `/run/${next.instruments[0]}`}
+                className="mt-5 flex min-h-12 items-center justify-center gap-2 rounded-lg bg-white text-base font-semibold text-navy shadow-[0_8px_24px_-8px_rgb(122_176_255/0.6)] transition hover:bg-navy-foreground"
+              >
+                Begin {next.short ?? next.name} <ArrowIcon />
+              </Link>
+            </div>
+          )}
         </div>
       </section>
 

@@ -71,3 +71,13 @@ export const AVAILABILITY_LABEL: Readonly<Record<Availability, string>> = {
   coming: 'Coming',
   not_simulated: 'Not simulated',
 };
+
+/**
+ * Home's "Next up" (D38): the first ready test, in SSB day order, the
+ * candidate has not yet taken (`taken` holds instrument ids with a session);
+ * once all are taken, back to the first.
+ */
+export function nextUp(taken: ReadonlySet<string>): CatalogEntry | undefined {
+  const ready = CATALOG.filter((e) => e.availability === 'ready');
+  return ready.find((e) => !e.instruments.some((i) => taken.has(i))) ?? ready[0];
+}
