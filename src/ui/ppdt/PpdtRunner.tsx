@@ -8,7 +8,7 @@ import { INSTRUMENT_CONFIGS } from '@/runner/modes.ts';
 import { MAX_ROWS, parseNote, serialiseNote, withCount } from '@/ppdt/note.ts';
 import type { MoodMark, PpdtNote, Sex } from '@/ppdt/note.ts';
 import { ArrowIcon } from '../icons.tsx';
-import { sessionCode } from '../runner/paper.ts';
+import { OFFER_TYPED, sessionCode } from '../runner/paper.ts';
 import type { InputMode, SessionRecord, SessionStore } from '../runner/session-store.ts';
 
 /**
@@ -32,6 +32,8 @@ interface Props {
   readonly store: SessionStore;
   /** Called once the attempt is over and saved; the app goes to the result. */
   readonly onDone: (record: SessionRecord) => void;
+  /** Offer typing as well as paper (D38: off in the app). */
+  readonly offerTyped?: boolean;
 }
 
 type View =
@@ -68,7 +70,7 @@ function arrive(store: SessionStore, picture: PpdtPictureMeta): { view: View; st
   return { view: viewOf(step), step, input: record.input };
 }
 
-export function PpdtRunner({ picture, store, onDone }: Props) {
+export function PpdtRunner({ picture, store, onDone, offerTyped = OFFER_TYPED }: Props) {
   const [arrival] = useState(() => arrive(store, picture));
   const [view, setView] = useState<View>(arrival.view);
   const [input, setInput] = useState<InputMode>(arrival.input);
@@ -141,7 +143,7 @@ export function PpdtRunner({ picture, store, onDone }: Props) {
     }
   };
 
-  if (view.kind === 'brief') return <Brief starting={starting} error={startError} onBegin={begin} />;
+  if (view.kind === 'brief') return <Brief offerTyped={offerTyped} starting={starting} error={startError} onBegin={begin} />;
   if (view.kind === 'other') return <OtherRunning itemId={view.itemId} />;
   if (view.kind === 'ending') return <Ending offline={sync === 'offline'} />;
 
@@ -192,8 +194,8 @@ export function PpdtRunner({ picture, store, onDone }: Props) {
 
 // ---------------------------------------------------------------------------
 
-function Brief({ starting, error, onBegin }: { starting: boolean; error: string | null; onBegin: (c: { input: InputMode; code: string | null }) => void }) {
-  const [input, setInput] = useState<InputMode>('typed');
+function Brief({ offerTyped, starting, error, onBegin }: { offerTyped: boolean; starting: boolean; error: string | null; onBegin: (c: { input: InputMode; code: string | null }) => void }) {
+  const [input, setInput] = useState<InputMode>(offerTyped ? 'typed' : 'paper');
   const [code] = useState(() => sessionCode(Math.random));
   const paper = input === 'paper';
   const facts = [
@@ -217,6 +219,7 @@ function Brief({ starting, error, onBegin }: { starting: boolean; error: string 
         </dl>
         <p className="mt-8 text-lg">Look at the picture, note who is in it, then write a story about it.</p>
 
+        {offerTyped && (
         <fieldset className="mt-8">
           <legend className="eyebrow text-runner-muted">How you&rsquo;ll answer</legend>
           <div className="mt-3 grid gap-3 sm:grid-cols-2">
@@ -237,6 +240,7 @@ function Brief({ starting, error, onBegin }: { starting: boolean; error: string 
             ))}
           </div>
         </fieldset>
+        )}
 
         {paper && (
           <div className="mt-4 rounded-lg bg-white/[0.04] p-4 ring-1 ring-runner-track">

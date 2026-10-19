@@ -26,5 +26,5 @@ export function RunnerClient({ instrument, title, initial, serverNowMs }: Props)
   const [store] = useState(() => createServerStore(supabaseSessionApi(createSupabaseBrowser()), { initial, serverNowMs }));
   const content = CONTENT[instrument];
   if (!content) throw new Error(`No content source for "${instrument}"`);
-  return <Runner instrument={instrument} title={title} store={store} content={content} />;
+  return <Runner instrument={instrument} title={title} store={store} content={content} photoHref={(record) => `/results/${instrument}/${(record as ServerRecord).id}`} />;
 }

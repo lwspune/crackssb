@@ -4,7 +4,14 @@
  */
 
 /** No 0/O, 1/I/L, 5/S, 8/B, 2/Z — the pairs a hurried hand and a phone photo blur together. */
-export const CODE_ALPHABET = 'ACDEFGHJKMNPQRTUVWXY34679';
+/**
+ * Whether a test offers typing at all (D38). The owner's call: candidates
+ * write by hand and photograph the sheet, as at the SSB. The typed path stays
+ * built and tested; this one switch hides it on every brief.
+ */
+export const OFFER_TYPED = false;
+
+export const CODE_ALPHABET ='ACDEFGHJKMNPQRTUVWXY34679';
 
 const CODE = new RegExp(`^[${CODE_ALPHABET}]{3}-[${CODE_ALPHABET}]{3}$`);
 

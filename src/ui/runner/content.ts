@@ -10,7 +10,7 @@ import type { RunnerContent } from './Runner.tsx';
  * Supabase-backed source will answer it from the server instead of this file.
  */
 
-const WAT_WORDS: readonly string[] = [...watItems.items].sort((a, b) => a.ordinal - b.ordinal).map((i) => i.payload.word);
+export const WAT_WORDS: readonly string[] = [...watItems.items].sort((a, b) => a.ordinal - b.ordinal).map((i) => i.payload.word);
 
 export const WAT_CONTENT: RunnerContent = {
   stimulus: (item) => WAT_WORDS[item] ?? '',

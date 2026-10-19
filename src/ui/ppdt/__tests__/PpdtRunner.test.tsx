@@ -32,7 +32,8 @@ afterEach(() => {
   vi.useRealTimers();
 });
 
-const show = () => render(<PpdtRunner picture={picture} store={store} onDone={onDone} />);
+/** Typing is kept but not offered (D38); most tests switch it back on to keep that path working. */
+const show = (offerTyped = true) => render(<PpdtRunner picture={picture} store={store} onDone={onDone} offerTyped={offerTyped} />);
 const later = async (seconds: number) => {
   await act(async () => {
     vi.advanceTimersByTime(seconds * 1000);
@@ -117,6 +118,18 @@ describe('PpdtRunner', () => {
     await later(60);
     expect(screen.getByText(/story on your sheet/i)).toBeTruthy();
     expect(screen.queryByLabelText(/your story/i)).toBeNull();
+  });
+
+  it('is paper only by default, as at the SSB (D38): no typing offered, the code and sheet from the start', async () => {
+    show(false);
+    expect(screen.queryByLabelText(/type on screen/i)).toBeNull();
+    const code = screen.getByTestId('session-code').textContent ?? '';
+    expect(code).toMatch(/^[A-Z0-9]{3}-[A-Z0-9]{3}$/);
+    expect((screen.getByRole('link', { name: /print the sheet/i }) as HTMLAnchorElement).getAttribute('href')).toBe(`/sheets/ppdt?code=${code}`);
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /begin/i }));
+    });
+    expect(store.load('ppdt')).toMatchObject({ input: 'paper', code });
   });
 
   it('resumes a reload where the clock is, with the box as it was left, and no picture', () => {

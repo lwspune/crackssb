@@ -8,8 +8,8 @@ import type { RunnerInstrument } from '../../runner/modes.ts';
 import { ArrowIcon } from '../icons.tsx';
 import { RUNNABLE } from './registry.ts';
 import type { RunnableInstrument } from './registry.ts';
-import { sessionCode } from './paper.ts';
-import type { InputMode, SessionStore } from './session-store.ts';
+import { OFFER_TYPED, sessionCode } from './paper.ts';
+import type { InputMode, SessionRecord, SessionStore } from './session-store.ts';
 
 /**
  * The runner shell (UI.md §4): full screen, one thing visible, the deadline in
@@ -31,6 +31,10 @@ interface Props {
   readonly title: string;
   readonly store: SessionStore;
   readonly content: RunnerContent;
+  /** Offer typing as well as paper (D38: off in the app). */
+  readonly offerTyped?: boolean;
+  /** Where a paper session's sheet is photographed, once it is over. */
+  readonly photoHref?: (record: SessionRecord) => string | null;
 }
 
 type View =
@@ -83,7 +87,7 @@ function arrive(
   return { view: viewOf(step.state), step, answering };
 }
 
-export function Runner({ instrument, title, store, content }: Props) {
+export function Runner({ instrument, title, store, content, offerTyped = OFFER_TYPED, photoHref }: Props) {
   const runnable = RUNNABLE[instrument];
   if (!runnable) throw new Error(`"${instrument}" has no runner yet`);
   const { config } = runnable;
@@ -166,6 +170,7 @@ export function Runner({ instrument, title, store, content }: Props) {
         instrument={instrument}
         facts={runnable.facts}
         instruction={runnable.instruction}
+        offerTyped={offerTyped}
         starting={starting}
         error={startError}
         onBegin={begin}
@@ -173,8 +178,10 @@ export function Runner({ instrument, title, store, content }: Props) {
     );
   }
   if (view.kind === 'ended') {
+    const record = store.load(instrument);
     return (
       <Ended
+        photoHref={record && photoHref ? photoHref(record) : null}
         title={title}
         endedBy={view.endedBy}
         saved={view.saved}
@@ -229,6 +236,7 @@ interface BriefProps {
   instrument: RunnerInstrument;
   facts: RunnableInstrument['facts'];
   instruction: string;
+  offerTyped: boolean;
   starting: boolean;
   error: string | null;
   onBegin: (choice: Answering) => void;
@@ -239,8 +247,8 @@ const CHOICES: readonly { input: InputMode; label: string; hint: string }[] = [
   { input: 'paper', label: 'Write on paper', hint: 'As at the SSB · upload photos after' },
 ];
 
-function Brief({ title, instrument, facts, instruction, starting, error, onBegin }: BriefProps) {
-  const [input, setInput] = useState<InputMode>('typed');
+function Brief({ title, instrument, facts, instruction, offerTyped, starting, error, onBegin }: BriefProps) {
+  const [input, setInput] = useState<InputMode>(offerTyped ? 'typed' : 'paper');
   // One code per brief, shown before the clock starts so writing it costs no test time.
   const [code] = useState(() => sessionCode(Math.random));
   const paper = input === 'paper';
@@ -263,6 +271,7 @@ function Brief({ title, instrument, facts, instruction, starting, error, onBegin
 
         <p className="mt-8 text-lg">{instruction}</p>
 
+        {offerTyped && (
         <fieldset className="mt-8">
           <legend className="eyebrow text-runner-muted">How you&rsquo;ll answer</legend>
           <div className="mt-3 grid gap-3 sm:grid-cols-2">
@@ -289,6 +298,7 @@ function Brief({ title, instrument, facts, instruction, starting, error, onBegin
             ))}
           </div>
         </fieldset>
+        )}
 
         {paper && (
           <div className="mt-4 rounded-lg bg-white/[0.04] p-4 ring-1 ring-runner-track">
@@ -497,10 +507,11 @@ interface EndedProps {
   itemCount: number;
   content: RunnerContent;
   answering: Answering;
+  photoHref: string | null;
   onRestart: () => void;
 }
 
-function Ended({ title, endedBy, saved, itemCount, content, answering, onRestart }: EndedProps) {
+function Ended({ title, endedBy, saved, itemCount, content, answering, photoHref, onRestart }: EndedProps) {
   const rows = Array.from({ length: itemCount }, (_, item) => ({ item, word: content.stimulus(item), text: (saved[keyFor(item, null)] ?? '').trim() }));
   const answered = rows.filter((r) => r.text !== '').length;
   const paper = answering.input === 'paper';
@@ -518,7 +529,12 @@ function Ended({ title, endedBy, saved, itemCount, content, answering, onRestart
                 <dt className="text-xs text-navy-muted">Session code</dt>
                 <dd className="font-mono text-3xl font-semibold tracking-[0.12em]">{answering.code}</dd>
               </dl>
-              <p className="mt-6 text-sm text-navy-muted">Keep your sheet with this code on it. Photo upload is coming.</p>
+              <p className="mt-6 text-sm text-navy-muted">Keep your sheet with this code on it, and photograph it flat, in good light.</p>
+              {photoHref && (
+                <Link href={photoHref} className="mt-4 inline-flex min-h-12 items-center gap-2 rounded-lg bg-white px-6 font-semibold text-navy hover:bg-navy-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                  Photograph your sheet <ArrowIcon />
+                </Link>
+              )}
             </>
           ) : (
             <>

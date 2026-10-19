@@ -29,8 +29,9 @@ afterEach(() => {
   vi.useRealTimers();
 });
 
-function renderRunner() {
-  return render(<Runner instrument="wat" title="Word Association Test" store={store} content={content} />);
+/** Typing is kept but not offered (D38); these tests switch it back on to keep that path working. */
+function renderRunner(offerTyped = true) {
+  return render(<Runner instrument="wat" title="Word Association Test" store={store} content={content} offerTyped={offerTyped} photoHref={() => '/results/wat/s-1'} />);
 }
 
 /** Begin waits on the store (in the app, the server issues the start time). */
@@ -213,18 +214,36 @@ describe('paper mode (D22) — the app keeps the clock, the candidate writes on 
     expect(screen.getByText(/line 2$/i)).toBeTruthy();
   });
 
-  it('ends by keeping the code in view and saying where the photos go', async () => {
+  it('ends by keeping the code in view and going on to photograph the sheet', async () => {
     const code = await beginOnPaper();
     advance(WORD_MS * 60);
     expect(screen.getByRole('heading', { name: /time is up/i })).toBeTruthy();
     expect(screen.getByText(code)).toBeTruthy();
-    expect(screen.getByText(/upload/i)).toBeTruthy();
+    expect(screen.getByRole('link', { name: /photograph your sheet/i }).getAttribute('href')).toBe('/results/wat/s-1');
   });
 
   it('resumes a paper session after a reload, still on paper', async () => {
     store = createMemoryStore({ initial: record(T0 - (WORD_MS + 2_000), { input: 'paper', code: 'ACD-EFG' }) });
     renderRunner();
     expect(screen.getByText('WORD1')).toBeTruthy();
+    expect(screen.queryByLabelText(/your sentence/i)).toBeNull();
+  });
+});
+
+describe('paper only, as at the SSB (D38)', () => {
+  it('offers no typing: the code and the sheet are there from the start', () => {
+    renderRunner(false);
+    expect(screen.queryByRole('radio', { name: /type on screen/i })).toBeNull();
+    const code = screen.getByTestId('session-code').textContent ?? '';
+    expect(code).toMatch(/^[A-Z0-9]{3}-[A-Z0-9]{3}$/);
+    expect(screen.getByRole('link', { name: /print/i }).getAttribute('href')).toBe(`/sheets/wat?code=${code}`);
+  });
+
+  it('starts every session on paper', async () => {
+    renderRunner(false);
+    const code = screen.getByTestId('session-code').textContent ?? '';
+    await clickBegin();
+    expect(store.load('wat')).toMatchObject({ input: 'paper', code });
     expect(screen.queryByLabelText(/your sentence/i)).toBeNull();
   });
 });
