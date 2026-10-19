@@ -831,7 +831,7 @@ Reading the sheet (OCR) and the AI's first pass are still to come. Speech-to-tex
 5. **Mentor review, story by story.** `review_tat`: twelve entries, each a whole mark 1-5 or none (not written), with a note of up to 300 characters, at least one marked; then went well / work on. No total and no band (D15). Each mark shows beside its slide on the candidate's result. The queue lists TAT beside PPDT.
 6. **No model stories.** ROADMAP rules out ideal-answer libraries; PPDT's samples (D33) do not carry over.
 
-**Consequences.** `tat.db.test.ts` is the gate; it could not be run on 2026-10-19 (the Supabase token had expired), so 0017 is unapplied until it is. The four deck slides stay with the scoring layer (`STIMULI`), not in sets. Quick checks on a TAT story need its text, so they wait for the sheet to be read (SUGGESTIONS.md).
+**Consequences.** `tat.db.test.ts` is the gate (applied and run 2026-10-19). The four deck slides stay with the scoring layer (`STIMULI`), not in sets. Quick checks on a TAT story need its text, so they wait for the sheet to be read (SUGGESTIONS.md).
 
 **Revisit if.** Candidates use up two sets (then more pictures, chosen or generated per D8), the D5 key arrives (judge the stories against `shows`), or sheets can be read (then quick checks per story).
 
@@ -866,3 +866,38 @@ Reading the sheet (OCR) and the AI's first pass are still to come. Speech-to-tex
 **Consequences.** No typed text means no quick checks and nothing for the judge to read until sheets are read (OCR, D3). Typed attempts already made still show as they were. Results lists TAT and WAT too.
 
 **Revisit if.** Reading the sheets works (then the checks run on the transcript), or an academy wants typing back.
+
+---
+
+## D39 — SRT: two sets of sixty situations from a practice site, in the third person, on paper
+
+**Date:** 2026-10-19 · **Status:** Accepted
+
+**Context.** SRT was planned to come free with Booklet mode (UI.md §3). No situations existed: the graded batch only sampled a few. The owner chose to take them from a practice site, two sets to start, and the third person, as the SSB booklet reads.
+
+**Decision.**
+
+1. **The bank:** ssbcrackexams.com's "15 Sample SRT Situations" parts 1-10, 150 situations. **120 kept**, 30 held with a reason each (23 repeat another, 7 are thin or have no problem to act on). Only the situations; never the site's model responses (ROADMAP: no ideal-answer libraries). Each keeps its page, part and number, and the site's wording beside ours (`content/srt/situations.json`), as the WAT deck keeps its source.
+2. **Third person, present tense:** "He is…", "His friend…", as the SSB booklet reads; the candidate answers "He will…" (the graded batch's assessor marks that form, CODEBOOK). No "you" is left (tested).
+3. **Two sets of sixty,** shuffled once with a fixed seed so each mixes every part's themes, then written down (`content/srt/sets.json`, append-only). A set is a `tests` row, fixed once sat (0009).
+4. **0018:** `start_srt` (as start_tat); 30 minutes from the timings; the A-D rule in save_response is an OIR mock's alone; up to four photo pages; sent for review.
+5. **The sheet:** 4 A4 pages, 15 numbered answers a page, two lines each. The graded batch's sheets held 16 a page and five of nine candidates stopped exactly where page 1 ended (CODEBOOK §3).
+6. **Review:** the mentor counts the situations answered (0-60) and marks practical, quick and complete, each 1-5, with went well / work on. No total (D15).
+
+**Consequences.** `srt-sdt.db.test.ts` is the gate. Candidates may have met some situations online: the site is widely read. The rubric's three headings are ours, not an assessor's; a second assessor (D17) or the AI first pass may change them.
+
+**Revisit if.** Sets run out, an assessor's marking of SRT disagrees with the headings, or sheets can be read (then the count, "He will" and TRY/TRIED come from the text).
+
+---
+
+## D40 — SDT: the five standard paragraphs, fifteen minutes, on paper
+
+**Date:** 2026-10-19 · **Status:** Accepted
+
+**Context.** SDT asks the same five things at every SSB, so it needs no content bank.
+
+**Decision.** The five prompts in the SSB's order (`src/sdt/prompts.ts`): parents, teachers or employers, friends, oneself, who one wants to become. A plain session (`start_session('sdt')`, free-write, 15 minutes, 0018) at `/sdt`; a 2-page sheet; up to four photos. A mentor marks each paragraph 1-5 or not written (at least one) and the five together on honest and consistent; went well / work on; no total (D15).
+
+**Consequences.** One SDT, the same every sitting, as at the SSB. SDT is where the consistency engine (layer 4) earns its keep: once sheets are read, what candidates say of themselves is compared with TAT, WAT and SRT.
+
+**Revisit if.** Sheets can be read (then the judge and layer 4 run on the text).

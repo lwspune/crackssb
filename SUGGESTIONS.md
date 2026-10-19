@@ -454,12 +454,10 @@ that today: `ppdt:seed` upserts by id. A trigger like the mocks' once-sat guard 
 
 ## 2026-10-19 (TAT, optional date of birth, paper only — D36-D38)
 
-### Apply 0016 and 0017, then run the database tests
+### ~~Apply 0016 and 0017, then run the database tests~~ — done 2026-10-19 with a new token; 0018 too
 
-The Supabase access token in `.mcp.json` was rejected on 2026-10-19, so neither migration is applied and
-`dob.db.test.ts`, `tat.db.test.ts` and the changed `manage.db.test.ts` have not run. Until 0016 is applied, a
-candidate with no date of birth (Namit Suresh, created that day) cannot start a test. Then `npm run tat:seed -- --apply`
-once the deploy carrying `public/tat/` is live.
+The token in `.mcp.json` was replaced. `npm run test:db` signs in dozens of fixture users: run it twice in a row and
+Supabase's sign-in rate limit fails whole files in setup. Run the files one at a time a minute apart, or wait.
 
 ### Quick checks on a TAT story need its text
 
@@ -487,3 +485,25 @@ with a fixture attempt.
 `OFFER_TYPED = false` hides typing on every brief; the typed code and its tests stay. If the owner confirms paper
 for good, decide whether to remove it (and the PPDT quick checks, which need typed text) or keep it for an academy
 that asks.
+
+## 2026-10-19 (SRT and SDT — D39, D40)
+
+### The SRT and SDT review headings are ours
+
+Practical, quick and complete (SRT), honest and consistent (SDT), were chosen for this build, not taken from an
+assessor. When a second assessor marks (D17), or the AI's first pass lands, compare and adjust before the marks are
+pooled with anything.
+
+### More SRT sets
+
+Two sets of sixty from one widely read site. the 30 in `held` are repeats or thin; a third set needs a
+new source (another site, a book, or written for us).
+
+### SDT and the consistency engine
+
+What candidates say of themselves in SDT is what layer 4 checks TAT, WAT and SRT against. It needs the sheets read
+(OCR, D3) to run on production input.
+
+### `audit:mobile` does not visit `/srt/[set]`, `/sdt` or their results
+
+Add them with fixture attempts, as for TAT and WAT.

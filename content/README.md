@@ -9,6 +9,7 @@ candidate responses and assessor marks.
 | `wat-items.json` | **The seeded item bank.** Derived from the deck with three declared substitutions |
 | `tat-images/` | TAT stimulus slides 1-4, as images |
 | `tat/` | **The TAT pictures and sets** (D36): 23 owner-chosen line drawings with what each shows, two sets of eleven and a blank. Slides by `npm run tatslides` |
+| `srt/` | **The SRT situations and sets** (D39): 120 from ssbcrackexams.com in the third person, the site's wording kept beside each, 30 held with reasons; two sets of sixty |
 | `oir/agrawal-examcart/*.source.json` | OIR questions transcribed verbatim from the Agrawal ExamCart OIR book, one file per chapter. Never edited ([D24](../DECISIONS.md)) |
 | `oir-items.json` | **The OIR item bank.** Built by `npm run oiritems` from the transcriptions and the derived keys in `src/items/oir/`; held questions are listed with their reason |
 

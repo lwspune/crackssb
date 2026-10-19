@@ -12,7 +12,7 @@ Vercel project and package keep the name crackssb.
 | [`ARCHITECTURE.md`](./ARCHITECTURE.md) | Schema, the 15-OLQ vector, edge-function contracts, the four seam rules, honest-claims policy |
 | [`ROADMAP.md`](./ROADMAP.md) | Phases, sprint order, gates, blockers, content lift |
 | [`UI.md`](./UI.md) | Roles (4 in schema, 3 experiences), the **seven runner modes** and their contracts, timing rules, per-role IA, build order |
-| [`DECISIONS.md`](./DECISIONS.md) | **D1–D38.** The long-form *why* trail. Append only; supersede rather than edit |
+| [`DECISIONS.md`](./DECISIONS.md) | **D1–D40.** The long-form *why* trail. Append only; supersede rather than edit |
 
 Read `DECISIONS.md` before changing anything in `src/scoring/` — most of what
 looks arbitrary there is a recorded decision with evidence behind it.
@@ -33,8 +33,8 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-2695 tests passing · npm test        lint clean · npm run lint        npm run build green
-186 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
+2727 tests passing · npm test        lint clean · npm run lint        npm run build green
+225 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
 **Type-checking is new.** `npm run typecheck` checks everything and currently
@@ -79,7 +79,12 @@ sets of eleven and a blank (`content/tat/sets.json`, append-only, `tests` rows, 
 lists sets by name; `/tat/[set]` runs 12 × (30 s + 4 min) on the server's clock, written on the 6-page sheet
 (`/sheets/tat`, `public/tat-sheet.pdf`); `/results/tat/[session]` shows every slide with its ground truth, takes up to
 8 photos and sends for review. Mentors mark each story 1-5 or not written, with a note (`review_tat`). No model stories.
-**0016 and 0017 are not applied yet** (the Supabase token expired 2026-10-19); seed with `npm run tat:seed` after.
+
+**SRT and SDT (D39, D40).** 120 situations the owner chose from ssbcrackexams.com (`content/srt/`, third person,
+the site's wording kept beside each, 30 held with reasons), two sets of sixty (`tests`, fixed once sat). `/practise/srt`
+→ `/srt/[set]`: all sixty to read, 30 min, answers on a 4-page sheet. SDT is the SSB's five paragraphs at `/sdt`,
+15 min, 2-page sheet. Both share one paper runner (`src/ui/paper/`) and result page shape; mentors mark SRT on the
+count answered + practical/quick/complete, SDT each paragraph + honest/consistent (`review_srt`, `review_sdt`).
 
 **Mentor review (D34).** On the result page the candidate photographs a paper sheet (up to four pages), records a
 one-minute narration (browser recorder; record again until sent), and sends the attempt for review once. That fixes
@@ -143,6 +148,7 @@ src/oir/score.ts         score-oir — raw, per-reasoning-type, percentile+band 
 src/oir/chapters.ts      OIR chapters = reasoning types (D26); every type in the bank must be listed (tested)
 src/ppdt/                pictures.ts (manifest, validated) · note.ts (the character box) · feedback.ts (quick checks) · samples.ts · attempts.ts (D33)
                          · rubric.ts (the review headings, readReview, draftProblems — D34)
+src/srt/ · src/sdt/      situations.ts (bank, held, sets, rows) · rubric.ts (D39) · prompts.ts · rubric.ts (D40)
 src/tat/                 pictures.ts (manifest + `shows`, validated) · sets.ts (sets, the blank, items/tests rows) · rubric.ts (per-story marks, D36)
 src/oir/mocks.ts         the 20 mocks (D32): extendMocks (append-only, spread across types) · checkMocks · mock-result.ts summarise + standings
 src/oir/practice.ts      chapter progress (latest answer counts) · New / Retry wrong / All queues · boundary parse
@@ -168,10 +174,11 @@ src/ui/
   ppdt/                  PpdtRunner (D33): look, note, write · PictureGrid · PpdtResult (forStaff) · PpdtAttemptList
                          · NarrationRecorder (MediaRecorder, mic injected for tests) · SendForReview · ReviewClient (D34)
   tat/                   TatRunner (D36): twelve slides, paper · SetList · TatResult (slides + ground truth + marks) · TatReviewForm · TatReviewMarks
+  paper/                 PaperBookletRunner (SRT and SDT on paper, D39-40) · PaperResult · Srt/SdtReviewForm · PaperReviewMarks · MarkPicker
   wat/ · results/        WatResult (photos + the words, D38) · AttemptRows (TAT and WAT on Results)
   review/                ReviewForm (the rubric) · ReviewMarks (what the candidate sees) · ReviewQueue (D34)
   mock/                  BookletRunner (D32) — engine + store, grid, flags, confirm, dark · MockGrid · AttemptList · MockReview
-  sheet/                 AnswerSheet · PpdtSheet · TatSheet (12 stories, 6 pages) — /sheets/[instrument]; code on every page, no name
+  sheet/                 AnswerSheet · PpdtSheet · TatSheet (12 stories, 6 pages) · SrtSheet (60, 4 pages) · SdtSheet (5, 2 pages) — /sheets/[instrument]; code on every page, no name
                          · SheetUpload (camera, shrunk on the phone, retake) · SheetPhotos (read-only) — D34
   auth/ · staff/ · admin/  LoginForm, ChangePasswordForm · AddPeopleForm (one person by fields | many from Excel), people-rows.ts (the one
                          row check, browser and server), people-sheet.ts (template, upload → rows, logins file), PeopleTable, PersonManage, PasswordField,
@@ -180,6 +187,7 @@ src/lib/
   practice/data.ts       chapter items (keyless) and the viewer's OWN practice answers, paged past 1000 rows
   mocks/data.ts          a mock and its questions in order (keyless) · your attempts · one attempt's result (D32)
   ppdt/data.ts           the pictures · your PPDT attempts · one attempt's answers (D33)
+  paper/data.ts          SRT sets · attempts at SRT or SDT · one attempt · its review row (D39, D40)
   tat/data.ts            the sets (tests + slides) · your TAT attempts · one attempt · its review (D36) · wat/data.ts the same for WAT (D38)
   review/data.ts         the queue (review_queue) · an attempt's review · who took it (D34)
   auth/routing.ts        layered areas per role (D25); where each role lands; safeNext (no open redirects); which paths are public
@@ -200,6 +208,7 @@ supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people cr
                          · 0015 evaluations.reviewer_id, one human review per attempt, review_attempt, review_queue (D34)
                          · 0016 optional date of birth: the consent check only for a known under-18 (D37)
                          · 0017 TAT: timings, sets as tests, start_tat, OIR reads OIR-only, 8 photo pages, review_tat, review_queue + type (D36)
+                         · 0018 SRT + SDT: timings, SRT sets, start_srt, A-D only for OIR, submit for both, review_srt, review_sdt (D39, D40)
 corpus/                  candidate data — records/ is GITIGNORED
 content/                 stimulus material — WAT deck, item bank, TAT pictures + sets (tat/), the graded batch's TAT slides (tat-images/), OIR transcriptions (oir/) + oir-items.json
 scripts/                 build + measurement entry points
@@ -208,8 +217,8 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 2695 tests (never touches the database)
-npm run test:db       # 186 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store, sheet photos, narration, review — fixtures cleaned up
+npm test              # 2727 tests (never touches the database)
+npm run test:db       # 225 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store, sheet photos, narration, review — fixtures cleaned up
 npm run user:create -- --email … --name … [--dob YYYY-MM-DD] [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
 npm run build         # production build (type-checks app code)
@@ -232,6 +241,8 @@ npm run ppdtsheet     # /sheets/ppdt printed -> public/ppdt-sheet.pdf (needs the
 npm run tatslides     # content/tat/source + pictures.json -> public/tat/*.jpg
 npm run tat:seed      # the TAT pictures, the blank and the sets -> items, tests, test_items. DRY RUN by default; sets insert-only
 npm run tatsheet      # /sheets/tat printed -> public/tat-sheet.pdf (6 pages)
+npm run srt:seed      # the SRT situations and sets -> items, tests, test_items. DRY RUN by default; sets insert-only
+npm run srtsheet · sdtsheet   # /sheets/srt (4 pages) and /sheets/sdt (2) printed -> public/*-sheet.pdf
                       # A listed chapter goes live on --apply, not on push: seed only after the code that draws its questions is deployed
 npm run eval                              # baselines only, no credential needed
 npm run eval -- --model claude-opus-5     # the D5 bake-off
@@ -310,6 +321,6 @@ is the gate, and it was checked by loosening a policy and watching exactly its t
 **Accepted advisor warnings:** `start_session`, `save_response`, `end_session`,
 `can_create_person`, `create_academy`, `answer_practice`, `can_manage_person`, `update_person`,
 `record_guardian_consent`, `set_person_role`, `set_person_active`, `start_test`, `test_result`, `my_test_attempts`, `start_ppdt`,
-`begin_sheet_upload`, `begin_narration`, `submit_for_review`, `review_attempt`, `start_tat`, `review_tat` are SECURITY DEFINER and callable by signed-in users —
+`begin_sheet_upload`, `begin_narration`, `submit_for_review`, `review_attempt`, `start_tat`, `review_tat`, `start_srt`, `review_srt`, `review_sdt` are SECURITY DEFINER and callable by signed-in users —
 by design: they are the only write paths and check ownership, timing, consent and role
 themselves. Anything else the advisors raise is a finding.
