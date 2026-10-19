@@ -1,7 +1,7 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 
 /**
- * Reads for WAT results (D38), as the signed-in user: the viewer's attempts,
+ * Reads for WAT results (D38, D41), as the signed-in user: the viewer's attempts,
  * and one attempt — on paper its code, typed its responses. Row level
  * security decides what is visible.
  *
@@ -39,14 +39,22 @@ export async function loadWatAttempts(client: SupabaseClient, viewerId: string):
 export type LoadedWatResult =
   | { readonly kind: 'missing' }
   | { readonly kind: 'running' }
-  | { readonly kind: 'over'; readonly candidateId: string; readonly paperCode: string | null; readonly responses: Record<string, string> | null };
+  | {
+      readonly kind: 'over';
+      readonly candidateId: string;
+      readonly paperCode: string | null;
+      readonly responses: Record<string, string> | null;
+      /** When it was sent for review (D41); null until then. */
+      readonly submittedAt: string | null;
+    };
 
 /** One WAT attempt: missing when there is none the viewer may see, running while its clock runs. */
 export async function loadWatResult(client: SupabaseClient, sessionId: string): Promise<LoadedWatResult> {
-  const { data: s } = await client.from('sessions').select('assessment_type, candidate_id, status, expires_at, input_mode, paper_code').eq('id', sessionId).maybeSingle();
+  const { data: s } = await client.from('sessions').select('assessment_type, candidate_id, status, expires_at, input_mode, paper_code, submitted_for_review_at').eq('id', sessionId).maybeSingle();
   if (!s || s.assessment_type !== 'wat') return { kind: 'missing' };
   if (!(s.status === 'ended' || Date.parse(s.expires_at) + 2000 < Date.now())) return { kind: 'running' };
-  if (s.input_mode === 'paper') return { kind: 'over', candidateId: s.candidate_id, paperCode: s.paper_code, responses: null };
+  const sent = { candidateId: s.candidate_id, submittedAt: s.submitted_for_review_at as string | null };
+  if (s.input_mode === 'paper') return { kind: 'over', ...sent, paperCode: s.paper_code, responses: null };
   const { data: rows } = await client.from('responses').select('key, response_text').eq('session_id', sessionId);
-  return { kind: 'over', candidateId: s.candidate_id, paperCode: null, responses: Object.fromEntries((rows ?? []).map((r) => [r.key, r.response_text])) };
+  return { kind: 'over', ...sent, paperCode: null, responses: Object.fromEntries((rows ?? []).map((r) => [r.key, r.response_text])) };
 }

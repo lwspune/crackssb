@@ -22,6 +22,18 @@ describe('WatResult', () => {
     expect(rows[0].textContent).toMatch(/1\s*WORD0/);
   });
 
+  it('ends with the footer: sending for review, or the mentor’s marks (D41)', () => {
+    render(<WatResult words={words} paperCode="ACD-EFG" responses={null} footer={<p>marks here</p>} />);
+    expect(screen.getByText('marks here')).toBeTruthy();
+  });
+
+  it('for a mentor (D41): speaks of the sheet, not "your" sheet', () => {
+    render(<WatResult forStaff words={words} paperCode="ACD-EFG" responses={null} sheet={<p>photos here</p>} />);
+    expect(screen.getByText('The sentences are on the sheet.')).toBeTruthy();
+    expect(screen.getByRole('heading', { name: 'Check the sheet against the words' })).toBeTruthy();
+    expect(document.body.textContent).not.toMatch(/your|photograph/i);
+  });
+
   it('typed (kept for attempts made before D38): each response beside its word, blanks marked', () => {
     render(<WatResult words={words} paperCode={null} responses={{ '0': 'A first thought', '1': '' }} />);
     const rows = within(screen.getByRole('list', { name: /the words/i })).getAllByRole('listitem');

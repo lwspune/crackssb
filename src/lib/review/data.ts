@@ -11,6 +11,7 @@ const LABEL: Readonly<Record<string, (r: QueueDbRow) => string>> = {
   tat: (r) => SET_TITLE.get(r.test_id ?? '') ?? 'TAT',
   srt: (r) => SET_TITLE.get(r.test_id ?? '') ?? 'SRT',
   sdt: () => 'SDT',
+  wat: () => 'WAT',
 };
 
 /**

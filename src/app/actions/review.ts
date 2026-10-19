@@ -11,6 +11,8 @@ import type { ReviewInput, SaveResult } from '@/ui/review/ReviewForm.tsx';
 import type { SdtReviewInput } from '@/ui/paper/SdtReviewForm.tsx';
 import type { SrtReviewInput } from '@/ui/paper/SrtReviewForm.tsx';
 import type { TatReviewInput } from '@/ui/tat/TatReviewForm.tsx';
+import type { WatReviewInput } from '@/ui/wat/WatReviewForm.tsx';
+import { WORDS_MAX } from '@/wat/rubric.ts';
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const mark = z.number().int().min(1).max(5);
@@ -97,6 +99,24 @@ export async function saveSdtReview(sessionId: string, raw: SdtReviewInput): Pro
   const supabase = await createSupabaseServer();
   const { error } = await supabase.rpc('review_sdt', { p_session_id: sessionId, p_paragraphs: paragraphs, p_marks: marks, p_went_well: wentWell, p_focus_on: focusOn });
   return refusal(error, 'an SDT');
+}
+
+const watInput = z.object({
+  answered: z.number().int().min(0).max(WORDS_MAX),
+  marks: z.object({ positive: mark, practical: mark, own: mark }).strict(),
+  wentWell: z.string().max(COMMENT_MAX * 2),
+  focusOn: z.string().max(COMMENT_MAX * 2),
+});
+
+/** Mark a WAT attempt (D41). The database decides, as the reviewer (review_wat, 0019). */
+export async function saveWatReview(sessionId: string, raw: WatReviewInput): Promise<SaveResult> {
+  if (!(await getViewer())) return { kind: 'refused', reason: 'not_staff' };
+  const parsed = watInput.safeParse(raw);
+  if (!UUID.test(sessionId) || !parsed.success) return { kind: 'refused', reason: 'bad_marks' };
+  const { answered, marks, wentWell, focusOn } = parsed.data;
+  const supabase = await createSupabaseServer();
+  const { error } = await supabase.rpc('review_wat', { p_session_id: sessionId, p_answered: answered, p_marks: marks, p_went_well: wentWell, p_focus_on: focusOn });
+  return refusal(error, 'a WAT');
 }
 
 function refusal(error: { message: string; code?: string } | null, what: string): SaveResult {

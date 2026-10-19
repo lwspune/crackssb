@@ -8,6 +8,7 @@ import { loadPpdtResult } from '@/lib/ppdt/data.ts';
 import { loadAttemptOwner, loadReview } from '@/lib/review/data.ts';
 import { loadPaperResult, loadReviewRow, loadSrtSet } from '@/lib/paper/data.ts';
 import { loadSet, loadTatResult, loadTatReview } from '@/lib/tat/data.ts';
+import { loadWatResult } from '@/lib/wat/data.ts';
 import { createSupabaseAdmin } from '@/lib/supabase/admin.ts';
 import { createSupabaseServer } from '@/lib/supabase/server.ts';
 import { EMPTY_NOTE, parseNote } from '@/ppdt/note.ts';
@@ -18,6 +19,7 @@ import { readSdtReview } from '@/sdt/rubric.ts';
 import { readSrtReview } from '@/srt/rubric.ts';
 import { pictureById as tatPicture } from '@/tat/pictures.ts';
 import { Page, PageHeader } from '@/ui/parts.tsx';
+import { WAT_WORDS } from '@/ui/runner/content.ts';
 import { PpdtResult } from '@/ui/ppdt/PpdtResult.tsx';
 import { NarrationClient } from '@/ui/ppdt/ReviewClient.tsx';
 import { ReviewFormClient } from '@/ui/review/ReviewFormClient.tsx';
@@ -26,12 +28,15 @@ import { PaperResult } from '@/ui/paper/PaperResult.tsx';
 import { SheetPhotos } from '@/ui/sheet/SheetPhotos.tsx';
 import { TatReviewFormClient } from '@/ui/tat/TatClient.tsx';
 import { TatResult } from '@/ui/tat/TatResult.tsx';
+import { WatReviewFormClient } from '@/ui/wat/WatClient.tsx';
+import { WatResult } from '@/ui/wat/WatResult.tsx';
+import { readWatReview } from '@/wat/rubric.ts';
 
 export const metadata: Metadata = { title: 'Review' };
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
-/** Marking one attempt: PPDT (D34) — what the candidate saw and did, the narration, the rubric — TAT (D36) story by story, SRT (D39) or SDT (D40). */
+/** Marking one attempt: PPDT (D34) — what the candidate saw and did, the narration, the rubric — TAT (D36) story by story, SRT (D39), SDT (D40) or WAT (D41). */
 export default async function ReviewAttemptPage({ params }: { params: Promise<{ session: string }> }) {
   const { session } = await params;
   const viewer = await requireViewerAt(`/staff/review/${session}`);
@@ -44,6 +49,8 @@ export default async function ReviewAttemptPage({ params }: { params: Promise<{ 
     const paper = await loadPaperResult(client, session, test);
     if (paper.kind !== 'missing') return <PaperReview test={test} session={session} viewerId={viewer.id} result={paper} />;
   }
+  const wat = await loadWatResult(client, session);
+  if (wat.kind !== 'missing') return <WatReview session={session} viewerId={viewer.id} result={wat} />;
   const [result, owner] = await Promise.all([loadPpdtResult(client, session), loadAttemptOwner(client, session)]);
   // Only an attempt sent for review, never a staff member's own (review_attempt refuses the same, 0015).
   if (result.kind !== 'over' || !result.submittedAt || !owner || owner.byStaff || result.candidateId === viewer.id) notFound();
@@ -126,6 +133,29 @@ async function PaperReview({ test, session, viewerId, result }: { test: 'srt' | 
         paperCode={result.paperCode}
         sheet={<SheetPhotos photos={photos} />}
         footer={set ? <SrtReviewFormClient sessionId={session} initial={readSrtReview(row)} /> : <SdtReviewFormClient sessionId={session} prompts={prompts} initial={readSdtReview(row)} />}
+      />
+    </Page>
+  );
+}
+
+/** A WAT attempt sent for review (D41): the sheet's photos (or, typed, the responses) beside the sixty words, and its rubric. */
+async function WatReview({ session, viewerId, result }: { session: string; viewerId: string; result: Awaited<ReturnType<typeof loadWatResult>> }) {
+  const client = await createSupabaseServer();
+  const owner = await loadAttemptOwner(client, session);
+  // Only an attempt sent for review, never a staff member's own (review_wat refuses the same, 0019).
+  if (result.kind !== 'over' || !result.submittedAt || !owner || owner.byStaff || result.candidateId === viewerId) notFound();
+  const [photos, row] = await Promise.all([result.paperCode ? sheetPhotos(client, createSupabaseAdmin(), session) : [], loadReviewRow(client, session)]);
+  return (
+    <Page>
+      <Link href="/staff/review" className="inline-flex min-h-11 items-center text-sm font-semibold text-brand-accent hover:underline">← Review queue</Link>
+      <PageHeader title={owner.name} lede={`WAT · ${result.paperCode ? 'on paper' : 'typed'}`} />
+      <WatResult
+        forStaff
+        words={WAT_WORDS}
+        paperCode={result.paperCode}
+        responses={result.responses}
+        sheet={<SheetPhotos photos={photos} />}
+        footer={<WatReviewFormClient sessionId={session} initial={readWatReview(row)} />}
       />
     </Page>
   );
