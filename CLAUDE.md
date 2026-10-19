@@ -24,7 +24,7 @@ looks arbitrary there is a recorded decision with evidence behind it.
 **Pre-product, with a UI.** A Next.js 16 app (`src/app/`, `src/ui/`) now runs
 the student surface on local data: app shell, Practise by SSB day, honest empty
 states, and the **WAT runner** wrapping the engine. **Sprint 1 is complete.** The database (tenancy, access rules) is live and gated by
-tests; sign-in works (email + password, manual logins); staff create logins in the
+tests; sign-in works (email + password for logins staff make; Google for students on their own, D42); staff create logins in the
 app (`/staff/people`, D23) and the superadmin creates academies (`/admin`). The
 runner saves to the server and runs on the server's clock: start time from
 `start_session`, answers through `save_response` (refused outside their window),
@@ -33,7 +33,7 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-2736 tests passing · npm test        lint clean · npm run lint        npm run build green
+2755 tests passing · npm test        lint clean · npm run lint        npm run build green
 233 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
@@ -93,6 +93,13 @@ marks it: story on hero, action, outcome and outlook; narration on clarity, conf
 each 1-5, plus *went well* and *work on*, with no total. The marks then show on the candidate's result.
 Every take and photo goes to a fresh path that cannot be overwritten (0013-0015). Photos and recordings are kept 12
 months; the clean-up job is not built.
+
+**Google sign-up (D42).** `/login` leads with *Continue with Google* (`signInWithGoogle` → `/auth/callback`). A new Google
+user is a candidate with no academy, made by a trigger on `auth.users` (0020, 0021), `profiles.joined_via` = `google`,
+no date of birth (sits as an adult, D37). The Before User Created hook (`private.before_user_created`) refuses every other
+sign-up; staff-made logins carry `app_metadata.joined_via = 'staff'` (`STAFF_MADE`). The superadmin sees them at
+`/admin/candidates` (who, how they joined, attempts by test) and `/admin/candidates/[id]` (practice + every attempt,
+each opening its result). A real Google round trip has not been walked yet.
 
 **Layered access (D25).** Staff also reach the student app and the superadmin reaches all three, through a switcher.
 Staff tests are flagged `by_staff` by the database and must stay out of results and item statistics.
@@ -183,8 +190,10 @@ src/ui/
                          · SheetUpload (camera, shrunk on the phone, retake) · SheetPhotos (read-only) — D34
   auth/ · staff/ · admin/  LoginForm, ChangePasswordForm · AddPeopleForm (one person by fields | many from Excel), people-rows.ts (the one
                          row check, browser and server), people-sheet.ts (template, upload → rows, logins file), PeopleTable, PersonManage, PasswordField,
-                         LoginHandout + login-message.ts (the WhatsApp message, D31) · CreateAcademyForm
+                         LoginHandout + login-message.ts (the WhatsApp message, D31) · CreateAcademyForm · GoogleSignIn (D42)
+src/admin/candidates.ts  the owner's view of candidates with no academy (D42): candidateRows, searchCandidates — pure
 src/lib/
+  admin/candidates.ts    solo candidates, their sessions, one person's mocks scored via test_result (D42) · supabase/pages.ts allPages (past 1000 rows)
   practice/data.ts       chapter items (keyless) and the viewer's OWN practice answers, paged past 1000 rows
   mocks/data.ts          a mock and its questions in order (keyless) · your attempts · one attempt's result (D32)
   ppdt/data.ts           the pictures · your PPDT attempts · one attempt's answers (D33)
@@ -211,6 +220,7 @@ supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people cr
                          · 0017 TAT: timings, sets as tests, start_tat, OIR reads OIR-only, 8 photo pages, review_tat, review_queue + type (D36)
                          · 0018 SRT + SDT: timings, SRT sets, start_srt, A-D only for OIR, submit for both, review_srt, review_sdt (D39, D40)
                          · 0019 WAT review: submit_for_review takes WAT, review_wat, review_queue + WAT (D41)
+                         · 0020 Google sign-up: profiles.joined_via, the before-user-created hook, a Google user's profile by trigger · 0021 that trigger on update too (D42)
 corpus/                  candidate data — records/ is GITIGNORED
 content/                 stimulus material — WAT deck, item bank, TAT pictures + sets (tat/), the graded batch's TAT slides (tat-images/), OIR transcriptions (oir/) + oir-items.json
 scripts/                 build + measurement entry points
@@ -219,7 +229,7 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 2736 tests (never touches the database)
+npm test              # 2755 tests (never touches the database)
 npm run test:db       # 233 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store, sheet photos, narration, review — fixtures cleaned up
 npm run user:create -- --email … --name … [--dob YYYY-MM-DD] [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
@@ -309,7 +319,7 @@ author doesn't have permission") means the commit's GitHub account is not linked
 ## Supabase
 
 Project `qwxbvcsqhcjthdorkzlc`, **ap-south-1 Mumbai** (created 2026-10-12; a first project landed in Seoul and was replaced while empty). Claude reaches it through the Supabase MCP server in
-`.mcp.json` (gitignored, scoped to this project). Keys are in `.env.local` (gitignored); the service-role key is server-only. Sign-in is manual: accounts are created by script, public sign-up off.
+`.mcp.json` (gitignored, scoped to this project). Keys are in `.env.local` (gitignored); the service-role key is server-only. Staff make logins (script or app); students sign up only with Google — the before-user-created hook (0020) refuses every other sign-up, so sign-up is on in the auth settings for Google's sake.
 Tests run against this same project by the user's choice — every fixture tagged and removed, and a
 leftover-fixture check fails the run (Question_Bank learned this the hard way; see its testdb.ts).
 

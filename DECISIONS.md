@@ -923,3 +923,36 @@ as SRT's and SDT's are (SUGGESTIONS.md).
 **Revisit if.** An assessor marks WAT on other headings, or sheets can be read (then layer 2's WAT rules and the judge
 run on the text).
 
+
+---
+
+## D42 — Students sign up with Google; they join with no academy and sit tests as adults
+
+**Date:** 2026-10-19 · **Status:** Accepted · **Supersedes** D23 in part (every login made by staff)
+
+**Context.** Every login was made by staff or the script (D23); public sign-up was off. The owner wants students
+outside any academy to come in on their own, with Google. Turning sign-up on in Supabase opens every method at once,
+email and password from the public key included.
+
+**Decision.**
+
+1. **Google is the only way to sign up.** The Before User Created hook (`private.before_user_created`, 0020) lets
+   through a Google sign-up and a login staff made, marked `app_metadata.joined_via = 'staff'` by `insertAccount`
+   (only the service role writes app_metadata). Every other sign-up is refused with "Sign up with Google, or ask your
+   academy for a login."
+2. **A new Google user is a candidate with no academy** (solo, B2C), named as Google names them, made by a trigger
+   on `auth.users` in the same transaction as the account. `profiles.joined_via` records `staff` or `google`.
+3. **No date of birth, no consent step.** Google accepted them; they sit tests as adults (D37). The owner's choice.
+4. **A Google sign-in on an email staff already made is that same account.** Supabase links a verified email to
+   the existing user; nothing is created, so the academy profile is unchanged.
+5. **Their attempts are for the owner to see**, not for mentors to mark: AI marking is meant to grade them. Reviews
+   they send still reach the owner's queue (0015).
+
+**Consequences.** `signup.db.test.ts` is the gate; a real Google round trip cannot run in it, so the service role
+stands in with `provider: google`. The hook does not run for the admin API (probed 2026-10-19), which also writes
+app_metadata after the insert; hence 0021: the profile trigger fires on update too, and only for someone with no profile.
+The owner's view is `/admin/candidates`. Staff still create academy logins; academy students may also use Google on the
+same email. `/login` leads with "Continue with Google".
+
+**Revisit if.** Under-18s need a guardian's consent (D37's revisit), abuse appears (rate limits, a captcha), or
+another provider is wanted (add it to the hook).

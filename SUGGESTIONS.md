@@ -348,7 +348,7 @@ Its staff pages are fixed paths; `/staff/people/[id]` needs an id. Have it open 
 
 ## 2026-10-18 (OIR mocks, D32)
 
-### Public sign-up (the owner's direction for later)
+### ~~Public sign-up (the owner's direction for later)~~ — done 2026-10-19 with Google only (D42); the owner chose no consent step
 
 The owner wants to open the product to the public: anyone signs up and practises. Mocks need nothing for it
 (solo candidates, `org_id` null, already work). What it does need, for its own analysis when the time comes:
@@ -358,6 +358,9 @@ email or phone; rate limits and abuse protection on sign-up; and whether public 
 mocks and results unchanged.
 
 ### Staff view of their candidates' mock attempts
+
+The owner's half is built (D42): `/admin/candidates/[id]` lists a solo candidate's attempts, mocks scored through
+`test_result` one attempt at a time. An academy's version could reuse `src/lib/admin/candidates.ts` scoped to its people.
 
 Deferred by the owner. `test_result` already lets an academy's staff read an attempt; what is missing is a
 staff page listing attempts per candidate (and a `test_attempts(candidate)` for staff, scoped like
@@ -507,3 +510,25 @@ What candidates say of themselves in SDT is what layer 4 checks TAT, WAT and SRT
 ### `audit:mobile` does not visit `/srt/[set]`, `/sdt` or their results
 
 Add them with fixture attempts, as for TAT and WAT.
+
+## 2026-10-19 (Google sign-up, the owner's candidates — D42)
+
+### Walk a real Google sign-in
+
+The tests stand in for Google with the service role. Once the provider is set up, sign up with a fresh Google account
+and check: lands on Home, a profile with `joined_via = google`, shown at `/admin/candidates`; then sign in with Google
+on an email staff already made and check the academy profile is unchanged (Supabase links the identity).
+
+### Best mock score on `/admin/candidates`
+
+Left off: a score needs `test_result` per attempt. A `candidate_test_attempts(p_candidate)` for whoever
+`can_view_person` would give it in one call (and serve the academy view above).
+
+### `audit:mobile` does not visit `/admin`
+
+It has no superadmin login. The admin pages were checked by hand at 320/390/1280 px on 2026-10-19.
+
+### Abuse on sign-up
+
+Anyone with a Google account can now make a login. If junk accounts appear: Supabase's sign-up rate limits, a
+captcha, or a Google-domain rule in the hook.
