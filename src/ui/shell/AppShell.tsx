@@ -39,11 +39,14 @@ const NAVS: Readonly<Record<Area, readonly NavItem[]>> = {
     { href: '/staff/batches', label: 'Batches', Icon: BatchIcon },
     { href: '/staff/review', label: 'Review', longLabel: 'Review queue', Icon: ReviewIcon },
   ],
-  admin: [{ href: '/admin/academies', label: 'Academies', Icon: AcademyIcon }],
+  admin: [
+    { href: '/admin/academies', label: 'Academies', Icon: AcademyIcon },
+    { href: '/admin/candidates', label: 'Candidates', Icon: PeopleIcon },
+  ],
 };
 
 const HOME: Readonly<Record<Area, string>> = { student: '/', staff: '/staff/people', admin: '/admin/academies' };
-const TAB_COLUMNS: Readonly<Record<number, string>> = { 1: 'grid-cols-1', 3: 'grid-cols-3', 5: 'grid-cols-5' };
+const TAB_COLUMNS: Readonly<Record<number, string>> = { 1: 'grid-cols-1', 2: 'grid-cols-2', 3: 'grid-cols-3', 5: 'grid-cols-5' };
 
 function isActive(pathname: string, href: string): boolean {
   return href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(`${href}/`);
