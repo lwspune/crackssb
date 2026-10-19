@@ -15,13 +15,15 @@ describe('nextUp', () => {
     expect(nextUp(new Set(['oir']))?.id).toBe('ppdt');
     expect(nextUp(new Set(['oir', 'ppdt']))?.id).toBe('tat');
     expect(nextUp(new Set(['oir', 'ppdt', 'tat']))?.id).toBe('wat');
+    expect(nextUp(new Set(['oir', 'ppdt', 'tat', 'wat']))?.id).toBe('srt');
+    expect(nextUp(new Set(['oir', 'ppdt', 'tat', 'wat', 'srt']))?.id).toBe('sdt');
   });
 
   it('goes back to Day 1 once every ready test is taken', () => {
-    expect(nextUp(new Set(['oir', 'ppdt', 'tat', 'wat']))?.id).toBe('oir');
+    expect(nextUp(new Set(['oir', 'ppdt', 'tat', 'wat', 'srt', 'sdt']))?.id).toBe('oir');
   });
 
   it('only ever offers a ready test', () => {
-    expect(nextUp(new Set(['oir', 'ppdt', 'tat', 'wat', 'srt']))?.availability).toBe('ready');
+    expect(nextUp(new Set(['oir', 'ppdt', 'tat', 'wat', 'srt', 'sdt', 'piq']))?.availability).toBe('ready');
   });
 });

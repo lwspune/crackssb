@@ -19,7 +19,7 @@ export default async function TatPracticePage() {
     <Page>
       <Link href="/practise" className="inline-flex min-h-11 items-center text-sm font-semibold text-brand-accent hover:underline">← Practise</Link>
       <PageHeader title="TAT practice" lede="12 slides · 30 s to look · 4 min to write each, on paper. Photograph the sheet after." />
-      <SetList sets={sets} standing={pictureStandings(attempts)} />
+      <SetList base="tat" sets={sets.map((x) => ({ id: x.id, title: x.title, detail: `${x.slides.length - 1} pictures and a blank · 54 min` }))} standing={pictureStandings(attempts)} />
       <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 rounded-xl border border-dashed px-4 py-3">
         <span className="text-sm font-semibold">Print before you begin</span>
         <Link href="/sheets/tat" className="inline-flex min-h-11 items-center text-sm font-semibold text-brand-accent hover:underline">Print the sheet</Link>

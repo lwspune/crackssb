@@ -51,8 +51,8 @@ export function supabaseSessionApi(client: SupabaseClient): SessionApi {
   return {
     async start(instrument, input, code, testId, itemId) {
       const { data, error } = testId
-        ? instrument === 'tat'
-          ? await client.rpc('start_tat', { p_test_id: testId, p_input_mode: input, p_paper_code: code })
+        ? instrument === 'tat' || instrument === 'srt'
+          ? await client.rpc(`start_${instrument}`, { p_test_id: testId, p_input_mode: input, p_paper_code: code })
           : await client.rpc('start_test', { p_test_id: testId })
         : itemId
           ? await client.rpc('start_ppdt', { p_item_id: itemId, p_input_mode: input, p_paper_code: code })

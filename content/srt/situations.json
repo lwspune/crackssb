@@ -1,0 +1,1417 @@
+{
+  "note": "SRT situations (D39), chosen by the owner from ssbcrackexams.com's \"15 Sample SRT Situations\" parts 1-10, 2026-10-19. Only the situations, never the site's model responses. `text` is what candidates read: third person, as the SSB booklet; `source.wording` is the site's. `held` lists the source situations left out, and why.",
+  "situations": [
+    {
+      "id": "srt-001",
+      "text": "He is leading a trekking team, and one member sprains his ankle in a remote area.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+        "part": 1,
+        "n": 1,
+        "wording": "You are leading a trekking team, and one member sprains his ankle in a remote area."
+      }
+    },
+    {
+      "id": "srt-002",
+      "text": "He is on a bus, and a pickpocket steals someone’s wallet.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+        "part": 1,
+        "n": 3,
+        "wording": "You are on a bus, and a pickpocket steals someone’s wallet."
+      }
+    },
+    {
+      "id": "srt-003",
+      "text": "His superior assigns him extra work at the last moment.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+        "part": 1,
+        "n": 4,
+        "wording": "Your superior assigns you extra work at the last moment"
+      }
+    },
+    {
+      "id": "srt-004",
+      "text": "His friend is feeling nervous before an important exam.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+        "part": 1,
+        "n": 5,
+        "wording": "Your friend is feeling nervous before an important exam."
+      }
+    },
+    {
+      "id": "srt-005",
+      "text": "He finds a lost child crying at a railway station.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+        "part": 1,
+        "n": 6,
+        "wording": "You find a lost child crying at a railway station."
+      }
+    },
+    {
+      "id": "srt-006",
+      "text": "He witnesses a road accident in which a person is injured.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+        "part": 1,
+        "n": 7,
+        "wording": "You witness a road accident where a person is injured."
+      }
+    },
+    {
+      "id": "srt-007",
+      "text": "His team is losing an important match, and morale is low.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+        "part": 1,
+        "n": 8,
+        "wording": "Your team is losing an important match, and morale is low."
+      }
+    },
+    {
+      "id": "srt-008",
+      "text": "He sees someone littering in a public place.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+        "part": 1,
+        "n": 9,
+        "wording": "You see someone littering in a public place."
+      }
+    },
+    {
+      "id": "srt-009",
+      "text": "A new colleague of his is struggling with work and feeling demotivated.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+        "part": 1,
+        "n": 10,
+        "wording": "A new colleague is struggling with work and feeling demotivated."
+      }
+    },
+    {
+      "id": "srt-010",
+      "text": "He is in a burning building, and the people around him are panicking.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+        "part": 1,
+        "n": 11,
+        "wording": "You are in a burning building with people panicking."
+      }
+    },
+    {
+      "id": "srt-011",
+      "text": "He sees a suspicious object in a crowded place.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+        "part": 1,
+        "n": 12,
+        "wording": "You see a suspicious object at a crowded place."
+      }
+    },
+    {
+      "id": "srt-012",
+      "text": "A stranger approaches him for help late at night.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+        "part": 1,
+        "n": 13,
+        "wording": "A stranger approaches you for help late at night."
+      }
+    },
+    {
+      "id": "srt-013",
+      "text": "He is lost in an unfamiliar place without a phone.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+        "part": 1,
+        "n": 14,
+        "wording": "You are lost in an unfamiliar place without a phone."
+      }
+    },
+    {
+      "id": "srt-014",
+      "text": "His vehicle breaks down in a remote area at night.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+        "part": 1,
+        "n": 15,
+        "wording": "Your vehicle breaks down in a remote area at night."
+      }
+    },
+    {
+      "id": "srt-015",
+      "text": "He is on a train, and someone near him suddenly falls unconscious.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+        "part": 2,
+        "n": 1,
+        "wording": "You are in a train, and someone suddenly falls unconscious."
+      }
+    },
+    {
+      "id": "srt-016",
+      "text": "He is caught in heavy traffic on his way to an important meeting.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+        "part": 2,
+        "n": 2,
+        "wording": "You get caught in heavy traffic while heading for an important meeting."
+      }
+    },
+    {
+      "id": "srt-017",
+      "text": "His wallet and phone are stolen in a city he does not know.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+        "part": 2,
+        "n": 3,
+        "wording": "Your wallet and phone are stolen in an unknown city."
+      }
+    },
+    {
+      "id": "srt-018",
+      "text": "He sees a snake in his house.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+        "part": 2,
+        "n": 4,
+        "wording": "You see a snake in your house."
+      }
+    },
+    {
+      "id": "srt-019",
+      "text": "He is caught in a flood, and the water is rising.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+        "part": 2,
+        "n": 5,
+        "wording": "You find yourself in a flood situation with rising water levels."
+      }
+    },
+    {
+      "id": "srt-020",
+      "text": "His junior fails to complete an important task.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+        "part": 2,
+        "n": 6,
+        "wording": "Your junior fails to complete an important task."
+      }
+    },
+    {
+      "id": "srt-021",
+      "text": "His team is given an unrealistic deadline for a project.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+        "part": 2,
+        "n": 7,
+        "wording": "Your team is given an unrealistic deadline for a project."
+      }
+    },
+    {
+      "id": "srt-022",
+      "text": "A friend asks him to join in cheating during an exam.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+        "part": 2,
+        "n": 8,
+        "wording": "A friend asks you to join him in cheating during an exam."
+      }
+    },
+    {
+      "id": "srt-023",
+      "text": "He accidentally damages public property.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+        "part": 2,
+        "n": 9,
+        "wording": "You accidentally damage a public property."
+      }
+    },
+    {
+      "id": "srt-024",
+      "text": "His neighbour is playing loud music late at night.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+        "part": 2,
+        "n": 11,
+        "wording": "Your neighbor is playing loud music late at night."
+      }
+    },
+    {
+      "id": "srt-025",
+      "text": "His boss gives him personal work to do during office hours.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+        "part": 2,
+        "n": 12,
+        "wording": "Your boss gives you personal work during office hours."
+      }
+    },
+    {
+      "id": "srt-026",
+      "text": "He is given a task he has never done before.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+        "part": 2,
+        "n": 13,
+        "wording": "You are assigned a task you have never done before."
+      }
+    },
+    {
+      "id": "srt-027",
+      "text": "His phone battery dies when he has an important call to make.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+        "part": 2,
+        "n": 14,
+        "wording": "Your phone battery dies when you have an important call to make."
+      }
+    },
+    {
+      "id": "srt-028",
+      "text": "He is given a chance to speak at a public event but feels nervous.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+        "part": 2,
+        "n": 15,
+        "wording": "You are given a chance to speak at a public event but feel nervous."
+      }
+    },
+    {
+      "id": "srt-029",
+      "text": "His flight is cancelled, and he has an urgent meeting.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+        "part": 3,
+        "n": 1,
+        "wording": "Your flight is canceled, and you have an urgent meeting."
+      }
+    },
+    {
+      "id": "srt-030",
+      "text": "He is stuck in a lift with strangers.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+        "part": 3,
+        "n": 2,
+        "wording": "You are stuck in a lift with strangers."
+      }
+    },
+    {
+      "id": "srt-031",
+      "text": "His debit card is stuck in an ATM.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+        "part": 3,
+        "n": 3,
+        "wording": "Your debit card is stuck in an ATM."
+      }
+    },
+    {
+      "id": "srt-032",
+      "text": "He spills coffee on important documents just before a presentation.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+        "part": 3,
+        "n": 4,
+        "wording": "You spill coffee on important documents before a presentation."
+      }
+    },
+    {
+      "id": "srt-033",
+      "text": "His internet stops working during an online exam.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+        "part": 3,
+        "n": 5,
+        "wording": "Your internet stops working during an online exam."
+      }
+    },
+    {
+      "id": "srt-034",
+      "text": "His friend has had an accident and needs blood urgently.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+        "part": 3,
+        "n": 6,
+        "wording": "Your friend has an accident and needs blood urgently."
+      }
+    },
+    {
+      "id": "srt-035",
+      "text": "He is put in charge of an event at the last moment.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+        "part": 3,
+        "n": 7,
+        "wording": "You are given charge of an event at the last moment."
+      }
+    },
+    {
+      "id": "srt-036",
+      "text": "A drunk driver is misbehaving on the road.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+        "part": 3,
+        "n": 8,
+        "wording": "A drunk driver is misbehaving on the road."
+      }
+    },
+    {
+      "id": "srt-037",
+      "text": "He misses his train while travelling alone.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+        "part": 3,
+        "n": 9,
+        "wording": "You miss your train while traveling alone."
+      }
+    },
+    {
+      "id": "srt-038",
+      "text": "A close friend of his fails an important exam.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+        "part": 3,
+        "n": 10,
+        "wording": "A close friend fails an important exam."
+      }
+    },
+    {
+      "id": "srt-039",
+      "text": "His group has to complete a project, but one member is absent.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+        "part": 3,
+        "n": 13,
+        "wording": "Your group has to complete a project, but one member is absent."
+      }
+    },
+    {
+      "id": "srt-040",
+      "text": "His friend asks him to cover for the friend’s absence at work.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+        "part": 3,
+        "n": 14,
+        "wording": "Your friend asks you to cover for his absence at work."
+      }
+    },
+    {
+      "id": "srt-041",
+      "text": "A member of his team is not cooperating during a group task.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+        "part": 3,
+        "n": 15,
+        "wording": "A team member is not cooperating during a group task."
+      }
+    },
+    {
+      "id": "srt-042",
+      "text": "A friend is feeling unwell just before an important team competition.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+        "part": 4,
+        "n": 1,
+        "wording": "A friend is feeling unwell before an important team competition."
+      }
+    },
+    {
+      "id": "srt-043",
+      "text": "At an event he is part of, the volunteers are disorganised.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+        "part": 4,
+        "n": 3,
+        "wording": "During an event, the volunteers are unorganized."
+      }
+    },
+    {
+      "id": "srt-044",
+      "text": "A junior in his team lacks the confidence to do his task.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+        "part": 4,
+        "n": 5,
+        "wording": "A junior in your team lacks confidence in performing his task."
+      }
+    },
+    {
+      "id": "srt-045",
+      "text": "He sees someone cheating in an exam.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+        "part": 4,
+        "n": 6,
+        "wording": "You witness someone cheating in an exam."
+      }
+    },
+    {
+      "id": "srt-046",
+      "text": "A shopkeeper gives him too much change by mistake.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+        "part": 4,
+        "n": 7,
+        "wording": "A shopkeeper mistakenly returns extra change to you."
+      }
+    },
+    {
+      "id": "srt-047",
+      "text": "His friend asks him to lie for the friend in a serious matter.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+        "part": 4,
+        "n": 8,
+        "wording": "Your friend asks you to lie for him in a serious matter."
+      }
+    },
+    {
+      "id": "srt-048",
+      "text": "He finds a lost wallet with cash and ID cards in it.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+        "part": 4,
+        "n": 9,
+        "wording": "You find a lost wallet with cash and ID cards."
+      }
+    },
+    {
+      "id": "srt-049",
+      "text": "His manager asks him to manipulate the data in a report.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+        "part": 4,
+        "n": 10,
+        "wording": "Your manager asks you to manipulate data in a report."
+      }
+    },
+    {
+      "id": "srt-050",
+      "text": "A classmate submits his project as the classmate’s own.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+        "part": 4,
+        "n": 11,
+        "wording": "Your classmate submits your project as his own."
+      }
+    },
+    {
+      "id": "srt-051",
+      "text": "He is given credit for someone else’s work.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+        "part": 4,
+        "n": 12,
+        "wording": "You are given credit for someone else’s work."
+      }
+    },
+    {
+      "id": "srt-052",
+      "text": "His friend is driving rashly and refuses to stop.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+        "part": 4,
+        "n": 13,
+        "wording": "Your friend is driving rashly and insists on not stopping."
+      }
+    },
+    {
+      "id": "srt-053",
+      "text": "He accidentally damages a neighbour’s vehicle.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+        "part": 4,
+        "n": 14,
+        "wording": "You accidentally damage a neighbor’s vehicle."
+      }
+    },
+    {
+      "id": "srt-054",
+      "text": "He realises an ATM has given him extra money.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+        "part": 4,
+        "n": 15,
+        "wording": "You realize an ATM has dispensed extra money."
+      }
+    },
+    {
+      "id": "srt-055",
+      "text": "A fire breaks out in his building at midnight.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+        "part": 5,
+        "n": 1,
+        "wording": "A fire breaks out in your building at midnight."
+      }
+    },
+    {
+      "id": "srt-056",
+      "text": "He is in a bank during a robbery attempt.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+        "part": 5,
+        "n": 2,
+        "wording": "You are in a bank during a robbery attempt."
+      }
+    },
+    {
+      "id": "srt-057",
+      "text": "Travelling alone, he loses his bag with all his documents.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+        "part": 5,
+        "n": 3,
+        "wording": "You are traveling alone and lose your bag with all documents."
+      }
+    },
+    {
+      "id": "srt-058",
+      "text": "A child falls into a deep borewell near his house.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+        "part": 5,
+        "n": 4,
+        "wording": "A child falls into a deep borewell near your house."
+      }
+    },
+    {
+      "id": "srt-059",
+      "text": "He witnesses a theft in a public place.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+        "part": 5,
+        "n": 5,
+        "wording": "You witness a theft at a public place."
+      }
+    },
+    {
+      "id": "srt-060",
+      "text": "His train stops suddenly because of an emergency.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+        "part": 5,
+        "n": 6,
+        "wording": "Your train stops suddenly due to an emergency."
+      }
+    },
+    {
+      "id": "srt-061",
+      "text": "He sees smoke coming from a school building.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+        "part": 5,
+        "n": 7,
+        "wording": "You see smoke coming from a school building."
+      }
+    },
+    {
+      "id": "srt-062",
+      "text": "A stranger faints on the road from exhaustion.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+        "part": 5,
+        "n": 9,
+        "wording": "A stranger faints on the road due to exhaustion."
+      }
+    },
+    {
+      "id": "srt-063",
+      "text": "The power fails during his important presentation.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+        "part": 5,
+        "n": 10,
+        "wording": "A power outage occurs during an important presentation."
+      }
+    },
+    {
+      "id": "srt-064",
+      "text": "He is given an urgent task outside his job role.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+        "part": 5,
+        "n": 11,
+        "wording": "You are assigned an urgent task outside your job role."
+      }
+    },
+    {
+      "id": "srt-065",
+      "text": "A colleague is overloaded with work and asks him for help.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+        "part": 5,
+        "n": 12,
+        "wording": "Your colleague is overloaded with work and seeks help."
+      }
+    },
+    {
+      "id": "srt-066",
+      "text": "At an event he is running, a speaker cancels at the last moment.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+        "part": 5,
+        "n": 13,
+        "wording": "During an event, a speaker cancels at the last moment."
+      }
+    },
+    {
+      "id": "srt-067",
+      "text": "A streetlight in his locality is broken, making the street unsafe.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+        "part": 5,
+        "n": 14,
+        "wording": "A streetlight is broken in your locality, making it unsafe."
+      }
+    },
+    {
+      "id": "srt-068",
+      "text": "His team lacks coordination before an important project.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+        "part": 5,
+        "n": 15,
+        "wording": "Your team lacks coordination before an important project."
+      }
+    },
+    {
+      "id": "srt-069",
+      "text": "His housing society has no proper waste disposal.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+        "part": 6,
+        "n": 1,
+        "wording": "Your society lacks a proper waste disposal system."
+      }
+    },
+    {
+      "id": "srt-070",
+      "text": "His college canteen is unhygienic.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+        "part": 6,
+        "n": 2,
+        "wording": "Your college canteen lacks hygiene."
+      }
+    },
+    {
+      "id": "srt-071",
+      "text": "He sees a blind person struggling to cross the road.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+        "part": 6,
+        "n": 3,
+        "wording": "You see a blind person struggling to cross the road."
+      }
+    },
+    {
+      "id": "srt-072",
+      "text": "His friend cannot afford to pay for his education.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+        "part": 6,
+        "n": 4,
+        "wording": "Your friend is struggling financially for his education."
+      }
+    },
+    {
+      "id": "srt-073",
+      "text": "His locality often runs short of water.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+        "part": 6,
+        "n": 5,
+        "wording": "Your locality faces frequent water supply issues."
+      }
+    },
+    {
+      "id": "srt-074",
+      "text": "A terrorist attack takes place in his city.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+        "part": 6,
+        "n": 6,
+        "wording": "A terrorist attack occurs in your city."
+      }
+    },
+    {
+      "id": "srt-075",
+      "text": "He sees a woman being harassed in a public place.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+        "part": 6,
+        "n": 7,
+        "wording": "A woman is being harassed in a public place."
+      }
+    },
+    {
+      "id": "srt-076",
+      "text": "A natural disaster cuts his village off from supplies.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+        "part": 6,
+        "n": 8,
+        "wording": "During a natural disaster, your village is cut off from supplies."
+      }
+    },
+    {
+      "id": "srt-077",
+      "text": "At an event, the national flag falls to the ground.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+        "part": 6,
+        "n": 11,
+        "wording": "Your national flag falls on the ground during an event."
+      }
+    },
+    {
+      "id": "srt-078",
+      "text": "A soldier’s family in his locality needs urgent help.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+        "part": 6,
+        "n": 12,
+        "wording": "A soldier’s family in your locality needs urgent help."
+      }
+    },
+    {
+      "id": "srt-079",
+      "text": "He sees someone defacing a historical monument.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+        "part": 6,
+        "n": 13,
+        "wording": "You see someone defacing a historical monument."
+      }
+    },
+    {
+      "id": "srt-080",
+      "text": "A neighbour is spreading false information about the army.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+        "part": 6,
+        "n": 15,
+        "wording": "A neighbor is spreading false information about the army."
+      }
+    },
+    {
+      "id": "srt-081",
+      "text": "He has several tasks due by the same deadline.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+        "part": 7,
+        "n": 1,
+        "wording": "You have multiple tasks with the same deadline."
+      }
+    },
+    {
+      "id": "srt-082",
+      "text": "He oversleeps on the day of an important event.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+        "part": 7,
+        "n": 2,
+        "wording": "You oversleep on the day of an important event."
+      }
+    },
+    {
+      "id": "srt-083",
+      "text": "He has a personal emergency, and an important meeting is due.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+        "part": 7,
+        "n": 5,
+        "wording": "You have a personal emergency but an important meeting is scheduled."
+      }
+    },
+    {
+      "id": "srt-084",
+      "text": "His bicycle chain breaks on the way to school.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+        "part": 7,
+        "n": 7,
+        "wording": "Your bicycle chain breaks while on the way to school."
+      }
+    },
+    {
+      "id": "srt-085",
+      "text": "His friend keeps putting off studying before the exams.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+        "part": 7,
+        "n": 8,
+        "wording": "Your friend procrastinates before exams."
+      }
+    },
+    {
+      "id": "srt-086",
+      "text": "His senior gives him a task that seems impossible in the time given.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+        "part": 7,
+        "n": 12,
+        "wording": "Your senior gives you a task that seems impossible in the given time."
+      }
+    },
+    {
+      "id": "srt-087",
+      "text": "At an event, the chief guest is late and the audience is getting restless.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+        "part": 7,
+        "n": 14,
+        "wording": "During an event, the chief guest is late, and the audience is getting restless."
+      }
+    },
+    {
+      "id": "srt-088",
+      "text": "His team is divided on an important decision, and the work is held up.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+        "part": 7,
+        "n": 15,
+        "wording": "Your team is divided on an important decision, causing delays in execution."
+      }
+    },
+    {
+      "id": "srt-089",
+      "text": "His boss scolds him for a mistake he did not make.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+        "part": 8,
+        "n": 1,
+        "wording": "His boss scolds him for a mistake you didn't commit."
+      }
+    },
+    {
+      "id": "srt-090",
+      "text": "He is lost in a forest with little food and no network coverage.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+        "part": 8,
+        "n": 2,
+        "wording": "He is lost in a forest with a limited food supply and no network coverage"
+      }
+    },
+    {
+      "id": "srt-091",
+      "text": "His superior officer gives him conflicting orders.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+        "part": 8,
+        "n": 4,
+        "wording": "His superior officer gives him conflicting orders."
+      }
+    },
+    {
+      "id": "srt-092",
+      "text": "His house catches fire while his family is inside.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+        "part": 8,
+        "n": 7,
+        "wording": "His house catches fire while his family is inside."
+      }
+    },
+    {
+      "id": "srt-093",
+      "text": "He loses his wallet in a foreign country.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+        "part": 8,
+        "n": 8,
+        "wording": "He loses his wallet in a foreign country."
+      }
+    },
+    {
+      "id": "srt-094",
+      "text": "A fellow student is caught cheating, and the teacher asks him whether he saw anything.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+        "part": 8,
+        "n": 9,
+        "wording": "A fellow student is caught cheating, and the teacher asks if he saw anything."
+      }
+    },
+    {
+      "id": "srt-095",
+      "text": "During a debate, someone aggressively opposes his point of view.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+        "part": 8,
+        "n": 11,
+        "wording": "During a debate, someone aggressively opposes his viewpoint."
+      }
+    },
+    {
+      "id": "srt-096",
+      "text": "His subordinate is underperforming, and the team’s work is suffering.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+        "part": 8,
+        "n": 12,
+        "wording": "His subordinate is underperforming, affecting team productivity."
+      }
+    },
+    {
+      "id": "srt-097",
+      "text": "Unhygienic food in his hostel mess has given students food poisoning.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+        "part": 8,
+        "n": 13,
+        "wording": "His hostel mess serves unhygienic food, causing food poisoning among students."
+      }
+    },
+    {
+      "id": "srt-098",
+      "text": "His train ticket is confirmed, but an elderly couple asks for his seat.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+        "part": 8,
+        "n": 15,
+        "wording": "His train ticket is confirmed, but an elderly couple requests his seat."
+      }
+    },
+    {
+      "id": "srt-099",
+      "text": "He sees an official demanding a bribe from a poor farmer.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+        "part": 9,
+        "n": 1,
+        "wording": "You see a corrupt official demanding a bribe from a poor farmer."
+      }
+    },
+    {
+      "id": "srt-100",
+      "text": "He sees a fellow officer mistreating a civilian.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+        "part": 9,
+        "n": 4,
+        "wording": "You witness a fellow officer mistreating a civilian."
+      }
+    },
+    {
+      "id": "srt-101",
+      "text": "He sees someone disrespecting the national flag.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+        "part": 9,
+        "n": 5,
+        "wording": "You see someone disrespecting the national flag."
+      }
+    },
+    {
+      "id": "srt-102",
+      "text": "He finds a bag full of money with nothing to say whose it is.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+        "part": 9,
+        "n": 6,
+        "wording": "You find a bag full of money without any identification."
+      }
+    },
+    {
+      "id": "srt-103",
+      "text": "His younger brother is skipping classes.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+        "part": 9,
+        "n": 7,
+        "wording": "Your younger sibling is skipping classes."
+      }
+    },
+    {
+      "id": "srt-104",
+      "text": "He finds confidential documents lying unattended in an office.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+        "part": 9,
+        "n": 9,
+        "wording": "You find confidential documents unattended in an office."
+      }
+    },
+    {
+      "id": "srt-105",
+      "text": "A fellow officer is under stress from personal problems.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+        "part": 9,
+        "n": 10,
+        "wording": "A fellow officer is stressed due to personal problems."
+      }
+    },
+    {
+      "id": "srt-106",
+      "text": "He sees a child begging on the street.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+        "part": 9,
+        "n": 11,
+        "wording": "You see a child begging on the street."
+      }
+    },
+    {
+      "id": "srt-107",
+      "text": "A firecracker bursts beside a sleeping street dog.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+        "part": 9,
+        "n": 13,
+        "wording": "A firecracker bursts near a sleeping street dog."
+      }
+    },
+    {
+      "id": "srt-108",
+      "text": "A tree falls across a road, blocking the traffic.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+        "part": 9,
+        "n": 15,
+        "wording": "A tree falls in the middle of a road, blocking traffic."
+      }
+    },
+    {
+      "id": "srt-109",
+      "text": "A friend of his is spreading false rumours about someone.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+        "part": 10,
+        "n": 3,
+        "wording": "A friend is spreading false rumors about someone."
+      }
+    },
+    {
+      "id": "srt-110",
+      "text": "He receives a fake news message on social media.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+        "part": 10,
+        "n": 4,
+        "wording": "You receive a fake news message on social media."
+      }
+    },
+    {
+      "id": "srt-111",
+      "text": "His train is running late, and he has an important interview.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+        "part": 10,
+        "n": 5,
+        "wording": "Your train is late, and an important interview awaits."
+      }
+    },
+    {
+      "id": "srt-112",
+      "text": "A colleague takes the credit for his work.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+        "part": 10,
+        "n": 6,
+        "wording": "A colleague takes credit for your work."
+      }
+    },
+    {
+      "id": "srt-113",
+      "text": "His family opposes his choice of career.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+        "part": 10,
+        "n": 7,
+        "wording": "Your family opposes your career choice."
+      }
+    },
+    {
+      "id": "srt-114",
+      "text": "His junior is struggling with training.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+        "part": 10,
+        "n": 8,
+        "wording": "Your junior is struggling with training."
+      }
+    },
+    {
+      "id": "srt-115",
+      "text": "He meets a foreigner who is lost in his city.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+        "part": 10,
+        "n": 9,
+        "wording": "A foreigner is lost in your city."
+      }
+    },
+    {
+      "id": "srt-116",
+      "text": "His laptop crashes just before an important submission.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+        "part": 10,
+        "n": 10,
+        "wording": "Your laptop crashes before an important submission."
+      }
+    },
+    {
+      "id": "srt-117",
+      "text": "He hears a gunshot nearby.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+        "part": 10,
+        "n": 11,
+        "wording": "You hear a gunshot nearby."
+      }
+    },
+    {
+      "id": "srt-118",
+      "text": "He sees a person drowning in a river.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+        "part": 10,
+        "n": 12,
+        "wording": "A person is drowning in a river."
+      }
+    },
+    {
+      "id": "srt-119",
+      "text": "A family friend asks him for a job reference for a post beyond the friend’s qualifications.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+        "part": 10,
+        "n": 13,
+        "wording": "A family friend asks for a job reference beyond his qualification."
+      }
+    },
+    {
+      "id": "srt-120",
+      "text": "He learns that a close friend is involved in illegal activities.",
+      "source": {
+        "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+        "part": 10,
+        "n": 14,
+        "wording": "A close friend is involved in illegal activities."
+      }
+    }
+  ],
+  "held": [
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-1/",
+      "part": 1,
+      "n": 2,
+      "wording": "During a team project, a conflict arises among members.",
+      "reason": "generic; 3.15 and 7.15 ask the same more concretely"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-2/",
+      "part": 2,
+      "n": 10,
+      "wording": "You are late for an important event due to unforeseen circumstances.",
+      "reason": "vague: no circumstance to act on"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+      "part": 3,
+      "n": 11,
+      "wording": "Your teammate is struggling with a task before an important deadline.",
+      "reason": "repeats 1.10"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-3/",
+      "part": 3,
+      "n": 12,
+      "wording": "During a sports match, your team is losing confidence.",
+      "reason": "repeats 1.8"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+      "part": 4,
+      "n": 2,
+      "wording": "Your team is given an unrealistic target at work.",
+      "reason": "repeats 2.7"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-4/",
+      "part": 4,
+      "n": 4,
+      "wording": "Your friend wants to quit an important group project.",
+      "reason": "close to 3.13 and 3.15"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-5/",
+      "part": 5,
+      "n": 8,
+      "wording": "A bus you are traveling in breaks down in a remote area.",
+      "reason": "repeats 1.15"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+      "part": 6,
+      "n": 9,
+      "wording": "You are selected for a leadership role but fear public speaking.",
+      "reason": "repeats 2.15"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+      "part": 6,
+      "n": 10,
+      "wording": "Your team is selected for an international competition.",
+      "reason": "no problem to react to"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-6/",
+      "part": 6,
+      "n": 14,
+      "wording": "Your city organizes a marathon for a social cause.",
+      "reason": "no problem to react to"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+      "part": 7,
+      "n": 3,
+      "wording": "You miss your exam due to unavoidable reasons.",
+      "reason": "vague: no reason to act on"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+      "part": 7,
+      "n": 4,
+      "wording": "You are given additional duties at work.",
+      "reason": "repeats 1.4"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+      "part": 7,
+      "n": 6,
+      "wording": "Your phone runs out of battery during an urgent call.",
+      "reason": "repeats 2.14"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+      "part": 7,
+      "n": 9,
+      "wording": "Your sibling lacks discipline in studies.",
+      "reason": "close to 9.7"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+      "part": 7,
+      "n": 10,
+      "wording": "Your team fails to win a competition.",
+      "reason": "thin: the moment has passed"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+      "part": 7,
+      "n": 11,
+      "wording": "While trekking, your friend twists his ankle, and you are far from medical help.",
+      "reason": "repeats 1.1"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-7/",
+      "part": 7,
+      "n": 13,
+      "wording": "You are in a crowded place, and someone collapses unconscious.",
+      "reason": "repeats 2.1"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+      "part": 8,
+      "n": 3,
+      "wording": "He sees an accident victim bleeding on the roadside, and no one is helping.",
+      "reason": "repeats 1.7"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+      "part": 8,
+      "n": 5,
+      "wording": "His friend is nervous before a crucial presentation.",
+      "reason": "repeats 1.5"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+      "part": 8,
+      "n": 6,
+      "wording": "His bus breaks down in the middle of the night while traveling alone.",
+      "reason": "repeats 1.15"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+      "part": 8,
+      "n": 10,
+      "wording": "He finds a suspicious unattended bag at a railway station.",
+      "reason": "repeats 1.12"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-8/",
+      "part": 8,
+      "n": 14,
+      "wording": "A major power failure occurs during an important presentation.",
+      "reason": "repeats 5.10"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+      "part": 9,
+      "n": 2,
+      "wording": "A friend asks you to help him cheat in an exam.",
+      "reason": "repeats 2.8"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+      "part": 9,
+      "n": 3,
+      "wording": "A shopkeeper mistakenly returns extra money to you.",
+      "reason": "repeats 4.7"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+      "part": 9,
+      "n": 8,
+      "wording": "Your team is struggling due to lack of coordination.",
+      "reason": "repeats 5.15"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+      "part": 9,
+      "n": 12,
+      "wording": "Your village faces a severe water crisis.",
+      "reason": "close to 6.5"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-9/",
+      "part": 9,
+      "n": 14,
+      "wording": "Your friend is feeling low due to failure.",
+      "reason": "repeats 3.10"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+      "part": 10,
+      "n": 1,
+      "wording": "A stranger faints in front of you at a bus stop.",
+      "reason": "repeats 5.9"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+      "part": 10,
+      "n": 2,
+      "wording": "You see an elderly person struggling to cross the road.",
+      "reason": "close to 6.3"
+    },
+    {
+      "url": "https://ssbcrackexams.com/15-sample-srt-situations-with-responses-for-ssb-interview-part-10/",
+      "part": 10,
+      "n": 15,
+      "wording": "You fail to achieve your goal.",
+      "reason": "thin: no situation"
+    }
+  ]
+}

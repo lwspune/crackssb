@@ -4,8 +4,12 @@ import { z } from 'zod';
 import { getViewer } from '@/lib/auth/viewer.ts';
 import { createSupabaseServer } from '@/lib/supabase/server.ts';
 import { COMMENT_MAX } from '@/ppdt/rubric.ts';
+import { PROMPTS } from '@/sdt/prompts.ts';
+import { SITUATIONS_MAX } from '@/srt/rubric.ts';
 import { NOTE_MAX, STORIES } from '@/tat/rubric.ts';
 import type { ReviewInput, SaveResult } from '@/ui/review/ReviewForm.tsx';
+import type { SdtReviewInput } from '@/ui/paper/SdtReviewForm.tsx';
+import type { SrtReviewInput } from '@/ui/paper/SrtReviewForm.tsx';
 import type { TatReviewInput } from '@/ui/tat/TatReviewForm.tsx';
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
@@ -56,5 +60,48 @@ export async function saveTatReview(sessionId: string, raw: TatReviewInput): Pro
   if (!error) return { kind: 'ok' };
   const reason = REASONS.find((r) => error.message.includes(r));
   if (!reason) console.error('saving a TAT review failed', { code: error.code });
+  return { kind: 'refused', reason: reason ?? 'failed' };
+}
+
+const srtInput = z.object({
+  answered: z.number().int().min(0).max(SITUATIONS_MAX),
+  marks: z.object({ practical: mark, quick: mark, complete: mark }).strict(),
+  wentWell: z.string().max(COMMENT_MAX * 2),
+  focusOn: z.string().max(COMMENT_MAX * 2),
+});
+
+/** Mark an SRT attempt (D39). The database decides, as the reviewer (review_srt, 0018). */
+export async function saveSrtReview(sessionId: string, raw: SrtReviewInput): Promise<SaveResult> {
+  if (!(await getViewer())) return { kind: 'refused', reason: 'not_staff' };
+  const parsed = srtInput.safeParse(raw);
+  if (!UUID.test(sessionId) || !parsed.success) return { kind: 'refused', reason: 'bad_marks' };
+  const { answered, marks, wentWell, focusOn } = parsed.data;
+  const supabase = await createSupabaseServer();
+  const { error } = await supabase.rpc('review_srt', { p_session_id: sessionId, p_answered: answered, p_marks: marks, p_went_well: wentWell, p_focus_on: focusOn });
+  return refusal(error, 'an SRT');
+}
+
+const sdtInput = z.object({
+  paragraphs: z.array(mark.nullable()).length(PROMPTS.length),
+  marks: z.object({ honest: mark, consistent: mark }).strict(),
+  wentWell: z.string().max(COMMENT_MAX * 2),
+  focusOn: z.string().max(COMMENT_MAX * 2),
+});
+
+/** Mark an SDT attempt (D40). The database decides, as the reviewer (review_sdt, 0018). */
+export async function saveSdtReview(sessionId: string, raw: SdtReviewInput): Promise<SaveResult> {
+  if (!(await getViewer())) return { kind: 'refused', reason: 'not_staff' };
+  const parsed = sdtInput.safeParse(raw);
+  if (!UUID.test(sessionId) || !parsed.success) return { kind: 'refused', reason: 'bad_marks' };
+  const { paragraphs, marks, wentWell, focusOn } = parsed.data;
+  const supabase = await createSupabaseServer();
+  const { error } = await supabase.rpc('review_sdt', { p_session_id: sessionId, p_paragraphs: paragraphs, p_marks: marks, p_went_well: wentWell, p_focus_on: focusOn });
+  return refusal(error, 'an SDT');
+}
+
+function refusal(error: { message: string; code?: string } | null, what: string): SaveResult {
+  if (!error) return { kind: 'ok' };
+  const reason = REASONS.find((r) => error.message.includes(r));
+  if (!reason) console.error(`saving ${what} review failed`, { code: error.code });
   return { kind: 'refused', reason: reason ?? 'failed' };
 }

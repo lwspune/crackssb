@@ -10,7 +10,7 @@ import { ReviewQueue } from '@/ui/review/ReviewQueue.tsx';
 export const metadata: Metadata = { title: 'Review queue' };
 
 /**
- * PPDT and TAT attempts sent for review (D34, D36). Staff see their academy's; the owner
+ * PPDT, TAT, SRT and SDT attempts sent for review (D34, D36, D39, D40). Staff see their academy's; the owner
  * sees candidates with no academy, and the academy they picked (D25).
  */
 export default async function ReviewPage() {
@@ -18,7 +18,7 @@ export default async function ReviewPage() {
   const { acting } = await getActingAcademy(viewer);
   const rows = await loadQueue(await createSupabaseServer(), acting?.id ?? null);
   const waiting = rows.filter((r) => !r.reviewedAt).length;
-  const lede = viewer.role === 'superadmin' ? `${acting ? acting.name : 'No academy picked'}, and candidates with no academy.` : 'PPDT and TAT sheets sent for marks.';
+  const lede = viewer.role === 'superadmin' ? `${acting ? acting.name : 'No academy picked'}, and candidates with no academy.` : 'PPDT, TAT, SRT and SDT sheets sent for marks.';
 
   return (
     <Page>

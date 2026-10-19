@@ -39,8 +39,8 @@ export const CATALOG: readonly CatalogEntry[] = [
 
   { id: 'tat', name: 'Thematic Apperception Test', short: 'TAT', day: 2, instruments: ['tat'], availability: 'ready', summary: '11 pictures and a blank · 4 min each' },
   { id: 'wat', name: 'Word Association Test', short: 'WAT', day: 2, instruments: ['wat'], availability: 'ready', summary: '60 words · 15 s each' },
-  { id: 'srt', name: 'Situation Reaction Test', short: 'SRT', day: 2, instruments: ['srt'], availability: 'coming', summary: '60 situations · 30 min' },
-  { id: 'sdt', name: 'Self Description Test', short: 'SDT', day: 2, instruments: ['sdt'], availability: 'coming', summary: '5 paragraphs · 15 min' },
+  { id: 'srt', name: 'Situation Reaction Test', short: 'SRT', day: 2, instruments: ['srt'], availability: 'ready', summary: '60 situations · 30 min' },
+  { id: 'sdt', name: 'Self Description Test', short: 'SDT', day: 2, instruments: ['sdt'], availability: 'ready', summary: '5 paragraphs · 15 min' },
 
   { id: 'gd', name: 'Group Discussion', short: 'GD', day: 3, instruments: [], availability: 'coming', summary: 'Live, with your group' },
   { id: 'gpe', name: 'Group Planning Exercise', short: 'GPE', day: 3, instruments: [], availability: 'coming', summary: 'Terrain model · group plan' },

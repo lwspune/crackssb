@@ -7,6 +7,7 @@ import { RUNNABLE } from '@/ui/runner/registry.ts';
 import { AnswerSheet } from '@/ui/sheet/AnswerSheet.tsx';
 import { PpdtSheet } from '@/ui/sheet/PpdtSheet.tsx';
 import { PrintButton } from '@/ui/sheet/PrintButton.tsx';
+import { SdtSheet, SrtSheet } from '@/ui/sheet/SrtSdtSheet.tsx';
 import { TatSheet } from '@/ui/sheet/TatSheet.tsx';
 
 /** Printable answer sheet for paper mode (D22). Outside the app shell: it is made to be printed. */
@@ -23,7 +24,9 @@ export default async function SheetPage({ params, searchParams }: { params: Para
   // A line-per-word sheet for forced sequence (WAT); PPDT has its own one-page layout (D33), TAT twelve story boxes (D36).
   const ppdt = instrument === 'ppdt';
   const tat = instrument === 'tat';
-  if (!runnable || !entry || (runnable.config.mode !== 'forced_sequence' && !ppdt && !tat)) notFound();
+  const srt = instrument === 'srt';
+  const sdt = instrument === 'sdt';
+  if (!runnable || !entry || (runnable.config.mode !== 'forced_sequence' && !ppdt && !tat && !srt && !sdt)) notFound();
   const lines = 'itemCount' in runnable.config ? runnable.config.itemCount : 0;
 
   // Anything that is not a code we issued prints as an empty box, never as text.
@@ -36,7 +39,7 @@ export default async function SheetPage({ params, searchParams }: { params: Para
         <div>
           <h1 className="text-xl font-bold tracking-tight">Answer sheet</h1>
           <p className="text-sm text-muted-foreground">
-            {ppdt ? 'A4, one page. Print a few before you begin.' : tat ? 'A4, 6 pages. Print before you begin.' : `A4, ${Math.ceil(lines / 30)} pages. Print before you begin.`}
+            {ppdt ? 'A4, one page. Print a few before you begin.' : tat ? 'A4, 6 pages. Print before you begin.' : srt ? 'A4, 4 pages. Print before you begin.' : sdt ? 'A4, 2 pages. Print before you begin.' : `A4, ${Math.ceil(lines / 30)} pages. Print before you begin.`}
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -50,6 +53,10 @@ export default async function SheetPage({ params, searchParams }: { params: Para
         <PpdtSheet code={code} />
       ) : tat ? (
         <TatSheet code={code} />
+      ) : srt ? (
+        <SrtSheet code={code} />
+      ) : sdt ? (
+        <SdtSheet code={code} />
       ) : (
         <AnswerSheet title={entry.name} short={entry.short ?? entry.name} lines={lines} perPage={30} code={code} />
       )}

@@ -6,17 +6,23 @@ import { sheetPhotos } from '@/db/admin/uploads.ts';
 import { requireViewerAt } from '@/lib/auth/viewer.ts';
 import { loadPpdtResult } from '@/lib/ppdt/data.ts';
 import { loadAttemptOwner, loadReview } from '@/lib/review/data.ts';
+import { loadPaperResult, loadReviewRow, loadSrtSet } from '@/lib/paper/data.ts';
 import { loadSet, loadTatResult, loadTatReview } from '@/lib/tat/data.ts';
 import { createSupabaseAdmin } from '@/lib/supabase/admin.ts';
 import { createSupabaseServer } from '@/lib/supabase/server.ts';
 import { EMPTY_NOTE, parseNote } from '@/ppdt/note.ts';
 import { pictureById } from '@/ppdt/pictures.ts';
 import { sampleFor } from '@/ppdt/samples.ts';
+import { PROMPTS } from '@/sdt/prompts.ts';
+import { readSdtReview } from '@/sdt/rubric.ts';
+import { readSrtReview } from '@/srt/rubric.ts';
 import { pictureById as tatPicture } from '@/tat/pictures.ts';
 import { Page, PageHeader } from '@/ui/parts.tsx';
 import { PpdtResult } from '@/ui/ppdt/PpdtResult.tsx';
 import { NarrationClient } from '@/ui/ppdt/ReviewClient.tsx';
 import { ReviewFormClient } from '@/ui/review/ReviewFormClient.tsx';
+import { SdtReviewFormClient, SrtReviewFormClient } from '@/ui/paper/PaperClient.tsx';
+import { PaperResult } from '@/ui/paper/PaperResult.tsx';
 import { SheetPhotos } from '@/ui/sheet/SheetPhotos.tsx';
 import { TatReviewFormClient } from '@/ui/tat/TatClient.tsx';
 import { TatResult } from '@/ui/tat/TatResult.tsx';
@@ -25,7 +31,7 @@ export const metadata: Metadata = { title: 'Review' };
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
-/** Marking one attempt: PPDT (D34) — what the candidate saw and did, the narration, the rubric — or TAT (D36), story by story. */
+/** Marking one attempt: PPDT (D34) — what the candidate saw and did, the narration, the rubric — TAT (D36) story by story, SRT (D39) or SDT (D40). */
 export default async function ReviewAttemptPage({ params }: { params: Promise<{ session: string }> }) {
   const { session } = await params;
   const viewer = await requireViewerAt(`/staff/review/${session}`);
@@ -34,6 +40,10 @@ export default async function ReviewAttemptPage({ params }: { params: Promise<{ 
   const client = await createSupabaseServer();
   const tat = await loadTatResult(client, session);
   if (tat.kind !== 'missing') return <TatReview session={session} viewerId={viewer.id} result={tat} />;
+  for (const test of ['srt', 'sdt'] as const) {
+    const paper = await loadPaperResult(client, session, test);
+    if (paper.kind !== 'missing') return <PaperReview test={test} session={session} viewerId={viewer.id} result={paper} />;
+  }
   const [result, owner] = await Promise.all([loadPpdtResult(client, session), loadAttemptOwner(client, session)]);
   // Only an attempt sent for review, never a staff member's own (review_attempt refuses the same, 0015).
   if (result.kind !== 'over' || !result.submittedAt || !owner || owner.byStaff || result.candidateId === viewer.id) notFound();
@@ -90,6 +100,32 @@ async function TatReview({ session, viewerId, result }: { session: string; viewe
         paperCode={result.paperCode}
         sheet={<SheetPhotos photos={photos} />}
         footer={<TatReviewFormClient sessionId={session} initial={review} />}
+      />
+    </Page>
+  );
+}
+
+/** An SRT or SDT attempt sent for review (D39, D40): the sheet's photos beside what was asked, and its rubric. */
+async function PaperReview({ test, session, viewerId, result }: { test: 'srt' | 'sdt'; session: string; viewerId: string; result: Awaited<ReturnType<typeof loadPaperResult>> }) {
+  const client = await createSupabaseServer();
+  const owner = await loadAttemptOwner(client, session);
+  // Only an attempt sent for review, never a staff member's own (review_srt and review_sdt refuse the same, 0018).
+  if (result.kind !== 'over' || !result.submittedAt || !owner || owner.byStaff || result.candidateId === viewerId) notFound();
+  const set = test === 'srt' && result.testId ? await loadSrtSet(client, result.testId) : null;
+  if (test === 'srt' && !set) notFound();
+  const [photos, row] = await Promise.all([sheetPhotos(client, createSupabaseAdmin(), session), loadReviewRow(client, session)]);
+  const prompts = PROMPTS.map((p) => p.text);
+  return (
+    <Page>
+      <Link href="/staff/review" className="inline-flex min-h-11 items-center text-sm font-semibold text-brand-accent hover:underline">← Review queue</Link>
+      <PageHeader title={owner.name} lede={`${set ? set.title : 'SDT'} · on paper`} />
+      <PaperResult
+        forStaff
+        heading={set ? 'The situations' : 'The paragraphs'}
+        items={set ? set.situations : prompts}
+        paperCode={result.paperCode}
+        sheet={<SheetPhotos photos={photos} />}
+        footer={set ? <SrtReviewFormClient sessionId={session} initial={readSrtReview(row)} /> : <SdtReviewFormClient sessionId={session} prompts={prompts} initial={readSdtReview(row)} />}
       />
     </Page>
   );

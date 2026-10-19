@@ -47,6 +47,26 @@ export const RUNNABLE: Partial<Readonly<Record<RunnerInstrument, RunnableInstrum
     instruction: 'A picture, then its story on your sheet. Twelve times; the last slide is blank.',
     start: '/practise/tat',
   },
+  srt: {
+    config: INSTRUMENT_CONFIGS.srt,
+    facts: [
+      { value: '60', label: 'Situations' },
+      { value: '30 min', label: 'In all' },
+      { value: 'Any', label: 'Order' },
+    ],
+    instruction: 'Read each situation and write, against its number, what he does. Briefly; answer as many as you can.',
+    start: '/practise/srt',
+  },
+  sdt: {
+    config: INSTRUMENT_CONFIGS.sdt,
+    facts: [
+      { value: '5', label: 'Paragraphs' },
+      { value: '15 min', label: 'In all' },
+      { value: 'Yours', label: 'Words' },
+    ],
+    instruction: 'Write a few honest sentences for each: what others think of you, what you think, who you want to become.',
+    start: '/sdt',
+  },
   wat: {
     config: INSTRUMENT_CONFIGS.wat,
     facts: [

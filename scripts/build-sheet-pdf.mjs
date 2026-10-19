@@ -1,6 +1,6 @@
 /**
- * A blank answer sheet as a real PDF: public/<test>-sheet.pdf for PPDT (D33)
- * and TAT (D36), by printing our own /sheets/<test> page in the browser — no
+ * A blank answer sheet as a real PDF: public/<test>-sheet.pdf for PPDT (D33),
+ * TAT (D36), SRT (D39) and SDT (D40), by printing our own /sheets/<test> page in the browser — no
  * PDF package.
  *
  *   npm run build && npx next start -p 3100
@@ -12,8 +12,8 @@
 import { writeFileSync } from 'node:fs';
 
 const TEST = process.argv[2];
-if (TEST !== 'ppdt' && TEST !== 'tat') {
-  console.error('Usage: node scripts/build-sheet-pdf.mjs ppdt|tat [base url]');
+if (!['ppdt', 'tat', 'srt', 'sdt'].includes(TEST)) {
+  console.error('Usage: node scripts/build-sheet-pdf.mjs ppdt|tat|srt|sdt [base url]');
   process.exit(2);
 }
 const BASE = process.argv[3] ?? 'http://localhost:3100';

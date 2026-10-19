@@ -29,8 +29,11 @@
     "tatslides": "node scripts/build-slides.mjs tat",
     "ppdt:seed": "node --experimental-strip-types scripts/seed-ppdt.ts",
     "tat:seed": "node --experimental-strip-types scripts/seed-tat.ts",
+    "srt:seed": "node --experimental-strip-types scripts/seed-srt.ts",
     "ppdtsheet": "node scripts/build-sheet-pdf.mjs ppdt",
-    "tatsheet": "node scripts/build-sheet-pdf.mjs tat"
+    "tatsheet": "node scripts/build-sheet-pdf.mjs tat",
+    "srtsheet": "node scripts/build-sheet-pdf.mjs srt",
+    "sdtsheet": "node scripts/build-sheet-pdf.mjs sdt"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",

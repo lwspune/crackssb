@@ -31,7 +31,7 @@ const one = set('tat-set-01', 1);
 
 describe('SetList', () => {
   it('lists each set by name only, never a picture, with where the viewer stands', () => {
-    render(<SetList sets={[one, set('tat-set-02', 12)]} standing={new Map([['tat-set-01', { tries: 2, live: null, last: 's-9' }]])} />);
+    render(<SetList base="tat" sets={[one, set('tat-set-02', 12)].map((x) => ({ id: x.id, title: x.title, detail: '11 pictures and a blank · 54 min' }))} standing={new Map([['tat-set-01', { tries: 2, live: null, last: 's-9' }]])} />);
     const first = screen.getByRole('link', { name: /tat set 1, tried 2 times/i });
     expect(first.getAttribute('href')).toBe('/tat/tat-set-01');
     expect(screen.getByRole('link', { name: /tat set 2, not tried/i }).getAttribute('href')).toBe('/tat/tat-set-02');
