@@ -35,23 +35,19 @@
     },
     {
       "id": "ppdt-03",
-      "title": "Students on a lawn",
+      "title": "A classroom",
       "difficulty": "clear",
-      "people": { "min": 3, "typical": 3, "max": 3 },
+      "people": { "min": 4, "typical": 5, "max": 5 },
       "characters": [
-        { "sex": "M", "age": "18-25", "mood": "positive" },
-        { "sex": "F", "age": "18-25", "mood": "positive" },
-        { "sex": "M", "age": "18-25", "mood": "positive" }
+        { "sex": "M", "age": "25-40", "mood": "positive" },
+        { "sex": "M", "age": "16-22", "mood": "neutral" },
+        { "sex": "M", "age": "16-22", "mood": "neutral" },
+        { "sex": "M", "age": "16-22", "mood": "neutral" }
       ],
       "moods": ["positive", "neutral"],
-      "action": "Three students study together on a college lawn, books and a laptop between them.",
-      "source": {
-        "kind": "pexels",
-        "url": "https://www.pexels.com/photo/indian-students-doing-homework-in-campus-meadow-4622108/",
-        "photographer": "Kiran Pokuri Photography",
-        "licence": "Pexels License"
-      },
-      "processing": { "kind": "photo", "blur": 0.9, "contrast": 0.82 }
+      "action": "In a classroom a man stands and speaks with an open hand while students at their desks listen.",
+      "source": { "kind": "owner", "note": "Line drawing supplied by the owner, 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [0, 0, 300, 189], "blur": 0.3 }
     },
     {
       "id": "ppdt-04",
@@ -70,38 +66,31 @@
     },
     {
       "id": "ppdt-05",
-      "title": "A well at dawn",
+      "title": "A medical camp",
       "difficulty": "hazy",
-      "people": { "min": 4, "typical": 6, "max": 9 },
-      "characters": [],
-      "moods": ["positive", "neutral"],
-      "action": "Villagers draw water at a well at daybreak, in mist.",
-      "source": {
-        "kind": "pexels",
-        "url": "https://www.pexels.com/photo/people-getting-water-from-a-well-8814613/",
-        "photographer": "Ganta Srinivas",
-        "licence": "Pexels License"
-      },
-      "processing": { "kind": "photo", "blur": 1.8, "contrast": 0.72 }
+      "people": { "min": 6, "typical": 7, "max": 8 },
+      "characters": [
+        { "sex": "M", "age": "45-60", "mood": "neutral" },
+        { "sex": "F", "age": "20-35", "mood": "positive" },
+        { "sex": "M", "age": "20-30", "mood": "neutral" },
+        { "sex": "M", "age": "60-80", "mood": "negative" },
+        { "sex": "M", "age": "40-55", "mood": "neutral" }
+      ],
+      "moods": ["positive", "neutral", "negative"],
+      "action": "At a medical camp in a tent, a doctor sits at a microscope while a nurse, a young man and village elders wait and a second doctor writes at a table.",
+      "source": { "kind": "owner", "note": "Ink illustration supplied by the owner, 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [10, 12, 1065, 838], "blur": 0.6 }
     },
     {
       "id": "ppdt-06",
-      "title": "A policeman and an old man",
+      "title": "The Employment Exchange",
       "difficulty": "hazy",
-      "people": { "min": 2, "typical": 2, "max": 2 },
-      "characters": [
-        { "sex": "M", "age": "35-50", "mood": "positive" },
-        { "sex": "M", "age": "60-80", "mood": "negative" }
-      ],
-      "moods": ["positive", "neutral", "negative"],
-      "action": "A policeman puts a hand on the shoulder of an old man with a stick, beside a police car with its light on.",
-      "source": {
-        "kind": "pexels",
-        "url": "https://www.pexels.com/photo/a-policeman-helping-an-elderly-woman-4267618/",
-        "photographer": "112 Uttar Pradesh",
-        "licence": "Pexels License"
-      },
-      "processing": { "kind": "photo", "blur": 1.8, "contrast": 0.72, "mask": [0, 0.9, 0.2, 0.1] }
+      "people": { "min": 8, "typical": 9, "max": 10 },
+      "characters": [],
+      "moods": ["neutral", "negative", "positive"],
+      "action": "Young men queue at the window of the Employment Exchange; two more stand in the yard, one gesturing back at the line.",
+      "source": { "kind": "owner", "note": "Line drawing supplied by the owner, 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [20, 8, 222, 172], "blur": 0.3 }
     },
     {
       "id": "ppdt-07",
@@ -127,44 +116,175 @@
     },
     {
       "id": "ppdt-09",
-      "title": "Two figures with pickaxes",
+      "title": "A hospital trolley",
       "difficulty": "ambiguous",
-      "people": { "min": 1, "typical": 2, "max": 2 },
+      "people": { "min": 2, "typical": 2, "max": 3 },
       "characters": [
-        { "sex": "M", "age": "20-50", "mood": "neutral" },
-        { "sex": "M", "age": "20-50", "mood": "neutral" }
+        { "sex": "F", "age": "20-35", "mood": "neutral" },
+        { "sex": "M", "age": "25-40", "mood": "negative" }
       ],
-      "moods": ["positive", "neutral", "negative"],
-      "action": "Two figures in a field raise pickaxes high: digging, or something else.",
-      "source": {
-        "kind": "pexels",
-        "url": "https://www.pexels.com/photo/two-farmers-working-on-field-4268227/",
-        "photographer": "Pexels user 2721073 (name withheld here: it matches a candidate's, D21)",
-        "licence": "Pexels License"
-      },
-      "processing": { "kind": "photo", "blur": 2.4, "contrast": 0.66 }
+      "moods": ["negative", "neutral"],
+      "action": "A nurse wheels a covered trolley down a hospital corridor; a man follows, head bowed.",
+      "source": { "kind": "owner", "note": "Chosen by the owner from ssbcrackexams.com (image-27), 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [0, 0, 917, 595], "blur": 0.6 }
     },
     {
       "id": "ppdt-10",
-      "title": "Lifting an old woman",
+      "title": "Tears in a garden",
       "difficulty": "ambiguous",
-      "people": { "min": 4, "typical": 5, "max": 6 },
+      "people": { "min": 2, "typical": 2, "max": 2 },
       "characters": [
-        { "sex": "F", "age": "60-80", "mood": "negative" },
-        { "sex": "M", "age": "18-30", "mood": "neutral" },
-        { "sex": "M", "age": "18-30", "mood": "neutral" },
-        { "sex": "F", "age": "30-50", "mood": "neutral" },
-        { "sex": "M", "age": "18-30", "mood": "neutral" }
+        { "sex": "M", "age": "18-25", "mood": "neutral" },
+        { "sex": "?", "age": "16-25", "mood": "negative" }
       ],
-      "moods": ["positive", "neutral", "negative"],
-      "action": "Several people lift an old woman up and out, by the arms.",
-      "source": {
-        "kind": "pexels",
-        "url": "https://www.pexels.com/photo/people-helping-elderly-woman-with-ritual-ablution-15031234/",
-        "photographer": "Krishna Soni",
-        "licence": "Pexels License"
-      },
-      "processing": { "kind": "photo", "blur": 2.4, "contrast": 0.66 }
+      "moods": ["negative", "neutral", "positive"],
+      "action": "In a garden a young man wipes the tears of a young person who is crying.",
+      "source": { "kind": "owner", "note": "Ink illustration supplied by the owner, 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [0, 0, 602, 432], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-11",
+      "title": "A day at the beach",
+      "difficulty": "clear",
+      "people": { "min": 10, "typical": 13, "max": 16 },
+      "characters": [],
+      "moods": ["positive", "neutral"],
+      "action": "A busy beach below the hills: families picnic under umbrellas, a young man stands looking at the water, a van and a car are parked behind.",
+      "source": { "kind": "owner", "note": "Line drawing supplied by the owner, 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [0, 0, 900, 574], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-12",
+      "title": "A chain snatched",
+      "difficulty": "clear",
+      "people": { "min": 9, "typical": 11, "max": 12 },
+      "characters": [
+        { "sex": "M", "age": "25-35", "mood": "negative" },
+        { "sex": "F", "age": "30-45", "mood": "negative" },
+        { "sex": "M", "age": "20-30", "mood": "positive" },
+        { "sex": "M", "age": "15-20", "mood": "neutral" }
+      ],
+      "moods": ["negative", "neutral", "positive"],
+      "action": "A man runs off with a chain snatched from a woman in a cycle-rickshaw; she cries out while young men give chase.",
+      "source": { "kind": "owner", "note": "Ink illustration supplied by the owner, 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [0, 0, 1024, 764], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-13",
+      "title": "A broken bridge",
+      "difficulty": "ambiguous",
+      "people": { "min": 1, "typical": 1, "max": 1 },
+      "characters": [{ "sex": "M", "age": "18-25", "mood": "neutral" }],
+      "moods": ["neutral", "negative", "positive"],
+      "action": "A young man with a backpack stands by a river looking at a rope bridge; broken planks lie on the bank.",
+      "source": { "kind": "owner", "note": "Pencil drawing (one panel of four) supplied by the owner, 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [0, 0, 615, 440], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-14",
+      "title": "Round a table",
+      "difficulty": "ambiguous",
+      "people": { "min": 4, "typical": 4, "max": 4 },
+      "characters": [
+        { "sex": "F", "age": "20-35", "mood": "neutral" },
+        { "sex": "M", "age": "20-30", "mood": "positive" },
+        { "sex": "M", "age": "20-30", "mood": "positive" },
+        { "sex": "M", "age": "25-40", "mood": "neutral" }
+      ],
+      "moods": ["positive", "neutral"],
+      "action": "Four young people sit round a table looking at a box set on a round base between them.",
+      "source": { "kind": "owner", "note": "Chosen by the owner from ssbcrackexams.com (image-12), 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [0, 0, 890, 562], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-15",
+      "title": "A boy at his desk",
+      "difficulty": "clear",
+      "people": { "min": 1, "typical": 1, "max": 1 },
+      "characters": [{ "sex": "M", "age": "14-20", "mood": "neutral" }],
+      "moods": ["neutral", "positive"],
+      "action": "A boy studies at a desk piled with books, writing; a clock hangs on the wall.",
+      "source": { "kind": "owner", "note": "Chosen by the owner from ssbcrackexams.com (image-14), 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [125, 40, 680, 470], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-16",
+      "title": "Talking to the village",
+      "difficulty": "clear",
+      "people": { "min": 6, "typical": 6, "max": 6 },
+      "characters": [
+        { "sex": "M", "age": "25-40", "mood": "positive" },
+        { "sex": "M", "age": "30-50", "mood": "neutral" },
+        { "sex": "M", "age": "60-75", "mood": "neutral" }
+      ],
+      "moods": ["positive", "neutral"],
+      "action": "A young man stands under a tree and speaks, pointing, to village men seated on the ground before him.",
+      "source": { "kind": "owner", "note": "Chosen by the owner from ssbcrackexams.com (image-15), 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [0, 0, 706, 432], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-17",
+      "title": "A rope bridge",
+      "difficulty": "clear",
+      "people": { "min": 1, "typical": 1, "max": 1 },
+      "characters": [{ "sex": "M", "age": "20-35", "mood": "neutral" }],
+      "moods": ["neutral", "positive"],
+      "action": "A man walks across a rope bridge high over a mountain river.",
+      "source": { "kind": "owner", "note": "Chosen by the owner from ssbcrackexams.com (image-16), 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [0, 0, 815, 709], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-18",
+      "title": "In the field",
+      "difficulty": "clear",
+      "people": { "min": 2, "typical": 3, "max": 3 },
+      "characters": [
+        { "sex": "M", "age": "20-30", "mood": "positive" },
+        { "sex": "M", "age": "35-55", "mood": "positive" },
+        { "sex": "M", "age": "25-45", "mood": "neutral" }
+      ],
+      "moods": ["positive", "neutral"],
+      "action": "In a ploughed field a young man talks with a smiling farmer while another farmer ploughs with bullocks behind.",
+      "source": { "kind": "owner", "note": "Chosen by the owner from ssbcrackexams.com (image-20), 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [0, 0, 940, 725], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-19",
+      "title": "An accident",
+      "difficulty": "clear",
+      "people": { "min": 8, "typical": 9, "max": 10 },
+      "characters": [
+        { "sex": "M", "age": "20-30", "mood": "negative" },
+        { "sex": "M", "age": "30-45", "mood": "negative" },
+        { "sex": "M", "age": "25-40", "mood": "negative" },
+        { "sex": "M", "age": "50-65", "mood": "neutral" }
+      ],
+      "moods": ["negative", "neutral"],
+      "action": "A scooter lies crushed under the front of a car, its rider down on the road; the driver sits in the car and people run up.",
+      "source": { "kind": "owner", "note": "Chosen by the owner from ssbcrackexams.com (image-22), 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [0, 0, 940, 651], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-20",
+      "title": "A man alone",
+      "difficulty": "ambiguous",
+      "people": { "min": 1, "typical": 1, "max": 1 },
+      "characters": [{ "sex": "M", "age": "25-45", "mood": "negative" }],
+      "moods": ["negative", "neutral"],
+      "action": "A man sits alone on a chair in a bare room, his head in his hand.",
+      "source": { "kind": "owner", "note": "Chosen by the owner from ssbcrackexams.com (image-24), 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [0, 0, 630, 520], "blur": 0.6 }
+    },
+    {
+      "id": "ppdt-21",
+      "title": "Raised fists",
+      "difficulty": "hazy",
+      "people": { "min": 7, "typical": 8, "max": 9 },
+      "characters": [],
+      "moods": ["positive", "negative", "neutral"],
+      "action": "A young man raises his fist and leads a group of men who raise theirs, beside a building; a placard lies on the ground.",
+      "source": { "kind": "owner", "note": "Chosen by the owner from ssbcrackexams.com (image-26), 2026-10-19." },
+      "processing": { "kind": "sketch", "crop": [0, 0, 605, 526], "blur": 0.6 }
     }
   ]
 }

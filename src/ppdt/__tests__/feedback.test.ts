@@ -42,8 +42,8 @@ describe('checkAttempt', () => {
   it('says how the count was off, and accepts any count in the range', () => {
     expect(byKind(checkAttempt(office, note({ count: 2 }), story)).count).toMatchObject({ ok: false, line: 'You saw 2. The picture has 3.' });
     expect(byKind(checkAttempt(office, note({ count: null }), story)).count).toMatchObject({ ok: false, line: 'You did not count the people. The picture has 3.' });
-    const well = pictureById('ppdt-05')!; // 4–9, typically 6
-    expect(byKind(checkAttempt(well, note({ count: 8, people: [] }), story)).count).toMatchObject({ ok: true, line: 'You saw 8. The picture has about 6 (4–9 is fair).' });
+    const beach = pictureById('ppdt-11')!; // 10–16, typically 13
+    expect(byKind(checkAttempt(beach, note({ count: 15, people: [] }), story)).count).toMatchObject({ ok: true, line: 'You saw 15. The picture has about 13 (10–16 is fair).' });
   });
 
   it('counts the people described in full — sex, age and mood', () => {

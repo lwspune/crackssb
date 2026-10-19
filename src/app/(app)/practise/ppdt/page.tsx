@@ -9,7 +9,7 @@ import { PictureGrid } from '@/ui/ppdt/PictureGrid.tsx';
 
 export const metadata: Metadata = { title: 'PPDT practice' };
 
-/** PPDT (D33): the ten pictures, any one any time, with where the viewer stands on each. */
+/** PPDT (D33, D35): the pictures, any one any time, with where the viewer stands on each. */
 export default async function PpdtPracticePage() {
   const viewer = await requireViewerAt('/practise/ppdt');
   const client = await createSupabaseServer();

@@ -3,20 +3,23 @@ import { existsSync, readFileSync, statSync } from 'node:fs';
 import { PICTURES, pictureById, pictureRows } from '../pictures.ts';
 
 /**
- * The PPDT pictures (D33): ten slides — five sketches supplied by the owner,
- * five licensed photos — each with the ground truth the feedback checks
- * against, where it came from, and how it was made into a slide.
+ * The PPDT pictures (D33, D35): twenty-one slides, all supplied or chosen by the owner,
+ * each with the ground truth the feedback checks against, where it came
+ * from, and how it was made into a slide.
  */
 const root = new URL('../../../', import.meta.url);
 const file = (p: string) => new URL(p, root);
 
 describe('the PPDT pictures', () => {
-  it('are ten, numbered in order', () => {
-    expect(PICTURES.map((p) => p.id)).toEqual(Array.from({ length: 10 }, (_, i) => `ppdt-${String(i + 1).padStart(2, '0')}`));
+  it('are twenty-one, numbered in order', () => {
+    expect(PICTURES.map((p) => p.id)).toEqual(Array.from({ length: 21 }, (_, i) => `ppdt-${String(i + 1).padStart(2, '0')}`));
   });
 
-  it('run from clear to very ambiguous: 3 clear, 3 hazy, 4 ambiguous', () => {
-    expect(PICTURES.map((p) => p.difficulty)).toEqual(['clear', 'clear', 'clear', 'hazy', 'hazy', 'hazy', 'ambiguous', 'ambiguous', 'ambiguous', 'ambiguous']);
+  it('run from clear to very ambiguous in the first ten (3 clear, 3 hazy, 4 ambiguous); the rest as each one reads', () => {
+    expect(PICTURES.map((p) => p.difficulty)).toEqual([
+      'clear', 'clear', 'clear', 'hazy', 'hazy', 'hazy', 'ambiguous', 'ambiguous', 'ambiguous', 'ambiguous',
+      'clear', 'clear', 'ambiguous', 'ambiguous', 'clear', 'clear', 'clear', 'clear', 'clear', 'ambiguous', 'hazy',
+    ]);
   });
 
   it('each have a finished slide, a JPEG small enough for a phone', () => {
@@ -43,7 +46,8 @@ describe('the PPDT pictures', () => {
         expect(p.source.note.length, p.id).toBeGreaterThan(0);
       }
     }
-    expect(PICTURES.filter((p) => p.source.kind === 'owner')).toHaveLength(5);
+    // D35: the licensed web photos were replaced by pictures the owner supplied or chose.
+    expect(PICTURES.filter((p) => p.source.kind === 'owner')).toHaveLength(21);
   });
 
   it('have ground truth that hangs together', () => {
@@ -65,7 +69,7 @@ describe('the PPDT pictures', () => {
 describe('pictureRows', () => {
   it('makes one `items` row per picture: the slide to show, not the ground truth', () => {
     const rows = pictureRows();
-    expect(rows).toHaveLength(10);
+    expect(rows).toHaveLength(21);
     expect(rows[0]).toEqual({
       id: 'ppdt-01',
       assessment_type: 'ppdt',
@@ -75,9 +79,7 @@ describe('pictureRows', () => {
       source: 'owner',
       source_ref: 'Pencil sketch supplied by the owner, 2026-10-18.',
     });
-    expect(rows[2].source).toBe('pexels');
-    expect(rows[2].source_ref).toMatch(/^https:\/\/www\.pexels\.com\/photo\//);
-    expect(rows.map((r) => r.difficulty)).toEqual([2, 2, 2, 3, 3, 3, 4, 4, 4, 4]);
+    expect(rows.map((r) => r.difficulty)).toEqual([2, 2, 2, 3, 3, 3, 4, 4, 4, 4, 2, 2, 4, 4, 2, 2, 2, 2, 2, 4, 3]);
   });
 });
 

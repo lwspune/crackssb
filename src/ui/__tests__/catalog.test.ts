@@ -4,6 +4,7 @@ import { OLQ_GROUPS, olqLabel } from '../olq.ts';
 import { RUNNABLE } from '../runner/registry.ts';
 import { INSTRUMENT_CONFIGS } from '../../runner/modes.ts';
 import { OLQS } from '../../scoring/judge/contract.ts';
+import { PICTURES } from '../../ppdt/pictures.ts';
 
 /**
  * The student's map of the product (UI.md §5.1). Three rules make it honest:
@@ -53,9 +54,10 @@ describe('the practise catalogue', () => {
     expect(RUNNABLE.oir?.start).toBe('/practise/oir');
   });
 
-  it('opens PPDT as ten pictures, chosen on its own page (D33)', () => {
+  it('opens PPDT as its pictures, chosen on its own page, and counts them right (D33, D35)', () => {
     const ppdt = CATALOG.find((e) => e.id === 'ppdt');
     expect(ppdt?.availability).toBe('ready');
+    expect(ppdt?.summary).toMatch(new RegExp(`^${PICTURES.length} pictures · `));
     expect(RUNNABLE.ppdt?.start).toBe('/practise/ppdt');
   });
 

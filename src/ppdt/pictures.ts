@@ -2,10 +2,10 @@ import { z } from 'zod';
 import manifest from '../../content/ppdt/pictures.json' with { type: 'json' };
 
 /**
- * The PPDT pictures (D33): ten slides, five sketches supplied by the owner
- * and five licensed photos made hazy, each with the ground truth the
- * feedback checks against. Validated on load, so a hand-edited manifest that
- * does not hang together fails here, not on a candidate's screen.
+ * The PPDT pictures (D33, D35): twenty-one slides, all supplied or chosen by
+ * the owner, each with the ground truth the feedback checks against.
+ * Validated on load, so a hand-edited manifest that does not hang together
+ * fails here, not on a candidate's screen.
  */
 
 export type Mood = 'positive' | 'neutral' | 'negative';

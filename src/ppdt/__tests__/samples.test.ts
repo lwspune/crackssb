@@ -3,6 +3,7 @@ import { sampleFor } from '../samples.ts';
 import { PICTURES } from '../pictures.ts';
 import { checkAttempt } from '../feedback.ts';
 import { EMPTY_NOTE } from '../note.ts';
+import file from '../../../content/ppdt/samples.json' with { type: 'json' };
 
 /** The sample stories (D33): one per picture, and each passes the checks the candidate's story is held to. */
 describe('sample stories', () => {
@@ -15,6 +16,10 @@ describe('sample stories', () => {
       expect(checks.length.ok, `${p.id}: ${checks.length.line}`).toBe(true);
       expect(checks.ending.ok, `${p.id}: ${checks.ending.line}`).toBe(true);
     }
+  });
+
+  it('are for the pictures there are, and no others', () => {
+    expect(Object.keys(file.samples).sort()).toEqual(PICTURES.map((p) => p.id));
   });
 
   it('has none for a picture that does not exist', () => {
