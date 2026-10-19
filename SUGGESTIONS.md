@@ -465,7 +465,7 @@ Per-story checks (length against four minutes, an outcome reached, TRY/TRIED fro
 the blank answered) were written test-first and removed when TAT went paper-only (D38): with no text there is
 nothing to check. Bring them back on the transcript once sheets are read (OCR, D3).
 
-### Review WAT
+### ~~Review WAT~~ — done 2026-10-19 (D41): words answered + positive, practical, own voice
 
 WAT sheets are photographed (D38) but nobody reviews them yet. The owner's word: a mentor or the AI will. Sixty
 responses need their own rubric (UI.md has none for WAT); the judge's WAT rubric (layer 3) is the starting point.
@@ -488,9 +488,9 @@ that asks.
 
 ## 2026-10-19 (SRT and SDT — D39, D40)
 
-### The SRT and SDT review headings are ours
+### The SRT, SDT and WAT review headings are ours
 
-Practical, quick and complete (SRT), honest and consistent (SDT), were chosen for this build, not taken from an
+Practical, quick and complete (SRT), honest and consistent (SDT), positive, practical and own voice (WAT, D41), were chosen for this build, not taken from an
 assessor. When a second assessor marks (D17), or the AI's first pass lands, compare and adjust before the marks are
 pooled with anything.
 

@@ -901,3 +901,25 @@ Reading the sheet (OCR) and the AI's first pass are still to come. Speech-to-tex
 **Consequences.** One SDT, the same every sitting, as at the SSB. SDT is where the consistency engine (layer 4) earns its keep: once sheets are read, what candidates say of themselves is compared with TAT, WAT and SRT.
 
 **Revisit if.** Sheets can be read (then the judge and layer 4 run on the text).
+
+---
+
+## D41 — WAT review: words answered, then positive, practical, own voice
+
+**Date:** 2026-10-19 · **Status:** Accepted
+
+**Context.** WAT sheets were photographed (D38) but nobody reviewed them. The owner's word: a mentor or the AI will.
+A mentor's rubric comes first; it is also what an AI first pass would be checked against.
+
+**Decision.** The candidate sends a WAT attempt for review from its result page, once a photo has arrived (typed,
+hidden by D38: once a word has an answer). A mentor marks it at `/staff/review/[session]`, with the photos beside the
+sixty words: the count of words answered (0-60), then positive, practical and own voice (no *should*, *must* or
+slogans), each 1-5; went well / work on; no total (D15). `review_wat` (0019) decides as the reviewer, with
+`review_srt`'s checks; the verdict is `{rubric: 'wat-1', answered, marks}`.
+
+**Consequences.** All five paper tests (PPDT, TAT, WAT, SRT, SDT) can now be sent and marked. The headings are ours,
+as SRT's and SDT's are (SUGGESTIONS.md).
+
+**Revisit if.** An assessor marks WAT on other headings, or sheets can be read (then layer 2's WAT rules and the judge
+run on the text).
+

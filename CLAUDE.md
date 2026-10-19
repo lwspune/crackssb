@@ -12,7 +12,7 @@ Vercel project and package keep the name crackssb.
 | [`ARCHITECTURE.md`](./ARCHITECTURE.md) | Schema, the 15-OLQ vector, edge-function contracts, the four seam rules, honest-claims policy |
 | [`ROADMAP.md`](./ROADMAP.md) | Phases, sprint order, gates, blockers, content lift |
 | [`UI.md`](./UI.md) | Roles (4 in schema, 3 experiences), the **seven runner modes** and their contracts, timing rules, per-role IA, build order |
-| [`DECISIONS.md`](./DECISIONS.md) | **D1–D40.** The long-form *why* trail. Append only; supersede rather than edit |
+| [`DECISIONS.md`](./DECISIONS.md) | **D1–D41.** The long-form *why* trail. Append only; supersede rather than edit |
 
 Read `DECISIONS.md` before changing anything in `src/scoring/` — most of what
 looks arbitrary there is a recorded decision with evidence behind it.
@@ -33,8 +33,8 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-2727 tests passing · npm test        lint clean · npm run lint        npm run build green
-225 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
+2736 tests passing · npm test        lint clean · npm run lint        npm run build green
+233 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
 **Type-checking is new.** `npm run typecheck` checks everything and currently
@@ -71,7 +71,7 @@ sample story. The server takes each answer only in its own window (0012).
 
 **Paper only (D38).** PPDT, TAT and WAT start on paper with a session code; typing is built but hidden behind one
 switch (`OFFER_TYPED` in `src/ui/runner/paper.ts`). Candidates photograph the sheet on the result page; WAT has one
-now (`/results/wat/[session]`, photos only — review comes later). Home's *Next up* is the first ready test, in day
+now (`/results/wat/[session]`), and mentors mark it (D41): words answered, then positive, practical, own voice (`review_wat`). Home's *Next up* is the first ready test, in day
 order, the candidate has not taken.
 
 **TAT (D36).** 23 line drawings the owner chose (`content/tat/`, `npm run tatslides`), each with what it shows; two
@@ -148,6 +148,7 @@ src/oir/score.ts         score-oir — raw, per-reasoning-type, percentile+band 
 src/oir/chapters.ts      OIR chapters = reasoning types (D26); every type in the bank must be listed (tested)
 src/ppdt/                pictures.ts (manifest, validated) · note.ts (the character box) · feedback.ts (quick checks) · samples.ts · attempts.ts (D33)
                          · rubric.ts (the review headings, readReview, draftProblems — D34)
+src/wat/rubric.ts        the WAT review headings, readWatReview, watDraftProblems (D41)
 src/srt/ · src/sdt/      situations.ts (bank, held, sets, rows) · rubric.ts (D39) · prompts.ts · rubric.ts (D40)
 src/tat/                 pictures.ts (manifest + `shows`, validated) · sets.ts (sets, the blank, items/tests rows) · rubric.ts (per-story marks, D36)
 src/oir/mocks.ts         the 20 mocks (D32): extendMocks (append-only, spread across types) · checkMocks · mock-result.ts summarise + standings
@@ -175,7 +176,7 @@ src/ui/
                          · NarrationRecorder (MediaRecorder, mic injected for tests) · SendForReview · ReviewClient (D34)
   tat/                   TatRunner (D36): twelve slides, paper · SetList · TatResult (slides + ground truth + marks) · TatReviewForm · TatReviewMarks
   paper/                 PaperBookletRunner (SRT and SDT on paper, D39-40) · PaperResult · Srt/SdtReviewForm · PaperReviewMarks · MarkPicker
-  wat/ · results/        WatResult (photos + the words, D38) · AttemptRows (TAT and WAT on Results)
+  wat/ · results/        WatResult (photos + the words, D38) · WatReviewForm (D41) · AttemptRows (TAT and WAT on Results)
   review/                ReviewForm (the rubric) · ReviewMarks (what the candidate sees) · ReviewQueue (D34)
   mock/                  BookletRunner (D32) — engine + store, grid, flags, confirm, dark · MockGrid · AttemptList · MockReview
   sheet/                 AnswerSheet · PpdtSheet · TatSheet (12 stories, 6 pages) · SrtSheet (60, 4 pages) · SdtSheet (5, 2 pages) — /sheets/[instrument]; code on every page, no name
@@ -209,6 +210,7 @@ supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people cr
                          · 0016 optional date of birth: the consent check only for a known under-18 (D37)
                          · 0017 TAT: timings, sets as tests, start_tat, OIR reads OIR-only, 8 photo pages, review_tat, review_queue + type (D36)
                          · 0018 SRT + SDT: timings, SRT sets, start_srt, A-D only for OIR, submit for both, review_srt, review_sdt (D39, D40)
+                         · 0019 WAT review: submit_for_review takes WAT, review_wat, review_queue + WAT (D41)
 corpus/                  candidate data — records/ is GITIGNORED
 content/                 stimulus material — WAT deck, item bank, TAT pictures + sets (tat/), the graded batch's TAT slides (tat-images/), OIR transcriptions (oir/) + oir-items.json
 scripts/                 build + measurement entry points
@@ -217,8 +219,8 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 2727 tests (never touches the database)
-npm run test:db       # 225 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store, sheet photos, narration, review — fixtures cleaned up
+npm test              # 2736 tests (never touches the database)
+npm run test:db       # 233 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store, sheet photos, narration, review — fixtures cleaned up
 npm run user:create -- --email … --name … [--dob YYYY-MM-DD] [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
 npm run build         # production build (type-checks app code)
@@ -321,6 +323,6 @@ is the gate, and it was checked by loosening a policy and watching exactly its t
 **Accepted advisor warnings:** `start_session`, `save_response`, `end_session`,
 `can_create_person`, `create_academy`, `answer_practice`, `can_manage_person`, `update_person`,
 `record_guardian_consent`, `set_person_role`, `set_person_active`, `start_test`, `test_result`, `my_test_attempts`, `start_ppdt`,
-`begin_sheet_upload`, `begin_narration`, `submit_for_review`, `review_attempt`, `start_tat`, `review_tat`, `start_srt`, `review_srt`, `review_sdt` are SECURITY DEFINER and callable by signed-in users —
+`begin_sheet_upload`, `begin_narration`, `submit_for_review`, `review_attempt`, `start_tat`, `review_tat`, `start_srt`, `review_srt`, `review_sdt`, `review_wat` are SECURITY DEFINER and callable by signed-in users —
 by design: they are the only write paths and check ownership, timing, consent and role
 themselves. Anything else the advisors raise is a finding.
