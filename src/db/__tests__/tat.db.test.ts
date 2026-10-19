@@ -37,6 +37,7 @@ describe.skipIf(!hasDatabase)('TAT', () => {
       candA4: { role: 'candidate', org: 'a', dob: '2005-01-15' },
       candB: { role: 'candidate', org: 'b', dob: '2005-01-15' },
       mentorA: { role: 'mentor', org: 'a', dob: '1990-01-01' },
+      adminA: { role: 'org_admin', org: 'a', dob: '1990-01-01' },
       mentorB: { role: 'mentor', org: 'b', dob: '1990-01-01' },
       minorA: { role: 'candidate', org: 'a', dob: yearsAgo(15) },
     });
@@ -188,6 +189,7 @@ describe.skipIf(!hasDatabase)('TAT', () => {
     let typed = '';
     let unsent = '';
     let staff = '';
+    let own = '';
     const review = (who: string, s: string, list: unknown = stories()) =>
       world.people[who].client.rpc('review_tat', { p_session_id: s, p_stories: list, p_went_well: 'Heroes act.', p_focus_on: 'End each story.' });
 
@@ -198,8 +200,13 @@ describe.skipIf(!hasDatabase)('TAT', () => {
       must(a, 'candA2');
       must(b, 'candB');
       unsent = a.data.id;
-      staff = (await world.people.mentorA.client.from('sessions').select('id').eq('assessment_type', 'tat').single()).data!.id;
-      for (const id of [unsent, b.data.id, staff]) await over(id);
+      // A mentor also sees the academy's attempts: their own is the one they took.
+      own = (await world.people.mentorA.client.from('sessions').select('id').eq('assessment_type', 'tat').eq('candidate_id', world.people.mentorA.id).single()).data!.id;
+      // Another staff member's practice, which the mentor can see but must not mark (D25).
+      const admin = await start('adminA', set);
+      must(admin, 'adminA');
+      staff = admin.data.id;
+      for (const id of [unsent, b.data.id, staff, own]) await over(id);
       await service.from('responses').insert({ session_id: staff, key: '0:write', item: 0, response_text: 'Mine.', source: 'typed' });
     });
 
@@ -238,6 +245,7 @@ describe.skipIf(!hasDatabase)('TAT', () => {
 
     it('decides as the reviewer: their academy, never staff practice, only an attempt sent', async () => {
       expect((await review('mentorB', typed)).error?.message).toMatch(/not_found/);
+      expect((await review('mentorA', own)).error?.message).toMatch(/own_attempt/);
       expect((await review('mentorA', staff)).error?.message).toMatch(/staff_attempt/);
       expect((await review('mentorA', unsent)).error?.message).toMatch(/not_submitted/);
       expect((await review('candA', typed)).error?.message).toMatch(/not_staff/);
