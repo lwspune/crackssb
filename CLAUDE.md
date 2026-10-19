@@ -12,7 +12,7 @@ Vercel project and package keep the name crackssb.
 | [`ARCHITECTURE.md`](./ARCHITECTURE.md) | Schema, the 15-OLQ vector, edge-function contracts, the four seam rules, honest-claims policy |
 | [`ROADMAP.md`](./ROADMAP.md) | Phases, sprint order, gates, blockers, content lift |
 | [`UI.md`](./UI.md) | Roles (4 in schema, 3 experiences), the **seven runner modes** and their contracts, timing rules, per-role IA, build order |
-| [`DECISIONS.md`](./DECISIONS.md) | **D1–D30.** The long-form *why* trail. Append only; supersede rather than edit |
+| [`DECISIONS.md`](./DECISIONS.md) | **D1–D35.** The long-form *why* trail. Append only; supersede rather than edit |
 
 Read `DECISIONS.md` before changing anything in `src/scoring/` — most of what
 looks arbitrary there is a recorded decision with evidence behind it.
@@ -33,7 +33,7 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-2643 tests passing · npm test        lint clean · npm run lint        npm run build green
+2644 tests passing · npm test        lint clean · npm run lint        npm run build green
 186 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
@@ -63,8 +63,8 @@ with a ready WhatsApp message. Everyone changes their own password on Profile.
 `/staff/people/new` adds one person by fields or many from Excel: download the template, upload `.xlsx`/`.csv`,
 each problem marked on its row; tests read files saved by Excel 16 itself (`src/ui/staff/__tests__/fixtures/`).
 
-**PPDT (D33).** Ten pictures (`content/ppdt/`: five owner-supplied sketches, five Pexels photos made hazy by
-`npm run ppdtslides`), each with ground truth. `/practise/ppdt` lists them by number only; `/picture/[id]` runs
+**PPDT (D33, D35).** Twenty-one pictures (`content/ppdt/`: twelve drawings supplied by the owner, nine the owner chose
+from ssbcrackexams.com; slides by `npm run ppdtslides`), each with ground truth. A number someone has sat is never reused. `/practise/ppdt` lists them by number only; `/picture/[id]` runs
 30 s look, 1 min character box, 4 min story, typed or on paper (`/sheets/ppdt`, `public/ppdt-sheet.pdf`);
 `/results/ppdt/[session]` shows the picture, its ground truth, quick checks (counts, not a judgement) and a
 sample story. The server takes each answer only in its own window (0012).
@@ -190,7 +190,7 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 2643 tests (never touches the database)
+npm test              # 2644 tests (never touches the database)
 npm run test:db       # 186 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store, sheet photos, narration, review — fixtures cleaned up
 npm run user:create -- --email … --name … --dob YYYY-MM-DD [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000

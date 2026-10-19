@@ -405,8 +405,8 @@ people and action actually shown?) and against other candidates' stories would c
 
 ### More sample stories, and more pictures
 
-One sample per picture today; two or three would show that more than one reading is strong. More pictures
-once the owner has seen the ten in use: generated (D8) or licensed, with ground truth written first.
+One sample per picture today; two or three would show that more than one reading is strong. ~~More pictures~~ —
+done 2026-10-19 (D35): twenty-one, all supplied or chosen by the owner.
 
 ### ~~The narration drill~~ — the recording is done 2026-10-19 (D34): a minute, on the result page, heard by the mentor
 
@@ -443,3 +443,11 @@ reviews WAT. Wire it when WAT gets a result page.
 ### The candidate's attempt list does not show which are marked
 
 `/practise/ppdt` lists attempts; it could show "Sent" and "Marked" beside each. The result page shows both.
+
+## 2026-10-19 (PPDT pictures, D35)
+
+### The database does not refuse changing a picture someone has sat
+
+D35 reused five numbers because nobody had sat them, and says a sat number is never reused. Only prose holds
+that today: `ppdt:seed` upserts by id. A trigger like the mocks' once-sat guard (0010) would refuse a changed
+`payload` on a `ppdt` item that has a session, and `ppdt.db.test.ts` would gate it.

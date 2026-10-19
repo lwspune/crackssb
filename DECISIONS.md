@@ -794,3 +794,22 @@ Dropped from the port: the tracker/vault two-source split, cohort exposure and t
 Reading the sheet (OCR) and the AI's first pass are still to come. Speech-to-text for the narration also needs a provider; the D5 key alone is not enough. Every review is a human-marked story, which is the expert-rated set D7 asks for.
 
 **Revisit if.** An academy wants its own rubric, a second assessor marks differently (D17: compute per rater), or the AI's first pass lands. When it does, the queue sorts by its confidence, as UI.md planned.
+
+---
+
+## D35 — PPDT grows to twenty-one pictures, all supplied or chosen by the owner; the stock photos go
+
+**Date:** 2026-10-19 · **Status:** Accepted · **Amends** D33 (1)
+
+**Context.** D33 started PPDT with five owner sketches and five Pexels photos made hazy. The owner then supplied seven more drawings and chose nine pictures from ssbcrackexams.com, and asked for the stock photos to be dropped.
+
+**Decision.**
+
+1. **Twenty-one pictures, numbered 1 to 21 with no gaps:** the five original sketches, the seven new drawings and the nine chosen ones. The five Pexels photos are gone; their numbers (3, 5, 6, 9, 10) are reused, so no number is missing from the list.
+2. **Every picture is the owner's** (`source.kind = "owner"`), each with a note of where it came from, with the site's image number for the chosen ones. Their source is the owner's to answer for, as in D33.
+3. **Mix:** 10 clear, 4 hazy, 7 very ambiguous. Ground truth and a sample story for each, held to the same checks as before (D33 (2), (4)).
+4. **The count is checked.** The catalog line says "21 pictures"; a test fails if it and the manifest disagree.
+
+**Consequences.** Reusing the five numbers is safe only because nobody had sat them: on 2026-10-19 the database held one PPDT attempt, a staff try on picture 1. From now on a picture's number is fixed once anyone has sat it; a replacement takes a new number. The pictures are in production only after `npm run ppdt:seed -- --apply`, run once the deploy carrying the slides is live.
+
+**Revisit if.** The owner wants pictures by theme rather than by number, or the database is to refuse changing a picture someone has sat (as 0010 does for mocks).
