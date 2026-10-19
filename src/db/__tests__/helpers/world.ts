@@ -38,7 +38,8 @@ export interface Person {
 interface PersonSpec {
   readonly role: 'candidate' | 'mentor' | 'org_admin' | 'superadmin';
   readonly org: string | null;
-  readonly dob: string;
+  /** null: not known — a date of birth is optional (D37). */
+  readonly dob: string | null;
   readonly guardianConsent?: boolean;
   /** false: never signed in (its client has no session). The auth server rate-limits sign-ins, and some people are only ever targets. */
   readonly signIn?: boolean;

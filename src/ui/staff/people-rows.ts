@@ -1,5 +1,4 @@
 import { passwordProblem } from '../../lib/auth/password.ts';
-import type { Role } from '../../lib/auth/routing.ts';
 import { parsePhone } from '../../lib/phone.ts';
 
 /**
@@ -60,7 +59,7 @@ export function toIsoDate(raw: string): string | null {
   return out;
 }
 
-function checkOne(raw: RawPerson, role: Role): CheckedPerson | string {
+function checkOne(raw: RawPerson): CheckedPerson | string {
   const fullName = raw.fullName.trim();
   const email = raw.email.trim().toLowerCase();
   if (fullName.length < 1 || fullName.length > 120) return 'Needs a name.';
@@ -70,7 +69,7 @@ function checkOne(raw: RawPerson, role: Role): CheckedPerson | string {
   if (raw.dob.trim() !== '') {
     dob = toIsoDate(raw.dob);
     if (!dob) return 'The date of birth is not a real past date.';
-  } else if (role === 'candidate') return 'A candidate needs a date of birth.';
+  }
 
   const phone = parsePhone(raw.phone);
   if (!phone.ok) {
@@ -89,7 +88,7 @@ function checkOne(raw: RawPerson, role: Role): CheckedPerson | string {
   return { fullName, email, dob, phone: phone.phone, password };
 }
 
-export function checkPeople(rows: readonly RawPerson[], role: Role): CheckedPeople {
+export function checkPeople(rows: readonly RawPerson[]): CheckedPeople {
   if (rows.length > MAX_PEOPLE) return { people: [], errors: [{ index: -1, message: `Add at most ${MAX_PEOPLE} people at a time.` }], sharedPasswords: [] };
 
   const people: CheckedPerson[] = [];
@@ -98,7 +97,7 @@ export function checkPeople(rows: readonly RawPerson[], role: Role): CheckedPeop
   const byPassword = new Map<string, number[]>();
 
   rows.forEach((raw, index) => {
-    const r = checkOne(raw, role);
+    const r = checkOne(raw);
     if (typeof r === 'string') return void errors.push({ index, message: r });
     if (seen.has(r.email)) return void errors.push({ index, message: `${r.email} is also on an earlier row.` });
     seen.add(r.email);

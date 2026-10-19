@@ -54,7 +54,6 @@ export function parseNewUser(argv: readonly string[]): Parsed {
 
   const dob = values.dob ?? null;
   if (dob !== null && !validDate(dob)) return { ok: false, error: 'The date of birth must be a real past date, YYYY-MM-DD.' };
-  if (role === 'candidate' && dob === null) return { ok: false, error: 'A candidate needs a --dob (date of birth, YYYY-MM-DD).' };
 
   const org = values.org ?? null;
   if (org !== null && !SLUG.test(org)) return { ok: false, error: '--org must be an academy slug, like lws-pune.' };

@@ -118,9 +118,12 @@ describe.skipIf(!hasDatabase)('managing people', () => {
       expect((await profile('candB'))?.full_name).not.toBe('Taken Over');
     });
 
-    it('keeps a candidate’s date of birth', async () => {
+    it('lets a candidate’s date of birth be left blank (D37)', async () => {
       const { error } = await world.people.ownerA.client.rpc('update_person', { p_target: id('candA2'), p_full_name: 'Cadet', p_dob: null, p_phone: null });
-      expect(error?.message).toMatch(/dob_required/);
+      expect(error).toBeNull();
+      expect((await profile('candA2'))?.dob).toBeNull();
+      const restore = await world.people.ownerA.client.rpc('update_person', { p_target: id('candA2'), p_full_name: 'Cadet', p_dob: ADULT, p_phone: null });
+      expect(restore.error).toBeNull();
     });
 
     it('refuses a phone number in any shape but +digits', async () => {

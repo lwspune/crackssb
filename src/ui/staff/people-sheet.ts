@@ -100,7 +100,7 @@ export function peopleTemplate(): Uint8Array<ArrayBuffer> {
         ['Column', 'What to put'],
         ['Name', 'Required. As it should appear in the app.'],
         ['Email', 'Required. Their login. Each email once.'],
-        ['Date of birth', 'Required for candidates. DD/MM/YYYY, e.g. 14/03/2008.'],
+        ['Date of birth', 'Optional. DD/MM/YYYY, e.g. 14/03/2008. Under 18 needs a guardian’s consent before tests.'],
         ['Mobile', 'Optional. Lets "Send on WhatsApp" open their chat. 10 digits, or +code outside India.'],
         ['Password', 'Optional. At least 8 characters. Leave blank and one is made for them.'],
         ['', ''],

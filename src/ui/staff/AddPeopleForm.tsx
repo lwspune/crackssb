@@ -149,7 +149,7 @@ function OnePerson({ role, submit, pending }: { role: Role; submit: Submit; pend
   const [password, setPassword] = useState('');
 
   const raw: RawPerson = { fullName, email, dob, phone, password };
-  const checked = checkPeople([raw], role);
+  const checked = checkPeople([raw]);
   const problem = checked.errors[0]?.message;
   // The password field shows its own problem; the rest show once name and email are in.
   const shown = problem && fullName.trim() !== '' && email.trim() !== '' && !problem.startsWith('Password:') ? problem : null;
@@ -170,7 +170,7 @@ function OnePerson({ role, submit, pending }: { role: Role; submit: Submit; pend
       </div>
       {role === 'candidate' && (
         <div>
-          <label htmlFor="add-dob" className="block text-sm font-semibold">Date of birth</label>
+          <label htmlFor="add-dob" className="block text-sm font-semibold">Date of birth <span className="font-normal text-muted-foreground">(optional)</span></label>
           <input id="add-dob" name="dob" type="date" value={dob} onChange={(e) => setDob(e.target.value)} className={`mt-1.5 ${INPUT}`} />
         </div>
       )}
@@ -204,7 +204,7 @@ function Many({ role, submit, pending }: { role: Role; submit: Submit; pending: 
   };
 
   const rows = sheet?.rows ?? [];
-  const checked = checkPeople(rows.map((r) => r.person), role);
+  const checked = checkPeople(rows.map((r) => r.person));
   const problems = new Map(checked.errors.filter((e) => e.index >= 0).map((e) => [e.index, e.message]));
   const listProblem = checked.errors.find((e) => e.index < 0)?.message;
   const minors = role === 'candidate' ? checked.people.filter((p) => p.dob && isMinor(p.dob)).length : 0;

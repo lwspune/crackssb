@@ -91,8 +91,8 @@ function Details({ person, action }: { person: ManagedPerson; action: Act<Manage
         </div>
         {person.role === 'candidate' && (
           <div>
-            <label htmlFor="dob" className="block text-sm font-semibold">Date of birth</label>
-            <input id="dob" name="dob" type="date" defaultValue={person.dob ?? ''} required className={`mt-1.5 ${INPUT}`} />
+            <label htmlFor="dob" className="block text-sm font-semibold">Date of birth <span className="font-normal text-muted-foreground">(optional)</span></label>
+            <input id="dob" name="dob" type="date" defaultValue={person.dob ?? ''} className={`mt-1.5 ${INPUT}`} />
           </div>
         )}
         <div>

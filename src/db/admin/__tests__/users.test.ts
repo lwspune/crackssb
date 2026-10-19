@@ -23,6 +23,11 @@ describe('parseNewUser', () => {
     expect(r.ok && r.value.guardianConsent).toBe(true);
   });
 
+  it('accepts a candidate with no date of birth: it is optional (D37)', () => {
+    const r = parseNewUser([...base, '--role', 'candidate']);
+    expect(r).toEqual({ ok: true, value: { email: 'cadet.one@example.com', fullName: 'Cadet One', role: 'candidate', dob: null, org: null, guardianConsent: false } });
+  });
+
   it('places a candidate in an academy when given one', () => {
     const r = parseNewUser([...base, '--dob', '2006-03-14', '--org', 'lws-pune']);
     expect(r.ok && r.value.org).toBe('lws-pune');
@@ -33,7 +38,6 @@ describe('parseNewUser', () => {
     ['a malformed email', ['--email', 'not-an-email', '--name', 'X', '--dob', '2006-01-01'], /email/i],
     ['no name', ['--email', 'a@b.co', '--dob', '2006-01-01'], /name/i],
     ['an unknown role', [...base, '--role', 'admin', '--dob', '2006-01-01'], /role/i],
-    ['a candidate without a date of birth', [...base, '--role', 'candidate'], /date of birth/i],
     ['an impossible date', [...base, '--dob', '2006-02-30'], /date of birth/i],
     ['a date in the future', [...base, '--dob', '2999-01-01'], /date of birth/i],
     ['a mentor without an academy', [...base, '--role', 'mentor'], /academy/i],

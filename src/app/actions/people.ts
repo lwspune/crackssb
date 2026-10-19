@@ -53,7 +53,7 @@ export async function addPeople(target: { orgId: string | null }, _state: AddPeo
         : null;
   if (!rows) return { kind: 'error', message: 'Nothing to add. Upload the file again.' };
 
-  const checked = checkPeople(rows, role as Role);
+  const checked = checkPeople(rows);
   if (checked.errors.length > 0 || checked.people.length === 0) {
     return { kind: 'error', message: mode === 'one' ? checked.errors[0]?.message ?? 'Check the details.' : 'Fix the rows marked, then upload again.' };
   }

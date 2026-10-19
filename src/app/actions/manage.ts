@@ -30,7 +30,6 @@ const refresh = (target: string) => {
 /** A database refusal or failure, as words. Anything unexpected is logged. */
 function failed(where: string, error: { message: string; code?: string }): ManageState {
   if (/not_allowed/.test(error.message)) return { kind: 'error', message: REFUSED };
-  if (/dob_required/.test(error.message)) return { kind: 'error', message: 'A candidate needs a date of birth.' };
   console.error(`${where} failed`, { code: error.code });
   return { kind: 'error', message: 'Could not save. Try again.' };
 }
