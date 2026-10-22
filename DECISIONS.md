@@ -957,3 +957,34 @@ same email. `/login` leads with "Continue with Google".
 
 **Revisit if.** Under-18s need a guardian's consent (D37's revisit), abuse appears (rate limits, a captcha), or
 another provider is wanted (add it to the hook).
+
+---
+
+## D43 — A public landing page at `/`, and every crawler welcome
+
+**Date:** 2026-10-22 · **Status:** Accepted
+
+**Context.** Search and AI answer engines found nothing: `/` sent every visitor without a session to `/login`, and
+only `/login`, `/privacy` and the blank sheets were public. There was no robots.txt, no sitemap, no share image, and
+the proxy sent `/robots.txt` and `/sitemap.xml` themselves to sign-in. The owner asked how to do SEO and GEO.
+
+**Decision.**
+
+1. **A visitor with no session sees a landing page at `/`;** someone signed in still gets Home there. The proxy
+   rewrites to `/welcome` (`LANDING`), whose own address redirects to `/`, so the page has one URL. `entryFor` in
+   `routing.ts` decides, and is tested. The page is static and draws every test and figure from the catalogue.
+2. **Every crawler is welcome, AI ones included** (owner's choice): `robots.txt` allows all. Pages behind sign-in
+   redirect, so there is nothing to block.
+3. **`PUBLIC_PAGES` is the sitemap.** A new public page is added there. The crawler files (robots, sitemap, share
+   images, icon) pass the proxy without a session.
+4. **The live address is canonical** (`metadataBase`), so the vercel.app aliases point at `cadetprep.in`. The landing
+   page carries schema.org Organization and WebSite data.
+5. **No byline** on public pages (owner).
+6. **Copy holds to the honest-claims policy:** no "free" (no pricing is decided), no AI feedback, and group tasks are shown
+   as Coming or Not simulated.
+
+**Consequences.** The next step is guides, one public page per test (SUGGESTIONS.md, 2026-10-22). `audit:mobile`
+now audits the landing page signed out.
+
+**Revisit if.** Pricing is decided (the landing page says nothing about it), or AI marking ships (the page says a
+mentor marks).

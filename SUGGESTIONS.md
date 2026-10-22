@@ -532,3 +532,35 @@ It has no superadmin login. The admin pages were checked by hand at 320/390/1280
 
 Anyone with a Google account can now make a login. If junk accounts appear: Supabase's sign-up rate limits, a
 captcha, or a Google-domain rule in the hook.
+
+## 2026-10-22 (public landing page, SEO/GEO)
+
+### Guides: the next SEO/GEO step
+
+One public page per thing candidates search for: the SSB's five days, then OIR, PPDT, TAT, WAT, SRT, SDT, the 15 OLQs.
+Each one answers in its first two lines, puts the facts in a table, and takes its numbers from the code that runs the
+test (`thresholds.ts`, the catalogue), so a guide cannot contradict the runner. Sample items are written fresh:
+nothing from the OIR book, the ssbcrackexams.com pictures or situations, or `corpus/`. No byline (owner, 2026-10-22).
+Each goes in `PUBLIC_PAGES` (the sitemap follows). Agreed order: the SSB overview, then OIR.
+
+### Register with Google Search Console and Bing Webmaster Tools
+
+The owner's step: verify `cadetprep.in` (a DNS TXT record at GoDaddy) in both and submit `/sitemap.xml`. Bing feeds
+ChatGPT search and Copilot, so it matters for GEO as much as Google does.
+
+### Answer sheets are `noindex`
+
+`/sheets/*` are public but say `robots: { index: false }`, so they are not in the sitemap. "SSB TAT answer sheet" is
+a real search; opening them to crawlers is a one-line change once a guide links to them.
+
+### The share image uses `next/og`'s default font
+
+No bold weight, and "CadetPrep" renders with a small gap between its two colours. Bundling Inter as a file would fix
+both; not worth a font file yet.
+
+### Backfill ledger: `/privacy` fails `audit:mobile` on its contact link
+
+Found when `/privacy` was added to the audit's signed-out pages: the inline email link is 230x20 px, under the
+44 px rule. WCAG 2.5.8 exempts links inside a sentence, so the likely fix is teaching the audit that exception, not
+reshaping the page. `/privacy` stays out of `PUBLIC_PAGES` in `scripts/audit-mobile.mjs` until then. Shipped, so it
+waits for a 360 and a yes.

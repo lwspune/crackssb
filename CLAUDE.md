@@ -12,7 +12,7 @@ Vercel project and package keep the name crackssb.
 | [`ARCHITECTURE.md`](./ARCHITECTURE.md) | Schema, the 15-OLQ vector, edge-function contracts, the four seam rules, honest-claims policy |
 | [`ROADMAP.md`](./ROADMAP.md) | Phases, sprint order, gates, blockers, content lift |
 | [`UI.md`](./UI.md) | Roles (4 in schema, 3 experiences), the **seven runner modes** and their contracts, timing rules, per-role IA, build order |
-| [`DECISIONS.md`](./DECISIONS.md) | **D1–D41.** The long-form *why* trail. Append only; supersede rather than edit |
+| [`DECISIONS.md`](./DECISIONS.md) | **D1–D43.** The long-form *why* trail. Append only; supersede rather than edit |
 
 Read `DECISIONS.md` before changing anything in `src/scoring/` — most of what
 looks arbitrary there is a recorded decision with evidence behind it.
@@ -33,7 +33,7 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-2756 tests passing · npm test        lint clean · npm run lint        npm run build green
+2768 tests passing · npm test        lint clean · npm run lint        npm run build green
 243 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
@@ -101,6 +101,11 @@ sign-up; staff-made logins carry `app_metadata.joined_via = 'staff'` (`STAFF_MAD
 `/admin/candidates` (who, how they joined, attempts by test) and `/admin/candidates/[id]` (practice + every attempt,
 each opening its result). `/privacy` is public (Google links it from its consent screen) and claims only what is true
 today. Google Cloud project `cadetprep-512117`, client "CadetPrep web". Sign-ups are on (the hook refuses all but Google); test fixtures sign in through `signInPaced`, which waits out the auth rate limit. A real Google round trip has not been walked yet.
+
+**Public pages, SEO and GEO (D43).** A visitor with no session sees the landing page at `/` (the proxy rewrites to
+`/welcome`, `entryFor` in `routing.ts`); someone signed in gets Home. `PUBLIC_PAGES` is the sitemap; `robots.txt` lets
+every crawler in, AI ones included; `metadataBase` makes `cadetprep.in` canonical; the share image and icons are drawn by
+`next/og`. Guides per test are next (SUGGESTIONS.md).
 
 **Layered access (D25).** Staff also reach the student app and the superadmin reaches all three, through a switcher.
 Staff tests are flagged `by_staff` by the database and must stay out of results and item statistics.
@@ -208,7 +213,8 @@ src/lib/
   phone.ts               mobile number → `+digits` (Indian without a code), and back for display
   sheet/                 zip.ts (stored write, stored/deflate read, size limits before unpacking) · xlsx.ts · csv.ts — no package (D31)
   supabase/              server · browser (the user's RLS client) · admin (service role — only after the DB says yes)
-src/proxy.ts             refreshes the session; sends visitors with none to /login (optimistic only)
+src/proxy.ts             refreshes the session; routes by it (entryFor): the landing page at / or /login for visitors with none (optimistic only)
+src/lib/site.ts          SITE_URL, JSON-LD (escaped) · src/app/robots.ts, sitemap.ts, opengraph-image.tsx, apple-icon.tsx, icon.svg, welcome/ (D43)
 src/db/admin/            users.ts (insertAccount, user:create) · people.ts (createPeople — D23) · manage.ts (password, switch off, remove — D31)
                          · uploads.ts (sheet photos) · narration.ts (takes, submitForReview + sweep) — the database decides first, then links are signed (D34)
 supabase/migrations/     0001 tenancy+clock · 0002 FK indexes · 0003 people creation · 0004 create_academy · 0005 items + item_keys (keys server-only) · 0006 staff practice (by_staff) · 0007 practice_answers + answer_practice (D26)
@@ -230,7 +236,7 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 2756 tests (never touches the database)
+npm test              # 2768 tests (never touches the database)
 npm run test:db       # 243 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store, sheet photos, narration, review — fixtures cleaned up
 npm run user:create -- --email … --name … [--dob YYYY-MM-DD] [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
