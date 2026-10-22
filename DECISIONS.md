@@ -951,7 +951,8 @@ email and password from the public key included.
 **Consequences.** `signup.db.test.ts` is the gate; a real Google round trip cannot run in it, so the service role
 stands in with `provider: google`. The hook does not run for the admin API (probed 2026-10-19), which also writes
 app_metadata after the insert; hence 0021: the profile trigger fires on update too, and only for someone with no profile.
-The owner's view is `/admin/candidates`. Staff still create academy logins; academy students may also use Google on the
+The owner's view is `/admin/candidates`. Google publishes an app for every account only with a privacy policy
+link, so `/privacy` is public; it promises no retention period until the clean-up job exists (D34 §8). Staff still create academy logins; academy students may also use Google on the
 same email. `/login` leads with "Continue with Google".
 
 **Revisit if.** Under-18s need a guardian's consent (D37's revisit), abuse appears (rate limits, a captcha), or

@@ -99,7 +99,8 @@ user is a candidate with no academy, made by a trigger on `auth.users` (0020, 00
 no date of birth (sits as an adult, D37). The Before User Created hook (`private.before_user_created`) refuses every other
 sign-up; staff-made logins carry `app_metadata.joined_via = 'staff'` (`STAFF_MADE`). The superadmin sees them at
 `/admin/candidates` (who, how they joined, attempts by test) and `/admin/candidates/[id]` (practice + every attempt,
-each opening its result). A real Google round trip has not been walked yet.
+each opening its result). `/privacy` is public (Google links it from its consent screen) and claims only what is true
+today. Google Cloud project `cadetprep-512117`, client "CadetPrep web". A real Google round trip has not been walked yet.
 
 **Layered access (D25).** Staff also reach the student app and the superadmin reaches all three, through a switcher.
 Staff tests are flagged `by_staff` by the database and must stay out of results and item statistics.
