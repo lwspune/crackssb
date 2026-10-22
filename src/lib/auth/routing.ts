@@ -65,9 +65,9 @@ export function safeNext(next: string | null, role: Role): string | null {
   return url.pathname + url.search;
 }
 
-/** Reachable without a session: the sign-in page, Google's return to it, and the blank printable sheet (no data on it). */
+/** Reachable without a session: the sign-in page, Google's return to it, the privacy policy, and the blank printable sheet (no data on it). */
 export function isPublicPath(pathname: string): boolean {
-  return pathname === '/login' || pathname === GOOGLE_CALLBACK || pathname.startsWith('/sheets/');
+  return pathname === '/login' || pathname === GOOGLE_CALLBACK || pathname === '/privacy' || pathname.startsWith('/sheets/');
 }
 
 /** Where Google sends someone back (D42). It must also be on Supabase's redirect allow-list. */

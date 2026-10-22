@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { getViewer } from '@/lib/auth/viewer.ts';
 import { googleSignInError, homeFor } from '@/lib/auth/routing.ts';
@@ -66,6 +67,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Search
             </div>
             <LoginForm action={signIn} next={next} />
           </div>
+          <Link href="/privacy" className="mt-6 inline-flex min-h-11 items-center text-sm text-muted-foreground hover:underline">Privacy</Link>
         </div>
       </section>
     </main>

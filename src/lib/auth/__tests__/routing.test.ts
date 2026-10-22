@@ -93,8 +93,12 @@ describe('isPublicPath', () => {
     expect(isPublicPath('/sheets/wat')).toBe(true);
   });
 
+  it('lets the privacy policy through: Google links to it from its sign-in screen', () => {
+    expect(isPublicPath('/privacy')).toBe(true);
+  });
+
   it('guards everything else', () => {
-    for (const p of ['/', '/practise', '/run/wat', '/staff', '/admin', '/loginx', '/auth', '/auth/callbackx', '/auth/other']) expect(isPublicPath(p)).toBe(false);
+    for (const p of ['/', '/practise', '/run/wat', '/staff', '/admin', '/loginx', '/auth', '/auth/callbackx', '/auth/other', '/privacyx', '/privacy/x']) expect(isPublicPath(p)).toBe(false);
   });
 });
 
