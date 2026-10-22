@@ -15,7 +15,8 @@ describe.skipIf(!hasDatabase)('candidates with no academy', () => {
   beforeAll(async () => {
     world = await buildWorld({
       solo: { role: 'candidate', org: null, dob: null },
-      member: { role: 'candidate', org: 'a', dob: null },
+      // Only ever looked for, never signed in: the auth server rate-limits sign-ins.
+      member: { role: 'candidate', org: 'a', dob: null, signIn: false },
       owner: { role: 'superadmin', org: null, dob: null },
       head: { role: 'org_admin', org: 'a', dob: null },
       mentor: { role: 'mentor', org: 'a', dob: null },

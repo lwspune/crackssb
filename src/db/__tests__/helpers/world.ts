@@ -53,6 +53,20 @@ export function yearsAgo(years: number): string {
   return d.toISOString().slice(0, 10);
 }
 
+/**
+ * Sign in, waiting out the auth server's rate limit. Supabase allows bursts of
+ * 30 sign-ins per IP on /auth/v1/token, refilled at one every two seconds; the
+ * suite signs in more people than that in a couple of minutes, so a refused
+ * sign-in waits and tries again (up to a minute, inside the hook timeout).
+ */
+async function signInPaced(client: SupabaseClient, email: string, password: string) {
+  for (let attempt = 0; ; attempt++) {
+    const result = await client.auth.signInWithPassword({ email, password });
+    if (!result.error || !/rate limit/i.test(result.error.message) || attempt >= 20) return result;
+    await new Promise((r) => setTimeout(r, 3000));
+  }
+}
+
 export interface World {
   readonly run: string;
   readonly orgs: { readonly a: string; readonly b: string };
@@ -109,7 +123,7 @@ export async function buildWorld(specs: Readonly<Record<string, PersonSpec>>): P
 
       const client = createClient(URL, ANON, noSession);
       if (spec.signIn !== false) {
-        const signIn = await client.auth.signInWithPassword({ email, password });
+        const signIn = await signInPaced(client, email, password);
         if (signIn.error) throw new Error(`sign-in ${label}: ${signIn.error.message}`);
       }
       people[label] = { id, email, client };
