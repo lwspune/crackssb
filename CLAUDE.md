@@ -33,8 +33,8 @@ the psych-scoring engine, built early because hand-graded dossiers arrived
 early (D3's revisit trigger), and the headless runner engine (D18).
 
 ```
-2755 tests passing · npm test        lint clean · npm run lint        npm run build green
-233 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
+2756 tests passing · npm test        lint clean · npm run lint        npm run build green
+243 database tests passing · npm run test:db        mobile audit clean · npm run audit:mobile
 ```
 
 **Type-checking is new.** `npm run typecheck` checks everything and currently
@@ -100,7 +100,7 @@ no date of birth (sits as an adult, D37). The Before User Created hook (`private
 sign-up; staff-made logins carry `app_metadata.joined_via = 'staff'` (`STAFF_MADE`). The superadmin sees them at
 `/admin/candidates` (who, how they joined, attempts by test) and `/admin/candidates/[id]` (practice + every attempt,
 each opening its result). `/privacy` is public (Google links it from its consent screen) and claims only what is true
-today. Google Cloud project `cadetprep-512117`, client "CadetPrep web". A real Google round trip has not been walked yet.
+today. Google Cloud project `cadetprep-512117`, client "CadetPrep web". Sign-ups are on (the hook refuses all but Google); test fixtures sign in through `signInPaced`, which waits out the auth rate limit. A real Google round trip has not been walked yet.
 
 **Layered access (D25).** Staff also reach the student app and the superadmin reaches all three, through a switcher.
 Staff tests are flagged `by_staff` by the database and must stay out of results and item statistics.
@@ -230,8 +230,8 @@ scripts/                 build + measurement entry points
 ## Commands
 
 ```bash
-npm test              # 2755 tests (never touches the database)
-npm run test:db       # 233 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store, sheet photos, narration, review — fixtures cleaned up
+npm test              # 2756 tests (never touches the database)
+npm run test:db       # 243 tests against the live project: access rules, server clock, logins, who-creates-whom, the runner's store, sheet photos, narration, review — fixtures cleaned up
 npm run user:create -- --email … --name … [--dob YYYY-MM-DD] [--role mentor --org slug] [--guardian-consent]
 npm run dev           # the app at localhost:3000
 npm run build         # production build (type-checks app code)
