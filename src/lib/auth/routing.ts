@@ -65,9 +65,28 @@ export function safeNext(next: string | null, role: Role): string | null {
   return url.pathname + url.search;
 }
 
-/** Reachable without a session: the sign-in page, Google's return to it, the privacy policy, and the blank printable sheet (no data on it). */
+/** The pages anyone may read and search engines should find: the sitemap lists exactly these. */
+export const PUBLIC_PAGES: readonly string[] = ['/', '/privacy'];
+
+/** The landing page's real route. Visitors with no session see it at `/`; its own path redirects there, so it has one address. */
+export const LANDING = '/welcome';
+
+/** What crawlers fetch besides pages (src/app/robots.ts, sitemap.ts, the share images and icon). */
+const CRAWLER_FILES = ['/robots.txt', '/sitemap.xml', '/opengraph-image', '/twitter-image', '/apple-icon'];
+
+/** Reachable without a session: the sign-in page, Google's return to it, the privacy policy, the blank printable sheet (no data on it), and the crawler files. */
 export function isPublicPath(pathname: string): boolean {
-  return pathname === '/login' || pathname === GOOGLE_CALLBACK || pathname === '/privacy' || pathname.startsWith('/sheets/');
+  return pathname === '/login' || pathname === GOOGLE_CALLBACK || pathname === '/privacy' || pathname.startsWith('/sheets/') || CRAWLER_FILES.includes(pathname);
+}
+
+export type Entry = { kind: 'pass' } | { kind: 'rewrite'; to: string } | { kind: 'redirect'; to: string } | { kind: 'login' };
+
+/** What the proxy does with a request: the landing page at `/` for a visitor with no session, Home for someone signed in. */
+export function entryFor(pathname: string, signedIn: boolean): Entry {
+  if (pathname === LANDING) return { kind: 'redirect', to: '/' };
+  if (signedIn) return { kind: 'pass' };
+  if (pathname === '/') return { kind: 'rewrite', to: LANDING };
+  return isPublicPath(pathname) ? { kind: 'pass' } : { kind: 'login' };
 }
 
 /** Where Google sends someone back (D42). It must also be on Supabase's redirect allow-list. */

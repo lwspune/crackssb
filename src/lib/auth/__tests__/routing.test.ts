@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { areasFor, googleCallbackFailure, googleSignInError, homeFor, isPublicPath, parseCredentials, pathAllowedFor, safeNext, signInError } from '../routing.ts';
+import { LANDING, PUBLIC_PAGES, areasFor, entryFor, googleCallbackFailure, googleSignInError, homeFor, isPublicPath, parseCredentials, pathAllowedFor, safeNext, signInError } from '../routing.ts';
 import type { Role } from '../routing.ts';
 
 /** Sign-in routing: where each role lands, and what a `?next=` may point at. */
@@ -97,8 +97,46 @@ describe('isPublicPath', () => {
     expect(isPublicPath('/privacy')).toBe(true);
   });
 
+  it('lets crawlers read robots.txt, the sitemap and the share images', () => {
+    for (const p of ['/robots.txt', '/sitemap.xml', '/opengraph-image', '/twitter-image', '/apple-icon']) expect(isPublicPath(p)).toBe(true);
+  });
+
   it('guards everything else', () => {
-    for (const p of ['/', '/practise', '/run/wat', '/staff', '/admin', '/loginx', '/auth', '/auth/callbackx', '/auth/other', '/privacyx', '/privacy/x']) expect(isPublicPath(p)).toBe(false);
+    for (const p of ['/', '/practise', '/run/wat', '/staff', '/admin', '/loginx', '/auth', '/auth/callbackx', '/auth/other', '/privacyx', '/privacy/x', '/robots.txtx', '/sitemap.xml/x']) {
+      expect(isPublicPath(p)).toBe(false);
+    }
+  });
+});
+
+describe('entryFor — what the proxy does with a request', () => {
+  it('shows a visitor with no session the landing page at /, without changing the address', () => {
+    expect(entryFor('/', false)).toEqual({ kind: 'rewrite', to: LANDING });
+  });
+
+  it('keeps Home at / for someone signed in', () => {
+    expect(entryFor('/', true)).toEqual({ kind: 'pass' });
+  });
+
+  it('gives the landing page one address: its own path goes to /', () => {
+    expect(entryFor(LANDING, false)).toEqual({ kind: 'redirect', to: '/' });
+    expect(entryFor(LANDING, true)).toEqual({ kind: 'redirect', to: '/' });
+    expect(entryFor(`${LANDING}/x`, false)).toEqual({ kind: 'login' });
+  });
+
+  it('sends a visitor with no session to sign in for anything not public', () => {
+    for (const p of ['/practise', '/staff', '/results/wat/x']) expect(entryFor(p, false)).toEqual({ kind: 'login' });
+    for (const p of ['/login', '/privacy', '/sheets/tat', '/robots.txt']) expect(entryFor(p, false)).toEqual({ kind: 'pass' });
+  });
+
+  it('lets someone signed in through to everything else (pages decide by role)', () => {
+    for (const p of ['/practise', '/staff', '/login']) expect(entryFor(p, true)).toEqual({ kind: 'pass' });
+  });
+});
+
+describe('PUBLIC_PAGES — what the sitemap lists', () => {
+  it('is the landing page and the privacy policy, each reachable without a session', () => {
+    expect(PUBLIC_PAGES).toEqual(['/', '/privacy']);
+    for (const p of PUBLIC_PAGES) expect(entryFor(p, false).kind).not.toBe('login');
   });
 });
 

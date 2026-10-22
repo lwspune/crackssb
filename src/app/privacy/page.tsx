@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { BRAND } from '@/ui/brand.ts';
 
-export const metadata: Metadata = { title: 'Privacy' };
+export const metadata: Metadata = { title: 'Privacy', alternates: { canonical: '/privacy' } };
 
 const CONTACT = 'connect.lwspune@gmail.com';
 

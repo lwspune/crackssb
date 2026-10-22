@@ -21,7 +21,8 @@
 
 const BASE = process.argv[2] ?? 'http://localhost:3000';
 const CDP = process.env.CDP_URL ?? 'http://127.0.0.1:9333';
-const PUBLIC_PAGES = ['/login'];
+// Signed out: / is the landing page then (entryFor in src/lib/auth/routing.ts).
+const PUBLIC_PAGES = ['/', '/login'];
 const STUDENT_PAGES = ['/', '/practise', '/practise/oir', '/practise/oir/series', '/practise/oir/word-formation', '/practise/oir/alphabet', '/practise/oir/seating', '/practise/oir/odd-one-out', '/practise/oir/coding', '/olq', '/results', '/profile', '/run/wat'];
 const STAFF_PAGES = ['/staff/people', '/staff/people/new', '/staff/batches', '/staff/review'];
 const CANDIDATE = { email: process.env.AUDIT_CANDIDATE_EMAIL, password: process.env.AUDIT_CANDIDATE_PASSWORD };
